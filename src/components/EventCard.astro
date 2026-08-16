@@ -8,10 +8,11 @@ interface Props {
 
 const { event } = Astro.props;
 const statusBadge = event.source === 'custom' ? null : (event.status ?? 'unknown');
+const sourceLabel = event.source === 'custom' ? 'Custom' : event.source === 'gridstats' ? 'GT-GridStats' : 'dg-edge';
 ---
 <a class="card" href={`/events/${event.id}/`}>
   <div style="display:flex; justify-content:space-between; align-items:center;">
-    <span class={`badge ${event.source}`}>{event.source === 'custom' ? 'Custom' : 'dg-edge'}</span>
+    <span class={`badge ${event.source}`}>{sourceLabel}</span>
     {statusBadge && <span class={`badge ${statusBadge}`}>{statusBadge}</span>}
   </div>
   <h3>{eventLabel(event)}</h3>

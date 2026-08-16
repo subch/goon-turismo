@@ -39,7 +39,7 @@ export type Season = {
 
 export type EventRecord = {
   id: string;
-  source: 'dg-edge' | 'custom';
+  source: 'dg-edge' | 'gridstats' | 'custom';
   track?: string | null;
   car?: string | null;
   classCode?: string | null;

@@ -12,9 +12,10 @@ export function getStaticPaths() {
 
 const { event } = Astro.props;
 const results = resultsForEvent(event.id);
+const sourceLabel = event.source === 'custom' ? 'Custom' : event.source === 'gridstats' ? 'GT-GridStats' : 'dg-edge';
 ---
 <Base title={eventLabel(event)}>
-  <span class={`badge ${event.source}`}>{event.source === 'custom' ? 'Custom' : 'dg-edge'}</span>
+  <span class={`badge ${event.source}`}>{sourceLabel}</span>
   <h1>{eventLabel(event)}</h1>
   <p class="subtitle">
     {event.track}{event.car ? ` · ${event.car}` : ''} · {eventDateLabel(event)}

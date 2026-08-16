@@ -1,0 +1,64 @@
+name: Sync player stats (GT-GridStats web scrape, interim)
+
+# INTERIM: scrapes GT-GridStats's public /player/{psn} pages instead of using
+# the token-based API (see scrape-gridstats.mjs + README). Retire this
+# workflow once GT_GRIDSTATS_TOKEN is set and scrape-gridstats.mjs is doing
+# the job again.
+
+on:
+  schedule:
+    # GitHub Actions cron only understands UTC, so we can't express "midnight
+    # Central" directly -- 05:00 UTC is midnight during Central Daylight Time
+    # (~Mar-Nov), 06:00 UTC is midnight during Central Standard Time
+    # (~Nov-Mar). Both fire every day; the "check local time" step below only
+    # lets the job actually run on whichever one currently lines up with
+    # local midnight, so this still runs once per day.
+    - cron: "0 5 * * *"
+    - cron: "0 6 * * *"
+  workflow_dispatch: {} # manual refresh from the Actions tab, any time
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Only proceed at actual midnight Central (skip the non-matching DST cron)
+        if: github.event_name == 'schedule'
+        run: |
+          hour=$(TZ=America/Chicago date +%H)
+          if [ "$hour" != "00" ]; then
+            echo "Not midnight in America/Chicago right now (local hour: $hour) -- skipping this trigger."
+            echo "SKIP=true" >> "$GITHUB_ENV"
+          fi
+
+      - uses: actions/checkout@v4
+        if: env.SKIP != 'true'
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        if: env.SKIP != 'true'
+        with:
+          node-version: 20
+
+      - run: npm ci
+        if: env.SKIP != 'true'
+
+      - name: Scrape GT-GridStats public pages
+        if: env.SKIP != 'true'
+        run: npm run scrape:gridstats-web
+
+      - name: Commit data changes
+        if: env.SKIP != 'true'
+        run: |
+          git config user.name "goon-turismo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/players.json data/official-events data/results/official.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync player stats (GT-GridStats web scrape)"
+            git push
+          fi

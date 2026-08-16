@@ -32,6 +32,20 @@ archive, hosted as a static site on GitHub Pages at **goon-turismo.com**.
   official GT7 championship series analytics too, but it's not yet confirmed whether arbitrary
   community Time Trial events (the dg-edge kind) are covered — worth asking the maintainer when
   requesting a token.
+- **`scripts/scrape-gridstats-web.mjs`** is an **interim stopgap** for the API-based script above, used
+  while we wait on a `GT_GRIDSTATS_TOKEN`. It scrapes the same driver-rating stats plus full event
+  history straight from each tracked player's public `https://gt-gridstats.com/player/{psn}` page
+  (confirmed real server-rendered HTML, no login or JS execution needed — `/player/` is allowed by
+  their `robots.txt`). Runs once daily via `.github/workflows/scrape-gridstats-web.yml`
+  (`workflow_dispatch` also available for an on-demand manual refresh from the Actions tab). Since
+  GitHub Actions cron is UTC-only, the workflow schedules two candidate cron times (covering both
+  Central Daylight and Central Standard Time) and skips whichever one doesn't actually line up with
+  local midnight, so it still runs once a day at midnight America/Chicago regardless of DST.
+  Scraped events are tagged `source: "gridstats"` (distinct from dg-edge's `source: "dg-edge"`) and
+  get IDs prefixed `gridstats-`, so this can't clobber dg-edge's event data — the two sources may
+  end up describing the same real-world event as separate entries until this is retired. **Retire
+  this script + workflow once the real API token is available** and switch back to
+  `scrape-gridstats.mjs`, which returns richer structured data.
 - **`scripts/scrape-dg-edge.mjs`** runs on the same schedule (`.github/workflows/scrape-dg-edge.yml`,
   every 6 hours) as a fallback/supplement: fetches each tracked player's dg-edge profile and the
   current time-trials listing, updates the JSON above, and commits the changes.
@@ -74,6 +88,7 @@ Run the scrapers locally (writes into `data/`):
 ```bash
 npm run scrape:dg-edge
 GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats
+npm run scrape:gridstats-web   # interim web-scrape version, no token needed
 ```
 
 ## ⚠️ Things that still need attention
@@ -82,7 +97,9 @@ GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats
    add it as the `GT_GRIDSTATS_TOKEN` repo secret to turn on real PSN-keyed stat syncing. Also worth
    confirming with them whether the API covers arbitrary community Time Trial *events* (not just
    official series) — if so, `scrape-gridstats.mjs` should be extended to pull per-event results too
-   and this would fully replace the dg-edge scraper for that purpose.
+   and this would fully replace the dg-edge scraper for that purpose. **In the meantime**,
+   `scrape-gridstats-web.mjs` (see above) covers the same ground via web scraping, running nightly at
+   midnight Central — retire it once the token lands.
 2. **dg-edge.com individual event results are mostly manual** (kept as a fallback/supplement — see
    the verified limitation above). This is the single biggest scope change from the original plan.
 3. **Points system.** `data/points-config.json` currently uses placeholder values (20 points for 1st,
