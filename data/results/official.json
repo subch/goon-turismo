@@ -9740,7 +9740,7 @@
     "psn": "bravemen84",
     "timeRaw": "1:09.504",
     "timeMs": 69504,
-    "scrapedAt": "2026-08-16T05:08:04.156Z",
+    "scrapedAt": "2026-08-16T06:14:47.645Z",
     "groupRank": 1,
     "points": 100
   },
@@ -9749,7 +9749,7 @@
     "psn": "superpharts",
     "timeRaw": "1:10.043",
     "timeMs": 70043,
-    "scrapedAt": "2026-08-16T05:07:39.953Z",
+    "scrapedAt": "2026-08-16T06:14:22.874Z",
     "groupRank": 2,
     "points": 92
   },
@@ -9758,7 +9758,7 @@
     "psn": "bravemen84",
     "timeRaw": "1:53.195",
     "timeMs": 113195,
-    "scrapedAt": "2026-08-16T05:08:04.159Z",
+    "scrapedAt": "2026-08-16T06:14:47.648Z",
     "groupRank": 1,
     "points": 100
   },
@@ -9767,7 +9767,7 @@
     "psn": "ashy_wenises",
     "timeRaw": "1:53.491",
     "timeMs": 113491,
-    "scrapedAt": "2026-08-16T05:07:42.460Z",
+    "scrapedAt": "2026-08-16T06:14:25.540Z",
     "groupRank": 2,
     "points": 97
   },
@@ -9776,7 +9776,7 @@
     "psn": "devmotron",
     "timeRaw": "1:54.864",
     "timeMs": 114864,
-    "scrapedAt": "2026-08-16T05:07:45.024Z",
+    "scrapedAt": "2026-08-16T06:14:28.210Z",
     "groupRank": 3,
     "points": 85
   },
@@ -9785,7 +9785,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:55.114",
     "timeMs": 115114,
-    "scrapedAt": "2026-08-16T05:08:06.753Z",
+    "scrapedAt": "2026-08-16T06:14:50.176Z",
     "groupRank": 4,
     "points": 83
   },
@@ -9794,7 +9794,709 @@
     "psn": "bravemen84",
     "timeRaw": "0:52.818",
     "timeMs": 52818,
-    "scrapedAt": "2026-08-16T05:08:04.153Z",
+    "scrapedAt": "2026-08-16T06:14:47.641Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
+    "psn": "ashy_wenises",
+    "timeRaw": "1:26.154",
+    "timeMs": 86154,
+    "scrapedAt": "2026-08-16T06:14:25.544Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
+    "psn": "ainsliespeed",
+    "timeRaw": "1:26.919",
+    "timeMs": 86919,
+    "scrapedAt": "2026-08-16T06:14:40.118Z",
+    "groupRank": 2,
+    "points": 91
+  },
+  {
+    "eventId": "gridstats-n-rburgring-24h-07-may-2026",
+    "psn": "ashy_wenises",
+    "timeRaw": "9:52.157",
+    "timeMs": 592157,
+    "scrapedAt": "2026-08-16T06:14:25.548Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-n-rburgring-24h-07-may-2026",
+    "psn": "sinder_22",
+    "timeRaw": "10:02.308",
+    "timeMs": 602308,
+    "scrapedAt": "2026-08-16T06:14:33.195Z",
+    "groupRank": 2,
+    "points": 83
+  },
+  {
+    "eventId": "gridstats-n-rburgring-24h-07-may-2026",
+    "psn": "ainsliespeed",
+    "timeRaw": "10:09.047",
+    "timeMs": 609047,
+    "scrapedAt": "2026-08-16T06:14:40.122Z",
+    "groupRank": 3,
+    "points": 71
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-full-course-09-apr-2026",
+    "psn": "ashy_wenises",
+    "timeRaw": "2:13.788",
+    "timeMs": 133788,
+    "scrapedAt": "2026-08-16T06:14:25.552Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-full-course-09-apr-2026",
+    "psn": "empire_of_ravens",
+    "timeRaw": "2:14.157",
+    "timeMs": 134157,
+    "scrapedAt": "2026-08-16T06:14:57.547Z",
+    "groupRank": 2,
+    "points": 97
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-full-course-09-apr-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:15.160",
+    "timeMs": 135160,
+    "scrapedAt": "2026-08-16T06:14:30.656Z",
+    "groupRank": 3,
+    "points": 90
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-full-course-09-apr-2026",
+    "psn": "sinder_22",
+    "timeRaw": "2:16.399",
+    "timeMs": 136399,
+    "scrapedAt": "2026-08-16T06:14:33.199Z",
+    "groupRank": 4,
+    "points": 80
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-30-apr-2026",
+    "psn": "craigrackhaed",
+    "timeRaw": "1:52.589",
+    "timeMs": 112589,
+    "scrapedAt": "2026-08-16T06:14:42.652Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-30-apr-2026",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:53.558",
+    "timeMs": 113558,
+    "scrapedAt": "2026-08-16T06:14:57.543Z",
+    "groupRank": 2,
+    "points": 91
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-30-apr-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:56.244",
+    "timeMs": 116244,
+    "scrapedAt": "2026-08-16T06:14:30.650Z",
+    "groupRank": 3,
+    "points": 68
+  },
+  {
+    "eventId": "gridstats-circuit-de-barcelona-catalunya-gp-layout-no-chicane-23-apr-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:47.447",
+    "timeMs": 107447,
+    "scrapedAt": "2026-08-16T06:14:30.653Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-michelin-raceway-road-atlanta-26-mar-2026",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:29.857",
+    "timeMs": 89857,
+    "scrapedAt": "2026-08-16T06:14:57.550Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-michelin-raceway-road-atlanta-26-mar-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:30.654",
+    "timeMs": 90654,
+    "scrapedAt": "2026-08-16T06:14:30.660Z",
+    "groupRank": 2,
+    "points": 91
+  },
+  {
+    "eventId": "gridstats-michelin-raceway-road-atlanta-26-mar-2026",
+    "psn": "sinder_22",
+    "timeRaw": "1:32.032",
+    "timeMs": 92032,
+    "scrapedAt": "2026-08-16T06:14:33.205Z",
+    "groupRank": 3,
+    "points": 76
+  },
+  {
+    "eventId": "gridstats-tokyo-expressway-east-counterclockwise-26-feb-2026",
+    "psn": "ainsliespeed",
+    "timeRaw": "1:59.113",
+    "timeMs": 119113,
+    "scrapedAt": "2026-08-16T06:14:40.135Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-tokyo-expressway-east-counterclockwise-26-feb-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:02.172",
+    "timeMs": 122172,
+    "scrapedAt": "2026-08-16T06:14:30.663Z",
+    "groupRank": 2,
+    "points": 74
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-reverse-02-apr-2026",
+    "psn": "sinder_22",
+    "timeRaw": "2:20.706",
+    "timeMs": 140706,
+    "scrapedAt": "2026-08-16T06:14:33.202Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-sardegna-road-track-a-reverse-05-mar-2026",
+    "psn": "ainsliespeed",
+    "timeRaw": "2:01.979",
+    "timeMs": 121979,
+    "scrapedAt": "2026-08-16T06:14:40.132Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-sardegna-road-track-a-reverse-05-mar-2026",
+    "psn": "sinder_22",
+    "timeRaw": "2:03.958",
+    "timeMs": 123958,
+    "scrapedAt": "2026-08-16T06:14:33.209Z",
+    "groupRank": 2,
+    "points": 84
+  },
+  {
+    "eventId": "gridstats-watkins-glen-long-course-27-mar-2025",
+    "psn": "kirios86",
+    "timeRaw": "1:59.488",
+    "timeMs": 119488,
+    "scrapedAt": "2026-08-16T06:14:35.671Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-brands-hatch-indy-circuit-20-mar-2025",
+    "psn": "wombatvet",
+    "timeRaw": "0:49.917",
+    "timeMs": 49917,
+    "scrapedAt": "2026-08-16T06:14:55.049Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-brands-hatch-indy-circuit-20-mar-2025",
+    "psn": "kirios86",
+    "timeRaw": "0:49.967",
+    "timeMs": 49967,
+    "scrapedAt": "2026-08-16T06:14:35.674Z",
+    "groupRank": 2,
+    "points": 99
+  },
+  {
+    "eventId": "gridstats-michelin-raceway-road-atlanta-09-jan-2025",
+    "psn": "kirios86",
+    "timeRaw": "1:34.723",
+    "timeMs": 94723,
+    "scrapedAt": "2026-08-16T06:14:35.678Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-willow-springs-international-raceway-big-willow-04-jul-2024",
+    "psn": "kirios86",
+    "timeRaw": "1:36.581",
+    "timeMs": 96581,
+    "scrapedAt": "2026-08-16T06:14:35.682Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-n-rburgring-gp-11-jan-2024",
+    "psn": "kirios86",
+    "timeRaw": "2:26.682",
+    "timeMs": 146682,
+    "scrapedAt": "2026-08-16T06:14:35.685Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-04-jan-2024",
+    "psn": "kirios86",
+    "timeRaw": "1:53.457",
+    "timeMs": 113457,
+    "scrapedAt": "2026-08-16T06:14:35.689Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-04-jan-2024",
+    "psn": "fenix_down1",
+    "timeRaw": "1:55.442",
+    "timeMs": 115442,
+    "scrapedAt": "2026-08-16T06:14:45.059Z",
+    "groupRank": 2,
+    "points": 83
+  },
+  {
+    "eventId": "gridstats-circuit-de-spa-francorchamps-28-dec-2023",
+    "psn": "fenix_down1",
+    "timeRaw": "2:44.189",
+    "timeMs": 164189,
+    "scrapedAt": "2026-08-16T06:14:45.063Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-de-spa-francorchamps-28-dec-2023",
+    "psn": "kirios86",
+    "timeRaw": "2:44.346",
+    "timeMs": 164346,
+    "scrapedAt": "2026-08-16T06:14:35.693Z",
+    "groupRank": 2,
+    "points": 99
+  },
+  {
+    "eventId": "gridstats-fuji-international-speedway-short-21-dec-2023",
+    "psn": "kirios86",
+    "timeRaw": "1:28.433",
+    "timeMs": 88433,
+    "scrapedAt": "2026-08-16T06:14:35.696Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-fuji-international-speedway-short-21-dec-2023",
+    "psn": "fenix_down1",
+    "timeRaw": "1:29.247",
+    "timeMs": 89247,
+    "scrapedAt": "2026-08-16T06:14:45.066Z",
+    "groupRank": 2,
+    "points": 91
+  },
+  {
+    "eventId": "gridstats-suzuka-circuit-19-mar-2026",
+    "psn": "ainsliespeed",
+    "timeRaw": "2:31.142",
+    "timeMs": 151142,
+    "scrapedAt": "2026-08-16T06:14:40.125Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-high-speed-ring-12-mar-2026",
+    "psn": "ainsliespeed",
+    "timeRaw": "1:08.149",
+    "timeMs": 68149,
+    "scrapedAt": "2026-08-16T06:14:40.129Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodromo-nazionale-monza-14-may-2026",
+    "psn": "craigrackhaed",
+    "timeRaw": "1:25.322",
+    "timeMs": 85322,
+    "scrapedAt": "2026-08-16T06:14:42.649Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-n-rburgring-24h-29-jan-2026",
+    "psn": "craigrackhaed",
+    "timeRaw": "8:56.564",
+    "timeMs": 536564,
+    "scrapedAt": "2026-08-16T06:14:42.656Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-watkins-glen-long-course-08-jan-2026",
+    "psn": "craigrackhaed",
+    "timeRaw": "2:02.367",
+    "timeMs": 122367,
+    "scrapedAt": "2026-08-16T06:14:42.659Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-blue-moon-bay-speedway-infield-b-reverse-23-oct-2025",
+    "psn": "craigrackhaed",
+    "timeRaw": "0:56.649",
+    "timeMs": 56649,
+    "scrapedAt": "2026-08-16T06:14:42.662Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autopolis-international-racing-course-16-oct-2025",
+    "psn": "craigrackhaed",
+    "timeRaw": "1:33.128",
+    "timeMs": 93128,
+    "scrapedAt": "2026-08-16T06:14:42.666Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-deep-forest-raceway-09-oct-2025",
+    "psn": "craigrackhaed",
+    "timeRaw": "1:49.080",
+    "timeMs": 109080,
+    "scrapedAt": "2026-08-16T06:14:42.669Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-mount-panorama-motor-racing-circuit-02-oct-2025",
+    "psn": "craigrackhaed",
+    "timeRaw": "2:17.310",
+    "timeMs": 137310,
+    "scrapedAt": "2026-08-16T06:14:42.679Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-fuji-international-speedway-11-jul-2024",
+    "psn": "fenix_down1",
+    "timeRaw": "1:23.313",
+    "timeMs": 83313,
+    "scrapedAt": "2026-08-16T06:14:45.056Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-de-spa-francorchamps-20-jul-2023",
+    "psn": "bitbasher",
+    "timeRaw": "2:48.556",
+    "timeMs": 168556,
+    "scrapedAt": "2026-08-16T06:15:04.105Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-de-spa-francorchamps-20-jul-2023",
+    "psn": "fenix_down1",
+    "timeRaw": "2:50.448",
+    "timeMs": 170448,
+    "scrapedAt": "2026-08-16T06:14:45.069Z",
+    "groupRank": 2,
+    "points": 89
+  },
+  {
+    "eventId": "gridstats-bb-raceway-reverse-06-jul-2023",
+    "psn": "bitbasher",
+    "timeRaw": "0:32.647",
+    "timeMs": 32647,
+    "scrapedAt": "2026-08-16T06:15:04.112Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-bb-raceway-reverse-06-jul-2023",
+    "psn": "fenix_down1",
+    "timeRaw": "0:32.977",
+    "timeMs": 32977,
+    "scrapedAt": "2026-08-16T06:14:45.072Z",
+    "groupRank": 2,
+    "points": 90
+  },
+  {
+    "eventId": "gridstats-bb-raceway-reverse-06-jul-2023",
+    "psn": "boco_t",
+    "timeRaw": "0:34.471",
+    "timeMs": 34471,
+    "scrapedAt": "2026-08-16T06:15:15.771Z",
+    "groupRank": 3,
+    "points": 44
+  },
+  {
+    "eventId": "gridstats-dragon-trail-seaside-01-jan-2026",
+    "psn": "vitti1107",
+    "timeRaw": "1:31.047",
+    "timeMs": 91047,
+    "scrapedAt": "2026-08-16T06:14:52.600Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-weathertech-raceway-laguna-seca-28-aug-2025",
+    "psn": "vitti1107",
+    "timeRaw": "1:07.063",
+    "timeMs": 67063,
+    "scrapedAt": "2026-08-16T06:14:52.603Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-dragon-trail-gardens-21-aug-2025",
+    "psn": "vitti1107",
+    "timeRaw": "1:45.030",
+    "timeMs": 105030,
+    "scrapedAt": "2026-08-16T06:14:52.606Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-31-jul-2025",
+    "psn": "vitti1107",
+    "timeRaw": "2:01.989",
+    "timeMs": 121989,
+    "scrapedAt": "2026-08-16T06:14:52.610Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-24-heures-du-mans-race-track-no-chicane-05-jun-2025",
+    "psn": "vitti1107",
+    "timeRaw": "3:13.563",
+    "timeMs": 193563,
+    "scrapedAt": "2026-08-16T06:14:52.614Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-daytona-tri-oval-03-apr-2025",
+    "psn": "vitti1107",
+    "timeRaw": "0:40.618",
+    "timeMs": 40618,
+    "scrapedAt": "2026-08-16T06:14:52.617Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-suzuka-circuit-06-mar-2025",
+    "psn": "vitti1107",
+    "timeRaw": "1:36.531",
+    "timeMs": 96531,
+    "scrapedAt": "2026-08-16T06:14:52.621Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-suzuka-circuit-06-mar-2025",
+    "psn": "bitbasher",
+    "timeRaw": "1:40.575",
+    "timeMs": 100575,
+    "scrapedAt": "2026-08-16T06:15:04.095Z",
+    "groupRank": 2,
+    "points": 58
+  },
+  {
+    "eventId": "gridstats-sardegna-road-track-b-27-feb-2025",
+    "psn": "vitti1107",
+    "timeRaw": "1:39.793",
+    "timeMs": 99793,
+    "scrapedAt": "2026-08-16T06:14:52.624Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-deep-forest-raceway-reverse-24-apr-2025",
+    "psn": "wombatvet",
+    "timeRaw": "1:49.644",
+    "timeMs": 109644,
+    "scrapedAt": "2026-08-16T06:14:55.039Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-willow-springs-international-raceway-big-willow-17-apr-2025",
+    "psn": "wombatvet",
+    "timeRaw": "1:18.777",
+    "timeMs": 78777,
+    "scrapedAt": "2026-08-16T06:14:55.042Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-lake-louise-short-track-reverse-10-apr-2025",
+    "psn": "wombatvet",
+    "timeRaw": "1:02.903",
+    "timeMs": 62903,
+    "scrapedAt": "2026-08-16T06:14:55.046Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodromo-nazionale-monza-30-jan-2025",
+    "psn": "wombatvet",
+    "timeRaw": "1:26.370",
+    "timeMs": 86370,
+    "scrapedAt": "2026-08-16T06:14:55.052Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodromo-nazionale-monza-30-jan-2025",
+    "psn": "nerdsmcgee",
+    "timeRaw": "1:26.812",
+    "timeMs": 86812,
+    "scrapedAt": "2026-08-16T06:15:08.155Z",
+    "groupRank": 2,
+    "points": 95
+  },
+  {
+    "eventId": "gridstats-brands-hatch-grand-prix-circuit-23-jan-2025",
+    "psn": "wombatvet",
+    "timeRaw": "1:40.107",
+    "timeMs": 100107,
+    "scrapedAt": "2026-08-16T06:14:55.055Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-brands-hatch-grand-prix-circuit-23-jan-2025",
+    "psn": "nerdsmcgee",
+    "timeRaw": "1:43.294",
+    "timeMs": 103294,
+    "scrapedAt": "2026-08-16T06:15:08.158Z",
+    "groupRank": 2,
+    "points": 68
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-reverse-01-aug-2024",
+    "psn": "wombatvet",
+    "timeRaw": "1:55.776",
+    "timeMs": 115776,
+    "scrapedAt": "2026-08-16T06:14:55.059Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-eiger-nordwand-reverse-18-sep-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "1:18.917",
+    "timeMs": 78917,
+    "scrapedAt": "2026-08-16T06:15:01.665Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-sardegna-road-track-a-04-sep-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "2:09.446",
+    "timeMs": 129446,
+    "scrapedAt": "2026-08-16T06:15:01.669Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-full-course-29-aug-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "1:43.628",
+    "timeMs": 103628,
+    "scrapedAt": "2026-08-16T06:15:01.673Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-fuji-international-speedway-10-jul-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "1:45.570",
+    "timeMs": 105570,
+    "scrapedAt": "2026-08-16T06:15:01.677Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-aut-dromo-de-interlagos-03-jul-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "1:43.963",
+    "timeMs": 103963,
+    "scrapedAt": "2026-08-16T06:15:01.680Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodromo-nazionale-monza-13-jun-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "1:49.839",
+    "timeMs": 109839,
+    "scrapedAt": "2026-08-16T06:15:01.684Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autopolis-international-racing-course-08-may-2025",
+    "psn": "gettin_fresh",
+    "timeRaw": "1:59.186",
+    "timeMs": 119186,
+    "scrapedAt": "2026-08-16T06:15:01.688Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-mount-panorama-motor-racing-circuit-10-aug-2023",
+    "psn": "bitbasher",
+    "timeRaw": "2:32.514",
+    "timeMs": 152514,
+    "scrapedAt": "2026-08-16T06:15:04.098Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-blue-moon-bay-speedway-infield-a-27-jul-2023",
+    "psn": "bitbasher",
+    "timeRaw": "1:17.914",
+    "timeMs": 77914,
+    "scrapedAt": "2026-08-16T06:15:04.102Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-blue-moon-bay-speedway-infield-a-27-jul-2023",
+    "psn": "boco_t",
+    "timeRaw": "1:23.634",
+    "timeMs": 83634,
+    "scrapedAt": "2026-08-16T06:15:15.764Z",
+    "groupRank": 2,
+    "points": 27
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-west-end-13-jul-2023",
+    "psn": "bitbasher",
+    "timeRaw": "0:52.209",
+    "timeMs": 52209,
+    "scrapedAt": "2026-08-16T06:15:04.109Z",
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-west-end-13-jul-2023",
+    "psn": "boco_t",
+    "timeRaw": "0:55.134",
+    "timeMs": 55134,
+    "scrapedAt": "2026-08-16T06:15:15.767Z",
+    "groupRank": 2,
+    "points": 44
+  },
+  {
+    "eventId": "gridstats-circuit-de-barcelona-catalunya-rallycross-layout-14-nov-2024",
+    "psn": "nerdsmcgee",
+    "timeRaw": "0:52.983",
+    "timeMs": 52983,
+    "scrapedAt": "2026-08-16T06:15:08.162Z",
     "groupRank": 1,
     "points": 100
   }

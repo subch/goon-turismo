@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-suzuka-circuit-19-mar-2026",
+  "source": "gridstats",
+  "seasonId": "winter-2026",
+  "track": "Suzuka Circuit",
+  "car": "Toyota Celica GT-FOUR (ST205)",
+  "classCode": "Lap Time Challenge",
+  "startDate": "19 Mar 2026",
+  "endDate": "02 Apr 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:14:40.122Z"
+}

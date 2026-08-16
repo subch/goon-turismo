@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-sardegna-road-track-a-reverse-05-mar-2026",
+  "source": "gridstats",
+  "seasonId": "winter-2026",
+  "track": "Sardegna - Road Track - A Reverse",
+  "car": "Subaru Impreza Sedan WRX STi",
+  "classCode": "Lap Time Challenge",
+  "startDate": "05 Mar 2026",
+  "endDate": "19 Mar 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:14:40.129Z"
+}

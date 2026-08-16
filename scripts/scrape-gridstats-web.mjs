@@ -19,6 +19,20 @@
  * Unknown PSNs 404 cleanly. /player/ is allowed by robots.txt (only /admin,
  * /api, /login etc. are disallowed).
  *
+ * Each player's "Event History" is their FULL lifetime history, not just the
+ * current season, so this script does two things with it:
+ *   1. Current season: always refresh -- create/update every event + result
+ *      every run, same as live tracking has always worked.
+ *   2. Past seasons: fill gaps only. The spreadsheet-derived historical
+ *      seasons are authoritative, but some (summer/spring in particular)
+ *      weren't tracked consistently by whoever was filling in the sheet that
+ *      week. If GT-GridStats has a result for a (player, track, ~date) that
+ *      isn't already recorded from ANY source, add it as a supplemental
+ *      'gridstats'-sourced event/result -- but never touch anything already
+ *      covered, so the spreadsheet import stays authoritative where it has
+ *      data. Track-name matching is fuzzy (case/punctuation-insensitive) with
+ *      a few days' date tolerance, since sources format both differently.
+ *
  * This event data is a separate, clearly-labeled source ('gridstats') from
  * dg-edge's official-events -- results are merged per-event-id, so this
  * script only ever touches the event ids it scraped this run and leaves
@@ -74,6 +88,20 @@ function gtDateToIso(d) {
   if (!mo) return null;
   return `${m[3]}-${mo}-${m[1].padStart(2, '0')}`;
 }
+
+function seasonForDate(iso, seasons) {
+  return seasons.find((s) => iso >= s.startDate && (!s.endDate || iso <= s.endDate)) ?? null;
+}
+
+function normalizeTrack(name) {
+  return String(name ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function daysBetween(iso1, iso2) {
+  return Math.abs((new Date(iso1) - new Date(iso2)) / 86_400_000);
+}
+
+const DATE_TOLERANCE_DAYS = 3;
 
 async function fetchPlayerPage(psn) {
   const url = `${BASE}/player/${encodeURIComponent(psn)}`;
@@ -214,8 +242,26 @@ async function main() {
     resultsByEvent.get(r.eventId).push(r);
   }
 
+  // Build a (psn, season, track) -> [dates already recorded] lookup from
+  // every existing event, across every source, so past-season backfill only
+  // ever fills genuine gaps and never touches/duplicates what's already there.
+  const eventById = new Map();
+  for (const id of eventIndex) {
+    const ev = await loadJson(`official-events/${id}.json`, null);
+    if (ev) eventById.set(id, ev);
+  }
+  const coveredByPsnSeasonTrack = new Map();
+  for (const r of allResults) {
+    const ev = eventById.get(r.eventId);
+    if (!ev?.track || !ev.startDate || !ev.seasonId) continue;
+    const key = `${r.psn.toLowerCase()}|${ev.seasonId}|${normalizeTrack(ev.track)}`;
+    if (!coveredByPsnSeasonTrack.has(key)) coveredByPsnSeasonTrack.set(key, []);
+    coveredByPsnSeasonTrack.get(key).push(ev.startDate);
+  }
+
   const touchedEventIds = new Set();
   let playersUpdated = 0;
+  let gapsFilledCount = 0;
 
   for (const player of players) {
     const scraped = await scrapePlayer(player.psn);
@@ -233,12 +279,21 @@ async function main() {
     };
 
     for (const row of scraped.events) {
-      // Each player's GT-GridStats "Event History" is their full lifetime
-      // history, not just this season -- skip anything that isn't actually
-      // part of the current season (historical seasons are backfilled from
-      // the spreadsheet instead, see import-historical-seasons.mjs).
       const eventIso = gtDateToIso(row.endDate) ?? gtDateToIso(row.startDate);
-      if (!eventIso || eventIso < currentSeason.startDate) continue;
+      if (!eventIso) continue;
+      const season = seasonForDate(eventIso, seasons);
+      if (!season) continue; // falls in a gap between tracked seasons
+
+      const isCurrent = season.id === currentSeason.id;
+      if (!isCurrent) {
+        // Past season: only fill genuine gaps, never overwrite/duplicate
+        // what the spreadsheet (or a prior backfill run) already has.
+        const key = `${player.psn.toLowerCase()}|${season.id}|${normalizeTrack(row.track)}`;
+        const coveredDates = coveredByPsnSeasonTrack.get(key) ?? [];
+        const alreadyCovered = coveredDates.some((d) => daysBetween(d, eventIso) <= DATE_TOLERANCE_DAYS);
+        if (alreadyCovered) continue;
+        gapsFilledCount++;
+      }
 
       const eventId = `gridstats-${slugify(row.track)}-${slugify(row.startDate ?? 'unknown')}`;
       touchedEventIds.add(eventId);
@@ -247,7 +302,7 @@ async function main() {
       await saveJson(`official-events/${eventId}.json`, {
         id: eventId,
         source: 'gridstats',
-        seasonId: currentSeason.id,
+        seasonId: season.id,
         track: row.track,
         car: row.vehicle,
         classCode: row.eventType,
@@ -280,7 +335,7 @@ async function main() {
   await saveJson('results/official.json', finalResults);
 
   console.log(
-    `Done. Updated ${playersUpdated}/${players.length} player(s), touched ${touchedEventIds.size} event(s). ${warnCount} warning(s).`
+    `Done. Updated ${playersUpdated}/${players.length} player(s), touched ${touchedEventIds.size} event(s) (${gapsFilledCount} past-season gap(s) filled). ${warnCount} warning(s).`
   );
 
   if (players.length > 0 && playersUpdated === 0) {

@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-aut-dromo-de-interlagos-03-jul-2025",
+  "source": "gridstats",
+  "seasonId": "summer-2025",
+  "track": "Autódromo de Interlagos",
+  "car": "Ferrari GTO",
+  "classCode": "Lap Time Challenge",
+  "startDate": "03 Jul 2025",
+  "endDate": "17 Jul 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:15:01.677Z"
+}

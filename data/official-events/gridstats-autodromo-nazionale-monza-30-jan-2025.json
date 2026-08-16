@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-autodromo-nazionale-monza-30-jan-2025",
+  "source": "gridstats",
+  "seasonId": "winter-2025",
+  "track": "Autodromo Nazionale Monza",
+  "car": "Gran Turismo F3500-A",
+  "classCode": "Lap Time Challenge",
+  "startDate": "30 Jan 2025",
+  "endDate": "13 Feb 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:15:08.152Z"
+}

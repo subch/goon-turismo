@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-n-rburgring-24h-29-jan-2026",
+  "source": "gridstats",
+  "seasonId": "winter-2026",
+  "track": "Nürburgring 24h",
+  "car": "Hyundai ELANTRA N TC",
+  "classCode": "Lap Time Challenge",
+  "startDate": "29 Jan 2026",
+  "endDate": "12 Feb 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:14:42.653Z"
+}

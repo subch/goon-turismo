@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-mount-panorama-motor-racing-circuit-02-oct-2025",
+  "source": "gridstats",
+  "seasonId": "autumn-2025",
+  "track": "Mount Panorama Motor Racing Circuit",
+  "car": "Ford Mustang Gr.4",
+  "classCode": "Lap Time Challenge",
+  "startDate": "02 Oct 2025",
+  "endDate": "16 Oct 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:14:42.669Z"
+}

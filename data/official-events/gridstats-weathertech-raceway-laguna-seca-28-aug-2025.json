@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-weathertech-raceway-laguna-seca-28-aug-2025",
+  "source": "gridstats",
+  "seasonId": "summer-2025",
+  "track": "WeatherTech Raceway Laguna Seca",
+  "car": "Chevrolet Corvette CX.R Vision Gran Turismo Concept",
+  "classCode": "Lap Time Challenge",
+  "startDate": "28 Aug 2025",
+  "endDate": "11 Sep 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:14:52.600Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-michelin-raceway-road-atlanta-09-jan-2025",
+  "source": "gridstats",
+  "seasonId": "winter-2025",
+  "track": "Michelin Raceway Road Atlanta",
+  "car": "Ford Focus RS",
+  "classCode": "Lap Time Challenge",
+  "startDate": "09 Jan 2025",
+  "endDate": "23 Jan 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:14:35.674Z"
+}

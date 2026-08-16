@@ -1,5 +1,5 @@
 ---
-import { seasons, standings, eventsForSeason, resultsForEvent, eventLabel, currentSeason } from '../lib/data';
+import { seasons, standings, eventsForSeason, resultsForEvent, eventLabel, currentSeason, wikiUrl } from '../lib/data';
 import type { Season } from '../lib/data';
 import LeaderboardTable from './LeaderboardTable.astro';
 
@@ -61,11 +61,21 @@ const cur = currentSeason();
   <div class="event-breakdown-list">
     {events.map((event) => {
       const results = resultsForEvent(event.id);
+      const trackWikiUrl = wikiUrl(event.track);
+      const carWikiUrl = wikiUrl(event.car);
       return (
         <div class="panel event-breakdown">
           <div class="event-breakdown-header">
-            <h3><a href={`/events/${event.id}/`}>{eventLabel(event)}</a></h3>
-            <span class="meta">{event.car ? `${event.car} · ` : ''}{event.startDate}</span>
+            <h3>
+              <a href={`/events/${event.id}/`}>{eventLabel(event)}</a>
+              {trackWikiUrl && (
+                <a href={trackWikiUrl} target="_blank" rel="noopener" class="wiki-link" title="View track on the GT7 wiki">wiki</a>
+              )}
+            </h3>
+            <span class="meta">
+              {event.car && (carWikiUrl ? <a href={carWikiUrl} target="_blank" rel="noopener">{event.car}</a> : event.car)}
+              {event.car ? ' · ' : ''}{event.startDate}
+            </span>
           </div>
           <LeaderboardTable results={results} />
         </div>

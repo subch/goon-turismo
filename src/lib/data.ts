@@ -172,6 +172,23 @@ export function eventDateLabel(e: EventRecord): string {
   return e.startDate || e.endDate || 'Date TBD';
 }
 
+const WIKI_BASE = 'https://gran-turismo.fandom.com/wiki/';
+
+// A trailing 2-3 letter all-caps group is a tire compound code (SH, RH, RM,
+// SM, SS, CM...), not part of the car/class name -- strip it so the wiki
+// link targets the actual page title. A parenthetical with digits (a chassis
+// code like "(992)" or "(901)") is real car-name content and is kept.
+function stripTireCode(name: string): string {
+  return name.replace(/\s*\([A-Z]{2,3}\)\s*$/, '').trim();
+}
+
+export function wikiUrl(name: string | null | undefined): string | null {
+  if (!name) return null;
+  const cleaned = stripTireCode(name);
+  if (!cleaned) return null;
+  return WIKI_BASE + encodeURIComponent(cleaned.replace(/ /g, '_'));
+}
+
 export type StandingRow = { psn: string; displayName: string; points: number; events: number };
 
 export function eventsForSeason(seasonId: string): EventRecord[] {

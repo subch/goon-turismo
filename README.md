@@ -22,6 +22,15 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 - **11 past seasons (2023 through Spring 2026)** are backfilled from the crew's original scoring
   spreadsheet via `scripts/import-historical-seasons.mjs` — safe to re-run if a season needs
   re-importing.
+- **Gap-filling from GT-GridStats.** The spreadsheet wasn't tracked consistently every season
+  (Summer/Spring in particular). The nightly GT-GridStats sync (`scrape-gridstats-web.mjs`) now
+  also scans each player's *full* event history against every past season, not just the current
+  one, and adds any (player, track, ~date) result that isn't already recorded from any source as a
+  supplemental `gridstats`-sourced event — filling real gaps without touching or duplicating
+  anything the spreadsheet already has.
+- **Each Time Trial's track and car link out to the [GT7 wiki](https://gran-turismo.fandom.com/wiki/Gran_Turismo_7)**
+  (best-effort — generic class-code entries like "Gr.3" from older spreadsheet rows don't always
+  resolve to a real page).
 - **Events, tune submissions, and championship round updates** all come in through GitHub Issue
   Forms, processed automatically into the site's data.
 - **Team championship standings** track round-by-round points across the season.

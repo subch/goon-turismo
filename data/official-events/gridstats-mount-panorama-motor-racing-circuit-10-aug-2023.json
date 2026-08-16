@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-mount-panorama-motor-racing-circuit-10-aug-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "Mount Panorama Motor Racing Circuit",
+  "car": "Maserati MC20",
+  "classCode": "Lap Time Challenge",
+  "startDate": "10 Aug 2023",
+  "endDate": "24 Aug 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:15:04.095Z"
+}
