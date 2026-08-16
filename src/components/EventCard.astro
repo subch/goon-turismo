@@ -1,5 +1,5 @@
 ---
-import { eventLabel, eventDateLabel, trackImageUrl } from '../lib/data';
+import { eventLabel, eventDateLabel, trackImageUrl, isEventActive } from '../lib/data';
 import type { EventRecord } from '../lib/data';
 
 interface Props {
@@ -7,15 +7,7 @@ interface Props {
 }
 
 const { event } = Astro.props;
-const statusBadge = event.source === 'custom' || event.source === 'historical' ? null : (event.status ?? 'unknown');
-const sourceLabel =
-  event.source === 'custom'
-    ? 'Custom'
-    : event.source === 'gridstats'
-      ? 'GT-GridStats'
-      : event.source === 'historical'
-        ? 'Historical'
-        : 'dg-edge';
+const active = isEventActive(event);
 const imgUrl = trackImageUrl(event.track);
 ---
 <a class="card event-card" href={`/events/${event.id}/`}>
@@ -25,10 +17,7 @@ const imgUrl = trackImageUrl(event.track);
     </div>
   )}
   <div class="event-card-body">
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <span class={`badge ${event.source}`}>{sourceLabel}</span>
-      {statusBadge && <span class={`badge ${statusBadge}`}>{statusBadge}</span>}
-    </div>
+    {active && <span class="badge live">Active</span>}
     <h3>{eventLabel(event)}</h3>
     <div class="meta">{event.track}{event.car ? ` · ${event.car}` : ''}</div>
     <div class="meta">{eventDateLabel(event)}</div>

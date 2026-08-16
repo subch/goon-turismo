@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import LeaderboardTable from '../../components/LeaderboardTable.astro';
-import { allEvents, resultsForEvent, eventLabel, eventDateLabel, wikiUrl, trackImageUrl } from '../../lib/data';
+import { allEvents, resultsForEvent, eventLabel, eventDateLabel, wikiUrl, trackImageUrl, isEventActive } from '../../lib/data';
 
 export function getStaticPaths() {
   return allEvents.map((event) => ({
@@ -15,14 +15,7 @@ const results = resultsForEvent(event.id);
 const trackWikiUrl = wikiUrl(event.track);
 const carWikiUrl = wikiUrl(event.car);
 const imgUrl = trackImageUrl(event.track);
-const sourceLabel =
-  event.source === 'custom'
-    ? 'Custom'
-    : event.source === 'gridstats'
-      ? 'GT-GridStats'
-      : event.source === 'historical'
-        ? 'Historical'
-        : 'dg-edge';
+const active = isEventActive(event);
 ---
 <Base title={eventLabel(event)}>
   {imgUrl && (
@@ -30,7 +23,7 @@ const sourceLabel =
       <img src={imgUrl} alt="" loading="lazy" onerror="this.closest('.event-hero').remove()" />
     </div>
   )}
-  <span class={`badge ${event.source}`}>{sourceLabel}</span>
+  {active && <span class="badge live">Active</span>}
   <h1>{eventLabel(event)}</h1>
   <p class="subtitle">
     {event.track && (trackWikiUrl ? <a href={trackWikiUrl} target="_blank" rel="noopener">{event.track}</a> : <>{event.track}</>)}

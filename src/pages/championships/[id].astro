@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { championships, playerByPsn } from '../../lib/data';
+import { championships, playerByPsn, formatDate } from '../../lib/data';
 
 export function getStaticPaths() {
   return championships.map((c) => ({
@@ -24,7 +24,7 @@ const updateIssueUrl = 'https://github.com/subch/goon-turismo/issues/new?templat
           <th>#</th>
           <th>Team</th>
           <th>Roster</th>
-          {championship.rounds.map((r) => <th>{r.track}<br/><span style="font-weight:400;">{r.date}</span></th>)}
+          {championship.rounds.map((r) => <th>{r.track}<br/><span style="font-weight:400;">{formatDate(r.date)}</span></th>)}
           <th>Total</th>
         </tr>
       </thead>

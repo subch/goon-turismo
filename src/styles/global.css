@@ -221,32 +221,6 @@ tbody tr:hover {
   color: var(--live);
 }
 
-.badge.ended,
-.badge.unknown {
-  background: rgba(154, 161, 172, 0.15);
-  color: var(--text-dim);
-}
-
-.badge.custom {
-  background: rgba(255, 176, 32, 0.15);
-  color: var(--accent-2);
-}
-
-.badge.dg-edge {
-  background: rgba(255, 59, 59, 0.15);
-  color: var(--accent);
-}
-
-.badge.gridstats {
-  background: rgba(59, 130, 246, 0.15);
-  color: var(--accent-3);
-}
-
-.badge.historical {
-  background: rgba(154, 161, 172, 0.15);
-  color: var(--text-dim);
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -331,6 +305,23 @@ a.card:hover .event-card-photo img {
   padding: 28px;
   color: var(--text-dim);
   text-align: center;
+}
+
+.event-breakdown-active {
+  border-color: rgba(47, 191, 113, 0.35);
+}
+
+.event-breakdown-photo {
+  width: 100%;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.event-breakdown-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .btn {

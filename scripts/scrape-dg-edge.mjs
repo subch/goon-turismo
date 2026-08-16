@@ -42,7 +42,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import { loadPointsConfig, rankAndScoreResults, parseTimeToMs } from './lib/points.mjs';
-import { seasonForDate, humanDateToIso } from './lib/seasons.mjs';
+import { seasonForDate, humanDateToIso, buildEventMatchIndex, findMatchingEventId } from './lib/seasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -275,6 +275,12 @@ async function main() {
     resultsByEvent.get(r.eventId).push(r);
   }
 
+  const eventById = new Map();
+  for (const id of eventIndex) {
+    const ev = await loadJson(`official-events/${id}.json`, null);
+    if (ev) eventById.set(id, ev);
+  }
+
   for (const url of eventUrls) {
     const scraped = await scrapeEventDetail(url);
     await sleep(REQUEST_DELAY_MS);
@@ -286,13 +292,33 @@ async function main() {
     if (season) event.seasonId = season.id;
     else warn(`Could not match event "${event.id}" (${event.track ?? 'unknown track'}) to a tracked season -- date: ${event.startDate ?? 'unknown'}`);
 
-    await saveJson(`official-events/${event.id}.json`, event);
-    if (!eventIndex.includes(event.id)) {
-      eventIndex.push(event.id);
+    // GT-GridStats independently discovers the same real-world Time Trials
+    // under completely different ids/naming -- if one of its scrapes
+    // already created a matching event this run should enrich, not
+    // duplicate. Never clobber fields the other source already filled in.
+    const matchIndex = buildEventMatchIndex([...eventById.values()]);
+    const matchedId = season && eventIso ? findMatchingEventId(matchIndex, season.id, event.track, eventIso) : null;
+    const finalId = matchedId ?? event.id;
+    const existingEvent = eventById.get(finalId);
+    const eventRecord = existingEvent
+      ? {
+          ...existingEvent,
+          car: existingEvent.car ?? event.car,
+          classCode: existingEvent.classCode ?? event.classCode,
+          status: event.status !== 'unknown' ? event.status : existingEvent.status,
+          dgEdgeUrl: existingEvent.dgEdgeUrl ?? event.dgEdgeUrl,
+          lastScraped: new Date().toISOString(),
+        }
+      : event;
+
+    await saveJson(`official-events/${finalId}.json`, eventRecord);
+    eventById.set(finalId, eventRecord);
+    if (!eventIndex.includes(finalId)) {
+      eventIndex.push(finalId);
     }
 
     if (results.length > 0) {
-      resultsByEvent.set(event.id, results);
+      resultsByEvent.set(finalId, results);
     }
   }
 

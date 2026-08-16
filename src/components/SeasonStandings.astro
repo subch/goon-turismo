@@ -1,5 +1,18 @@
 ---
-import { seasons, standings, eventsForSeason, resultsForEvent, eventLabel, currentSeason, wikiUrl } from '../lib/data';
+import {
+  seasons,
+  standings,
+  eventsForSeason,
+  resultsForEvent,
+  eventLabel,
+  eventDateLabel,
+  currentSeason,
+  wikiUrl,
+  trackImageUrl,
+  isEventActive,
+  formatDate,
+  toComparableIso,
+} from '../lib/data';
 import type { Season } from '../lib/data';
 import LeaderboardTable from './LeaderboardTable.astro';
 
@@ -9,11 +22,15 @@ interface Props {
 
 const { season } = Astro.props;
 const rows = standings(season.id);
-const events = eventsForSeason(season.id).sort((a, b) => (b.startDate ?? '').localeCompare(a.startDate ?? ''));
+const allEvents = eventsForSeason(season.id).sort(
+  (a, b) => (toComparableIso(b.startDate) ?? '').localeCompare(toComparableIso(a.startDate) ?? '')
+);
+const activeEvents = allEvents.filter(isEventActive);
+const otherEvents = allEvents.filter((e) => !isEventActive(e));
 const cur = currentSeason();
 ---
 <p class="subtitle">
-  {season.startDate} {season.endDate ? `– ${season.endDate}` : '– present'}
+  {formatDate(season.startDate)} {season.endDate ? `– ${formatDate(season.endDate)}` : '– present'}
   {season.current && <span class="badge live" style="margin-left:8px;">Current</span>}
 </p>
 
@@ -54,12 +71,49 @@ const cur = currentSeason();
   )}
 </div>
 
-<h2>Time Trials this season</h2>
-{events.length === 0 ? (
-  <div class="empty-state">No Time Trials recorded for this season yet.</div>
+{activeEvents.length > 0 && (
+  <>
+    <h2>Active Time Trials</h2>
+    <div class="event-breakdown-list">
+      {activeEvents.map((event) => {
+        const results = resultsForEvent(event.id);
+        const trackWikiUrl = wikiUrl(event.track);
+        const carWikiUrl = wikiUrl(event.car);
+        const imgUrl = trackImageUrl(event.track);
+        return (
+          <div class="panel event-breakdown event-breakdown-active">
+            {imgUrl && (
+              <div class="event-breakdown-photo">
+                <img src={imgUrl} alt="" loading="lazy" onerror="this.closest('.event-breakdown-photo').remove()" />
+              </div>
+            )}
+            <div class="event-breakdown-header">
+              <h3>
+                <span class="badge live">Active</span>
+                <a href={`/events/${event.id}/`}>{eventLabel(event)}</a>
+                {trackWikiUrl && (
+                  <a href={trackWikiUrl} target="_blank" rel="noopener" class="wiki-link" title="View track on the GT7 wiki">wiki</a>
+                )}
+              </h3>
+              <span class="meta">
+                {event.car && (carWikiUrl ? <a href={carWikiUrl} target="_blank" rel="noopener">{event.car}</a> : event.car)}
+                {event.car ? ' · ' : ''}{eventDateLabel(event)}
+              </span>
+            </div>
+            <LeaderboardTable results={results} />
+          </div>
+        );
+      })}
+    </div>
+  </>
+)}
+
+<h2>{activeEvents.length > 0 ? 'Other Time Trials this season' : 'Time Trials this season'}</h2>
+{otherEvents.length === 0 ? (
+  <div class="empty-state">No {activeEvents.length > 0 ? 'other ' : ''}Time Trials recorded for this season yet.</div>
 ) : (
   <div class="event-breakdown-list">
-    {events.map((event) => {
+    {otherEvents.map((event) => {
       const results = resultsForEvent(event.id);
       const trackWikiUrl = wikiUrl(event.track);
       const carWikiUrl = wikiUrl(event.car);
@@ -74,7 +128,7 @@ const cur = currentSeason();
             </h3>
             <span class="meta">
               {event.car && (carWikiUrl ? <a href={carWikiUrl} target="_blank" rel="noopener">{event.car}</a> : event.car)}
-              {event.car ? ' · ' : ''}{event.startDate}
+              {event.car ? ' · ' : ''}{eventDateLabel(event)}
             </span>
           </div>
           <LeaderboardTable results={results} />

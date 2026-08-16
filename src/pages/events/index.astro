@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 import EventCard from '../../components/EventCard.astro';
-import { allEvents } from '../../lib/data';
+import { allEvents, toComparableIso } from '../../lib/data';
 
 const sorted = [...allEvents].sort((a, b) => {
-  const da = a.startDate || a.date || '';
-  const db = b.startDate || b.date || '';
+  const da = toComparableIso(a.startDate) ?? a.date ?? '';
+  const db = toComparableIso(b.startDate) ?? b.date ?? '';
   return db.localeCompare(da);
 });
 ---

@@ -166,10 +166,72 @@ export function eventLabel(e: EventRecord): string {
   return e.name || e.track || e.id;
 }
 
+const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MONTH_LOOKUP: Record<string, number> = {
+  jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11,
+};
+
+/**
+ * Every date on the site displays as "D MMM YYYY" (e.g. "23 Jul 2026"),
+ * regardless of which of the two raw formats it's stored in -- ISO
+ * (historical/spreadsheet-imported events) or "D Month YYYY" /
+ * "DD Mon YYYY" (dg-edge/GT-GridStats scraped events). Pure string
+ * parsing, deliberately not routed through `Date`, to avoid timezone-
+ * dependent off-by-one-day shifts when formatting an ISO date back out.
+ */
+export function formatDate(dateStr: string | null | undefined): string | null {
+  if (!dateStr) return null;
+  const trimmed = dateStr.trim();
+  const iso = trimmed.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (iso) {
+    const [, y, m, d] = iso;
+    return `${parseInt(d, 10)} ${MONTH_NAMES[parseInt(m, 10) - 1]} ${y}`;
+  }
+  const human = trimmed.match(/^(\d{1,2})\s+([A-Za-z]{3,})\s+(\d{4})$/);
+  if (human) {
+    const [, d, mon, y] = human;
+    const idx = MONTH_LOOKUP[mon.slice(0, 3).toLowerCase()];
+    if (idx === undefined) return trimmed;
+    return `${parseInt(d, 10)} ${MONTH_NAMES[idx]} ${y}`;
+  }
+  return trimmed;
+}
+
+/** ISO YYYY-MM-DD form of any stored date, for chronological sorting/comparison
+ * across the site's two raw date formats (ISO vs "D Month YYYY"). */
+export function toComparableIso(dateStr: string | null | undefined): string | null {
+  if (!dateStr) return null;
+  const trimmed = dateStr.trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) return trimmed;
+  const human = trimmed.match(/^(\d{1,2})\s+([A-Za-z]{3,})\s+(\d{4})$/);
+  if (!human) return null;
+  const [, d, mon, y] = human;
+  const idx = MONTH_LOOKUP[mon.slice(0, 3).toLowerCase()];
+  if (idx === undefined) return null;
+  return `${y}-${String(idx + 1).padStart(2, '0')}-${d.padStart(2, '0')}`;
+}
+
+/**
+ * Whether an event's [startDate, endDate] window covers today (build time,
+ * compared as UTC calendar dates) -- used to surface "this Time Trial is
+ * live right now" regardless of source, since the stored `status` field is
+ * inconsistent (dg-edge sometimes says "live", GT-GridStats-sourced events
+ * never set it, historical ones are always long over).
+ */
+export function isEventActive(e: EventRecord): boolean {
+  const startIso = toComparableIso(e.startDate);
+  if (!startIso) return false;
+  const endIso = toComparableIso(e.endDate) ?? startIso;
+  const todayIso = new Date().toISOString().slice(0, 10);
+  return todayIso >= startIso && todayIso <= endIso;
+}
+
 export function eventDateLabel(e: EventRecord): string {
-  if (e.date) return e.date;
-  if (e.startDate && e.endDate && e.startDate !== e.endDate) return `${e.startDate} – ${e.endDate}`;
-  return e.startDate || e.endDate || 'Date TBD';
+  if (e.date) return formatDate(e.date) ?? e.date;
+  const start = formatDate(e.startDate);
+  const end = formatDate(e.endDate);
+  if (start && end && start !== end) return `${start} – ${end}`;
+  return start || end || 'Date TBD';
 }
 
 const WIKI_BASE = 'https://gran-turismo.fandom.com/wiki/';

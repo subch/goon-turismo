@@ -30,8 +30,16 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
   nightly GT-GridStats sync (`scrape-gridstats-web.mjs`) scans each player's *full* event history —
   paginating through every page, not just the first — against every past season, not just the
   current one, and adds any (player, track, ~date) result that isn't already recorded from any
-  source as a supplemental `gridstats`-sourced event — filling real gaps without touching or
-  duplicating anything the spreadsheet already has.
+  source, filling real gaps without touching or duplicating anything the spreadsheet already has.
+- **No duplicate events.** dg-edge and GT-GridStats independently discover the same real-world
+  Time Trials under completely different ids and track-name spellings. Every scrape matches new
+  events against everything already on file (by season + fuzzy track name + date, shared logic in
+  `scripts/lib/seasons.mjs`) before deciding whether to attach to an existing event or create a new
+  one — so the same real Time Trial only ever shows up once, with data merged in from whichever
+  sources found it. Source labels (dg-edge/GT-GridStats/historical) aren't shown in the UI; they
+  only matter internally for merge priority.
+- **The current season's still-running Time Trials** are called out as "Active" and shown up top
+  with a track photo, ahead of the season's other (finished) events for that same season.
 - **Each Time Trial's track and car link out to the [GT7 wiki](https://gran-turismo.fandom.com/wiki/Gran_Turismo_7)**
   (best-effort, guessed from the name on file — roughly half resolve to a real page in practice,
   since track/car names aren't spelled consistently across the site's different data sources and
@@ -44,6 +52,9 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
   Forms, processed automatically into the site's data.
 - **Team championship standings** track round-by-round points across the season, with roster names
   linked to player pages where the PSN is known.
+- **Dates always display as "D MMM YYYY"** (e.g. "23 Jul 2026") regardless of which of the two raw
+  formats they're stored in (ISO for historical/spreadsheet-imported events, "D Month YYYY" for
+  scraped ones).
 - **Tune archive** for GT7 car setups/parts lists, browsable by car.
 - The site rebuilds and redeploys automatically on every data update.
 

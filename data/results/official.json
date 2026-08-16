@@ -9736,7 +9736,7 @@
     "points": 22
   },
   {
-    "eventId": "gridstats-deep-forest-raceway-reverse-06-aug-2026",
+    "eventId": "625",
     "psn": "bravemen84",
     "timeRaw": "1:09.504",
     "timeMs": 69504,
@@ -9745,7 +9745,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-deep-forest-raceway-reverse-06-aug-2026",
+    "eventId": "625",
     "psn": "superpharts",
     "timeRaw": "1:10.043",
     "timeMs": 70043,
@@ -15352,7 +15352,7 @@
     "points": 47
   },
   {
-    "eventId": "gridstats-daytona-road-course-06-aug-2026",
+    "eventId": "626",
     "psn": "bravemen84",
     "timeRaw": "1:53.195",
     "timeMs": 113195,
@@ -15361,7 +15361,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-daytona-road-course-06-aug-2026",
+    "eventId": "626",
     "psn": "ashy_wenises",
     "timeRaw": "1:53.491",
     "timeMs": 113491,
@@ -15370,7 +15370,7 @@
     "points": 97
   },
   {
-    "eventId": "gridstats-daytona-road-course-06-aug-2026",
+    "eventId": "626",
     "psn": "devmotron",
     "timeRaw": "1:54.864",
     "timeMs": 114864,
@@ -15379,7 +15379,7 @@
     "points": 85
   },
   {
-    "eventId": "gridstats-daytona-road-course-06-aug-2026",
+    "eventId": "626",
     "psn": "rickiep00h",
     "timeRaw": "1:55.114",
     "timeMs": 115114,
@@ -19402,7 +19402,7 @@
     "points": 81
   },
   {
-    "eventId": "gridstats-autodrome-lago-maggiore-east-end-13-aug-2026",
+    "eventId": "630",
     "psn": "bravemen84",
     "timeRaw": "0:52.818",
     "timeMs": 52818,
@@ -19411,7 +19411,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
+    "eventId": "617",
     "psn": "bravemen84",
     "timeRaw": "1:28.172",
     "timeMs": 88172,
@@ -19420,7 +19420,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
+    "eventId": "617",
     "psn": "devmotron",
     "timeRaw": "1:29.854",
     "timeMs": 89854,
@@ -19429,7 +19429,7 @@
     "points": 81
   },
   {
-    "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
+    "eventId": "617",
     "psn": "superpharts",
     "timeRaw": "1:30.328",
     "timeMs": 90328,
@@ -19438,7 +19438,7 @@
     "points": 76
   },
   {
-    "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
+    "eventId": "617",
     "psn": "sinder_22",
     "timeRaw": "1:30.889",
     "timeMs": 90889,
@@ -19447,7 +19447,7 @@
     "points": 69
   },
   {
-    "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
+    "eventId": "617",
     "psn": "rickiep00h",
     "timeRaw": "1:30.967",
     "timeMs": 90967,
@@ -19456,7 +19456,7 @@
     "points": 68
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "bravemen84",
     "timeRaw": "1:57.597",
     "timeMs": 117597,
@@ -19465,7 +19465,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "ashy_wenises",
     "timeRaw": "1:59.666",
     "timeMs": 119666,
@@ -19474,7 +19474,7 @@
     "points": 82
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "superpharts",
     "timeRaw": "1:59.919",
     "timeMs": 119919,
@@ -19483,7 +19483,7 @@
     "points": 80
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "devmotron",
     "timeRaw": "2:00.712",
     "timeMs": 120712,
@@ -19492,7 +19492,7 @@
     "points": 74
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "rickiep00h",
     "timeRaw": "2:02.453",
     "timeMs": 122453,
@@ -19501,7 +19501,7 @@
     "points": 59
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "sinder_22",
     "timeRaw": "2:02.715",
     "timeMs": 122715,
@@ -19510,7 +19510,7 @@
     "points": 56
   },
   {
-    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "eventId": "613",
     "psn": "dog_nougat",
     "timeRaw": "2:02.841",
     "timeMs": 122841,
@@ -19519,7 +19519,7 @@
     "points": 55
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+    "eventId": "607",
     "psn": "bravemen84",
     "timeRaw": "2:31.996",
     "timeMs": 151996,
@@ -19528,7 +19528,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+    "eventId": "607",
     "psn": "empire_of_ravens",
     "timeRaw": "2:33.128",
     "timeMs": 153128,
@@ -19537,7 +19537,7 @@
     "points": 93
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+    "eventId": "607",
     "psn": "devmotron",
     "timeRaw": "2:33.741",
     "timeMs": 153741,
@@ -19546,7 +19546,7 @@
     "points": 89
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+    "eventId": "607",
     "psn": "rickiep00h",
     "timeRaw": "2:34.697",
     "timeMs": 154697,
@@ -19555,7 +19555,7 @@
     "points": 82
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+    "eventId": "607",
     "psn": "superpharts",
     "timeRaw": "2:35.298",
     "timeMs": 155298,
@@ -19564,7 +19564,7 @@
     "points": 78
   },
   {
-    "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+    "eventId": "603",
     "psn": "bravemen84",
     "timeRaw": "1:40.164",
     "timeMs": 100164,
@@ -19573,7 +19573,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+    "eventId": "603",
     "psn": "empire_of_ravens",
     "timeRaw": "1:40.577",
     "timeMs": 100577,
@@ -19582,7 +19582,7 @@
     "points": 96
   },
   {
-    "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+    "eventId": "603",
     "psn": "devmotron",
     "timeRaw": "1:41.406",
     "timeMs": 101406,
@@ -19591,7 +19591,7 @@
     "points": 88
   },
   {
-    "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+    "eventId": "603",
     "psn": "superpharts",
     "timeRaw": "1:41.426",
     "timeMs": 101426,
@@ -19600,7 +19600,7 @@
     "points": 87
   },
   {
-    "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+    "eventId": "603",
     "psn": "rickiep00h",
     "timeRaw": "1:43.235",
     "timeMs": 103235,
@@ -19609,7 +19609,7 @@
     "points": 69
   },
   {
-    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "eventId": "599",
     "psn": "bravemen84",
     "timeRaw": "0:58.579",
     "timeMs": 58579,
@@ -19618,7 +19618,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "eventId": "599",
     "psn": "empire_of_ravens",
     "timeRaw": "0:58.740",
     "timeMs": 58740,
@@ -19627,7 +19627,7 @@
     "points": 97
   },
   {
-    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "eventId": "599",
     "psn": "superpharts",
     "timeRaw": "0:59.455",
     "timeMs": 59455,
@@ -19636,7 +19636,7 @@
     "points": 85
   },
   {
-    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "eventId": "599",
     "psn": "devmotron",
     "timeRaw": "1:00.093",
     "timeMs": 60093,
@@ -19645,7 +19645,7 @@
     "points": 74
   },
   {
-    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "eventId": "599",
     "psn": "ashy_wenises",
     "timeRaw": "1:00.502",
     "timeMs": 60502,
@@ -19654,7 +19654,7 @@
     "points": 67
   },
   {
-    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "eventId": "599",
     "psn": "rickiep00h",
     "timeRaw": "1:00.800",
     "timeMs": 60800,
@@ -19663,7 +19663,7 @@
     "points": 62
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
+    "eventId": "598",
     "psn": "bravemen84",
     "timeRaw": "2:17.657",
     "timeMs": 137657,
@@ -19672,7 +19672,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
+    "eventId": "598",
     "psn": "empire_of_ravens",
     "timeRaw": "2:18.417",
     "timeMs": 138417,
@@ -19681,7 +19681,7 @@
     "points": 94
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
+    "eventId": "598",
     "psn": "devmotron",
     "timeRaw": "2:19.120",
     "timeMs": 139120,
@@ -19690,7 +19690,7 @@
     "points": 89
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
+    "eventId": "598",
     "psn": "superpharts",
     "timeRaw": "2:19.418",
     "timeMs": 139418,
@@ -19699,7 +19699,7 @@
     "points": 87
   },
   {
-    "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
+    "eventId": "598",
     "psn": "rickiep00h",
     "timeRaw": "2:21.015",
     "timeMs": 141015,
@@ -19708,7 +19708,7 @@
     "points": 76
   },
   {
-    "eventId": "gridstats-red-bull-ring-18-jun-2026",
+    "eventId": "594",
     "psn": "bravemen84",
     "timeRaw": "1:32.251",
     "timeMs": 92251,
@@ -19717,7 +19717,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-red-bull-ring-18-jun-2026",
+    "eventId": "594",
     "psn": "ashy_wenises",
     "timeRaw": "1:32.628",
     "timeMs": 92628,
@@ -19726,7 +19726,7 @@
     "points": 96
   },
   {
-    "eventId": "gridstats-red-bull-ring-18-jun-2026",
+    "eventId": "594",
     "psn": "superpharts",
     "timeRaw": "1:33.190",
     "timeMs": 93190,
@@ -19735,7 +19735,7 @@
     "points": 90
   },
   {
-    "eventId": "gridstats-red-bull-ring-18-jun-2026",
+    "eventId": "594",
     "psn": "empire_of_ravens",
     "timeRaw": "1:33.578",
     "timeMs": 93578,
@@ -19744,7 +19744,7 @@
     "points": 86
   },
   {
-    "eventId": "gridstats-red-bull-ring-18-jun-2026",
+    "eventId": "594",
     "psn": "devmotron",
     "timeRaw": "1:34.049",
     "timeMs": 94049,
@@ -19753,7 +19753,7 @@
     "points": 81
   },
   {
-    "eventId": "gridstats-red-bull-ring-18-jun-2026",
+    "eventId": "594",
     "psn": "rickiep00h",
     "timeRaw": "1:35.007",
     "timeMs": 95007,
@@ -19762,7 +19762,7 @@
     "points": 70
   },
   {
-    "eventId": "gridstats-24-heures-du-mans-race-track-11-jun-2026",
+    "eventId": "590",
     "psn": "ashy_wenises",
     "timeRaw": "3:26.504",
     "timeMs": 206504,
@@ -19771,7 +19771,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-24-heures-du-mans-race-track-11-jun-2026",
+    "eventId": "590",
     "psn": "bravemen84",
     "timeRaw": "3:28.235",
     "timeMs": 208235,
@@ -19780,7 +19780,7 @@
     "points": 92
   },
   {
-    "eventId": "gridstats-24-heures-du-mans-race-track-11-jun-2026",
+    "eventId": "590",
     "psn": "superpharts",
     "timeRaw": "3:29.132",
     "timeMs": 209132,
@@ -19789,7 +19789,7 @@
     "points": 87
   },
   {
-    "eventId": "gridstats-24-heures-du-mans-race-track-11-jun-2026",
+    "eventId": "590",
     "psn": "devmotron",
     "timeRaw": "3:31.456",
     "timeMs": 211456,
@@ -19798,7 +19798,7 @@
     "points": 76
   },
   {
-    "eventId": "gridstats-24-heures-du-mans-race-track-11-jun-2026",
+    "eventId": "590",
     "psn": "rickiep00h",
     "timeRaw": "3:32.371",
     "timeMs": 212371,
@@ -19807,7 +19807,7 @@
     "points": 72
   },
   {
-    "eventId": "gridstats-24-heures-du-mans-race-track-11-jun-2026",
+    "eventId": "590",
     "psn": "sinder_22",
     "timeRaw": "3:36.303",
     "timeMs": 216303,
@@ -19987,7 +19987,7 @@
     "points": 62
   },
   {
-    "eventId": "gridstats-alsace-village-30-jul-2026",
+    "eventId": "624",
     "psn": "bravemen84",
     "timeRaw": "2:17.454",
     "timeMs": 137454,
@@ -19996,7 +19996,7 @@
     "points": 100
   },
   {
-    "eventId": "gridstats-alsace-village-30-jul-2026",
+    "eventId": "624",
     "psn": "ashy_wenises",
     "timeRaw": "2:18.181",
     "timeMs": 138181,
@@ -20005,7 +20005,7 @@
     "points": 95
   },
   {
-    "eventId": "gridstats-alsace-village-30-jul-2026",
+    "eventId": "624",
     "psn": "dog_nougat",
     "timeRaw": "2:18.993",
     "timeMs": 138993,

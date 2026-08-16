@@ -25,24 +25,31 @@
  *
  * Each player's "Event History" is their FULL lifetime history, not just the
  * current season, so this script does two things with it:
- *   1. Current season: always refresh -- create/update every event + result
- *      every run, same as live tracking has always worked.
+ *   1. Current season: always refresh -- create/update every result every
+ *      run, same as live tracking has always worked.
  *   2. Past seasons: fill gaps only. The spreadsheet-derived historical
  *      seasons are authoritative, but some (summer/spring in particular)
  *      weren't tracked consistently by whoever was filling in the sheet that
  *      week. If GT-GridStats has a result for a (player, track, ~date) that
- *      isn't already recorded from ANY source, add it as a supplemental
- *      'gridstats'-sourced event/result -- but never touch anything already
- *      covered, so the spreadsheet import stays authoritative where it has
- *      data. Track-name matching is fuzzy (case/punctuation-insensitive) with
- *      a few days' date tolerance, since sources format both differently.
+ *      isn't already recorded from ANY source, add it -- but never touch a
+ *      player's result that's already covered, so the spreadsheet import
+ *      stays authoritative where it has data.
  *
- * This event data is a separate, clearly-labeled source ('gridstats') from
- * dg-edge's official-events -- results are merged per-event-id, so this
- * script only ever touches the event ids it scraped this run and leaves
- * dg-edge's entries alone. Once the real GT-GridStats API token is in hand,
- * this script (and its workflow) should be retired in favor of
- * scrape-gridstats.mjs, which returns richer, structured data.
+ * Every scraped row is matched against ALL existing events (any source, any
+ * season) by (season, normalized track, ~date) before deciding what to do
+ * with it -- dg-edge and GT-GridStats both discover the same real-world
+ * Time Trials independently under completely different ids/naming, so
+ * without this matching step every run would mint a duplicate
+ * 'gridstats'-sourced event for something dg-edge already has. When a match
+ * is found, the result attaches to that existing event and only its
+ * genuinely-missing fields (car/classCode) get filled in -- nothing gets
+ * overwritten or re-sourced. Track-name matching is fuzzy
+ * (case/punctuation-insensitive) with a few days' date tolerance, since
+ * sources format both differently.
+ *
+ * Once the real GT-GridStats API token is in hand, this script (and its
+ * workflow) should be retired in favor of scrape-gridstats.mjs, which
+ * returns richer, structured data.
  *
  * Run locally with: npm run scrape:gridstats-web
  */
@@ -51,7 +58,13 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import { loadPointsConfig, rankAndScoreResults, parseTimeToMs } from './lib/points.mjs';
-import { seasonForDate, humanDateToIso } from './lib/seasons.mjs';
+import {
+  seasonForDate,
+  humanDateToIso,
+  normalizeTrack,
+  buildEventMatchIndex,
+  findMatchingEventId,
+} from './lib/seasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -79,10 +92,6 @@ function slugify(str) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
-}
-
-function normalizeTrack(name) {
-  return String(name ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
 function daysBetween(iso1, iso2) {
@@ -258,14 +267,24 @@ async function main() {
     resultsByEvent.get(r.eventId).push(r);
   }
 
-  // Build a (psn, season, track) -> [dates already recorded] lookup from
-  // every existing event, across every source, so past-season backfill only
-  // ever fills genuine gaps and never touches/duplicates what's already there.
+  // Load every existing event (any source) so newly-scraped rows can be
+  // matched against them by (season, normalized track, ~date) instead of
+  // always minting a fresh gridstats-prefixed event -- dg-edge and
+  // GT-GridStats both discover the same real-world Time Trials
+  // independently under totally different ids/naming, so without this every
+  // run was creating a duplicate "gridstats-..." event for something
+  // dg-edge (or a prior scrape) already had.
   const eventById = new Map();
   for (const id of eventIndex) {
     const ev = await loadJson(`official-events/${id}.json`, null);
     if (ev) eventById.set(id, ev);
   }
+  let eventMatchIndex = buildEventMatchIndex([...eventById.values()]);
+
+  // (psn, season, track) -> [dates already recorded], so past-season
+  // backfill only ever fills genuine gaps for a player who doesn't already
+  // have this result from any source -- separate from the id-matching
+  // above, which is about *which event* to attach to, not *whether to*.
   const coveredByPsnSeasonTrack = new Map();
   for (const r of allResults) {
     const ev = eventById.get(r.eventId);
@@ -311,22 +330,40 @@ async function main() {
         gapsFilledCount++;
       }
 
-      const eventId = `gridstats-${slugify(row.track)}-${slugify(row.startDate ?? 'unknown')}`;
+      // Reuse an existing event (any source) representing the same
+      // real-world Time Trial if one already exists, rather than minting a
+      // duplicate. Fill in only fields that existing event is missing --
+      // never clobber data another source already provided.
+      const matchedId = findMatchingEventId(eventMatchIndex, season.id, row.track, eventIso);
+      const eventId = matchedId ?? `gridstats-${slugify(row.track)}-${slugify(row.startDate ?? 'unknown')}`;
       touchedEventIds.add(eventId);
 
       if (!eventIndex.includes(eventId)) eventIndex.push(eventId);
-      await saveJson(`official-events/${eventId}.json`, {
-        id: eventId,
-        source: 'gridstats',
-        seasonId: season.id,
-        track: row.track,
-        car: row.vehicle,
-        classCode: row.eventType,
-        startDate: row.startDate,
-        endDate: row.endDate,
-        status: 'unknown',
-        lastScraped: new Date().toISOString(),
-      });
+      const existingEvent = eventById.get(eventId);
+      const eventRecord = existingEvent
+        ? {
+            ...existingEvent,
+            car: existingEvent.car ?? row.vehicle,
+            classCode: existingEvent.classCode ?? row.eventType,
+            lastScraped: new Date().toISOString(),
+          }
+        : {
+            id: eventId,
+            source: 'gridstats',
+            seasonId: season.id,
+            track: row.track,
+            car: row.vehicle,
+            classCode: row.eventType,
+            startDate: row.startDate,
+            endDate: row.endDate,
+            status: 'unknown',
+            lastScraped: new Date().toISOString(),
+          };
+      await saveJson(`official-events/${eventId}.json`, eventRecord);
+      eventById.set(eventId, eventRecord);
+      if (!existingEvent) {
+        eventMatchIndex = buildEventMatchIndex([...eventById.values()]);
+      }
 
       const existing = resultsByEvent.get(eventId) ?? [];
       const withoutThisPlayer = existing.filter((r) => r.psn.toLowerCase() !== player.psn.toLowerCase());
