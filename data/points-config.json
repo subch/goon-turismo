@@ -1,0 +1,6 @@
+{
+  "_comment": "Points awarded by finishing rank WITHIN THE GROUP (i.e. rank among tracked friends in a single event), not global dg-edge rank. Adjust this once we know the group's historical scoring system from the sheet. Any rank beyond the array length gets 'pointsBeyond'.",
+  "pointsByRank": [20, 17, 15, 13, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+  "pointsBeyond": 1,
+  "participationBonus": 0
+}

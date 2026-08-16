@@ -1,0 +1,20 @@
+---
+import { eventLabel, eventDateLabel } from '../lib/data';
+import type { EventRecord } from '../lib/data';
+
+interface Props {
+  event: EventRecord;
+}
+
+const { event } = Astro.props;
+const statusBadge = event.source === 'custom' ? null : (event.status ?? 'unknown');
+---
+<a class="card" href={`/events/${event.id}/`}>
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <span class={`badge ${event.source}`}>{event.source === 'custom' ? 'Custom' : 'dg-edge'}</span>
+    {statusBadge && <span class={`badge ${statusBadge}`}>{statusBadge}</span>}
+  </div>
+  <h3>{eventLabel(event)}</h3>
+  <div class="meta">{event.track}{event.car ? ` · ${event.car}` : ''}</div>
+  <div class="meta">{eventDateLabel(event)}</div>
+</a>

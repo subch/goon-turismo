@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import EventCard from '../../components/EventCard.astro';
+import { allEvents } from '../../lib/data';
+
+const sorted = [...allEvents].sort((a, b) => {
+  const da = a.startDate || a.date || '';
+  const db = b.startDate || b.date || '';
+  return db.localeCompare(da);
+});
+---
+<Base title="Events">
+  <h1>Events</h1>
+  <p class="subtitle">Official dg-edge Time Trials (auto-tracked) plus our own custom group events.</p>
+
+  {sorted.length === 0 ? (
+    <div class="panel"><div class="empty-state">No events yet. Official events show up here once the scraper has run, and custom events show up once someone submits one.</div></div>
+  ) : (
+    <div class="grid">
+      {sorted.map((event) => <EventCard event={event} />)}
+    </div>
+  )}
+</Base>

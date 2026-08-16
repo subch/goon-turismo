@@ -1,0 +1,39 @@
+name: Scrape dg-edge.com
+
+on:
+  schedule:
+    # Every 6 hours. dg-edge is a shared community site -- keep this modest.
+    - cron: "17 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Scrape dg-edge.com
+        run: npm run scrape:dg-edge
+
+      - name: Commit data changes
+        run: |
+          git config user.name "goon-turismo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/players.json data/official-events data/results/official.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update scraped dg-edge data"
+            git push
+          fi

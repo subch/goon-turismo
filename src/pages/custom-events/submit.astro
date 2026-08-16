@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const issueUrl = 'https://github.com/subch/goon-turismo/issues/new?template=custom-event-result.yml';
+---
+<Base title="Submit Custom Event">
+  <h1>Submit a Custom Event</h1>
+  <p class="subtitle">
+    For anything our group runs ourselves that dg-edge doesn't track. Fill out the form on GitHub and
+    it gets pulled onto the site automatically, usually within a few minutes.
+  </p>
+
+  <div class="panel" style="padding: 24px;">
+    <p>You'll need a (free) GitHub account. Click below, fill in the event name, track, date, and a
+      <code>psn: time</code> line for each driver, and submit.</p>
+    <a class="btn" href={issueUrl} target="_blank" rel="noopener">Open submission form on GitHub →</a>
+  </div>
+</Base>

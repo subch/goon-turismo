@@ -1,0 +1,59 @@
+name: Submit custom event results
+description: Log results for a group-run custom Time Trial (not tracked on dg-edge.com).
+title: "[Custom Event] "
+labels: ["custom-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this out after a custom group event and the site will pick it up automatically
+        within a few minutes. If this is another round of an event you already submitted,
+        use the *exact same Event name* so results get grouped together.
+  - type: input
+    id: event_name
+    attributes:
+      label: Event name
+      placeholder: "Friday Night Drags - Round 3"
+    validations:
+      required: true
+  - type: input
+    id: track
+    attributes:
+      label: Track
+      placeholder: "Tokyo Expressway - South Outer Loop"
+    validations:
+      required: true
+  - type: input
+    id: car
+    attributes:
+      label: Car / class (optional)
+      placeholder: "Open lobby, or e.g. Gr.3"
+    validations:
+      required: false
+  - type: input
+    id: event_date
+    attributes:
+      label: Date (YYYY-MM-DD)
+      placeholder: "2026-08-16"
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results
+      description: >
+        One line per driver, format: `psn: time`. Time can be `m:ss.mmm` or `ss.mmm`.
+        Drivers who ran but didn't set a clean time can just be listed with no time.
+      placeholder: |
+        superpharts: 1:23.456
+        friend2psn: 1:24.001
+        friend3psn: DNF
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      placeholder: "Anything worth remembering about this one."
+    validations:
+      required: false

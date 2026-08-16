@@ -1,0 +1,17 @@
+[
+  {
+    "psn": "superpharts",
+    "displayName": "superpharts",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/superpharts",
+    "stats": {
+      "edgeScore": null,
+      "globalPosition": null,
+      "countryPosition": null,
+      "eventsAttended": null,
+      "avgDelta": null,
+      "lastScraped": null
+    }
+  }
+]

@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import LeaderboardTable from '../../components/LeaderboardTable.astro';
+import { allEvents, resultsForEvent, eventLabel, eventDateLabel } from '../../lib/data';
+
+export function getStaticPaths() {
+  return allEvents.map((event) => ({
+    params: { id: event.id },
+    props: { event },
+  }));
+}
+
+const { event } = Astro.props;
+const results = resultsForEvent(event.id);
+---
+<Base title={eventLabel(event)}>
+  <span class={`badge ${event.source}`}>{event.source === 'custom' ? 'Custom' : 'dg-edge'}</span>
+  <h1>{eventLabel(event)}</h1>
+  <p class="subtitle">
+    {event.track}{event.car ? ` · ${event.car}` : ''} · {eventDateLabel(event)}
+    {event.dgEdgeUrl && <> · <a href={event.dgEdgeUrl} target="_blank" rel="noopener">view on dg-edge.com</a></>}
+  </p>
+
+  {event.notes && <p>{event.notes}</p>}
+
+  <div class="panel">
+    <LeaderboardTable results={results} />
+  </div>
+</Base>

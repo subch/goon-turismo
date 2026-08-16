@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import { players, resultsForPlayer, eventById, eventLabel } from '../../lib/data';
+
+export function getStaticPaths() {
+  return players.map((p) => ({
+    params: { psn: p.psn },
+    props: { player: p },
+  }));
+}
+
+const { player } = Astro.props;
+const results = resultsForPlayer(player.psn).sort((a, b) => (a.groupRank ?? 999) - (b.groupRank ?? 999));
+const totalPoints = results.reduce((sum, r) => sum + (r.points ?? 0), 0);
+const stats = player.stats;
+---
+<Base title={player.displayName}>
+  <h1>{player.displayName}</h1>
+  <p class="subtitle">PSN: {player.psn}{player.dgEdgeUrl && <> · <a href={player.dgEdgeUrl} target="_blank" rel="noopener">dg-edge profile</a></>}</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="meta">Season points</div>
+      <h3>{totalPoints}</h3>
+    </div>
+    <div class="card">
+      <div class="meta">Events entered (tracked)</div>
+      <h3>{results.length}</h3>
+    </div>
+    {stats?.edgeScore != null && (
+      <div class="card">
+        <div class="meta">dg-edge Edge Score</div>
+        <h3>{stats.edgeScore}</h3>
+      </div>
+    )}
+    {stats?.globalPosition != null && (
+      <div class="card">
+        <div class="meta">dg-edge Global Position</div>
+        <h3>#{stats.globalPosition}</h3>
+      </div>
+    )}
+  </div>
+
+  <h2>Event history</h2>
+  <div class="panel">
+    {results.length === 0 ? (
+      <div class="empty-state">No results recorded yet.</div>
+    ) : (
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Rank</th>
+            <th>Time</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          {results.map((r) => {
+            const ev = eventById(r.eventId);
+            return (
+              <tr>
+                <td>{ev ? <a href={`/events/${ev.id}/`}>{eventLabel(ev)}</a> : r.eventId}</td>
+                <td>{r.groupRank ?? '—'}</td>
+                <td>{r.timeRaw ?? '—'}</td>
+                <td>{r.points}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  {stats?.lastScraped && <p class="subtitle" style="margin-top:20px;">dg-edge stats last refreshed: {new Date(stats.lastScraped).toLocaleString()}</p>}
+</Base>

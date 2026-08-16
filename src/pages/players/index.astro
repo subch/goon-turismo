@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import { players, standings } from '../../lib/data';
+
+const rows = standings();
+const pointsByPsn = new Map(rows.map((r) => [r.psn, r.points]));
+---
+<Base title="Players">
+  <h1>Players</h1>
+  <p class="subtitle">The crew we're tracking.</p>
+
+  <div class="grid">
+    {players.map((p) => (
+      <a class="card" href={`/players/${p.psn}/`}>
+        <h3>{p.displayName}</h3>
+        <div class="meta">PSN: {p.psn}</div>
+        <div class="meta">Season points: {pointsByPsn.get(p.psn) ?? 0}</div>
+        {p.stats?.edgeScore != null && <div class="meta">dg-edge Edge Score: {p.stats.edgeScore}</div>}
+      </a>
+    ))}
+  </div>
+</Base>

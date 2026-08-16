@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import { standings, currentSeason } from '../lib/data';
+
+const season = currentSeason();
+const rows = standings();
+---
+<Base title="Standings">
+  <h1>Season Standings</h1>
+  <p class="subtitle">{season ? season.name : 'Current season'} &middot; points across official dg-edge Time Trials and our own custom events.</p>
+
+  <div class="panel">
+    {rows.length === 0 ? (
+      <div class="empty-state">No results yet — once events are scraped or submitted, standings show up here.</div>
+    ) : (
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Driver</th>
+            <th>Events</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr>
+              <td class={i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : ''}>{i + 1}</td>
+              <td><a href={`/players/${row.psn}/`}>{row.displayName}</a></td>
+              <td>{row.events}</td>
+              <td>{row.points}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+</Base>

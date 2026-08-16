@@ -1,0 +1,35 @@
+---
+import Nav from '../components/Nav.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Gran Turismo 7 Time Trial tracking for the Goon Turismo crew.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} · Goon Turismo</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <Nav />
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        Goon Turismo &middot; unofficial fan tracker for our crew's GT7 Time Trial results &middot;
+        official event data sourced from <a href="https://www.dg-edge.com/events/time-trials" target="_blank" rel="noopener">dg-edge.com</a>
+      </div>
+    </footer>
+  </body>
+</html>

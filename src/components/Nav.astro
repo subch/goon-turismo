@@ -1,0 +1,19 @@
+---
+const { pathname } = Astro.url;
+const links = [
+  { href: '/', label: 'Standings' },
+  { href: '/events/', label: 'Events' },
+  { href: '/players/', label: 'Players' },
+  { href: '/custom-events/submit/', label: 'Submit Event' },
+];
+---
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand">GOON <span>TURISMO</span></a>
+    <nav class="main-nav">
+      {links.map((link) => (
+        <a href={link.href} class={pathname === link.href ? 'active' : ''}>{link.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,22 @@
+{
+  "name": "goon-turismo",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tracking Gran Turismo 7 Time Trial participation, points, and custom events for the Goon Turismo crew.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "scrape:dg-edge": "node scripts/scrape-dg-edge.mjs",
+    "process:issue-result": "node scripts/process-issue-result.mjs"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

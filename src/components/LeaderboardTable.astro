@@ -1,0 +1,38 @@
+---
+import { playerByPsn } from '../lib/data';
+import type { ResultRow } from '../lib/data';
+
+interface Props {
+  results: ResultRow[];
+}
+
+const { results } = Astro.props;
+---
+{results.length === 0 ? (
+  <div class="empty-state">No results recorded for this event yet.</div>
+) : (
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Driver</th>
+        <th>Time</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      {results.map((r) => {
+        const player = playerByPsn(r.psn);
+        const rankClass = r.groupRank === 1 ? 'rank-1' : r.groupRank === 2 ? 'rank-2' : r.groupRank === 3 ? 'rank-3' : '';
+        return (
+          <tr>
+            <td class={rankClass}>{r.groupRank ?? '—'}</td>
+            <td><a href={`/players/${r.psn}/`}>{player?.displayName ?? r.psn}</a></td>
+            <td>{r.timeRaw ?? '—'}</td>
+            <td>{r.points}</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+)}
