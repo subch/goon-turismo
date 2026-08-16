@@ -2,11 +2,12 @@
   "id": "598",
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/598",
-  "track": "Time Trial",
-  "car": "All Mercedes-AMG GT3 '20 (100%)",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "AMG Mercedes-AMG GT3 '20",
   "classCode": "RS",
-  "startDate": null,
-  "endDate": null,
+  "startDate": "20 June 2026",
+  "endDate": "19 July 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T13:03:04.415Z"
+  "lastScraped": "2026-08-16T14:50:29.694Z",
+  "seasonId": "summer-2026"
 }

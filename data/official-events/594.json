@@ -2,11 +2,12 @@
   "id": "594",
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/594",
-  "track": "Time Trial",
-  "car": "All Ford GT '17 (100%)",
+  "track": "Red Bull Ring",
+  "car": "Ford Ford GT '17",
   "classCode": "SM",
-  "startDate": null,
-  "endDate": null,
+  "startDate": "18 June 2026",
+  "endDate": "2 July 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T13:03:09.283Z"
+  "lastScraped": "2026-08-16T14:50:31.727Z",
+  "seasonId": "summer-2026"
 }

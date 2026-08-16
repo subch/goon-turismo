@@ -9,6 +9,7 @@ Shape:
 {
   "id": "2026-08-16-friday-night-drags",
   "source": "custom",
+  "seasonId": "summer-2026",
   "name": "Friday Night Drags",
   "track": "Tokyo Expressway - South Outer Loop",
   "car": "Open",
@@ -17,3 +18,6 @@ Shape:
   "notes": ""
 }
 ```
+
+`seasonId` (whichever season is `current` in `data/seasons.json` at the time the event was
+created) is what puts it on the right season's standings page.

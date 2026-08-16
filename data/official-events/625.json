@@ -2,11 +2,12 @@
   "id": "625",
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/625",
-  "track": "Time Trial",
-  "car": "All Red Bull X2019 Competition (100%)",
+  "track": "Deep Forest Raceway - Reverse",
+  "car": "Gran Turismo Red Bull X2019 Competition",
   "classCode": "RS",
-  "startDate": null,
-  "endDate": null,
+  "startDate": "6 August 2026",
+  "endDate": "20 August 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T13:02:32.306Z"
+  "lastScraped": "2026-08-16T14:50:15.415Z",
+  "seasonId": "summer-2026"
 }

@@ -2,11 +2,12 @@
   "id": "624",
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/624",
-  "track": "Time Trial",
-  "car": "All Camaro Z28 '69 (100%)",
+  "track": "Alsace - Village",
+  "car": "Chevrolet Camaro Z28 '69",
   "classCode": "SH",
-  "startDate": null,
-  "endDate": null,
+  "startDate": "30 July 2026",
+  "endDate": "13 August 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T13:02:34.091Z"
+  "lastScraped": "2026-08-16T14:50:17.419Z",
+  "seasonId": "summer-2026"
 }

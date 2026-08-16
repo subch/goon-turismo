@@ -7,8 +7,10 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 
 ## What it does
 
-- **Player stats** are synced nightly from [GT-GridStats](https://gt-gridstats.com) (DR/SR and
-  event history) and from dg-edge.com (aggregate stats).
+- **Player stats and events** are synced nightly from [GT-GridStats](https://gt-gridstats.com)
+  (DR/SR and event history) and from [dg-edge.com](https://www.dg-edge.com) (aggregate stats and
+  the live/upcoming events listing — dg-edge no longer shows a per-event leaderboard, so it
+  doesn't contribute individual results, just event metadata).
 - **Time Trial results** — official and custom — feed points-based standings, grouped by season.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that
@@ -31,10 +33,13 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
   source as a supplemental `gridstats`-sourced event — filling real gaps without touching or
   duplicating anything the spreadsheet already has.
 - **Each Time Trial's track and car link out to the [GT7 wiki](https://gran-turismo.fandom.com/wiki/Gran_Turismo_7)**
-  (best-effort — generic class-code entries like "Gr.3" from older spreadsheet rows don't always
-  resolve to a real page), and events show a track photo when GT-GridStats has one under a
-  matching name (best-effort here too — only ~60% of tracks resolve, more reliably for
-  GT-GridStats-sourced events than spreadsheet-derived ones with shorter/different names).
+  (best-effort, guessed from the name on file — roughly half resolve to a real page in practice,
+  since track/car names aren't spelled consistently across the site's different data sources and
+  the wiki's own page titles don't always match either. Generic car-class entries like "Gr.3" are
+  skipped entirely rather than linked, since those never have their own page), and events show a
+  track photo when GT-GridStats has one under a matching name (same best-effort caveat, more
+  reliably for GT-GridStats-sourced events than spreadsheet-derived ones with shorter/different
+  names).
 - **Events, tune submissions, and championship round updates** all come in through GitHub Issue
   Forms, processed automatically into the site's data.
 - **Team championship standings** track round-by-round points across the season, with roster names

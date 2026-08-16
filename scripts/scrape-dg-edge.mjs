@@ -7,32 +7,33 @@
  *   - data/official-events/index.json
  *   - data/results/official.json   (group results per event, ranked + scored)
  *
- * Selectors below were verified against the real dg-edge.com markup (via a
- * live logged-in browser session), so this is no longer a blind guess:
- *   - Player aggregate stats are plain server-rendered text with labels like
- *     "Global position", "Events attended", "Avg. delta" (label matching is
- *     case-insensitive to survive CSS text-transform:uppercase styling).
- *   - Event leaderboard rows are `table.ranking-table tr.ranking-row`, with
- *     the player name in `a.player-nickname` and the time in a `td.text-end`
- *     cell matching `mm:ss.mmm`.
+ * Selectors below were re-verified against the real dg-edge.com markup via a
+ * live browser session on 2026-08-16 -- the site had been redesigned since
+ * this script was first written, which caused two real bugs that were
+ * silently writing garbage into official-events/ (fixed 2026-08-16):
+ *   - The events-listing page's pagination controls
+ *     (/events/time-trials/page-N?...) matched the same link selector as
+ *     real event pages and were being scraped as if they were events.
+ *   - Track/car label text ("Track", "Car") no longer exists on event
+ *     detail pages at all -- extractStatByLabel() was matching unrelated
+ *     filter-widget text instead ("Car typeAll modelsSportGR.1GR.2...").
+ *     Track/car/date/tire now come from real, stable selectors instead
+ *     (`.event-title h2 a` / `h3`, `.main-specified-car .card-body`,
+ *     `.event-date`, `.tire`).
  *
- * IMPORTANT KNOWN LIMITATION (confirmed by hand, 2026-08-16): dg-edge only
- * renders leaderboard rows for the top of each event (rank ~1-250ish, grows
- * as the page is scrolled/paginated) in a way this script can reach, and a
- * player's "Events results" history section on their own profile page is
- * ONLY populated when that specific player is logged in as themselves --
- * viewing another player's profile (even while logged in as someone else)
- * shows that section empty. There is no public way found so far to look up
- * an arbitrary non-top-ranked player's time in a specific event. In
- * practice this means: our friends' aggregate stats (Edge Score, Events
- * Attended, etc.) will populate automatically, but most of their *official
- * event* times will NOT show up here unless they happen to rank in the
- * portion of the leaderboard this script reaches. Official-event results
- * should be expected to mostly come through the same manual submission
- * flow as custom events (see .github/ISSUE_TEMPLATE/custom-event-result.yml,
- * which supports optionally linking a submission to an official dg-edge
- * event). If dg-edge ever adds a real lookup-by-player API this script
- * should switch to use it.
+ * Player aggregate stats (Edge Score, Global position, etc.) are unaffected
+ * by the redesign -- still plain labeled text, matched case-insensitively.
+ *
+ * IMPORTANT KNOWN LIMITATION (re-confirmed 2026-08-16): event detail pages
+ * no longer show a per-player leaderboard/ranking table at all (just
+ * aggregate stats -- total players, time-to-top-100/1000, medal-time
+ * thresholds) -- confirmed absent, not just hard to reach. So this script
+ * cannot pull any individual friend's time for an official event; expect
+ * official-event results to come entirely through the manual submission
+ * flow instead (see .github/ISSUE_TEMPLATE/custom-event-result.yml, which
+ * supports optionally linking a submission to a dg-edge event). If dg-edge
+ * brings a real leaderboard/lookup-by-player feature back, this script
+ * should be extended to use it.
  *
  * Run locally with: npm run scrape:dg-edge
  */
@@ -41,6 +42,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import { loadPointsConfig, rankAndScoreResults, parseTimeToMs } from './lib/points.mjs';
+import { seasonForDate, humanDateToIso } from './lib/seasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -156,9 +158,11 @@ async function listActiveEvents() {
   const links = new Set();
   $('a[href*="/events/time-trials/"]').each((_, el) => {
     const href = $(el).attr('href');
-    if (href && href !== '/events/time-trials' && !href.endsWith('/time-trials')) {
-      links.add(new URL(href, BASE).toString());
-    }
+    if (!href || href === '/events/time-trials' || href.endsWith('/time-trials')) return;
+    // Pagination controls on the listing page match this same selector
+    // (/events/time-trials/page-N?trackId=...) -- not real events.
+    if (/\/time-trials\/page-\d+/.test(href)) return;
+    links.add(new URL(href, BASE).toString());
   });
 
   if (links.size === 0) {
@@ -175,7 +179,7 @@ function slugFromUrl(url) {
   return parts[parts.length - 1] || url;
 }
 
-async function scrapeEventDetail(url, players) {
+async function scrapeEventDetail(url) {
   let html;
   try {
     html = await fetchHtml(url);
@@ -186,58 +190,50 @@ async function scrapeEventDetail(url, players) {
   const $ = cheerio.load(html);
   const pageText = $('body').text();
 
+  // Real current markup (verified live, 2026-08-16):
+  //   <div class="event-title">
+  //     <h1>Time Trial</h1>
+  //     <h2><a href="/database/tracks/...">{track base name}</a></h2>
+  //     <h3>{track layout variant}</h3>  (not always present)
+  //   </div>
+  //   <div class="card main-specified-car">
+  //     <div class="card-body"><small>{make}</small><br> {model}</div>
+  //   </div>
+  //   <div class="event-date">{start date} - {end date}</div>
+  //   <span class="tire">{tire code}</span>
+  const trackBase = $('.event-title h2 a').first().text().trim() || null;
+  const trackVariant = $('.event-title h3').first().text().trim() || null;
+  const track = trackBase
+    ? trackVariant
+      ? `${trackBase} - ${trackVariant}`
+      : trackBase
+    : $('h1').first().text().trim() || null;
+
+  const carBody = $('.main-specified-car .card-body').first();
+  const carMake = carBody.find('small').first().text().trim();
+  const carModel = carBody.clone().find('small').remove().end().text().trim();
+  const car = carMake || carModel ? [carMake, carModel].filter(Boolean).join(' ') : null;
+
+  const dateRangeText = $('.event-date').first().text().trim();
+  const [startDate, endDate] = dateRangeText.split(/\s*-\s*/).map((s) => s.trim());
+
   const event = {
     id: slugFromUrl(url),
     source: 'dg-edge',
     dgEdgeUrl: url,
-    track: extractStatByLabel($, 'Track') || $('h1').first().text().trim() || null,
-    car: extractStatByLabel($, 'Car') || null,
-    classCode: (pageText.match(/\b(SH|SS|RS|RM|RH|SM)\b/) || [])[1] || null,
-    startDate: null,
-    endDate: null,
+    track,
+    car,
+    classCode: $('.tire').first().text().trim() || null,
+    startDate: startDate || null,
+    endDate: endDate || null,
     status: /\blive\b/i.test(pageText) ? 'live' : 'unknown',
     lastScraped: new Date().toISOString(),
   };
 
-  // Date range like "Aug 1, 2026 - Aug 29, 2026"
-  const dateRange = pageText.match(
-    /([A-Z][a-z]{2}\s+\d{1,2},?\s+\d{4})\s*[-–]\s*([A-Z][a-z]{2}\s+\d{1,2},?\s+\d{4})/
-  );
-  if (dateRange) {
-    event.startDate = dateRange[1];
-    event.endDate = dateRange[2];
-  }
-
-  // Confirmed real markup: table.ranking-table > tbody > tr.ranking-row, with
-  // the player's PSN in an a.player-nickname link and the time in a
-  // td.text-end cell shaped like mm:ss.mmm. NOTE: dg-edge only renders the
-  // top slice of the leaderboard this way (see module doc comment) -- most
-  // friends will not appear here even if they ran the event. That's expected;
-  // it's a bonus catch, not the primary way results get onto the site.
-  const results = [];
-  const playersByPsnLower = new Map(players.map((p) => [p.psn.toLowerCase(), p]));
-
-  $('table.ranking-table tr.ranking-row, tr.ranking-row').each((_, row) => {
-    const $row = $(row);
-    const nickname = $row.find('a.player-nickname').first().text().trim();
-    if (!nickname) return;
-    const player = playersByPsnLower.get(nickname.toLowerCase());
-    if (!player) return;
-
-    const rowText = $row.text();
-    const timeMatch = rowText.match(/\b\d{1,2}:\d{2}\.\d{3}\b/);
-    if (!timeMatch) return;
-
-    results.push({
-      eventId: event.id,
-      psn: player.psn,
-      timeRaw: timeMatch[0],
-      timeMs: parseTimeToMs(timeMatch[0]),
-      scrapedAt: new Date().toISOString(),
-    });
-  });
-
-  return { event, results };
+  // No per-player leaderboard exists on event detail pages anymore (see
+  // module doc comment) -- confirmed absent, not just hard to reach.
+  // Official-event results come entirely through manual submission now.
+  return { event, results: [] };
 }
 
 async function loadJson(relPath, fallback) {
@@ -257,6 +253,7 @@ async function saveJson(relPath, data) {
 async function main() {
   const players = await loadJson('players.json', []);
   const pointsConfig = await loadPointsConfig();
+  const seasons = await loadJson('seasons.json', []);
 
   // 1. Per-player aggregate stats.
   for (const player of players) {
@@ -279,10 +276,15 @@ async function main() {
   }
 
   for (const url of eventUrls) {
-    const scraped = await scrapeEventDetail(url, players);
+    const scraped = await scrapeEventDetail(url);
     await sleep(REQUEST_DELAY_MS);
     if (!scraped) continue;
     const { event, results } = scraped;
+
+    const eventIso = humanDateToIso(event.endDate) ?? humanDateToIso(event.startDate);
+    const season = eventIso ? seasonForDate(eventIso, seasons) : null;
+    if (season) event.seasonId = season.id;
+    else warn(`Could not match event "${event.id}" (${event.track ?? 'unknown track'}) to a tracked season -- date: ${event.startDate ?? 'unknown'}`);
 
     await saveJson(`official-events/${event.id}.json`, event);
     if (!eventIndex.includes(event.id)) {

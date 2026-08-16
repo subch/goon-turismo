@@ -2,11 +2,12 @@
   "id": "626",
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/626",
-  "track": "Time Trial",
-  "car": "All Cobra Daytona Coupe '64 (100%)",
+  "track": "Daytona International Speedway - Road Course",
+  "car": "Shelby Cobra Daytona Coupe '64",
   "classCode": "SS",
-  "startDate": null,
-  "endDate": null,
+  "startDate": "6 August 2026",
+  "endDate": "20 August 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T13:02:30.349Z"
+  "lastScraped": "2026-08-16T14:50:13.395Z",
+  "seasonId": "summer-2026"
 }

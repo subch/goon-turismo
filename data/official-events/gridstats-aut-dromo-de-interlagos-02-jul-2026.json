@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
+  "track": "Autódromo de Interlagos",
+  "car": "Aston Martin DB11",
+  "classCode": "Lap Time Challenge",
+  "startDate": "02 Jul 2026",
+  "endDate": "16 Jul 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T14:55:12.526Z"
+}

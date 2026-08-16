@@ -38,7 +38,6 @@ Shape:
 }
 ```
 
-`roster` entries should be PSNs from `data/players.json` where known; a plain display name string
-is fine as a placeholder until it's confirmed which tracked PSN a sheet nickname maps to (a few
-from the original sheet -- "Dr K", "Fairfax", "Rammy" -- didn't have a confirmed PSN match at
-seed time).
+`roster` entries should be PSNs from `data/players.json` where known -- the site links roster
+names to player pages automatically when they match. A plain display name string is fine as a
+placeholder until a sheet nickname's PSN is confirmed.

@@ -182,10 +182,15 @@ function stripTireCode(name: string): string {
   return name.replace(/\s*\([A-Z]{2,3}\)\s*$/, '').trim();
 }
 
+// Some events specify an eligible car *class* ("Gr.3", "Group 1 (RS)") rather
+// than one specific car -- these are never going to have their own wiki
+// page, so don't bother generating a link for them.
+const GENERIC_CLASS_RE = /^(gr\.?|group)\s*\d/i;
+
 export function wikiUrl(name: string | null | undefined): string | null {
   if (!name) return null;
   const cleaned = stripTireCode(name);
-  if (!cleaned) return null;
+  if (!cleaned || GENERIC_CLASS_RE.test(cleaned)) return null;
   return WIKI_BASE + encodeURIComponent(cleaned.replace(/ /g, '_'));
 }
 

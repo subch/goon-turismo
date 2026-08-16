@@ -51,6 +51,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import { loadPointsConfig, rankAndScoreResults, parseTimeToMs } from './lib/points.mjs';
+import { seasonForDate, humanDateToIso } from './lib/seasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -78,25 +79,6 @@ function slugify(str) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
-}
-
-// GT-GridStats dates look like "06 Aug 2026" -> "2026-08-06" for comparison
-// against season boundaries (ISO YYYY-MM-DD).
-function gtDateToIso(d) {
-  if (!d) return null;
-  const m = d.match(/^(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})$/);
-  if (!m) return null;
-  const months = {
-    Jan: '01', Feb: '02', Mar: '03', Apr: '04', May: '05', Jun: '06',
-    Jul: '07', Aug: '08', Sep: '09', Oct: '10', Nov: '11', Dec: '12',
-  };
-  const mo = months[m[2]];
-  if (!mo) return null;
-  return `${m[3]}-${mo}-${m[1].padStart(2, '0')}`;
-}
-
-function seasonForDate(iso, seasons) {
-  return seasons.find((s) => iso >= s.startDate && (!s.endDate || iso <= s.endDate)) ?? null;
 }
 
 function normalizeTrack(name) {
@@ -313,7 +295,7 @@ async function main() {
     };
 
     for (const row of scraped.events) {
-      const eventIso = gtDateToIso(row.endDate) ?? gtDateToIso(row.startDate);
+      const eventIso = humanDateToIso(row.endDate) ?? humanDateToIso(row.startDate);
       if (!eventIso) continue;
       const season = seasonForDate(eventIso, seasons);
       if (!season) continue; // falls in a gap between tracked seasons

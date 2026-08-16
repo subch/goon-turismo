@@ -2,11 +2,12 @@
   "id": "607",
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/607",
-  "track": "Time Trial",
-  "car": "All 650S Gr.4 (100%)",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "McLaren 650S Gr.4",
   "classCode": "RH",
-  "startDate": null,
-  "endDate": null,
+  "startDate": "9 July 2026",
+  "endDate": "23 July 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T13:02:49.525Z"
+  "lastScraped": "2026-08-16T14:50:23.586Z",
+  "seasonId": "summer-2026"
 }
