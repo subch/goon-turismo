@@ -13,6 +13,7 @@ const { player } = Astro.props;
 const results = resultsForPlayer(player.psn).sort((a, b) => (a.groupRank ?? 999) - (b.groupRank ?? 999));
 const totalPoints = results.reduce((sum, r) => sum + (r.points ?? 0), 0);
 const stats = player.stats;
+const gs = player.gridstats;
 ---
 <Base title={player.displayName}>
   <h1>{player.displayName}</h1>
@@ -27,6 +28,12 @@ const stats = player.stats;
       <div class="meta">Events entered (tracked)</div>
       <h3>{results.length}</h3>
     </div>
+    {gs?.dr != null && (
+      <div class="card">
+        <div class="meta">DR / SR (GT-GridStats)</div>
+        <h3>{gs.dr} / {gs.sr ?? '—'}</h3>
+      </div>
+    )}
     {stats?.edgeScore != null && (
       <div class="card">
         <div class="meta">dg-edge Edge Score</div>
@@ -72,5 +79,6 @@ const stats = player.stats;
     )}
   </div>
 
-  {stats?.lastScraped && <p class="subtitle" style="margin-top:20px;">dg-edge stats last refreshed: {new Date(stats.lastScraped).toLocaleString()}</p>}
+  {gs?.lastSynced && <p class="subtitle" style="margin-top:20px;">GT-GridStats last synced: {new Date(gs.lastSynced).toLocaleString()}</p>}
+  {stats?.lastScraped && <p class="subtitle">dg-edge stats last refreshed: {new Date(stats.lastScraped).toLocaleString()}</p>}
 </Base>

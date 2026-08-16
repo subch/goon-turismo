@@ -1,8 +1,8 @@
-name: Scrape dg-edge.com
+name: Sync player stats (GT-GridStats + dg-edge)
 
 on:
   schedule:
-    # Every 6 hours. dg-edge is a shared community site -- keep this modest.
+    # Every 6 hours.
     - cron: "17 */6 * * *"
   workflow_dispatch: {}
 
@@ -23,7 +23,12 @@ jobs:
 
       - run: npm ci
 
-      - name: Scrape dg-edge.com
+      - name: Sync from GT-GridStats (primary, PSN-keyed, no login needed)
+        env:
+          GT_GRIDSTATS_TOKEN: ${{ secrets.GT_GRIDSTATS_TOKEN }}
+        run: npm run scrape:gridstats
+
+      - name: Scrape dg-edge.com (event listing + fallback aggregate stats)
         run: npm run scrape:dg-edge
 
       - name: Commit data changes
@@ -34,6 +39,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update scraped dg-edge data"
+            git commit -m "Sync player stats (GT-GridStats + dg-edge)"
             git push
           fi

@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "scrape:dg-edge": "node scripts/scrape-dg-edge.mjs",
+    "scrape:gridstats": "node scripts/scrape-gridstats.mjs",
     "process:issue-result": "node scripts/process-issue-result.mjs"
   },
   "dependencies": {

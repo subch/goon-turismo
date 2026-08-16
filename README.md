@@ -8,7 +8,8 @@ archive, hosted as a static site on GitHub Pages at **goon-turismo.com**.
 ## How it works
 
 - **`data/`** is the database — plain JSON files, version-controlled.
-  - `players.json` — the friends we're tracking (PSN + display name + cached dg-edge stats).
+  - `players.json` — the friends we're tracking (PSN + display name + cached dg-edge and
+    GT-GridStats stats).
   - `seasons.json` — season definitions (start/end dates, which one is current).
   - `official-events/*.json` + `results/official.json` — dg-edge-tracked events. Aggregate stats
     are auto-scraped; most individual results come in via the same submission form as custom
@@ -20,9 +21,20 @@ archive, hosted as a static site on GitHub Pages at **goon-turismo.com**.
   - `points-config.json` — how group rank converts to points for time trial events.
     **Placeholder values right now** — update once we've pulled the real scoring system from the
     old spreadsheet.
-- **`scripts/scrape-dg-edge.mjs`** runs on a schedule (`.github/workflows/scrape-dg-edge.yml`, every
-  6 hours) via GitHub Actions: fetches each tracked player's dg-edge profile and the current
-  time-trials listing, updates the JSON above, and commits the changes.
+- **`scripts/scrape-gridstats.mjs`** is the primary stats sync: it calls the
+  [GT-GridStats public API](https://gt-gridstats.com/api-docs) (`GET /api/racers/{psn1,psn2,...}`),
+  which returns real per-player stats (DR/SR etc.) keyed purely by PSN — no per-player login
+  needed, unlike dg-edge. **Requires a `GT_GRIDSTATS_TOKEN` repo secret** (Settings → Secrets and
+  variables → Actions → New repository secret). GT-GridStats doesn't have a self-serve signup page
+  as far as we could find — request a token from the maintainer directly: gtgridstats@gmail.com,
+  or via their Discord (linked from gt-gridstats.com). Until the secret is set, this script just
+  logs a note and skips itself (doesn't fail the workflow). Their API docs mention endpoints for
+  official GT7 championship series analytics too, but it's not yet confirmed whether arbitrary
+  community Time Trial events (the dg-edge kind) are covered — worth asking the maintainer when
+  requesting a token.
+- **`scripts/scrape-dg-edge.mjs`** runs on the same schedule (`.github/workflows/scrape-dg-edge.yml`,
+  every 6 hours) as a fallback/supplement: fetches each tracked player's dg-edge profile and the
+  current time-trials listing, updates the JSON above, and commits the changes.
   **⚠️ Verified limitation (checked by hand against the live site 2026-08-16):** dg-edge only shows
   a player's own event-by-event result history when *that player* is logged into their own dg-edge
   account — viewing someone else's profile (even while logged in as someone else) shows it empty.
@@ -57,34 +69,39 @@ npm install
 npm run dev
 ```
 
-Run the scraper locally (writes into `data/`):
+Run the scrapers locally (writes into `data/`):
 
 ```bash
 npm run scrape:dg-edge
+GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats
 ```
 
 ## ⚠️ Things that still need attention
 
-1. **dg-edge.com individual event results are mostly manual.** See the verified limitation above —
-   this is the single biggest scope change from the original plan. If dg-edge ever ships a real
-   player/event lookup API, `scrape-dg-edge.mjs` should switch to it.
-2. **Points system.** `data/points-config.json` currently uses placeholder values (20 points for 1st,
+1. **GT-GridStats token.** Get one from the maintainer (gtgridstats@gmail.com or their Discord) and
+   add it as the `GT_GRIDSTATS_TOKEN` repo secret to turn on real PSN-keyed stat syncing. Also worth
+   confirming with them whether the API covers arbitrary community Time Trial *events* (not just
+   official series) — if so, `scrape-gridstats.mjs` should be extended to pull per-event results too
+   and this would fully replace the dg-edge scraper for that purpose.
+2. **dg-edge.com individual event results are mostly manual** (kept as a fallback/supplement — see
+   the verified limitation above). This is the single biggest scope change from the original plan.
+3. **Points system.** `data/points-config.json` currently uses placeholder values (20 points for 1st,
    down to 1 point for anyone finishing outside the top 15). Once the historical Google Sheet data
    is available, update this file (and re-run the scraper / re-process events) to match your actual
    scoring system.
-3. **Historical data harvest is incomplete.** Both source sheets have many more season tabs (12 on
+4. **Historical data harvest is incomplete.** Both source sheets have many more season tabs (12 on
    the TT sheet, 15 on the championship "Goon Standings" sheet) than what's been pulled in so far —
    bulk CSV export hit Google's rate limit mid-run. This still needs a slower, one-at-a-time pass
    (or CSVs exported by hand and attached) to fully backfill history; only the current/most recent
    season is seeded right now.
-4. **Championship roster mapping needs confirming.** `data/championships/2026-fall-championship.json`
+5. **Championship roster mapping needs confirming.** `data/championships/2026-fall-championship.json`
    was seeded from the sheet's team colors/nicknames. Most names matched a tracked PSN confidently
    (Rickie→rickiep00h, Kirios→kirios86, Wombat→wombatvet, Dev→devmotron, Ashy→ashy_wenises,
    Empire→empire_of_ravens, Sinderby→sinder_22), but **"Dr K", "Fairfax", "Rammy", and "Crockhaed"**
    (guessed as craigrackhaed) are marked `(unconfirmed PSN)` in the roster and need a real person to
    confirm. `doug_nougat`, `abner_assington`, `ainsliespeed`, `braveman84`, `fenix_down1`, and
    `vitti1107` aren't on a team in this file yet either (possibly reserve drivers).
-5. **Friends' PSNs.** All 15 are now seeded in `data/players.json`.
+6. **Friends' PSNs.** All 15 are now seeded in `data/players.json`.
 
 ## Pointing goon-turismo.com at this site
 

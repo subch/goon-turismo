@@ -19,6 +19,14 @@ export type Player = {
     avgDelta: string | number | null;
     lastScraped: string | null;
   };
+  gridstats?: {
+    nickname: string | null;
+    dr: string | number | null;
+    sr: string | number | null;
+    countryCode: string | null;
+    stats: Record<string, unknown> | null;
+    lastSynced: string | null;
+  };
 };
 
 export type Season = {
