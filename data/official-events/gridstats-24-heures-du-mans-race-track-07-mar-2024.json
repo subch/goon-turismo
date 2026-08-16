@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-24-heures-du-mans-race-track-07-mar-2024",
+  "source": "gridstats",
+  "seasonId": "winter-2024",
+  "track": "24 Heures du Mans race track",
+  "car": "Bugatti Veyron Gr.4",
+  "classCode": "Lap Time Challenge",
+  "startDate": "07 Mar 2024",
+  "endDate": "21 Mar 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:29.287Z"
+}

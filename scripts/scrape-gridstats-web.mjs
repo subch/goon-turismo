@@ -15,7 +15,11 @@
  *     ...">{SR}</span>` pair, plus label/value spans in the blue stats box.
  *   - Event History: a `<h3>Event History</h3>` followed by a table with one
  *     row per GT7 "Lap Time Challenge" / event entry: track, event type,
- *     vehicle, start/end date, global rank, time-or-score.
+ *     vehicle, start/end date, global rank, time-or-score. Paginated
+ *     (Livewire, 10 rows/page) -- confirmed `?eventPage=N` returns real,
+ *     distinct pages server-side, so this fetches every page instead of
+ *     just the first (page 1 alone was silently missing most of an active
+ *     player's real history).
  * Unknown PSNs 404 cleanly. /player/ is allowed by robots.txt (only /admin,
  * /api, /login etc. are disallowed).
  *
@@ -55,7 +59,9 @@ const DATA = path.join(ROOT, 'data');
 const BASE = 'https://gt-gridstats.com';
 const USER_AGENT =
   'Mozilla/5.0 (compatible; GoonTurismoBot/1.0; +https://goon-turismo.com) - fetches public pages only, on behalf of the goon-turismo.com fan tracker';
-const REQUEST_DELAY_MS = 1500; // be polite, this is a free community site
+const REQUEST_DELAY_MS = 1500; // be polite, this is a free community site -- between players
+const PAGE_DELAY_MS = 800; // between pages of the same player's event history
+const MAX_EVENT_PAGES = 30; // safety cap, well above any player seen so far (~20 pages)
 
 let warnCount = 0;
 function warn(msg) {
@@ -103,8 +109,10 @@ function daysBetween(iso1, iso2) {
 
 const DATE_TOLERANCE_DAYS = 3;
 
-async function fetchPlayerPage(psn) {
-  const url = `${BASE}/player/${encodeURIComponent(psn)}`;
+async function fetchPlayerPage(psn, eventPage) {
+  const url = eventPage
+    ? `${BASE}/player/${encodeURIComponent(psn)}?eventPage=${eventPage}`
+    : `${BASE}/player/${encodeURIComponent(psn)}`;
   const res = await fetch(url, {
     headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' },
   });
@@ -205,7 +213,33 @@ async function scrapePlayer(psn) {
     poles: parseStatByLabel($, 'Poles'),
     otherPoints: parseStatByLabel($, 'Other Points'),
   };
+
+  // Event History is paginated (Livewire, 10 rows/page, up to ~20 pages for
+  // an active player) -- confirmed via `?eventPage=N` returning genuinely
+  // different rows per page (2026-08-16). Page 1 alone was silently
+  // dropping the vast majority of most players' real history. Keep paging
+  // until a page comes back empty (or repeats the previous page verbatim,
+  // as a safety net against an unexpected server response).
   const events = parseEventHistory($, psn);
+  let previousPageKey = events.map((e) => `${e.track}|${e.startDate}`).join(',');
+  for (let page = 2; page <= MAX_EVENT_PAGES; page++) {
+    await sleep(PAGE_DELAY_MS);
+    let pageHtml;
+    try {
+      pageHtml = await fetchPlayerPage(psn, page);
+    } catch (err) {
+      warn(`Could not fetch GT-GridStats event history page ${page} for "${psn}": ${err.message}`);
+      break;
+    }
+    if (!pageHtml) break;
+    const $page = cheerio.load(pageHtml);
+    const pageEvents = parseEventHistory($page, psn);
+    if (pageEvents.length === 0) break;
+    const pageKey = pageEvents.map((e) => `${e.track}|${e.startDate}`).join(',');
+    if (pageKey === previousPageKey) break; // repeated page -- past the real end
+    events.push(...pageEvents);
+    previousPageKey = pageKey;
+  }
 
   return { dr, sr, stats, events };
 }

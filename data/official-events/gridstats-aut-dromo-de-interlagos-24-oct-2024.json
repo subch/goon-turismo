@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-aut-dromo-de-interlagos-24-oct-2024",
+  "source": "gridstats",
+  "seasonId": "autumn-2024",
+  "track": "Autódromo de Interlagos",
+  "car": "Aston Martin Vulcan",
+  "classCode": "Lap Time Challenge",
+  "startDate": "24 Oct 2024",
+  "endDate": "07 Nov 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.314Z"
+}

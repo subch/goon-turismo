@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-circuit-de-spa-francorchamps-17-jul-2025",
+  "source": "gridstats",
+  "seasonId": "summer-2025",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "HYUNDAI N 2025 Vision Gran Turismo",
+  "classCode": "Lap Time Challenge",
+  "startDate": "17 Jul 2025",
+  "endDate": "31 Jul 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.235Z"
+}

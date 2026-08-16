@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-weathertech-raceway-laguna-seca-09-may-2024",
+  "source": "gridstats",
+  "seasonId": "spring-2024",
+  "track": "WeatherTech Raceway Laguna Seca",
+  "car": "Volkswagen Scirocco Gr.4",
+  "classCode": "Lap Time Challenge",
+  "startDate": "09 May 2024",
+  "endDate": "23 May 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.383Z"
+}

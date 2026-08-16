@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-circuit-de-spa-francorchamps-12-feb-2026",
+  "source": "gridstats",
+  "seasonId": "winter-2026",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "Porsche 911 GT3 R (992)",
+  "classCode": "Lap Time Challenge",
+  "startDate": "12 Feb 2026",
+  "endDate": "26 Feb 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.179Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-circuit-de-spa-francorchamps-02-jan-2025",
+  "source": "gridstats",
+  "seasonId": "winter-2025",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "Honda NSX GT500",
+  "classCode": "Lap Time Challenge",
+  "startDate": "02 Jan 2025",
+  "endDate": "16 Jan 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:34:38.270Z"
+}

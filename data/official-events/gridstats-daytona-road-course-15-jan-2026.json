@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-daytona-road-course-15-jan-2026",
+  "source": "gridstats",
+  "seasonId": "winter-2026",
+  "track": "Daytona Road Course",
+  "car": "Peugeot L750R HYbrid Vision Gran Turismo, 2017",
+  "classCode": "Lap Time Challenge",
+  "startDate": "15 Jan 2026",
+  "endDate": "29 Jan 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:32:00.911Z"
+}

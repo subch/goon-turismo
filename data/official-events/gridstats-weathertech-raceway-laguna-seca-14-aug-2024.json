@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-weathertech-raceway-laguna-seca-14-aug-2024",
+  "source": "gridstats",
+  "seasonId": "summer-2024",
+  "track": "WeatherTech Raceway Laguna Seca",
+  "car": "Mercedes-AMG GT3",
+  "classCode": "OnlineTA_AMG24_Title_Long",
+  "startDate": "14 Aug 2024",
+  "endDate": "30 Aug 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.344Z"
+}

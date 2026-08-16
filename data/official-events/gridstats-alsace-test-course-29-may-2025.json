@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-alsace-test-course-29-may-2025",
+  "source": "gridstats",
+  "seasonId": "spring-2025",
+  "track": "Alsace - Test Course",
+  "car": "Nissan Fairlady Z (Z34)",
+  "classCode": "Lap Time Challenge",
+  "startDate": "29 May 2025",
+  "endDate": "12 Jun 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:32:01.017Z"
+}

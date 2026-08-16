@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-tokyo-expressway-south-counterclockwise-29-may-2025",
+  "source": "gridstats",
+  "seasonId": "spring-2025",
+  "track": "Tokyo Expressway - South Counterclockwise",
+  "car": "Porsche 911 RSR (991)",
+  "classCode": "Lap Time Challenge",
+  "startDate": "29 May 2025",
+  "endDate": "12 Jun 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.254Z"
+}

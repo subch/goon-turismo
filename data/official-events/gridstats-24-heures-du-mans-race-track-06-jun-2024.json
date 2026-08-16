@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-24-heures-du-mans-race-track-06-jun-2024",
+  "source": "gridstats",
+  "seasonId": "spring-2024",
+  "track": "24 Heures du Mans race track",
+  "car": "BMW McLaren F1 GTR Race Car",
+  "classCode": "Lap Time Challenge",
+  "startDate": "06 Jun 2024",
+  "endDate": "20 Jun 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.371Z"
+}

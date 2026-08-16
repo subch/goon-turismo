@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-circuit-de-spa-francorchamps-02-aug-2024",
+  "source": "gridstats",
+  "seasonId": "summer-2024",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "Honda RA272",
+  "classCode": "OnlineTA_HRC24_U17_Title",
+  "startDate": "02 Aug 2024",
+  "endDate": "01 Sep 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.347Z"
+}

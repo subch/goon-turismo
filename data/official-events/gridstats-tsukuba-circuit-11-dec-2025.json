@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-tsukuba-circuit-11-dec-2025",
+  "source": "gridstats",
+  "seasonId": "autumn-2025",
+  "track": "Tsukuba Circuit",
+  "car": "Mine",
+  "classCode": "Lap Time Challenge",
+  "startDate": "11 Dec 2025",
+  "endDate": "25 Dec 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:34:26.444Z"
+}

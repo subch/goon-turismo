@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-yas-marina-circuit-04-dec-2025",
+  "source": "gridstats",
+  "seasonId": "autumn-2025",
+  "track": "Yas Marina Circuit",
+  "car": "Renault Espace F1",
+  "classCode": "Lap Time Challenge",
+  "startDate": "04 Dec 2025",
+  "endDate": "18 Dec 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.189Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-circuit-de-spa-francorchamps-20-jun-2024",
+  "source": "gridstats",
+  "seasonId": "summer-2024",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "Audi R8 LMS Evo",
+  "classCode": "Lap Time Challenge",
+  "startDate": "20 Jun 2024",
+  "endDate": "04 Jul 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.368Z"
+}

@@ -116,10 +116,10 @@ function parseSeasonTab(rows) {
 // the current 15-player roster, no verifiable PSN) get a slugified id and
 // are added to players.json as inactive/historical-only.
 const NAME_TO_PSN = {
-  'C. Rackhaed': 'craigrackhaed', // guessed match ("Crockhaed"), still unconfirmed per README
+  'C. Rackhaed': 'craigrackhaed', // confirmed ("Crockhaed" match)
   'Dr K': 'bravemen84', // confirmed
   Ashy_Wenises: 'ashy_wenises',
-  Fairfax: 'fairfax', // unconfirmed PSN -- using slug, per README
+  Fairfax: 'ainsliespeed', // confirmed
   Empire: 'empire_of_ravens',
   Superfarts: 'superpharts', // sheet nickname vs. tracked PSN spelling
   Sinderby: 'sinder_22',
@@ -251,33 +251,31 @@ async function main() {
   const allSeasons = [currentSeason, ...seasons];
   writeFileSync(path.join(DATA_DIR, 'seasons.json'), JSON.stringify(allSeasons, null, 2) + '\n');
 
-  // Retag existing current-season events with seasonId + rename source events dir untouched.
   const fs = await import('node:fs');
-  const currentEventFiles = fs
-    .readdirSync(path.join(DATA_DIR, 'official-events'))
-    .filter((f) => f.endsWith('.json') && f !== 'index.json');
-  for (const f of currentEventFiles) {
-    const full = path.join(DATA_DIR, 'official-events', f);
-    const ev = JSON.parse(fs.readFileSync(full, 'utf-8'));
-    ev.seasonId = 'summer-2026';
-    fs.writeFileSync(full, JSON.stringify(ev, null, 2) + '\n');
-  }
 
-  // Write historical event files.
+  // Write historical event files. (Deterministic ids, so this cleanly
+  // overwrites on re-run -- no separate "retag existing events" step needed
+  // or wanted: that would stomp on seasonId set by the live/gap-fill
+  // scraper for events this script doesn't own.)
   for (const [relPath, contents] of Object.entries(eventFiles)) {
     const full = path.join(DATA_DIR, relPath);
     mkdirSync(path.dirname(full), { recursive: true });
     writeFileSync(full, JSON.stringify(contents, null, 2) + '\n');
   }
 
-  // Merge event index (existing current-season ids + new historical ids).
+  // Merge event index (existing ids + this run's historical ids).
   const existingIndex = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'official-events/index.json'), 'utf-8'));
   const mergedIndex = [...new Set([...existingIndex, ...eventIndex])];
   writeFileSync(path.join(DATA_DIR, 'official-events/index.json'), JSON.stringify(mergedIndex, null, 2) + '\n');
 
-  // Merge results: keep existing current-season results, add all historical results.
+  // Merge results: drop any existing rows for the historical events this run
+  // just recomputed (so re-running replaces rather than duplicates them),
+  // keep everything else (current season + gap-filled supplemental data),
+  // then add this run's fresh historical results.
+  const thisRunEventIds = new Set(eventIndex);
   const existingResults = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'results/official.json'), 'utf-8'));
-  const allResults = [...existingResults, ...[...resultsByEvent.values()].flat()];
+  const keptResults = existingResults.filter((r) => !thisRunEventIds.has(r.eventId));
+  const allResults = [...keptResults, ...[...resultsByEvent.values()].flat()];
   writeFileSync(path.join(DATA_DIR, 'results/official.json'), JSON.stringify(allResults, null, 2) + '\n');
 
   // Update players.json: rename joinedSeason 's1' -> 'summer-2026', add alumni entries.

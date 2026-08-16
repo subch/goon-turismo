@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-michelin-raceway-road-atlanta-24-sep-2025",
+  "source": "gridstats",
+  "seasonId": "autumn-2025",
+  "track": "Michelin Raceway Road Atlanta",
+  "car": "Opel Corsa GSE Vision Gran Turismo",
+  "classCode": "Lap Time Challenge",
+  "startDate": "24 Sep 2025",
+  "endDate": "09 Oct 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.212Z"
+}

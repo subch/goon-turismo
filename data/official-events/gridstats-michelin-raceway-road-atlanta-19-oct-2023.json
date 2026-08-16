@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-michelin-raceway-road-atlanta-19-oct-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "Michelin Raceway Road Atlanta",
+  "car": "Porsche 918 Spyder",
+  "classCode": "2023 Michelin Time Trial Challenge",
+  "startDate": "19 Oct 2023",
+  "endDate": "29 Oct 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:29.331Z"
+}

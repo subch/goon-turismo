@@ -13,27 +13,32 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that
   season. Per-event scoring is percent-off-pace: the fastest group time in an event scores 100,
-  and every 1% off that pace costs 10 points. Season totals drop each player's 2 lowest-scoring
-  events (an event you skipped entirely counts as a 0 for this purpose too, so skipping 1-2 events
-  a season is effectively free). Both rules match the crew's original scoring spreadsheet's
-  formulas (`=IF(...,100-((time/MIN(...)-1)*1000))` per event,
-  `=SUM(...)-SMALL(...,1)-SMALL(...,2)` for the season total), confirmed against real formulas in
-  the crew's exported workbook and validated against 1200+ historical results.
+  and every 1% off that pace costs 10 points. Season totals drop each player's worst-scoring
+  events (an event you skipped entirely counts as a 0 for this purpose too, so skipping a couple
+  events a season is effectively free) — up to 2, scaling in with how many events the season has
+  had so far (`floor(seasonEventCount / 3)`, capped at 2) so a brand new season's first few events
+  don't get mostly discarded. Both rules match the crew's original scoring spreadsheet's formulas
+  (`=IF(...,100-((time/MIN(...)-1)*1000))` per event, `=SUM(...)-SMALL(...,1)-SMALL(...,2)` for the
+  season total), confirmed against real formulas in the crew's exported workbook and validated
+  against 1200+ historical results.
 - **11 past seasons (2023 through Spring 2026)** are backfilled from the crew's original scoring
   spreadsheet via `scripts/import-historical-seasons.mjs` — safe to re-run if a season needs
   re-importing.
-- **Gap-filling from GT-GridStats.** The spreadsheet wasn't tracked consistently every season
-  (Summer/Spring in particular). The nightly GT-GridStats sync (`scrape-gridstats-web.mjs`) now
-  also scans each player's *full* event history against every past season, not just the current
-  one, and adds any (player, track, ~date) result that isn't already recorded from any source as a
-  supplemental `gridstats`-sourced event — filling real gaps without touching or duplicating
-  anything the spreadsheet already has.
+- **Gap-filling from GT-GridStats.** The spreadsheet wasn't tracked consistently every season. The
+  nightly GT-GridStats sync (`scrape-gridstats-web.mjs`) scans each player's *full* event history —
+  paginating through every page, not just the first — against every past season, not just the
+  current one, and adds any (player, track, ~date) result that isn't already recorded from any
+  source as a supplemental `gridstats`-sourced event — filling real gaps without touching or
+  duplicating anything the spreadsheet already has.
 - **Each Time Trial's track and car link out to the [GT7 wiki](https://gran-turismo.fandom.com/wiki/Gran_Turismo_7)**
   (best-effort — generic class-code entries like "Gr.3" from older spreadsheet rows don't always
-  resolve to a real page).
+  resolve to a real page), and events show a track photo when GT-GridStats has one under a
+  matching name (best-effort here too — only ~60% of tracks resolve, more reliably for
+  GT-GridStats-sourced events than spreadsheet-derived ones with shorter/different names).
 - **Events, tune submissions, and championship round updates** all come in through GitHub Issue
   Forms, processed automatically into the site's data.
-- **Team championship standings** track round-by-round points across the season.
+- **Team championship standings** track round-by-round points across the season, with roster names
+  linked to player pages where the PSN is known.
 - **Tune archive** for GT7 car setups/parts lists, browsable by car.
 - The site rebuilds and redeploys automatically on every data update.
 
@@ -44,8 +49,9 @@ and `.github/workflows/` schedules and wires them together.
 
 - Swap the interim GT-GridStats web scraper for the official token-based API once a
   `GT_GRIDSTATS_TOKEN` is obtained from the maintainer.
-- Finish confirming a couple of remaining PSNs in the championship roster ("Fairfax" and
-  "Crockhaed"/craigrackhaed).
+- Car thumbnails: GT-GridStats' own car images are keyed by opaque numeric IDs with no
+  name-to-ID mapping available, so only track photos are shown for now. Real car thumbnails would
+  need scraping each unique car's GT7 wiki infobox image instead.
 
 ## Local development
 

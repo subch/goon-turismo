@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-goodwood-motor-circuit-07-sep-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "Goodwood Motor Circuit",
+  "car": "Aston Martin DB5",
+  "classCode": "Lap Time Challenge",
+  "startDate": "07 Sep 2023",
+  "endDate": "21 Sep 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:29.347Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-daytona-road-course-16-jan-2025",
+  "source": "gridstats",
+  "seasonId": "winter-2025",
+  "track": "Daytona Road Course",
+  "car": "Dodge Viper SRT GT3-R",
+  "classCode": "Lap Time Challenge",
+  "startDate": "16 Jan 2025",
+  "endDate": "30 Jan 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:34:38.267Z"
+}

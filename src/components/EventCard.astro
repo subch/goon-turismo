@@ -1,5 +1,5 @@
 ---
-import { eventLabel, eventDateLabel } from '../lib/data';
+import { eventLabel, eventDateLabel, trackImageUrl } from '../lib/data';
 import type { EventRecord } from '../lib/data';
 
 interface Props {
@@ -16,13 +16,21 @@ const sourceLabel =
       : event.source === 'historical'
         ? 'Historical'
         : 'dg-edge';
+const imgUrl = trackImageUrl(event.track);
 ---
-<a class="card" href={`/events/${event.id}/`}>
-  <div style="display:flex; justify-content:space-between; align-items:center;">
-    <span class={`badge ${event.source}`}>{sourceLabel}</span>
-    {statusBadge && <span class={`badge ${statusBadge}`}>{statusBadge}</span>}
+<a class="card event-card" href={`/events/${event.id}/`}>
+  {imgUrl && (
+    <div class="event-card-photo">
+      <img src={imgUrl} alt="" loading="lazy" onerror="this.closest('.event-card-photo').remove()" />
+    </div>
+  )}
+  <div class="event-card-body">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span class={`badge ${event.source}`}>{sourceLabel}</span>
+      {statusBadge && <span class={`badge ${statusBadge}`}>{statusBadge}</span>}
+    </div>
+    <h3>{eventLabel(event)}</h3>
+    <div class="meta">{event.track}{event.car ? ` · ${event.car}` : ''}</div>
+    <div class="meta">{eventDateLabel(event)}</div>
   </div>
-  <h3>{eventLabel(event)}</h3>
-  <div class="meta">{event.track}{event.car ? ` · ${event.car}` : ''}</div>
-  <div class="meta">{eventDateLabel(event)}</div>
 </a>

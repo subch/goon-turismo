@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-tokyo-expressway-east-clockwise-25-jul-2024",
+  "source": "gridstats",
+  "seasonId": "summer-2024",
+  "track": "Tokyo Expressway - East Clockwise",
+  "car": "Ferrari 430 Scuderia",
+  "classCode": "Lap Time Challenge",
+  "startDate": "25 Jul 2024",
+  "endDate": "01 Aug 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.353Z"
+}

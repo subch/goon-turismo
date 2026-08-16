@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-24-heures-du-mans-race-track-07-nov-2024",
+  "source": "gridstats",
+  "seasonId": "autumn-2024",
+  "track": "24 Heures du Mans race track",
+  "car": "Mazda 787B",
+  "classCode": "Lap Time Challenge",
+  "startDate": "07 Nov 2024",
+  "endDate": "21 Nov 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.308Z"
+}

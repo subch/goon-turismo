@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-daytona-road-course-16-nov-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "Daytona Road Course",
+  "car": "Porsche 911 GT3 RS (992)",
+  "classCode": "Lap Time Challenge",
+  "startDate": "16 Nov 2023",
+  "endDate": "30 Nov 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:32:31.422Z"
+}

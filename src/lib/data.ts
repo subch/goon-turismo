@@ -189,6 +189,20 @@ export function wikiUrl(name: string | null | undefined): string | null {
   return WIKI_BASE + encodeURIComponent(cleaned.replace(/ /g, '_'));
 }
 
+/**
+ * Best-effort track photo, guessed from GT-GridStats' own asset naming
+ * (`/site-assets/TrackPhotos/{Track Name}_.webp`). Confirmed real but not
+ * fully reliable -- only ~60% of tracks resolve even with GT-GridStats' own
+ * canonical name, and spreadsheet-derived historical events often use a
+ * shorter/different name than GT-GridStats' full one, so many won't match at
+ * all. Callers should render this with an onerror fallback that hides the
+ * image rather than showing a broken-image icon.
+ */
+export function trackImageUrl(track: string | null | undefined): string | null {
+  if (!track) return null;
+  return 'https://gt-gridstats.com/site-assets/TrackPhotos/' + encodeURIComponent(`${track}_`) + '.webp';
+}
+
 export type StandingRow = { psn: string; displayName: string; points: number; events: number };
 
 export function eventsForSeason(seasonId: string): EventRecord[] {
@@ -208,18 +222,28 @@ const DROP_WORST_COUNT = 2;
  * roster of active/tracked players has changed too much over time to
  * meaningfully pre-seed zeroes the way the current season does.
  *
- * Season total = sum of every event's points, EXCLUDING the player's 2
- * lowest-scoring events (matching the crew's original spreadsheet formula:
+ * Season total = sum of every event's points, EXCLUDING the player's worst-
+ * scoring events (matching the crew's original spreadsheet formula:
  * `=SUM(...)-SMALL(...,1)-SMALL(...,2)`). Crucially, an event the player
  * skipped entirely counts as a 0 for this purpose too -- the spreadsheet
- * pads to the season's full event count before dropping the two lowest, so
- * skipping fewer than 2 events this season is effectively "free," while a
- * near-full-attendance player gets their worst 1-2 *real* results forgiven.
+ * pads to the season's full event count before dropping the lowest ones, so
+ * skipping a small number of events this season is effectively "free," while
+ * a near-full-attendance player gets their worst real result(s) forgiven.
+ *
+ * How many get dropped scales with how far into the season we are (floor(N/3),
+ * capped at DROP_WORST_COUNT): full 2-event forgiveness only kicks in once a
+ * season has at least 6 events on the books. Every historical season this was
+ * validated against already had well over 6, so this doesn't change any of
+ * those totals -- it only matters early in a brand new season, where
+ * dropping a flat 2 out of e.g. 3 total events so far would throw away most
+ * of a perfect scorer's real total (this isn't in the original spreadsheet,
+ * which was never evaluated mid-season with that few events on the books).
  */
 export function standings(seasonId?: string): StandingRow[] {
   const targetSeasonId = seasonId ?? currentSeason()?.id;
   const results = targetSeasonId ? resultsForSeason(targetSeasonId) : allResults;
   const seasonEventCount = targetSeasonId ? eventsForSeason(targetSeasonId).length : allEvents.length;
+  const dropCount = Math.min(DROP_WORST_COUNT, Math.floor(seasonEventCount / 3));
 
   const pointsByPsn = new Map<string, number[]>();
   const namesByPsn = new Map<string, string>();
@@ -241,7 +265,7 @@ export function standings(seasonId?: string): StandingRow[] {
   for (const [psn, scores] of pointsByPsn) {
     const padded = [...scores, ...Array(Math.max(0, seasonEventCount - scores.length)).fill(0)];
     padded.sort((a, b) => a - b);
-    const kept = padded.slice(Math.min(DROP_WORST_COUNT, padded.length));
+    const kept = padded.slice(Math.min(dropCount, padded.length));
     const points = kept.reduce((sum, p) => sum + p, 0);
     rows.push({ psn, displayName: namesByPsn.get(psn) ?? psn, points, events: scores.length });
   }

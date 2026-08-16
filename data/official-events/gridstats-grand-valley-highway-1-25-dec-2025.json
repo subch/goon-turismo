@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-grand-valley-highway-1-25-dec-2025",
+  "source": "gridstats",
+  "seasonId": "winter-2026",
+  "track": "Grand Valley - Highway 1",
+  "car": "Toyota Supra GT Road Car (JZA80)",
+  "classCode": "Lap Time Challenge",
+  "startDate": "25 Dec 2025",
+  "endDate": "08 Jan 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:34:26.438Z"
+}

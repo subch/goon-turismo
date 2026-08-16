@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-tokyo-expressway-central-clockwise-02-nov-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "Tokyo Expressway - Central Clockwise",
+  "car": "NISMO 400R",
+  "classCode": "Lap Time Challenge",
+  "startDate": "02 Nov 2023",
+  "endDate": "16 Nov 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:29.324Z"
+}

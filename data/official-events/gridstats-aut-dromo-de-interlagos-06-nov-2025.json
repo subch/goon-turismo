@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-aut-dromo-de-interlagos-06-nov-2025",
+  "source": "gridstats",
+  "seasonId": "autumn-2025",
+  "track": "Autódromo de Interlagos",
+  "car": "Honda NSX Type R",
+  "classCode": "Lap Time Challenge",
+  "startDate": "06 Nov 2025",
+  "endDate": "20 Nov 2025",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.195Z"
+}

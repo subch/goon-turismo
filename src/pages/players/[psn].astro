@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { players, resultsForPlayer, eventById, eventLabel } from '../../lib/data';
+import { players, resultsForPlayer, eventById, eventLabel, standings, currentSeason, seasons } from '../../lib/data';
 
 export function getStaticPaths() {
   return players.map((p) => ({
@@ -10,8 +10,21 @@ export function getStaticPaths() {
 }
 
 const { player } = Astro.props;
-const results = resultsForPlayer(player.psn).sort((a, b) => (a.groupRank ?? 999) - (b.groupRank ?? 999));
-const totalPoints = results.reduce((sum, r) => sum + (r.points ?? 0), 0);
+const seasonById = new Map(seasons.map((s) => [s.id, s]));
+// `seasons` is already ordered current-first, then historical newest-to-oldest,
+// so sorting by that position gives a clean season grouping without needing to
+// parse two different date formats (historical events store ISO dates, live
+// GT-GridStats-scraped ones store "06 Aug 2026" style strings).
+const seasonOrder = new Map(seasons.map((s, i) => [s.id, i]));
+const results = resultsForPlayer(player.psn).sort((a, b) => {
+  const seasonA = seasonOrder.get(eventById(a.eventId)?.seasonId ?? '') ?? 999;
+  const seasonB = seasonOrder.get(eventById(b.eventId)?.seasonId ?? '') ?? 999;
+  if (seasonA !== seasonB) return seasonA - seasonB;
+  return (a.groupRank ?? 999) - (b.groupRank ?? 999);
+});
+const allTimePoints = results.reduce((sum, r) => sum + (r.points ?? 0), 0);
+const cur = currentSeason();
+const currentStanding = cur ? standings(cur.id).find((row) => row.psn === player.psn) : undefined;
 const stats = player.stats;
 const gs = player.gridstats;
 ---
@@ -21,11 +34,19 @@ const gs = player.gridstats;
 
   <div class="grid">
     <div class="card">
-      <div class="meta">Season points</div>
-      <h3>{totalPoints}</h3>
+      <div class="meta">{cur?.name ?? 'Current season'} points</div>
+      <h3>{currentStanding?.points ?? 0}</h3>
     </div>
     <div class="card">
-      <div class="meta">Events entered (tracked)</div>
+      <div class="meta">{cur?.name ?? 'Current season'} events</div>
+      <h3>{currentStanding?.events ?? 0}</h3>
+    </div>
+    <div class="card">
+      <div class="meta">All-time points (every season, no drops)</div>
+      <h3>{allTimePoints}</h3>
+    </div>
+    <div class="card">
+      <div class="meta">All-time events entered</div>
       <h3>{results.length}</h3>
     </div>
     {gs?.dr != null && (
@@ -56,6 +77,7 @@ const gs = player.gridstats;
       <table>
         <thead>
           <tr>
+            <th>Season</th>
             <th>Event</th>
             <th>Rank</th>
             <th>Time</th>
@@ -65,8 +87,10 @@ const gs = player.gridstats;
         <tbody>
           {results.map((r) => {
             const ev = eventById(r.eventId);
+            const season = ev?.seasonId ? seasonById.get(ev.seasonId) : undefined;
             return (
               <tr>
+                <td class="meta">{season?.name ?? '—'}</td>
                 <td>{ev ? <a href={`/events/${ev.id}/`}>{eventLabel(ev)}</a> : r.eventId}</td>
                 <td>{r.groupRank ?? '—'}</td>
                 <td>{r.timeRaw ?? '—'}</td>

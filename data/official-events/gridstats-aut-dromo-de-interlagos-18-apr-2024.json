@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-aut-dromo-de-interlagos-18-apr-2024",
+  "source": "gridstats",
+  "seasonId": "spring-2024",
+  "track": "Autódromo de Interlagos",
+  "car": "Jaguar XJ13",
+  "classCode": "Lap Time Challenge",
+  "startDate": "18 Apr 2024",
+  "endDate": "02 May 2024",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:14.389Z"
+}

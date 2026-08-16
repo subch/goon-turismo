@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-aut-dromo-de-interlagos-26-oct-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "Autódromo de Interlagos",
+  "car": "Mercedes-AMG GT Black Series",
+  "classCode": "Lap Time Challenge",
+  "startDate": "26 Oct 2023",
+  "endDate": "09 Nov 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:29.326Z"
+}

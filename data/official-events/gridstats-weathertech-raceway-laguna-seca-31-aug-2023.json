@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-weathertech-raceway-laguna-seca-31-aug-2023",
+  "source": "gridstats",
+  "seasonId": "y2023",
+  "track": "WeatherTech Raceway Laguna Seca",
+  "car": "Chevrolet Corvette C8 Stingray",
+  "classCode": "Lap Time Challenge",
+  "startDate": "31 Aug 2023",
+  "endDate": "14 Sep 2023",
+  "status": "unknown",
+  "lastScraped": "2026-08-16T06:35:29.349Z"
+}
