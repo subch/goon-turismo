@@ -12,9 +12,13 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 - **Time Trial results** — official and custom — feed points-based standings, grouped by season.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that
-  season. Scoring is percent-off-pace: the fastest group time in an event scores 100, and every 1%
-  off that pace costs 10 points (matches the crew's original scoring spreadsheet, validated against
-  1200+ historical results).
+  season. Per-event scoring is percent-off-pace: the fastest group time in an event scores 100,
+  and every 1% off that pace costs 10 points. Season totals drop each player's 2 lowest-scoring
+  events (an event you skipped entirely counts as a 0 for this purpose too, so skipping 1-2 events
+  a season is effectively free). Both rules match the crew's original scoring spreadsheet's
+  formulas (`=IF(...,100-((time/MIN(...)-1)*1000))` per event,
+  `=SUM(...)-SMALL(...,1)-SMALL(...,2)` for the season total), confirmed against real formulas in
+  the crew's exported workbook and validated against 1200+ historical results.
 - **11 past seasons (2023 through Spring 2026)** are backfilled from the crew's original scoring
   spreadsheet via `scripts/import-historical-seasons.mjs` — safe to re-run if a season needs
   re-importing.

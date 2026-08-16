@@ -60,6 +60,21 @@ function slugify(str) {
     .replace(/^-+|-+$/g, '');
 }
 
+// GT-GridStats dates look like "06 Aug 2026" -> "2026-08-06" for comparison
+// against season boundaries (ISO YYYY-MM-DD).
+function gtDateToIso(d) {
+  if (!d) return null;
+  const m = d.match(/^(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})$/);
+  if (!m) return null;
+  const months = {
+    Jan: '01', Feb: '02', Mar: '03', Apr: '04', May: '05', Jun: '06',
+    Jul: '07', Aug: '08', Sep: '09', Oct: '10', Nov: '11', Dec: '12',
+  };
+  const mo = months[m[2]];
+  if (!mo) return null;
+  return `${m[3]}-${mo}-${m[1].padStart(2, '0')}`;
+}
+
 async function fetchPlayerPage(psn) {
   const url = `${BASE}/player/${encodeURIComponent(psn)}`;
   const res = await fetch(url, {
@@ -184,6 +199,12 @@ async function saveJson(relPath, data) {
 async function main() {
   const players = await loadJson('players.json', []);
   const pointsConfig = await loadPointsConfig();
+  const seasons = await loadJson('seasons.json', []);
+  const currentSeason = seasons.find((s) => s.current);
+  if (!currentSeason) {
+    console.error('No current season found in data/seasons.json -- aborting.');
+    process.exit(1);
+  }
 
   const eventIndex = await loadJson('official-events/index.json', []);
   const allResults = await loadJson('results/official.json', []);
@@ -212,6 +233,13 @@ async function main() {
     };
 
     for (const row of scraped.events) {
+      // Each player's GT-GridStats "Event History" is their full lifetime
+      // history, not just this season -- skip anything that isn't actually
+      // part of the current season (historical seasons are backfilled from
+      // the spreadsheet instead, see import-historical-seasons.mjs).
+      const eventIso = gtDateToIso(row.endDate) ?? gtDateToIso(row.startDate);
+      if (!eventIso || eventIso < currentSeason.startDate) continue;
+
       const eventId = `gridstats-${slugify(row.track)}-${slugify(row.startDate ?? 'unknown')}`;
       touchedEventIds.add(eventId);
 
@@ -219,6 +247,7 @@ async function main() {
       await saveJson(`official-events/${eventId}.json`, {
         id: eventId,
         source: 'gridstats',
+        seasonId: currentSeason.id,
         track: row.track,
         car: row.vehicle,
         classCode: row.eventType,

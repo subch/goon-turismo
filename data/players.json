@@ -24,7 +24,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:02.407Z"
+      "lastSynced": "2026-08-16T05:07:39.943Z"
     }
   },
   {
@@ -52,7 +52,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:04.954Z"
+      "lastSynced": "2026-08-16T05:07:42.455Z"
     }
   },
   {
@@ -80,7 +80,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:07.564Z"
+      "lastSynced": "2026-08-16T05:07:45.020Z"
     }
   },
   {
@@ -108,7 +108,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:10.078Z"
+      "lastSynced": "2026-08-16T05:07:47.478Z"
     }
   },
   {
@@ -136,7 +136,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:12.608Z"
+      "lastSynced": "2026-08-16T05:07:49.956Z"
     }
   },
   {
@@ -164,7 +164,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:15.048Z"
+      "lastSynced": "2026-08-16T05:07:52.399Z"
     }
   },
   {
@@ -207,7 +207,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:19.388Z"
+      "lastSynced": "2026-08-16T05:07:56.652Z"
     }
   },
   {
@@ -235,7 +235,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:21.964Z"
+      "lastSynced": "2026-08-16T05:07:59.211Z"
     }
   },
   {
@@ -263,7 +263,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:24.429Z"
+      "lastSynced": "2026-08-16T05:08:01.595Z"
     }
   },
   {
@@ -291,7 +291,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:27.008Z"
+      "lastSynced": "2026-08-16T05:08:04.148Z"
     }
   },
   {
@@ -319,7 +319,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:29.549Z"
+      "lastSynced": "2026-08-16T05:08:06.749Z"
     }
   },
   {
@@ -347,7 +347,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:32.031Z"
+      "lastSynced": "2026-08-16T05:08:09.303Z"
     }
   },
   {
@@ -375,7 +375,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:34.435Z"
+      "lastSynced": "2026-08-16T05:08:11.759Z"
     }
   },
   {
@@ -403,7 +403,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T03:53:36.951Z"
+      "lastSynced": "2026-08-16T05:08:14.243Z"
     }
   },
   {
@@ -418,14 +418,40 @@
     "displayName": "Gettin_Fresh",
     "active": false,
     "joinedSeason": "autumn-2025",
-    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked."
+    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked.",
+    "gridstats": {
+      "nickname": null,
+      "dr": "A",
+      "sr": "S",
+      "countryCode": null,
+      "stats": {
+        "totalEntries": 0,
+        "victories": 0,
+        "poles": 0,
+        "otherPoints": 0
+      },
+      "lastSynced": "2026-08-16T05:08:18.415Z"
+    }
   },
   {
     "psn": "bitbasher",
     "displayName": "BitBasher",
     "active": false,
     "joinedSeason": "winter-2025",
-    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked."
+    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked.",
+    "gridstats": {
+      "nickname": null,
+      "dr": "B",
+      "sr": "B",
+      "countryCode": null,
+      "stats": {
+        "totalEntries": 0,
+        "victories": 0,
+        "poles": 0,
+        "otherPoints": 0
+      },
+      "lastSynced": "2026-08-16T05:08:20.794Z"
+    }
   },
   {
     "psn": "cheeto",
@@ -439,7 +465,20 @@
     "displayName": "NerdsMcGee",
     "active": false,
     "joinedSeason": "winter-2025",
-    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked."
+    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked.",
+    "gridstats": {
+      "nickname": null,
+      "dr": "D",
+      "sr": "A",
+      "countryCode": null,
+      "stats": {
+        "totalEntries": 0,
+        "victories": 0,
+        "poles": 0,
+        "otherPoints": 0
+      },
+      "lastSynced": "2026-08-16T05:08:24.869Z"
+    }
   },
   {
     "psn": "prototype",
@@ -467,6 +506,19 @@
     "displayName": "Boco_T",
     "active": false,
     "joinedSeason": "y2023",
-    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked."
+    "note": "Historical roster member from the imported spreadsheet archive; PSN unconfirmed, not live-tracked.",
+    "gridstats": {
+      "nickname": null,
+      "dr": "E",
+      "sr": "B",
+      "countryCode": null,
+      "stats": {
+        "totalEntries": 0,
+        "victories": 0,
+        "poles": 0,
+        "otherPoints": 0
+      },
+      "lastSynced": "2026-08-16T05:08:32.607Z"
+    }
   }
 ]

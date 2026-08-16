@@ -183,31 +183,50 @@ export function resultsForSeason(seasonId: string): ResultRow[] {
   return allResults.filter((r) => eventIds.has(r.eventId));
 }
 
+const DROP_WORST_COUNT = 2;
+
 /**
  * Standings for a single season (defaults to the current season). Historical
  * seasons only show players who actually posted a result that season -- the
  * roster of active/tracked players has changed too much over time to
  * meaningfully pre-seed zeroes the way the current season does.
+ *
+ * Season total = sum of every event's points, EXCLUDING the player's 2
+ * lowest-scoring events (matching the crew's original spreadsheet formula:
+ * `=SUM(...)-SMALL(...,1)-SMALL(...,2)`). Crucially, an event the player
+ * skipped entirely counts as a 0 for this purpose too -- the spreadsheet
+ * pads to the season's full event count before dropping the two lowest, so
+ * skipping fewer than 2 events this season is effectively "free," while a
+ * near-full-attendance player gets their worst 1-2 *real* results forgiven.
  */
 export function standings(seasonId?: string): StandingRow[] {
   const targetSeasonId = seasonId ?? currentSeason()?.id;
   const results = targetSeasonId ? resultsForSeason(targetSeasonId) : allResults;
-  const totals = new Map<string, StandingRow>();
+  const seasonEventCount = targetSeasonId ? eventsForSeason(targetSeasonId).length : allEvents.length;
+
+  const pointsByPsn = new Map<string, number[]>();
+  const namesByPsn = new Map<string, string>();
   if (targetSeasonId && targetSeasonId === currentSeason()?.id) {
     for (const p of players.filter((p) => p.active)) {
-      totals.set(p.psn, { psn: p.psn, displayName: p.displayName, points: 0, events: 0 });
+      pointsByPsn.set(p.psn, []);
+      namesByPsn.set(p.psn, p.displayName);
     }
   }
   for (const r of results) {
-    const existing = totals.get(r.psn) ?? {
-      psn: r.psn,
-      displayName: playerByPsn(r.psn)?.displayName ?? r.psn,
-      points: 0,
-      events: 0,
-    };
-    existing.points += r.points ?? 0;
-    existing.events += 1;
-    totals.set(r.psn, existing);
+    if (!pointsByPsn.has(r.psn)) {
+      pointsByPsn.set(r.psn, []);
+      namesByPsn.set(r.psn, playerByPsn(r.psn)?.displayName ?? r.psn);
+    }
+    pointsByPsn.get(r.psn)!.push(r.points ?? 0);
   }
-  return [...totals.values()].sort((a, b) => b.points - a.points);
+
+  const rows: StandingRow[] = [];
+  for (const [psn, scores] of pointsByPsn) {
+    const padded = [...scores, ...Array(Math.max(0, seasonEventCount - scores.length)).fill(0)];
+    padded.sort((a, b) => a - b);
+    const kept = padded.slice(Math.min(DROP_WORST_COUNT, padded.length));
+    const points = kept.reduce((sum, p) => sum + p, 0);
+    rows.push({ psn, displayName: namesByPsn.get(psn) ?? psn, points, events: scores.length });
+  }
+  return rows.sort((a, b) => b.points - a.points);
 }

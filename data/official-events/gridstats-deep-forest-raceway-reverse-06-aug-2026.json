@@ -1,12 +1,12 @@
 {
   "id": "gridstats-deep-forest-raceway-reverse-06-aug-2026",
   "source": "gridstats",
+  "seasonId": "summer-2026",
   "track": "Deep Forest Raceway Reverse",
   "car": "Gran Turismo Red Bull X2019 25th Anniversary",
   "classCode": "Lap Time Challenge",
   "startDate": "06 Aug 2026",
   "endDate": "20 Aug 2026",
   "status": "unknown",
-  "lastScraped": "2026-08-16T03:53:27.011Z",
-  "seasonId": "summer-2026"
+  "lastScraped": "2026-08-16T05:08:04.153Z"
 }
