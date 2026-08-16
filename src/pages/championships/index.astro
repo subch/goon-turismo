@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { championships } from '../../lib/data';
+---
+<Base title="Championships">
+  <h1>Championships</h1>
+  <p class="subtitle">Team-based championship seasons -- see the "Goon Standings" archive for full history.</p>
+
+  {championships.length === 0 ? (
+    <div class="panel"><div class="empty-state">No championship seasons yet.</div></div>
+  ) : (
+    <div class="grid">
+      {championships.map((c) => (
+        <a class="card" href={`/championships/${c.id}/`}>
+          <h3>{c.name}</h3>
+          <div class="meta">{c.teams.length} teams · {c.rounds.length} rounds · {c.format}</div>
+        </a>
+      ))}
+    </div>
+  )}
+</Base>

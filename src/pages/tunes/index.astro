@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tunes } from '../../lib/data';
+
+const tuneIssueUrl = 'https://github.com/subch/goon-turismo/issues/new?template=submit-tune.yml';
+---
+<Base title="Tunes">
+  <h1>Tunes</h1>
+  <p class="subtitle">Car setups from the crew that deviate from stock -- parts lists and settings.</p>
+
+  <div class="panel" style="padding: 20px; margin-bottom: 28px;">
+    <a class="btn" href={tuneIssueUrl} target="_blank" rel="noopener">Submit a tune →</a>
+  </div>
+
+  {tunes.length === 0 ? (
+    <div class="panel"><div class="empty-state">No tunes submitted yet.</div></div>
+  ) : (
+    <div class="grid">
+      {tunes.map((t) => (
+        <a class="card" href={`/tunes/${t.id}/`}>
+          <h3>{t.car}</h3>
+          <div class="meta">by {t.owner}{t.class ? ` · ${t.class}` : ''}</div>
+          <div class="meta">{t.parts.length} part{t.parts.length === 1 ? '' : 's'} from stock</div>
+        </a>
+      ))}
+    </div>
+  )}
+</Base>

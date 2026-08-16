@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tunes } from '../../lib/data';
+
+export function getStaticPaths() {
+  return tunes.map((t) => ({
+    params: { id: t.id },
+    props: { tune: t },
+  }));
+}
+
+const { tune } = Astro.props;
+const settingsEntries = Object.entries(tune.settings || {});
+---
+<Base title={tune.car}>
+  <h1>{tune.car}</h1>
+  <p class="subtitle">by <a href={`/players/${tune.owner}/`}>{tune.owner}</a>{tune.class ? ` · ${tune.class}` : ''}{tune.drivetrain ? ` · ${tune.drivetrain}` : ''}</p>
+
+  {tune.description && <p>{tune.description}</p>}
+
+  <h2>Parts</h2>
+  <div class="panel">
+    {tune.parts.length === 0 ? (
+      <div class="empty-state">No parts listed.</div>
+    ) : (
+      <table>
+        <thead><tr><th>Category</th><th>Part</th></tr></thead>
+        <tbody>
+          {tune.parts.map((p) => (
+            <tr><td>{p.category}</td><td>{p.name}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  {settingsEntries.length > 0 && (
+    <>
+      <h2>Settings</h2>
+      <div class="panel">
+        <table>
+          <thead><tr><th>Setting</th><th>Value</th></tr></thead>
+          <tbody>
+            {settingsEntries.map(([k, v]) => (
+              <tr><td>{k}</td><td>{v}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  {tune.notes && <p class="subtitle" style="margin-top:20px;">{tune.notes}</p>}
+</Base>

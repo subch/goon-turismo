@@ -1,0 +1,55 @@
+{
+  "id": "2026-fall-championship",
+  "name": "Fall Championship 2026",
+  "format": "trio",
+  "sourceNote": "Seeded from the 'Goon Standings' sheet, Fall Championship 2026 tab, 2026-08-16. Season hadn't started yet (all rounds still 0) -- update via the 'Update championship standings' issue form after each round.",
+  "rounds": [
+    { "id": "r1", "track": "Laguna Seca", "date": "2026-09-01" },
+    { "id": "r2", "track": "Dragon Trail - Seaside", "date": "2026-09-08" },
+    { "id": "r3", "track": "Yamagiwa + Miyabi Reverse", "date": "2026-09-15" },
+    { "id": "r4", "track": "Nurburgring GP", "date": "2026-09-22" },
+    { "id": "r5", "track": "Brands Hatch", "date": "2026-09-29" }
+  ],
+  "teams": [
+    {
+      "id": "team-red",
+      "name": "Team Red",
+      "color": "#e8384f",
+      "roster": ["rickiep00h", "Dr K (unconfirmed PSN)", "Fairfax (unconfirmed PSN)"],
+      "results": {},
+      "totalPoints": 0
+    },
+    {
+      "id": "team-pink",
+      "name": "Team Pink",
+      "color": "#e83fd8",
+      "roster": ["kirios86", "craigrackhaed (unconfirmed match: 'Crockhaed')", "wombatvet"],
+      "results": {},
+      "totalPoints": 0
+    },
+    {
+      "id": "team-green",
+      "name": "Team Green",
+      "color": "#2fbf71",
+      "roster": ["devmotron", "ashy_wenises", "Rammy (unconfirmed PSN)"],
+      "results": {},
+      "totalPoints": 0
+    },
+    {
+      "id": "team-blue",
+      "name": "Team Blue",
+      "color": "#3f7fe8",
+      "roster": ["empire_of_ravens", "superpharts", "sinder_22"],
+      "results": {},
+      "totalPoints": 0
+    },
+    {
+      "id": "reserve-drivers",
+      "name": "Reserve Drivers",
+      "color": "#3fd8e8",
+      "roster": [],
+      "results": {},
+      "totalPoints": 0
+    }
+  ]
+}

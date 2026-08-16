@@ -1,0 +1,68 @@
+name: Submit a tune
+description: Share a GT7 car setup with parts that deviate from stock.
+title: "[Tune] "
+labels: ["tune-submission"]
+body:
+  - type: input
+    id: car
+    attributes:
+      label: Car
+      placeholder: "Toyota MR2 GT-S '97"
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Your PSN
+      placeholder: "superpharts"
+    validations:
+      required: true
+  - type: input
+    id: class
+    attributes:
+      label: Class / PP (optional)
+      placeholder: "SH / N400"
+    validations:
+      required: false
+  - type: input
+    id: drivetrain
+    attributes:
+      label: Drivetrain (optional)
+      placeholder: "FR, FF, MR, 4WD..."
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "What's this tune for -- time trial, drag, a specific track?"
+    validations:
+      required: false
+  - type: textarea
+    id: parts
+    attributes:
+      label: Parts (that deviate from stock)
+      description: "One per line, format: `Category: Part name`"
+      placeholder: |
+        Engine: Stage 3 Turbo Kit
+        Suspension: Fully Customizable Suspension
+        Drivetrain: Fully Customizable LSD
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings (optional)
+      description: "One per line, format: `Setting: Value`"
+      placeholder: |
+        Power/Weight: 420 HP / 980 kg
+        Ride Height (F/R): 95 / 100
+        Camber (F/R): 1.5 / 1.0
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+    validations:
+      required: false

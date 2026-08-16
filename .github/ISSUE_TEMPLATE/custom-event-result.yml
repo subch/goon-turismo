@@ -1,18 +1,31 @@
-name: Submit custom event results
-description: Log results for a group-run custom Time Trial (not tracked on dg-edge.com).
-title: "[Custom Event] "
+name: Submit event results
+description: Log results for a custom group event, OR an official dg-edge.com Time Trial (dg-edge usually won't show our times automatically -- see below).
+title: "[Event Results] "
 labels: ["custom-event"]
 body:
   - type: markdown
     attributes:
       value: |
-        Fill this out after a custom group event and the site will pick it up automatically
-        within a few minutes. If this is another round of an event you already submitted,
-        use the *exact same Event name* so results get grouped together.
+        Use this for **custom group events** AND for **official dg-edge Time Trials** --
+        dg-edge only shows our results automatically for whoever's logged into their own
+        account there, so official-event times mostly need to come through here too.
+        If this is another round of an event you already submitted, use the *exact same
+        Event name* so results get grouped together.
+  - type: input
+    id: dg_edge_url
+    attributes:
+      label: Official dg-edge event link (optional)
+      description: >
+        Only fill this in if this is results for an OFFICIAL dg-edge Time Trial (e.g.
+        https://www.dg-edge.com/events/time-trials/630). Leave blank for a custom group event.
+      placeholder: "https://www.dg-edge.com/events/time-trials/630"
+    validations:
+      required: false
   - type: input
     id: event_name
     attributes:
       label: Event name
+      description: For an official event this can just be the track/car name -- it'll be cross-checked against the dg-edge link above.
       placeholder: "Friday Night Drags - Round 3"
     validations:
       required: true

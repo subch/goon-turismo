@@ -60,6 +60,42 @@ const officialEventModules = import.meta.glob<{ default: EventRecord }>('../../d
 const customEventModules = import.meta.glob<{ default: EventRecord }>('../../data/custom-events/*.json', {
   eager: true,
 });
+const tuneModules = import.meta.glob<{ default: Tune }>('../../data/tunes/*.json', { eager: true });
+const championshipModules = import.meta.glob<{ default: Championship }>('../../data/championships/*.json', {
+  eager: true,
+});
+
+export type Tune = {
+  id: string;
+  car: string;
+  owner: string;
+  class?: string | null;
+  drivetrain?: string | null;
+  description?: string;
+  parts: { category: string; name: string }[];
+  settings: Record<string, string>;
+  notes?: string;
+  createdFromIssue?: number | null;
+};
+
+export type ChampionshipRound = { id: string; track: string; date: string };
+export type ChampionshipTeamResult = { place: number | null; poleFl: number; points: number };
+export type ChampionshipTeam = {
+  id: string;
+  name: string;
+  color?: string;
+  roster: string[];
+  results: Record<string, ChampionshipTeamResult>;
+  totalPoints: number;
+};
+export type Championship = {
+  id: string;
+  name: string;
+  format: string;
+  rounds: ChampionshipRound[];
+  teams: ChampionshipTeam[];
+  sourceNote?: string;
+};
 
 function modulesToEvents(modules: Record<string, { default: EventRecord }>): EventRecord[] {
   return Object.entries(modules)
@@ -77,6 +113,24 @@ export const allResults: ResultRow[] = [
   ...(officialResultsData as ResultRow[]),
   ...(customResultsData as ResultRow[]),
 ];
+
+export const tunes: Tune[] = Object.entries(tuneModules)
+  .filter(([file]) => !file.endsWith('index.json'))
+  .map(([, mod]) => mod.default)
+  .filter(Boolean);
+
+export const championships: Championship[] = Object.entries(championshipModules)
+  .filter(([file]) => !file.endsWith('index.json'))
+  .map(([, mod]) => mod.default)
+  .filter(Boolean);
+
+export function championshipById(id: string): Championship | undefined {
+  return championships.find((c) => c.id === id);
+}
+
+export function tuneById(id: string): Tune | undefined {
+  return tunes.find((t) => t.id === id);
+}
 
 export function currentSeason(): Season | undefined {
   return seasons.find((s) => s.current) ?? seasons[0];

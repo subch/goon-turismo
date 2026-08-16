@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import { championships } from '../../lib/data';
+
+export function getStaticPaths() {
+  return championships.map((c) => ({
+    params: { id: c.id },
+    props: { championship: c },
+  }));
+}
+
+const { championship } = Astro.props;
+const sortedTeams = [...championship.teams].sort((a, b) => b.totalPoints - a.totalPoints);
+const updateIssueUrl = 'https://github.com/subch/goon-turismo/issues/new?template=update-championship.yml';
+---
+<Base title={championship.name}>
+  <h1>{championship.name}</h1>
+  <p class="subtitle">{championship.format} teams · {championship.rounds.length} rounds</p>
+
+  <div class="panel" style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Team</th>
+          <th>Roster</th>
+          {championship.rounds.map((r) => <th>{r.track}<br/><span style="font-weight:400;">{r.date}</span></th>)}
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sortedTeams.map((team, i) => (
+          <tr>
+            <td class={i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : ''}>{i + 1}</td>
+            <td>{team.color && <span style={`display:inline-block;width:10px;height:10px;border-radius:50%;background:${team.color};margin-right:6px;`}></span>}{team.name}</td>
+            <td class="meta">{team.roster.length === 0 ? '—' : team.roster.join(', ')}</td>
+            {championship.rounds.map((r) => {
+              const res = team.results?.[r.id];
+              return <td>{res ? `P${res.place ?? '—'} / ${res.points}pts` : '—'}</td>;
+            })}
+            <td><strong>{team.totalPoints}</strong></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel" style="padding: 20px; margin-top: 20px;">
+    <a class="btn" href={updateIssueUrl} target="_blank" rel="noopener">Report a round's results →</a>
+  </div>
+
+  {championship.sourceNote && <p class="subtitle" style="margin-top:20px;">{championship.sourceNote}</p>}
+</Base>

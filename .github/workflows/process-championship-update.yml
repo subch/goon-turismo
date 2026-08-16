@@ -1,4 +1,4 @@
-name: Process custom event submission
+name: Process championship update
 
 on:
   issues:
@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   process:
-    if: contains(github.event.issue.labels.*.name, 'custom-event')
+    if: contains(github.event.issue.labels.*.name, 'championship-update')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,22 +23,21 @@ jobs:
 
       - run: npm ci
 
-      - name: Parse and record submission
-        id: process
+      - name: Parse and apply update
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_BODY: ${{ github.event.issue.body }}
-        run: npm run process:issue-result
+        run: node scripts/process-championship-update.mjs
 
-      - name: Commit result data
+      - name: Commit championship data
         run: |
           git config user.name "goon-turismo-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/custom-events data/results/custom.json data/official-events data/results/official.json
+          git add data/championships
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Add custom event results from issue #${{ github.event.issue.number }}"
+            git commit -m "Update championship standings from issue #${{ github.event.issue.number }}"
             git push
           fi
 
@@ -51,7 +50,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: "✅ Got it — results recorded and the site will update on the next deploy (usually within a few minutes). Closing this out.",
+              body: "✅ Standings updated. Closing this out.",
             });
             await github.rest.issues.update({
               owner: context.repo.owner,
@@ -69,5 +68,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: "⚠️ I couldn't parse this submission automatically (check the Action log). Someone will need to fix the format and re-submit, or edit the data files by hand.",
+              body: "⚠️ Couldn't apply this update automatically (check the Action log) -- likely a season id, round id, or team name that didn't match exactly. Please fix and re-submit.",
             });

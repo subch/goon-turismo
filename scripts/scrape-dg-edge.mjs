@@ -7,13 +7,32 @@
  *   - data/official-events/index.json
  *   - data/results/official.json   (group results per event, ranked + scored)
  *
- * This is intentionally defensive: dg-edge.com's markup was not available to
- * inspect directly when this was written (no live browser access at build
- * time), so extraction is done by matching on *visible label text* rather
- * than guessing CSS class names. That's more resilient to styling/markup
- * changes, but it does mean this script logs WARN lines instead of crashing
- * when it can't find something -- check the GitHub Action log after the
- * first few scheduled runs and adjust the selectors/labels below as needed.
+ * Selectors below were verified against the real dg-edge.com markup (via a
+ * live logged-in browser session), so this is no longer a blind guess:
+ *   - Player aggregate stats are plain server-rendered text with labels like
+ *     "Global position", "Events attended", "Avg. delta" (label matching is
+ *     case-insensitive to survive CSS text-transform:uppercase styling).
+ *   - Event leaderboard rows are `table.ranking-table tr.ranking-row`, with
+ *     the player name in `a.player-nickname` and the time in a `td.text-end`
+ *     cell matching `mm:ss.mmm`.
+ *
+ * IMPORTANT KNOWN LIMITATION (confirmed by hand, 2026-08-16): dg-edge only
+ * renders leaderboard rows for the top of each event (rank ~1-250ish, grows
+ * as the page is scrolled/paginated) in a way this script can reach, and a
+ * player's "Events results" history section on their own profile page is
+ * ONLY populated when that specific player is logged in as themselves --
+ * viewing another player's profile (even while logged in as someone else)
+ * shows that section empty. There is no public way found so far to look up
+ * an arbitrary non-top-ranked player's time in a specific event. In
+ * practice this means: our friends' aggregate stats (Edge Score, Events
+ * Attended, etc.) will populate automatically, but most of their *official
+ * event* times will NOT show up here unless they happen to rank in the
+ * portion of the leaderboard this script reaches. Official-event results
+ * should be expected to mostly come through the same manual submission
+ * flow as custom events (see .github/ISSUE_TEMPLATE/custom-event-result.yml,
+ * which supports optionally linking a submission to an official dg-edge
+ * event). If dg-edge ever adds a real lookup-by-player API this script
+ * should switch to use it.
  *
  * Run locally with: npm run scrape:dg-edge
  */
@@ -53,10 +72,13 @@ async function fetchHtml(url) {
 }
 
 /**
- * Find a stat by its visible label text (e.g. "Edge Score", "Events Attended")
- * anywhere on the page, and return the nearest plausible value string.
+ * Find a stat by its visible label text (e.g. "Global position", "Events
+ * attended") anywhere on the page, and return the nearest plausible value
+ * string. Case-insensitive since dg-edge uppercases labels via CSS while the
+ * actual DOM text is mixed-case (confirmed: "Global position", "Avg. delta").
  */
 function extractStatByLabel($, label) {
+  const target = label.trim().toLowerCase();
   let value = null;
   $('*').each((_, el) => {
     if (value) return;
@@ -64,7 +86,7 @@ function extractStatByLabel($, label) {
     // Only look at leaf-ish nodes to avoid matching huge parent containers.
     if ($el.children().length > 2) return;
     const text = $el.text().trim();
-    if (text === label) {
+    if (text.toLowerCase() === target) {
       // Try siblings first, then parent's next sibling, then parent text minus label.
       const sibText = $el.next().text().trim();
       if (sibText) {
@@ -72,7 +94,7 @@ function extractStatByLabel($, label) {
         return;
       }
       const parent = $el.parent();
-      const parentText = parent.text().replace(label, '').trim();
+      const parentText = parent.text().replace(new RegExp(label, 'i'), '').trim();
       if (parentText) {
         value = parentText;
       }
@@ -99,11 +121,11 @@ async function scrapePlayer(psn) {
   const $ = cheerio.load(html);
 
   const stats = {
-    edgeScore: parseNumberish(extractStatByLabel($, 'Edge Score')),
-    globalPosition: parseNumberish(extractStatByLabel($, 'Global Position')),
-    countryPosition: parseNumberish(extractStatByLabel($, 'Country Position')),
-    eventsAttended: parseNumberish(extractStatByLabel($, 'Events Attended')),
-    avgDelta: extractStatByLabel($, 'Average Delta') ?? extractStatByLabel($, 'Avg Δ'),
+    edgeScore: parseNumberish(extractStatByLabel($, 'Edge score')),
+    globalPosition: parseNumberish(extractStatByLabel($, 'Global position')),
+    countryPosition: parseNumberish(extractStatByLabel($, 'Country position')),
+    eventsAttended: parseNumberish(extractStatByLabel($, 'Events attended')),
+    avgDelta: extractStatByLabel($, 'Avg. delta') ?? extractStatByLabel($, 'Average delta'),
     lastScraped: new Date().toISOString(),
   };
 
@@ -186,34 +208,36 @@ async function scrapeEventDetail(url, players) {
     event.endDate = dateRange[2];
   }
 
-  // Look for each tracked friend's PSN anywhere in the page and try to pull a
-  // nearby lap-time-shaped string out of the same row/container.
+  // Confirmed real markup: table.ranking-table > tbody > tr.ranking-row, with
+  // the player's PSN in an a.player-nickname link and the time in a
+  // td.text-end cell shaped like mm:ss.mmm. NOTE: dg-edge only renders the
+  // top slice of the leaderboard this way (see module doc comment) -- most
+  // friends will not appear here even if they ran the event. That's expected;
+  // it's a bonus catch, not the primary way results get onto the site.
   const results = [];
-  for (const player of players) {
-    const psnRegex = new RegExp(psnPattern(player.psn), 'i');
-    $('*').each((_, el) => {
-      const $el = $(el);
-      if ($el.children().length > 4) return; // skip big containers, want row-level nodes
-      const text = $el.text();
-      if (!psnRegex.test(text)) return;
-      const timeMatch = text.match(/\b\d{1,2}:\d{2}\.\d{3}\b|\b\d{1,3}\.\d{3}\b/);
-      if (timeMatch) {
-        results.push({
-          eventId: event.id,
-          psn: player.psn,
-          timeRaw: timeMatch[0],
-          timeMs: parseTimeToMs(timeMatch[0]),
-          scrapedAt: new Date().toISOString(),
-        });
-      }
+  const playersByPsnLower = new Map(players.map((p) => [p.psn.toLowerCase(), p]));
+
+  $('table.ranking-table tr.ranking-row, tr.ranking-row').each((_, row) => {
+    const $row = $(row);
+    const nickname = $row.find('a.player-nickname').first().text().trim();
+    if (!nickname) return;
+    const player = playersByPsnLower.get(nickname.toLowerCase());
+    if (!player) return;
+
+    const rowText = $row.text();
+    const timeMatch = rowText.match(/\b\d{1,2}:\d{2}\.\d{3}\b/);
+    if (!timeMatch) return;
+
+    results.push({
+      eventId: event.id,
+      psn: player.psn,
+      timeRaw: timeMatch[0],
+      timeMs: parseTimeToMs(timeMatch[0]),
+      scrapedAt: new Date().toISOString(),
     });
-  }
+  });
 
   return { event, results };
-}
-
-function psnPattern(psn) {
-  return psn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 async function loadJson(relPath, fallback) {

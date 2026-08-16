@@ -5,13 +5,118 @@
     "active": true,
     "joinedSeason": "s1",
     "dgEdgeUrl": "https://www.dg-edge.com/players/superpharts",
-    "stats": {
-      "edgeScore": null,
-      "globalPosition": null,
-      "countryPosition": null,
-      "eventsAttended": null,
-      "avgDelta": null,
-      "lastScraped": null
-    }
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "ashy_wenises",
+    "displayName": "ashy_wenises",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/ashy_wenises",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "devmotron",
+    "displayName": "devmotron",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/devmotron",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "doug_nougat",
+    "displayName": "doug_nougat",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/doug_nougat",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "sinder_22",
+    "displayName": "sinder_22",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/sinder_22",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "kirios86",
+    "displayName": "kirios86",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/kirios86",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "abner_assington",
+    "displayName": "abner_assington",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/abner_assington",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "ainsliespeed",
+    "displayName": "ainsliespeed",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/ainsliespeed",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "craigrackhaed",
+    "displayName": "craigrackhaed",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/craigrackhaed",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "fenix_down1",
+    "displayName": "fenix_down1",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/fenix_down1",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "braveman84",
+    "displayName": "braveman84",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/braveman84",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "rickiep00h",
+    "displayName": "rickiep00h",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/rickiep00h",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "vitti1107",
+    "displayName": "vitti1107",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/vitti1107",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "wombatvet",
+    "displayName": "wombatvet",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/wombatvet",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
+  },
+  {
+    "psn": "empire_of_ravens",
+    "displayName": "empire_of_ravens",
+    "active": true,
+    "joinedSeason": "s1",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/empire_of_ravens",
+    "stats": { "edgeScore": null, "globalPosition": null, "countryPosition": null, "eventsAttended": null, "avgDelta": null, "lastScraped": null }
   }
 ]

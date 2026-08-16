@@ -1,0 +1,40 @@
+name: Update championship standings
+description: Report a round's results for a team championship season.
+title: "[Championship] "
+labels: ["championship-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports one round of results for an existing championship season (see `/championships/`
+        on the site for season ids). This does not create a new season or add/remove
+        teams/rosters -- for that, edit `data/championships/<season-id>.json` directly in the repo.
+  - type: input
+    id: season_id
+    attributes:
+      label: Season id
+      placeholder: "2026-fall-championship"
+    validations:
+      required: true
+  - type: input
+    id: round_id
+    attributes:
+      label: Round id
+      description: "The round's id from the season file (e.g. r1, r2...)."
+      placeholder: "r1"
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results
+      description: >
+        One line per team, format: `Team name: place, pole/FL, points`. Leave pole/FL as 0 if
+        not applicable.
+      placeholder: |
+        Team Red: 1, 1, 25
+        Team Pink: 2, 0, 18
+        Team Green: 3, 0, 15
+        Team Blue: 4, 0, 12
+    validations:
+      required: true
