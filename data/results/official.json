@@ -1,10 +1,28 @@
 [
   {
     "eventId": "gridstats-deep-forest-raceway-reverse-06-aug-2026",
+    "psn": "bravemen84",
+    "timeRaw": "1:09.504",
+    "timeMs": 69504,
+    "scrapedAt": "2026-08-16T02:56:10.284Z",
+    "groupRank": 1,
+    "points": 20
+  },
+  {
+    "eventId": "gridstats-deep-forest-raceway-reverse-06-aug-2026",
     "psn": "superpharts",
     "timeRaw": "1:10.043",
     "timeMs": 70043,
-    "scrapedAt": "2026-08-16T02:46:05.491Z",
+    "scrapedAt": "2026-08-16T02:55:45.811Z",
+    "groupRank": 2,
+    "points": 17
+  },
+  {
+    "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
+    "psn": "bravemen84",
+    "timeRaw": "1:28.172",
+    "timeMs": 88172,
+    "scrapedAt": "2026-08-16T02:56:10.294Z",
     "groupRank": 1,
     "points": 20
   },
@@ -13,241 +31,295 @@
     "psn": "devmotron",
     "timeRaw": "1:29.854",
     "timeMs": 89854,
-    "scrapedAt": "2026-08-16T02:46:10.590Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:55:50.903Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
     "psn": "superpharts",
     "timeRaw": "1:30.328",
     "timeMs": 90328,
-    "scrapedAt": "2026-08-16T02:46:05.494Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:45.815Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
     "psn": "sinder_22",
     "timeRaw": "1:30.889",
     "timeMs": 90889,
-    "scrapedAt": "2026-08-16T02:46:14.827Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:55:55.931Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-fuji-international-speedway-23-jul-2026",
     "psn": "rickiep00h",
     "timeRaw": "1:30.967",
     "timeMs": 90967,
-    "scrapedAt": "2026-08-16T02:46:30.711Z",
-    "groupRank": 4,
-    "points": 13
+    "scrapedAt": "2026-08-16T02:56:12.794Z",
+    "groupRank": 5,
+    "points": 11
+  },
+  {
+    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "psn": "bravemen84",
+    "timeRaw": "1:57.597",
+    "timeMs": 117597,
+    "scrapedAt": "2026-08-16T02:56:10.297Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
     "psn": "ashy_wenises",
     "timeRaw": "1:59.666",
     "timeMs": 119666,
-    "scrapedAt": "2026-08-16T02:46:08.050Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:55:48.344Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
     "psn": "superpharts",
     "timeRaw": "1:59.919",
     "timeMs": 119919,
-    "scrapedAt": "2026-08-16T02:46:05.507Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:45.818Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
     "psn": "devmotron",
     "timeRaw": "2:00.712",
     "timeMs": 120712,
-    "scrapedAt": "2026-08-16T02:46:10.594Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:55:50.906Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
     "psn": "rickiep00h",
     "timeRaw": "2:02.453",
     "timeMs": 122453,
-    "scrapedAt": "2026-08-16T02:46:30.714Z",
-    "groupRank": 4,
-    "points": 13
+    "scrapedAt": "2026-08-16T02:56:12.798Z",
+    "groupRank": 5,
+    "points": 11
   },
   {
     "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
     "psn": "sinder_22",
     "timeRaw": "2:02.715",
     "timeMs": 122715,
-    "scrapedAt": "2026-08-16T02:46:14.830Z",
-    "groupRank": 5,
-    "points": 11
+    "scrapedAt": "2026-08-16T02:55:55.934Z",
+    "groupRank": 6,
+    "points": 10
+  },
+  {
+    "eventId": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:02.841",
+    "timeMs": 122841,
+    "scrapedAt": "2026-08-16T02:55:53.450Z",
+    "groupRank": 7,
+    "points": 9
+  },
+  {
+    "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+    "psn": "bravemen84",
+    "timeRaw": "2:31.996",
+    "timeMs": 151996,
+    "scrapedAt": "2026-08-16T02:56:10.300Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
     "psn": "empire_of_ravens",
     "timeRaw": "2:33.128",
     "timeMs": 153128,
-    "scrapedAt": "2026-08-16T02:46:38.187Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:56:20.213Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
     "psn": "devmotron",
     "timeRaw": "2:33.741",
     "timeMs": 153741,
-    "scrapedAt": "2026-08-16T02:46:10.597Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:50.909Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
     "psn": "rickiep00h",
     "timeRaw": "2:34.697",
     "timeMs": 154697,
-    "scrapedAt": "2026-08-16T02:46:30.717Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:56:12.801Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
     "psn": "superpharts",
     "timeRaw": "2:35.298",
     "timeMs": 155298,
-    "scrapedAt": "2026-08-16T02:46:05.511Z",
-    "groupRank": 4,
-    "points": 13
+    "scrapedAt": "2026-08-16T02:55:45.822Z",
+    "groupRank": 5,
+    "points": 11
+  },
+  {
+    "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
+    "psn": "bravemen84",
+    "timeRaw": "1:40.164",
+    "timeMs": 100164,
+    "scrapedAt": "2026-08-16T02:56:10.303Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
     "psn": "empire_of_ravens",
     "timeRaw": "1:40.577",
     "timeMs": 100577,
-    "scrapedAt": "2026-08-16T02:46:38.190Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:56:20.216Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
     "psn": "devmotron",
     "timeRaw": "1:41.406",
     "timeMs": 101406,
-    "scrapedAt": "2026-08-16T02:46:10.600Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:50.912Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
     "psn": "superpharts",
     "timeRaw": "1:41.426",
     "timeMs": 101426,
-    "scrapedAt": "2026-08-16T02:46:05.514Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:55:45.825Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-aut-dromo-de-interlagos-02-jul-2026",
     "psn": "rickiep00h",
     "timeRaw": "1:43.235",
     "timeMs": 103235,
-    "scrapedAt": "2026-08-16T02:46:30.721Z",
-    "groupRank": 4,
-    "points": 13
+    "scrapedAt": "2026-08-16T02:56:12.803Z",
+    "groupRank": 5,
+    "points": 11
+  },
+  {
+    "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
+    "psn": "bravemen84",
+    "timeRaw": "0:58.579",
+    "timeMs": 58579,
+    "scrapedAt": "2026-08-16T02:56:10.306Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
     "psn": "empire_of_ravens",
     "timeRaw": "0:58.740",
     "timeMs": 58740,
-    "scrapedAt": "2026-08-16T02:46:38.193Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:56:20.219Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
     "psn": "superpharts",
     "timeRaw": "0:59.455",
     "timeMs": 59455,
-    "scrapedAt": "2026-08-16T02:46:05.518Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:45.829Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
     "psn": "devmotron",
     "timeRaw": "1:00.093",
     "timeMs": 60093,
-    "scrapedAt": "2026-08-16T02:46:10.603Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:55:50.915Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
     "psn": "ashy_wenises",
     "timeRaw": "1:00.502",
     "timeMs": 60502,
-    "scrapedAt": "2026-08-16T02:46:08.053Z",
-    "groupRank": 4,
-    "points": 13
+    "scrapedAt": "2026-08-16T02:55:48.347Z",
+    "groupRank": 5,
+    "points": 11
   },
   {
     "eventId": "gridstats-willow-springs-international-raceway-horse-thief-mile-25-jun-2026",
     "psn": "rickiep00h",
     "timeRaw": "1:00.800",
     "timeMs": 60800,
-    "scrapedAt": "2026-08-16T02:46:30.724Z",
-    "groupRank": 5,
-    "points": 11
+    "scrapedAt": "2026-08-16T02:56:12.806Z",
+    "groupRank": 6,
+    "points": 10
+  },
+  {
+    "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
+    "psn": "bravemen84",
+    "timeRaw": "2:17.657",
+    "timeMs": 137657,
+    "scrapedAt": "2026-08-16T02:56:10.309Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
     "psn": "empire_of_ravens",
     "timeRaw": "2:18.417",
     "timeMs": 138417,
-    "scrapedAt": "2026-08-16T02:46:38.195Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:56:20.222Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
     "psn": "devmotron",
     "timeRaw": "2:19.120",
     "timeMs": 139120,
-    "scrapedAt": "2026-08-16T02:46:10.606Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:50.919Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
     "psn": "superpharts",
     "timeRaw": "2:19.418",
     "timeMs": 139418,
-    "scrapedAt": "2026-08-16T02:46:05.521Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:55:45.832Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-circuit-de-spa-francorchamps-19-jun-2026",
     "psn": "rickiep00h",
     "timeRaw": "2:21.015",
     "timeMs": 141015,
-    "scrapedAt": "2026-08-16T02:46:30.727Z",
-    "groupRank": 4,
-    "points": 13
+    "scrapedAt": "2026-08-16T02:56:12.808Z",
+    "groupRank": 5,
+    "points": 11
   },
   {
     "eventId": "gridstats-red-bull-ring-18-jun-2026",
     "psn": "ashy_wenises",
     "timeRaw": "1:32.628",
     "timeMs": 92628,
-    "scrapedAt": "2026-08-16T02:46:08.057Z",
+    "scrapedAt": "2026-08-16T02:55:48.350Z",
     "groupRank": 1,
     "points": 20
   },
@@ -256,7 +328,7 @@
     "psn": "superpharts",
     "timeRaw": "1:33.190",
     "timeMs": 93190,
-    "scrapedAt": "2026-08-16T02:46:05.525Z",
+    "scrapedAt": "2026-08-16T02:55:45.835Z",
     "groupRank": 2,
     "points": 17
   },
@@ -265,7 +337,7 @@
     "psn": "empire_of_ravens",
     "timeRaw": "1:33.578",
     "timeMs": 93578,
-    "scrapedAt": "2026-08-16T02:46:38.198Z",
+    "scrapedAt": "2026-08-16T02:56:20.226Z",
     "groupRank": 3,
     "points": 15
   },
@@ -274,7 +346,7 @@
     "psn": "devmotron",
     "timeRaw": "1:34.049",
     "timeMs": 94049,
-    "scrapedAt": "2026-08-16T02:46:10.609Z",
+    "scrapedAt": "2026-08-16T02:55:50.922Z",
     "groupRank": 4,
     "points": 13
   },
@@ -283,7 +355,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:35.007",
     "timeMs": 95007,
-    "scrapedAt": "2026-08-16T02:46:30.730Z",
+    "scrapedAt": "2026-08-16T02:56:12.811Z",
     "groupRank": 5,
     "points": 11
   },
@@ -292,7 +364,7 @@
     "psn": "ashy_wenises",
     "timeRaw": "3:26.504",
     "timeMs": 206504,
-    "scrapedAt": "2026-08-16T02:46:08.060Z",
+    "scrapedAt": "2026-08-16T02:55:48.353Z",
     "groupRank": 1,
     "points": 20
   },
@@ -301,7 +373,7 @@
     "psn": "superpharts",
     "timeRaw": "3:29.132",
     "timeMs": 209132,
-    "scrapedAt": "2026-08-16T02:46:05.528Z",
+    "scrapedAt": "2026-08-16T02:55:45.839Z",
     "groupRank": 2,
     "points": 17
   },
@@ -310,7 +382,7 @@
     "psn": "devmotron",
     "timeRaw": "3:31.456",
     "timeMs": 211456,
-    "scrapedAt": "2026-08-16T02:46:10.612Z",
+    "scrapedAt": "2026-08-16T02:55:50.925Z",
     "groupRank": 3,
     "points": 15
   },
@@ -319,7 +391,7 @@
     "psn": "rickiep00h",
     "timeRaw": "3:32.371",
     "timeMs": 212371,
-    "scrapedAt": "2026-08-16T02:46:30.733Z",
+    "scrapedAt": "2026-08-16T02:56:12.814Z",
     "groupRank": 4,
     "points": 13
   },
@@ -328,7 +400,7 @@
     "psn": "sinder_22",
     "timeRaw": "3:36.303",
     "timeMs": 216303,
-    "scrapedAt": "2026-08-16T02:46:14.833Z",
+    "scrapedAt": "2026-08-16T02:55:55.938Z",
     "groupRank": 5,
     "points": 11
   },
@@ -337,7 +409,7 @@
     "psn": "ashy_wenises",
     "timeRaw": "1:52.525",
     "timeMs": 112525,
-    "scrapedAt": "2026-08-16T02:46:08.063Z",
+    "scrapedAt": "2026-08-16T02:55:48.357Z",
     "groupRank": 1,
     "points": 20
   },
@@ -346,7 +418,7 @@
     "psn": "superpharts",
     "timeRaw": "1:53.404",
     "timeMs": 113404,
-    "scrapedAt": "2026-08-16T02:46:05.531Z",
+    "scrapedAt": "2026-08-16T02:55:45.842Z",
     "groupRank": 2,
     "points": 17
   },
@@ -355,7 +427,7 @@
     "psn": "ainsliespeed",
     "timeRaw": "1:53.418",
     "timeMs": 113418,
-    "scrapedAt": "2026-08-16T02:46:21.669Z",
+    "scrapedAt": "2026-08-16T02:56:02.664Z",
     "groupRank": 3,
     "points": 15
   },
@@ -364,7 +436,7 @@
     "psn": "devmotron",
     "timeRaw": "1:54.461",
     "timeMs": 114461,
-    "scrapedAt": "2026-08-16T02:46:10.615Z",
+    "scrapedAt": "2026-08-16T02:55:50.928Z",
     "groupRank": 4,
     "points": 13
   },
@@ -373,52 +445,79 @@
     "psn": "rickiep00h",
     "timeRaw": "1:55.424",
     "timeMs": 115424,
-    "scrapedAt": "2026-08-16T02:46:30.736Z",
+    "scrapedAt": "2026-08-16T02:56:12.816Z",
     "groupRank": 5,
     "points": 11
+  },
+  {
+    "eventId": "gridstats-daytona-road-course-06-aug-2026",
+    "psn": "bravemen84",
+    "timeRaw": "1:53.195",
+    "timeMs": 113195,
+    "scrapedAt": "2026-08-16T02:56:10.287Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-daytona-road-course-06-aug-2026",
     "psn": "ashy_wenises",
     "timeRaw": "1:53.491",
     "timeMs": 113491,
-    "scrapedAt": "2026-08-16T02:46:08.043Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:55:48.337Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-daytona-road-course-06-aug-2026",
     "psn": "devmotron",
     "timeRaw": "1:54.864",
     "timeMs": 114864,
-    "scrapedAt": "2026-08-16T02:46:10.587Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:50.899Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-daytona-road-course-06-aug-2026",
     "psn": "rickiep00h",
     "timeRaw": "1:55.114",
     "timeMs": 115114,
-    "scrapedAt": "2026-08-16T02:46:30.708Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:56:12.791Z",
+    "groupRank": 4,
+    "points": 13
+  },
+  {
+    "eventId": "gridstats-alsace-village-30-jul-2026",
+    "psn": "bravemen84",
+    "timeRaw": "2:17.454",
+    "timeMs": 137454,
+    "scrapedAt": "2026-08-16T02:56:10.291Z",
+    "groupRank": 1,
+    "points": 20
   },
   {
     "eventId": "gridstats-alsace-village-30-jul-2026",
     "psn": "ashy_wenises",
     "timeRaw": "2:18.181",
     "timeMs": 138181,
-    "scrapedAt": "2026-08-16T02:46:08.047Z",
-    "groupRank": 1,
-    "points": 20
+    "scrapedAt": "2026-08-16T02:55:48.340Z",
+    "groupRank": 2,
+    "points": 17
+  },
+  {
+    "eventId": "gridstats-alsace-village-30-jul-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:18.993",
+    "timeMs": 138993,
+    "scrapedAt": "2026-08-16T02:55:53.447Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
     "psn": "ashy_wenises",
     "timeRaw": "1:26.154",
     "timeMs": 86154,
-    "scrapedAt": "2026-08-16T02:46:08.067Z",
+    "scrapedAt": "2026-08-16T02:55:48.360Z",
     "groupRank": 1,
     "points": 20
   },
@@ -427,7 +526,7 @@
     "psn": "ainsliespeed",
     "timeRaw": "1:26.919",
     "timeMs": 86919,
-    "scrapedAt": "2026-08-16T02:46:21.683Z",
+    "scrapedAt": "2026-08-16T02:56:02.677Z",
     "groupRank": 2,
     "points": 17
   },
@@ -436,7 +535,7 @@
     "psn": "ashy_wenises",
     "timeRaw": "9:52.157",
     "timeMs": 592157,
-    "scrapedAt": "2026-08-16T02:46:08.070Z",
+    "scrapedAt": "2026-08-16T02:55:48.363Z",
     "groupRank": 1,
     "points": 20
   },
@@ -445,7 +544,7 @@
     "psn": "sinder_22",
     "timeRaw": "10:02.308",
     "timeMs": 602308,
-    "scrapedAt": "2026-08-16T02:46:14.836Z",
+    "scrapedAt": "2026-08-16T02:55:55.941Z",
     "groupRank": 2,
     "points": 17
   },
@@ -454,7 +553,7 @@
     "psn": "ainsliespeed",
     "timeRaw": "10:09.047",
     "timeMs": 609047,
-    "scrapedAt": "2026-08-16T02:46:21.686Z",
+    "scrapedAt": "2026-08-16T02:56:02.680Z",
     "groupRank": 3,
     "points": 15
   },
@@ -463,7 +562,7 @@
     "psn": "ashy_wenises",
     "timeRaw": "2:13.788",
     "timeMs": 133788,
-    "scrapedAt": "2026-08-16T02:46:08.074Z",
+    "scrapedAt": "2026-08-16T02:55:48.366Z",
     "groupRank": 1,
     "points": 20
   },
@@ -472,25 +571,34 @@
     "psn": "empire_of_ravens",
     "timeRaw": "2:14.157",
     "timeMs": 134157,
-    "scrapedAt": "2026-08-16T02:46:38.210Z",
+    "scrapedAt": "2026-08-16T02:56:20.239Z",
     "groupRank": 2,
     "points": 17
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-full-course-09-apr-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:15.160",
+    "timeMs": 135160,
+    "scrapedAt": "2026-08-16T02:55:53.468Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-autodrome-lago-maggiore-full-course-09-apr-2026",
     "psn": "sinder_22",
     "timeRaw": "2:16.399",
     "timeMs": 136399,
-    "scrapedAt": "2026-08-16T02:46:14.839Z",
-    "groupRank": 3,
-    "points": 15
+    "scrapedAt": "2026-08-16T02:55:55.945Z",
+    "groupRank": 4,
+    "points": 13
   },
   {
     "eventId": "gridstats-trial-mountain-circuit-reverse-02-apr-2026",
     "psn": "sinder_22",
     "timeRaw": "2:20.706",
     "timeMs": 140706,
-    "scrapedAt": "2026-08-16T02:46:14.843Z",
+    "scrapedAt": "2026-08-16T02:55:55.948Z",
     "groupRank": 1,
     "points": 20
   },
@@ -499,25 +607,34 @@
     "psn": "empire_of_ravens",
     "timeRaw": "1:29.857",
     "timeMs": 89857,
-    "scrapedAt": "2026-08-16T02:46:38.213Z",
+    "scrapedAt": "2026-08-16T02:56:20.242Z",
     "groupRank": 1,
     "points": 20
+  },
+  {
+    "eventId": "gridstats-michelin-raceway-road-atlanta-26-mar-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:30.654",
+    "timeMs": 90654,
+    "scrapedAt": "2026-08-16T02:55:53.471Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-michelin-raceway-road-atlanta-26-mar-2026",
     "psn": "sinder_22",
     "timeRaw": "1:32.032",
     "timeMs": 92032,
-    "scrapedAt": "2026-08-16T02:46:14.846Z",
-    "groupRank": 2,
-    "points": 17
+    "scrapedAt": "2026-08-16T02:55:55.951Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-high-speed-ring-12-mar-2026",
     "psn": "ainsliespeed",
     "timeRaw": "1:08.149",
     "timeMs": 68149,
-    "scrapedAt": "2026-08-16T02:46:21.693Z",
+    "scrapedAt": "2026-08-16T02:56:02.687Z",
     "groupRank": 1,
     "points": 20
   },
@@ -526,7 +643,7 @@
     "psn": "sinder_22",
     "timeRaw": "1:08.667",
     "timeMs": 68667,
-    "scrapedAt": "2026-08-16T02:46:14.850Z",
+    "scrapedAt": "2026-08-16T02:55:55.954Z",
     "groupRank": 2,
     "points": 17
   },
@@ -535,7 +652,7 @@
     "psn": "ainsliespeed",
     "timeRaw": "2:01.979",
     "timeMs": 121979,
-    "scrapedAt": "2026-08-16T02:46:21.696Z",
+    "scrapedAt": "2026-08-16T02:56:02.690Z",
     "groupRank": 1,
     "points": 20
   },
@@ -544,7 +661,7 @@
     "psn": "sinder_22",
     "timeRaw": "2:03.958",
     "timeMs": 123958,
-    "scrapedAt": "2026-08-16T02:46:14.853Z",
+    "scrapedAt": "2026-08-16T02:55:55.958Z",
     "groupRank": 2,
     "points": 17
   },
@@ -553,7 +670,7 @@
     "psn": "sinder_22",
     "timeRaw": "1:35.653",
     "timeMs": 95653,
-    "scrapedAt": "2026-08-16T02:46:14.856Z",
+    "scrapedAt": "2026-08-16T02:55:55.961Z",
     "groupRank": 1,
     "points": 20
   },
@@ -562,7 +679,7 @@
     "psn": "kirios86",
     "timeRaw": "0:40.613",
     "timeMs": 40613,
-    "scrapedAt": "2026-08-16T02:46:17.261Z",
+    "scrapedAt": "2026-08-16T02:55:58.410Z",
     "groupRank": 1,
     "points": 20
   },
@@ -571,7 +688,7 @@
     "psn": "vitti1107",
     "timeRaw": "0:40.618",
     "timeMs": 40618,
-    "scrapedAt": "2026-08-16T02:46:33.169Z",
+    "scrapedAt": "2026-08-16T02:56:15.247Z",
     "groupRank": 2,
     "points": 17
   },
@@ -580,7 +697,7 @@
     "psn": "wombatvet",
     "timeRaw": "0:40.675",
     "timeMs": 40675,
-    "scrapedAt": "2026-08-16T02:46:35.657Z",
+    "scrapedAt": "2026-08-16T02:56:17.734Z",
     "groupRank": 3,
     "points": 15
   },
@@ -589,7 +706,7 @@
     "psn": "kirios86",
     "timeRaw": "1:59.488",
     "timeMs": 119488,
-    "scrapedAt": "2026-08-16T02:46:17.265Z",
+    "scrapedAt": "2026-08-16T02:55:58.413Z",
     "groupRank": 1,
     "points": 20
   },
@@ -598,7 +715,7 @@
     "psn": "wombatvet",
     "timeRaw": "0:49.917",
     "timeMs": 49917,
-    "scrapedAt": "2026-08-16T02:46:35.660Z",
+    "scrapedAt": "2026-08-16T02:56:17.737Z",
     "groupRank": 1,
     "points": 20
   },
@@ -607,7 +724,7 @@
     "psn": "kirios86",
     "timeRaw": "0:49.967",
     "timeMs": 49967,
-    "scrapedAt": "2026-08-16T02:46:17.269Z",
+    "scrapedAt": "2026-08-16T02:55:58.416Z",
     "groupRank": 2,
     "points": 17
   },
@@ -616,7 +733,7 @@
     "psn": "kirios86",
     "timeRaw": "1:34.723",
     "timeMs": 94723,
-    "scrapedAt": "2026-08-16T02:46:17.272Z",
+    "scrapedAt": "2026-08-16T02:55:58.420Z",
     "groupRank": 1,
     "points": 20
   },
@@ -625,7 +742,7 @@
     "psn": "kirios86",
     "timeRaw": "1:36.581",
     "timeMs": 96581,
-    "scrapedAt": "2026-08-16T02:46:17.276Z",
+    "scrapedAt": "2026-08-16T02:55:58.423Z",
     "groupRank": 1,
     "points": 20
   },
@@ -634,7 +751,7 @@
     "psn": "kirios86",
     "timeRaw": "1:53.027",
     "timeMs": 113027,
-    "scrapedAt": "2026-08-16T02:46:17.281Z",
+    "scrapedAt": "2026-08-16T02:55:58.426Z",
     "groupRank": 1,
     "points": 20
   },
@@ -643,7 +760,7 @@
     "psn": "kirios86",
     "timeRaw": "2:26.682",
     "timeMs": 146682,
-    "scrapedAt": "2026-08-16T02:46:17.284Z",
+    "scrapedAt": "2026-08-16T02:55:58.429Z",
     "groupRank": 1,
     "points": 20
   },
@@ -652,7 +769,7 @@
     "psn": "kirios86",
     "timeRaw": "1:53.457",
     "timeMs": 113457,
-    "scrapedAt": "2026-08-16T02:46:17.288Z",
+    "scrapedAt": "2026-08-16T02:55:58.432Z",
     "groupRank": 1,
     "points": 20
   },
@@ -661,7 +778,7 @@
     "psn": "fenix_down1",
     "timeRaw": "1:55.442",
     "timeMs": 115442,
-    "scrapedAt": "2026-08-16T02:46:26.632Z",
+    "scrapedAt": "2026-08-16T02:56:07.712Z",
     "groupRank": 2,
     "points": 17
   },
@@ -670,7 +787,7 @@
     "psn": "fenix_down1",
     "timeRaw": "2:44.189",
     "timeMs": 164189,
-    "scrapedAt": "2026-08-16T02:46:26.635Z",
+    "scrapedAt": "2026-08-16T02:56:07.715Z",
     "groupRank": 1,
     "points": 20
   },
@@ -679,7 +796,7 @@
     "psn": "kirios86",
     "timeRaw": "2:44.346",
     "timeMs": 164346,
-    "scrapedAt": "2026-08-16T02:46:17.291Z",
+    "scrapedAt": "2026-08-16T02:55:58.436Z",
     "groupRank": 2,
     "points": 17
   },
@@ -688,7 +805,7 @@
     "psn": "kirios86",
     "timeRaw": "1:28.433",
     "timeMs": 88433,
-    "scrapedAt": "2026-08-16T02:46:17.295Z",
+    "scrapedAt": "2026-08-16T02:55:58.439Z",
     "groupRank": 1,
     "points": 20
   },
@@ -697,7 +814,7 @@
     "psn": "fenix_down1",
     "timeRaw": "1:29.247",
     "timeMs": 89247,
-    "scrapedAt": "2026-08-16T02:46:26.638Z",
+    "scrapedAt": "2026-08-16T02:56:07.718Z",
     "groupRank": 2,
     "points": 17
   },
@@ -706,7 +823,7 @@
     "psn": "ainsliespeed",
     "timeRaw": "1:10.047",
     "timeMs": 70047,
-    "scrapedAt": "2026-08-16T02:46:21.673Z",
+    "scrapedAt": "2026-08-16T02:56:02.667Z",
     "groupRank": 1,
     "points": 20
   },
@@ -715,34 +832,61 @@
     "psn": "empire_of_ravens",
     "timeRaw": "1:11.785",
     "timeMs": 71785,
-    "scrapedAt": "2026-08-16T02:46:38.201Z",
+    "scrapedAt": "2026-08-16T02:56:20.229Z",
     "groupRank": 2,
     "points": 17
+  },
+  {
+    "eventId": "gridstats-eiger-nordwand-28-may-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:11.929",
+    "timeMs": 71929,
+    "scrapedAt": "2026-08-16T02:55:53.453Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-weathertech-raceway-laguna-seca-27-may-2026",
     "psn": "ainsliespeed",
     "timeRaw": "1:23.377",
     "timeMs": 83377,
-    "scrapedAt": "2026-08-16T02:46:21.676Z",
+    "scrapedAt": "2026-08-16T02:56:02.671Z",
     "groupRank": 1,
     "points": 20
+  },
+  {
+    "eventId": "gridstats-weathertech-raceway-laguna-seca-27-may-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:24.221",
+    "timeMs": 84221,
+    "scrapedAt": "2026-08-16T02:55:53.456Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-autodromo-nazionale-monza-21-may-2026",
     "psn": "ainsliespeed",
     "timeRaw": "2:09.891",
     "timeMs": 129890.99999999999,
-    "scrapedAt": "2026-08-16T02:46:21.680Z",
+    "scrapedAt": "2026-08-16T02:56:02.674Z",
     "groupRank": 1,
     "points": 20
+  },
+  {
+    "eventId": "gridstats-autodromo-nazionale-monza-21-may-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:11.668",
+    "timeMs": 131668,
+    "scrapedAt": "2026-08-16T02:55:53.459Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-suzuka-circuit-19-mar-2026",
     "psn": "ainsliespeed",
     "timeRaw": "2:31.142",
     "timeMs": 151142,
-    "scrapedAt": "2026-08-16T02:46:21.689Z",
+    "scrapedAt": "2026-08-16T02:56:02.684Z",
     "groupRank": 1,
     "points": 20
   },
@@ -751,16 +895,25 @@
     "psn": "ainsliespeed",
     "timeRaw": "1:59.113",
     "timeMs": 119113,
-    "scrapedAt": "2026-08-16T02:46:21.699Z",
+    "scrapedAt": "2026-08-16T02:56:02.693Z",
     "groupRank": 1,
     "points": 20
+  },
+  {
+    "eventId": "gridstats-tokyo-expressway-east-counterclockwise-26-feb-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "2:02.172",
+    "timeMs": 122172,
+    "scrapedAt": "2026-08-16T02:55:53.474Z",
+    "groupRank": 2,
+    "points": 17
   },
   {
     "eventId": "gridstats-autodromo-nazionale-monza-14-may-2026",
     "psn": "craigrackhaed",
     "timeRaw": "1:25.322",
     "timeMs": 85322,
-    "scrapedAt": "2026-08-16T02:46:24.210Z",
+    "scrapedAt": "2026-08-16T02:56:05.300Z",
     "groupRank": 1,
     "points": 20
   },
@@ -769,7 +922,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "1:52.589",
     "timeMs": 112589,
-    "scrapedAt": "2026-08-16T02:46:24.214Z",
+    "scrapedAt": "2026-08-16T02:56:05.304Z",
     "groupRank": 1,
     "points": 20
   },
@@ -778,16 +931,25 @@
     "psn": "empire_of_ravens",
     "timeRaw": "1:53.558",
     "timeMs": 113558,
-    "scrapedAt": "2026-08-16T02:46:38.204Z",
+    "scrapedAt": "2026-08-16T02:56:20.232Z",
     "groupRank": 2,
     "points": 17
+  },
+  {
+    "eventId": "gridstats-trial-mountain-circuit-30-apr-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:56.244",
+    "timeMs": 116244,
+    "scrapedAt": "2026-08-16T02:55:53.462Z",
+    "groupRank": 3,
+    "points": 15
   },
   {
     "eventId": "gridstats-n-rburgring-24h-29-jan-2026",
     "psn": "craigrackhaed",
     "timeRaw": "8:56.564",
     "timeMs": 536564,
-    "scrapedAt": "2026-08-16T02:46:24.217Z",
+    "scrapedAt": "2026-08-16T02:56:05.307Z",
     "groupRank": 1,
     "points": 20
   },
@@ -796,7 +958,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "1:44.248",
     "timeMs": 104248,
-    "scrapedAt": "2026-08-16T02:46:24.221Z",
+    "scrapedAt": "2026-08-16T02:56:05.311Z",
     "groupRank": 1,
     "points": 20
   },
@@ -805,7 +967,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "2:02.367",
     "timeMs": 122367,
-    "scrapedAt": "2026-08-16T02:46:24.224Z",
+    "scrapedAt": "2026-08-16T02:56:05.314Z",
     "groupRank": 1,
     "points": 20
   },
@@ -814,7 +976,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "0:56.649",
     "timeMs": 56649,
-    "scrapedAt": "2026-08-16T02:46:24.228Z",
+    "scrapedAt": "2026-08-16T02:56:05.317Z",
     "groupRank": 1,
     "points": 20
   },
@@ -823,7 +985,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "1:33.128",
     "timeMs": 93128,
-    "scrapedAt": "2026-08-16T02:46:24.232Z",
+    "scrapedAt": "2026-08-16T02:56:05.321Z",
     "groupRank": 1,
     "points": 20
   },
@@ -832,7 +994,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "1:49.080",
     "timeMs": 109080,
-    "scrapedAt": "2026-08-16T02:46:24.236Z",
+    "scrapedAt": "2026-08-16T02:56:05.324Z",
     "groupRank": 1,
     "points": 20
   },
@@ -841,7 +1003,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "2:17.310",
     "timeMs": 137310,
-    "scrapedAt": "2026-08-16T02:46:24.239Z",
+    "scrapedAt": "2026-08-16T02:56:05.327Z",
     "groupRank": 1,
     "points": 20
   },
@@ -850,7 +1012,7 @@
     "psn": "craigrackhaed",
     "timeRaw": "2:23.262",
     "timeMs": 143262,
-    "scrapedAt": "2026-08-16T02:46:24.243Z",
+    "scrapedAt": "2026-08-16T02:56:05.331Z",
     "groupRank": 1,
     "points": 20
   },
@@ -859,7 +1021,7 @@
     "psn": "fenix_down1",
     "timeRaw": "1:23.313",
     "timeMs": 83313,
-    "scrapedAt": "2026-08-16T02:46:26.629Z",
+    "scrapedAt": "2026-08-16T02:56:07.708Z",
     "groupRank": 1,
     "points": 20
   },
@@ -868,7 +1030,7 @@
     "psn": "fenix_down1",
     "timeRaw": "2:50.448",
     "timeMs": 170448,
-    "scrapedAt": "2026-08-16T02:46:26.641Z",
+    "scrapedAt": "2026-08-16T02:56:07.721Z",
     "groupRank": 1,
     "points": 20
   },
@@ -877,7 +1039,7 @@
     "psn": "fenix_down1",
     "timeRaw": "0:32.977",
     "timeMs": 32977,
-    "scrapedAt": "2026-08-16T02:46:26.644Z",
+    "scrapedAt": "2026-08-16T02:56:07.724Z",
     "groupRank": 1,
     "points": 20
   },
@@ -886,7 +1048,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:31.047",
     "timeMs": 91047,
-    "scrapedAt": "2026-08-16T02:46:33.147Z",
+    "scrapedAt": "2026-08-16T02:56:15.228Z",
     "groupRank": 1,
     "points": 20
   },
@@ -895,7 +1057,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:07.063",
     "timeMs": 67063,
-    "scrapedAt": "2026-08-16T02:46:33.151Z",
+    "scrapedAt": "2026-08-16T02:56:15.232Z",
     "groupRank": 1,
     "points": 20
   },
@@ -904,7 +1066,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:45.030",
     "timeMs": 105030,
-    "scrapedAt": "2026-08-16T02:46:33.155Z",
+    "scrapedAt": "2026-08-16T02:56:15.235Z",
     "groupRank": 1,
     "points": 20
   },
@@ -913,7 +1075,7 @@
     "psn": "vitti1107",
     "timeRaw": "2:01.989",
     "timeMs": 121989,
-    "scrapedAt": "2026-08-16T02:46:33.158Z",
+    "scrapedAt": "2026-08-16T02:56:15.238Z",
     "groupRank": 1,
     "points": 20
   },
@@ -922,7 +1084,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:30.821",
     "timeMs": 90821,
-    "scrapedAt": "2026-08-16T02:46:33.161Z",
+    "scrapedAt": "2026-08-16T02:56:15.241Z",
     "groupRank": 1,
     "points": 20
   },
@@ -931,7 +1093,7 @@
     "psn": "vitti1107",
     "timeRaw": "3:13.563",
     "timeMs": 193563,
-    "scrapedAt": "2026-08-16T02:46:33.165Z",
+    "scrapedAt": "2026-08-16T02:56:15.244Z",
     "groupRank": 1,
     "points": 20
   },
@@ -940,7 +1102,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:15.971",
     "timeMs": 75971,
-    "scrapedAt": "2026-08-16T02:46:33.173Z",
+    "scrapedAt": "2026-08-16T02:56:15.249Z",
     "groupRank": 1,
     "points": 20
   },
@@ -949,7 +1111,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:16.075",
     "timeMs": 76075,
-    "scrapedAt": "2026-08-16T02:46:35.663Z",
+    "scrapedAt": "2026-08-16T02:56:17.739Z",
     "groupRank": 2,
     "points": 17
   },
@@ -958,7 +1120,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:36.531",
     "timeMs": 96531,
-    "scrapedAt": "2026-08-16T02:46:33.176Z",
+    "scrapedAt": "2026-08-16T02:56:15.252Z",
     "groupRank": 1,
     "points": 20
   },
@@ -967,7 +1129,7 @@
     "psn": "vitti1107",
     "timeRaw": "1:39.793",
     "timeMs": 99793,
-    "scrapedAt": "2026-08-16T02:46:33.180Z",
+    "scrapedAt": "2026-08-16T02:56:15.256Z",
     "groupRank": 1,
     "points": 20
   },
@@ -976,7 +1138,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:49.644",
     "timeMs": 109644,
-    "scrapedAt": "2026-08-16T02:46:35.646Z",
+    "scrapedAt": "2026-08-16T02:56:17.725Z",
     "groupRank": 1,
     "points": 20
   },
@@ -985,7 +1147,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:18.777",
     "timeMs": 78777,
-    "scrapedAt": "2026-08-16T02:46:35.649Z",
+    "scrapedAt": "2026-08-16T02:56:17.728Z",
     "groupRank": 1,
     "points": 20
   },
@@ -994,7 +1156,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:02.903",
     "timeMs": 62903,
-    "scrapedAt": "2026-08-16T02:46:35.654Z",
+    "scrapedAt": "2026-08-16T02:56:17.731Z",
     "groupRank": 1,
     "points": 20
   },
@@ -1003,7 +1165,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:26.370",
     "timeMs": 86370,
-    "scrapedAt": "2026-08-16T02:46:35.666Z",
+    "scrapedAt": "2026-08-16T02:56:17.742Z",
     "groupRank": 1,
     "points": 20
   },
@@ -1012,7 +1174,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:40.107",
     "timeMs": 100107,
-    "scrapedAt": "2026-08-16T02:46:35.670Z",
+    "scrapedAt": "2026-08-16T02:56:17.745Z",
     "groupRank": 1,
     "points": 20
   },
@@ -1021,7 +1183,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:46.422",
     "timeMs": 106422,
-    "scrapedAt": "2026-08-16T02:46:35.673Z",
+    "scrapedAt": "2026-08-16T02:56:17.748Z",
     "groupRank": 1,
     "points": 20
   },
@@ -1030,7 +1192,7 @@
     "psn": "wombatvet",
     "timeRaw": "1:55.776",
     "timeMs": 115776,
-    "scrapedAt": "2026-08-16T02:46:35.677Z",
+    "scrapedAt": "2026-08-16T02:56:17.751Z",
     "groupRank": 1,
     "points": 20
   },
@@ -1039,7 +1201,25 @@
     "psn": "empire_of_ravens",
     "timeRaw": "2:03.369",
     "timeMs": 123369,
-    "scrapedAt": "2026-08-16T02:46:38.207Z",
+    "scrapedAt": "2026-08-16T02:56:20.235Z",
+    "groupRank": 1,
+    "points": 20
+  },
+  {
+    "eventId": "gridstats-circuit-de-barcelona-catalunya-gp-layout-no-chicane-23-apr-2026",
+    "psn": "dog_nougat",
+    "timeRaw": "1:47.447",
+    "timeMs": 107447,
+    "scrapedAt": "2026-08-16T02:55:53.465Z",
+    "groupRank": 1,
+    "points": 20
+  },
+  {
+    "eventId": "gridstats-autodrome-lago-maggiore-east-end-13-aug-2026",
+    "psn": "bravemen84",
+    "timeRaw": "0:52.818",
+    "timeMs": 52818,
+    "scrapedAt": "2026-08-16T02:56:10.281Z",
     "groupRank": 1,
     "points": 20
   }

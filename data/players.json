@@ -24,7 +24,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:05.481Z"
+      "lastSynced": "2026-08-16T02:55:45.801Z"
     }
   },
   {
@@ -52,7 +52,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:08.038Z"
+      "lastSynced": "2026-08-16T02:55:48.333Z"
     }
   },
   {
@@ -80,15 +80,15 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:10.584Z"
+      "lastSynced": "2026-08-16T02:55:50.895Z"
     }
   },
   {
-    "psn": "doug_nougat",
-    "displayName": "doug_nougat",
+    "psn": "dog_nougat",
+    "displayName": "dog_nougat",
     "active": true,
     "joinedSeason": "s1",
-    "dgEdgeUrl": "https://www.dg-edge.com/players/doug_nougat",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/dog_nougat",
     "stats": {
       "edgeScore": null,
       "globalPosition": null,
@@ -96,6 +96,19 @@
       "eventsAttended": null,
       "avgDelta": null,
       "lastScraped": null
+    },
+    "gridstats": {
+      "nickname": null,
+      "dr": "B",
+      "sr": "S",
+      "countryCode": null,
+      "stats": {
+        "totalEntries": 0,
+        "victories": 0,
+        "poles": 0,
+        "otherPoints": 0
+      },
+      "lastSynced": "2026-08-16T02:55:53.443Z"
     }
   },
   {
@@ -123,7 +136,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:14.823Z"
+      "lastSynced": "2026-08-16T02:55:55.927Z"
     }
   },
   {
@@ -151,7 +164,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:17.257Z"
+      "lastSynced": "2026-08-16T02:55:58.406Z"
     }
   },
   {
@@ -194,7 +207,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:21.665Z"
+      "lastSynced": "2026-08-16T02:56:02.660Z"
     }
   },
   {
@@ -222,7 +235,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:24.206Z"
+      "lastSynced": "2026-08-16T02:56:05.296Z"
     }
   },
   {
@@ -250,15 +263,15 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:26.625Z"
+      "lastSynced": "2026-08-16T02:56:07.704Z"
     }
   },
   {
-    "psn": "braveman84",
-    "displayName": "braveman84",
+    "psn": "bravemen84",
+    "displayName": "bravemen84",
     "active": true,
     "joinedSeason": "s1",
-    "dgEdgeUrl": "https://www.dg-edge.com/players/braveman84",
+    "dgEdgeUrl": "https://www.dg-edge.com/players/bravemen84",
     "stats": {
       "edgeScore": null,
       "globalPosition": null,
@@ -266,6 +279,19 @@
       "eventsAttended": null,
       "avgDelta": null,
       "lastScraped": null
+    },
+    "gridstats": {
+      "nickname": null,
+      "dr": "A",
+      "sr": "S",
+      "countryCode": null,
+      "stats": {
+        "totalEntries": 0,
+        "victories": 0,
+        "poles": 0,
+        "otherPoints": 0
+      },
+      "lastSynced": "2026-08-16T02:56:10.277Z"
     }
   },
   {
@@ -293,7 +319,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:30.704Z"
+      "lastSynced": "2026-08-16T02:56:12.788Z"
     }
   },
   {
@@ -321,7 +347,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:33.143Z"
+      "lastSynced": "2026-08-16T02:56:15.225Z"
     }
   },
   {
@@ -349,7 +375,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:35.642Z"
+      "lastSynced": "2026-08-16T02:56:17.722Z"
     }
   },
   {
@@ -377,7 +403,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-16T02:46:38.184Z"
+      "lastSynced": "2026-08-16T02:56:20.209Z"
     }
   }
 ]
