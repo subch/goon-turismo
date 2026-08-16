@@ -1,0 +1,83 @@
+---
+import { seasons, standings, eventsForSeason, resultsForEvent, eventLabel, currentSeason } from '../lib/data';
+import type { Season } from '../lib/data';
+import LeaderboardTable from './LeaderboardTable.astro';
+
+interface Props {
+  season: Season;
+}
+
+const { season } = Astro.props;
+const rows = standings(season.id);
+const events = eventsForSeason(season.id).sort((a, b) => (b.startDate ?? '').localeCompare(a.startDate ?? ''));
+const cur = currentSeason();
+---
+<p class="subtitle">
+  {season.startDate} {season.endDate ? `– ${season.endDate}` : '– present'}
+  {season.current && <span class="badge live" style="margin-left:8px;">Current</span>}
+</p>
+
+<div class="season-switcher">
+  <label for="season-select">Season</label>
+  <select id="season-select">
+    {seasons.map((s) => (
+      <option value={s.id} selected={s.id === season.id}>{s.name}{s.current ? ' (current)' : ''}</option>
+    ))}
+  </select>
+</div>
+
+<h2>Overall standings</h2>
+<div class="panel">
+  {rows.length === 0 ? (
+    <div class="empty-state">No results yet for this season.</div>
+  ) : (
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Driver</th>
+          <th>Events</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, i) => (
+          <tr>
+            <td class={i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : ''}>{i + 1}</td>
+            <td><a href={`/players/${row.psn}/`}>{row.displayName}</a></td>
+            <td>{row.events}</td>
+            <td>{row.points}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+</div>
+
+<h2>Time Trials this season</h2>
+{events.length === 0 ? (
+  <div class="empty-state">No Time Trials recorded for this season yet.</div>
+) : (
+  <div class="event-breakdown-list">
+    {events.map((event) => {
+      const results = resultsForEvent(event.id);
+      return (
+        <div class="panel event-breakdown">
+          <div class="event-breakdown-header">
+            <h3><a href={`/events/${event.id}/`}>{eventLabel(event)}</a></h3>
+            <span class="meta">{event.car ? `${event.car} · ` : ''}{event.startDate}</span>
+          </div>
+          <LeaderboardTable results={results} />
+        </div>
+      );
+    })}
+  </div>
+)}
+
+<script define:vars={{ currentSeasonId: cur?.id }}>
+  const select = document.getElementById('season-select');
+  select?.addEventListener('change', (e) => {
+    const id = e.target.value;
+    window.location.href = id === currentSeasonId ? '/' : `/seasons/${id}/`;
+  });
+</script>

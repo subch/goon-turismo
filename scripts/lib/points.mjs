@@ -18,16 +18,17 @@ export async function loadPointsConfig() {
 }
 
 /**
- * Given a 1-indexed rank *within the group* (not dg-edge's global rank),
- * return the points awarded per data/points-config.json.
+ * Score a single time against the fastest time set *within the group* for
+ * that event (not dg-edge/GT-GridStats global rank). Matches the formula
+ * confirmed against the crew's historical scoring spreadsheet: the fastest
+ * group time always scores exactly 100, and every 1% off that pace costs
+ * 10 points. There's no floor -- a bad enough run can and does go negative
+ * (confirmed against real historical data, e.g. -88 for a run ~18.8% off
+ * pace), so don't clamp to 0 here.
  */
-export function pointsForRank(rank, config) {
-  if (!rank || rank < 1) return 0;
-  const idx = rank - 1;
-  if (idx < config.pointsByRank.length) {
-    return config.pointsByRank[idx];
-  }
-  return config.pointsBeyond ?? 0;
+export function scoreFromTime(timeMs, bestMs, config) {
+  const pctOff = ((timeMs - bestMs) / bestMs) * 100;
+  return Math.round((config.basePoints ?? 100) - (config.pointsLostPerPercentOff ?? 10) * pctOff);
 }
 
 /**
@@ -39,13 +40,14 @@ export function rankAndScoreResults(results, config) {
   const timed = results.filter((r) => typeof r.timeMs === 'number' && !Number.isNaN(r.timeMs));
   const untimed = results.filter((r) => !timed.includes(r));
   timed.sort((a, b) => a.timeMs - b.timeMs);
+  const bestMs = timed.length ? timed[0].timeMs : null;
   return [
     ...timed.map((r, i) => ({
       ...r,
       groupRank: i + 1,
-      points: pointsForRank(i + 1, config) + (config.participationBonus ?? 0),
+      points: scoreFromTime(r.timeMs, bestMs, config),
     })),
-    ...untimed.map((r) => ({ ...r, groupRank: null, points: config.participationBonus ?? 0 })),
+    ...untimed.map((r) => ({ ...r, groupRank: null, points: 0 })),
   ];
 }
 

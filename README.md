@@ -9,7 +9,15 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 
 - **Player stats** are synced nightly from [GT-GridStats](https://gt-gridstats.com) (DR/SR and
   event history) and from dg-edge.com (aggregate stats).
-- **Time Trial results** — official and custom — feed a per-season points leaderboard.
+- **Time Trial results** — official and custom — feed points-based standings, grouped by season.
+  The standings page defaults to the current season with a dropdown to browse any past season,
+  each showing the season's overall standings plus a full breakdown of every Time Trial run that
+  season. Scoring is percent-off-pace: the fastest group time in an event scores 100, and every 1%
+  off that pace costs 10 points (matches the crew's original scoring spreadsheet, validated against
+  1200+ historical results).
+- **11 past seasons (2023 through Spring 2026)** are backfilled from the crew's original scoring
+  spreadsheet via `scripts/import-historical-seasons.mjs` — safe to re-run if a season needs
+  re-importing.
 - **Events, tune submissions, and championship round updates** all come in through GitHub Issue
   Forms, processed automatically into the site's data.
 - **Team championship standings** track round-by-round points across the season.
@@ -23,9 +31,8 @@ and `.github/workflows/` schedules and wires them together.
 
 - Swap the interim GT-GridStats web scraper for the official token-based API once a
   `GT_GRIDSTATS_TOKEN` is obtained from the maintainer.
-- Backfill historical seasons from the old spreadsheets (only the current season is seeded so far).
-- Replace the placeholder points system with the crew's real scoring rules.
-- Finish confirming a couple of remaining PSNs in the championship roster.
+- Finish confirming a couple of remaining PSNs in the championship roster ("Fairfax" and
+  "Crockhaed"/craigrackhaed).
 
 ## Local development
 

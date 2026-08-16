@@ -186,6 +186,11 @@ tbody tr:hover {
   color: var(--accent-3);
 }
 
+.badge.historical {
+  background: rgba(154, 161, 172, 0.15);
+  color: var(--text-dim);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -231,6 +236,59 @@ tbody tr:hover {
 .btn:hover {
   color: #fff;
   opacity: 0.9;
+}
+
+.season-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.season-switcher label {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.season-switcher select {
+  background: var(--bg-panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.92rem;
+  font-family: var(--font);
+}
+
+.event-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-breakdown-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 16px 0;
+}
+
+.event-breakdown-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.event-breakdown-header .meta {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.event-breakdown table {
+  margin-top: 10px;
 }
 
 .site-footer {

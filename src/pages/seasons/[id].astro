@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { seasons, standings } from '../../lib/data';
+import SeasonStandings from '../../components/SeasonStandings.astro';
+import { seasons } from '../../lib/data';
 
 export function getStaticPaths() {
   return seasons.map((s) => ({
@@ -10,32 +11,8 @@ export function getStaticPaths() {
 }
 
 const { season } = Astro.props;
-// NOTE: once results carry a `seasonId`, filter standings() by season here.
-// For now there's only one season, so this shows overall standings.
-const rows = standings();
 ---
 <Base title={season.name}>
   <h1>{season.name}</h1>
-  <p class="subtitle">
-    {season.startDate} {season.endDate ? `– ${season.endDate}` : '– present'}
-    {season.current && <span class="badge live" style="margin-left:8px;">Current</span>}
-  </p>
-
-  <div class="panel">
-    <table>
-      <thead>
-        <tr><th>#</th><th>Driver</th><th>Events</th><th>Points</th></tr>
-      </thead>
-      <tbody>
-        {rows.map((row, i) => (
-          <tr>
-            <td>{i + 1}</td>
-            <td><a href={`/players/${row.psn}/`}>{row.displayName}</a></td>
-            <td>{row.events}</td>
-            <td>{row.points}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
+  <SeasonStandings season={season} />
 </Base>

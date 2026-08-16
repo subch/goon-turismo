@@ -10,7 +10,7 @@ const pointsByPsn = new Map(rows.map((r) => [r.psn, r.points]));
   <p class="subtitle">The crew we're tracking.</p>
 
   <div class="grid">
-    {players.map((p) => (
+    {players.filter((p) => p.active).map((p) => (
       <a class="card" href={`/players/${p.psn}/`}>
         <h3>{p.displayName}</h3>
         <div class="meta">PSN: {p.psn}</div>

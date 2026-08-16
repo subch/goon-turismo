@@ -11,6 +11,7 @@ export type Player = {
   active: boolean;
   joinedSeason: string;
   dgEdgeUrl?: string;
+  note?: string;
   stats?: {
     edgeScore: number | null;
     globalPosition: number | null;
@@ -39,7 +40,8 @@ export type Season = {
 
 export type EventRecord = {
   id: string;
-  source: 'dg-edge' | 'gridstats' | 'custom';
+  source: 'dg-edge' | 'gridstats' | 'custom' | 'historical';
+  seasonId?: string | null;
   track?: string | null;
   car?: string | null;
   classCode?: string | null;
@@ -166,21 +168,40 @@ export function eventLabel(e: EventRecord): string {
 
 export function eventDateLabel(e: EventRecord): string {
   if (e.date) return e.date;
-  if (e.startDate && e.endDate) return `${e.startDate} – ${e.endDate}`;
-  return e.startDate || 'Date TBD';
+  if (e.startDate && e.endDate && e.startDate !== e.endDate) return `${e.startDate} – ${e.endDate}`;
+  return e.startDate || e.endDate || 'Date TBD';
 }
 
 export type StandingRow = { psn: string; displayName: string; points: number; events: number };
 
-export function standings(): StandingRow[] {
+export function eventsForSeason(seasonId: string): EventRecord[] {
+  return allEvents.filter((e) => e.seasonId === seasonId);
+}
+
+export function resultsForSeason(seasonId: string): ResultRow[] {
+  const eventIds = new Set(eventsForSeason(seasonId).map((e) => e.id));
+  return allResults.filter((r) => eventIds.has(r.eventId));
+}
+
+/**
+ * Standings for a single season (defaults to the current season). Historical
+ * seasons only show players who actually posted a result that season -- the
+ * roster of active/tracked players has changed too much over time to
+ * meaningfully pre-seed zeroes the way the current season does.
+ */
+export function standings(seasonId?: string): StandingRow[] {
+  const targetSeasonId = seasonId ?? currentSeason()?.id;
+  const results = targetSeasonId ? resultsForSeason(targetSeasonId) : allResults;
   const totals = new Map<string, StandingRow>();
-  for (const p of players) {
-    totals.set(p.psn, { psn: p.psn, displayName: p.displayName, points: 0, events: 0 });
+  if (targetSeasonId && targetSeasonId === currentSeason()?.id) {
+    for (const p of players.filter((p) => p.active)) {
+      totals.set(p.psn, { psn: p.psn, displayName: p.displayName, points: 0, events: 0 });
+    }
   }
-  for (const r of allResults) {
+  for (const r of results) {
     const existing = totals.get(r.psn) ?? {
       psn: r.psn,
-      displayName: r.psn,
+      displayName: playerByPsn(r.psn)?.displayName ?? r.psn,
       points: 0,
       events: 0,
     };

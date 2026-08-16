@@ -89,6 +89,8 @@ async function main() {
   }
 
   const pointsConfig = await loadPointsConfig();
+  const seasons = await loadJson('seasons.json', []);
+  const currentSeasonId = seasons.find((s) => s.current)?.id ?? null;
   const isOfficial = !!dgEdgeUrl;
 
   let id;
@@ -102,6 +104,7 @@ async function main() {
     const eventRecord = existing ?? {
       id,
       source: 'dg-edge',
+      seasonId: currentSeasonId,
       dgEdgeUrl,
       track: track || null,
       car: car || null,
@@ -136,6 +139,7 @@ async function main() {
     const eventRecord = {
       id,
       source: 'custom',
+      seasonId: currentSeasonId,
       name: eventName,
       track: track || null,
       car: car || null,

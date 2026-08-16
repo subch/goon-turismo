@@ -1,6 +1,5 @@
 {
-  "_comment": "Points awarded by finishing rank WITHIN THE GROUP (i.e. rank among tracked friends in a single event), not global dg-edge rank. Adjust this once we know the group's historical scoring system from the sheet. Any rank beyond the array length gets 'pointsBeyond'.",
-  "pointsByRank": [20, 17, 15, 13, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
-  "pointsBeyond": 1,
-  "participationBonus": 0
+  "_comment": "Percent-off-pace scoring, confirmed against the crew's historical scoring spreadsheet (validated to a 99%+ exact match across ~1200 historical results). The fastest time WITHIN THE GROUP (not global dg-edge/GT-GridStats rank) always scores basePoints; every 1% off that pace costs pointsLostPerPercentOff points. No floor -- bad runs can go negative.",
+  "basePoints": 100,
+  "pointsLostPerPercentOff": 10
 }
