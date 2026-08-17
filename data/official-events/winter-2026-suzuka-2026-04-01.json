@@ -4,8 +4,9 @@
   "seasonId": "winter-2026",
   "track": "Suzuka",
   "car": "Celica ST205 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2026-04-01",
   "endDate": "2026-04-01",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.491Z"
 }

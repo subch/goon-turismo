@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "Red Bull Ring",
   "car": "GT-R NISMO '18 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-09-27",
   "endDate": "2023-09-27",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.523Z"
 }

@@ -4,8 +4,9 @@
   "seasonId": "winter-2024",
   "track": "Fuji - Short",
   "car": "Group 2 (RM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-01-03",
   "endDate": "2024-01-03",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:42:24.140Z"
 }

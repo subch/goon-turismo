@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "Dragon Trail - Seaside",
   "car": "Group 3 (RM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-10-04",
   "endDate": "2023-10-04",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:45:09.629Z"
 }

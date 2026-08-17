@@ -4,8 +4,9 @@
   "seasonId": "spring-2024",
   "track": "Suzuka",
   "car": "McLaren VGT (RS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-04-17",
   "endDate": "2024-04-17",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.536Z"
 }

@@ -4,8 +4,9 @@
   "seasonId": "winter-2025",
   "track": "Nürburgring - Sprint",
   "car": "Hyundai Ioniq 5 N (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-02-19",
   "endDate": "2025-02-19",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.512Z"
 }

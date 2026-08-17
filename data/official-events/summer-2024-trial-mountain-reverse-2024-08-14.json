@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "Trial Mountain - Reverse",
   "car": "R.S. Rampage (SS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-08-14",
   "endDate": "2024-08-14",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.528Z"
 }

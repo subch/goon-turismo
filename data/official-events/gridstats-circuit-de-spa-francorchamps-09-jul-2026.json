@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-circuit-de-spa-francorchamps-09-jul-2026",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
+  "track": "Circuit de Spa-Francorchamps",
+  "car": "McLaren 650S Gr.4",
+  "classCode": "Lap Time Challenge",
+  "startDate": "09 Jul 2026",
+  "endDate": "23 Jul 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-17T05:45:09.599Z"
+}

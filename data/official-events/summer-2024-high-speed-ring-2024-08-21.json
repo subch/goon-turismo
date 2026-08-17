@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "High Speed Ring",
   "car": "917 Living Legend (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-08-21",
   "endDate": "2024-08-21",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.527Z"
 }

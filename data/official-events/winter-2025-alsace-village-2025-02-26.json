@@ -4,8 +4,9 @@
   "seasonId": "winter-2025",
   "track": "Alsace - Village",
   "car": "Porsche 911 GT1 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-02-26",
   "endDate": "2025-02-26",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.512Z"
 }

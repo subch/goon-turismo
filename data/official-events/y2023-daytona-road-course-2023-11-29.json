@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "Daytona - Road Course",
   "car": "911 GT3 RS '22 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-11-29",
   "endDate": "2023-11-29",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:42:24.141Z"
 }

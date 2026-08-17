@@ -4,8 +4,9 @@
   "seasonId": "spring-2024",
   "track": "Watkins Glen (Long)",
   "car": "Škoda VGT (RM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-05-08",
   "endDate": "2024-05-08",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.535Z"
 }

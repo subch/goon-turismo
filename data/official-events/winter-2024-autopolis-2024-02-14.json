@@ -4,8 +4,9 @@
   "seasonId": "winter-2024",
   "track": "Autopolis",
   "car": "Group 4 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-02-14",
   "endDate": "2024-02-14",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.539Z"
 }

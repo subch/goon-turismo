@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "Red Bull Ring",
   "car": "Group 3 (IM/W)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-08-14",
   "endDate": "2024-08-14",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.516Z"
 }

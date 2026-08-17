@@ -1,0 +1,12 @@
+{
+  "id": "gridstats-kyoto-driving-park-yamagiwa-reverse-16-jul-2026",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
+  "track": "Kyoto Driving Park - Yamagiwa Reverse",
+  "car": "Mitsubishi FTO GP Version R",
+  "classCode": "Lap Time Challenge",
+  "startDate": "16 Jul 2026",
+  "endDate": "30 Jul 2026",
+  "status": "unknown",
+  "lastScraped": "2026-08-17T05:44:21.657Z"
+}

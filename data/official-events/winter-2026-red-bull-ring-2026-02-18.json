@@ -4,8 +4,9 @@
   "seasonId": "winter-2026",
   "track": "Red Bull Ring",
   "car": "Mazda RX-VISION (SM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2026-02-18",
   "endDate": "2026-02-18",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.493Z"
 }

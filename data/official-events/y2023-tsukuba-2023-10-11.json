@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "Tsukuba",
   "car": "Garage RCR Civic (SM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-10-11",
   "endDate": "2023-10-11",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.544Z"
 }

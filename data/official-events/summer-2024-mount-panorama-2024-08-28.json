@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "Mount Panorama",
   "car": "Renault Clio V6 24V (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-08-28",
   "endDate": "2024-08-28",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.526Z"
 }

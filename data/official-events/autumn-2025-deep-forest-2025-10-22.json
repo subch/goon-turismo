@@ -4,8 +4,9 @@
   "seasonId": "autumn-2025",
   "track": "Deep Forest",
   "car": "Mazda MX-5 12R (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-10-22",
   "endDate": "2025-10-22",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.501Z"
 }

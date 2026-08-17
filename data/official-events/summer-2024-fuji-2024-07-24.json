@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "Fuji",
   "car": "Super Formula '23 (RS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-07-24",
   "endDate": "2024-07-24",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.530Z"
 }

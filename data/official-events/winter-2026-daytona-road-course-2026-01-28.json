@@ -4,8 +4,9 @@
   "seasonId": "winter-2026",
   "track": "Daytona Road Course",
   "car": "Gr. 1 (RS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2026-01-28",
   "endDate": "2026-01-28",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.495Z"
 }

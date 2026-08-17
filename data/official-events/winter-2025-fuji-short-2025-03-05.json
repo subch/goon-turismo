@@ -4,8 +4,9 @@
   "seasonId": "winter-2025",
   "track": "Fuji - Short",
   "car": "WRX Group 4 (W)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-03-05",
   "endDate": "2025-03-05",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.511Z"
 }

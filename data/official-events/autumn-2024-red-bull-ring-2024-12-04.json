@@ -4,8 +4,9 @@
   "seasonId": "autumn-2024",
   "track": "Red Bull Ring",
   "car": "Porsche Mission X (RS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-12-04",
   "endDate": "2024-12-04",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.515Z"
 }

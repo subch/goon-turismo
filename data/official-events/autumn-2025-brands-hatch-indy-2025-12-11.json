@@ -4,8 +4,9 @@
   "seasonId": "autumn-2025",
   "track": "Brands Hatch Indy",
   "car": "Polestar 5 (SH)",
-  "classCode": null,
+  "classCode": "Polestar 5 Time Trial Challenge 2025",
   "startDate": "2025-12-11",
   "endDate": "2025-12-11",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.497Z"
 }

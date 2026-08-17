@@ -4,8 +4,9 @@
   "seasonId": "autumn-2025",
   "track": "Northern Isle Speedway",
   "car": "Challenger Hellcat (CM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-12-03",
   "endDate": "2025-12-03",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.498Z"
 }

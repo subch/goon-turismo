@@ -4,8 +4,9 @@
   "seasonId": "autumn-2025",
   "track": "Autopolis",
   "car": "Group 2 (RS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-10-29",
   "endDate": "2025-10-29",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.501Z"
 }

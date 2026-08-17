@@ -4,8 +4,9 @@
   "seasonId": "winter-2026",
   "track": "Circuit Gilles-Villeneuve",
   "car": "Mercedes-AMG C 63 S '15 (SM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2026-02-04",
   "endDate": "2026-02-04",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.494Z"
 }

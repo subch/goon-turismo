@@ -4,8 +4,9 @@
   "seasonId": "summer-2025",
   "track": "Dragon Trail - Gardens",
   "car": "Audi R8 '07 (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-09-03",
   "endDate": "2025-09-03",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.509Z"
 }

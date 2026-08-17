@@ -4,8 +4,9 @@
   "seasonId": "spring-2025",
   "track": "Brands Hatch - Indy",
   "car": "Kart (SS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-04-02",
   "endDate": "2025-04-02",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.514Z"
 }

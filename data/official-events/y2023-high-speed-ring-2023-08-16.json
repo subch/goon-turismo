@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "High Speed Ring",
   "car": "Mazda LM55 VGT (RM)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-08-16",
   "endDate": "2023-08-16",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.523Z"
 }

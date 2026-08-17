@@ -4,8 +4,9 @@
   "seasonId": "summer-2025",
   "track": "Fuji",
   "car": "Ruf RGT 4.2 '16 (SS)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-07-23",
   "endDate": "2025-07-23",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.507Z"
 }

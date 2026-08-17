@@ -4,8 +4,9 @@
   "seasonId": "spring-2026",
   "track": "Trial Mountain",
   "car": "GR. 3 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2026-05-14",
   "endDate": "2026-05-14",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.489Z"
 }

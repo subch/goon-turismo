@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "Eiger Nordwand",
   "car": "Impreza Rally '98 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-08-07",
   "endDate": "2024-08-07",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.529Z"
 }

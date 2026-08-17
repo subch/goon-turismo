@@ -4,8 +4,9 @@
   "seasonId": "autumn-2024",
   "track": "Suzuka - East",
   "car": "Miata NR-A (ND) '22 (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-10-02",
   "endDate": "2024-10-02",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.524Z"
 }

@@ -4,8 +4,9 @@
   "seasonId": "autumn-2024",
   "track": "24 Heures du Mans",
   "car": "Group C Gr.1 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-11-20",
   "endDate": "2024-11-20",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.521Z"
 }

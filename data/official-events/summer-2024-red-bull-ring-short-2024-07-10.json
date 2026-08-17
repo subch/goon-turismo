@@ -4,8 +4,9 @@
   "seasonId": "summer-2024",
   "track": "Red Bull Ring - Short",
   "car": "M3 Sport Evo '89 (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2024-07-10",
   "endDate": "2024-07-10",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.517Z"
 }

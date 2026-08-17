@@ -4,8 +4,9 @@
   "seasonId": "winter-2026",
   "track": "Watkins Glen Long",
   "car": "Lexus LC500 (SH) ",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2026-01-21",
   "endDate": "2026-01-21",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.495Z"
 }

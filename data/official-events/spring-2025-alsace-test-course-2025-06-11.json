@@ -4,8 +4,9 @@
   "seasonId": "spring-2025",
   "track": "Alsace - Test Course",
   "car": "Fairlady Z '08 (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-06-11",
   "endDate": "2025-06-11",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.510Z"
 }

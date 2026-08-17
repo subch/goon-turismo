@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "Goodwood",
   "car": "Aston Martin DB5 (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-09-20",
   "endDate": "2023-09-20",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.522Z"
 }

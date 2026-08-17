@@ -4,8 +4,9 @@
   "seasonId": "y2023",
   "track": "Alsace Test - Reverse",
   "car": "Group 4 (RH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2023-11-01",
   "endDate": "2023-11-01",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.543Z"
 }

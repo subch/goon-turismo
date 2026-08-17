@@ -4,8 +4,9 @@
   "seasonId": "autumn-2025",
   "track": "Nürburgring GP",
   "car": "Hyundai Elantra N (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-10-08",
   "endDate": "2025-10-08",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:41:53.502Z"
 }

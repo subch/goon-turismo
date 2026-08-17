@@ -4,8 +4,9 @@
   "seasonId": "winter-2025",
   "track": "Tsukuba",
   "car": "NSX Type-R '02 (SH)",
-  "classCode": null,
+  "classCode": "Lap Time Challenge",
   "startDate": "2025-01-08",
   "endDate": "2025-01-08",
-  "status": "ended"
+  "status": "ended",
+  "lastScraped": "2026-08-17T05:44:33.514Z"
 }
