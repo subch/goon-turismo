@@ -7,10 +7,13 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 
 ## What it does
 
-- **Player stats and events** are synced nightly from [GT-GridStats](https://gt-gridstats.com)
-  (DR/SR and event history) and from [dg-edge.com](https://www.dg-edge.com) (aggregate stats and
-  the live/upcoming events listing — dg-edge no longer shows a per-event leaderboard, so it
-  doesn't contribute individual results, just event metadata).
+- **Player stats and events** are synced nightly from [GT-GridStats](https://gt-gridstats.com) —
+  event/result history from its public player pages, plus DR/SR and richer per-player stats from
+  its real token-based API (5 requests/day quota, 2 used per nightly sync) — and from
+  [dg-edge.com](https://www.dg-edge.com) (aggregate stats and the live/upcoming events listing —
+  dg-edge no longer shows a per-event leaderboard, so it doesn't contribute individual results,
+  just event metadata). GT-GridStats doesn't publish an event-listing or per-event-leaderboard API,
+  so event/result syncing still goes through its public pages even with a token.
 - **Time Trial results** — official and custom — feed points-based standings, grouped by season.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that
@@ -63,11 +66,11 @@ and `.github/workflows/` schedules and wires them together.
 
 ## Future plans
 
-- Swap the interim GT-GridStats web scraper for the official token-based API once a
-  `GT_GRIDSTATS_TOKEN` is obtained from the maintainer.
 - Car thumbnails: GT-GridStats' own car images are keyed by opaque numeric IDs with no
   name-to-ID mapping available, so only track photos are shown for now. Real car thumbnails would
   need scraping each unique car's GT7 wiki infobox image instead.
+- If GT-GridStats ever documents an event-listing or per-event-leaderboard API endpoint, swap the
+  public-page event/result scraping in `scrape-gridstats-web.mjs` for that instead.
 
 ## Local development
 
@@ -80,6 +83,6 @@ Run the scrapers locally (writes into `data/`):
 
 ```bash
 npm run scrape:dg-edge
-npm run scrape:gridstats-web        # interim GT-GridStats scraper, no token needed
-GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats   # once a token is available
+npm run scrape:gridstats-web        # GT-GridStats public pages: events, results, fallback stats
+GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats   # real API: richer DR/SR/stats (5 req/day quota -- don't run this repeatedly)
 ```

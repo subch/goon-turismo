@@ -1,9 +1,17 @@
-name: Sync player stats (GT-GridStats web scrape, interim)
+name: Sync player and event data (GT-GridStats)
 
-# INTERIM: scrapes GT-GridStats's public /player/{psn} pages instead of using
-# the token-based API (see scrape-gridstats.mjs + README). Retire this
-# workflow once GT_GRIDSTATS_TOKEN is set and scrape-gridstats.mjs is doing
-# the job again.
+# Two complementary GT-GridStats sources, run back to back:
+#   1. scrape-gridstats-web.mjs -- scrapes public /player/{psn} pages for
+#      event/result history (the real token API has no event-listing or
+#      per-event-leaderboard endpoint, so this stays even with a token set).
+#   2. scrape-gridstats.mjs -- uses the real token-based /api/racers endpoint
+#      for richer, authoritative DR/SR/stats, overwriting step 1's rougher
+#      DR/SR guess for the same players. No-ops (exits 0) if
+#      GT_GRIDSTATS_TOKEN isn't set.
+#
+# Step 2's account is capped at 5 requests/day -- with 24 players and a
+# batch size of 16, one run costs 2 requests. Don't add more scheduled runs
+# of this workflow per day without checking that math still holds.
 
 on:
   schedule:
@@ -46,9 +54,15 @@ jobs:
       - run: npm ci
         if: env.SKIP != 'true'
 
-      - name: Scrape GT-GridStats public pages
+      - name: Scrape GT-GridStats public pages (events, results, fallback stats)
         if: env.SKIP != 'true'
         run: npm run scrape:gridstats-web
+
+      - name: Sync richer player stats from the real GT-GridStats API
+        if: env.SKIP != 'true'
+        env:
+          GT_GRIDSTATS_TOKEN: ${{ secrets.GT_GRIDSTATS_TOKEN }}
+        run: npm run scrape:gridstats
 
       - name: Commit data changes
         if: env.SKIP != 'true'
@@ -59,6 +73,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Sync player stats (GT-GridStats web scrape)"
+            git commit -m "Sync player and event data (GT-GridStats)"
             git push
           fi
