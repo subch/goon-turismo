@@ -334,7 +334,13 @@ async function main() {
       // real-world Time Trial if one already exists, rather than minting a
       // duplicate. Fill in only fields that existing event is missing --
       // never clobber data another source already provided.
-      const matchedId = findMatchingEventId(eventMatchIndex, season.id, row.track, eventIso);
+      // Match on startDate specifically (not eventIso, which prefers endDate
+      // for season assignment above) -- buildEventMatchIndex always indexes
+      // existing events by startDate, and a multi-week TT's start/end can be
+      // ~2 weeks apart, well outside the match tolerance, so mixing the two
+      // silently broke matching for every event.
+      const matchIso = humanDateToIso(row.startDate) ?? humanDateToIso(row.endDate);
+      const matchedId = matchIso ? findMatchingEventId(eventMatchIndex, season.id, row.track, matchIso) : null;
       const eventId = matchedId ?? `gridstats-${slugify(row.track)}-${slugify(row.startDate ?? 'unknown')}`;
       touchedEventIds.add(eventId);
 

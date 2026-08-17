@@ -296,8 +296,14 @@ async function main() {
     // under completely different ids/naming -- if one of its scrapes
     // already created a matching event this run should enrich, not
     // duplicate. Never clobber fields the other source already filled in.
+    // Match on startDate specifically (not eventIso, which prefers endDate
+    // for season assignment above) -- buildEventMatchIndex always indexes
+    // existing events by startDate, and a multi-week TT's start/end can be
+    // ~2 weeks apart, well outside the match tolerance, so mixing the two
+    // silently broke matching for every event.
+    const matchIso = humanDateToIso(event.startDate) ?? humanDateToIso(event.endDate);
     const matchIndex = buildEventMatchIndex([...eventById.values()]);
-    const matchedId = season && eventIso ? findMatchingEventId(matchIndex, season.id, event.track, eventIso) : null;
+    const matchedId = season && matchIso ? findMatchingEventId(matchIndex, season.id, event.track, matchIso) : null;
     const finalId = matchedId ?? event.id;
     const existingEvent = eventById.get(finalId);
     const eventRecord = existingEvent
