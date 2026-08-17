@@ -7,13 +7,16 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 
 ## What it does
 
-- **Player stats and events** are synced nightly from [GT-GridStats](https://gt-gridstats.com) —
-  event/result history from its public player pages, plus DR/SR and richer per-player stats from
-  its real token-based API (5 requests/day quota, 2 used per nightly sync) — and from
-  [dg-edge.com](https://www.dg-edge.com) (aggregate stats and the live/upcoming events listing —
-  dg-edge no longer shows a per-event leaderboard, so it doesn't contribute individual results,
-  just event metadata). GT-GridStats doesn't publish an event-listing or per-event-leaderboard API,
-  so event/result syncing still goes through its public pages even with a token.
+- **Player stats and events** are synced from two GitHub Actions workflows on different schedules:
+  `scrape-dg-edge.yml` scrapes [dg-edge.com](https://www.dg-edge.com) every 6 hours for the
+  live/upcoming events listing (dg-edge no longer shows a per-event leaderboard, so it doesn't
+  contribute individual results, just event metadata); `scrape-gridstats-web.yml` runs nightly
+  and pulls from [GT-GridStats](https://gt-gridstats.com) — event/result history from its public
+  player pages, plus DR/SR and richer per-player stats from its real token-based API. That API
+  account is capped at 5 requests/day, and a full sync costs 2, so it deliberately only ever runs
+  from the once-nightly workflow — never the 6-hourly one, which would blow the quota by itself.
+  GT-GridStats doesn't publish an event-listing or per-event-leaderboard API, so event/result
+  syncing still goes through its public pages even with a token.
 - **Time Trial results** — official and custom — feed points-based standings, grouped by season.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that

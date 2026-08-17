@@ -1,4 +1,11 @@
-name: Sync player stats (GT-GridStats + dg-edge)
+name: Sync events (dg-edge)
+
+# Runs every 6 hours to pick up new/updated Time Trial listings quickly.
+# Deliberately does NOT call the real GT-GridStats token API
+# (scrape:gridstats) -- that account is capped at 5 requests/day, and this
+# workflow's 4x/day cadence would blow through the whole quota by itself.
+# The token API only runs from scrape-gridstats-web.yml, once nightly (2
+# requests/run). See that workflow's header comment for the full picture.
 
 on:
   schedule:
@@ -23,11 +30,6 @@ jobs:
 
       - run: npm ci
 
-      - name: Sync from GT-GridStats (primary, PSN-keyed, no login needed)
-        env:
-          GT_GRIDSTATS_TOKEN: ${{ secrets.GT_GRIDSTATS_TOKEN }}
-        run: npm run scrape:gridstats
-
       - name: Scrape dg-edge.com (event listing + fallback aggregate stats)
         run: npm run scrape:dg-edge
 
@@ -39,6 +41,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Sync player stats (GT-GridStats + dg-edge)"
+            git commit -m "Sync events (dg-edge)"
             git push
           fi
