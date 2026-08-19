@@ -30,11 +30,11 @@
         "license": "Master S",
         "garage_count": 597,
         "collection_progress": "100%",
-        "total_credits": 826749835,
-        "play_time_readable": "1,181h 8m",
-        "distance_km": "148,821.1"
+        "total_credits": 826913435,
+        "play_time_readable": "1,183h 28m",
+        "distance_km": "149,012.5"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -68,11 +68,11 @@
         "license": "Master S",
         "garage_count": 450,
         "collection_progress": "88%",
-        "total_credits": 456859239,
-        "play_time_readable": "1,244h 27m",
-        "distance_km": "113,063.8"
+        "total_credits": 459483239,
+        "play_time_readable": "1,247h 0m",
+        "distance_km": "113,278.9"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -106,11 +106,11 @@
         "license": "Master S",
         "garage_count": 358,
         "collection_progress": "87%",
-        "total_credits": 436234052,
-        "play_time_readable": "886h 39m",
-        "distance_km": "90,725.1"
+        "total_credits": 436285052,
+        "play_time_readable": "887h 49m",
+        "distance_km": "90,817.5"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -144,11 +144,11 @@
         "license": "Master B",
         "garage_count": 672,
         "collection_progress": "98%",
-        "total_credits": 686048105,
-        "play_time_readable": "2,282h 24m",
-        "distance_km": "193,441.9"
+        "total_credits": 686667655,
+        "play_time_readable": "2,284h 50m",
+        "distance_km": "193,680.7"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -182,11 +182,11 @@
         "license": "IA",
         "garage_count": 298,
         "collection_progress": "62%",
-        "total_credits": 297550744,
-        "play_time_readable": "1,138h 8m",
-        "distance_km": "62,122.4"
+        "total_credits": 298645094,
+        "play_time_readable": "1,140h 18m",
+        "distance_km": "62,264.0"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -224,7 +224,7 @@
         "play_time_readable": "569h 0m",
         "distance_km": "59,890.3"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -273,11 +273,11 @@
         "license": "Master B",
         "garage_count": 207,
         "collection_progress": "54%",
-        "total_credits": 247987486,
-        "play_time_readable": "576h 16m",
-        "distance_km": "57,123.6"
+        "total_credits": 248022786,
+        "play_time_readable": "576h 59m",
+        "distance_km": "57,214.8"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -315,7 +315,7 @@
         "play_time_readable": "1,638h 43m",
         "distance_km": "210,073.1"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -353,7 +353,7 @@
         "play_time_readable": "670h 12m",
         "distance_km": "66,830.2"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -385,13 +385,13 @@
         "clean_races": 52,
         "collector_level": 70,
         "license": "Master S",
-        "garage_count": 725,
+        "garage_count": 726,
         "collection_progress": "100%",
-        "total_credits": 1031142645,
-        "play_time_readable": "1,866h 21m",
-        "distance_km": "261,171.2"
+        "total_credits": 1031188145,
+        "play_time_readable": "1,867h 26m",
+        "distance_km": "261,263.6"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -411,25 +411,25 @@
     "gridstats": {
       "nickname": "rickiep00h",
       "dr": "C",
-      "sr": "A",
+      "sr": "S",
       "countryCode": "US",
       "stats": {
-        "dr_points": 6716,
-        "dr_ratio": 0.45267,
-        "total_races": 793,
+        "dr_points": 5730,
+        "dr_ratio": 0.28833,
+        "total_races": 799,
         "victories": 24,
         "poles": 21,
         "fastest_laps": 18,
-        "clean_races": 50,
+        "clean_races": 51,
         "collector_level": 70,
         "license": "Master S",
         "garage_count": 493,
         "collection_progress": "100%",
-        "total_credits": 747919930,
-        "play_time_readable": "1,451h 22m",
-        "distance_km": "184,249.5"
+        "total_credits": 748090530,
+        "play_time_readable": "1,456h 44m",
+        "distance_km": "184,798.0"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -467,7 +467,7 @@
         "play_time_readable": "566h 25m",
         "distance_km": "59,177.6"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -505,7 +505,7 @@
         "play_time_readable": "575h 5m",
         "distance_km": "66,845.3"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -539,11 +539,11 @@
         "license": "Master B",
         "garage_count": 362,
         "collection_progress": "84%",
-        "total_credits": 446499108,
-        "play_time_readable": "1,467h 54m",
-        "distance_km": "137,574.6"
+        "total_credits": 446585658,
+        "play_time_readable": "1,470h 35m",
+        "distance_km": "137,795.3"
       },
-      "lastSynced": "2026-08-18T05:41:39.345Z"
+      "lastSynced": "2026-08-19T05:42:11.748Z"
     }
   },
   {
@@ -580,7 +580,7 @@
         "play_time_readable": "474h 56m",
         "distance_km": "32,722.0"
       },
-      "lastSynced": "2026-08-18T05:41:58.326Z"
+      "lastSynced": "2026-08-19T05:42:29.849Z"
     },
     "stats": {
       "edgeScore": 84.35,
@@ -618,7 +618,7 @@
         "play_time_readable": "1,071h 10m",
         "distance_km": "193,765.0"
       },
-      "lastSynced": "2026-08-18T05:41:58.326Z"
+      "lastSynced": "2026-08-19T05:42:29.849Z"
     },
     "stats": {
       "edgeScore": 51.83,
@@ -663,7 +663,7 @@
         "play_time_readable": "818h 49m",
         "distance_km": "154,584.3"
       },
-      "lastSynced": "2026-08-18T05:41:58.326Z"
+      "lastSynced": "2026-08-19T05:42:29.849Z"
     },
     "stats": {
       "edgeScore": 36.43,
@@ -722,7 +722,7 @@
         "play_time_readable": "40h 50m",
         "distance_km": "5,091.2"
       },
-      "lastSynced": "2026-08-18T05:41:58.326Z"
+      "lastSynced": "2026-08-19T05:42:29.849Z"
     }
   }
 ]
