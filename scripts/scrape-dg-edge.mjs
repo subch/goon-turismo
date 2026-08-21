@@ -306,16 +306,28 @@ async function main() {
     const matchedId = season && matchIso ? findMatchingEventId(matchIndex, season.id, event.track, matchIso) : null;
     const finalId = matchedId ?? event.id;
     const existingEvent = eventById.get(finalId);
-    const eventRecord = existingEvent
-      ? {
-          ...existingEvent,
-          car: existingEvent.car ?? event.car,
-          classCode: existingEvent.classCode ?? event.classCode,
-          status: event.status !== 'unknown' ? event.status : existingEvent.status,
-          dgEdgeUrl: existingEvent.dgEdgeUrl ?? event.dgEdgeUrl,
-          lastScraped: new Date().toISOString(),
-        }
-      : event;
+    // Re-scraping an event dg-edge itself already owns: dg-edge is the
+    // authoritative source for its own event's fields, so a fresh scrape
+    // always wins -- this is what catches dg-edge correcting placeholder
+    // car/date info that a brand-new listing sometimes launches with (seen
+    // 2026-08-20: a same-day Autopolis TT briefly listed the wrong car and
+    // a wrong end date, silently locked in forever under the old
+    // fill-only-if-missing merge below).
+    const eventRecord =
+      existingEvent && existingEvent.source === 'dg-edge'
+        ? { ...existingEvent, ...event, id: finalId, lastScraped: new Date().toISOString() }
+        : existingEvent
+          ? {
+              // Merging into an event another source (e.g. GT-GridStats)
+              // created: never clobber fields that source already filled in.
+              ...existingEvent,
+              car: existingEvent.car ?? event.car,
+              classCode: existingEvent.classCode ?? event.classCode,
+              status: event.status !== 'unknown' ? event.status : existingEvent.status,
+              dgEdgeUrl: existingEvent.dgEdgeUrl ?? event.dgEdgeUrl,
+              lastScraped: new Date().toISOString(),
+            }
+          : event;
 
     await saveJson(`official-events/${finalId}.json`, eventRecord);
     eventById.set(finalId, eventRecord);
