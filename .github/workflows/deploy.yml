@@ -1,9 +1,20 @@
 name: Build and deploy site
 
+# GitHub deliberately does NOT fire `on: push` workflows for commits pushed
+# by another Action using the default GITHUB_TOKEN (anti-recursion
+# safeguard) -- so the data-sync workflows' commits were never triggering a
+# rebuild, and the live site sat stale at whatever a human last pushed. The
+# workflow_run trigger below covers that: it fires once either sync workflow
+# finishes, regardless of which token did the pushing.
 on:
   push:
     branches: [main]
   workflow_dispatch: {}
+  workflow_run:
+    workflows:
+      - "Sync events (dg-edge)"
+      - "Sync player and event data (GT-GridStats)"
+    types: [completed]
 
 permissions:
   contents: read
@@ -16,9 +27,12 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
