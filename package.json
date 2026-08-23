@@ -14,7 +14,8 @@
     "scrape:gridstats": "node scripts/scrape-gridstats.mjs",
     "scrape:gridstats-web": "node scripts/scrape-gridstats-web.mjs",
     "process:issue-result": "node scripts/process-issue-result.mjs",
-    "import:historical-seasons": "node scripts/import-historical-seasons.mjs"
+    "import:historical-seasons": "node scripts/import-historical-seasons.mjs",
+    "verify:data": "node scripts/verify-data-integrity.mjs"
   },
   "dependencies": {
     "astro": "^4.16.0"

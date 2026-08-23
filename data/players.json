@@ -24,7 +24,7 @@
         "poles": 10,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:14:30.448Z"
+      "lastSynced": "2026-08-23T03:06:08.890Z"
     }
   },
   {
@@ -52,7 +52,7 @@
         "poles": 17,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:14:50.894Z"
+      "lastSynced": "2026-08-23T03:06:30.731Z"
     }
   },
   {
@@ -80,7 +80,7 @@
         "poles": 1,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:15:24.264Z"
+      "lastSynced": "2026-08-23T03:07:03.775Z"
     }
   },
   {
@@ -103,12 +103,12 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 240,
-        "victories": 9,
+        "totalEntries": 241,
+        "victories": 10,
         "poles": 6,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:15:39.676Z"
+      "lastSynced": "2026-08-23T03:07:19.078Z"
     }
   },
   {
@@ -136,7 +136,7 @@
         "poles": 5,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:15:54.769Z"
+      "lastSynced": "2026-08-23T03:07:34.205Z"
     }
   },
   {
@@ -164,7 +164,7 @@
         "poles": 2,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:16:00.291Z"
+      "lastSynced": "2026-08-23T03:07:39.890Z"
     }
   },
   {
@@ -207,7 +207,7 @@
         "poles": 7,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:16:23.789Z"
+      "lastSynced": "2026-08-23T03:08:03.085Z"
     }
   },
   {
@@ -235,7 +235,7 @@
         "poles": 14,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:16:50.217Z"
+      "lastSynced": "2026-08-23T03:08:29.532Z"
     }
   },
   {
@@ -263,7 +263,7 @@
         "poles": 3,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:16:54.403Z"
+      "lastSynced": "2026-08-23T03:08:33.730Z"
     }
   },
   {
@@ -291,7 +291,7 @@
         "poles": 28,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:17:28.927Z"
+      "lastSynced": "2026-08-23T03:09:08.158Z"
     }
   },
   {
@@ -319,7 +319,7 @@
         "poles": 21,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:17:52.681Z"
+      "lastSynced": "2026-08-23T03:09:35.800Z"
     }
   },
   {
@@ -347,7 +347,7 @@
         "poles": 22,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:18:04.856Z"
+      "lastSynced": "2026-08-23T03:09:48.830Z"
     }
   },
   {
@@ -375,7 +375,7 @@
         "poles": 10,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:18:15.205Z"
+      "lastSynced": "2026-08-23T03:09:59.109Z"
     }
   },
   {
@@ -403,7 +403,7 @@
         "poles": 17,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:18:43.347Z"
+      "lastSynced": "2026-08-23T03:10:27.267Z"
     }
   },
   {
@@ -430,7 +430,7 @@
         "poles": 2,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:18:59.006Z"
+      "lastSynced": "2026-08-23T03:10:42.736Z"
     },
     "stats": {
       "edgeScore": 84.35,
@@ -458,7 +458,7 @@
         "poles": 10,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:19:04.589Z"
+      "lastSynced": "2026-08-23T03:10:48.346Z"
     },
     "stats": {
       "edgeScore": 51.83,
@@ -493,7 +493,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:19:10.422Z"
+      "lastSynced": "2026-08-23T03:10:54.080Z"
     },
     "stats": {
       "edgeScore": 36.43,
@@ -542,7 +542,7 @@
         "poles": 0,
         "otherPoints": 0
       },
-      "lastSynced": "2026-08-21T01:19:19.692Z"
+      "lastSynced": "2026-08-23T03:11:03.192Z"
     }
   }
 ]

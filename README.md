@@ -7,16 +7,26 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 
 ## What it does
 
-- **Player stats and events** are synced from two GitHub Actions workflows on different schedules:
-  `scrape-dg-edge.yml` scrapes [dg-edge.com](https://www.dg-edge.com) every 6 hours for the
-  live/upcoming events listing (dg-edge no longer shows a per-event leaderboard, so it doesn't
-  contribute individual results, just event metadata); `scrape-gridstats-web.yml` runs nightly
-  and pulls from [GT-GridStats](https://gt-gridstats.com) — event/result history from its public
-  player pages, plus DR/SR and richer per-player stats from its real token-based API. That API
-  account is capped at 5 requests/day, and a full sync costs 2, so it deliberately only ever runs
-  from the once-nightly workflow — never the 6-hourly one, which would blow the quota by itself.
-  GT-GridStats doesn't publish an event-listing or per-event-leaderboard API, so event/result
-  syncing still goes through its public pages even with a token.
+- **Player stats and events** are synced from two GitHub Actions workflows, both every 6 hours
+  (offset from each other so they don't usually race): `scrape-dg-edge.yml` scrapes
+  [dg-edge.com](https://www.dg-edge.com) for the live/upcoming events listing (dg-edge no longer
+  shows a per-event leaderboard, so it doesn't contribute individual results, just event metadata);
+  `scrape-gridstats-web.yml` pulls event/result history from [GT-GridStats](https://gt-gridstats.com)'
+  public player pages. Both went from once-nightly to every-6-hours on 2026-08-23 — a player who set
+  a time right after a sync used to wait up to 24h for the next one to pick it up. GT-GridStats also
+  has a real token-based API with richer per-player stats (DR/SR + more), but that account is capped
+  at 5 requests/day (a full sync costs 2), so *that specific step* still only runs once/day (a fixed
+  UTC hour inside `scrape-gridstats-web.yml`, not the whole workflow) — the free event/result scraping
+  around it isn't quota-limited and runs every firing. GT-GridStats doesn't publish an event-listing
+  or per-event-leaderboard API, so event/result syncing goes through its public pages regardless.
+- **Data integrity is checked after every sync.** `scripts/verify-data-integrity.mjs`
+  (`npm run verify:data`) runs as the last step of both scrape workflows, after data is already
+  committed and pushed — so a problem it finds never blocks or loses a scrape, it just fails that
+  Actions run so it's visible right away. Checks: no duplicate events (reuses the exact matching
+  logic the scrapers use, so it can't be stricter or looser than what actually created the data),
+  no result pointing at a nonexistent event, no event pointing at a nonexistent season. Added after
+  two separate duplicate-event bugs each went unnoticed for days despite the scrapers running
+  successfully every night — this catches that whole category of problem same-day instead.
 - **Time Trial results** — official and custom — feed points-based standings, grouped by season.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that
@@ -33,7 +43,7 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
   spreadsheet via `scripts/import-historical-seasons.mjs` — safe to re-run if a season needs
   re-importing.
 - **Gap-filling from GT-GridStats.** The spreadsheet wasn't tracked consistently every season. The
-  nightly GT-GridStats sync (`scrape-gridstats-web.mjs`) scans each player's *full* event history —
+  GT-GridStats sync (`scrape-gridstats-web.mjs`) scans each player's *full* event history —
   paginating through every page, not just the first — against every past season, not just the
   current one, and adds any (player, track, ~date) result that isn't already recorded from any
   source, filling real gaps without touching or duplicating anything the spreadsheet already has.
@@ -88,4 +98,5 @@ Run the scrapers locally (writes into `data/`):
 npm run scrape:dg-edge
 npm run scrape:gridstats-web        # GT-GridStats public pages: events, results, fallback stats
 GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats   # real API: richer DR/SR/stats (5 req/day quota -- don't run this repeatedly)
+npm run verify:data                 # data integrity check (no duplicates, no dangling references)
 ```

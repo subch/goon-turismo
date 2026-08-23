@@ -1,28 +1,33 @@
 name: Sync player and event data (GT-GridStats)
 
-# Two complementary GT-GridStats sources, run back to back:
+# Runs every 6 hours (offset 30 min from scrape-dg-edge.yml's :17 so the two
+# don't usually race on the same push) -- results only ever come from
+# GT-GridStats' public event-history pages, and a player who sets a time
+# right after one sync used to wait up to 24h for the next. Every 6h caps
+# that lag much tighter, and this scraping is free/unmetered (be polite,
+# not quota-limited) so there's no cost to running it this often.
+#
+# Two complementary GT-GridStats sources:
 #   1. scrape-gridstats-web.mjs -- scrapes public /player/{psn} pages for
 #      event/result history (the real token API has no event-listing or
 #      per-event-leaderboard endpoint, so this stays even with a token set).
+#      Runs every firing.
 #   2. scrape-gridstats.mjs -- uses the real token-based /api/racers endpoint
 #      for richer, authoritative DR/SR/stats, overwriting step 1's rougher
-#      DR/SR guess for the same players. No-ops (exits 0) if
-#      GT_GRIDSTATS_TOKEN isn't set.
+#      DR/SR guess for the same players. That account is capped at 5
+#      requests/day (2 used per run), so this step only runs on the 06:47
+#      UTC firing -- once/day, regardless of DST (a fixed UTC hour, unlike
+#      the old "is it midnight Central" check, sidesteps DST entirely since
+#      this only needs to land once a day, not exactly at midnight).
 #
-# Step 2's account is capped at 5 requests/day -- with 24 players and a
-# batch size of 16, one run costs 2 requests. Don't add more scheduled runs
-# of this workflow per day without checking that math still holds.
+# Step 3 (verify:data) always runs last, after the commit/push, so a
+# problem it finds never blocks or loses a scrape -- it just fails the
+# Actions run so it's visible instead of silently piling up for days like
+# the last two duplicate-event incidents did.
 
 on:
   schedule:
-    # GitHub Actions cron only understands UTC, so we can't express "midnight
-    # Central" directly -- 05:00 UTC is midnight during Central Daylight Time
-    # (~Mar-Nov), 06:00 UTC is midnight during Central Standard Time
-    # (~Nov-Mar). Both fire every day; the "check local time" step below only
-    # lets the job actually run on whichever one currently lines up with
-    # local midnight, so this still runs once per day.
-    - cron: "0 5 * * *"
-    - cron: "0 6 * * *"
+    - cron: "47 */6 * * *" # 00:47, 06:47, 12:47, 18:47 UTC
   workflow_dispatch: {} # manual refresh from the Actions tab, any time
 
 permissions:
@@ -32,40 +37,36 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Only proceed at actual midnight Central (skip the non-matching DST cron)
-        if: github.event_name == 'schedule'
-        run: |
-          hour=$(TZ=America/Chicago date +%H)
-          if [ "$hour" != "00" ]; then
-            echo "Not midnight in America/Chicago right now (local hour: $hour) -- skipping this trigger."
-            echo "SKIP=true" >> "$GITHUB_ENV"
-          fi
-
       - uses: actions/checkout@v4
-        if: env.SKIP != 'true'
         with:
           ref: main
 
       - uses: actions/setup-node@v4
-        if: env.SKIP != 'true'
         with:
           node-version: 20
 
       - run: npm ci
-        if: env.SKIP != 'true'
 
       - name: Scrape GT-GridStats public pages (events, results, fallback stats)
-        if: env.SKIP != 'true'
         run: npm run scrape:gridstats-web
 
+      - name: Check whether this is today's one real-API run (fixed UTC hour, quota-limited)
+        id: real_api_check
+        run: |
+          hour=$(date -u +%H)
+          if [ "$hour" = "06" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Sync richer player stats from the real GT-GridStats API
-        if: env.SKIP != 'true'
+        if: steps.real_api_check.outputs.run == 'true'
         env:
           GT_GRIDSTATS_TOKEN: ${{ secrets.GT_GRIDSTATS_TOKEN }}
         run: npm run scrape:gridstats
 
       - name: Commit data changes
-        if: env.SKIP != 'true'
         run: |
           git config user.name "goon-turismo-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -76,3 +77,6 @@ jobs:
             git commit -m "Sync player and event data (GT-GridStats)"
             git push
           fi
+
+      - name: Verify data integrity
+        run: npm run verify:data

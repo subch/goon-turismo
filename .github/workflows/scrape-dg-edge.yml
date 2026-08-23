@@ -4,8 +4,12 @@ name: Sync events (dg-edge)
 # Deliberately does NOT call the real GT-GridStats token API
 # (scrape:gridstats) -- that account is capped at 5 requests/day, and this
 # workflow's 4x/day cadence would blow through the whole quota by itself.
-# The token API only runs from scrape-gridstats-web.yml, once nightly (2
+# The token API only runs from scrape-gridstats-web.yml, once/day (2
 # requests/run). See that workflow's header comment for the full picture.
+#
+# verify:data always runs last, after the commit/push, so a problem it
+# finds never blocks or loses a scrape -- it just fails the Actions run so
+# it's visible instead of silently piling up unnoticed.
 
 on:
   schedule:
@@ -44,3 +48,6 @@ jobs:
             git commit -m "Sync events (dg-edge)"
             git push
           fi
+
+      - name: Verify data integrity
+        run: npm run verify:data
