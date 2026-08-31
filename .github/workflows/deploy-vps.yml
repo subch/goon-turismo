@@ -1,0 +1,80 @@
+name: Deploy site to VPS
+
+# Runs alongside deploy.yml (GitHub Pages), not instead of it. Until the
+# goon-turismo.com DNS moves off Pages, this only stages the same build on the
+# VPS. Do not delete deploy.yml - it is the rollback.
+#
+# The SSH key here is NOT a general-purpose key: on the box it is pinned to
+# `rrsync -wo /opt/stacks/goon/public`, so it can write that one web root and
+# nothing else - no shell, no reads, no port forwarding. Verified refused.
+#
+# data/** is deliberately ignored. Once the scraper runs on the VPS it already
+# rebuilds and publishes locally the moment it syncs, so letting a data-only
+# push trigger a second build here would just race the box against itself for
+# the rrsync lock and republish bytes that are already live. Pushes that touch
+# source still deploy normally, and a mixed push still counts as source.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+# rrsync takes a per-user lock, so two deploys at once means one fails.
+# Queue rather than cancel - a superseded build is still a valid one.
+concurrency:
+  group: goon-vps-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Sanity-check the build
+        # A broken or empty dist rsynced with --delete would wipe the live site.
+        run: |
+          set -euo pipefail
+          test -f dist/index.html || { echo "dist/index.html missing - refusing to deploy"; exit 1; }
+          test -f dist/players/index.html || { echo "dist/players/index.html missing - refusing to deploy"; exit 1; }
+          count=$(find dist -type f | wc -l)
+          echo "dist contains $count files"
+          [ "$count" -ge 100 ] || { echo "only $count files - that is too few, refusing to deploy"; exit 1; }
+
+      - name: Set up SSH
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          install -m 600 /dev/null ~/.ssh/deploy_key
+          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          printf '%s\n' "${{ secrets.VPS_HOST_KEY }}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Rsync dist/ to the web root
+        # The destination is `:/` - with rrsync that is the root of the
+        # restricted directory, i.e. /opt/stacks/goon/public, not the real /.
+        # CNAME is a GitHub Pages marker and has no meaning on the VPS.
+        run: |
+          set -euo pipefail
+          rsync -rlptz --delete --delay-updates --exclude=CNAME \
+            -e "ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
+            --stats \
+            dist/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/"
+
+      - name: Remove the key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
