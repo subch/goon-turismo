@@ -11,10 +11,14 @@ name: Sync events (dg-edge)
 # finds never blocks or loses a scrape -- it just fails the Actions run so
 # it's visible instead of silently piling up unnoticed.
 
+# The schedule is gone: this sync now runs on the VPS, in the `goon` stack,
+# which scrapes and then rebuilds and republishes the site locally instead of
+# waiting on a hosted runner. Leaving the cron here as well would have both
+# machines scraping and pushing every six hours.
+#
+# workflow_dispatch is kept deliberately, so this still works as a manual
+# fallback if the box is ever down or being rebuilt.
 on:
-  schedule:
-    # Every 6 hours.
-    - cron: "17 */6 * * *"
   workflow_dispatch: {}
 
 permissions:
