@@ -19,12 +19,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 63,
+        "dr_points": 15303,
+        "dr_ratio": 0.26515,
+        "total_races": 63,
         "victories": 7,
         "poles": 10,
-        "otherPoints": 0
+        "fastest_laps": 7,
+        "clean_races": 17,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 605,
+        "collection_progress": "100%",
+        "total_credits": 831623785,
+        "play_time_readable": "1,189h 52m",
+        "distance_km": "149,512.7"
       },
-      "lastSynced": "2026-09-02T00:47:24.835Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -47,12 +57,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 68,
+        "dr_points": 23615,
+        "dr_ratio": 0.6808,
+        "total_races": 68,
         "victories": 20,
         "poles": 17,
-        "otherPoints": 0
+        "fastest_laps": 16,
+        "clean_races": 18,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 455,
+        "collection_progress": "88%",
+        "total_credits": 465719239,
+        "play_time_readable": "1,253h 7m",
+        "distance_km": "113,953.8"
       },
-      "lastSynced": "2026-09-02T00:47:45.607Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -75,12 +95,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 360,
+        "dr_points": 14927,
+        "dr_ratio": 0.24635,
+        "total_races": 360,
         "victories": 6,
         "poles": 1,
-        "otherPoints": 0
+        "fastest_laps": 3,
+        "clean_races": 31,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 363,
+        "collection_progress": "88%",
+        "total_credits": 440550502,
+        "play_time_readable": "898h 7m",
+        "distance_km": "91,674.9"
       },
-      "lastSynced": "2026-09-02T00:48:19.021Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -103,12 +133,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 241,
+        "dr_points": 17114,
+        "dr_ratio": 0.3557,
+        "total_races": 241,
         "victories": 10,
         "poles": 6,
-        "otherPoints": 0
+        "fastest_laps": 6,
+        "clean_races": 47,
+        "collector_level": 70,
+        "license": "Master B",
+        "garage_count": 680,
+        "collection_progress": "98%",
+        "total_credits": 698469540,
+        "play_time_readable": "2,315h 36m",
+        "distance_km": "196,068.4"
       },
-      "lastSynced": "2026-09-02T00:48:33.654Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -131,12 +171,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 18,
+        "dr_points": 11849,
+        "dr_ratio": 0.09245,
+        "total_races": 18,
         "victories": 3,
         "poles": 5,
-        "otherPoints": 0
+        "fastest_laps": 5,
+        "clean_races": 2,
+        "collector_level": 70,
+        "license": "IA",
+        "garage_count": 302,
+        "collection_progress": "62%",
+        "total_credits": 298809294,
+        "play_time_readable": "1,146h 17m",
+        "distance_km": "62,749.7"
       },
-      "lastSynced": "2026-09-02T00:48:48.197Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -159,12 +209,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 74,
+        "dr_points": 11933,
+        "dr_ratio": 0.09665,
+        "total_races": 74,
         "victories": 12,
         "poles": 2,
-        "otherPoints": 0
+        "fastest_laps": 10,
+        "clean_races": 17,
+        "collector_level": 70,
+        "license": "S",
+        "garage_count": 188,
+        "collection_progress": "47%",
+        "total_credits": 155770534,
+        "play_time_readable": "571h 16m",
+        "distance_km": "60,032.5"
       },
-      "lastSynced": "2026-09-02T00:48:53.472Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -202,12 +262,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 132,
+        "dr_points": 14463,
+        "dr_ratio": 0.22315,
+        "total_races": 132,
         "victories": 6,
         "poles": 7,
-        "otherPoints": 0
+        "fastest_laps": 3,
+        "clean_races": 29,
+        "collector_level": 70,
+        "license": "Master B",
+        "garage_count": 208,
+        "collection_progress": "54%",
+        "total_credits": 250149486,
+        "play_time_readable": "582h 47m",
+        "distance_km": "57,812.3"
       },
-      "lastSynced": "2026-09-02T00:49:16.114Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -230,12 +300,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 99,
+        "dr_points": 32723,
+        "dr_ratio": 0.13615,
+        "total_races": 99,
         "victories": 14,
         "poles": 14,
-        "otherPoints": 0
+        "fastest_laps": 13,
+        "clean_races": 29,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 544,
+        "collection_progress": "99%",
+        "total_credits": 942562283,
+        "play_time_readable": "1,638h 43m",
+        "distance_km": "210,073.1"
       },
-      "lastSynced": "2026-09-02T00:49:41.535Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -258,12 +338,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 106,
+        "dr_points": 11973,
+        "dr_ratio": 0.09865,
+        "total_races": 106,
         "victories": 7,
         "poles": 3,
-        "otherPoints": 0
+        "fastest_laps": 8,
+        "clean_races": 10,
+        "collector_level": 70,
+        "license": "Master B",
+        "garage_count": 247,
+        "collection_progress": "54%",
+        "total_credits": 193439878,
+        "play_time_readable": "670h 12m",
+        "distance_km": "66,830.2"
       },
-      "lastSynced": "2026-09-02T00:49:45.277Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -286,12 +376,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 289,
+        "dr_points": 31506,
+        "dr_ratio": 0.0753,
+        "total_races": 289,
         "victories": 8,
         "poles": 28,
-        "otherPoints": 0
+        "fastest_laps": 11,
+        "clean_races": 52,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 730,
+        "collection_progress": "100%",
+        "total_credits": 1039682395,
+        "play_time_readable": "1,877h 16m",
+        "distance_km": "262,366.2"
       },
-      "lastSynced": "2026-09-02T00:50:18.333Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -314,12 +414,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 814,
+        "dr_points": 4893,
+        "dr_ratio": 0.14883,
+        "total_races": 814,
         "victories": 24,
         "poles": 21,
-        "otherPoints": 0
+        "fastest_laps": 19,
+        "clean_races": 53,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 497,
+        "collection_progress": "100%",
+        "total_credits": 754582080,
+        "play_time_readable": "1,481h 23m",
+        "distance_km": "187,443.8"
       },
-      "lastSynced": "2026-09-02T00:50:41.062Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -342,12 +452,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 652,
+        "dr_points": 33797,
+        "dr_ratio": 0.18985,
+        "total_races": 652,
         "victories": 24,
         "poles": 22,
-        "otherPoints": 0
+        "fastest_laps": 23,
+        "clean_races": 127,
+        "collector_level": 70,
+        "license": "IA",
+        "garage_count": 131,
+        "collection_progress": "37%",
+        "total_credits": 207718390,
+        "play_time_readable": "566h 25m",
+        "distance_km": "59,177.6"
       },
-      "lastSynced": "2026-09-02T00:50:52.521Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -370,12 +490,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 91,
+        "dr_points": 18829,
+        "dr_ratio": 0.44145,
+        "total_races": 91,
         "victories": 6,
         "poles": 10,
-        "otherPoints": 0
+        "fastest_laps": 5,
+        "clean_races": 22,
+        "collector_level": 70,
+        "license": "Master B",
+        "garage_count": 252,
+        "collection_progress": "57%",
+        "total_credits": 273283833,
+        "play_time_readable": "577h 36m",
+        "distance_km": "67,115.9"
       },
-      "lastSynced": "2026-09-02T00:51:02.167Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -398,12 +528,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 212,
+        "dr_points": 33062,
+        "dr_ratio": 0.1531,
+        "total_races": 212,
         "victories": 14,
         "poles": 17,
-        "otherPoints": 0
+        "fastest_laps": 8,
+        "clean_races": 45,
+        "collector_level": 70,
+        "license": "Master B",
+        "garage_count": 363,
+        "collection_progress": "84%",
+        "total_credits": 451968958,
+        "play_time_readable": "1,482h 8m",
+        "distance_km": "138,965.7"
       },
-      "lastSynced": "2026-09-02T00:51:28.984Z"
+      "lastSynced": "2026-09-02T06:52:47.071Z"
     }
   },
   {
@@ -425,12 +565,22 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 97,
+        "dr_points": 36871,
+        "dr_ratio": 0.34355,
+        "total_races": 97,
         "victories": 12,
         "poles": 2,
-        "otherPoints": 0
+        "fastest_laps": 8,
+        "clean_races": 58,
+        "collector_level": 70,
+        "license": "Master S",
+        "garage_count": 316,
+        "collection_progress": "66%",
+        "total_credits": 198052199,
+        "play_time_readable": "474h 55m",
+        "distance_km": "32,726.6"
       },
-      "lastSynced": "2026-09-02T00:51:43.359Z"
+      "lastSynced": "2026-09-02T06:53:05.688Z"
     },
     "stats": {
       "edgeScore": 84.35,
@@ -453,12 +603,22 @@
       "sr": "B",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 63,
+        "dr_points": 10232,
+        "dr_ratio": 0.0116,
+        "total_races": 63,
         "victories": 7,
         "poles": 10,
-        "otherPoints": 0
+        "fastest_laps": 4,
+        "clean_races": 5,
+        "collector_level": 50,
+        "license": "S",
+        "garage_count": 516,
+        "collection_progress": "99%",
+        "total_credits": 863939427,
+        "play_time_readable": "1,071h 10m",
+        "distance_km": "193,765.0"
       },
-      "lastSynced": "2026-09-02T00:51:48.597Z"
+      "lastSynced": "2026-09-02T06:53:05.688Z"
     },
     "stats": {
       "edgeScore": 51.83,
@@ -488,12 +648,22 @@
       "sr": "A",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 5,
+        "dr_points": 2138,
+        "dr_ratio": 0.5345,
+        "total_races": 5,
         "victories": 0,
         "poles": 0,
-        "otherPoints": 0
+        "fastest_laps": 0,
+        "clean_races": 0,
+        "collector_level": 70,
+        "license": "S",
+        "garage_count": 276,
+        "collection_progress": "64%",
+        "total_credits": 547814056,
+        "play_time_readable": "818h 49m",
+        "distance_km": "154,584.3"
       },
-      "lastSynced": "2026-09-02T00:51:54.097Z"
+      "lastSynced": "2026-09-02T06:53:05.688Z"
     },
     "stats": {
       "edgeScore": 36.43,
@@ -537,12 +707,22 @@
       "sr": "B",
       "countryCode": "US",
       "stats": {
-        "totalEntries": 1,
+        "dr_points": 0,
+        "dr_ratio": 0.5,
+        "total_races": 1,
         "victories": 0,
         "poles": 0,
-        "otherPoints": 0
+        "fastest_laps": 0,
+        "clean_races": 0,
+        "collector_level": 39,
+        "license": "IA",
+        "garage_count": 49,
+        "collection_progress": "28%",
+        "total_credits": 17397339,
+        "play_time_readable": "40h 50m",
+        "distance_km": "5,091.2"
       },
-      "lastSynced": "2026-09-02T00:52:03.135Z"
+      "lastSynced": "2026-09-02T06:53:05.688Z"
     }
   }
 ]
