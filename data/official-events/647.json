@@ -3,11 +3,11 @@
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/647",
   "track": "Suzuka Circuit",
-  "car": "Genesis X GR3",
+  "car": null,
   "classCode": "RM",
   "startDate": "3 September 2026",
   "endDate": "17 September 2026",
   "status": "unknown",
-  "lastScraped": "2026-09-04T18:50:38.553Z",
+  "lastScraped": "2026-09-05T00:17:57.330Z",
   "seasonId": "summer-2026"
 }
