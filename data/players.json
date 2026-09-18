@@ -7,11 +7,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/superpharts",
     "stats": {
       "edgeScore": 82.95,
-      "globalPosition": 56729,
-      "countryPosition": 56729,
+      "globalPosition": 56641,
+      "countryPosition": 56641,
       "eventsAttended": 163,
       "avgDelta": "163Events attended+3.73%",
-      "lastScraped": "2026-09-17T18:17:04.478Z"
+      "lastScraped": "2026-09-18T00:17:03.870Z"
     },
     "gridstats": {
       "nickname": "Superfarts",
@@ -35,11 +35,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/ashy_wenises",
     "stats": {
       "edgeScore": 86.59,
-      "globalPosition": 26999,
-      "countryPosition": 26999,
+      "globalPosition": 26986,
+      "countryPosition": 26986,
       "eventsAttended": 115,
       "avgDelta": "115Events attended+2.69%",
-      "lastScraped": "2026-09-17T18:17:06.754Z"
+      "lastScraped": "2026-09-18T00:17:06.098Z"
     },
     "gridstats": {
       "nickname": "Ashy_Wenises",
@@ -62,12 +62,12 @@
     "joinedSeason": "summer-2026",
     "dgEdgeUrl": "https://www.dg-edge.com/players/devmotron",
     "stats": {
-      "edgeScore": 82.39,
-      "globalPosition": 62820,
-      "countryPosition": 62820,
-      "eventsAttended": 165,
-      "avgDelta": "165Events attended+3.89%",
-      "lastScraped": "2026-09-17T18:17:08.925Z"
+      "edgeScore": 81.83,
+      "globalPosition": 68974,
+      "countryPosition": 68974,
+      "eventsAttended": 166,
+      "avgDelta": "166Events attended+4.05%",
+      "lastScraped": "2026-09-18T00:17:08.304Z"
     },
     "gridstats": {
       "nickname": "O'Breezy",
@@ -91,11 +91,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/dog_nougat",
     "stats": {
       "edgeScore": 80.01,
-      "globalPosition": 92350,
-      "countryPosition": 92350,
+      "globalPosition": 92162,
+      "countryPosition": 92162,
       "eventsAttended": 57,
       "avgDelta": "57Events attended+4.57%",
-      "lastScraped": "2026-09-17T18:17:11.098Z"
+      "lastScraped": "2026-09-18T00:17:10.546Z"
     },
     "gridstats": {
       "nickname": "Rammy McRamface",
@@ -119,11 +119,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/sinder_22",
     "stats": {
       "edgeScore": 78.54,
-      "globalPosition": 113199,
-      "countryPosition": 113199,
+      "globalPosition": 112933,
+      "countryPosition": 112933,
       "eventsAttended": 73,
       "avgDelta": "73Events attended+4.99%",
-      "lastScraped": "2026-09-17T18:17:13.282Z"
+      "lastScraped": "2026-09-18T00:17:12.724Z"
     },
     "gridstats": {
       "nickname": "Sinderby",
@@ -151,7 +151,7 @@
       "countryPosition": 220,
       "eventsAttended": 8,
       "avgDelta": "8Events attended+5.28%",
-      "lastScraped": "2026-09-17T18:17:15.414Z"
+      "lastScraped": "2026-09-18T00:17:14.869Z"
     },
     "gridstats": {
       "nickname": "Kirios",
@@ -189,12 +189,12 @@
     "joinedSeason": "summer-2026",
     "dgEdgeUrl": "https://www.dg-edge.com/players/ainsliespeed",
     "stats": {
-      "edgeScore": 83.61,
-      "globalPosition": 50079,
-      "countryPosition": 50079,
-      "eventsAttended": 96,
-      "avgDelta": "96Events attended+3.54%",
-      "lastScraped": "2026-09-17T18:17:19.792Z"
+      "edgeScore": 82.53,
+      "globalPosition": 61221,
+      "countryPosition": 61221,
+      "eventsAttended": 97,
+      "avgDelta": "97Events attended+3.85%",
+      "lastScraped": "2026-09-18T00:17:19.767Z"
     },
     "gridstats": {
       "nickname": "FairfaxRacing",
@@ -218,11 +218,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/craigrackhaed",
     "stats": {
       "edgeScore": 91.14,
-      "globalPosition": 7899,
-      "countryPosition": 7899,
+      "globalPosition": 7900,
+      "countryPosition": 7900,
       "eventsAttended": 99,
       "avgDelta": "99Events attended+1.96%",
-      "lastScraped": "2026-09-17T18:17:21.983Z"
+      "lastScraped": "2026-09-18T00:17:21.916Z"
     },
     "gridstats": {
       "nickname": "C. Rackhaed",
@@ -250,7 +250,7 @@
       "countryPosition": 460,
       "eventsAttended": 1,
       "avgDelta": "1Events attended+4.90%",
-      "lastScraped": "2026-09-17T18:17:24.741Z"
+      "lastScraped": "2026-09-18T00:17:24.229Z"
     },
     "gridstats": {
       "nickname": "Fenix Down",
@@ -278,7 +278,7 @@
       "countryPosition": 9143,
       "eventsAttended": 178,
       "avgDelta": "178Events attended+2.10%",
-      "lastScraped": "2026-09-17T18:17:26.940Z"
+      "lastScraped": "2026-09-18T00:17:26.388Z"
     },
     "gridstats": {
       "nickname": "Dr. K",
@@ -306,7 +306,7 @@
       "countryPosition": 140,
       "eventsAttended": 225,
       "avgDelta": "225Events attended+5.31%",
-      "lastScraped": "2026-09-17T18:17:29.273Z"
+      "lastScraped": "2026-09-18T00:17:28.520Z"
     },
     "gridstats": {
       "nickname": "rickiep00h",
@@ -330,11 +330,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/vitti1107",
     "stats": {
       "edgeScore": 83.51,
-      "globalPosition": 50984,
-      "countryPosition": 50984,
+      "globalPosition": 50923,
+      "countryPosition": 50923,
       "eventsAttended": 72,
       "avgDelta": "72Events attended+4.14%",
-      "lastScraped": "2026-09-17T18:17:31.410Z"
+      "lastScraped": "2026-09-18T00:17:30.665Z"
     },
     "gridstats": {
       "nickname": "Cheeto",
@@ -358,11 +358,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/wombatvet",
     "stats": {
       "edgeScore": 82.35,
-      "globalPosition": 63440,
-      "countryPosition": 63440,
+      "globalPosition": 63327,
+      "countryPosition": 63327,
       "eventsAttended": 17,
       "avgDelta": "17Events attended+3.90%",
-      "lastScraped": "2026-09-17T18:17:33.578Z"
+      "lastScraped": "2026-09-18T00:17:32.829Z"
     },
     "gridstats": {
       "nickname": "WombatVet",
@@ -386,11 +386,11 @@
     "dgEdgeUrl": "https://www.dg-edge.com/players/empire_of_ravens",
     "stats": {
       "edgeScore": 89.5,
-      "globalPosition": 12776,
-      "countryPosition": 12776,
+      "globalPosition": 12775,
+      "countryPosition": 12775,
       "eventsAttended": 143,
       "avgDelta": "143Events attended+2.43%",
-      "lastScraped": "2026-09-17T18:17:35.757Z"
+      "lastScraped": "2026-09-18T00:17:34.959Z"
     },
     "gridstats": {
       "nickname": "Empire",
@@ -434,11 +434,11 @@
     },
     "stats": {
       "edgeScore": 84.35,
-      "globalPosition": 43347,
-      "countryPosition": 43347,
+      "globalPosition": 43306,
+      "countryPosition": 43306,
       "eventsAttended": 14,
       "avgDelta": "14Events attended+3.90%",
-      "lastScraped": "2026-09-17T18:17:40.634Z"
+      "lastScraped": "2026-09-18T00:17:39.268Z"
     }
   },
   {
@@ -466,7 +466,7 @@
       "countryPosition": 700,
       "eventsAttended": 3,
       "avgDelta": "3Events attended+6.05%",
-      "lastScraped": "2026-09-17T18:17:42.800Z"
+      "lastScraped": "2026-09-18T00:17:41.674Z"
     }
   },
   {
@@ -501,7 +501,7 @@
       "countryPosition": 1.1,
       "eventsAttended": 5,
       "avgDelta": "5Events attended+11.40%",
-      "lastScraped": "2026-09-17T18:17:47.249Z"
+      "lastScraped": "2026-09-18T00:17:46.192Z"
     }
   },
   {
