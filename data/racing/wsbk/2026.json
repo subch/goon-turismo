@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-26T07:14:47.723Z",
+  "syncedAt": "2026-09-26T07:24:08.159Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -50501,7 +50501,7 @@
           "name": "Warm Up 1",
           "startUtc": "2026-09-26T07:20:00+00:00",
           "endUtc": "2026-09-26T07:30:00+00:00",
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
