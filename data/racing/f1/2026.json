@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-26T12:32:34.502Z",
+  "syncedAt": "2026-09-26T14:32:32.851Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -12180,8 +12180,339 @@
           "name": "Grand Prix",
           "startUtc": "2026-09-26T11:00:00Z",
           "endUtc": null,
-          "status": "live",
-          "results": null
+          "status": "finished",
+          "results": [
+            {
+              "pos": 1,
+              "number": "63",
+              "name": "George Russell",
+              "team": "Mercedes",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": "1:38:02.143",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 25,
+              "status": "Finished"
+            },
+            {
+              "pos": 2,
+              "number": "3",
+              "name": "Max Verstappen",
+              "team": "Red Bull",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+0.196",
+              "interval": null,
+              "bestLap": null,
+              "points": 18,
+              "status": "Finished"
+            },
+            {
+              "pos": 3,
+              "number": "6",
+              "name": "Isack Hadjar",
+              "team": "Red Bull",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+10.704",
+              "interval": null,
+              "bestLap": null,
+              "points": 15,
+              "status": "Finished"
+            },
+            {
+              "pos": 4,
+              "number": "16",
+              "name": "Charles Leclerc",
+              "team": "Ferrari",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+14.136",
+              "interval": null,
+              "bestLap": null,
+              "points": 12,
+              "status": "Finished"
+            },
+            {
+              "pos": 5,
+              "number": "12",
+              "name": "Andrea Kimi Antonelli",
+              "team": "Mercedes",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+14.512",
+              "interval": null,
+              "bestLap": null,
+              "points": 10,
+              "status": "Finished"
+            },
+            {
+              "pos": 6,
+              "number": "44",
+              "name": "Lewis Hamilton",
+              "team": "Ferrari",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+22.382",
+              "interval": null,
+              "bestLap": null,
+              "points": 8,
+              "status": "Finished"
+            },
+            {
+              "pos": 7,
+              "number": "41",
+              "name": "Arvid Lindblad",
+              "team": "RB F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+31.159",
+              "interval": null,
+              "bestLap": null,
+              "points": 6,
+              "status": "Finished"
+            },
+            {
+              "pos": 8,
+              "number": "31",
+              "name": "Esteban Ocon",
+              "team": "Haas F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+31.189",
+              "interval": null,
+              "bestLap": null,
+              "points": 4,
+              "status": "Finished"
+            },
+            {
+              "pos": 9,
+              "number": "87",
+              "name": "Oliver Bearman",
+              "team": "Haas F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+31.929",
+              "interval": null,
+              "bestLap": null,
+              "points": 2,
+              "status": "Finished"
+            },
+            {
+              "pos": 10,
+              "number": "55",
+              "name": "Carlos Sainz",
+              "team": "Williams",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+32.416",
+              "interval": null,
+              "bestLap": null,
+              "points": 1,
+              "status": "Finished"
+            },
+            {
+              "pos": 11,
+              "number": "27",
+              "name": "Nico Hülkenberg",
+              "team": "Audi",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+33.231",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Finished"
+            },
+            {
+              "pos": 12,
+              "number": "30",
+              "name": "Liam Lawson",
+              "team": "RB F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+34.013",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Finished"
+            },
+            {
+              "pos": 13,
+              "number": "5",
+              "name": "Gabriel Bortoleto",
+              "team": "Audi",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+34.230",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Finished"
+            },
+            {
+              "pos": 14,
+              "number": "81",
+              "name": "Oscar Piastri",
+              "team": "McLaren",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+36.401",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Finished"
+            },
+            {
+              "pos": 15,
+              "number": "11",
+              "name": "Sergio Pérez",
+              "team": "Cadillac F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+41.400",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Finished"
+            },
+            {
+              "pos": 16,
+              "number": "77",
+              "name": "Valtteri Bottas",
+              "team": "Cadillac F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "49",
+              "time": null,
+              "gap": "",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            },
+            {
+              "pos": 17,
+              "number": "43",
+              "name": "Franco Colapinto",
+              "team": "Alpine F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "36",
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            },
+            {
+              "pos": 18,
+              "number": "10",
+              "name": "Pierre Gasly",
+              "team": "Alpine F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": "35",
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            },
+            {
+              "pos": 19,
+              "number": "1",
+              "name": "Lando Norris",
+              "team": "McLaren",
+              "make": null,
+              "cls": null,
+              "laps": "35",
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            },
+            {
+              "pos": 20,
+              "number": "23",
+              "name": "Alexander Albon",
+              "team": "Williams",
+              "make": null,
+              "cls": null,
+              "laps": "29",
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            },
+            {
+              "pos": 21,
+              "number": "14",
+              "name": "Fernando Alonso",
+              "team": "Aston Martin",
+              "make": null,
+              "cls": null,
+              "laps": "20",
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            },
+            {
+              "pos": 22,
+              "number": "18",
+              "name": "Lance Stroll",
+              "team": "Aston Martin",
+              "make": null,
+              "cls": null,
+              "laps": "7",
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Retired"
+            }
+          ]
         }
       ]
     },
@@ -12726,7 +13057,7 @@
           "number": "12",
           "team": "Mercedes",
           "make": null,
-          "points": 292,
+          "points": 302,
           "wins": 8
         },
         {
@@ -12735,8 +13066,8 @@
           "number": "63",
           "team": "Mercedes",
           "make": null,
-          "points": 211,
-          "wins": 2
+          "points": 236,
+          "wins": 3
         },
         {
           "pos": 3,
@@ -12744,7 +13075,7 @@
           "number": "44",
           "team": "Ferrari",
           "make": null,
-          "points": 191,
+          "points": 199,
           "wins": 1
         },
         {
@@ -12762,7 +13093,7 @@
           "number": "16",
           "team": "Ferrari",
           "make": null,
-          "points": 167,
+          "points": 179,
           "wins": 1
         },
         {
@@ -12771,7 +13102,7 @@
           "number": "3",
           "team": "Red Bull",
           "make": null,
-          "points": 145,
+          "points": 163,
           "wins": 0
         },
         {
@@ -12789,7 +13120,7 @@
           "number": "6",
           "team": "Red Bull",
           "make": null,
-          "points": 71,
+          "points": 86,
           "wins": 0
         },
         {
@@ -12816,7 +13147,7 @@
           "number": "41",
           "team": "RB F1 Team",
           "make": null,
-          "points": 31,
+          "points": 37,
           "wins": 0
         },
         {
@@ -12834,7 +13165,7 @@
           "number": "87",
           "team": "Haas F1 Team",
           "make": null,
-          "points": 18,
+          "points": 20,
           "wins": 0
         },
         {
@@ -12857,29 +13188,29 @@
         },
         {
           "pos": 16,
-          "name": "Carlos Sainz",
-          "number": "55",
-          "team": "Williams",
+          "name": "Esteban Ocon",
+          "number": "31",
+          "team": "Haas F1 Team",
           "make": null,
-          "points": 6,
+          "points": 7,
           "wins": 0
         },
         {
           "pos": 17,
+          "name": "Carlos Sainz",
+          "number": "55",
+          "team": "Williams",
+          "make": null,
+          "points": 7,
+          "wins": 0
+        },
+        {
+          "pos": 18,
           "name": "Alexander Albon",
           "number": "23",
           "team": "Williams",
           "make": null,
           "points": 5,
-          "wins": 0
-        },
-        {
-          "pos": 18,
-          "name": "Esteban Ocon",
-          "number": "31",
-          "team": "Haas F1 Team",
-          "make": null,
-          "points": 3,
           "wins": 0
         },
         {
@@ -12940,8 +13271,8 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 503,
-          "wins": 10
+          "points": 538,
+          "wins": 11
         },
         {
           "pos": 2,
@@ -12949,7 +13280,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 358,
+          "points": 378,
           "wins": 2
         },
         {
@@ -12967,7 +13298,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 230,
+          "points": 263,
           "wins": 0
         },
         {
@@ -12976,7 +13307,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 77,
+          "points": 83,
           "wins": 0
         },
         {
@@ -12994,7 +13325,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 21,
+          "points": 27,
           "wins": 0
         },
         {
@@ -13012,7 +13343,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 11,
+          "points": 12,
           "wins": 0
         },
         {
