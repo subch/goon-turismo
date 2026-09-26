@@ -153,12 +153,16 @@ async function racePage(path) {
   // (only once results exist) a "Results" button carrying the session's
   // results-browser id. Splitting on the block wrapper keeps a session with
   // no button from swallowing the next one's id.
+  // The results button is a live-component action before the weekend and a
+  // plain link (?raceId=..&sessionId=..) once the weekend is under way; the
+  // session id is what matters and both carry it. Mid-weekend the page can
+  // also drop the timestamp span from sessions already run.
   const blocks = html.split(/<div class="d-flex flex-column align-items-start gap-1">/).slice(1);
   for (const b of blocks) {
-    const nm = b.match(/<div class="fw-bold lh-sm">([^<]+)<\/div>/)?.[1];
+    const nm = b.match(/<div class="fw-bold lh-sm\s*">([^<]+)<\/div>/)?.[1];
     const ts = b.match(/data-timestamp="(\d+)"/)?.[1];
-    const sid = b.match(/data-live-id-param="(\d+)"/)?.[1];
-    if (nm && ts) sessions.push({ name: textOf(nm), startUtc: new Date(Number(ts) * 1000).toISOString(), resultsId: sid ? Number(sid) : null });
+    const sid = b.match(/data-live-id-param="(\d+)"/)?.[1] ?? b.match(/[?&]sessionId=(\d+)/)?.[1];
+    if (nm) sessions.push({ name: textOf(nm), startUtc: ts ? new Date(Number(ts) * 1000).toISOString() : null, resultsId: sid ? Number(sid) : null });
   }
   return { title, ...parseDateRange(dateText), sessions };
 }
@@ -206,7 +210,18 @@ export async function fetchSeason({ season, previous, full, log }) {
       continue;
     }
     const page = await racePage(path);
+    const status = eventStatus(page.dateStart, page.dateEnd);
     log?.(`  ${page.title} (${page.dateStart} → ${page.dateEnd}, ${page.sessions.length} sessions)`);
+    // A page that has lost its timetable (seen mid-weekend) must not wipe
+    // what an earlier sync already had: fall back to the previous file's
+    // sessions, and to their start times where the page dropped one.
+    if (!page.sessions.length && prev?.sessions?.length) {
+      events.push({ ...prev, complete: false });
+      continue;
+    }
+    for (const s of page.sessions) {
+      if (!s.startUtc && s.resultsId) s.startUtc = prev?.sessions?.find((p) => p.id.startsWith(`${s.resultsId}-`))?.startUtc ?? null;
+    }
 
     // Lazily walk the results browser's race list until one of them owns one
     // of this race page's session ids.
@@ -246,7 +261,7 @@ export async function fetchSeason({ season, previous, full, log }) {
         const sessionId = `${s.resultsId ?? slug(s.name)}-${classId}`;
         const prevSession = prev?.sessions?.find((ps) => ps.id === sessionId);
         let results = full ? null : prevSession?.results ?? null;
-        const started = Date.parse(s.startUtc) < Date.now();
+        const started = s.startUtc ? Date.parse(s.startUtc) < Date.now() : status !== 'upcoming';
         if (!results && started && raceId && s.resultsId) {
           const html = await componentAction(props, 'changeCategory', {
             seasonId: seasonOpt.value,
@@ -270,9 +285,8 @@ export async function fetchSeason({ season, previous, full, log }) {
         });
       }
     }
-    sessions.sort((a, b) => a.startUtc.localeCompare(b.startUtc) || a.classId.localeCompare(b.classId));
+    sessions.sort((a, b) => String(a.startUtc ?? '9').localeCompare(String(b.startUtc ?? '9')) || a.classId.localeCompare(b.classId));
 
-    const status = eventStatus(page.dateStart, page.dateEnd);
     events.push({
       id: eventId,
       round: null,

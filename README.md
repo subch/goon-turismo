@@ -79,19 +79,23 @@ and `.github/workflows/` schedules and wires them together.
 
 ## Racing (`/racing/`)
 
-Real-world results in one place, for the crew: **F1, MotoGP (+Moto2/Moto3), WEC (Hypercar/LMGT3,
-plus LMP2 at Le Mans) and WorldSBK (+WorldSSP)**. Each series gets a season page (standings + calendar
-with the race winner per round) and an event page per round (every session, in order, with its
-classification once published). Session times are stored in UTC and rewritten into the viewer's own
+Real-world results in one place, for the crew. Two tiers on the overview: **MotoGP (+Moto2/Moto3),
+WEC (Hypercar/LMGT3, plus LMP2 at Le Mans) and F1** on top, then **WorldSBK (+WorldSSP), WRC,
+MotoAmerica (Superbike, Supersport, Twins Cup, King of the Baggers, Super Hooligan), the Nürburgring
+Langstrecken-Serie (NLS) and the NASCAR Cup Series** below. Each series gets a season page (standings +
+calendar with the race winner per round) and an event page per round (every session, in order, with
+its classification once published). Session times are stored in UTC and rewritten into the viewer's own
 timezone in the browser; the overview shows what's next and who won last for every series.
 
 - **Sources are each series' own public results pages or an open API**, credited in every page
-  footer: Jolpica (the Ergast successor) for F1; the JSON behind motogp.com and worldsbk.com's own
-  results pages; fiawec.com's race pages and results browser for WEC. What is kept is the
-  classification (position, number, name/car, team, laps, time, gap, points) -- no logos, photos,
-  video or live timing, ever. Al Kamel's WEC timing site is deliberately not used: it carries an
-  explicit no-redistribution notice. Details and the "how to add a series" recipe are in
-  `scripts/racing/series/README.md`; the data shape in `scripts/racing/lib/schema.mjs`.
+  footer: Jolpica (the Ergast successor) for F1; the JSON behind motogp.com, worldsbk.com, wrc.com
+  and nascar.com's own results pages; fiawec.com's race pages and results browser for WEC; the
+  official timing PDFs for MotoAmerica (MyLaps Orbits) and NLS (wige), parsed to text. What is kept
+  is the classification (position, number, name/car, team, class, laps, time, gap, points) -- no
+  logos, photos, video or live timing, ever. Al Kamel's WEC timing site is deliberately not used: it
+  carries an explicit no-redistribution notice. Details, per-series caveats and the "how to add a
+  series" recipe are in `scripts/racing/series/README.md`; the data shape in
+  `scripts/racing/lib/schema.mjs`.
 - **`npm run scrape:racing`** writes `data/racing/<series>/<season>.json`. It is incremental: events
   already marked complete are reused, so a steady-state run is a few dozen spaced requests. Pass
   `--full` after fixing a parser, `--series f1,wec` to limit it, `--season 2025` for a past season

@@ -2,8 +2,9 @@
   "series": "wec",
   "name": "FIA World Endurance Championship",
   "shortName": "WEC",
+  "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-26T06:32:30.531Z",
+  "syncedAt": "2026-09-26T07:17:15.984Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -33,7 +34,48 @@
       "officialUrl": "https://www.fiawec.com/en/race/official-prologue-imola-2026",
       "complete": false,
       "test": true,
-      "sessions": []
+      "sessions": [
+        {
+          "id": "morning-session-hypercar",
+          "classId": "hypercar",
+          "type": "other",
+          "name": "MORNING SESSION",
+          "startUtc": "2026-04-14T07:00:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "morning-session-lmgt3",
+          "classId": "lmgt3",
+          "type": "other",
+          "name": "MORNING SESSION",
+          "startUtc": "2026-04-14T07:00:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "afternoon-session-hypercar",
+          "classId": "hypercar",
+          "type": "other",
+          "name": "AFTERNOON SESSION",
+          "startUtc": "2026-04-14T12:00:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "afternoon-session-lmgt3",
+          "classId": "lmgt3",
+          "type": "other",
+          "name": "AFTERNOON SESSION",
+          "startUtc": "2026-04-14T12:00:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        }
+      ]
     },
     {
       "id": "6-hours-of-imola",
@@ -18999,7 +19041,88 @@
       "status": "live",
       "officialUrl": "https://www.fiawec.com/en/race/6-hours-of-fuji-2026",
       "complete": false,
-      "sessions": []
+      "sessions": [
+        {
+          "id": "free-practice-1-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-09-25T01:15:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "free-practice-1-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-09-25T01:15:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-09-25T05:30:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-09-25T05:30:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-09-26T00:30:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-09-26T00:30:00.000Z",
+          "endUtc": null,
+          "status": "finished",
+          "results": null
+        },
+        {
+          "id": "race-hypercar",
+          "classId": "hypercar",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-09-27T02:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "race-lmgt3",
+          "classId": "lmgt3",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-09-27T02:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        }
+      ]
     },
     {
       "id": "6-hours-of-barcelona",
@@ -19014,7 +19137,128 @@
       "status": "upcoming",
       "officialUrl": "https://www.fiawec.com/en/race/6-hours-of-barcelona-2026",
       "complete": false,
-      "sessions": []
+      "sessions": [
+        {
+          "id": "free-practice-1-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-10-16T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-1-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-10-16T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-10-16T14:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-10-16T14:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-10-17T06:50:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-10-17T06:50:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "qualifying-lmgt3-lmgt3",
+          "classId": "lmgt3",
+          "type": "qualifying",
+          "name": "Qualifying",
+          "startUtc": "2026-10-17T09:50:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "hyperpole-lmgt3-lmgt3",
+          "classId": "lmgt3",
+          "type": "qualifying",
+          "name": "Hyperpole",
+          "startUtc": "2026-10-17T10:10:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "qualifying-hypercar-hypercar",
+          "classId": "hypercar",
+          "type": "qualifying",
+          "name": "Qualifying",
+          "startUtc": "2026-10-17T10:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "hyperpole-hypercar-hypercar",
+          "classId": "hypercar",
+          "type": "qualifying",
+          "name": "Hyperpole",
+          "startUtc": "2026-10-17T10:50:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "race-hypercar",
+          "classId": "hypercar",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-10-18T10:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "race-lmgt3",
+          "classId": "lmgt3",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-10-18T10:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        }
+      ]
     },
     {
       "id": "6-hours-of-monza",
@@ -19029,7 +19273,128 @@
       "status": "upcoming",
       "officialUrl": "https://www.fiawec.com/en/race/6-hours-of-monza-2026",
       "complete": false,
-      "sessions": []
+      "sessions": [
+        {
+          "id": "qualifying-lmgt3-lmgt3",
+          "classId": "lmgt3",
+          "type": "qualifying",
+          "name": "Qualifying",
+          "startUtc": "2026-11-07T13:20:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "hyperpole-lmgt3-lmgt3",
+          "classId": "lmgt3",
+          "type": "qualifying",
+          "name": "Hyperpole",
+          "startUtc": "2026-11-07T13:40:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "qualifying-hypercar-hypercar",
+          "classId": "hypercar",
+          "type": "qualifying",
+          "name": "Qualifying",
+          "startUtc": "2026-11-07T14:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "hyperpole-hypercar-hypercar",
+          "classId": "hypercar",
+          "type": "qualifying",
+          "name": "Hyperpole",
+          "startUtc": "2026-11-07T14:20:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "race-hypercar",
+          "classId": "hypercar",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-11-08T10:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "race-lmgt3",
+          "classId": "lmgt3",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-11-08T10:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-1-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": null,
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": null,
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": null,
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-1-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": null,
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": null,
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": null,
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        }
+      ]
     }
   ],
   "standings": [

@@ -13,6 +13,7 @@ export type RacingResult = {
   name: string | null;
   team: string | null;
   make: string | null;
+  cls?: string | null;
   laps: string | number | null;
   time: string | null;
   gap: string | null;
@@ -67,10 +68,13 @@ export type Standing = {
   rows: StandingRow[];
 };
 
+export type SeriesTier = 'main' | 'other';
+
 export type SeasonFile = {
   series: string;
   name: string;
   shortName: string;
+  tier?: SeriesTier;
   season: number;
   syncedAt: string;
   source: { name: string; url: string };
@@ -86,10 +90,11 @@ export const racingSeasons: SeasonFile[] = Object.values(modules)
   .filter(Boolean)
   .sort((a, b) => a.series.localeCompare(b.series) || b.season - a.season);
 
-// Display order on /racing/ -- the order the adapters are registered in.
-const SERIES_ORDER = ['f1', 'motogp', 'wec', 'wsbk'];
+// Display order on /racing/: the three the crew follows closest first, then
+// the rest. Mirrors the registration order in scripts/racing/series/index.mjs.
+const SERIES_ORDER = ['motogp', 'wec', 'f1', 'wsbk', 'wrc', 'motoamerica', 'nls', 'nascar'];
 
-export type SeriesSummary = { id: string; name: string; shortName: string; seasons: number[]; latest: SeasonFile };
+export type SeriesSummary = { id: string; name: string; shortName: string; tier: SeriesTier; seasons: number[]; latest: SeasonFile };
 
 export function seriesList(): SeriesSummary[] {
   const byId = new Map<string, SeasonFile[]>();
@@ -100,7 +105,14 @@ export function seriesList(): SeriesSummary[] {
   return [...byId.entries()]
     .map(([id, files]) => {
       files.sort((a, b) => b.season - a.season);
-      return { id, name: files[0].name, shortName: files[0].shortName, seasons: files.map((f) => f.season), latest: files[0] };
+      return {
+        id,
+        name: files[0].name,
+        shortName: files[0].shortName,
+        tier: files[0].tier ?? 'other',
+        seasons: files.map((f) => f.season),
+        latest: files[0],
+      };
     })
     .sort((a, b) => {
       const ia = SERIES_ORDER.indexOf(a.id);

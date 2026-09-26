@@ -704,3 +704,16 @@ th.num {
     white-space: normal;
   }
 }
+
+/* Two tiers on /racing/: the main three get the wide cards, the rest a denser grid. */
+.racing-grid-main {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.racing-grid-other {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.racing-grid-other .racing-series-card-head h3 {
+  font-size: 1.05rem;
+}

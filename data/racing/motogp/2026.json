@@ -2,8 +2,9 @@
   "series": "motogp",
   "name": "MotoGP",
   "shortName": "MotoGP",
+  "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-26T06:32:21.481Z",
+  "syncedAt": "2026-09-26T07:14:23.781Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"

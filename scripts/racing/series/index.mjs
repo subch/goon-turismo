@@ -1,14 +1,28 @@
-// Every series the racing pages know about, in the order they appear on
-// /racing/. To add one: write scripts/racing/series/<id>.mjs exporting the
-// same six things these do (id, name, shortName, source, and fetchSeason;
-// `classes` may be static or come back from fetchSeason) and import it here.
-// See README.md in this folder.
-import * as f1 from './f1.mjs';
+// Every series the racing pages know about, in display order. To add one:
+// write scripts/racing/series/<id>.mjs exporting the same things these do
+// (id, name, shortName, tier, source, fetchSeason; `classes` may be static
+// or come back from fetchSeason) and import it here. See README.md in this
+// folder.
+//
+// Tiers: 'main' is the three the crew follows closest and sits at the top
+// of /racing/; 'other' is everything else, grouped below. Keep the order
+// here in step with SERIES_ORDER in src/lib/racing.ts.
 import * as motogp from './motogp.mjs';
 import * as wec from './wec.mjs';
+import * as f1 from './f1.mjs';
 import * as wsbk from './wsbk.mjs';
+import * as wrc from './wrc.mjs';
+import * as motoamerica from './motoamerica.mjs';
+import * as nls from './nls.mjs';
+import * as nascar from './nascar.mjs';
 
-export const SERIES = [f1, motogp, wec, wsbk];
+export const SERIES = [motogp, wec, f1, wsbk, wrc, motoamerica, nls, nascar];
+
+const MAIN = new Set(['motogp', 'wec', 'f1']);
+
+export function tierOf(series) {
+  return series.tier ?? (MAIN.has(series.id) ? 'main' : 'other');
+}
 
 export function seriesById(id) {
   return SERIES.find((s) => s.id === id);

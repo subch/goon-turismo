@@ -27,7 +27,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { SERIES } from './racing/series/index.mjs';
+import { SERIES, tierOf } from './racing/series/index.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(__dirname, '..', 'data', 'racing');
@@ -71,6 +71,7 @@ for (const series of SERIES) {
       series: series.id,
       name: series.name,
       shortName: series.shortName,
+      tier: tierOf(series),
       season,
       syncedAt: new Date().toISOString(),
       source: series.source,

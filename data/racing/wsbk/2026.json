@@ -2,8 +2,9 @@
   "series": "wsbk",
   "name": "World Superbike",
   "shortName": "WSBK",
+  "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-26T06:32:33.609Z",
+  "syncedAt": "2026-09-26T07:14:47.723Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"

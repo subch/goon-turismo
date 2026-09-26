@@ -1,89 +1,105 @@
 ---
 // The one-stop page: every series at a glance -- what's next, who won last,
-// who leads -- with a link into each series' full season.
+// who leads -- with a link into each series' full season. The three the
+// crew follows closest sit on top; the rest are grouped below.
 import Base from '../../layouts/Base.astro';
 import LocalTime from '../../components/racing/LocalTime.astro';
 import { seriesList, nextSession, currentOrNextEvent, lastFinishedEvent, raceWinners, eventDates, resultLabel, timeAgo, className } from '../../lib/racing';
+import type { SeriesSummary } from '../../lib/racing';
 
 const series = seriesList();
+const main = series.filter((s) => s.tier === 'main');
+const other = series.filter((s) => s.tier !== 'main');
+
+function card(s: SeriesSummary) {
+  const file = s.latest;
+  const next = nextSession(file);
+  const upcoming = currentOrNextEvent(file);
+  const last = lastFinishedEvent(file);
+  const winners = last ? raceWinners(file, last) : [];
+  const leaders = file.standings.filter((st) => st.type === 'drivers' || st.type === 'riders');
+  return { file, next, upcoming, last, winners, leaders };
+}
 ---
-<Base title="Racing" description="Results, schedules and standings for F1, MotoGP, WEC and WorldSBK in one place.">
+<Base title="Racing" description="Results, schedules and standings for MotoGP, WEC, F1 and more in one place.">
   <h1>Racing</h1>
   <p class="subtitle">Every series we follow, one page. Session times show in your own timezone.</p>
 
-  {series.length === 0 ? (
+  {series.length === 0 && (
     <div class="panel"><div class="empty-state">No racing data yet. It shows up once <code>npm run scrape:racing</code> has run.</div></div>
-  ) : (
-    <div class="racing-grid">
-      {series.map((s) => {
-        const file = s.latest;
-        const next = nextSession(file);
-        const upcoming = currentOrNextEvent(file);
-        const last = lastFinishedEvent(file);
-        const winners = last ? raceWinners(file, last) : [];
-        const leaders = file.standings.filter((st) => st.type === 'drivers' || st.type === 'riders');
-        return (
-          <section class="card racing-series-card">
-            <div class="racing-series-card-head">
-              <h3><a href={`/racing/${s.id}/`}>{s.name}</a></h3>
-              <span class="meta">{file.season} &middot; synced {timeAgo(file.syncedAt)}</span>
-            </div>
+  )}
 
-            <div class="racing-block">
-              <div class="racing-block-label">{upcoming?.status === 'live' ? 'This weekend' : 'Next up'}</div>
-              {upcoming ? (
-                <>
-                  <a href={`/racing/${s.id}/${file.season}/${upcoming.id}/`}><strong>{upcoming.name}</strong></a>
-                  <div class="meta">{[upcoming.circuit, eventDates(upcoming, false)].filter(Boolean).join(' · ')}</div>
-                  {next && next.event.id === upcoming.id && (
-                    <div class="meta">
-                      {file.classes.length > 1 ? `${className(file, next.session.classId)} ` : ''}{next.session.name}: <LocalTime iso={next.session.startUtc} />
-                    </div>
+  {[{ label: null, list: main }, { label: 'More series', list: other }].map(({ label, list }) =>
+    list.length > 0 && (
+      <>
+        {label && <h2>{label}</h2>}
+        <div class={`racing-grid ${label ? 'racing-grid-other' : 'racing-grid-main'}`}>
+          {list.map((s) => {
+            const { file, next, upcoming, last, winners, leaders } = card(s);
+            return (
+              <section class="card racing-series-card">
+                <div class="racing-series-card-head">
+                  <h3><a href={`/racing/${s.id}/`}>{s.name}</a></h3>
+                  <span class="meta">{file.season} &middot; synced {timeAgo(file.syncedAt)}</span>
+                </div>
+
+                <div class="racing-block">
+                  <div class="racing-block-label">{upcoming?.status === 'live' ? 'This weekend' : 'Next up'}</div>
+                  {upcoming ? (
+                    <>
+                      <a href={`/racing/${s.id}/${file.season}/${upcoming.id}/`}><strong>{upcoming.name}</strong></a>
+                      <div class="meta">{[upcoming.circuit, eventDates(upcoming, false)].filter(Boolean).join(' · ')}</div>
+                      {next && next.event.id === upcoming.id && (
+                        <div class="meta">
+                          {file.classes.length > 1 ? `${className(file, next.session.classId)} ` : ''}{next.session.name}: <LocalTime iso={next.session.startUtc} />
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <div class="meta">Season over</div>
                   )}
-                </>
-              ) : (
-                <div class="meta">Season over</div>
-              )}
-            </div>
+                </div>
 
-            <div class="racing-block">
-              <div class="racing-block-label">Last race</div>
-              {last ? (
-                <>
-                  <a href={`/racing/${s.id}/${file.season}/${last.id}/`}><strong>{last.name}</strong></a>
-                  {winners.map((w) => (
-                    <div class="meta">
-                      {file.classes.length > 1 ? `${w.className}: ` : ''}<span class="rank-1">{resultLabel(w.winner)}</span>
-                      {w.winner.name && w.winner.team ? ` · ${w.winner.team}` : ''}
-                    </div>
-                  ))}
-                </>
-              ) : (
-                <div class="meta">No results yet</div>
-              )}
-            </div>
-
-            {leaders.length > 0 && (
-              <div class="racing-block">
-                <div class="racing-block-label">Championship</div>
-                {leaders.map((st) => (
-                  <div class="racing-leaders">
-                    {file.classes.length > 1 && <div class="meta">{className(file, st.classId)}</div>}
-                    <ol>
-                      {st.rows.slice(0, 3).map((r) => (
-                        <li><span class={`rank-${r.pos}`}>{resultLabel(r)}</span> <span class="meta">{r.points} pts</span></li>
+                <div class="racing-block">
+                  <div class="racing-block-label">Last race</div>
+                  {last ? (
+                    <>
+                      <a href={`/racing/${s.id}/${file.season}/${last.id}/`}><strong>{last.name}</strong></a>
+                      {winners.map((w) => (
+                        <div class="meta">
+                          {file.classes.length > 1 ? `${w.className}: ` : ''}<span class="rank-1">{resultLabel(w.winner)}</span>
+                          {w.winner.name && w.winner.team ? ` · ${w.winner.team}` : ''}
+                        </div>
                       ))}
-                    </ol>
-                  </div>
-                ))}
-              </div>
-            )}
+                    </>
+                  ) : (
+                    <div class="meta">No results yet</div>
+                  )}
+                </div>
 
-            <a class="btn racing-more" href={`/racing/${s.id}/`}>Full results &amp; standings</a>
-          </section>
-        );
-      })}
-    </div>
+                {leaders.length > 0 && (
+                  <div class="racing-block">
+                    <div class="racing-block-label">Championship</div>
+                    {leaders.map((st) => (
+                      <div class="racing-leaders">
+                        {file.classes.length > 1 && <div class="meta">{className(file, st.classId)}</div>}
+                        <ol>
+                          {st.rows.slice(0, 3).map((r) => (
+                            <li><span class={`rank-${r.pos}`}>{resultLabel(r)}</span> <span class="meta">{r.points} pts</span></li>
+                          ))}
+                        </ol>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <a class="btn racing-more" href={`/racing/${s.id}/`}>Full results &amp; standings</a>
+              </section>
+            );
+          })}
+        </div>
+      </>
+    ),
   )}
 
   <p class="meta racing-footnote">
