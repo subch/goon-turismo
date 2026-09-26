@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-26T17:24:24.707Z",
+  "syncedAt": "2026-09-26T18:01:12.532Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -12193,7 +12193,7 @@
               "time": "1:38:02.143",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:44.916",
               "points": 25,
               "status": "Finished"
             },
@@ -12208,7 +12208,7 @@
               "time": null,
               "gap": "+0.196",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:44.993",
               "points": 18,
               "status": "Finished"
             },
@@ -12223,7 +12223,7 @@
               "time": null,
               "gap": "+10.704",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:45.618",
               "points": 15,
               "status": "Finished"
             },
@@ -12238,7 +12238,7 @@
               "time": null,
               "gap": "+14.136",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:45.784",
               "points": 12,
               "status": "Finished"
             },
@@ -12253,7 +12253,7 @@
               "time": null,
               "gap": "+14.512",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:45.413",
               "points": 10,
               "status": "Finished"
             },
@@ -12268,7 +12268,7 @@
               "time": null,
               "gap": "+22.382",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.170",
               "points": 8,
               "status": "Finished"
             },
@@ -12283,7 +12283,7 @@
               "time": null,
               "gap": "+31.159",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.849",
               "points": 6,
               "status": "Finished"
             },
@@ -12298,7 +12298,7 @@
               "time": null,
               "gap": "+31.189",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:47.068",
               "points": 4,
               "status": "Finished"
             },
@@ -12313,7 +12313,7 @@
               "time": null,
               "gap": "+31.929",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.978",
               "points": 2,
               "status": "Finished"
             },
@@ -12328,7 +12328,7 @@
               "time": null,
               "gap": "+32.416",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.737",
               "points": 1,
               "status": "Finished"
             },
@@ -12343,7 +12343,7 @@
               "time": null,
               "gap": "+33.231",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.850",
               "points": 0,
               "status": "Finished"
             },
@@ -12358,27 +12358,12 @@
               "time": null,
               "gap": "+34.013",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.906",
               "points": 0,
               "status": "Finished"
             },
             {
               "pos": 13,
-              "number": "5",
-              "name": "Gabriel Bortoleto",
-              "team": "Audi",
-              "make": null,
-              "cls": null,
-              "laps": "51",
-              "time": null,
-              "gap": "+34.230",
-              "interval": null,
-              "bestLap": null,
-              "points": 0,
-              "status": "Finished"
-            },
-            {
-              "pos": 14,
               "number": "81",
               "name": "Oscar Piastri",
               "team": "McLaren",
@@ -12388,12 +12373,12 @@
               "time": null,
               "gap": "+36.401",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:46.602",
               "points": 0,
               "status": "Finished"
             },
             {
-              "pos": 15,
+              "pos": 14,
               "number": "11",
               "name": "Sergio Pérez",
               "team": "Cadillac F1 Team",
@@ -12403,7 +12388,22 @@
               "time": null,
               "gap": "+41.400",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:47.363",
+              "points": 0,
+              "status": "Finished"
+            },
+            {
+              "pos": 15,
+              "number": "5",
+              "name": "Gabriel Bortoleto",
+              "team": "Audi",
+              "make": null,
+              "cls": null,
+              "laps": "51",
+              "time": null,
+              "gap": "+44.230",
+              "interval": null,
+              "bestLap": "1:46.336",
               "points": 0,
               "status": "Finished"
             },
@@ -12418,7 +12418,7 @@
               "time": null,
               "gap": "",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:48.852",
               "points": 0,
               "status": "Retired"
             },
@@ -12433,7 +12433,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:48.484",
               "points": 0,
               "status": "Retired"
             },
@@ -12448,7 +12448,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:47.822",
               "points": 0,
               "status": "Retired"
             },
@@ -12463,7 +12463,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:47.761",
               "points": 0,
               "status": "Retired"
             },
@@ -12478,7 +12478,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:48.443",
               "points": 0,
               "status": "Retired"
             },
@@ -12493,7 +12493,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:50.968",
               "points": 0,
               "status": "Retired"
             },
@@ -12508,7 +12508,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:51.723",
               "points": 0,
               "status": "Retired"
             }
