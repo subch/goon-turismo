@@ -3,11 +3,11 @@
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/663",
   "track": "Michelin Raceway Road Atlanta",
-  "car": "BMW M Hybrid V8",
+  "car": null,
   "classCode": "RM",
   "startDate": "24 September 2026",
   "endDate": "8 October 2026",
   "status": "unknown",
-  "lastScraped": "2026-09-26T12:50:47.797Z",
+  "lastScraped": "2026-09-26T18:18:06.079Z",
   "seasonId": "summer-2026"
 }
