@@ -1,0 +1,109 @@
+---
+// One event: every session of every class, in order, each with its
+// classification once published. Long on a MotoGP weekend (three classes x
+// eight sessions), so there's a class jump-list at the top.
+import Base from '../../../../layouts/Base.astro';
+import ResultsTable from '../../../../components/racing/ResultsTable.astro';
+import LocalTime from '../../../../components/racing/LocalTime.astro';
+import { racingSeasons, eventDates, SESSION_TYPE_LABEL } from '../../../../lib/racing';
+
+export function getStaticPaths() {
+  return racingSeasons.flatMap((file) =>
+    file.events.map((event) => ({
+      params: { series: file.series, season: String(file.season), event: event.id },
+      props: { file, event },
+    })),
+  );
+}
+
+const { file, event } = Astro.props;
+const nameLabel = file.series === 'wec' ? 'Car' : file.series === 'motogp' || file.series === 'wsbk' ? 'Rider' : 'Driver';
+
+// Sessions grouped by class, each group in start order. Classes the event
+// has no sessions for are simply absent.
+const byClass = file.classes
+  .map((c) => ({
+    ...c,
+    sessions: event.sessions
+      .filter((s) => s.classId === c.id)
+      .sort((a, b) => String(a.startUtc ?? '').localeCompare(String(b.startUtc ?? ''))),
+  }))
+  .filter((c) => c.sessions.length > 0);
+
+const idx = file.events.findIndex((e) => e.id === event.id);
+const prev = idx > 0 ? file.events[idx - 1] : null;
+const next = idx >= 0 && idx < file.events.length - 1 ? file.events[idx + 1] : null;
+const base = `/racing/${file.series}/${file.season}/`;
+---
+<Base title={`${event.name} – ${file.shortName} ${file.season}`} description={`${file.name} ${file.season}: ${event.name} results and session times.`}>
+  <p class="meta racing-crumbs">
+    <a href="/racing/">Racing</a> › <a href={`/racing/${file.series}/${file.season}/`}>{file.name} {file.season}</a>
+    {event.round != null && !event.test && <> › Round {event.round}</>}
+  </p>
+  <div class="racing-season-head">
+    <div>
+      <h1>{event.name}</h1>
+      <p class="subtitle">
+        {[event.circuit, event.location, event.country].filter(Boolean).join(' · ')}
+        {event.circuit || event.location || event.country ? ' · ' : ''}{eventDates(event)}
+        {event.status === 'live' && <> <span class="badge live">This weekend</span></>}
+        {event.status === 'cancelled' && <> <span class="badge cancelled">Cancelled</span></>}
+        {event.test && <> <span class="badge">Test</span></>}
+      </p>
+    </div>
+    {event.officialUrl && (
+      <a class="btn" href={event.officialUrl} target="_blank" rel="noopener">Official results ↗</a>
+    )}
+  </div>
+
+  {byClass.length > 1 && (
+    <nav class="racing-jumps">
+      {byClass.map((c) => <a href={`#${c.id}`}>{c.name}</a>)}
+    </nav>
+  )}
+
+  {byClass.length === 0 && (
+    <div class="panel"><div class="empty-state">No session schedule published yet. Check the official page for the timetable.</div></div>
+  )}
+
+  {byClass.map((c) => (
+    <section id={c.id} class="racing-class">
+      {byClass.length > 1 && <h2>{c.name}</h2>}
+      {c.sessions.map((s) => (
+        <details class="racing-session" open={s.type === 'race' || s.type === 'sprint' || s.status === 'live'}>
+          <summary>
+            <span class={`racing-session-type type-${s.type}`}>{SESSION_TYPE_LABEL[s.type]}</span>
+            <strong>{s.name}</strong>
+            <span class="meta"><LocalTime iso={s.startUtc} /></span>
+            {s.status === 'live' && <span class="badge live">Live now</span>}
+            {s.results ? (
+              <span class="meta racing-session-count">{s.results.length} classified</span>
+            ) : (
+              <span class="meta racing-session-count">{s.status === 'finished' ? 'results not published' : s.status === 'cancelled' ? 'cancelled' : 'not yet run'}</span>
+            )}
+          </summary>
+          {s.results ? (
+            <ResultsTable results={s.results} nameLabel={nameLabel} />
+          ) : (
+            <div class="panel"><div class="empty-state">
+              {s.status === 'finished'
+                ? 'This source has not published a classification for this session.'
+                : 'Results appear here after the session, on the next sync.'}
+              {event.officialUrl && <> <a href={event.officialUrl} target="_blank" rel="noopener">Official page ↗</a></>}
+            </div></div>
+          )}
+        </details>
+      ))}
+    </section>
+  ))}
+
+  <div class="racing-prevnext">
+    {prev ? <a href={`${base}${prev.id}/`}>← {prev.name}</a> : <span />}
+    {next ? <a href={`${base}${next.id}/`}>{next.name} →</a> : <span />}
+  </div>
+
+  <p class="meta racing-footnote">
+    Classification as published by <a href={file.source.url} target="_blank" rel="noopener">{file.source.name}</a>, synced {new Date(file.syncedAt).toUTCString().replace(':00 GMT', ' UTC')}.
+    Times are session starts in your timezone.
+  </p>
+</Base>

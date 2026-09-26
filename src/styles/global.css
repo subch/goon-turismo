@@ -417,3 +417,290 @@ a.card:hover .event-card-photo img {
   font-size: 0.85rem;
   padding: 24px 0;
 }
+
+/* ---- Racing (/racing/): real-world series results ----------------------- */
+
+.racing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.racing-series-card {
+  gap: 14px;
+}
+
+.racing-series-card-head h3 {
+  font-size: 1.2rem;
+}
+
+.racing-series-card-head h3 a:hover {
+  color: var(--accent);
+}
+
+.racing-block {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.racing-block-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+.racing-leaders ol {
+  margin: 2px 0 6px;
+  padding-left: 22px;
+}
+
+.racing-leaders li {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.racing-more {
+  margin-top: auto;
+  text-align: center;
+}
+
+.racing-season-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.racing-season-head .subtitle {
+  margin-bottom: 20px;
+}
+
+.racing-season-head .season-switcher {
+  margin-top: 8px;
+}
+
+.racing-next {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+}
+
+.racing-standings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.racing-table-title {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+.racing-standings table,
+.racing-results table,
+.racing-calendar {
+  min-width: 0;
+}
+
+.racing-standings tbody td,
+.racing-results tbody td {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.racing-standings thead th,
+.racing-results thead th {
+  padding: 9px 12px;
+}
+
+td.num,
+th.num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.mono {
+  font-variant-numeric: tabular-nums;
+}
+
+.col-pos {
+  width: 2.5em;
+  text-align: right;
+}
+
+.col-num {
+  width: 2.5em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.racing-calendar tr.status-finished .racing-event-link {
+  color: var(--text);
+}
+
+.racing-calendar tr.status-upcoming td {
+  color: var(--text-dim);
+}
+
+.racing-calendar tr.status-upcoming .racing-event-link strong {
+  color: var(--text);
+}
+
+.racing-calendar tr.status-live {
+  background: rgba(47, 191, 113, 0.06);
+}
+
+.racing-event-link + .badge {
+  margin-left: 8px;
+}
+
+.badge.upcoming {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-3);
+}
+
+.badge.cancelled {
+  background: rgba(255, 59, 59, 0.15);
+  color: var(--accent);
+}
+
+.racing-tests,
+.racing-footnote {
+  margin-top: 18px;
+  font-size: 0.82rem;
+}
+
+.racing-crumbs {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+}
+
+.racing-jumps {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 8px;
+}
+
+.racing-jumps a {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+.racing-jumps a:hover {
+  color: var(--text);
+  border-color: #3a4048;
+}
+
+.racing-class {
+  scroll-margin-top: 12px;
+}
+
+.racing-session {
+  margin: 10px 0;
+}
+
+.racing-session > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.racing-session > summary::-webkit-details-marker {
+  display: none;
+}
+
+.racing-session > summary::before {
+  content: '▸';
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.racing-session[open] > summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.racing-session[open] > summary::before {
+  content: '▾';
+}
+
+.racing-session[open] > .panel {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.racing-session-type {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-dim);
+}
+
+.racing-session-type.type-race {
+  background: rgba(255, 59, 59, 0.18);
+  color: var(--accent);
+}
+
+.racing-session-type.type-sprint {
+  background: rgba(255, 176, 32, 0.18);
+  color: var(--accent-2);
+}
+
+.racing-session-type.type-qualifying {
+  background: rgba(59, 130, 246, 0.18);
+  color: var(--accent-3);
+}
+
+.racing-session-count {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+.racing-prevnext {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .racing-standings tbody td,
+  .racing-results tbody td {
+    padding: 7px 8px;
+    font-size: 0.85rem;
+  }
+
+  .racing-calendar td.nowrap {
+    white-space: normal;
+  }
+}

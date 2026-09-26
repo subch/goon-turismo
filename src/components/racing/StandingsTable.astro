@@ -1,0 +1,44 @@
+---
+import type { Standing } from '../../lib/racing';
+import { resultLabel } from '../../lib/racing';
+
+interface Props {
+  standing: Standing;
+  /** Show only the top N rows (overview cards); omit for the full table. */
+  limit?: number;
+}
+const { standing, limit } = Astro.props;
+const rows = limit ? standing.rows.slice(0, limit) : standing.rows;
+const showTeam = rows.some((r) => r.team);
+const showMake = rows.some((r) => r.make) && !rows.some((r) => r.team);
+const showWins = rows.some((r) => r.wins != null && r.wins > 0);
+const showNumber = rows.some((r) => r.number != null) && standing.type !== 'manufacturers' && standing.type !== 'constructors';
+---
+<div class="panel racing-standings">
+  <table>
+    <thead>
+      <tr>
+        <th class="col-pos">Pos</th>
+        {showNumber && <th class="col-num">No</th>}
+        <th>{standing.type === 'drivers' ? 'Driver' : standing.type === 'riders' ? 'Rider' : standing.type === 'teams' ? 'Team' : standing.type === 'constructors' ? 'Constructor' : 'Manufacturer'}</th>
+        {showTeam && <th>Team</th>}
+        {showMake && <th>Make</th>}
+        {showWins && <th class="num">Wins</th>}
+        <th class="num">Pts</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td class={`col-pos ${r.pos && r.pos <= 3 ? `rank-${r.pos}` : ''}`}>{r.pos ?? '—'}</td>
+          {showNumber && <td class="col-num meta">{r.number != null ? String(r.number).replace(/^#/, '') : ''}</td>}
+          <td class="col-name">{resultLabel(r)}</td>
+          {showTeam && <td class="meta">{r.team ?? ''}</td>}
+          {showMake && <td class="meta">{r.make ?? ''}</td>}
+          {showWins && <td class="num meta">{r.wins ?? ''}</td>}
+          <td class="num"><strong>{r.points ?? 0}</strong></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

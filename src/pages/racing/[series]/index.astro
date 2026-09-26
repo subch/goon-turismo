@@ -1,0 +1,14 @@
+---
+import Base from '../../../layouts/Base.astro';
+import SeriesSeason from '../../../components/racing/SeriesSeason.astro';
+import { seriesList } from '../../../lib/racing';
+
+export function getStaticPaths() {
+  return seriesList().map((s) => ({ params: { series: s.id }, props: { file: s.latest, seasons: s.seasons } }));
+}
+
+const { file, seasons } = Astro.props;
+---
+<Base title={`${file.name} ${file.season}`} description={`${file.name} ${file.season} results, schedule and standings.`}>
+  <SeriesSeason file={file} seasons={seasons} />
+</Base>

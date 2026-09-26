@@ -1,0 +1,123 @@
+---
+// One series, one season: standings up top, then the calendar with a
+// one-line result for every finished round. Shared by /racing/<series>/ (the
+// latest season) and /racing/<series>/<season>/ (any season on file).
+import type { SeasonFile } from '../../lib/racing';
+import { rounds, raceWinners, eventDates, resultLabel, nextSession, timeAgo, className } from '../../lib/racing';
+import StandingsTable from './StandingsTable.astro';
+import LocalTime from './LocalTime.astro';
+
+interface Props {
+  file: SeasonFile;
+  seasons: number[];
+}
+const { file, seasons } = Astro.props;
+const events = rounds(file);
+const tests = file.events.filter((e) => e.test);
+const next = nextSession(file);
+const nameLabel = file.series === 'motogp' || file.series === 'wsbk' ? 'Rider' : 'Driver';
+const base = `/racing/${file.series}/${file.season}/`;
+---
+<div class="racing-season-head">
+  <div>
+    <h1>{file.name} {file.season}</h1>
+    <p class="subtitle">
+      Results and standings from <a href={file.source.url} target="_blank" rel="noopener">{file.source.name}</a>
+      &middot; synced {timeAgo(file.syncedAt)}
+    </p>
+  </div>
+  {seasons.length > 1 && (
+    <div class="season-switcher">
+      <label for="racing-season">Season</label>
+      <select id="racing-season" onchange="window.location.href = this.value">
+        {seasons.map((s) => (
+          <option value={`/racing/${file.series}/${s}/`} selected={s === file.season}>{s}</option>
+        ))}
+      </select>
+    </div>
+  )}
+</div>
+
+{next && (
+  <div class="panel racing-next">
+    <span class="badge upcoming">Next up</span>
+    <a href={`${base}${next.event.id}/`}><strong>{next.event.name}</strong></a>
+    <span class="meta">{className(file, next.session.classId)} {next.session.name} &middot; <LocalTime iso={next.session.startUtc} /></span>
+  </div>
+)}
+
+{file.standings.length > 0 && (
+  <>
+    <h2>Standings</h2>
+    <div class="racing-standings-grid">
+      {file.standings.map((st) => (
+        <section>
+          <h3 class="racing-table-title">{st.name}</h3>
+          <StandingsTable standing={st} />
+        </section>
+      ))}
+    </div>
+  </>
+)}
+
+<h2>Calendar &amp; results</h2>
+<div class="panel">
+  <table class="racing-calendar">
+    <thead>
+      <tr>
+        <th class="col-pos">Rd</th>
+        <th>Event</th>
+        <th>Dates</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      {events.map((e) => {
+        const winners = raceWinners(file, e);
+        return (
+          <tr class={`status-${e.status}`}>
+            <td class="col-pos meta">{e.round ?? ''}</td>
+            <td>
+              <a href={`${base}${e.id}/`} class="racing-event-link"><strong>{e.name}</strong></a>
+              {e.status === 'live' && <span class="badge live">This weekend</span>}
+              {e.status === 'cancelled' && <span class="badge cancelled">Cancelled</span>}
+              <div class="meta">{[e.circuit, e.location, e.country].filter(Boolean).join(' · ')}</div>
+            </td>
+            <td class="meta nowrap">{eventDates(e, false)}</td>
+            <td>
+              {winners.length > 0 ? (
+                winners.map((w) => (
+                  <div>
+                    {file.classes.length > 1 && <span class="meta">{w.className}: </span>}
+                    <span class="rank-1">{resultLabel(w.winner)}</span>
+                    {w.winner.team && w.winner.name && <span class="meta"> · {w.winner.team}</span>}
+                  </div>
+                ))
+              ) : e.status === 'finished' ? (
+                <span class="meta">results pending</span>
+              ) : (
+                <span class="meta">{e.status === 'live' ? 'in progress' : '—'}</span>
+              )}
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
+
+{tests.length > 0 && (
+  <p class="meta racing-tests">
+    Also on file: {tests.map((t, i) => (
+      <>
+        {i > 0 && ', '}
+        <a href={`${base}${t.id}/`}>{t.name}</a> ({eventDates(t, false)})
+      </>
+    ))}
+  </p>
+)}
+
+<p class="meta racing-footnote">
+  {nameLabel === 'Rider' ? 'Riders' : 'Drivers'}, teams, positions and times are reproduced as published on the official results pages linked above.
+  Nothing here is live timing: the sync runs a few times a day, and every event links out to the official page for the rest.
+</p>

@@ -1,0 +1,29 @@
+---
+// A session start time. Rendered in UTC at build time so the page is right
+// with JS off; the script below rewrites every one of these into the
+// viewer's own timezone, because "quali is at 06:00" is only useful in the
+// zone the reader is actually in and the crew is spread across several.
+import { utcLabel } from '../../lib/racing';
+
+interface Props {
+  iso: string | null;
+  class?: string;
+}
+const { iso, class: cls } = Astro.props;
+---
+{iso ? <time datetime={iso} data-local-time class={cls}>{utcLabel(iso)}</time> : <span class={cls}>time TBD</span>}
+
+<script>
+  const fmt = new Intl.DateTimeFormat(undefined, {
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZoneName: 'short',
+  });
+  for (const el of document.querySelectorAll<HTMLTimeElement>('time[data-local-time]')) {
+    const d = new Date(el.dateTime);
+    if (!Number.isNaN(d.getTime())) el.textContent = fmt.format(d);
+  }
+</script>

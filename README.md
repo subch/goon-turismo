@@ -77,6 +77,32 @@ archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
 All data lives in `data/` as version-controlled JSON; `scripts/` holds the sync/processing jobs
 and `.github/workflows/` schedules and wires them together.
 
+## Racing (`/racing/`)
+
+Real-world results in one place, for the crew: **F1, MotoGP (+Moto2/Moto3), WEC (Hypercar/LMGT3,
+plus LMP2 at Le Mans) and WorldSBK (+WorldSSP)**. Each series gets a season page (standings + calendar
+with the race winner per round) and an event page per round (every session, in order, with its
+classification once published). Session times are stored in UTC and rewritten into the viewer's own
+timezone in the browser; the overview shows what's next and who won last for every series.
+
+- **Sources are each series' own public results pages or an open API**, credited in every page
+  footer: Jolpica (the Ergast successor) for F1; the JSON behind motogp.com and worldsbk.com's own
+  results pages; fiawec.com's race pages and results browser for WEC. What is kept is the
+  classification (position, number, name/car, team, laps, time, gap, points) -- no logos, photos,
+  video or live timing, ever. Al Kamel's WEC timing site is deliberately not used: it carries an
+  explicit no-redistribution notice. Details and the "how to add a series" recipe are in
+  `scripts/racing/series/README.md`; the data shape in `scripts/racing/lib/schema.mjs`.
+- **`npm run scrape:racing`** writes `data/racing/<series>/<season>.json`. It is incremental: events
+  already marked complete are reused, so a steady-state run is a few dozen spaced requests. Pass
+  `--full` after fixing a parser, `--series f1,wec` to limit it, `--season 2025` for a past season
+  (a past season on file gets its own page and appears in the season dropdown).
+- **One broken source never blocks the others.** A failing adapter warns and leaves its previous
+  file in place; the run still exits 0 so the VPS sync commits, builds and publishes the rest. The
+  page shows when each series last synced, which is how a stale one gets noticed. A source that
+  answers with an empty season is refused (same idea as sync.sh's shrink guard).
+- **Scheduled on the VPS** (`goon` stack, `sync.sh racing`, every two hours);
+  `.github/workflows/sync-racing.yml` is the manual fallback.
+
 ## Future plans
 
 - Car thumbnails: GT-GridStats' own car images are keyed by opaque numeric IDs with no
@@ -99,4 +125,5 @@ npm run scrape:dg-edge
 npm run scrape:gridstats-web        # GT-GridStats public pages: events, results, fallback stats
 GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats   # real API: richer DR/SR/stats (5 req/day quota -- don't run this repeatedly)
 npm run verify:data                 # data integrity check (no duplicates, no dangling references)
+npm run scrape:racing               # /racing/ results: F1, MotoGP, WEC, WSBK (add -- --full to refetch everything)
 ```

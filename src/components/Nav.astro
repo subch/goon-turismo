@@ -6,15 +6,20 @@ const links = [
   { href: '/players/', label: 'Players' },
   { href: '/championships/', label: 'Championships' },
   { href: '/tunes/', label: 'Tunes' },
+  { href: '/racing/', label: 'Racing' },
   { href: '/custom-events/submit/', label: 'Submit Event' },
 ];
+// Exact match for the GT7 sections (whose sub-pages have their own nav
+// context); prefix match for /racing/, whose season and event pages are all
+// one section.
+const isActive = (href: string) => pathname === href || (href === '/racing/' && pathname.startsWith('/racing/'));
 ---
 <header class="site-header">
   <div class="container">
     <a href="/" class="brand">GOON <span>TURISMO</span></a>
     <nav class="main-nav">
       {links.map((link) => (
-        <a href={link.href} class={pathname === link.href ? 'active' : ''}>{link.label}</a>
+        <a href={link.href} class={isActive(link.href) ? 'active' : ''}>{link.label}</a>
       ))}
     </nav>
   </div>

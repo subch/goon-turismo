@@ -1,0 +1,49 @@
+name: Sync racing results (F1, MotoGP, WEC, WSBK)
+
+# Manual fallback only, like the other two sync workflows: the scheduled run
+# lives on the VPS in the `goon` stack (sync.sh racing, every two hours),
+# which scrapes, commits, pushes, rebuilds and republishes in one go. Keep
+# this for when the box is down or being rebuilt.
+#
+# scrape:racing tolerates one source being broken -- it warns, keeps that
+# series' previous file and exits 0 -- so a redesign on one site never blocks
+# the other three from updating.
+on:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: 'Refetch events already marked complete (after a parser fix)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Sync racing results
+        run: npm run scrape:racing -- ${{ inputs.full && '--full' || '' }}
+
+      - name: Commit data changes
+        run: |
+          git config user.name "goon-turismo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/racing
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync racing results"
+            git push
+          fi

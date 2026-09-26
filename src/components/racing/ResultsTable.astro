@@ -1,0 +1,65 @@
+---
+// One session's classification. Every optional column is shown only when at
+// least one row has a value for it, so a practice table doesn't carry an
+// empty Points column and a WEC table (cars, not drivers) doesn't carry an
+// empty Driver column -- the same component covers all four series.
+import type { RacingResult } from '../../lib/racing';
+
+interface Props {
+  results: RacingResult[];
+  /** "Driver" / "Rider" / "Car" -- what the name column holds for this series. */
+  nameLabel?: string;
+}
+const { results, nameLabel = 'Driver' } = Astro.props;
+
+const has = (k: keyof RacingResult) => results.some((r) => r[k] != null && r[k] !== '');
+const showName = has('name');
+const showNumber = has('number');
+const showTeam = has('team');
+const showMake = has('make') && !showTeam ? true : has('make') && results.some((r) => r.make && r.team && !r.team.toLowerCase().includes(r.make.toLowerCase()));
+const showLaps = has('laps');
+const showTime = has('time');
+const showGap = has('gap');
+const showInterval = has('interval');
+const showBest = has('bestLap');
+const showPoints = has('points');
+const showStatus = has('status');
+---
+<div class="panel racing-results">
+  <table>
+    <thead>
+      <tr>
+        <th class="col-pos">Pos</th>
+        {showNumber && <th class="col-num">No</th>}
+        {showName && <th>{nameLabel}</th>}
+        {showTeam && <th>Team</th>}
+        {showMake && <th>Make</th>}
+        {showLaps && <th class="num">Laps</th>}
+        {showTime && <th class="num">Time</th>}
+        {showGap && <th class="num">Gap</th>}
+        {showInterval && <th class="num">Int</th>}
+        {showBest && <th class="num">Best lap</th>}
+        {showPoints && <th class="num">Pts</th>}
+        {showStatus && <th>Status</th>}
+      </tr>
+    </thead>
+    <tbody>
+      {results.map((r) => (
+        <tr>
+          <td class={`col-pos ${r.pos && r.pos <= 3 ? `rank-${r.pos}` : ''}`}>{r.pos ?? '—'}</td>
+          {showNumber && <td class="col-num meta">{r.number != null ? String(r.number).replace(/^#/, '') : ''}</td>}
+          {showName && <td class="col-name">{r.name ?? (r.number != null ? `#${String(r.number).replace(/^#/, '')}` : '')}</td>}
+          {showTeam && <td class="meta">{r.team ?? ''}</td>}
+          {showMake && <td class="meta">{r.make ?? ''}</td>}
+          {showLaps && <td class="num meta">{r.laps ?? ''}</td>}
+          {showTime && <td class="num mono">{r.time ?? ''}</td>}
+          {showGap && <td class="num mono meta">{r.gap ?? ''}</td>}
+          {showInterval && <td class="num mono meta">{r.interval ?? ''}</td>}
+          {showBest && <td class="num mono meta">{r.bestLap ?? ''}</td>}
+          {showPoints && <td class="num">{r.points ?? ''}</td>}
+          {showStatus && <td class="meta">{r.status ?? ''}</td>}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
