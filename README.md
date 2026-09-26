@@ -81,16 +81,18 @@ and `.github/workflows/` schedules and wires them together.
 
 Real-world results in one place, for the crew. Two tiers on the overview: **MotoGP (+Moto2/Moto3),
 WEC (Hypercar/LMGT3, plus LMP2 at Le Mans) and F1** on top, then **WorldSBK (+WorldSSP), WRC,
-MotoAmerica (Superbike, Supersport, Twins Cup, King of the Baggers, Super Hooligan), the Nürburgring
-Langstrecken-Serie (NLS) and the NASCAR Cup Series** below. Each series gets a season page (standings +
+MotoAmerica (Superbike, Supersport, Twins Cup, King of the Baggers, Super Hooligan), the NASCAR Cup
+Series (with the playoff standings) and Formula E** below. Each series gets a season page (standings +
 calendar with the race winner per round) and an event page per round (every session, in order, with
 its classification once published). Session times are stored in UTC and rewritten into the viewer's own
 timezone in the browser; the overview shows what's next and who won last for every series.
 
 - **Sources are each series' own public results pages or an open API**, credited in every page
   footer: Jolpica (the Ergast successor) for F1; the JSON behind motogp.com, worldsbk.com, wrc.com
-  and nascar.com's own results pages; fiawec.com's race pages and results browser for WEC; the
-  official timing PDFs for MotoAmerica (MyLaps Orbits) and NLS (wige), parsed to text. What is kept
+  and nascar.com's own results pages; fiawec.com's race pages and results browser for WEC;
+  fiaformulae.com's server-rendered results page for Formula E; the official timing PDFs for
+  MotoAmerica (MyLaps Orbits), parsed to text. IMSA was left out: its site is behind a Cloudflare
+  challenge and the only other source is Al Kamel's. What is kept
   is the classification (position, number, name/car, team, class, laps, time, gap, points) -- no
   logos, photos, video or live timing, ever. Al Kamel's WEC timing site is deliberately not used: it
   carries an explicit no-redistribution notice. Details, per-series caveats and the "how to add a

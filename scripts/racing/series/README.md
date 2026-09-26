@@ -48,11 +48,16 @@ Tier `main` (top of /racing/): MotoGP, WEC, F1. Tier `other`: the rest.
 | WSBK | worldsbk.com sport-data API | undocumented JSON the official site uses; WorldSBK/WorldSSP |
 | WRC | wrc.com results feed (p-p.redbull.com) | JSON the official site loads; overall classification + 3 championship tables; stage times left to the site |
 | MotoAmerica | results.motoamerica.com + motoamerica.com | session catalogue embedded in the archive page; every classification is a MyLaps Orbits PDF (parsed); standings from the points table; no session times |
-| NLS | nuerburgring-langstrecken-serie.de result archive | wige PDFs per race day (qualifying, top qualifying, race), parsed with the overall class column; no standings (points are per class) |
-| NASCAR Cup | cf.nascar.com "cacher" feeds | JSON nascar.com uses; race + qualifying + points; some race folders 403 until the weekend |
+| NASCAR Cup | cf.nascar.com "cacher" feeds | JSON nascar.com uses; race + qualifying, playoff standings (seeded drivers with playoff/stage points) and full season points; some race folders 403 until the weekend |
+| Formula E | fiaformulae.com results page | server-rendered, plain query params; seasons numbered from 2014-15 (the file year is the season's end year, label kept in `seasonLabel`); no session times |
 
-PDF-backed sources (MotoAmerica, NLS) go through `../lib/pdf.mjs`; their
-parsers are the fragile part of this folder, so `--full` after touching one.
+MotoAmerica's PDFs go through `../lib/pdf.mjs`; that parser is the fragile
+part of this folder, so `--full` after touching it.
+
+Looked at and left out: **IMSA** (imsa.com sits behind a Cloudflare
+challenge for anything that isn't a real browser, and the only other source
+is Al Kamel's, see above) and **NLS** (was in for a day; dropped 2026-09-26
+at the crew's request -- its wige-PDF parser lives in git history if wanted).
 
 Al Kamel Systems (WEC's timing provider) is deliberately not used: its results
 site says third-party distribution of its data without consent "will lead to

@@ -20,7 +20,7 @@ const base = `/racing/${file.series}/${file.season}/`;
 ---
 <div class="racing-season-head">
   <div>
-    <h1>{file.name} {file.season}</h1>
+    <h1>{file.name} {file.seasonLabel ?? file.season}</h1>
     <p class="subtitle">
       Results and standings from <a href={file.source.url} target="_blank" rel="noopener">{file.source.name}</a>
       &middot; synced {timeAgo(file.syncedAt)}
@@ -81,6 +81,7 @@ const base = `/racing/${file.series}/${file.season}/`;
               <a href={`${base}${e.id}/`} class="racing-event-link"><strong>{e.name}</strong></a>
               {e.status === 'live' && <span class="badge live">This weekend</span>}
               {e.status === 'cancelled' && <span class="badge cancelled">Cancelled</span>}
+              {e.playoff && <span class="badge upcoming">Playoffs</span>}
               <div class="meta">{[e.circuit, e.location, e.country].filter(Boolean).join(' · ')}</div>
             </td>
             <td class="meta nowrap">{eventDates(e, false)}</td>

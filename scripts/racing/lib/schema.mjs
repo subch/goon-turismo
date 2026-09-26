@@ -40,7 +40,7 @@
 //     pos: number|null, number, name, team, make, cls,
 //     laps, time, gap, interval, bestLap, points, status
 //   }                                    // strings as the source shows them; null when absent
-//                                        // cls = class within a mixed grid (NLS, MotoAmerica, WRC)
+//                                        // cls = class within a mixed grid (MotoAmerica, WRC)
 //
 //   Standing = {
 //     classId, type: 'drivers'|'riders'|'teams'|'constructors'|'manufacturers',
@@ -88,7 +88,7 @@ export function result(fields) {
     name: fields.name ?? null,
     team: fields.team ?? null,
     make: fields.make ?? null,
-    cls: fields.cls ?? null, // class within a mixed grid (NLS "SP9 PRO", MotoAmerica "SBC", WRC "WRC2")
+    cls: fields.cls ?? null, // class within a mixed grid (MotoAmerica "SBC", WRC "WRC2")
     laps: fields.laps ?? null,
     time: fields.time ?? null,
     gap: fields.gap ?? null,
@@ -108,6 +108,9 @@ export function standingRow(fields) {
     make: fields.make ?? null,
     points: fields.points ?? null,
     wins: fields.wins ?? null,
+    // Series-specific columns, shown after Wins in insertion order
+    // (NASCAR: playoff points, stage points, cutline...).
+    ...(fields.extra ? { extra: fields.extra } : {}),
   };
 }
 

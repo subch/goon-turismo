@@ -1,7 +1,8 @@
 ---
 // The one-stop page: every series at a glance -- what's next, who won last,
 // who leads -- with a link into each series' full season. The three the
-// crew follows closest sit on top; the rest are grouped below.
+// crew follows closest get the wide cards on top; the rest follow in a
+// denser grid, no heading between them.
 import Base from '../../layouts/Base.astro';
 import LocalTime from '../../components/racing/LocalTime.astro';
 import { seriesList, nextSession, currentOrNextEvent, lastFinishedEvent, raceWinners, eventDates, resultLabel, timeAgo, className } from '../../lib/racing';
@@ -29,11 +30,10 @@ function card(s: SeriesSummary) {
     <div class="panel"><div class="empty-state">No racing data yet. It shows up once <code>npm run scrape:racing</code> has run.</div></div>
   )}
 
-  {[{ label: null, list: main }, { label: 'More series', list: other }].map(({ label, list }) =>
+  {[{ tier: 'main', list: main }, { tier: 'other', list: other }].map(({ tier, list }) =>
     list.length > 0 && (
       <>
-        {label && <h2>{label}</h2>}
-        <div class={`racing-grid ${label ? 'racing-grid-other' : 'racing-grid-main'}`}>
+        <div class={`racing-grid racing-grid-${tier}`}>
           {list.map((s) => {
             const { file, next, upcoming, last, winners, leaders } = card(s);
             return (

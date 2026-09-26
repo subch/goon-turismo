@@ -9,6 +9,6 @@ export function getStaticPaths() {
 
 const { file, seasons } = Astro.props;
 ---
-<Base title={`${file.name} ${file.season}`} description={`${file.name} ${file.season} results, schedule and standings.`}>
+<Base title={`${file.name} ${file.seasonLabel ?? file.season}`} description={`${file.name} ${file.seasonLabel ?? file.season} results, schedule and standings.`}>
   <SeriesSeason file={file} seasons={seasons} />
 </Base>

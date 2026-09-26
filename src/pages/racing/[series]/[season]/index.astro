@@ -17,6 +17,6 @@ const { seasons } = Astro.props;
 import { seasonFile } from '../../../../lib/racing';
 const file = seasonFile(series!, Number(season))!;
 ---
-<Base title={`${file.name} ${file.season}`} description={`${file.name} ${file.season} results, schedule and standings.`}>
+<Base title={`${file.name} ${file.seasonLabel ?? file.season}`} description={`${file.name} ${file.seasonLabel ?? file.season} results, schedule and standings.`}>
   <SeriesSeason file={file} seasons={seasons} />
 </Base>

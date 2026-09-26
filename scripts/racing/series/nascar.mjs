@@ -82,11 +82,16 @@ export async function fetchSeason({ season, previous, full, log }) {
 
   const prevEvents = new Map((previous?.events ?? []).map((e) => [e.id, e]));
   const events = [];
-  for (const [i, r] of races.entries()) {
+  let round = 0;
+  for (const r of races) {
     const eventId = String(r.race_id);
+    // race_type_id 1 = points race; 2 = exhibition (Clash, Duels, All-Star),
+    // which stay on file but outside the round numbering.
+    const exhibition = r.race_type_id !== 1;
+    if (!exhibition) round += 1;
     const prev = prevEvents.get(eventId);
     if (prev?.complete && !full) {
-      events.push({ ...prev, round: i + 1 });
+      events.push({ ...prev, round: exhibition ? null : round, test: exhibition || undefined });
       continue;
     }
     const raceDate = String(r.race_date).slice(0, 10);
@@ -136,7 +141,8 @@ export async function fetchSeason({ season, previous, full, log }) {
     });
     events.push({
       id: eventId,
-      round: i + 1,
+      round: exhibition ? null : round,
+      test: exhibition || undefined,
       name: r.race_name,
       shortName: r.track_name,
       circuit: r.track_name,
@@ -147,6 +153,7 @@ export async function fetchSeason({ season, previous, full, log }) {
       status,
       officialUrl: 'https://www.nascar.com/results/',
       complete: status === 'finished' && !!raceResults,
+      playoff: r.playoff_round > 0 || undefined,
       sessions,
     });
   }
@@ -155,24 +162,59 @@ export async function fetchSeason({ season, previous, full, log }) {
   let standings = [];
   try {
     const pts = await getJson(`${BASE}/${season}/${SERIES_ID}/points-feed.json`, { delayMs: DELAY });
-    standings = [
-      {
+    const all = (Array.isArray(pts) ? pts : pts.points ?? []).sort((a, b) => a.position - b.position);
+    const row = (p, extra) =>
+      standingRow({
+        pos: p.position ?? null,
+        name: p.driver_name ?? null,
+        number: p.car_no ?? p.car_number ?? null,
+        make: p.manufacturer ?? null,
+        points: p.points ?? null,
+        wins: p.wins ?? null,
+        extra,
+      });
+    // The playoff field: everyone the feed has seeded (playoff_rank > 0),
+    // which is the 16 whose points were reset at the start of the Chase.
+    // The feed's own figures are shown as they are -- playoff points, stage
+    // points, seed, gap to the leader -- rather than a cutline we would have
+    // to infer from a format that changes year to year.
+    const playoff = all.filter((p) => p.playoff_rank > 0);
+    if (playoff.length) {
+      standings.push({
         classId: 'cup',
         type: 'drivers',
-        name: "Drivers' Championship",
-        rows: (Array.isArray(pts) ? pts : pts.points ?? [])
-          .sort((a, b) => a.position - b.position)
-          .map((p) =>
-            standingRow({
-              pos: p.position ?? null,
-              name: p.driver_name ?? null,
-              number: p.car_number ?? null,
-              points: p.points ?? null,
-              wins: p.wins ?? null,
-            }),
+        name: 'Playoff standings (Chase for the Cup)',
+        rows: playoff.map((p, i) =>
+          row(
+            { ...p, position: i + 1 },
+            {
+              'To leader': p.delta_leader ? String(p.delta_leader) : '—',
+              'Playoff pts': p.playoff_points ?? 0,
+              'Stage pts': p.stage_points ?? 0,
+              Seed: p.playoff_rank,
+              'Playoff wins': p.playoff_race_wins ?? 0,
+              Clinched: p.is_clinch ? 'yes' : '',
+            },
           ),
-      },
-    ];
+        ),
+      });
+    }
+    standings.push({
+      classId: 'cup',
+      type: 'drivers',
+      name: playoff.length ? 'Season points (all drivers)' : "Drivers' Championship",
+      rows: all.map((p) =>
+        row(p, {
+          'Stage pts': p.stage_points ?? 0,
+          'Playoff pts': p.playoff_points ?? 0,
+          Poles: p.poles ?? 0,
+          'Top 5': p.top_5 ?? 0,
+          'Top 10': p.top_10 ?? 0,
+          'Laps led': p.laps_led ?? 0,
+          DNF: p.dnf ?? 0,
+        }),
+      ),
+    });
   } catch (err) {
     log?.(`  standings unavailable: ${err.message}`);
   }

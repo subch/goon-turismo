@@ -49,6 +49,7 @@ const base = `/racing/${file.series}/${file.season}/`;
         {event.status === 'live' && <> <span class="badge live">This weekend</span></>}
         {event.status === 'cancelled' && <> <span class="badge cancelled">Cancelled</span></>}
         {event.test && <> <span class="badge">Test</span></>}
+        {event.playoff && <> <span class="badge upcoming">Playoffs</span></>}
       </p>
     </div>
     {event.officialUrl && (

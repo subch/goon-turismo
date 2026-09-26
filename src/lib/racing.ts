@@ -48,6 +48,8 @@ export type RacingEvent = {
   officialUrl: string | null;
   complete: boolean;
   test?: boolean;
+  /** A playoff / post-season round (NASCAR's Chase for the Cup). */
+  playoff?: boolean;
   sessions: RacingSession[];
 };
 
@@ -59,6 +61,8 @@ export type StandingRow = {
   make: string | null;
   points: number | null;
   wins: number | null;
+  /** Series-specific columns, rendered after Wins in insertion order (NASCAR playoff points, stage points...). */
+  extra?: Record<string, string | number | null>;
 };
 
 export type Standing = {
@@ -76,6 +80,8 @@ export type SeasonFile = {
   shortName: string;
   tier?: SeriesTier;
   season: number;
+  /** How the series itself names the season when it isn't a calendar year ("2025-26" for Formula E). */
+  seasonLabel?: string;
   syncedAt: string;
   source: { name: string; url: string };
   classes: { id: string; name: string }[];
@@ -92,7 +98,7 @@ export const racingSeasons: SeasonFile[] = Object.values(modules)
 
 // Display order on /racing/: the three the crew follows closest first, then
 // the rest. Mirrors the registration order in scripts/racing/series/index.mjs.
-const SERIES_ORDER = ['motogp', 'wec', 'f1', 'wsbk', 'wrc', 'motoamerica', 'nls', 'nascar'];
+const SERIES_ORDER = ['motogp', 'wec', 'f1', 'wsbk', 'wrc', 'motoamerica', 'nascar', 'formulae'];
 
 export type SeriesSummary = { id: string; name: string; shortName: string; tier: SeriesTier; seasons: number[]; latest: SeasonFile };
 

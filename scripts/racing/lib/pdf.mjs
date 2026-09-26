@@ -1,7 +1,7 @@
-// Text out of a results PDF. Two of the series (MotoAmerica, NLS) publish
-// classifications only as PDFs from their timing providers (MyLaps Orbits,
-// wige), so the adapters fetch the PDF and parse its text. pdf-parse is
-// CommonJS; createRequire keeps the rest of the adapters plain ESM.
+// Text out of a results PDF. MotoAmerica publishes its classifications only
+// as PDFs from its timing provider (MyLaps Orbits), so that adapter fetches
+// the PDF and parses its text. pdf-parse is CommonJS; createRequire keeps the
+// rest of the adapters plain ESM.
 import { createRequire } from 'node:module';
 import { request } from './http.mjs';
 

@@ -717,3 +717,8 @@ th.num {
 .racing-grid-other .racing-series-card-head h3 {
   font-size: 1.05rem;
 }
+
+/* No heading between the two tiers any more: just breathing room. */
+.racing-grid-other {
+  margin-top: 16px;
+}

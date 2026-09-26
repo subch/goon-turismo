@@ -73,6 +73,7 @@ for (const series of SERIES) {
       shortName: series.shortName,
       tier: tierOf(series),
       season,
+      seasonLabel: got.seasonLabel ?? undefined,
       syncedAt: new Date().toISOString(),
       source: series.source,
       classes: got.classes ?? series.classes ?? [],
