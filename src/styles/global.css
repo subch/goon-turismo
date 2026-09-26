@@ -32,14 +32,14 @@
   --muted: #a8a3bd;
   --faint: #6a667c;
   --ink: #0a0612;
-  --a: #ff4fd8;
-  --b: #2ee6ff;
-  --c: #b48cff;
-  --y: #f6f0ff;
-  --g1: #2b1d6b;
-  --g2: #ff2e9a;
-  --g3: #0b5f6e;
-  --scene: linear-gradient(180deg, #000 0%, #150a28 35%, #46104f 60%, #ff2e9a 78%, #050507 88%);
+  --a: #ff3b2e;
+  --b: #ffd23f;
+  --c: #ff8a1f;
+  --y: #fff1c9;
+  --g1: #5a140c;
+  --g2: #ff3b2e;
+  --g3: #3d2a05;
+  --scene: linear-gradient(180deg, #000 0%, #1c0606 35%, #6a0f0f 60%, #ff5a1f 78%, #050507 88%);
 
   /* Legacy names the pages already speak, mapped onto the roles. */
   --bg: var(--ground);
@@ -50,7 +50,7 @@
   --accent: var(--a);
   --accent-2: var(--c);
   --accent-3: var(--b);
-  --live: #05ffa1;
+  --live: #b6ff3b;
   --font: var(--f-body);
   --shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
   --glow-a: 0 0 14px color-mix(in srgb, var(--a) 45%, transparent);
