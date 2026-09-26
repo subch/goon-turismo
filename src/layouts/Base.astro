@@ -1,5 +1,11 @@
 ---
-import Nav from '../components/Nav.astro';
+// The site chrome, in the family look: the music.subch.us / subch.us chrome
+// (Audiowide headings, Monoton neon wordmark, striped sun, drifting sky
+// glows, neon floor grid) in its own colourway. music.subch.us is the bright
+// vapor, subch.us the medium purple; this one is the BLACK one -- grounds
+// are true near-black, the neon is thin and mostly pink/cyan, blue lives
+// only in the faint glows (his TV turns saturated dark blue electric).
+// Drawn, not generated: no raster art anywhere.
 import '../styles/global.css';
 
 interface Props {
@@ -7,7 +13,21 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Gran Turismo 7 Time Trial tracking for the Goon Turismo crew.' } = Astro.props;
+const { title, description = 'Gran Turismo 7 Time Trial tracking for the Goon Turismo crew, plus the real-world racing we follow.' } = Astro.props;
+const { pathname } = Astro.url;
+
+const links = [
+  { href: '/', label: 'Standings' },
+  { href: '/events/', label: 'Events' },
+  { href: '/players/', label: 'Players' },
+  { href: '/championships/', label: 'Championships' },
+  { href: '/tunes/', label: 'Tunes' },
+  { href: '/racing/', label: 'Racing' },
+  { href: '/custom-events/submit/', label: 'Submit' },
+];
+// Exact match for the GT7 sections; prefix match for /racing/, whose
+// season and event pages are all one section.
+const isActive = (href: string) => pathname === href || (href === '/racing/' && pathname.startsWith('/racing/'));
 ---
 <!doctype html>
 <html lang="en">
@@ -17,23 +37,60 @@ const { title, description = 'Gran Turismo 7 Time Trial tracking for the Goon Tu
     <title>{title} · Goon Turismo</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&family=Audiowide&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" />
   </head>
   <body>
-    <Nav />
+    <!-- the sky: three slow glows behind everything, drawn, no artwork -->
+    <div class="sky" aria-hidden="true">
+      <i class="glow g1"></i><i class="glow g2"></i><i class="glow g3"></i>
+    </div>
+
+    <header class="bar">
+      <a class="brand" href="/" title="Goon Turismo">
+        <svg class="sun" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" style="stop-color:var(--y)" />
+              <stop offset=".45" style="stop-color:var(--b)" />
+              <stop offset="1" style="stop-color:var(--a)" />
+            </linearGradient>
+            <mask id="sunMask">
+              <rect width="64" height="64" fill="#fff" />
+              <rect x="0" y="36" width="64" height="2.5" fill="#000" />
+              <rect x="0" y="42" width="64" height="3.5" fill="#000" />
+              <rect x="0" y="49" width="64" height="4.5" fill="#000" />
+              <rect x="0" y="57" width="64" height="7" fill="#000" />
+            </mask>
+          </defs>
+          <circle cx="32" cy="32" r="28" fill="url(#sunGrad)" mask="url(#sunMask)" />
+        </svg>
+        <span class="wordmark">goon<span>turismo</span></span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        {links.map((link) => (
+          <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
+        ))}
+      </nav>
+    </header>
+
     <main>
       <div class="container">
         <slot />
       </div>
     </main>
-    <footer class="site-footer">
+
+    <footer class="foot">
       <div class="container">
-        Goon Turismo &middot; unofficial fan tracker for our crew's GT7 Time Trial results &middot;
-        official event data sourced from <a href="https://www.dg-edge.com/events/time-trials" target="_blank" rel="noopener">dg-edge.com</a>
+        <span>
+          Goon Turismo &middot; unofficial fan tracker for our crew's GT7 Time Trials, and the racing we follow &middot;
+          GT7 event data from <a href="https://www.dg-edge.com/events/time-trials" target="_blank" rel="noopener">dg-edge.com</a>
+        </span>
         <!-- The way home. subch.us is the hub every one of these sites hangs
              off; this one is on its own domain, so it is the one most likely
-             to be found cold with no way back. Not target=_blank -- going
-             home is navigation, not a citation. -->
-        &middot; part of <a href="https://subch.us">subch.us</a>
+             to be found cold with no way back. -->
+        <a href="https://subch.us">part of subch.us</a>
       </div>
     </footer>
   </body>

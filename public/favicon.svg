@@ -1,4 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0b0d10"/>
-  <path d="M14 40 L26 20 L38 20 L50 40 L40 40 L32 26 L24 40 Z" fill="#ff3b3b"/>
+  <!-- the family's striped sun, in the BLACK colourway (pink over cyan) -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f0ff"/>
+      <stop offset=".45" stop-color="#2ee6ff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <mask id="m">
+      <rect width="64" height="64" fill="#fff"/>
+      <rect x="0" y="36" width="64" height="2.5" fill="#000"/>
+      <rect x="0" y="42" width="64" height="3.5" fill="#000"/>
+      <rect x="0" y="49" width="64" height="4.5" fill="#000"/>
+      <rect x="0" y="57" width="64" height="7" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#050507"/>
+  <circle cx="32" cy="32" r="26" fill="url(#g)" mask="url(#m)"/>
 </svg>

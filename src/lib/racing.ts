@@ -98,7 +98,7 @@ export const racingSeasons: SeasonFile[] = Object.values(modules)
 
 // Display order on /racing/: the three the crew follows closest first, then
 // the rest. Mirrors the registration order in scripts/racing/series/index.mjs.
-const SERIES_ORDER = ['motogp', 'wec', 'f1', 'wsbk', 'wrc', 'motoamerica', 'nascar', 'formulae'];
+const SERIES_ORDER = ['motogp', 'wec', 'f1', 'wsbk', 'wrc', 'motoamerica', 'nascar', 'formulae', 'indycar'];
 
 export type SeriesSummary = { id: string; name: string; shortName: string; tier: SeriesTier; seasons: number[]; latest: SeasonFile };
 

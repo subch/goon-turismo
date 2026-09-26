@@ -16,8 +16,9 @@ import * as wrc from './wrc.mjs';
 import * as motoamerica from './motoamerica.mjs';
 import * as nascar from './nascar.mjs';
 import * as formulae from './formulae.mjs';
+import * as indycar from './indycar.mjs';
 
-export const SERIES = [motogp, wec, f1, wsbk, wrc, motoamerica, nascar, formulae];
+export const SERIES = [motogp, wec, f1, wsbk, wrc, motoamerica, nascar, formulae, indycar];
 
 const MAIN = new Set(['motogp', 'wec', 'f1']);
 
