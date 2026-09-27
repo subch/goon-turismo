@@ -3,11 +3,11 @@
   "source": "dg-edge",
   "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/663",
   "track": "Michelin Raceway Road Atlanta",
-  "car": null,
+  "car": "Porsche 963",
   "classCode": "RM",
   "startDate": "24 September 2026",
   "endDate": "8 October 2026",
   "status": "unknown",
-  "lastScraped": "2026-09-27T06:18:04.217Z",
+  "lastScraped": "2026-09-27T06:50:44.730Z",
   "seasonId": "summer-2026"
 }
