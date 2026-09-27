@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-27T10:32:33.759Z",
+  "syncedAt": "2026-09-27T12:32:33.213Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -54178,9 +54178,9 @@
           "classId": "ssp",
           "type": "race",
           "name": "Race 2",
-          "startUtc": "2026-09-27T12:00:00+00:00",
+          "startUtc": "2026-09-27T12:00:50+00:00",
           "endUtc": "2026-09-27T12:20:00+00:00",
-          "status": "upcoming",
+          "status": "finished",
           "results": null
         }
       ]
