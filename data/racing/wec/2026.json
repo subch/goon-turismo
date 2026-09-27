@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-27T12:32:22.437Z",
+  "syncedAt": "2026-09-27T14:32:20.000Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -19806,19 +19806,19 @@
         },
         {
           "pos": 10,
-          "name": "GARAGE 59",
-          "number": "#10",
-          "team": null,
-          "make": "McLAREN",
-          "points": 38,
-          "wins": null
-        },
-        {
-          "pos": 11,
           "name": "AKKODIS ASP TEAM",
           "number": "#78",
           "team": null,
           "make": "LEXUS",
+          "points": 39,
+          "wins": null
+        },
+        {
+          "pos": 11,
+          "name": "GARAGE 59",
+          "number": "#10",
+          "team": null,
+          "make": "McLAREN",
           "points": 38,
           "wins": null
         },
@@ -19860,19 +19860,19 @@
         },
         {
           "pos": 16,
-          "name": "PROTON COMPETITION",
-          "number": "#77",
-          "team": null,
-          "make": "FORD",
-          "points": 14,
-          "wins": null
-        },
-        {
-          "pos": 17,
           "name": "VISTA AF CORSE",
           "number": "#54",
           "team": null,
           "make": "FERRARI",
+          "points": 13,
+          "wins": null
+        },
+        {
+          "pos": 17,
+          "name": "PROTON COMPETITION",
+          "number": "#77",
+          "team": null,
+          "make": "FORD",
           "points": 13,
           "wins": null
         },
@@ -20002,19 +20002,19 @@
         },
         {
           "pos": 13,
-          "name": "Antares Au, Marvin Kirchhöfer, Thomas Fleming",
-          "number": "#10",
-          "team": null,
-          "make": "McLAREN",
-          "points": 38,
-          "wins": null
-        },
-        {
-          "pos": 14,
           "name": "Hadrien David, Tom van Rompuy",
           "number": "#78",
           "team": null,
           "make": "LEXUS",
+          "points": 39,
+          "wins": null
+        },
+        {
+          "pos": 14,
+          "name": "Antares Au, Marvin Kirchhöfer, Thomas Fleming",
+          "number": "#10",
+          "team": null,
+          "make": "McLAREN",
           "points": 38,
           "wins": null
         },
@@ -20074,19 +20074,19 @@
         },
         {
           "pos": 21,
-          "name": "Ben Tuck, Eric Powell, Sebastian Priaulx",
-          "number": "#77",
-          "team": null,
-          "make": "FORD",
-          "points": 14,
-          "wins": null
-        },
-        {
-          "pos": 22,
           "name": "Davide Rigon, Francesco Castellacci, Thomas Flohr",
           "number": "#54",
           "team": null,
           "make": "FERRARI",
+          "points": 13,
+          "wins": null
+        },
+        {
+          "pos": 22,
+          "name": "Ben Tuck, Eric Powell, Sebastian Priaulx",
+          "number": "#77",
+          "team": null,
+          "make": "FORD",
           "points": 13,
           "wins": null
         },
@@ -20110,20 +20110,20 @@
         },
         {
           "pos": 25,
-          "name": "Kobe Pauwels",
-          "number": "#23",
+          "name": "Esteban Masson",
+          "number": "#78",
           "team": null,
-          "make": "ASTON MARTIN",
+          "make": "LEXUS",
           "points": 3,
           "wins": null
         },
         {
           "pos": 26,
-          "name": "Esteban Masson",
-          "number": "#78",
+          "name": "Kobe Pauwels",
+          "number": "#23",
           "team": null,
-          "make": "LEXUS",
-          "points": 2,
+          "make": "ASTON MARTIN",
+          "points": 3,
           "wins": null
         }
       ]
