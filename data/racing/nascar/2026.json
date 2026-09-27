@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-27T18:33:07.109Z",
+  "syncedAt": "2026-09-27T20:33:06.910Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -53174,7 +53174,7 @@
           "name": "Hollywood Casino 400 ",
           "startUtc": "2026-09-27T19:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         }
       ]
