@@ -2,10 +2,9 @@
   "id": "summer-2025-n-rburgring-2025-07-02",
   "source": "historical",
   "seasonId": "summer-2025",
-  "track": "Nürburgring",
+  "track": "Nürburgring Nordschleife",
   "car": "Suzuki Swift '17 (SM)",
-  "classCode": null,
-  "startDate": "2025-07-02",
-  "endDate": "2025-07-02",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-06-19",
+  "endDate": "2025-07-03"
 }

@@ -1,81 +1,98 @@
 # Goon Turismo
 
-Tracks our crew's participation in Gran Turismo 7 Time Trials — both the official
-ones tracked by [dg-edge.com](https://www.dg-edge.com/events/time-trials) and our
-own custom group events — plus team championship standings and a tune/parts-list
-archive. Hosted as a static site on GitHub Pages at **goon-turismo.com**.
+Tracks our crew's participation in Gran Turismo 7 Time Trials -- the game's official ones, pulled from
+[GT-GridStats](https://gt-gridstats.com), plus our own custom group events -- with points-based season
+standings, team championship standings, a tune/parts-list archive, and a real-world racing results hub
+at `/racing/`. Static Astro site served from the VPS at **goon-turismo.com** (GitHub Pages is the rollback).
 
 ## What it does
 
-- **Player stats and events** are synced from two GitHub Actions workflows, both every 6 hours
-  (offset from each other so they don't usually race): `scrape-dg-edge.yml` scrapes
-  [dg-edge.com](https://www.dg-edge.com) for the live/upcoming events listing (dg-edge no longer
-  shows a per-event leaderboard, so it doesn't contribute individual results, just event metadata);
-  `scrape-gridstats-web.yml` pulls event/result history from [GT-GridStats](https://gt-gridstats.com)'
-  public player pages. Both went from once-nightly to every-6-hours on 2026-08-23 — a player who set
-  a time right after a sync used to wait up to 24h for the next one to pick it up. GT-GridStats also
-  has a real token-based API with richer per-player stats (DR/SR + more), but that account is capped
-  at 5 requests/day (a full sync costs 2), so *that specific step* still only runs once/day (a fixed
-  UTC hour inside `scrape-gridstats-web.yml`, not the whole workflow) — the free event/result scraping
-  around it isn't quota-limited and runs every firing. GT-GridStats doesn't publish an event-listing
-  or per-event-leaderboard API, so event/result syncing goes through its public pages regardless.
-- **Data integrity is checked after every sync.** `scripts/verify-data-integrity.mjs`
-  (`npm run verify:data`) runs as the last step of both scrape workflows, after data is already
-  committed and pushed — so a problem it finds never blocks or loses a scrape, it just fails that
-  Actions run so it's visible right away. Checks: no duplicate events (reuses the exact matching
-  logic the scrapers use, so it can't be stricter or looser than what actually created the data),
-  no result pointing at a nonexistent event, no event pointing at a nonexistent season. Added after
-  two separate duplicate-event bugs each went unnoticed for days despite the scrapers running
-  successfully every night — this catches that whole category of problem same-day instead.
-- **Time Trial results** — official and custom — feed points-based standings, grouped by season.
+- **One data source, one sync.** `npm run sync:gridstats` (`scripts/sync-gridstats.mjs`) is the whole GT7
+  pipeline. It runs on the VPS every six hours (`goon` stack, `sync.sh gridstats`), then commits, pushes,
+  rebuilds and republishes the site; `.github/workflows/sync-gridstats.yml` is the manual fallback. Two
+  phases, both against GT-GridStats:
+  1. **Player snapshots** from the documented token API (`GET /api/racers/{psn,...}`, 16 per request):
+     DR/SR, nickname, country and the stats block (licence, Sport races, wins, poles, fastest laps, clean
+     races...). Two requests per run. The account's daily quota is reported in `X-Quota-Limit` /
+     `X-Quota-Remaining` on every response -- it was 5/day when the site was built and is **100/day** as
+     of 2026-09-28, which is why this no longer waits for a once-a-day slot. The remaining count is
+     written to `data/sync-status.json` each run.
+  2. **Time Trial results** from the public, server-rendered player pages (`/player/{psn}`, paginated
+     newest-first). The API has no event-listing or per-event-leaderboard endpoint (re-checked against the
+     docs 2026-09-28), so this is still the only way to get times. Paging stops as soon as a page is older
+     than the window below, so a run is a few dozen requests, not hundreds.
+
+  Only Time Trials that **end in the current season, or ended in the last 21 days**, are touched. Closed
+  seasons are the spreadsheet's and are never rewritten by the sync (see "Why the history is frozen").
+  Players not indexed on GT-GridStats (six of the 24 on file) get no automatic results; their times go in
+  through the issue form. dg-edge.com, the site's original source, was retired 2026-09-28: it had stopped
+  showing per-player times a year earlier and only ever contributed event listings.
+- **Two rules decide what an official Time Trial record is** (`scripts/lib/seasons.mjs`, shared by the
+  sync, the issue-form processor, the historical importer and the integrity check, so none of them can
+  drift from the others):
+  1. **A Time Trial scores in the season it *closes* in.** That is how the crew's scoring spreadsheet
+     always worked (a TT was logged, on whichever tab was current, the week it ended) and where
+     `data/seasons.json`'s boundaries come from. When a season is closed and the next one opened in
+     `seasons.json`, a TT that ends in the new season moves over on the next sync -- the boundary is
+     entirely a property of that one file.
+  2. **Two records are the same Time Trial when their track names match and their start dates *or* their
+     end dates fall within three days of each other.** Spreadsheet rows carry one date (the week the TT
+     closed); GT-GridStats carries the real two-week window. Comparing only start dates -- which the old
+     scrapers did -- never matched the two, and quietly minted a GT-GridStats duplicate for ~150 of the
+     spreadsheet's Time Trials, double-counting their points in every past season's standings until the
+     2026-09-28 clean-up merged them.
+- **Data integrity is checked after every sync.** `npm run verify:data` runs last, after the data is already
+  committed, pushed and published, so a problem it finds never blocks or loses a sync -- it fails the run so
+  it is seen. It enforces both rules above (no two files are the same TT in any season; every synced
+  event is filed in the season it ends in), plus: every result points at a real event, every event at a
+  real season, one row per player per event, ISO dates, known sources, no dg-edge leftovers.
+- **Storage.** `data/official-events/<id>.json`, one file per Time Trial, with exactly these keys: `id`,
+  `source` (`gridstats` | `historical` | `manual`), `seasonId`, `track`, `car`, `classCode`, `startDate`,
+  `endDate` (ISO). No per-file timestamps or status flags, so a quiet sync changes nothing and makes no
+  commit; the run itself is recorded once, in `data/sync-status.json`. New Time Trials get the id
+  `tt-<start date>-<track slug>`; older ids (`590`, `gridstats-...`, `<season>-<track>-<date>`) are kept
+  because the site's URLs are built from them. `data/results/official.json` holds every result, sorted by
+  event and rank. `data/players.json` holds the roster and each player's GT-GridStats snapshot.
+- **Time Trial results** -- official and custom -- feed points-based standings, grouped by season.
   The standings page defaults to the current season with a dropdown to browse any past season,
   each showing the season's overall standings plus a full breakdown of every Time Trial run that
   season. Per-event scoring is percent-off-pace: the fastest group time in an event scores 100,
   and every 1% off that pace costs 10 points. Season totals drop each player's worst-scoring
   events (an event you skipped entirely counts as a 0 for this purpose too, so skipping a couple
-  events a season is effectively free) — up to 2, scaling in with how many events the season has
+  events a season is effectively free) -- up to 2, scaling in with how many events the season has
   had so far (`floor(seasonEventCount / 3)`, capped at 2) so a brand new season's first few events
   don't get mostly discarded. Both rules match the crew's original scoring spreadsheet's formulas
   (`=IF(...,100-((time/MIN(...)-1)*1000))` per event, `=SUM(...)-SMALL(...,1)-SMALL(...,2)` for the
   season total), confirmed against real formulas in the crew's exported workbook and validated
   against 1200+ historical results.
-- **11 past seasons (2023 through Spring 2026)** are backfilled from the crew's original scoring
-  spreadsheet via `scripts/import-historical-seasons.mjs` — safe to re-run if a season needs
-  re-importing.
-- **Gap-filling from GT-GridStats.** The spreadsheet wasn't tracked consistently every season. The
-  GT-GridStats sync (`scrape-gridstats-web.mjs`) scans each player's *full* event history —
-  paginating through every page, not just the first — against every past season, not just the
-  current one, and adds any (player, track, ~date) result that isn't already recorded from any
-  source, filling real gaps without touching or duplicating anything the spreadsheet already has.
-- **No duplicate events.** dg-edge and GT-GridStats independently discover the same real-world
-  Time Trials under completely different ids and track-name spellings. Every scrape matches new
-  events against everything already on file (by season + fuzzy track name + date, shared logic in
-  `scripts/lib/seasons.mjs`) before deciding whether to attach to an existing event or create a new
-  one — so the same real Time Trial only ever shows up once, with data merged in from whichever
-  sources found it. Source labels (dg-edge/GT-GridStats/historical) aren't shown in the UI; they
-  only matter internally for merge priority.
+- **Seasons.** `data/seasons.json`, hand-maintained, newest first, exactly one `current: true`. Autumn
+  2026 opened 2026-09-25 (Summer 2026 closed 2026-09-24, the day its last Time Trial ended). To roll a
+  season: give the current one an `endDate`, set `current: false`, add the new one on top with
+  `endDate: null` -- the next sync re-files any Time Trial that ends in the new season.
+- **Why the history is frozen.** 11 past seasons (2023 through Spring 2026) come from the crew's original
+  scoring spreadsheet via `scripts/import-historical-seasons.mjs` (safe to re-run: it keeps each event's
+  real window, GT7 track name and car, and any result for a player the sheet never had). The 2026-09-28
+  merge folded the GT-GridStats copies of those Time Trials into the spreadsheet's records -- taking the
+  real start/end window and GT7 spelling from GT-GridStats, the sheet's times where both had one, and
+  adding 123 results for players the sheet had missed. The sync does not revisit closed seasons after
+  that: the spreadsheet decides them.
 - **The current season's still-running Time Trials** are called out as "Active" and shown up top
-  with a track photo, ahead of the season's other (finished) events for that same season.
+  with a track photo, ahead of the season's other (finished) events.
 - **Each Time Trial's track and car link out to the [GT7 wiki](https://gran-turismo.fandom.com/wiki/Gran_Turismo_7)**
-  (best-effort, guessed from the name on file — roughly half resolve to a real page in practice,
-  since track/car names aren't spelled consistently across the site's different data sources and
-  the wiki's own page titles don't always match either. Generic car-class entries like "Gr.3" are
-  skipped entirely rather than linked, since those never have their own page), and events show a
-  track photo when GT-GridStats has one under a matching name (same best-effort caveat, more
-  reliably for GT-GridStats-sourced events than spreadsheet-derived ones with shorter/different
-  names).
+  (best-effort, guessed from the name on file; generic car-class entries like "Gr.3" are skipped), and
+  events show a track photo when GT-GridStats has one under a matching name (same best-effort caveat).
 - **Events, tune submissions, and championship round updates** all come in through GitHub Issue
-  Forms, processed automatically into the site's data.
+  Forms, processed automatically into the site's data. The results form covers our own custom events
+  and, marked as official, a Time Trial time the sync missed: it attaches to the synced record of that
+  TT by rule 2 above, or creates a `manual` event the next sync will recognise rather than duplicate.
 - **Team championship standings** track round-by-round points across the season, with roster names
   linked to player pages where the PSN is known.
-- **Dates always display as "D MMM YYYY"** (e.g. "23 Jul 2026") regardless of which of the two raw
-  formats they're stored in (ISO for historical/spreadsheet-imported events, "D Month YYYY" for
-  scraped ones).
+- **Dates always display as "D MMM YYYY"** (e.g. "23 Jul 2026"); they are stored as ISO.
 - **Tune archive** for GT7 car setups/parts lists, browsable by car.
 - The site rebuilds and redeploys automatically on every data update.
 
 All data lives in `data/` as version-controlled JSON; `scripts/` holds the sync/processing jobs
-and `.github/workflows/` schedules and wires them together.
+and `.github/workflows/` the issue-driven processors and manual fallbacks.
 
 ## Look
 
@@ -158,12 +175,10 @@ npm install
 npm run dev
 ```
 
-Run the scrapers locally (writes into `data/`):
+Run the data jobs locally (they write into `data/`):
 
 ```bash
-npm run scrape:dg-edge
-npm run scrape:gridstats-web        # GT-GridStats public pages: events, results, fallback stats
-GT_GRIDSTATS_TOKEN=xxx npm run scrape:gridstats   # real API: richer DR/SR/stats (5 req/day quota -- don't run this repeatedly)
-npm run verify:data                 # data integrity check (no duplicates, no dangling references)
-npm run scrape:racing               # /racing/ results: F1, MotoGP, WEC, WSBK (add -- --full to refetch everything)
+GT_GRIDSTATS_TOKEN=xxx npm run sync:gridstats   # GT7: players (API, 2 of 100 requests/day) + Time Trial results (public pages); token optional
+npm run verify:data                             # data integrity check (both rules + references)
+npm run scrape:racing                           # /racing/ results (add -- --full to refetch everything)
 ```

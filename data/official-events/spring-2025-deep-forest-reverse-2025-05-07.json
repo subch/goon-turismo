@@ -2,11 +2,9 @@
   "id": "spring-2025-deep-forest-reverse-2025-05-07",
   "source": "historical",
   "seasonId": "spring-2025",
-  "track": "Deep Forest - Reverse",
+  "track": "Deep Forest Raceway Reverse",
   "car": "DMC Delorean (SH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-05-07",
-  "endDate": "2025-05-07",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.512Z"
+  "startDate": "2025-04-24",
+  "endDate": "2025-05-08"
 }

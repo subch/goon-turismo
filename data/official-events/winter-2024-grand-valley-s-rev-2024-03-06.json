@@ -2,10 +2,9 @@
   "id": "winter-2024-grand-valley-s-rev-2024-03-06",
   "source": "historical",
   "seasonId": "winter-2024",
-  "track": "Grand Valley - S. Rev.",
+  "track": "Grand Valley - South Reverse",
   "car": "1932 Ford Roadster (SS)",
-  "classCode": null,
-  "startDate": "2024-03-06",
-  "endDate": "2024-03-06",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-02-22",
+  "endDate": "2024-03-07"
 }

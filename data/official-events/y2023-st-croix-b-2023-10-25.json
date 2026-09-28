@@ -2,10 +2,9 @@
   "id": "y2023-st-croix-b-2023-10-25",
   "source": "historical",
   "seasonId": "y2023",
-  "track": "St. Croix - B",
+  "track": "Circuit de Sainte-Croix - B",
   "car": "Lambo VGT (SS)",
-  "classCode": null,
-  "startDate": "2023-10-25",
-  "endDate": "2023-10-25",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2023-10-12",
+  "endDate": "2023-10-26"
 }

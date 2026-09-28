@@ -2,10 +2,9 @@
   "id": "autumn-2025-lago-maggiore-2025-12-10",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Lago Maggiore",
+  "track": "Autodrome Lago Maggiore - East",
   "car": "GT by Citroen (SM)",
-  "classCode": null,
-  "startDate": "2025-12-10",
-  "endDate": "2025-12-10",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-11-27",
+  "endDate": "2025-12-11"
 }

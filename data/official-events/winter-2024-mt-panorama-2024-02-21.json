@@ -2,10 +2,9 @@
   "id": "winter-2024-mt-panorama-2024-02-21",
   "source": "historical",
   "seasonId": "winter-2024",
-  "track": "Mt. Panorama",
+  "track": "Mount Panorama Motor Racing Circuit",
   "car": "Group 3 (RS)",
-  "classCode": null,
-  "startDate": "2024-02-21",
-  "endDate": "2024-02-21",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-02-08",
+  "endDate": "2024-02-22"
 }

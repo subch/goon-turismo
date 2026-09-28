@@ -9,8 +9,13 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 // One-time historical backfill from the crew's old scoring spreadsheet
 // (https://docs.google.com/spreadsheets/d/1NCanDSx8Wn9lWtl-VkYLdrmaxVh5p_dUaUiKCNgJNa8),
 // which the site's ongoing per-event data now fully replaces (see README).
-// Safe to re-run: it fully regenerates every historical (source: "historical")
-// event/result and no-ops on anything from a live source. Each tab uses a
+// Safe to re-run: it regenerates every historical (source: "historical")
+// event/result from the sheet and no-ops on anything from a live source, with
+// two things preserved from what is already on disk (since the 2026-09-28
+// clean-up merged the GT-GridStats copies of these events into them): the
+// event's real Time Trial window, GT7 track name and car, and any result row
+// for a player the sheet never had. seasons.json is hand-maintained and is
+// not touched. Each tab uses a
 // slightly different column layout (place+points+Driver vs. just totalpoints+Driver
 // vs. place+totalpoints+Driver), so columns are located dynamically from the header
 // row rather than assumed at fixed indices.
@@ -130,7 +135,7 @@ const NAME_TO_PSN = {
   'Fenix Down': 'fenix_down1',
   Kirios: 'kirios86',
   // Alumni: appear in historical seasons but never joined the current
-  // GT-GridStats/dg-edge-tracked roster. No verified real PSN -- slugified
+  // GT-GridStats-tracked roster. No verified real PSN -- slugified
   // sheet nickname used as a historical-only identifier.
   "O'Breezy": 'o_breezy',
   BitBasher: 'bitbasher',
@@ -224,32 +229,26 @@ async function main() {
         points: r.points,
       }));
 
+      // Keep the real TT window, GT7 spelling and car if a previous merge
+      // filled them in; the sheet only knows the week the TT closed.
+      let existing = null;
+      try {
+        existing = JSON.parse(readFileSync(path.join(DATA_DIR, `official-events/${eventId}.json`), 'utf-8'));
+      } catch {}
       eventFiles[`official-events/${eventId}.json`] = {
         id: eventId,
         source: 'historical',
         seasonId,
-        track: em.circuit,
-        car: em.car,
-        classCode: null,
-        startDate: isoDate,
-        endDate: isoDate,
-        status: 'ended',
+        track: existing?.track ?? em.circuit,
+        car: existing?.car ?? em.car ?? null,
+        classCode: existing?.classCode ?? null,
+        startDate: existing?.startDate ?? isoDate,
+        endDate: existing?.endDate ?? isoDate,
       };
       eventIndex.push(eventId);
       resultsByEvent.set(eventId, scored);
     }
   }
-
-  // Write seasons.json: current season first, then historical newest-to-oldest.
-  const currentSeason = {
-    id: 'summer-2026',
-    name: 'Summer 2026',
-    startDate: '2026-08-16',
-    endDate: null,
-    current: true,
-  };
-  const allSeasons = [currentSeason, ...seasons];
-  writeFileSync(path.join(DATA_DIR, 'seasons.json'), JSON.stringify(allSeasons, null, 2) + '\n');
 
   const fs = await import('node:fs');
 
@@ -263,19 +262,30 @@ async function main() {
     writeFileSync(full, JSON.stringify(contents, null, 2) + '\n');
   }
 
-  // Merge event index (existing ids + this run's historical ids).
-  const existingIndex = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'official-events/index.json'), 'utf-8'));
-  const mergedIndex = [...new Set([...existingIndex, ...eventIndex])];
-  writeFileSync(path.join(DATA_DIR, 'official-events/index.json'), JSON.stringify(mergedIndex, null, 2) + '\n');
-
-  // Merge results: drop any existing rows for the historical events this run
-  // just recomputed (so re-running replaces rather than duplicates them),
-  // keep everything else (current season + gap-filled supplemental data),
-  // then add this run's fresh historical results.
+  // Merge results: the sheet's rows replace that player's row on the same
+  // event; rows for players the sheet never had (merged in from GT-GridStats
+  // on 2026-09-28) stay, then every touched event is re-ranked and re-scored.
   const thisRunEventIds = new Set(eventIndex);
   const existingResults = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'results/official.json'), 'utf-8'));
-  const keptResults = existingResults.filter((r) => !thisRunEventIds.has(r.eventId));
-  const allResults = [...keptResults, ...[...resultsByEvent.values()].flat()];
+  const untouched = existingResults.filter((r) => !thisRunEventIds.has(r.eventId));
+  const rescored = [];
+  for (const [eventId, sheetRows] of resultsByEvent) {
+    const sheetPsns = new Set(sheetRows.map((r) => r.psn.toLowerCase()));
+    const extra = existingResults.filter((r) => r.eventId === eventId && !sheetPsns.has(r.psn.toLowerCase()));
+    rescored.push(
+      ...rankAndScoreResults([...sheetRows, ...extra], pointsConfig).map((r) => ({
+        eventId,
+        psn: r.psn,
+        timeRaw: r.timeRaw,
+        timeMs: r.timeMs,
+        groupRank: r.groupRank,
+        points: r.points,
+      }))
+    );
+  }
+  const allResults = [...untouched, ...rescored].sort(
+    (a, b) => a.eventId.localeCompare(b.eventId) || (a.groupRank ?? 999) - (b.groupRank ?? 999) || a.psn.localeCompare(b.psn)
+  );
   writeFileSync(path.join(DATA_DIR, 'results/official.json'), JSON.stringify(allResults, null, 2) + '\n');
 
   // Update players.json: rename joinedSeason 's1' -> 'summer-2026', add alumni entries.
@@ -297,7 +307,6 @@ async function main() {
   }
   writeFileSync(path.join(DATA_DIR, 'players.json'), JSON.stringify(players, null, 2) + '\n');
 
-  console.log(`Seasons written: ${allSeasons.length}`);
   console.log(`Historical events written: ${Object.keys(eventFiles).length}`);
   console.log(`Historical result rows written: ${[...resultsByEvent.values()].flat().length}`);
   console.log(`Alumni added: ${[...alumniSeen.keys()].join(', ')}`);

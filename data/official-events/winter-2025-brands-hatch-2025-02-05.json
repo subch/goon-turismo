@@ -2,10 +2,9 @@
   "id": "winter-2025-brands-hatch-2025-02-05",
   "source": "historical",
   "seasonId": "winter-2025",
-  "track": "Brands Hatch",
+  "track": "Brands Hatch Grand Prix Circuit",
   "car": "Ferrari Testarossa (SH)",
-  "classCode": null,
-  "startDate": "2025-02-05",
-  "endDate": "2025-02-05",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-01-23",
+  "endDate": "2025-02-06"
 }

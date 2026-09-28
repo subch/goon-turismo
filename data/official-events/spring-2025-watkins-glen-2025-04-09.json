@@ -2,10 +2,9 @@
   "id": "spring-2025-watkins-glen-2025-04-09",
   "source": "historical",
   "seasonId": "spring-2025",
-  "track": "Watkins Glen",
+  "track": "Watkins Glen Long Course",
   "car": "Aston Vantage '18 (SS)",
-  "classCode": null,
-  "startDate": "2025-04-09",
-  "endDate": "2025-04-09",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-03-27",
+  "endDate": "2025-04-10"
 }

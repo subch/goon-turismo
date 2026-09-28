@@ -2,10 +2,9 @@
   "id": "y2023-lake-louise-long-2023-11-22",
   "source": "historical",
   "seasonId": "y2023",
-  "track": "Lake Louise - Long",
+  "track": "Lake Louise Long Track",
   "car": "GR Yaris (S)",
-  "classCode": null,
-  "startDate": "2023-11-22",
-  "endDate": "2023-11-22",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2023-11-09",
+  "endDate": "2023-11-23"
 }

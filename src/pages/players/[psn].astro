@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { players, resultsForPlayer, eventById, eventLabel, standings, currentSeason, seasons } from '../../lib/data';
+import { players, resultsForPlayer, eventById, eventLabel, standings, currentSeason, seasons, syncStatus } from '../../lib/data';
 
 export function getStaticPaths() {
   return players.map((p) => ({
@@ -11,10 +11,8 @@ export function getStaticPaths() {
 
 const { player } = Astro.props;
 const seasonById = new Map(seasons.map((s) => [s.id, s]));
-// `seasons` is already ordered current-first, then historical newest-to-oldest,
-// so sorting by that position gives a clean season grouping without needing to
-// parse two different date formats (historical events store ISO dates, live
-// GT-GridStats-scraped ones store "06 Aug 2026" style strings).
+// `seasons` is ordered current-first, then newest-to-oldest, so sorting by
+// that position gives a clean season grouping.
 const seasonOrder = new Map(seasons.map((s, i) => [s.id, i]));
 const results = resultsForPlayer(player.psn).sort((a, b) => {
   const seasonA = seasonOrder.get(eventById(a.eventId)?.seasonId ?? '') ?? 999;
@@ -25,12 +23,21 @@ const results = resultsForPlayer(player.psn).sort((a, b) => {
 const allTimePoints = results.reduce((sum, r) => sum + (r.points ?? 0), 0);
 const cur = currentSeason();
 const currentStanding = cur ? standings(cur.id).find((row) => row.psn === player.psn) : undefined;
-const stats = player.stats;
 const gs = player.gridstats;
+const st = gs?.stats;
+const gridstatsUrl = `https://gt-gridstats.com/player/${encodeURIComponent(player.psn)}`;
+// The API's stats block, picked over for the racing numbers worth a card.
+const statCards: { label: string; value: string | number }[] = [];
+if (st?.license) statCards.push({ label: 'Licence', value: st.license });
+if (st?.total_races != null) statCards.push({ label: 'Sport races', value: st.total_races });
+if (st?.victories != null) statCards.push({ label: 'Wins', value: st.victories });
+if (st?.poles != null) statCards.push({ label: 'Poles', value: st.poles });
+if (st?.fastest_laps != null) statCards.push({ label: 'Fastest laps', value: st.fastest_laps });
+if (st?.clean_races != null) statCards.push({ label: 'Clean races', value: st.clean_races });
 ---
 <Base title={player.displayName}>
   <h1>{player.displayName}</h1>
-  <p class="subtitle">PSN: {player.psn}{player.dgEdgeUrl && <> · <a href={player.dgEdgeUrl} target="_blank" rel="noopener">dg-edge profile</a></>}</p>
+  <p class="subtitle">PSN: {player.psn} · <a href={gridstatsUrl} target="_blank" rel="noopener">GT-GridStats profile</a></p>
 
   <div class="grid">
     <div class="card">
@@ -51,22 +58,16 @@ const gs = player.gridstats;
     </div>
     {gs?.dr != null && (
       <div class="card">
-        <div class="meta">DR / SR (GT-GridStats)</div>
+        <div class="meta">DR / SR</div>
         <h3>{gs.dr} / {gs.sr ?? '—'}</h3>
       </div>
     )}
-    {stats?.edgeScore != null && (
+    {statCards.map((c) => (
       <div class="card">
-        <div class="meta">dg-edge Edge Score</div>
-        <h3>{stats.edgeScore}</h3>
+        <div class="meta">{c.label}</div>
+        <h3>{c.value}</h3>
       </div>
-    )}
-    {stats?.globalPosition != null && (
-      <div class="card">
-        <div class="meta">dg-edge Global Position</div>
-        <h3>#{stats.globalPosition}</h3>
-      </div>
-    )}
+    ))}
   </div>
 
   <h2>Event history</h2>
@@ -103,6 +104,9 @@ const gs = player.gridstats;
     )}
   </div>
 
-  {gs?.lastSynced && <p class="subtitle" style="margin-top:20px;">GT-GridStats last synced: {new Date(gs.lastSynced).toLocaleString()}</p>}
-  {stats?.lastScraped && <p class="subtitle">dg-edge stats last refreshed: {new Date(stats.lastScraped).toLocaleString()}</p>}
+  {syncStatus?.finishedAt && (
+    <p class="subtitle" style="margin-top:20px;">
+      Ratings and stats from GT-GridStats, last synced {new Date(syncStatus.finishedAt).toUTCString()}.
+    </p>
+  )}
 </Base>

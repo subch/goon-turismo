@@ -2,10 +2,9 @@
   "id": "summer-2024-spa-2024-09-01",
   "source": "historical",
   "seasonId": "summer-2024",
-  "track": "Spa",
+  "track": "Circuit de Spa-Francorchamps",
   "car": "Honda RA272 (RH)",
-  "classCode": null,
-  "startDate": "2024-09-01",
-  "endDate": "2024-09-01",
-  "status": "ended"
+  "classCode": "OnlineTA_HRC24_U17_Title",
+  "startDate": "2024-08-02",
+  "endDate": "2024-09-01"
 }

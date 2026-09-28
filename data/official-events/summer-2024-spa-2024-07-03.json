@@ -2,10 +2,9 @@
   "id": "summer-2024-spa-2024-07-03",
   "source": "historical",
   "seasonId": "summer-2024",
-  "track": "Spa",
+  "track": "Circuit de Spa-Francorchamps",
   "car": "Group 3 (RH)",
-  "classCode": null,
-  "startDate": "2024-07-03",
-  "endDate": "2024-07-03",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-06-20",
+  "endDate": "2024-07-04"
 }

@@ -2,10 +2,9 @@
   "id": "y2023-interlagos-2023-11-08",
   "source": "historical",
   "seasonId": "y2023",
-  "track": "Interlagos",
+  "track": "Autódromo de Interlagos",
   "car": "AMG GT Black (SS)",
-  "classCode": null,
-  "startDate": "2023-11-08",
-  "endDate": "2023-11-08",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2023-10-26",
+  "endDate": "2023-11-09"
 }

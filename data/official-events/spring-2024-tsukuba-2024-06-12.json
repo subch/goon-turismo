@@ -2,11 +2,9 @@
   "id": "spring-2024-tsukuba-2024-06-12",
   "source": "historical",
   "seasonId": "spring-2024",
-  "track": "Tsukuba",
+  "track": "Tsukuba Circuit",
   "car": "Civic SiR II EG '93 (CM)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-06-12",
-  "endDate": "2024-06-12",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.533Z"
+  "startDate": "2024-05-30",
+  "endDate": "2024-06-13"
 }

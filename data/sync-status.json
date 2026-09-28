@@ -1,0 +1,30 @@
+{
+  "startedAt": "2026-09-28T05:09:13.491Z",
+  "finishedAt": "2026-09-28T05:11:11.915Z",
+  "api": {
+    "ran": true,
+    "requests": 2,
+    "updated": 18,
+    "notFound": [
+      "abner_assington",
+      "o_breezy",
+      "cheeto",
+      "prototype",
+      "omgitsbees",
+      "fingat"
+    ],
+    "quota": {
+      "limit": "100",
+      "remaining": "97"
+    },
+    "errors": []
+  },
+  "pages": {
+    "playersScraped": 18,
+    "playersTotal": 24,
+    "eventsTouched": 6,
+    "eventsCreated": [],
+    "cutoffIso": "2026-09-07",
+    "warnings": 7
+  }
+}

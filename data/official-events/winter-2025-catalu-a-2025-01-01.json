@@ -2,10 +2,9 @@
   "id": "winter-2025-catalu-a-2025-01-01",
   "source": "historical",
   "seasonId": "winter-2025",
-  "track": "Cataluña",
+  "track": "Circuit de Barcelona-Catalunya GP Layout",
   "car": "Red Bull X2014 Jr. (RH)",
-  "classCode": null,
-  "startDate": "2025-01-01",
-  "endDate": "2025-01-01",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-12-19",
+  "endDate": "2025-01-02"
 }

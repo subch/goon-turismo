@@ -2,11 +2,9 @@
   "id": "winter-2026-dragon-trail-seaside-2026-01-14",
   "source": "historical",
   "seasonId": "winter-2026",
-  "track": "Dragon Trail Seaside",
+  "track": "Dragon Trail - Seaside",
   "car": "Pagani Zonda R (RS)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2026-01-14",
-  "endDate": "2026-01-14",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:44:33.509Z"
+  "startDate": "2026-01-01",
+  "endDate": "2026-01-15"
 }

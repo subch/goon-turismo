@@ -1,13 +1,10 @@
 {
   "id": "643",
-  "source": "dg-edge",
-  "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/643",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
   "track": "WeatherTech Raceway Laguna Seca",
   "car": "Honda Honda Sports VGT",
   "classCode": "SS",
-  "startDate": "27 August 2026",
-  "endDate": "10 September 2026",
-  "status": "unknown",
-  "lastScraped": "2026-09-28T00:50:40.641Z",
-  "seasonId": "summer-2026"
+  "startDate": "2026-08-27",
+  "endDate": "2026-09-10"
 }

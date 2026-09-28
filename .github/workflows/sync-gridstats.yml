@@ -1,0 +1,53 @@
+name: Sync GT7 data (GT-GridStats)
+
+# Manual fallback only. The scheduled sync runs on the VPS, in the `goon`
+# stack (`sync.sh gridstats`, every six hours), which syncs, commits, pushes,
+# then rebuilds and republishes the site locally. Leaving a cron here as well
+# would have both machines syncing and pushing at once. workflow_dispatch is
+# kept so this still works if the box is down or being rebuilt.
+#
+# One script does everything: `npm run sync:gridstats` reads the crew's
+# player snapshots from the GT-GridStats token API (2 requests per run, out of
+# a 100/day quota) and their Time Trial results from the public player pages,
+# then writes data/. verify:data runs last, after the push, so a problem it
+# finds never blocks or loses a sync -- it just fails the run so it is seen.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Sync players, Time Trials and results from GT-GridStats
+        env:
+          GT_GRIDSTATS_TOKEN: ${{ secrets.GT_GRIDSTATS_TOKEN }}
+        run: npm run sync:gridstats
+
+      - name: Commit data changes
+        run: |
+          git config user.name "goon-turismo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/players.json data/official-events data/results/official.json data/sync-status.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync GT7 data (GT-GridStats)"
+            git push
+          fi
+
+      - name: Verify data integrity
+        run: npm run verify:data

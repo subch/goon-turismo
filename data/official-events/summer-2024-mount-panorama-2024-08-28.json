@@ -2,11 +2,9 @@
   "id": "summer-2024-mount-panorama-2024-08-28",
   "source": "historical",
   "seasonId": "summer-2024",
-  "track": "Mount Panorama",
+  "track": "Mount Panorama Motor Racing Circuit",
   "car": "Renault Clio V6 24V (SH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-08-28",
-  "endDate": "2024-08-28",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.526Z"
+  "startDate": "2024-08-15",
+  "endDate": "2024-08-29"
 }

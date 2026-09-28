@@ -2,10 +2,9 @@
   "id": "summer-2025-kyoto-yamagiwa-2025-08-06",
   "source": "historical",
   "seasonId": "summer-2025",
-  "track": "Kyoto - Yamagiwa",
+  "track": "Kyoto Driving Park - Yamagiwa",
   "car": "NISMO GT-R Z-Tune (SM)",
-  "classCode": null,
-  "startDate": "2025-08-06",
-  "endDate": "2025-08-06",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-07-24",
+  "endDate": "2025-08-07"
 }

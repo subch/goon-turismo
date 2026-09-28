@@ -2,10 +2,9 @@
   "id": "spring-2024-la-sarthe-2024-06-19",
   "source": "historical",
   "seasonId": "spring-2024",
-  "track": "la Sarthe",
+  "track": "24 Heures du Mans race track",
   "car": "McLaren F1 Gr. 2 (RM)",
-  "classCode": null,
-  "startDate": "2024-06-19",
-  "endDate": "2024-06-19",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-06-06",
+  "endDate": "2024-06-20"
 }

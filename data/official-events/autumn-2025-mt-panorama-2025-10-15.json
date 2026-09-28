@@ -2,10 +2,9 @@
   "id": "autumn-2025-mt-panorama-2025-10-15",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Mt. Panorama",
+  "track": "Mount Panorama Motor Racing Circuit",
   "car": "Mustang Group 4 (RH)",
-  "classCode": null,
-  "startDate": "2025-10-15",
-  "endDate": "2025-10-15",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-10-02",
+  "endDate": "2025-10-16"
 }

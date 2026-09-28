@@ -1,31 +1,32 @@
 name: Submit event results
-description: Log results for a custom group event, OR an official dg-edge.com Time Trial (dg-edge usually won't show our times automatically -- see below).
+description: Log results for a custom group event, or an official GT7 Time Trial time the automatic GT-GridStats sync missed.
 title: "[Event Results] "
 labels: ["custom-event"]
 body:
   - type: markdown
     attributes:
       value: |
-        Use this for **custom group events** AND for **official dg-edge Time Trials** --
-        dg-edge only shows our results automatically for whoever's logged into their own
-        account there, so official-event times mostly need to come through here too.
-        If this is another round of an event you already submitted, use the *exact same
-        Event name* so results get grouped together.
-  - type: input
-    id: dg_edge_url
+        Use this for **custom group events** (our own lobbies), and for an **official Time Trial**
+        when someone's time is missing from the site -- official times are normally picked up
+        automatically from GT-GridStats within six hours, so only reach for this if a driver isn't
+        indexed there. If this is another round of an event you already submitted, use the
+        *exact same Event name* so results get grouped together.
+  - type: dropdown
+    id: official
     attributes:
-      label: Official dg-edge event link (optional)
-      description: >
-        Only fill this in if this is results for an OFFICIAL dg-edge Time Trial (e.g.
-        https://www.dg-edge.com/events/time-trials/630). Leave blank for a custom group event.
-      placeholder: "https://www.dg-edge.com/events/time-trials/630"
+      label: Official GT7 Time Trial?
+      description: Choose "Yes" only for one of the game's official Time Trials. Results then attach to the site's record of that Time Trial (matched on track and date).
+      options:
+        - "No - custom group event"
+        - "Yes - official Time Trial"
+      default: 0
     validations:
-      required: false
+      required: true
   - type: input
     id: event_name
     attributes:
       label: Event name
-      description: For an official event this can just be the track/car name -- it'll be cross-checked against the dg-edge link above.
+      description: For an official Time Trial this can just be the track name.
       placeholder: "Friday Night Drags - Round 3"
     validations:
       required: true
@@ -33,6 +34,7 @@ body:
     id: track
     attributes:
       label: Track
+      description: For an official Time Trial, spell it the way GT7 does (e.g. "Circuit de Spa-Francorchamps") so it matches the synced record.
       placeholder: "Tokyo Expressway - South Outer Loop"
     validations:
       required: true
@@ -47,6 +49,7 @@ body:
     id: event_date
     attributes:
       label: Date (YYYY-MM-DD)
+      description: For an official Time Trial, its start or end date.
       placeholder: "2026-08-16"
     validations:
       required: true

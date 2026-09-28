@@ -1,13 +1,10 @@
 {
   "id": "617",
-  "source": "dg-edge",
-  "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/617",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
   "track": "Fuji International Speedway",
   "car": "Honda NSX CONCEPT-GT",
   "classCode": "RM",
-  "startDate": "23 July 2026",
-  "endDate": "6 August 2026",
-  "status": "unknown",
-  "lastScraped": "2026-09-28T00:50:40.645Z",
-  "seasonId": "summer-2026"
+  "startDate": "2026-07-23",
+  "endDate": "2026-08-06"
 }

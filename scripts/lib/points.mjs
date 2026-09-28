@@ -19,7 +19,7 @@ export async function loadPointsConfig() {
 
 /**
  * Score a single time against the fastest time set *within the group* for
- * that event (not dg-edge/GT-GridStats global rank). Matches the formula
+ * that event (not GT-GridStats global rank). Matches the formula
  * confirmed against the crew's historical scoring spreadsheet: the fastest
  * group time always scores exactly 100, and every 1% off that pace costs
  * 10 points. There's no floor -- a bad enough run can and does go negative

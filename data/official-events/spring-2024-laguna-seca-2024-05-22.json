@@ -2,10 +2,9 @@
   "id": "spring-2024-laguna-seca-2024-05-22",
   "source": "historical",
   "seasonId": "spring-2024",
-  "track": "Laguna Seca",
+  "track": "WeatherTech Raceway Laguna Seca",
   "car": "VW Scirocco Gr. 4 (RH)",
-  "classCode": null,
-  "startDate": "2024-05-22",
-  "endDate": "2024-05-22",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-05-09",
+  "endDate": "2024-05-23"
 }

@@ -2,11 +2,9 @@
   "id": "winter-2024-fuji-short-2024-01-03",
   "source": "historical",
   "seasonId": "winter-2024",
-  "track": "Fuji - Short",
+  "track": "Fuji International Speedway (Short)",
   "car": "Group 2 (RM)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-01-03",
-  "endDate": "2024-01-03",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:42:24.140Z"
+  "startDate": "2023-12-21",
+  "endDate": "2024-01-04"
 }

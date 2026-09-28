@@ -1,5 +1,22 @@
-// Shared season-matching helpers used by every scraper that needs to figure
-// out which season (data/seasons.json) a scraped date falls into.
+// Shared season and event-identity helpers for everything that reads or
+// writes data/official-events: the GT-GridStats sync, the issue-form
+// processor, the historical importer and the integrity check. Keeping the
+// rules here means the check can never be stricter or looser than the code
+// that created the data.
+//
+// THE TWO RULES (settled 2026-09-28, after the end-date/start-date mix-up
+// duplicated most of the spreadsheet history):
+//
+//   1. A Time Trial belongs to the season in which it CLOSES. That is how the
+//      crew's scoring spreadsheet always worked - a TT was logged, on whichever
+//      tab was current, the week it ended - and seasons.json's boundaries were
+//      taken from those tabs. So season = seasonForDate(endDate).
+//   2. Two records are the SAME Time Trial when their track names match and
+//      either their start dates or their end dates fall within a few days of
+//      each other. Spreadsheet-imported events carry one date (the week the
+//      TT closed), GT-GridStats rows carry the real two-week window; comparing
+//      only start dates never matched the two, which is what minted the
+//      duplicates.
 
 /**
  * Find the season whose [startDate, endDate] range (ISO YYYY-MM-DD, endDate
@@ -7,7 +24,13 @@
  * if the date falls in a gap between tracked seasons.
  */
 export function seasonForDate(iso, seasons) {
+  if (!iso) return null;
   return seasons.find((s) => iso >= s.startDate && (!s.endDate || iso <= s.endDate)) ?? null;
+}
+
+/** Rule 1: the season a Time Trial scores in is the one its end date falls in. */
+export function seasonForEvent(ev, seasons) {
+  return seasonForDate(toIso(ev.endDate) ?? toIso(ev.startDate), seasons);
 }
 
 const MONTHS = {
@@ -17,9 +40,8 @@ const MONTHS = {
 
 /**
  * Parse "6 August 2026" / "06 Aug 2026" (day, full or abbreviated month
- * name, year -- the two date formats seen across dg-edge.com and
- * GT-GridStats) into an ISO YYYY-MM-DD string for comparison against season
- * boundaries. Returns null if the string doesn't match.
+ * name, year -- the format GT-GridStats renders) into ISO YYYY-MM-DD.
+ * Returns null if the string doesn't match.
  */
 export function humanDateToIso(d) {
   if (!d) return null;
@@ -30,23 +52,27 @@ export function humanDateToIso(d) {
   return `${m[3]}-${mo}-${m[1].padStart(2, '0')}`;
 }
 
-/** Like humanDateToIso, but passes an already-ISO date straight through
- * (historical/spreadsheet-imported events store dates as ISO already). */
+/** Like humanDateToIso, but passes an already-ISO date straight through.
+ * Stored dates are all ISO since 2026-09-28; this stays tolerant for input. */
 export function toIso(d) {
   if (!d) return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(d)) return d;
   return humanDateToIso(d);
 }
 
+export function daysBetween(isoA, isoB) {
+  return Math.abs((new Date(isoA) - new Date(isoB)) / 86_400_000);
+}
+
 // Generic venue-type words that get spelled inconsistently between sources
 // for the *same* real track ("24 Heures du Mans Racing Circuit" vs "24
-// Heures du Mans race track", "Daytona International Speedway - Road
-// Course" vs "Daytona Road Course") -- stripped before comparing so those
-// still match. Layout-distinguishing words (reverse, short, east, west...)
-// are deliberately NOT in this list, since those really do mean a different
-// track variant that shouldn't be merged.
+// Heures du Mans race track", "Circuit de Sainte-Croix - Layout B Reverse" vs
+// "Circuit de Sainte-Croix - B Reverse") -- stripped before comparing so
+// those still match. Layout-distinguishing words (reverse, short, east,
+// west...) are deliberately NOT in this list, since those really do mean a
+// different track variant that shouldn't be merged.
 const GENERIC_VENUE_WORDS = new Set([
-  'international', 'speedway', 'raceway', 'racing', 'circuit', 'track', 'race', 'motor', 'course',
+  'international', 'speedway', 'raceway', 'racing', 'circuit', 'track', 'race', 'motor', 'course', 'layout',
 ]);
 
 export function trackTokens(name) {
@@ -64,22 +90,23 @@ export function normalizeTrack(name) {
 }
 
 // Minimum token length eligible for prefix-only matching in
-// tokensLooselyMatch below, so short/generic-looking tokens ("gt", "sh")
+// tracksMatch below, so short/generic-looking tokens ("gt", "sh")
 // can't accidentally prefix-match something unrelated.
 const MIN_PREFIX_MATCH_LEN = 4;
 
 /**
- * True if two same-length, sorted token lists represent the same track
- * layout under minor naming differences -- e.g. GT-GridStats calling a
- * layout "Short Course" where dg-edge calls it "Shortcut Course" (confirmed
- * 2026-08-20: same real Autopolis TT, described differently by each site).
- * Every token pair must be exactly equal, or one a prefix of the other (at
- * least MIN_PREFIX_MATCH_LEN chars) -- this is intentionally strict so it
- * doesn't merge genuinely different variants (e.g. "east"/"west", "short"
- * next to an unrelated word that happens to share a prefix).
+ * True if two track names describe the same layout under minor naming
+ * differences -- e.g. GT-GridStats calling a layout "Short Course" where
+ * another listing says "Shortcut Course" (confirmed 2026-08-20: same real
+ * Autopolis TT). Every token pair must be exactly equal, or one a prefix of
+ * the other (at least MIN_PREFIX_MATCH_LEN chars) -- intentionally strict so
+ * it doesn't merge genuinely different variants (east/west, a forward layout
+ * with its reverse).
  */
-function tokensLooselyMatch(a, b) {
-  if (a.length !== b.length) return false;
+export function tracksMatch(nameA, nameB) {
+  const a = trackTokens(nameA);
+  const b = trackTokens(nameB);
+  if (a.length === 0 || a.length !== b.length) return false;
   return a.every((tokenA, i) => {
     const tokenB = b[i];
     if (tokenA === tokenB) return true;
@@ -88,63 +115,58 @@ function tokensLooselyMatch(a, b) {
   });
 }
 
-const EVENT_DATE_TOLERANCE_DAYS = 3;
+export const EVENT_DATE_TOLERANCE_DAYS = 3;
 
 /**
- * Build a lookup of every existing event, grouped by (season, normalized
- * track), for matching a newly-scraped event against ones that already
- * exist from a *different* source. dg-edge and GT-GridStats both discover
- * the same real-world Time Trials independently under different ids and
- * naming, so without this every scraper run mints a fresh duplicate event
- * for something that's already tracked. Also keeps a per-season list (with
- * each event's token breakdown) as a fallback for near-miss track-name
- * matching -- see findMatchingEventId.
+ * Rule 2: same Time Trial if the tracks match and the start dates OR the end
+ * dates are within EVENT_DATE_TOLERANCE_DAYS of each other. Either record may
+ * carry only one date (a spreadsheet import), in which case that date stands
+ * for both its start and its end.
  */
-export function buildEventMatchIndex(events) {
-  const byKey = new Map();
-  const bySeason = new Map();
-  for (const ev of events) {
-    if (!ev?.seasonId || !ev.track) continue;
-    const iso = toIso(ev.startDate);
-    if (!iso) continue;
-    const tokens = trackTokens(ev.track);
-    const entry = { id: ev.id, iso, tokens };
-
-    const key = `${ev.seasonId}|${tokens.join('')}`;
-    if (!byKey.has(key)) byKey.set(key, []);
-    byKey.get(key).push(entry);
-
-    if (!bySeason.has(ev.seasonId)) bySeason.set(ev.seasonId, []);
-    bySeason.get(ev.seasonId).push(entry);
-  }
-  return { byKey, bySeason };
+export function sameTimeTrial(a, b) {
+  if (!tracksMatch(a.track, b.track)) return false;
+  const sa = toIso(a.startDate) ?? toIso(a.endDate);
+  const ea = toIso(a.endDate) ?? sa;
+  const sb = toIso(b.startDate) ?? toIso(b.endDate);
+  const eb = toIso(b.endDate) ?? sb;
+  if (!sa || !sb) return false;
+  return daysBetween(sa, sb) <= EVENT_DATE_TOLERANCE_DAYS || daysBetween(ea, eb) <= EVENT_DATE_TOLERANCE_DAYS;
 }
 
 /**
- * Find an existing event's id matching (seasonId, track, ~date), or null if
- * none of the already-known events look like the same real-world Time Trial.
- * Tries an exact normalized-track match first; if that finds nothing within
- * the date tolerance, falls back to a looser token-prefix comparison across
- * every event in the same season (still gated by the same date tolerance,
- * so two genuinely different TTs starting around the same date -- which
- * does happen -- won't collide, since their track tokens won't loosely
- * match each other).
+ * The existing event (from `events`, any season, any source) that is the
+ * same Time Trial as `candidate` ({track, startDate, endDate}), or null.
+ * Prefers an exact normalized-track match over a loose one when several
+ * qualify.
  */
-export function findMatchingEventId(index, seasonId, track, iso) {
-  if (!iso) return null;
-  const tokens = trackTokens(track);
-  const key = `${seasonId}|${tokens.join('')}`;
-  const exactCandidates = index.byKey.get(key) ?? [];
-  for (const c of exactCandidates) {
-    const days = Math.abs((new Date(c.iso) - new Date(iso)) / 86_400_000);
-    if (days <= EVENT_DATE_TOLERANCE_DAYS) return c.id;
+export function findMatchingEvent(events, candidate) {
+  let loose = null;
+  for (const ev of events) {
+    if (!sameTimeTrial(ev, candidate)) continue;
+    if (normalizeTrack(ev.track) === normalizeTrack(candidate.track)) return ev;
+    loose ??= ev;
   }
+  return loose;
+}
 
-  const seasonCandidates = index.bySeason.get(seasonId) ?? [];
-  for (const c of seasonCandidates) {
-    if (!tokensLooselyMatch(tokens, c.tokens)) continue;
-    const days = Math.abs((new Date(c.iso) - new Date(iso)) / 86_400_000);
-    if (days <= EVENT_DATE_TOLERANCE_DAYS) return c.id;
-  }
-  return null;
+export function slugify(str) {
+  return String(str ?? '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/** Id for a newly discovered official Time Trial: tt-<start ISO>-<track slug>. */
+export function officialEventId(track, startIso) {
+  return `tt-${startIso}-${slugify(track)}`;
+}
+
+/** Canonical key order for an official-event record, so files diff cleanly. */
+const EVENT_KEYS = ['id', 'source', 'seasonId', 'track', 'car', 'classCode', 'startDate', 'endDate', 'notes'];
+export function canonicalEvent(ev) {
+  const out = {};
+  for (const k of EVENT_KEYS) if (ev[k] !== undefined) out[k] = ev[k];
+  return out;
 }

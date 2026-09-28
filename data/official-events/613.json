@@ -1,13 +1,10 @@
 {
   "id": "613",
-  "source": "dg-edge",
-  "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/613",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
   "track": "Kyoto Driving Park - Yamagiwa Reverse",
   "car": "Mitsubishi FTO GP Version R '97",
   "classCode": "SH",
-  "startDate": "16 July 2026",
-  "endDate": "30 July 2026",
-  "status": "unknown",
-  "lastScraped": "2026-09-28T00:50:40.646Z",
-  "seasonId": "summer-2026"
+  "startDate": "2026-07-16",
+  "endDate": "2026-07-30"
 }

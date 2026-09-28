@@ -2,10 +2,9 @@
   "id": "y2023-blue-moon-infield-a-2023-08-09",
   "source": "historical",
   "seasonId": "y2023",
-  "track": "Blue Moon - Infield A",
+  "track": "Blue Moon Bay Speedway - Infield A",
   "car": "Dodge Viper '13 (SM)",
-  "classCode": null,
-  "startDate": "2023-08-09",
-  "endDate": "2023-08-09",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2023-07-27",
+  "endDate": "2023-08-10"
 }

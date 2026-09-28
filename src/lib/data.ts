@@ -5,29 +5,49 @@ import seasonsData from '../../data/seasons.json';
 import officialResultsData from '../../data/results/official.json';
 import customResultsData from '../../data/results/custom.json';
 
+// Written by scripts/sync-gridstats.mjs at the end of every run. Loaded via
+// glob so a checkout that has never synced still builds.
+const syncStatusModules = import.meta.glob<{ default: SyncStatus }>('../../data/sync-status.json', { eager: true });
+
 export type Player = {
   psn: string;
   displayName: string;
   active: boolean;
   joinedSeason: string;
-  dgEdgeUrl?: string;
   note?: string;
-  stats?: {
-    edgeScore: number | null;
-    globalPosition: number | null;
-    countryPosition: number | null;
-    eventsAttended: number | null;
-    avgDelta: string | number | null;
-    lastScraped: string | null;
-  };
+  // Snapshot from the GT-GridStats token API (GET /api/racers), refreshed
+  // every sync. `stats` is the API's block as-is.
   gridstats?: {
     nickname: string | null;
     dr: string | number | null;
     sr: string | number | null;
     countryCode: string | null;
-    stats: Record<string, unknown> | null;
-    lastSynced: string | null;
+    stats: GridstatsStats | null;
   };
+};
+
+export type GridstatsStats = {
+  dr_points?: number | null;
+  dr_ratio?: number | null;
+  total_races?: number | null;
+  victories?: number | null;
+  poles?: number | null;
+  fastest_laps?: number | null;
+  clean_races?: number | null;
+  license?: string | null;
+  collector_level?: number | null;
+  garage_count?: number | null;
+  collection_progress?: string | null;
+  total_credits?: number | null;
+  play_time_readable?: string | null;
+  distance_km?: string | null;
+};
+
+export type SyncStatus = {
+  startedAt: string;
+  finishedAt: string | null;
+  api: { ran: boolean; updated?: number; quota?: { limit: string | null; remaining: string | null } | null } | null;
+  pages: { playersScraped: number; playersTotal: number; eventsTouched: number; eventsCreated: string[]; warnings: number } | null;
 };
 
 export type Season = {
@@ -38,17 +58,25 @@ export type Season = {
   current: boolean;
 };
 
+// One official Time Trial (data/official-events/<id>.json) or one custom
+// group event (data/custom-events/<id>.json). Official events follow the two
+// rules in scripts/lib/seasons.mjs: seasonId is the season the TT ENDS in,
+// and no two files describe the same TT. Dates are ISO (YYYY-MM-DD).
+//   gridstats  -- discovered by the GT-GridStats sync
+//   historical -- imported from the crew's scoring spreadsheet (its season is
+//                 whatever tab it was on; the sheet decides)
+//   manual     -- an official TT logged through the issue form before the
+//                 sync had seen it
+//   custom     -- our own group event, from the issue form
 export type EventRecord = {
   id: string;
-  source: 'dg-edge' | 'gridstats' | 'custom' | 'historical';
+  source: 'gridstats' | 'historical' | 'manual' | 'custom';
   seasonId?: string | null;
   track?: string | null;
   car?: string | null;
   classCode?: string | null;
   startDate?: string | null;
   endDate?: string | null;
-  status?: string | null;
-  dgEdgeUrl?: string | null;
   name?: string | null; // custom events
   date?: string | null; // custom events
   notes?: string | null;
@@ -61,7 +89,6 @@ export type ResultRow = {
   timeMs: number | null;
   groupRank: number | null;
   points: number;
-  scrapedAt?: string;
 };
 
 const officialEventModules = import.meta.glob<{ default: EventRecord }>('../../data/official-events/*.json', {
@@ -115,6 +142,7 @@ function modulesToEvents(modules: Record<string, { default: EventRecord }>): Eve
 }
 
 export const players: Player[] = playersData as Player[];
+export const syncStatus: SyncStatus | null = Object.values(syncStatusModules)[0]?.default ?? null;
 export const seasons: Season[] = seasonsData as Season[];
 export const officialEvents: EventRecord[] = modulesToEvents(officialEventModules);
 export const customEvents: EventRecord[] = modulesToEvents(customEventModules);
@@ -172,12 +200,11 @@ const MONTH_LOOKUP: Record<string, number> = {
 };
 
 /**
- * Every date on the site displays as "D MMM YYYY" (e.g. "23 Jul 2026"),
- * regardless of which of the two raw formats it's stored in -- ISO
- * (historical/spreadsheet-imported events) or "D Month YYYY" /
- * "DD Mon YYYY" (dg-edge/GT-GridStats scraped events). Pure string
- * parsing, deliberately not routed through `Date`, to avoid timezone-
- * dependent off-by-one-day shifts when formatting an ISO date back out.
+ * Every date on the site displays as "D MMM YYYY" (e.g. "23 Jul 2026").
+ * Stored dates have all been ISO since the 2026-09-28 clean-up; the
+ * "D Month YYYY" branch is kept so an old-format value can never break a
+ * build. Pure string parsing, deliberately not routed through `Date`, to
+ * avoid timezone-dependent off-by-one-day shifts.
  */
 export function formatDate(dateStr: string | null | undefined): string | null {
   if (!dateStr) return null;
@@ -197,8 +224,7 @@ export function formatDate(dateStr: string | null | undefined): string | null {
   return trimmed;
 }
 
-/** ISO YYYY-MM-DD form of any stored date, for chronological sorting/comparison
- * across the site's two raw date formats (ISO vs "D Month YYYY"). */
+/** ISO YYYY-MM-DD form of any stored date, for chronological sorting/comparison. */
 export function toComparableIso(dateStr: string | null | undefined): string | null {
   if (!dateStr) return null;
   const trimmed = dateStr.trim();
@@ -213,10 +239,8 @@ export function toComparableIso(dateStr: string | null | undefined): string | nu
 
 /**
  * Whether an event's [startDate, endDate] window covers today (build time,
- * compared as UTC calendar dates) -- used to surface "this Time Trial is
- * live right now" regardless of source, since the stored `status` field is
- * inconsistent (dg-edge sometimes says "live", GT-GridStats-sourced events
- * never set it, historical ones are always long over).
+ * compared as UTC calendar dates) -- "this Time Trial is live right now".
+ * The site rebuilds on every sync, so this is at most six hours stale.
  */
 export function isEventActive(e: EventRecord): boolean {
   const startIso = toComparableIso(e.startDate);

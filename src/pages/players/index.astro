@@ -15,7 +15,7 @@ const pointsByPsn = new Map(rows.map((r) => [r.psn, r.points]));
         <h3>{p.displayName}</h3>
         <div class="meta">PSN: {p.psn}</div>
         <div class="meta">Season points: {pointsByPsn.get(p.psn) ?? 0}</div>
-        {p.stats?.edgeScore != null && <div class="meta">dg-edge Edge Score: {p.stats.edgeScore}</div>}
+        {p.gridstats?.dr != null && <div class="meta">DR {p.gridstats.dr} · SR {p.gridstats.sr ?? '—'}</div>}
       </a>
     ))}
   </div>

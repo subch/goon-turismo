@@ -2,11 +2,9 @@
   "id": "autumn-2024-autopolis-2024-11-13",
   "source": "historical",
   "seasonId": "autumn-2024",
-  "track": "Autopolis",
+  "track": "Autopolis International Racing Course",
   "car": "Viper SRT10 '08 (SH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-11-13",
-  "endDate": "2024-11-13",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.522Z"
+  "startDate": "2024-10-31",
+  "endDate": "2024-11-14"
 }

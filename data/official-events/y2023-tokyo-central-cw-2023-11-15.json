@@ -2,10 +2,9 @@
   "id": "y2023-tokyo-central-cw-2023-11-15",
   "source": "historical",
   "seasonId": "y2023",
-  "track": "Tokyo - Central CW",
+  "track": "Tokyo Expressway - Central Clockwise",
   "car": "Nismo 400R (SS)",
-  "classCode": null,
-  "startDate": "2023-11-15",
-  "endDate": "2023-11-15",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2023-11-02",
+  "endDate": "2023-11-16"
 }

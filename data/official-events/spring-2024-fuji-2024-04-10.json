@@ -2,11 +2,9 @@
   "id": "spring-2024-fuji-2024-04-10",
   "source": "historical",
   "seasonId": "spring-2024",
-  "track": "Fuji",
+  "track": "Fuji International Speedway",
   "car": "Toyota GT-One (RM)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-04-10",
-  "endDate": "2024-04-10",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:44:33.518Z"
+  "startDate": "2024-03-28",
+  "endDate": "2024-04-11"
 }

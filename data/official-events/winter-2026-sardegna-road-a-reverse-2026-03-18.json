@@ -2,11 +2,9 @@
   "id": "winter-2026-sardegna-road-a-reverse-2026-03-18",
   "source": "historical",
   "seasonId": "winter-2026",
-  "track": "Sardegna Road A Reverse",
+  "track": "Sardegna - Road Track - A Reverse",
   "car": "Impreza WRX STi '04 (SH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2026-03-18",
-  "endDate": "2026-03-18",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.492Z"
+  "startDate": "2026-03-05",
+  "endDate": "2026-03-19"
 }

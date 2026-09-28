@@ -2,10 +2,9 @@
   "id": "winter-2025-spa-2025-01-15",
   "source": "historical",
   "seasonId": "winter-2025",
-  "track": "Spa",
+  "track": "Circuit de Spa-Francorchamps",
   "car": "Group 3 (RH)",
-  "classCode": null,
-  "startDate": "2025-01-15",
-  "endDate": "2025-01-15",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-01-02",
+  "endDate": "2025-01-16"
 }

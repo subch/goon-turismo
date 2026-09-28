@@ -2,10 +2,9 @@
   "id": "spring-2025-le-mans-no-chicane-2025-06-18",
   "source": "historical",
   "seasonId": "spring-2025",
-  "track": "Le Mans - No Chicane",
+  "track": "24 Heures du Mans race track, no chicane",
   "car": "Group 1 (RS)",
-  "classCode": null,
-  "startDate": "2025-06-18",
-  "endDate": "2025-06-18",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-06-05",
+  "endDate": "2025-06-19"
 }

@@ -2,10 +2,9 @@
   "id": "y2023-spa-2023-08-02",
   "source": "historical",
   "seasonId": "y2023",
-  "track": "Spa",
+  "track": "Circuit de Spa-Francorchamps",
   "car": "Red Bull X2014 Jr. (IM)",
-  "classCode": null,
-  "startDate": "2023-08-02",
-  "endDate": "2023-08-02",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2023-07-20",
+  "endDate": "2023-08-03"
 }

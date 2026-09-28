@@ -2,10 +2,9 @@
   "id": "winter-2024-monza-2024-02-07",
   "source": "historical",
   "seasonId": "winter-2024",
-  "track": "Monza",
+  "track": "Autodromo Nazionale Monza",
   "car": "Genesis X VGT",
-  "classCode": null,
-  "startDate": "2024-02-07",
-  "endDate": "2024-02-07",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-01-25",
+  "endDate": "2024-02-08"
 }

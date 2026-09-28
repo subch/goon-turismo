@@ -2,11 +2,9 @@
   "id": "summer-2024-suzuka-2024-09-04",
   "source": "historical",
   "seasonId": "summer-2024",
-  "track": "Suzuka",
+  "track": "Suzuka Circuit",
   "car": "Group 2 (RM)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-09-04",
-  "endDate": "2024-09-04",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.526Z"
+  "startDate": "2024-08-22",
+  "endDate": "2024-09-05"
 }

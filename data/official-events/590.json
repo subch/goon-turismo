@@ -1,13 +1,10 @@
 {
   "id": "590",
-  "source": "dg-edge",
-  "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/590",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
   "track": "24 Heures du Mans Racing Circuit",
   "car": "Porsche 963",
   "classCode": "RS",
-  "startDate": "11 June 2026",
-  "endDate": "25 June 2026",
-  "status": "unknown",
-  "lastScraped": "2026-09-28T00:50:40.649Z",
-  "seasonId": "summer-2026"
+  "startDate": "2026-06-11",
+  "endDate": "2026-06-25"
 }

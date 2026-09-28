@@ -2,11 +2,9 @@
   "id": "summer-2024-fuji-2024-07-24",
   "source": "historical",
   "seasonId": "summer-2024",
-  "track": "Fuji",
+  "track": "Fuji International Speedway",
   "car": "Super Formula '23 (RS)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-07-24",
-  "endDate": "2024-07-24",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.530Z"
+  "startDate": "2024-07-11",
+  "endDate": "2024-07-25"
 }

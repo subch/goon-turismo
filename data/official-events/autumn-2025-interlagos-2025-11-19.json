@@ -2,10 +2,9 @@
   "id": "autumn-2025-interlagos-2025-11-19",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Interlagos",
+  "track": "Autódromo de Interlagos",
   "car": "NSX Type R '92 (SH)",
-  "classCode": null,
-  "startDate": "2025-11-19",
-  "endDate": "2025-11-19",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-11-06",
+  "endDate": "2025-11-20"
 }

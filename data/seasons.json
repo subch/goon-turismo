@@ -1,10 +1,17 @@
 [
   {
+    "id": "autumn-2026",
+    "name": "Autumn 2026",
+    "startDate": "2026-09-25",
+    "endDate": null,
+    "current": true
+  },
+  {
     "id": "summer-2026",
     "name": "Summer 2026",
     "startDate": "2026-05-29",
-    "endDate": null,
-    "current": true
+    "endDate": "2026-09-24",
+    "current": false
   },
   {
     "id": "spring-2026",

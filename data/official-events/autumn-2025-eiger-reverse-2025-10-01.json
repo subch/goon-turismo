@@ -2,10 +2,9 @@
   "id": "autumn-2025-eiger-reverse-2025-10-01",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Eiger - Reverse",
+  "track": "Eiger Nordwand Reverse",
   "car": "Lancia Stratos '73 (CS)",
-  "classCode": null,
-  "startDate": "2025-10-01",
-  "endDate": "2025-10-01",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-09-18",
+  "endDate": "2025-10-02"
 }

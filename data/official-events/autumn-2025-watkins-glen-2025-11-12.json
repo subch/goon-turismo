@@ -2,10 +2,9 @@
   "id": "autumn-2025-watkins-glen-2025-11-12",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Watkins Glen",
+  "track": "Watkins Glen Long Course",
   "car": "Chaparral 2J '70 (RS)",
-  "classCode": null,
-  "startDate": "2025-11-12",
-  "endDate": "2025-11-12",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-10-30",
+  "endDate": "2025-11-13"
 }

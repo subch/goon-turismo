@@ -2,11 +2,9 @@
   "id": "summer-2025-trial-mountain-2025-08-13",
   "source": "historical",
   "seasonId": "summer-2025",
-  "track": "Trial Mountain",
+  "track": "Trial Mountain Circuit",
   "car": "Alfa Romeo 4C Gr.4 (RH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-08-13",
-  "endDate": "2025-08-13",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:44:33.510Z"
+  "startDate": "2025-07-31",
+  "endDate": "2025-08-14"
 }

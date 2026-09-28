@@ -1,7 +1,9 @@
 # Custom events
 
-One JSON file per group-run custom event (not tracked by dg-edge), written by
-`scripts/process-issue-result.mjs` when a GitHub Issue Form submission is processed.
+One JSON file per group-run custom event (our own lobbies, not official GT7 Time Trials),
+written by `scripts/process-issue-result.mjs` when a GitHub Issue Form submission is
+processed. A submission marked as an official Time Trial goes to `data/official-events/`
+instead, attached to the sync's record of that TT when there is one.
 
 Shape:
 

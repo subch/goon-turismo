@@ -2,11 +2,9 @@
   "id": "winter-2025-fuji-short-2025-03-05",
   "source": "historical",
   "seasonId": "winter-2025",
-  "track": "Fuji - Short",
+  "track": "Fuji International Speedway (Short)",
   "car": "WRX Group 4 (W)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-03-05",
-  "endDate": "2025-03-05",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:44:33.511Z"
+  "startDate": "2025-02-20",
+  "endDate": "2025-03-06"
 }

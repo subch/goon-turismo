@@ -2,11 +2,9 @@
   "id": "autumn-2024-24-heures-du-mans-2024-11-20",
   "source": "historical",
   "seasonId": "autumn-2024",
-  "track": "24 Heures du Mans",
+  "track": "24 Heures du Mans race track",
   "car": "Group C Gr.1 (RH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-11-20",
-  "endDate": "2024-11-20",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.521Z"
+  "startDate": "2024-11-07",
+  "endDate": "2024-11-21"
 }

@@ -2,11 +2,9 @@
   "id": "autumn-2025-suzuka-2025-11-26",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Suzuka",
+  "track": "Suzuka Circuit",
   "car": "Super Formula '23 (RS)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-11-26",
-  "endDate": "2025-11-26",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:45:09.604Z"
+  "startDate": "2025-11-13",
+  "endDate": "2025-11-27"
 }

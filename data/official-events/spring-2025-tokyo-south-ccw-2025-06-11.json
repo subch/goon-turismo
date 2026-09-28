@@ -2,10 +2,9 @@
   "id": "spring-2025-tokyo-south-ccw-2025-06-11",
   "source": "historical",
   "seasonId": "spring-2025",
-  "track": "Tokyo - South CCW",
+  "track": "Tokyo Expressway - South Counterclockwise",
   "car": "Group 3 Manu-Cup  (RS)",
-  "classCode": null,
-  "startDate": "2025-06-11",
-  "endDate": "2025-06-11",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2025-05-29",
+  "endDate": "2025-06-12"
 }

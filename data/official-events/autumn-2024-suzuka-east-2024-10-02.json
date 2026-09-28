@@ -2,11 +2,9 @@
   "id": "autumn-2024-suzuka-east-2024-10-02",
   "source": "historical",
   "seasonId": "autumn-2024",
-  "track": "Suzuka - East",
+  "track": "Suzuka Circuit East Course",
   "car": "Miata NR-A (ND) '22 (SH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-10-02",
-  "endDate": "2024-10-02",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.524Z"
+  "startDate": "2024-09-19",
+  "endDate": "2024-10-03"
 }

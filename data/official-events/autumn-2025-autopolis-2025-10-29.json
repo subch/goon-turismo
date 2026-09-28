@@ -2,11 +2,9 @@
   "id": "autumn-2025-autopolis-2025-10-29",
   "source": "historical",
   "seasonId": "autumn-2025",
-  "track": "Autopolis",
+  "track": "Autopolis International Racing Course",
   "car": "Group 2 (RS)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-10-29",
-  "endDate": "2025-10-29",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.501Z"
+  "startDate": "2025-10-16",
+  "endDate": "2025-10-30"
 }

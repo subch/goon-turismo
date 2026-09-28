@@ -2,11 +2,9 @@
   "id": "spring-2025-autopolis-2025-05-21",
   "source": "historical",
   "seasonId": "spring-2025",
-  "track": "Autopolis",
+  "track": "Autopolis International Racing Course",
   "car": "Honda NSX '17 (SM)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-05-21",
-  "endDate": "2025-05-21",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.511Z"
+  "startDate": "2025-05-08",
+  "endDate": "2025-05-22"
 }

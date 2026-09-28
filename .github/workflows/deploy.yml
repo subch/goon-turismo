@@ -4,7 +4,7 @@ name: Build and deploy site
 # by another Action using the default GITHUB_TOKEN (anti-recursion
 # safeguard) -- so the data-sync workflows' commits were never triggering a
 # rebuild, and the live site sat stale at whatever a human last pushed. The
-# workflow_run trigger below covers that: it fires once either sync workflow
+# workflow_run trigger below covers that: it fires once the manual sync workflow
 # finishes, regardless of which token did the pushing.
 on:
   push:
@@ -12,8 +12,7 @@ on:
   workflow_dispatch: {}
   workflow_run:
     workflows:
-      - "Sync events (dg-edge)"
-      - "Sync player and event data (GT-GridStats)"
+      - "Sync GT7 data (GT-GridStats)"
     types: [completed]
 
 permissions:

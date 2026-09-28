@@ -2,11 +2,9 @@
   "id": "winter-2024-trial-mountain-2024-01-17",
   "source": "historical",
   "seasonId": "winter-2024",
-  "track": "Trial Mountain",
+  "track": "Trial Mountain Circuit",
   "car": "Supra GT500 '97 (RH)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2024-01-17",
-  "endDate": "2024-01-17",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:42:24.140Z"
+  "startDate": "2024-01-04",
+  "endDate": "2024-01-18"
 }

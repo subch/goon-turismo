@@ -29,7 +29,6 @@ const active = isEventActive(event);
     {event.track && (trackWikiUrl ? <a href={trackWikiUrl} target="_blank" rel="noopener">{event.track}</a> : <>{event.track}</>)}
     {event.car && <> · {carWikiUrl ? <a href={carWikiUrl} target="_blank" rel="noopener">{event.car}</a> : event.car}</>}
     {' '}· {eventDateLabel(event)}
-    {event.dgEdgeUrl && <> · <a href={event.dgEdgeUrl} target="_blank" rel="noopener">view on dg-edge.com</a></>}
   </p>
 
   {event.notes && <p>{event.notes}</p>}

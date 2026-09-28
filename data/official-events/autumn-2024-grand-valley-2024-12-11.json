@@ -2,10 +2,9 @@
   "id": "autumn-2024-grand-valley-2024-12-11",
   "source": "historical",
   "seasonId": "autumn-2024",
-  "track": "Grand Valley",
+  "track": "Grand Valley - Highway 1",
   "car": "Honda S2000 '99 (CS)",
-  "classCode": null,
-  "startDate": "2024-12-11",
-  "endDate": "2024-12-11",
-  "status": "ended"
+  "classCode": "Lap Time Challenge",
+  "startDate": "2024-11-28",
+  "endDate": "2024-12-12"
 }

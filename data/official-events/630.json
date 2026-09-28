@@ -1,13 +1,10 @@
 {
   "id": "630",
-  "source": "dg-edge",
-  "dgEdgeUrl": "https://www.dg-edge.com/events/time-trials/630",
+  "source": "gridstats",
+  "seasonId": "summer-2026",
   "track": "Autodrome Lago Maggiore - East End",
   "car": "Toyota MR2 GT-S '97",
   "classCode": "SH",
-  "startDate": "13 August 2026",
-  "endDate": "20 August 2026",
-  "status": "unknown",
-  "lastScraped": "2026-09-28T00:51:27.820Z",
-  "seasonId": "summer-2026"
+  "startDate": "2026-08-13",
+  "endDate": "2026-08-20"
 }

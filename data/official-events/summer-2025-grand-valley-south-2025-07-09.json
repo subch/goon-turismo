@@ -2,11 +2,9 @@
   "id": "summer-2025-grand-valley-south-2025-07-09",
   "source": "historical",
   "seasonId": "summer-2025",
-  "track": "Grand Valley - South*",
+  "track": "Grand Valley - South",
   "car": "Lancia Delta Rally (RM)",
   "classCode": "Lap Time Challenge",
-  "startDate": "2025-07-09",
-  "endDate": "2025-07-09",
-  "status": "ended",
-  "lastScraped": "2026-08-17T05:41:53.508Z"
+  "startDate": "2025-06-26",
+  "endDate": "2025-07-10"
 }
