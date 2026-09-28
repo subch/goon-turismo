@@ -161,7 +161,9 @@ async function racePage(path) {
   for (const b of blocks) {
     const nm = b.match(/<div class="fw-bold lh-sm\s*">([^<]+)<\/div>/)?.[1];
     const ts = b.match(/data-timestamp="(\d+)"/)?.[1];
-    const sid = b.match(/data-live-id-param="(\d+)"/)?.[1] ?? b.match(/[?&]sessionId=(\d+)/)?.[1];
+    // The link form is HTML-escaped ("?raceId=..&amp;sessionId=.."), so no
+    // separator class in front of the name.
+    const sid = b.match(/data-live-id-param="(\d+)"/)?.[1] ?? b.match(/sessionId=(\d+)/)?.[1];
     if (nm) sessions.push({ name: textOf(nm), startUtc: ts ? new Date(Number(ts) * 1000).toISOString() : null, resultsId: sid ? Number(sid) : null });
   }
   return { title, ...parseDateRange(dateText), sessions };
@@ -170,9 +172,9 @@ async function racePage(path) {
 export async function fetchSeason({ season, previous, full, log }) {
   // 1. The season's races, from the season page.
   const seasonHtml = await getText(`${SITE}/en/season/${season}`, { delayMs: DELAY });
-  const racePaths = [...new Set([...seasonHtml.matchAll(/href="(\/en\/race\/[^"]+)"/g)].map((m) => m[1]))].filter((p) =>
-    p.endsWith(`-${season}`),
-  );
+  // "...-2025", or "...-2025-1" when the CMS had to dedupe a slug (Le Mans 2025).
+  const seasonSuffix = new RegExp(`-${season}(?:-\\d+)?$`);
+  const racePaths = [...new Set([...seasonHtml.matchAll(/href="(\/en\/race\/[^"]+)"/g)].map((m) => m[1]))].filter((p) => seasonSuffix.test(p));
   if (!racePaths.length) throw new Error(`WEC: no race links on the ${season} season page`);
   log?.(`WEC ${season}: ${racePaths.length} race pages`);
 
@@ -202,7 +204,7 @@ export async function fetchSeason({ season, previous, full, log }) {
 
   const events = [];
   for (const path of racePaths) {
-    const eventId = path.replace(/^\/en\/race\//, '').replace(new RegExp(`-${season}$`), '');
+    const eventId = path.replace(/^\/en\/race\//, '').replace(seasonSuffix, '');
     const isTest = /prologue|test/i.test(eventId);
     const prev = prevEvents.get(eventId);
     if (prev?.complete && !full) {
@@ -309,6 +311,13 @@ export async function fetchSeason({ season, previous, full, log }) {
 
   // 4. Standings. Four tables on one page, in a fixed order; each is named by
   //    the nearest preceding "... Championship" heading when there is one.
+  // The standings page has no season selector and its live component
+  // answers 500 to a season change, so only the current season's tables
+  // exist; a past season gets none rather than this year's numbers.
+  if (season !== new Date().getUTCFullYear()) {
+    log?.(`WEC ${season}: standings not available for a past season`);
+    return { classes, events, standings: [] };
+  }
   log?.(`WEC ${season}: standings`);
   const stHtml = (await getText(`${SITE}/en/page/manufacturers-classification`, { delayMs: DELAY })).replace(/\s+/g, ' ');
   const standings = [];

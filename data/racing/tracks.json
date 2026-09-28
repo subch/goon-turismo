@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-28T16:33:09.863Z",
+  "syncedAt": "2026-09-28T17:01:01.944Z",
   "tracks": [
     {
       "slug": "albert-park-circuit",
@@ -48,6 +48,14 @@
         },
         {
           "series": "wsbk",
+          "name": "Autódromo Internacional do Algarve"
+        },
+        {
+          "series": "wsbk",
+          "name": "Autodromo Internacional do Algarve"
+        },
+        {
+          "series": "f1",
           "name": "Autódromo Internacional do Algarve"
         }
       ],
@@ -154,12 +162,53 @@
       }
     },
     {
+      "slug": "auto-club-speedway",
+      "name": "Auto Club Speedway",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Auto Club Speedway"
+        }
+      ],
+      "wikiTitle": "Auto Club Speedway",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Auto_Club_Speedway",
+      "location": "9300 Cherry Avenue, Fontana, California, United States",
+      "country": null,
+      "coordinates": {
+        "lat": 34.08858,
+        "lon": -117.5
+      },
+      "lengthKm": 3.219,
+      "lengthMi": 2,
+      "turns": 4,
+      "opened": "1997-06-20",
+      "capacity": "122,000 (total)",
+      "surface": "Asphalt",
+      "elevation": null,
+      "layouts": "D-shaped oval (1997–2023)",
+      "fetchedAt": "2026-09-28T16:22:50.718Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Auto Club Speedway (formerly California Speedway) - Speedway.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Auto_Club_Speedway_(formerly_California_Speedway)_-_Speedway.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Will Pittenger",
+        "numbered": null,
+        "path": "/tracks/auto-club-speedway.svg"
+      }
+    },
+    {
       "slug": "autodrom-most",
       "name": "Autodrom Most",
       "aliases": [
         {
           "series": "wsbk",
           "name": "Autodrom Most"
+        },
+        {
+          "series": "wsbk",
+          "name": "Most Autodrom"
         }
       ],
       "wikiTitle": "Autodrom Most",
@@ -200,6 +249,10 @@
         },
         {
           "series": "formulae",
+          "name": "Autódromo Hermanos Rodríguez"
+        },
+        {
+          "series": "nascar",
           "name": "Autódromo Hermanos Rodríguez"
         }
       ],
@@ -266,6 +319,84 @@
         "artist": "Will Pittenger",
         "numbered": null,
         "path": "/tracks/autodromo-internacional-ayrton-senna-goiania.svg"
+      }
+    },
+    {
+      "slug": "autodromo-termas-de-rio-hondo",
+      "name": "Autódromo Termas de Río Hondo",
+      "aliases": [
+        {
+          "series": "motogp",
+          "name": "Termas de Río Hondo"
+        }
+      ],
+      "wikiTitle": "Autódromo Termas de Río Hondo",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Termas_de_R%C3%ADo_Hondo",
+      "location": "Termas de Río Hondo, Santiago del Estero, Argentina",
+      "country": null,
+      "coordinates": {
+        "lat": -27.50586111,
+        "lon": -64.91447222
+      },
+      "lengthKm": 4.805,
+      "lengthMi": 2.986,
+      "turns": 14,
+      "opened": "2008-05-10",
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": "Grand Prix Circuit (2013–present)",
+      "fetchedAt": "2026-09-28T15:52:11.258Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Termas de Río Hondo.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Termas_de_R%C3%ADo_Hondo.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Gustavo Girardelli",
+        "numbered": null,
+        "path": "/tracks/autodromo-termas-de-rio-hondo.svg"
+      }
+    },
+    {
+      "slug": "bahrain-international-circuit",
+      "name": "Bahrain International Circuit",
+      "aliases": [
+        {
+          "series": "f1",
+          "name": "Bahrain International Circuit"
+        },
+        {
+          "series": "wec",
+          "name": "Bahrain International Circuit"
+        }
+      ],
+      "wikiTitle": "Bahrain International Circuit",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bahrain_International_Circuit",
+      "location": "Sakhir, Bahrain",
+      "country": null,
+      "coordinates": {
+        "lat": 26.0325,
+        "lon": 50.51055556
+      },
+      "lengthKm": 5.412,
+      "lengthMi": 3.363,
+      "turns": 15,
+      "opened": "2004-03-17",
+      "capacity": "70,000",
+      "surface": null,
+      "elevation": null,
+      "layouts": "Grand Prix Circuit (2005–present)",
+      "fetchedAt": "2026-09-28T15:52:04.985Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Bahrain International Circuit--Grand Prix Layout.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Bahrain_International_Circuit--Grand_Prix_Layout.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Will Pittenger",
+        "numbered": null,
+        "path": "/tracks/bahrain-international-circuit.svg"
       }
     },
     {
@@ -431,6 +562,10 @@
         {
           "series": "nascar",
           "name": "Bristol Motor Speedway"
+        },
+        {
+          "series": "nascar",
+          "name": "Bristol Motor Speedway Dirt"
         }
       ],
       "wikiTitle": "Bristol Motor Speedway",
@@ -499,6 +634,43 @@
       }
     },
     {
+      "slug": "buddh-international-circuit",
+      "name": "Buddh International Circuit",
+      "aliases": [
+        {
+          "series": "motogp",
+          "name": "Buddh International Circuit"
+        }
+      ],
+      "wikiTitle": "Buddh International Circuit",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Buddh_International_Circuit",
+      "location": "Jaypee Sports City, Greater Noida, Uttar Pradesh",
+      "country": null,
+      "coordinates": {
+        "lat": 28.35055556,
+        "lon": 77.535
+      },
+      "lengthKm": 5.125,
+      "lengthMi": 3.185,
+      "turns": 16,
+      "opened": "2011-10-18",
+      "capacity": "110,000",
+      "surface": "Asphalt concrete with Graywacke aggregate",
+      "elevation": "Inaugural winner Sebastian Vettel praised the track saying that \"there is a lot of elevation change around the lap which adds to the fun, from as much as 8% downhill and up to 10% uphill; it's like a roller coaster.",
+      "layouts": "Grand Prix Circuit (2011–present)",
+      "fetchedAt": "2026-09-28T16:22:47.854Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Buddh Circuit 1.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Buddh_Circuit_1.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Swapnil1101",
+        "numbered": null,
+        "path": "/tracks/buddh-international-circuit.svg"
+      }
+    },
+    {
       "slug": "buriram-international-circuit",
       "name": "Buriram International Circuit",
       "aliases": [
@@ -542,6 +714,10 @@
         {
           "series": "nascar",
           "name": "Charlotte Motor Speedway"
+        },
+        {
+          "series": "nascar",
+          "name": "Charlotte Motor Speedway Road Course"
         }
       ],
       "wikiTitle": "Charlotte Motor Speedway",
@@ -624,6 +800,14 @@
         {
           "series": "wec",
           "name": "Circuit de Barcelona-Catalunya"
+        },
+        {
+          "series": "wsbk",
+          "name": "Circuit de Barcelona-Catalunya"
+        },
+        {
+          "series": "wsbk",
+          "name": "Circuit de Barcelona"
         }
       ],
       "wikiTitle": "Circuit de Barcelona-Catalunya",
@@ -683,7 +867,7 @@
       "surface": "Tarmac",
       "elevation": null,
       "layouts": "Circuit des 24 Heures du Mans (2018–present)",
-      "fetchedAt": "2026-09-28T16:33:08.635Z",
+      "fetchedAt": "2026-09-28T17:00:49.687Z",
       "layout": {
         "kind": "wikimedia",
         "file": "Bugatti Circuit.svg",
@@ -743,6 +927,10 @@
         {
           "series": "wsbk",
           "name": "Circuit de Nevers Magny-Cours"
+        },
+        {
+          "series": "wsbk",
+          "name": "Circuit de Magny-Cours"
         }
       ],
       "wikiTitle": "Circuit de Nevers Magny-Cours",
@@ -905,6 +1093,43 @@
       }
     },
     {
+      "slug": "circuit-paul-ricard",
+      "name": "Circuit Paul Ricard",
+      "aliases": [
+        {
+          "series": "f1",
+          "name": "Circuit Paul Ricard"
+        }
+      ],
+      "wikiTitle": "Circuit Paul Ricard",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Circuit_Paul_Ricard",
+      "location": "Le Castellet, Var, France",
+      "country": null,
+      "coordinates": {
+        "lat": 43.25055556,
+        "lon": 5.79166667
+      },
+      "lengthKm": 5.842,
+      "lengthMi": 3.63,
+      "turns": 15,
+      "opened": "1970-04-19",
+      "capacity": "90,000",
+      "surface": null,
+      "elevation": null,
+      "layouts": "Current layout with Mistral chicane (1C-V2), (2005–present)",
+      "fetchedAt": "2026-09-28T16:37:18.328Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Le Castellet 2019 all layouts.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Le_Castellet_2019_all_layouts.svg",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "HumanBodyPiloter5",
+        "numbered": null,
+        "path": "/tracks/circuit-paul-ricard.svg"
+      }
+    },
+    {
       "slug": "circuit-ricardo-tormo",
       "name": "Circuit Ricardo Tormo",
       "aliases": [
@@ -989,6 +1214,10 @@
         {
           "series": "wsbk",
           "name": "Circuito de Jerez - Ángel Nieto"
+        },
+        {
+          "series": "wsbk",
+          "name": "Circuito de Jerez - Angel Nieto"
         }
       ],
       "wikiTitle": "Circuito de Jerez",
@@ -1017,6 +1246,43 @@
         "artist": "Jerez.svg: Will Pittenger",
         "numbered": null,
         "path": "/tracks/circuito-de-jerez.svg"
+      }
+    },
+    {
+      "slug": "circuito-de-navarra",
+      "name": "Circuito de Navarra",
+      "aliases": [
+        {
+          "series": "wsbk",
+          "name": "Circuito de Navarra"
+        }
+      ],
+      "wikiTitle": "Circuito de Navarra",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Circuito_de_Navarra",
+      "location": "Los Arcos, Navarre, Spain",
+      "country": null,
+      "coordinates": {
+        "lat": 42.56105833,
+        "lon": -2.16361389
+      },
+      "lengthKm": 4.313,
+      "lengthMi": 2.68,
+      "turns": 16,
+      "opened": "2010-06-19",
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": "Full Circuit (September 2024–present)",
+      "fetchedAt": "2026-09-28T16:51:23.499Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Circuito de Navarra 2024.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Circuito_de_Navarra_2024.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Sentoan",
+        "numbered": null,
+        "path": "/tracks/circuito-de-navarra.svg"
       }
     },
     {
@@ -1091,6 +1357,43 @@
         "artist": "Will Pittenger",
         "numbered": null,
         "path": "/tracks/circuito-do-estoril.svg"
+      }
+    },
+    {
+      "slug": "circuito-san-juan-villicum",
+      "name": "Circuito San Juan Villicum",
+      "aliases": [
+        {
+          "series": "wsbk",
+          "name": "Circuito San Juan Villicum"
+        }
+      ],
+      "wikiTitle": "Circuito San Juan Villicum",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Circuito_San_Juan_Villicum",
+      "location": "Albardón, San Juan, Argentina",
+      "country": null,
+      "coordinates": {
+        "lat": -31.39861111,
+        "lon": -68.5675
+      },
+      "lengthKm": 4.276,
+      "lengthMi": 2.657,
+      "turns": 17,
+      "opened": "2018-10-12",
+      "capacity": "",
+      "surface": null,
+      "elevation": null,
+      "layouts": "Grand Prix Circuit (2018–present)",
+      "fetchedAt": "2026-09-28T16:37:26.023Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Circuito San Juan Villicum map.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Circuito_San_Juan_Villicum_map.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Gpmat",
+        "numbered": null,
+        "path": "/tracks/circuito-san-juan-villicum.svg"
       }
     },
     {
@@ -1205,6 +1508,31 @@
       }
     },
     {
+      "slug": "daytona-beach-and-road-course",
+      "name": "Daytona Beach and Road Course",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "DAYTONA Road Course"
+        }
+      ],
+      "wikiTitle": "Daytona Beach and Road Course",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Daytona_Beach_and_Road_Course",
+      "location": "Daytona Beach, Ponce Inlet, Daytona Beach Shores, Florida",
+      "country": null,
+      "coordinates": null,
+      "lengthKm": 5,
+      "lengthMi": 3.1,
+      "turns": null,
+      "opened": "1902",
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": "Road course",
+      "fetchedAt": "2026-09-28T16:51:20.615Z",
+      "layout": null
+    },
+    {
       "slug": "daytona-international-speedway",
       "name": "Daytona International Speedway",
       "aliases": [
@@ -1289,6 +1617,10 @@
         {
           "series": "wsbk",
           "name": "Donington Park Circuit"
+        },
+        {
+          "series": "wsbk",
+          "name": "Donington Park"
         }
       ],
       "wikiTitle": "Donington Park",
@@ -1326,6 +1658,10 @@
         {
           "series": "nascar",
           "name": "Dover Motor Speedway"
+        },
+        {
+          "series": "nascar",
+          "name": "Dover International Speedway"
         }
       ],
       "wikiTitle": "Dover Motor Speedway",
@@ -1357,6 +1693,31 @@
       }
     },
     {
+      "slug": "eurocup-3",
+      "name": "Eurocup-3",
+      "aliases": [
+        {
+          "series": "wsbk",
+          "name": "MotorLand Aragón 2"
+        }
+      ],
+      "wikiTitle": "Eurocup-3",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Eurocup-3",
+      "location": null,
+      "country": null,
+      "coordinates": null,
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": null,
+      "opened": null,
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T17:01:00.359Z",
+      "layout": null
+    },
+    {
       "slug": "excel-london",
       "name": "Excel London",
       "aliases": [
@@ -1381,7 +1742,7 @@
       "surface": null,
       "elevation": null,
       "layouts": null,
-      "fetchedAt": "2026-09-28T16:33:06.474Z",
+      "fetchedAt": "2026-09-28T17:00:47.550Z",
       "layout": {
         "kind": "wikimedia",
         "file": "London Docks and ExCel Layout 2022.svg",
@@ -1472,6 +1833,74 @@
       }
     },
     {
+      "slug": "grand-prix-of-indianapolis",
+      "name": "Grand Prix of Indianapolis",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Indianapolis Motor Speedway Road Course"
+        }
+      ],
+      "wikiTitle": "Grand Prix of Indianapolis",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Grand_Prix_of_Indianapolis",
+      "location": "Speedway, Indiana, U.S. }}",
+      "country": null,
+      "coordinates": null,
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": null,
+      "opened": null,
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T16:22:54.124Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Indianapolis Motor Speedway Grand Prix Road Course 2024.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Indianapolis_Motor_Speedway_Grand_Prix_Road_Course_2024.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Stl66dmk",
+        "numbered": null,
+        "path": "/tracks/grand-prix-of-indianapolis.svg"
+      }
+    },
+    {
+      "slug": "grant-park-165",
+      "name": "Grant Park 165",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Chicago Street Race"
+        }
+      ],
+      "wikiTitle": "Grant Park 165",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Grant_Park_165",
+      "location": "Chicago, Illinois",
+      "country": null,
+      "coordinates": null,
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": 12,
+      "opened": null,
+      "capacity": null,
+      "surface": "Asphalt",
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T15:52:16.956Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Chicago Street Course.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Chicago_Street_Course.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Mindfrieze",
+        "numbered": null,
+        "path": "/tracks/grant-park-165.svg"
+      }
+    },
+    {
       "slug": "homestead-miami-speedway",
       "name": "Homestead–Miami Speedway",
       "aliases": [
@@ -1556,6 +1985,14 @@
         {
           "series": "wec",
           "name": "Autodromo Enzo e Dino Ferrari"
+        },
+        {
+          "series": "f1",
+          "name": "Autodromo Enzo e Dino Ferrari"
+        },
+        {
+          "series": "wsbk",
+          "name": "Imola Circuit"
         }
       ],
       "wikiTitle": "Imola Circuit",
@@ -1710,11 +2147,52 @@
       }
     },
     {
+      "slug": "istanbul-park",
+      "name": "Istanbul Park",
+      "aliases": [
+        {
+          "series": "f1",
+          "name": "Istanbul Park"
+        }
+      ],
+      "wikiTitle": "Istanbul Park",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Istanbul_Park",
+      "location": "Tuzla, Istanbul, Turkey",
+      "country": null,
+      "coordinates": {
+        "lat": 40.95166667,
+        "lon": 29.405
+      },
+      "lengthKm": 5.338,
+      "lengthMi": 3.317,
+      "turns": 14,
+      "opened": "2005-08-19",
+      "capacity": "125,000",
+      "surface": null,
+      "elevation": null,
+      "layouts": "Grand Prix Circuit (2005–present)",
+      "fetchedAt": "2026-09-28T16:51:13.520Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Istanbul park.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Istanbul_park.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Will Pittenger",
+        "numbered": null,
+        "path": "/tracks/istanbul-park.svg"
+      }
+    },
+    {
       "slug": "jeddah-corniche-circuit",
       "name": "Jeddah Corniche Circuit",
       "aliases": [
         {
           "series": "formulae",
+          "name": "Jeddah Corniche Circuit"
+        },
+        {
+          "series": "f1",
           "name": "Jeddah Corniche Circuit"
         }
       ],
@@ -1781,6 +2259,43 @@
         "artist": "Stl66dmk",
         "numbered": null,
         "path": "/tracks/kansas-speedway.svg"
+      }
+    },
+    {
+      "slug": "kentucky-speedway",
+      "name": "Kentucky Speedway",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Kentucky Speedway"
+        }
+      ],
+      "wikiTitle": "Kentucky Speedway",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kentucky_Speedway",
+      "location": "1 Speedway Drive , Sparta, Kentucky, United States",
+      "country": null,
+      "coordinates": {
+        "lat": 38.70963889,
+        "lon": -84.91623889
+      },
+      "lengthKm": 2.414,
+      "lengthMi": 1.5,
+      "turns": 4,
+      "opened": "2000-06-16",
+      "capacity": "87,000",
+      "surface": "Asphalt",
+      "elevation": null,
+      "layouts": "Tri-Oval (2000–present)",
+      "fetchedAt": "2026-09-28T17:00:52.749Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Kentucky Speedway.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Kentucky_Speedway.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Nascar1996",
+        "numbered": null,
+        "path": "/tracks/kentucky-speedway.svg"
       }
     },
     {
@@ -1899,6 +2414,40 @@
       }
     },
     {
+      "slug": "list-of-superbike-world-championship-circuits",
+      "name": "List of Superbike World Championship circuits",
+      "aliases": [
+        {
+          "series": "wsbk",
+          "name": "MotorLand Aragón 1"
+        }
+      ],
+      "wikiTitle": "List of Superbike World Championship circuits",
+      "wikiUrl": "https://en.wikipedia.org/wiki/List_of_Superbike_World_Championship_circuits",
+      "location": null,
+      "country": null,
+      "coordinates": null,
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": null,
+      "opened": null,
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T17:00:57.663Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Phillip Island Grand Prix Circuit v2022.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Phillip_Island_Grand_Prix_Circuit_v2022.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Phillip Island Grand Prix Circuit.svg: Will Pittenger",
+        "numbered": null,
+        "path": "/tracks/list-of-superbike-world-championship-circuits.svg"
+      }
+    },
+    {
       "slug": "long-beach-street-circuit",
       "name": "Long Beach Street Circuit",
       "aliases": [
@@ -1945,6 +2494,10 @@
         },
         {
           "series": "motogp",
+          "name": "Lusail International Circuit"
+        },
+        {
+          "series": "wec",
           "name": "Lusail International Circuit"
         }
       ],
@@ -2019,6 +2572,10 @@
       "aliases": [
         {
           "series": "motogp",
+          "name": "Pertamina Mandalika Circuit"
+        },
+        {
+          "series": "wsbk",
           "name": "Pertamina Mandalika Circuit"
         }
       ],
@@ -2477,6 +3034,10 @@
         {
           "series": "motogp",
           "name": "Autodromo Internazionale del Mugello"
+        },
+        {
+          "series": "f1",
+          "name": "Autodromo Internazionale del Mugello"
         }
       ],
       "wikiTitle": "Mugello Circuit",
@@ -2506,6 +3067,31 @@
         "numbered": true,
         "path": "/tracks/mugello-circuit.svg"
       }
+    },
+    {
+      "slug": "nascar-races-at-daytona-international-speedway-road-course",
+      "name": "NASCAR races at Daytona International Speedway",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Daytona International Speedway Road Course"
+        }
+      ],
+      "wikiTitle": "NASCAR races at Daytona International Speedway (Road Course)",
+      "wikiUrl": "https://en.wikipedia.org/wiki/NASCAR_races_at_Daytona_International_Speedway_(Road_Course)",
+      "location": null,
+      "country": null,
+      "coordinates": null,
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": null,
+      "opened": null,
+      "capacity": null,
+      "surface": null,
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T17:00:55.377Z",
+      "layout": null
     },
     {
       "slug": "nashville-superspeedway",
@@ -2547,6 +3133,34 @@
         "numbered": null,
         "path": "/tracks/nashville-superspeedway.svg"
       }
+    },
+    {
+      "slug": "nassau-coliseum",
+      "name": "Nassau Coliseum",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Los Angeles Memorial Coliseum"
+        }
+      ],
+      "wikiTitle": "Nassau Coliseum",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Nassau_Coliseum",
+      "location": "Uniondale, New York, U.S.",
+      "country": null,
+      "coordinates": {
+        "lat": 40.72277778,
+        "lon": -73.59055556
+      },
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": null,
+      "opened": "February 11, 1972",
+      "capacity": "Concerts: 16,000, Basketball: 14,500, Ice hockey: 13,900",
+      "surface": "Multi-surface",
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T16:08:00.685Z",
+      "layout": null
     },
     {
       "slug": "new-hampshire-motor-speedway",
@@ -2660,6 +3274,40 @@
       }
     },
     {
+      "slug": "nurburgring",
+      "name": "Nürburgring",
+      "aliases": [
+        {
+          "series": "f1",
+          "name": "Nürburgring"
+        }
+      ],
+      "wikiTitle": "Nürburgring",
+      "wikiUrl": "https://en.wikipedia.org/wiki/N%C3%BCrburgring",
+      "location": "Nürburg, Rhineland-Palatinate, Germany",
+      "country": null,
+      "coordinates": null,
+      "lengthKm": 5.148,
+      "lengthMi": 3.199,
+      "turns": 15,
+      "opened": null,
+      "capacity": "150,000",
+      "surface": "Asphalt",
+      "elevation": "The Nürburgring (German pronunciation: [ˈnyːɐ̯bʊʁkˌʁɪŋ] ) is a 150,000-person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a long Nordschleife configuration, built in the 1920s, around the village and medieval castle of Nürburg in the Eifel mountains. The north loop is 20.830 km (12.943 mi) long and contains more than 300 metres (1,000 feet) of elevation change from its lowest to highest points.",
+      "layouts": "GP-Strecke (2001–present)",
+      "fetchedAt": "2026-09-28T17:00:45.647Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Nürburgring - Grand-Prix Stecke.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:N%C3%BCrburgring_-_Grand-Prix_Stecke.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "artist": "Will Pittenger",
+        "numbered": null,
+        "path": "/tracks/nurburgring.svg"
+      }
+    },
+    {
       "slug": "phillip-island-grand-prix-circuit",
       "name": "Phillip Island Grand Prix Circuit",
       "aliases": [
@@ -2670,6 +3318,10 @@
         {
           "series": "wsbk",
           "name": "Phillip Island Grand Prix Circuit"
+        },
+        {
+          "series": "wsbk",
+          "name": "Phillip Island GP Circuit"
         }
       ],
       "wikiTitle": "Phillip Island Grand Prix Circuit",
@@ -2900,6 +3552,10 @@
         },
         {
           "series": "motoamerica",
+          "name": "Road America"
+        },
+        {
+          "series": "nascar",
           "name": "Road America"
         }
       ],
@@ -3191,6 +3847,43 @@
         "artist": "OpenStreetMap contributors",
         "numbered": false,
         "path": "/tracks/silverstone-circuit.svg"
+      }
+    },
+    {
+      "slug": "sirius-autodrom",
+      "name": "Sirius Autodrom",
+      "aliases": [
+        {
+          "series": "f1",
+          "name": "Sochi Autodrom"
+        }
+      ],
+      "wikiTitle": "Sirius Autodrom",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Sirius_Autodrom",
+      "location": "Sirius, Krasnodar Krai, Russia",
+      "country": null,
+      "coordinates": {
+        "lat": 43.41027778,
+        "lon": 39.96827222
+      },
+      "lengthKm": 2.313,
+      "lengthMi": 1.437,
+      "turns": 11,
+      "opened": "2014-09-21",
+      "capacity": "55,000",
+      "surface": null,
+      "elevation": null,
+      "layouts": "Permanent Circuit (2014–present)",
+      "fetchedAt": "2026-09-28T16:51:10.688Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Circuit Sochi.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sochi.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Pitlane02",
+        "numbered": null,
+        "path": "/tracks/sirius-autodrom.svg"
       }
     },
     {

@@ -123,11 +123,14 @@ function roundTiles(html) {
 
 export async function fetchSeason({ season, previous, full, log }) {
   let fe = season - 2014;
-  // Has the next season (starting this December) begun? Then it is the one to show.
-  const nextHtml = await getText(`${PAGE}?season=${fe + 1}`, { delayMs: DELAY }).catch(() => '');
+  // Has the next season (starting this December) begun? Then it is the one
+  // to show -- but only for the current year: a past year is always the
+  // season that ended in it, or every season would roll one forward.
+  const currentYear = season === new Date().getUTCFullYear();
+  const nextHtml = currentYear ? await getText(`${PAGE}?season=${fe + 1}`, { delayMs: DELAY }).catch(() => '') : '';
   const nextTiles = nextHtml ? roundTiles(nextHtml) : [];
   const today = new Date().toISOString().slice(0, 10);
-  if (nextTiles.some((t) => t.date && t.date <= today)) fe += 1;
+  if (currentYear && nextTiles.some((t) => t.date && t.date <= today)) fe += 1;
   const seasonHtml = fe === season - 2013 ? nextHtml : await getText(`${PAGE}?season=${fe}`, { delayMs: DELAY });
   const tiles = roundTiles(seasonHtml);
   if (!tiles.length) throw new Error(`Formula E: no rounds found for season ${fe}`);

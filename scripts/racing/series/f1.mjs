@@ -96,7 +96,7 @@ export async function fetchSeason({ season, log }) {
   for (const race of [...schedule.values()].sort((a, b) => Number(a.round) - Number(b.round))) {
     const round = Number(race.round);
     const raceDate = race.date;
-    const dateStart = race.FirstPractice?.date ?? race.SprintQualifying?.date ?? raceDate;
+    const dateStart = race.FirstPractice?.date ?? race.SprintQualifying?.date ?? race.SprintShootout?.date ?? raceDate;
     const sessions = [];
     const push = (key, label, type, rows) => {
       const s = race[key];
@@ -117,8 +117,13 @@ export async function fetchSeason({ season, log }) {
     const sp = sprints.get(race.round)?.SprintResults?.map(raceRow);
     const rr = results.get(race.round)?.Results?.map(raceRow);
     push('FirstPractice', 'FP1', 'practice');
-    if (race.SprintQualifying) {
-      push('SprintQualifying', 'Sprint Qualifying', 'qualifying');
+    // Sprint weekends changed shape by year: 2021-22 kept FP2 and set the
+    // sprint grid from Friday qualifying; 2023 had a "Sprint Shootout";
+    // 2024 on has "Sprint Qualifying". Jolpica names the key accordingly.
+    if (race.Sprint || race.SprintQualifying || race.SprintShootout) {
+      if (race.SprintQualifying) push('SprintQualifying', 'Sprint Qualifying', 'qualifying');
+      else if (race.SprintShootout) push('SprintShootout', 'Sprint Shootout', 'qualifying');
+      else push('SecondPractice', 'FP2', 'practice');
       push('Sprint', 'Sprint', 'sprint', sp);
     } else {
       push('SecondPractice', 'FP2', 'practice');

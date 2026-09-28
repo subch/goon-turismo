@@ -157,6 +157,13 @@ timezone in the browser; the overview shows what's next and who won last for eve
   "<File.svg>"` or `"osm"`) and `--full`; `--relayout` retries only the drawings that are missing.
   It runs at the end of every full `scrape:racing` and only fetches circuits it hasn't seen.
   Wikipedia facts are CC BY-SA and credited on every page.
+- **Past seasons are on file back to 2020** (`npm run scrape:racing -- --season 2023`); every season
+  gets its own pages and the season dropdown, and track pages list every season's races. A season
+  is roughly 12 MB of JSON, 1,300 pages and 1,500 spaced requests the first time, then never
+  refetched. Two sources only cover the present: WEC's results browser offers the current and
+  previous season and its standings page only the current one (past WEC seasons have no standings);
+  motoamerica.com's points table is current-season only, so past MotoAmerica standings are summed
+  from the per-race points (the table says so).
 - **Scheduled on the VPS** (`goon` stack, `sync.sh racing`, every two hours);
   `.github/workflows/sync-racing.yml` is the manual fallback.
 

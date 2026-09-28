@@ -284,5 +284,29 @@ export async function fetchSeason({ season, previous, full, log }) {
   events.sort((a, b) => String(a.dateStart ?? '9').localeCompare(String(b.dateStart ?? '9')) || a.round - b.round);
   events.forEach((e, i) => (e.round = i + 1));
 
+  // motoamerica.com's points table only exists for the current season. For
+  // a past season (or a class the page didn't render) the table is summed
+  // from the per-race points computed above -- same scale, so it matches
+  // the official one apart from penalties applied after the fact.
+  for (const cls of classes) {
+    if (standings.some((s) => s.classId === cls.id)) continue;
+    const totals = new Map();
+    for (const e of events) {
+      if (e.test) continue;
+      for (const s of e.sessions) {
+        if (s.classId !== cls.id || s.type !== 'race' || !s.results) continue;
+        for (const r of s.results) {
+          if (!r.name || !r.points) continue;
+          const t = totals.get(r.name) ?? { name: r.name, number: r.number, points: 0, wins: 0 };
+          t.points += r.points;
+          if (r.pos === 1) t.wins++;
+          totals.set(r.name, t);
+        }
+      }
+    }
+    const rows = [...totals.values()].sort((a, b) => b.points - a.points || b.wins - a.wins).map((t, i) => standingRow({ pos: i + 1, ...t }));
+    if (rows.length) standings.push({ classId: cls.id, type: 'riders', name: `${cls.name} Championship (summed from race results)`, rows });
+  }
+
   return { classes, events, standings };
 }
