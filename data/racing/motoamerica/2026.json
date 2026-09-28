@@ -4,7 +4,7 @@
   "shortName": "MotoAmerica",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-28T04:02:43.406Z",
+  "syncedAt": "2026-09-28T04:33:02.901Z",
   "source": {
     "name": "results.motoamerica.com",
     "url": "https://results.motoamerica.com/"
@@ -79200,6 +79200,15 @@
       "rows": [
         {
           "pos": 1,
+          "name": "Bobby Fong",
+          "number": "50",
+          "team": null,
+          "make": null,
+          "points": 316,
+          "wins": null
+        },
+        {
+          "pos": 2,
           "name": "Sean Dylan Kelly",
           "number": "40",
           "team": null,
@@ -79208,21 +79217,12 @@
           "wins": null
         },
         {
-          "pos": 2,
-          "name": "Bobby Fong",
-          "number": "50",
-          "team": null,
-          "make": null,
-          "points": 303,
-          "wins": null
-        },
-        {
           "pos": 3,
           "name": "Mathew Scholtz",
           "number": "11",
           "team": null,
           "make": null,
-          "points": 259,
+          "points": 284,
           "wins": null
         },
         {
@@ -79231,7 +79231,7 @@
           "number": "95",
           "team": null,
           "make": null,
-          "points": 258,
+          "points": 274,
           "wins": null
         },
         {
@@ -79240,7 +79240,7 @@
           "number": "45",
           "team": null,
           "make": null,
-          "points": 196,
+          "points": 216,
           "wins": null
         },
         {
@@ -79249,7 +79249,7 @@
           "number": "15",
           "team": null,
           "make": null,
-          "points": 142,
+          "points": 152,
           "wins": null
         },
         {
@@ -79258,7 +79258,7 @@
           "number": "36",
           "team": null,
           "make": null,
-          "points": 139,
+          "points": 150,
           "wins": null
         },
         {
@@ -79267,7 +79267,7 @@
           "number": "66",
           "team": null,
           "make": null,
-          "points": 132,
+          "points": 140,
           "wins": null
         },
         {
@@ -79308,20 +79308,20 @@
         },
         {
           "pos": 13,
+          "name": "Andrew Lee",
+          "number": "14",
+          "team": null,
+          "make": null,
+          "points": 95,
+          "wins": null
+        },
+        {
+          "pos": 14,
           "name": "Loris Baz",
           "number": "76",
           "team": null,
           "make": null,
           "points": 91,
-          "wins": null
-        },
-        {
-          "pos": 14,
-          "name": "Andrew Lee",
-          "number": "14",
-          "team": null,
-          "make": null,
-          "points": 89,
           "wins": null
         },
         {
@@ -79339,16 +79339,16 @@
           "number": "88",
           "team": null,
           "make": null,
-          "points": 53,
+          "points": 62,
           "wins": null
         },
         {
           "pos": 17,
-          "name": "Deion Campbell",
-          "number": "194",
+          "name": "Danilo Lewis",
+          "number": "94",
           "team": null,
           "make": null,
-          "points": 41,
+          "points": 44,
           "wins": null
         },
         {
@@ -79357,34 +79357,34 @@
           "number": "60",
           "team": null,
           "make": null,
-          "points": 38,
+          "points": 42,
           "wins": null
         },
         {
           "pos": 19,
-          "name": "Danilo Lewis",
-          "number": "94",
+          "name": "Deion Campbell",
+          "number": "194",
           "team": null,
           "make": null,
-          "points": 37,
+          "points": 41,
           "wins": null
         },
         {
           "pos": 20,
-          "name": "Tyler Scott",
-          "number": "70",
-          "team": null,
-          "make": null,
-          "points": 21,
-          "wins": null
-        },
-        {
-          "pos": 21,
           "name": "Emanuel Nicolas Aguilar",
           "number": "919",
           "team": null,
           "make": null,
-          "points": 20,
+          "points": 25,
+          "wins": null
+        },
+        {
+          "pos": 21,
+          "name": "Tyler Scott",
+          "number": "70",
+          "team": null,
+          "make": null,
+          "points": 24,
           "wins": null
         },
         {
@@ -79553,7 +79553,7 @@
           "number": "53",
           "team": null,
           "make": null,
-          "points": 381,
+          "points": 406,
           "wins": null
         },
         {
@@ -79562,25 +79562,25 @@
           "number": "2",
           "team": null,
           "make": null,
-          "points": 308,
+          "points": 328,
           "wins": null
         },
         {
           "pos": 3,
-          "name": "Joshua Hayes",
-          "number": "4",
-          "team": null,
-          "make": null,
-          "points": 240,
-          "wins": null
-        },
-        {
-          "pos": 4,
           "name": "Kayla Yaakov",
           "number": "19",
           "team": null,
           "make": null,
-          "points": 238,
+          "points": 249,
+          "wins": null
+        },
+        {
+          "pos": 4,
+          "name": "Joshua Hayes",
+          "number": "4",
+          "team": null,
+          "make": null,
+          "points": 245,
           "wins": null
         },
         {
@@ -79589,7 +79589,7 @@
           "number": "22",
           "team": null,
           "make": null,
-          "points": 172,
+          "points": 185,
           "wins": null
         },
         {
@@ -79607,7 +79607,7 @@
           "number": "27",
           "team": null,
           "make": null,
-          "points": 144,
+          "points": 153,
           "wins": null
         },
         {
@@ -79625,7 +79625,7 @@
           "number": "98",
           "team": null,
           "make": null,
-          "points": 114,
+          "points": 118,
           "wins": null
         },
         {
@@ -79639,20 +79639,20 @@
         },
         {
           "pos": 11,
+          "name": "Joseph LiMandri Jr",
+          "number": "641",
+          "team": null,
+          "make": null,
+          "points": 72,
+          "wins": null
+        },
+        {
+          "pos": 12,
           "name": "Alexander Enriquez",
           "number": "12",
           "team": null,
           "make": null,
           "points": 70,
-          "wins": null
-        },
-        {
-          "pos": 12,
-          "name": "Joseph LiMandri Jr",
-          "number": "641",
-          "team": null,
-          "make": null,
-          "points": 62,
           "wins": null
         },
         {
@@ -79675,6 +79675,15 @@
         },
         {
           "pos": 15,
+          "name": "Wristin Grigg",
+          "number": "272",
+          "team": null,
+          "make": null,
+          "points": 35,
+          "wins": null
+        },
+        {
+          "pos": 16,
           "name": "Jaret Nassaney",
           "number": "59",
           "team": null,
@@ -79683,16 +79692,25 @@
           "wins": null
         },
         {
-          "pos": 16,
-          "name": "Wristin Grigg",
-          "number": "272",
+          "pos": 17,
+          "name": "Ryder Davis",
+          "number": "555",
           "team": null,
           "make": null,
           "points": 27,
           "wins": null
         },
         {
-          "pos": 17,
+          "pos": 18,
+          "name": "Karel Hanika",
+          "number": "28",
+          "team": null,
+          "make": null,
+          "points": 26,
+          "wins": null
+        },
+        {
+          "pos": 19,
           "name": "Jason Waters",
           "number": "92",
           "team": null,
@@ -79701,7 +79719,7 @@
           "wins": null
         },
         {
-          "pos": 18,
+          "pos": 20,
           "name": "Cameron Dunker",
           "number": "33",
           "team": null,
@@ -79710,16 +79728,7 @@
           "wins": null
         },
         {
-          "pos": 19,
-          "name": "Ryder Davis",
-          "number": "555",
-          "team": null,
-          "make": null,
-          "points": 24,
-          "wins": null
-        },
-        {
-          "pos": 20,
+          "pos": 21,
           "name": "Gus Rodio",
           "number": "96",
           "team": null,
@@ -79728,7 +79737,7 @@
           "wins": null
         },
         {
-          "pos": 21,
+          "pos": 22,
           "name": "Stefano Mesa",
           "number": "37",
           "team": null,
@@ -79737,7 +79746,7 @@
           "wins": null
         },
         {
-          "pos": 22,
+          "pos": 23,
           "name": "Mikey Lou Sanchez",
           "number": "551",
           "team": null,
@@ -79746,7 +79755,7 @@
           "wins": null
         },
         {
-          "pos": 23,
+          "pos": 24,
           "name": "Harrison Voight",
           "number": "129",
           "team": null,
@@ -79755,7 +79764,7 @@
           "wins": null
         },
         {
-          "pos": 24,
+          "pos": 25,
           "name": "Avery Dreher",
           "number": "47",
           "team": null,
@@ -79764,7 +79773,16 @@
           "wins": null
         },
         {
-          "pos": 25,
+          "pos": 26,
+          "name": "Logan Cunnison",
+          "number": "58",
+          "team": null,
+          "make": null,
+          "points": 18,
+          "wins": null
+        },
+        {
+          "pos": 27,
           "name": "Shane Maggs",
           "number": "29",
           "team": null,
@@ -79773,30 +79791,12 @@
           "wins": null
         },
         {
-          "pos": 26,
+          "pos": 28,
           "name": "Carson King",
           "number": "35",
           "team": null,
           "make": null,
           "points": 14,
-          "wins": null
-        },
-        {
-          "pos": 27,
-          "name": "Logan Cunnison",
-          "number": "58",
-          "team": null,
-          "make": null,
-          "points": 11,
-          "wins": null
-        },
-        {
-          "pos": 28,
-          "name": "Karel Hanika",
-          "number": "28",
-          "team": null,
-          "make": null,
-          "points": 10,
           "wins": null
         },
         {
@@ -79819,6 +79819,15 @@
         },
         {
           "pos": 31,
+          "name": "Michael Henao",
+          "number": "787",
+          "team": null,
+          "make": null,
+          "points": 7,
+          "wins": null
+        },
+        {
+          "pos": 32,
           "name": "Victor Perez de Leon",
           "number": "161",
           "team": null,
@@ -79827,7 +79836,7 @@
           "wins": null
         },
         {
-          "pos": 32,
+          "pos": 33,
           "name": "Max VanDenBrouck",
           "number": "48",
           "team": null,
@@ -79836,7 +79845,7 @@
           "wins": null
         },
         {
-          "pos": 33,
+          "pos": 34,
           "name": "Bodie Paige",
           "number": "65",
           "team": null,
@@ -79845,7 +79854,7 @@
           "wins": null
         },
         {
-          "pos": 34,
+          "pos": 35,
           "name": "Jayden Fernandez",
           "number": "113",
           "team": null,
@@ -79854,7 +79863,7 @@
           "wins": null
         },
         {
-          "pos": 35,
+          "pos": 36,
           "name": "Rossi Moor",
           "number": "36",
           "team": null,
@@ -79863,7 +79872,7 @@
           "wins": null
         },
         {
-          "pos": 36,
+          "pos": 37,
           "name": "Logan Oster",
           "number": "137",
           "team": null,
@@ -79872,7 +79881,7 @@
           "wins": null
         },
         {
-          "pos": 37,
+          "pos": 38,
           "name": "Ella Dreher",
           "number": "10",
           "team": null,
@@ -79881,7 +79890,7 @@
           "wins": null
         },
         {
-          "pos": 38,
+          "pos": 39,
           "name": "Edgar Zaragoza",
           "number": "127",
           "team": null,
@@ -79890,7 +79899,7 @@
           "wins": null
         },
         {
-          "pos": 39,
+          "pos": 40,
           "name": "Kevin Horney",
           "number": "440",
           "team": null,
@@ -79899,21 +79908,12 @@
           "wins": null
         },
         {
-          "pos": 40,
+          "pos": 41,
           "name": "Alex Arango",
           "number": "89",
           "team": null,
           "make": null,
           "points": 2,
-          "wins": null
-        },
-        {
-          "pos": 41,
-          "name": "Michael Henao",
-          "number": "787",
-          "team": null,
-          "make": null,
-          "points": 1,
           "wins": null
         },
         {
@@ -79927,6 +79927,15 @@
         },
         {
           "pos": 43,
+          "name": "Ivan Arturo Muñoz Márquez",
+          "number": "190",
+          "team": null,
+          "make": null,
+          "points": 0,
+          "wins": null
+        },
+        {
+          "pos": 44,
           "name": "Adam Brown",
           "number": "303",
           "team": null,
@@ -79935,7 +79944,7 @@
           "wins": null
         },
         {
-          "pos": 44,
+          "pos": 45,
           "name": "Melissa Paris",
           "number": "413",
           "team": null,
@@ -79944,7 +79953,7 @@
           "wins": null
         },
         {
-          "pos": 45,
+          "pos": 46,
           "name": "Jake Vandal",
           "number": "18",
           "team": null,
@@ -79953,7 +79962,7 @@
           "wins": null
         },
         {
-          "pos": 46,
+          "pos": 47,
           "name": "Jeff Bean",
           "number": "311",
           "team": null,
@@ -79962,7 +79971,7 @@
           "wins": null
         },
         {
-          "pos": 47,
+          "pos": 48,
           "name": "Hayden Diedrich",
           "number": "151",
           "team": null,
@@ -79971,25 +79980,7 @@
           "wins": null
         },
         {
-          "pos": 48,
-          "name": "PJ Jacobsen",
-          "number": "15",
-          "team": null,
-          "make": null,
-          "points": 0,
-          "wins": null
-        },
-        {
           "pos": 49,
-          "name": "Bryce Kornbau",
-          "number": "17",
-          "team": null,
-          "make": null,
-          "points": 0,
-          "wins": null
-        },
-        {
-          "pos": 50,
           "name": "Danny Webb",
           "number": "199",
           "team": null,
@@ -79998,16 +79989,16 @@
           "wins": null
         },
         {
-          "pos": 51,
-          "name": "Richie Escalante",
-          "number": "54",
+          "pos": 50,
+          "name": "PJ Jacobsen",
+          "number": "15",
           "team": null,
           "make": null,
           "points": 0,
           "wins": null
         },
         {
-          "pos": 52,
+          "pos": 51,
           "name": "Gary Yancoskie",
           "number": "521",
           "team": null,
@@ -80016,9 +80007,18 @@
           "wins": null
         },
         {
+          "pos": 52,
+          "name": "Bryce Kornbau",
+          "number": "17",
+          "team": null,
+          "make": null,
+          "points": 0,
+          "wins": null
+        },
+        {
           "pos": 53,
-          "name": "Ivan Arturo Muñoz Márquez",
-          "number": "190",
+          "name": "Richie Escalante",
+          "number": "54",
           "team": null,
           "make": null,
           "points": 0,
@@ -80881,29 +80881,38 @@
           "number": "69",
           "team": null,
           "make": null,
-          "points": 271,
+          "points": 287,
           "wins": null
         },
         {
           "pos": 2,
-          "name": "Troy Herfoss",
-          "number": "17",
-          "team": null,
-          "make": null,
-          "points": 219,
-          "wins": null
-        },
-        {
-          "pos": 3,
           "name": "Bradley Smith",
           "number": "38",
           "team": null,
           "make": null,
-          "points": 210,
+          "points": 230,
+          "wins": null
+        },
+        {
+          "pos": 3,
+          "name": "Troy Herfoss",
+          "number": "17",
+          "team": null,
+          "make": null,
+          "points": 228,
           "wins": null
         },
         {
           "pos": 4,
+          "name": "Kyle Wyman",
+          "number": "1",
+          "team": null,
+          "make": null,
+          "points": 169,
+          "wins": null
+        },
+        {
+          "pos": 5,
           "name": "Tyler O'Hara",
           "number": "29",
           "team": null,
@@ -80912,21 +80921,12 @@
           "wins": null
         },
         {
-          "pos": 5,
-          "name": "Kyle Wyman",
-          "number": "1",
-          "team": null,
-          "make": null,
-          "points": 144,
-          "wins": null
-        },
-        {
           "pos": 6,
           "name": "James Rispoli",
           "number": "43",
           "team": null,
           "make": null,
-          "points": 132,
+          "points": 145,
           "wins": null
         },
         {
@@ -80935,25 +80935,25 @@
           "number": "97",
           "team": null,
           "make": null,
-          "points": 127,
+          "points": 137,
           "wins": null
         },
         {
           "pos": 8,
+          "name": "Max Flinders",
+          "number": "88",
+          "team": null,
+          "make": null,
+          "points": 89,
+          "wins": null
+        },
+        {
+          "pos": 9,
           "name": "Jake Lewis",
           "number": "85",
           "team": null,
           "make": null,
           "points": 83,
-          "wins": null
-        },
-        {
-          "pos": 9,
-          "name": "Max Flinders",
-          "number": "88",
-          "team": null,
-          "make": null,
-          "points": 78,
           "wins": null
         },
         {
