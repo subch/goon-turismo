@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-28T04:39:36.985Z",
+  "syncedAt": "2026-09-28T04:54:38.504Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -27,7 +27,7 @@
       "dateStart": "2026-03-06",
       "dateEnd": "2026-03-08",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Australian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -710,7 +710,7 @@
       "dateStart": "2026-03-13",
       "dateEnd": "2026-03-15",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Chinese_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -1769,7 +1769,7 @@
       "dateStart": "2026-03-27",
       "dateEnd": "2026-03-29",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Japanese_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -2497,7 +2497,7 @@
       "dateStart": "2026-05-01",
       "dateEnd": "2026-05-03",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Miami_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -3556,7 +3556,7 @@
       "dateStart": "2026-05-22",
       "dateEnd": "2026-05-24",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Canadian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -4615,7 +4615,7 @@
       "dateStart": "2026-06-05",
       "dateEnd": "2026-06-07",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Monaco_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -5343,7 +5343,7 @@
       "dateStart": "2026-06-12",
       "dateEnd": "2026-06-14",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Barcelona-Catalunya",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -6071,7 +6071,7 @@
       "dateStart": "2026-06-26",
       "dateEnd": "2026-06-28",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Austrian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -6799,7 +6799,7 @@
       "dateStart": "2026-07-03",
       "dateEnd": "2026-07-05",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_British_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -7858,7 +7858,7 @@
       "dateStart": "2026-07-17",
       "dateEnd": "2026-07-19",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Belgian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -8586,7 +8586,7 @@
       "dateStart": "2026-07-24",
       "dateEnd": "2026-07-26",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Hungarian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -9314,7 +9314,7 @@
       "dateStart": "2026-08-21",
       "dateEnd": "2026-08-23",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Dutch_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -10373,7 +10373,7 @@
       "dateStart": "2026-09-04",
       "dateEnd": "2026-09-06",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Italian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -11101,7 +11101,7 @@
       "dateStart": "2026-09-11",
       "dateEnd": "2026-09-13",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Spanish_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -11799,7 +11799,7 @@
       "dateStart": "2026-09-24",
       "dateEnd": "2026-09-26",
       "status": "finished",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Azerbaijan_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": true,
       "sessions": [
         {
@@ -12527,7 +12527,7 @@
       "dateStart": "2026-10-02",
       "dateEnd": "2026-10-04",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Bahrain_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12593,7 +12593,7 @@
       "dateStart": "2026-10-09",
       "dateEnd": "2026-10-11",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Singapore_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12659,7 +12659,7 @@
       "dateStart": "2026-10-23",
       "dateEnd": "2026-10-25",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_United_States_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12725,7 +12725,7 @@
       "dateStart": "2026-10-30",
       "dateEnd": "2026-11-01",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Mexico_City_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12791,7 +12791,7 @@
       "dateStart": "2026-11-06",
       "dateEnd": "2026-11-08",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Brazilian_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12857,7 +12857,7 @@
       "dateStart": "2026-11-20",
       "dateEnd": "2026-11-22",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12923,7 +12923,7 @@
       "dateStart": "2026-11-27",
       "dateEnd": "2026-11-29",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Qatar_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
@@ -12989,7 +12989,7 @@
       "dateStart": "2026-12-04",
       "dateEnd": "2026-12-06",
       "status": "upcoming",
-      "officialUrl": "https://en.wikipedia.org/wiki/2026_Abu_Dhabi_Grand_Prix",
+      "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
         {
