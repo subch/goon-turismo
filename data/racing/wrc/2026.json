@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-28T17:14:55.152Z",
+  "syncedAt": "2026-09-28T18:32:42.629Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8071,7 +8071,7 @@
       "name": "Rally Italia Sardegna",
       "shortName": "Italia Sardegna",
       "circuit": null,
-      "location": "Olbia, Sardinia",
+      "location": "Alghero, Sardinia",
       "country": "Italy",
       "dateStart": "2026-10-01",
       "dateEnd": "2026-10-04",
