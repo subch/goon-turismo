@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-28T17:06:40.844Z",
+  "syncedAt": "2026-09-28T17:14:38.993Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -17,10 +17,6 @@
     {
       "id": "lmgt3",
       "name": "LMGT3"
-    },
-    {
-      "id": "lmp2",
-      "name": "LMP2"
     }
   ],
   "events": [
