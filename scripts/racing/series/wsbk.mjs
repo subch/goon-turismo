@@ -42,8 +42,16 @@ function includedMap(payload) {
   return map;
 }
 
-function rowsFrom(payload, type) {
+// The feed carries no points, so they are computed from the official scale
+// for classified finishers: full races 25-20-16-13-11-10-9-8-7-6-5-4-3-2-1,
+// the Superpole Race 12-9-7-6-5-4-3-2-1. A red-flagged part-race scores
+// nothing (the restart does).
+const RACE_POINTS = [25, 20, 16, 13, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+const SPRINT_POINTS = [12, 9, 7, 6, 5, 4, 3, 2, 1];
+
+function rowsFrom(payload, type, scores = true) {
   const inc = includedMap(payload);
+  const scale = !scores ? null : type === 'race' ? RACE_POINTS : type === 'sprint' ? SPRINT_POINTS : null;
   const data = [...(payload.data ?? [])].sort((a, b) => (a.attributes.position ?? 999) - (b.attributes.position ?? 999));
   const timed = type === 'race' || type === 'sprint';
   const leader = data[0]?.attributes;
@@ -76,6 +84,7 @@ function rowsFrom(payload, type) {
       time: a.time && !bogusTimes ? formatMs(a.time) : null,
       gap,
       bestLap: timed && a.fastest_lap_time ? formatMs(a.fastest_lap_time) : null,
+      points: scale && classified && a.position ? scale[a.position - 1] ?? 0 : null,
       status: classified ? null : a.status ?? null,
     });
   });
@@ -119,7 +128,7 @@ export async function fetchSeason({ season, previous, full, log }) {
             `${BASE}/wsbk-results/v1/seasons/${season}/categories/${cat.source_id}/rounds/${r.source_id}/sessions/${a.source_id}/results`,
             { delayMs: DELAY },
           );
-          results = rowsFrom(payload, type);
+          results = rowsFrom(payload, type, !/red flag/i.test(a.description ?? ''));
           if (!results.length) results = null;
         }
         if (a.status !== 'FINISHED' || !results) allDone = false;

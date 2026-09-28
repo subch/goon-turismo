@@ -237,3 +237,155 @@ export const SESSION_TYPE_LABEL: Record<SessionType, string> = {
   warmup: 'Warm up',
   other: 'Session',
 };
+
+// ---- drivers: season records --------------------------------------------
+
+export function driverSlug(name: string): string {
+  return name
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+export type DriverEntry = {
+  slug: string;
+  name: string;
+  classId: string;
+  number: string | number | null;
+  team: string | null;
+  make: string | null;
+  standing: { pos: number | null; points: number | null; wins: number | null; table: string } | null;
+};
+
+/** Everyone who appears by name in a season: the standings first (they carry
+ * the "official" spelling), then anyone else who only shows up in a result. */
+export function driversIn(file: SeasonFile): DriverEntry[] {
+  const out = new Map<string, DriverEntry>();
+  for (const st of file.standings) {
+    if (st.type !== 'drivers' && st.type !== 'riders') continue;
+    for (const r of st.rows) {
+      if (!r.name) continue;
+      const key = `${st.classId}:${driverSlug(r.name)}`;
+      if (out.has(key)) continue;
+      out.set(key, {
+        slug: driverSlug(r.name),
+        name: r.name,
+        classId: st.classId,
+        number: r.number ?? null,
+        team: r.team ?? null,
+        make: r.make ?? null,
+        standing: { pos: r.pos, points: r.points, wins: r.wins, table: st.name },
+      });
+    }
+  }
+  for (const e of file.events) {
+    for (const s of e.sessions) {
+      for (const r of s.results ?? []) {
+        if (!r.name) continue;
+        const key = `${s.classId}:${driverSlug(r.name)}`;
+        if (out.has(key)) continue;
+        out.set(key, { slug: driverSlug(r.name), name: r.name, classId: s.classId, number: r.number ?? null, team: r.team ?? null, make: r.make ?? null, standing: null });
+      }
+    }
+  }
+  return [...out.values()];
+}
+
+export type RecordRow = { event: RacingEvent; session: RacingSession; result: RacingResult };
+
+/** Every classified appearance of one driver in one class, in calendar order. */
+export function driverRecord(file: SeasonFile, classId: string, slug: string): RecordRow[] {
+  const rows: RecordRow[] = [];
+  for (const e of file.events) {
+    for (const s of e.sessions) {
+      if (s.classId !== classId || !s.results) continue;
+      const r = s.results.find((x) => x.name && driverSlug(x.name) === slug);
+      if (r) rows.push({ event: e, session: s, result: r });
+    }
+  }
+  return rows;
+}
+
+/** Points per driver split by session type, for the series that score more
+ * than the race (MotoGP's sprints, F1's sprints, WSBK's Superpole Race).
+ * Keyed by driver slug; only session types that carry points appear. */
+export function pointsSplit(file: SeasonFile, classId: string): { types: SessionType[]; byDriver: Map<string, Partial<Record<SessionType, number>>> } {
+  const byDriver = new Map<string, Partial<Record<SessionType, number>>>();
+  const types = new Set<SessionType>();
+  for (const e of file.events) {
+    for (const s of e.sessions) {
+      if (s.classId !== classId || !s.results) continue;
+      for (const r of s.results) {
+        if (!r.name || r.points == null || r.points <= 0) continue;
+        types.add(s.type);
+        const k = driverSlug(r.name);
+        const acc = byDriver.get(k) ?? {};
+        acc[s.type] = (acc[s.type] ?? 0) + r.points;
+        byDriver.set(k, acc);
+      }
+    }
+  }
+  return { types: [...types], byDriver };
+}
+
+// ---- tracks --------------------------------------------------------------
+
+export type TrackRecord = { cls: string | null; time: string | null; driver: string | null; team: string | null; year: string | null };
+export type Track = {
+  slug: string;
+  name: string;
+  wikiTitle: string;
+  wikiUrl: string;
+  summary: string | null;
+  location: string | null;
+  country: string | null;
+  coordinates: { lat: number; lon: number } | null;
+  lengthKm: number | null;
+  lengthMi: number | null;
+  turns: number | null;
+  opened: string | null;
+  capacity: string | null;
+  surface: string | null;
+  elevation: string | null;
+  layouts: string | null;
+  records: TrackRecord[];
+  aliases: { series: string; name: string }[];
+  fetchedAt: string;
+};
+
+const trackModules = import.meta.glob<{ default: { tracks: Track[] } }>('../../data/racing/tracks.json', { eager: true });
+export const tracks: Track[] = (Object.values(trackModules)[0]?.default?.tracks ?? []).slice().sort((a, b) => a.name.localeCompare(b.name));
+
+const aliasModules = import.meta.glob<{ default: Record<string, Record<string, string>> }>('../../data/racing/track-aliases.json', { eager: true });
+const trackAliases: Record<string, Record<string, string>> = Object.values(aliasModules)[0]?.default ?? {};
+
+/** The circuit name an event is known by: the series' own name when it
+ * carries one, else the hand-kept alias for that event id. */
+export function circuitNameFor(file: SeasonFile, e: RacingEvent): string | null {
+  if (e.circuit) return e.circuit;
+  return trackAliases[file.series]?.[e.id] ?? null;
+}
+
+const trackByAlias = new Map<string, Track>();
+for (const t of tracks) for (const a of t.aliases) trackByAlias.set(`${a.series}:${a.name.toLowerCase()}`, t);
+
+export function trackFor(file: SeasonFile, e: RacingEvent): Track | null {
+  const name = circuitNameFor(file, e);
+  if (!name) return null;
+  return trackByAlias.get(`${file.series}:${name.toLowerCase()}`) ?? null;
+}
+
+export type TrackAppearance = { file: SeasonFile; event: RacingEvent };
+
+/** Every event on every season file held at a track, newest first. */
+export function eventsAtTrack(track: Track): TrackAppearance[] {
+  const out: TrackAppearance[] = [];
+  for (const file of racingSeasons) {
+    for (const e of file.events) {
+      if (trackFor(file, e) === track) out.push({ file, event: e });
+    }
+  }
+  return out.sort((a, b) => String(b.event.dateStart ?? '').localeCompare(String(a.event.dateStart ?? '')));
+}

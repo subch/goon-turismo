@@ -1,0 +1,42 @@
+---
+// Every circuit the racing data has been to, with which series race there.
+import Base from '../../../layouts/Base.astro';
+import { tracks, eventsAtTrack } from '../../../lib/racing';
+
+const list = tracks
+  .map((t) => {
+    const visits = eventsAtTrack(t);
+    const series = [...new Set(visits.map((v) => v.file.shortName))];
+    return { t, series, visits: visits.length, last: visits[0] ?? null };
+  })
+  .sort((a, b) => a.t.name.localeCompare(b.t.name));
+---
+<Base title="Tracks" description="Every circuit on the racing calendar, with length, turns, lap records and who races there.">
+  <p class="meta racing-crumbs"><a href="/racing/">Racing</a> › Tracks</p>
+  <h1>Tracks</h1>
+  <p class="subtitle">{list.length} circuits across the series we follow. Track facts from Wikipedia; results from each series' own pages.</p>
+
+  {list.length === 0 ? (
+    <div class="panel"><div class="empty-state">No track data yet. It shows up once <code>npm run scrape:tracks</code> has run.</div></div>
+  ) : (
+    <div class="grid racing-track-grid">
+      {list.map(({ t, series, visits, last }) => (
+        <a class="card racing-track-card" href={`/racing/tracks/${t.slug}/`}>
+          <h3>{t.name}</h3>
+          <div class="meta">{[t.location, t.country].filter(Boolean).join(', ')}</div>
+          <div class="meta racing-track-facts">
+            {t.lengthKm != null && <span>{t.lengthKm} km</span>}
+            {t.turns != null && <span>{t.turns} turns</span>}
+            <span>{visits} {visits === 1 ? 'event' : 'events'} on file</span>
+          </div>
+          <div class="racing-track-series">{series.map((s) => <span class="badge">{s}</span>)}</div>
+        </a>
+      ))}
+    </div>
+  )}
+
+  <p class="meta racing-footnote">
+    Track descriptions and figures are from <a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a>, licensed
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; each page links its article.
+  </p>
+</Base>

@@ -117,6 +117,25 @@ timezone in the browser; the overview shows what's next and who won last for eve
   file in place; the run still exits 0 so the VPS sync commits, builds and publishes the rest. The
   page shows when each series last synced, which is how a stale one gets noticed. A source that
   answers with an empty season is refused (same idea as sync.sh's shrink guard).
+- **Sprint points are shown next to the total** wherever a class scores more than the race (MotoGP
+  and F1 sprints, WSBK's Superpole Race): "Sprint pts" / "Race pts" columns on the riders' table,
+  summed from the session classifications. WSBK's and MotoAmerica's feeds carry no points, so those
+  are computed from the official scales (25-20-16... for races, 12-9-7... for the Superpole Race;
+  MotoAmerica by position within the rider's class) -- the standings themselves stay as published.
+- **Every named driver has a season page** (`/racing/<series>/<season>/driver/<class>--<slug>/`):
+  standing, starts, wins, podiums, best finish, the sprint/race split, and every classified
+  session in calendar order. Names in standings and results tables link to it. WEC results are cars,
+  not people, so it has none.
+- **Every circuit has a page** (`/racing/tracks/`, `/racing/tracks/<slug>/`): the Wikipedia
+  intro, length, turns, location, opened, capacity, layouts, an "elevation change" sentence when the
+  article has one, coordinates with a map link, the article's lap records, and every event on file
+  held there across all series with its winners. `npm run scrape:tracks` builds
+  `data/racing/tracks.json` from the circuit names in the season files plus
+  `data/racing/track-aliases.json` (hand-kept names for WEC, IndyCar, Formula E and MotoAmerica,
+  whose feeds carry no circuit); a wrong Wikipedia match is fixed by an exact title in
+  `data/racing/track-overrides.json` and `--full`. It runs at the end of every full
+  `scrape:racing` and only fetches circuits it hasn't seen. Wikipedia text is CC BY-SA and credited
+  on every page.
 - **Scheduled on the VPS** (`goon` stack, `sync.sh racing`, every two hours);
   `.github/workflows/sync-racing.yml` is the manual fallback.
 

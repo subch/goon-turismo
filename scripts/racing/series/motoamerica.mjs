@@ -105,12 +105,25 @@ function parseOrbits(text, type) {
   const gapCol = col('Diff').length ? col('Diff') : col('Gap');
   // Diff is blank for P1 and runs one short; DNF rows may or may not have a value.
   const gapFor = (i) => (i === 0 ? null : gapCol[i - 1] ?? null);
+  // The sheet carries no points; races score by the standard MotoAmerica
+  // scale (25-20-16-13-11-10-9-8-7-6-5-4-3-2-1), counted by position within
+  // the rider's own class (a Superbike Cup rider scores among Cup riders).
+  const RACE_POINTS = [25, 20, 16, 13, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+  const classRank = new Map();
   return Array.from({ length: n }, (_, i) => {
     const p = pos[i];
     const isPos = /^\d+$/.test(p);
     const g = gapFor(i);
     const rowStatus = isPos ? null : /^DNF|^DNS|^DSQ|^Not classified/i.test(p) ? p.replace(/\s*\(.*\)$/, '') : p;
+    let points = null;
+    if (type === 'race' && isPos) {
+      const cls = col('Class')[i] ?? '';
+      const rank = (classRank.get(cls) ?? 0) + 1;
+      classRank.set(cls, rank);
+      points = RACE_POINTS[rank - 1] ?? 0;
+    }
     return result({
+      points,
       pos: isPos ? Number(p) : null,
       number: col('No.')[i] ?? null,
       name: col('Name')[i] ?? null,

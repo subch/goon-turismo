@@ -1,13 +1,15 @@
 ---
 import type { Standing } from '../../lib/racing';
-import { resultLabel } from '../../lib/racing';
+import { resultLabel, driverSlug } from '../../lib/racing';
 
 interface Props {
   standing: Standing;
   /** Show only the top N rows (overview cards); omit for the full table. */
   limit?: number;
+  /** When set, each named row links to `${linkBase}${driverSlug(name)}/` (the driver's season page). */
+  linkBase?: string;
 }
-const { standing, limit } = Astro.props;
+const { standing, limit, linkBase } = Astro.props;
 const rows = limit ? standing.rows.slice(0, limit) : standing.rows;
 const showTeam = rows.some((r) => r.team);
 const showMake = rows.some((r) => r.make) && !rows.some((r) => r.team);
@@ -37,7 +39,7 @@ for (const r of rows) for (const k of Object.keys(r.extra ?? {})) if (!extraKeys
         <tr>
           <td class={`col-pos ${r.pos && r.pos <= 3 ? `rank-${r.pos}` : ''}`}>{r.pos ?? '—'}</td>
           {showNumber && <td class="col-num meta">{r.number != null ? String(r.number).replace(/^#/, '') : ''}</td>}
-          <td class="col-name">{resultLabel(r)}</td>
+          <td class="col-name">{linkBase && r.name ? <a class="racing-driver-link" href={`${linkBase}${driverSlug(r.name)}/`}>{r.name}</a> : resultLabel(r)}</td>
           {showTeam && <td class="meta">{r.team ?? ''}</td>}
           {showMake && <td class="meta">{r.make ?? ''}</td>}
           {showWins && <td class="num meta">{r.wins ?? ''}</td>}

@@ -55,6 +55,17 @@ Tier `main` (top of /racing/): MotoGP, WEC, F1. Tier `other`: the rest.
 MotoAmerica's PDFs go through `../lib/pdf.mjs`; that parser is the fragile
 part of this folder, so `--full` after touching it.
 
+**Points.** Put `points` on every classified row when the source has them
+(F1, MotoGP, NASCAR, Formula E, IndyCar): the pages sum them per session
+type to show sprint/race splits and to build driver pages. WSBK and
+MotoAmerica publish no per-row points, so their adapters compute them from
+the official scales (say so in a comment, as they do).
+
+**Tracks** are not an adapter: `scripts/scrape-tracks.mjs` reads every
+season file's `circuit` (plus `data/racing/track-aliases.json` for series
+without one) and resolves each to a Wikipedia article. A new series only
+needs `circuit` on its events, or a block in the aliases file.
+
 Looked at and left out:
 
 - **IMSA** -- imsa.com sits behind a Cloudflare challenge for anything that

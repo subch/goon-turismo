@@ -1,0 +1,112 @@
+---
+// One circuit: the facts Wikipedia carries for it (length, turns, lap
+// records, location, elevation change where the article says), a map link,
+// and every event on file held there, newest first, with its winners.
+import Base from '../../../layouts/Base.astro';
+import { tracks, eventsAtTrack, raceWinners, eventDates, resultLabel } from '../../../lib/racing';
+
+export function getStaticPaths() {
+  return tracks.map((t) => ({ params: { slug: t.slug }, props: { track: t } }));
+}
+
+const { track } = Astro.props;
+const visits = eventsAtTrack(track);
+const series = [...new Set(visits.map((v) => v.file.shortName))];
+const facts: { label: string; value: string }[] = [];
+if (track.lengthKm != null) facts.push({ label: 'Length', value: `${track.lengthKm} km${track.lengthMi != null ? ` (${track.lengthMi} mi)` : ''}` });
+if (track.turns != null) facts.push({ label: 'Turns', value: String(track.turns) });
+if (track.location || track.country) facts.push({ label: 'Location', value: [track.location, track.country].filter(Boolean).join(', ') });
+if (track.opened) facts.push({ label: 'Opened', value: track.opened });
+if (track.surface) facts.push({ label: 'Surface', value: track.surface });
+if (track.capacity) facts.push({ label: 'Capacity', value: track.capacity });
+if (track.layouts) facts.push({ label: 'Layouts', value: track.layouts });
+const mapUrl = track.coordinates ? `https://www.openstreetmap.org/?mlat=${track.coordinates.lat}&mlon=${track.coordinates.lon}#map=15/${track.coordinates.lat}/${track.coordinates.lon}` : null;
+---
+<Base title={track.name} description={`${track.name}: length, turns, lap records and every race we track there.`}>
+  <p class="meta racing-crumbs"><a href="/racing/">Racing</a> › <a href="/racing/tracks/">Tracks</a> › {track.name}</p>
+  <div class="racing-season-head">
+    <div>
+      <h1>{track.name}</h1>
+      <p class="subtitle">{[track.location, track.country].filter(Boolean).join(', ')}{series.length ? ` · ${series.join(', ')}` : ''}</p>
+    </div>
+    <div class="racing-track-links">
+      {mapUrl && <a class="btn" href={mapUrl} target="_blank" rel="noopener">Map ↗</a>}
+      <a class="wiki-link" href={track.wikiUrl} target="_blank" rel="noopener">Wikipedia ↗</a>
+    </div>
+  </div>
+
+  {track.summary && <p class="racing-track-summary">{track.summary}</p>}
+
+  <div class="racing-standings-grid">
+    {facts.length > 0 && (
+      <section>
+        <h3 class="racing-table-title">Circuit</h3>
+        <div class="panel">
+          <table class="racing-facts">
+            <tbody>
+              {facts.map((f) => (
+                <tr><td class="meta">{f.label}</td><td>{f.value}</td></tr>
+              ))}
+              {track.elevation && <tr><td class="meta">Elevation</td><td>{track.elevation}</td></tr>}
+              {track.coordinates && <tr><td class="meta">Coordinates</td><td class="mono">{track.coordinates.lat.toFixed(4)}, {track.coordinates.lon.toFixed(4)}</td></tr>}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+    {track.records.length > 0 && (
+      <section>
+        <h3 class="racing-table-title">Lap records</h3>
+        <div class="panel">
+          <table class="racing-facts">
+            <thead><tr><th>Class</th><th class="num">Time</th><th>Driver</th><th>Year</th></tr></thead>
+            <tbody>
+              {track.records.map((r) => (
+                <tr>
+                  <td class="meta">{r.cls ?? ''}</td>
+                  <td class="num mono">{r.time ?? ''}</td>
+                  <td>{r.driver ?? ''}{r.team ? <span class="meta"> · {r.team}</span> : null}</td>
+                  <td class="meta">{r.year ?? ''}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+  </div>
+
+  <h2>Races here</h2>
+  {visits.length === 0 ? (
+    <div class="panel"><div class="empty-state">Nothing on file at this track yet.</div></div>
+  ) : (
+    <div class="panel">
+      <table class="racing-calendar">
+        <thead><tr><th>Series</th><th>Event</th><th>Dates</th><th>Winner</th></tr></thead>
+        <tbody>
+          {visits.map(({ file, event }) => {
+            const winners = raceWinners(file, event);
+            return (
+              <tr class={`status-${event.status}`}>
+                <td class="meta nowrap"><a href={`/racing/${file.series}/${file.season}/`}>{file.shortName}</a></td>
+                <td><a class="racing-event-link" href={`/racing/${file.series}/${file.season}/${event.id}/`}><strong>{event.name}</strong></a>{event.status === 'live' && <span class="badge live">This weekend</span>}</td>
+                <td class="meta nowrap">{eventDates(event)}</td>
+                <td>
+                  {winners.length ? winners.map((w) => (
+                    <div>{file.classes.length > 1 && <span class="meta">{w.className}: </span>}<span class="rank-1">{resultLabel(w.winner)}</span></div>
+                  )) : <span class="meta">{event.status === 'finished' ? 'results pending' : '—'}</span>}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  <p class="meta racing-footnote">
+    Circuit facts and description from the <a href={track.wikiUrl} target="_blank" rel="noopener">Wikipedia article</a>
+    (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>), fetched {track.fetchedAt.slice(0, 10)}.
+    Lap records are as the article lists them and may lag the official ones.
+  </p>
+</Base>

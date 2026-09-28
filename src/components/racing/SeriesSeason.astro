@@ -2,8 +2,8 @@
 // One series, one season: standings up top, then the calendar with a
 // one-line result for every finished round. Shared by /racing/<series>/ (the
 // latest season) and /racing/<series>/<season>/ (any season on file).
-import type { SeasonFile } from '../../lib/racing';
-import { rounds, raceWinners, eventDates, resultLabel, nextSession, timeAgo, className } from '../../lib/racing';
+import type { SeasonFile, Standing } from '../../lib/racing';
+import { rounds, raceWinners, eventDates, resultLabel, nextSession, timeAgo, className, pointsSplit, driverSlug, trackFor, circuitNameFor, SESSION_TYPE_LABEL } from '../../lib/racing';
 import StandingsTable from './StandingsTable.astro';
 import LocalTime from './LocalTime.astro';
 
@@ -17,6 +17,29 @@ const tests = file.events.filter((e) => e.test);
 const next = nextSession(file);
 const nameLabel = file.series === 'motogp' || file.series === 'wsbk' ? 'Rider' : 'Driver';
 const base = `/racing/${file.series}/${file.season}/`;
+
+// Sprint points: for a class whose sessions pay points in more than one
+// session type (MotoGP and F1 sprints, WSBK's Superpole Race), the riders'
+// table gets a column per type so the split is visible next to the total.
+function withSplit(st: Standing): Standing {
+  if (st.type !== 'drivers' && st.type !== 'riders') return st;
+  const split = pointsSplit(file, st.classId);
+  const types = split.types.filter((t) => t === 'race' || t === 'sprint');
+  if (types.length < 2) return st;
+  return {
+    ...st,
+    rows: st.rows.map((r) => {
+      const mine = r.name ? split.byDriver.get(driverSlug(r.name)) ?? {} : {};
+      const extra: Record<string, number> = {};
+      for (const t of types) extra[`${SESSION_TYPE_LABEL[t]} pts`] = mine[t] ?? 0;
+      return { ...r, extra: { ...extra, ...(r.extra ?? {}) } };
+    }),
+  };
+}
+const standings = file.standings.map(withSplit);
+// Three or more tables side by side is what forced the sideways scroll on
+// the MotoGP page (three classes); from three up they stack full width.
+const stacked = standings.length > 2;
 ---
 <div class="racing-season-head">
   <div>
@@ -49,11 +72,11 @@ const base = `/racing/${file.series}/${file.season}/`;
 {file.standings.length > 0 && (
   <>
     <h2>Standings</h2>
-    <div class="racing-standings-grid">
-      {file.standings.map((st) => (
+    <div class={`racing-standings-grid ${stacked ? 'racing-standings-grid--stacked' : ''}`}>
+      {standings.map((st) => (
         <section>
           <h3 class="racing-table-title">{st.name}</h3>
-          <StandingsTable standing={st} />
+          <StandingsTable standing={st} linkBase={st.type === 'drivers' || st.type === 'riders' ? `${base}driver/${st.classId}--` : undefined} />
         </section>
       ))}
     </div>
@@ -82,7 +105,18 @@ const base = `/racing/${file.series}/${file.season}/`;
               {e.status === 'live' && <span class="badge live">This weekend</span>}
               {e.status === 'cancelled' && <span class="badge cancelled">Cancelled</span>}
               {e.playoff && <span class="badge upcoming">Playoffs</span>}
-              <div class="meta">{[e.circuit, e.location, e.country].filter(Boolean).join(' · ')}</div>
+              <div class="meta">
+                {(() => {
+                  const track = trackFor(file, e);
+                  const circuit = circuitNameFor(file, e);
+                  return (
+                    <>
+                      {track ? <a href={`/racing/tracks/${track.slug}/`}>{circuit}</a> : circuit}
+                      {[e.location, e.country].filter(Boolean).map((x) => <> · {x}</>)}
+                    </>
+                  );
+                })()}
+              </div>
             </td>
             <td class="meta nowrap">{eventDates(e, false)}</td>
             <td>

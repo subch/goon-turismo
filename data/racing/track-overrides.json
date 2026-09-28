@@ -1,0 +1,13 @@
+{
+  "_comment": "Exact Wikipedia article titles for circuit names the search resolves wrongly. Key is '<series>:<circuit name as the feed/alias spells it>'. Re-run `npm run scrape:tracks -- --full` after editing.",
+  "formulae:ExCeL London Circuit": "ExCeL London",
+  "motogp:MotorLand Aragón": "MotorLand Aragón",
+  "nascar:Bowman Gray Stadium": "Bowman Gray Stadium",
+  "indycar:Mid-Ohio Sports Car Course": "Mid-Ohio Sports Car Course",
+  "motoamerica:Mid-Ohio Sports Car Course": "Mid-Ohio Sports Car Course",
+  "indycar:Indianapolis Motor Speedway road course": "Indianapolis Motor Speedway",
+  "motoamerica:Michelin Raceway Road Atlanta": "Road Atlanta",
+  "motogp:Le Mans": "Bugatti Circuit",
+  "wsbk:Circuito Estoril": "Circuito do Estoril",
+  "formulae:Jarama Circuit": "Circuito del Jarama"
+}

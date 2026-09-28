@@ -96,3 +96,15 @@ if (ok === 0 && failed > 0) {
   console.error('every series failed');
   process.exit(1);
 }
+
+// Track pages: resolve any circuit the season files now mention that
+// data/racing/tracks.json doesn't have yet (Wikipedia; incremental, so a
+// normal run makes no requests at all). A failure here is a warning, never
+// a reason to lose the results sync above.
+if (!only || process.env.RACING_TRACKS === '1') {
+  try {
+    await import('./scrape-tracks.mjs');
+  } catch (err) {
+    console.warn(`WARN: track sync failed: ${err.message}`);
+  }
+}

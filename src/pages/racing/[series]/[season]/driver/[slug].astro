@@ -1,0 +1,119 @@
+---
+// One driver's season: where they sit in the table, then every classified
+// appearance in calendar order -- race, sprint, qualifying, practice -- with
+// the points split by session type for the series that score sprints.
+import Base from '../../../../../layouts/Base.astro';
+import { racingSeasons, driversIn, driverRecord, pointsSplit, className, eventDates, SESSION_TYPE_LABEL } from '../../../../../lib/racing';
+import type { SessionType } from '../../../../../lib/racing';
+
+export function getStaticPaths() {
+  return racingSeasons.flatMap((file) =>
+    driversIn(file).map((d) => ({
+      params: { series: file.series, season: String(file.season), slug: `${d.classId}--${d.slug}` },
+      props: { file, driver: d },
+    })),
+  );
+}
+
+const { file, driver } = Astro.props;
+const record = driverRecord(file, driver.classId, driver.slug);
+const split = pointsSplit(file, driver.classId);
+const mine = split.byDriver.get(driver.slug) ?? {};
+const scoringTypes = split.types.filter((t) => t === 'race' || t === 'sprint');
+const totalPoints = scoringTypes.reduce((n, t) => n + (mine[t] ?? 0), 0);
+const races = record.filter((r) => r.session.type === 'race' || r.session.type === 'sprint');
+const wins = races.filter((r) => r.result.pos === 1).length;
+const podiums = races.filter((r) => r.result.pos != null && r.result.pos <= 3).length;
+const dnfs = races.filter((r) => r.result.pos == null).length;
+const best = races.reduce((b, r) => (r.result.pos != null && (b == null || r.result.pos < b) ? r.result.pos : b), null as number | null);
+const base = `/racing/${file.series}/${file.season}/`;
+const showClass = file.classes.length > 1;
+const order: SessionType[] = ['race', 'sprint', 'qualifying', 'practice', 'warmup', 'other'];
+---
+<Base title={`${driver.name} – ${file.shortName} ${file.seasonLabel ?? file.season}`} description={`${driver.name}'s ${file.name} ${file.seasonLabel ?? file.season} season, every session.`}>
+  <p class="meta racing-crumbs">
+    <a href="/racing/">Racing</a> › <a href={base}>{file.name} {file.seasonLabel ?? file.season}</a>
+    {showClass && <> › {className(file, driver.classId)}</>}
+  </p>
+  <div class="racing-season-head">
+    <div>
+      <h1>{driver.name}</h1>
+      <p class="subtitle">
+        {[driver.number != null ? `#${String(driver.number).replace(/^#/, '')}` : null, driver.team, driver.make].filter(Boolean).join(' · ')}
+      </p>
+    </div>
+  </div>
+
+  <div class="racing-stats">
+    {driver.standing && (
+      <div class="racing-stat">
+        <span class="racing-block-label">{driver.standing.table}</span>
+        <strong>P{driver.standing.pos ?? '—'}</strong>
+        <span class="meta">{driver.standing.points ?? 0} pts</span>
+      </div>
+    )}
+    <div class="racing-stat">
+      <span class="racing-block-label">Starts</span>
+      <strong>{races.length}</strong>
+      <span class="meta">{scoringTypes.length > 1 ? 'races and sprints' : 'races'}</span>
+    </div>
+    <div class="racing-stat">
+      <span class="racing-block-label">Wins</span>
+      <strong>{wins}</strong>
+      <span class="meta">{podiums} podiums</span>
+    </div>
+    <div class="racing-stat">
+      <span class="racing-block-label">Best</span>
+      <strong>{best != null ? `P${best}` : '—'}</strong>
+      <span class="meta">{dnfs} not classified</span>
+    </div>
+    {scoringTypes.length > 1 && (
+      <div class="racing-stat">
+        <span class="racing-block-label">Points split</span>
+        <strong>{totalPoints}</strong>
+        <span class="meta">{scoringTypes.map((t) => `${mine[t] ?? 0} ${SESSION_TYPE_LABEL[t].toLowerCase()}`).join(' + ')}</span>
+      </div>
+    )}
+  </div>
+
+  <h2>Season record</h2>
+  {record.length === 0 ? (
+    <div class="panel"><div class="empty-state">No classified sessions on file yet.</div></div>
+  ) : (
+    <div class="panel racing-results">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-pos">Rd</th>
+            <th>Event</th>
+            <th>Session</th>
+            <th class="col-pos">Pos</th>
+            <th class="num">Time / gap</th>
+            <th class="num">Pts</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {record
+            .slice()
+            .sort((a, b) => (a.event.round ?? 999) - (b.event.round ?? 999) || String(a.session.startUtc ?? '').localeCompare(String(b.session.startUtc ?? '')) || order.indexOf(a.session.type) - order.indexOf(b.session.type))
+            .map(({ event, session, result }) => (
+              <tr class={session.type === 'race' || session.type === 'sprint' ? 'racing-record-scoring' : ''}>
+                <td class="col-pos meta">{event.round ?? ''}</td>
+                <td><a href={`${base}${event.id}/`}>{event.name}</a><div class="meta">{eventDates(event, false)}</div></td>
+                <td><span class={`racing-session-type type-${session.type}`}>{SESSION_TYPE_LABEL[session.type]}</span> <span class="meta">{session.name}</span></td>
+                <td class={`col-pos ${result.pos && result.pos <= 3 ? `rank-${result.pos}` : ''}`}>{result.pos ?? '—'}</td>
+                <td class="num mono meta">{result.time ?? result.gap ?? ''}</td>
+                <td class="num">{result.points ?? ''}</td>
+                <td class="meta">{result.status ?? ''}</td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  <p class="meta racing-footnote">
+    Every session with a published classification, from <a href={file.source.url} target="_blank" rel="noopener">{file.source.name}</a>. Points are the session's own; the split is a sum of what each session paid.
+  </p>
+</Base>

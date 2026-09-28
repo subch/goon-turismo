@@ -16,7 +16,8 @@
     "process:issue-result": "node scripts/process-issue-result.mjs",
     "import:historical-seasons": "node scripts/import-historical-seasons.mjs",
     "verify:data": "node scripts/verify-data-integrity.mjs",
-    "scrape:racing": "node scripts/scrape-racing.mjs"
+    "scrape:racing": "node scripts/scrape-racing.mjs",
+    "scrape:tracks": "node scripts/scrape-tracks.mjs"
   },
   "dependencies": {
     "astro": "^4.16.0",
