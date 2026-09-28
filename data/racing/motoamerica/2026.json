@@ -4,7 +4,7 @@
   "shortName": "MotoAmerica",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-27T22:33:02.414Z",
+  "syncedAt": "2026-09-28T00:33:06.385Z",
   "source": {
     "name": "results.motoamerica.com",
     "url": "https://results.motoamerica.com/"
@@ -71777,7 +71777,7 @@
       "country": "USA",
       "dateStart": "2026-09-25",
       "dateEnd": "2026-09-27",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://results.motoamerica.com/",
       "complete": false,
       "sessions": [
@@ -72751,7 +72751,7 @@
           "name": "Qualifying 1",
           "startUtc": null,
           "endUtc": null,
-          "status": "upcoming",
+          "status": "finished",
           "results": null
         },
         {
@@ -72761,7 +72761,7 @@
           "name": "Qualifying 2",
           "startUtc": null,
           "endUtc": null,
-          "status": "upcoming",
+          "status": "finished",
           "results": null
         },
         {
@@ -78748,7 +78748,7 @@
           "name": "Challenge Race",
           "startUtc": null,
           "endUtc": null,
-          "status": "upcoming",
+          "status": "finished",
           "results": null
         },
         {

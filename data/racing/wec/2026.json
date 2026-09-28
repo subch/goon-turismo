@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-09-27T22:32:21.561Z",
+  "syncedAt": "2026-09-28T00:32:28.053Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -19038,7 +19038,7 @@
       "country": null,
       "dateStart": "2026-09-25",
       "dateEnd": "2026-09-27",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.fiawec.com/en/race/6-hours-of-fuji-2026",
       "complete": false,
       "sessions": [

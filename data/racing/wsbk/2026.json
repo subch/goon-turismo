@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-27T22:32:32.844Z",
+  "syncedAt": "2026-09-28T00:32:38.951Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -48818,7 +48818,7 @@
       "country": "ITA",
       "dateStart": "2026-09-25",
       "dateEnd": "2026-09-27",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.worldsbk.com/en/results/2026/cre/sbk/001",
       "complete": false,
       "sessions": [
