@@ -53,7 +53,8 @@ const API = 'https://en.wikipedia.org/w/api.php';
 const COMMONS = 'https://commons.wikimedia.org/w/api.php';
 const OVERPASS = 'https://overpass-api.de/api/interpreter';
 const DELAY = 700;
-const full = process.argv.includes('--full');
+// --full refetches everything; ignored when scrape-racing runs this step.
+const full = process.argv.includes('--full') && !process.env.RACING_TRACKS_INCREMENTAL;
 // --relayout: only retry the drawing for tracks that have none (no Wikipedia refetch).
 const relayout = process.argv.includes('--relayout');
 const log = (m) => console.log(`[${new Date().toISOString().slice(11, 19)}] ${m}`);

@@ -21,7 +21,10 @@ const split = pointsSplit(file, driver.classId);
 const mine = split.byDriver.get(driver.slug) ?? {};
 const scoringTypes = split.types.filter((t) => t === 'race' || t === 'sprint');
 const totalPoints = scoringTypes.reduce((n, t) => n + (mine[t] ?? 0), 0);
-const races = record.filter((r) => r.session.type === 'race' || r.session.type === 'sprint');
+// Headline stats count real starts only: not exhibition events (NASCAR's
+// Clash, Duels, All-Star) and not the red-flagged first part of a restarted
+// WSBK race, which is kept as its own session.
+const races = record.filter((r) => (r.session.type === 'race' || r.session.type === 'sprint') && !r.event.test && !/red flag/i.test(r.session.name));
 const wins = races.filter((r) => r.result.pos === 1).length;
 const podiums = races.filter((r) => r.result.pos != null && r.result.pos <= 3).length;
 const dnfs = races.filter((r) => r.result.pos == null).length;

@@ -1,12 +1,12 @@
 ---
 import type { Standing } from '../../lib/racing';
-import { resultLabel, driverSlug } from '../../lib/racing';
+import { resultLabel, driverKey } from '../../lib/racing';
 
 interface Props {
   standing: Standing;
   /** Show only the top N rows (overview cards); omit for the full table. */
   limit?: number;
-  /** When set, each named row links to `${linkBase}${driverSlug(name)}/` (the driver's season page). */
+  /** When set, each named row links to `${linkBase}${driverKey(name)}/` (the driver's season page). */
   linkBase?: string;
 }
 const { standing, limit, linkBase } = Astro.props;
@@ -19,8 +19,11 @@ const showNumber = rows.some((r) => r.number != null) && standing.type !== 'manu
 // every key any row carries, in first-seen order.
 const extraKeys: string[] = [];
 for (const r of rows) for (const k of Object.keys(r.extra ?? {})) if (!extraKeys.includes(k)) extraKeys.push(k);
+// A dozen columns (NASCAR) only fits the page at a tighter cell size.
+const columnCount = 3 + [showNumber, showTeam, showMake, showWins].filter(Boolean).length + extraKeys.length;
+const wide = columnCount > 8;
 ---
-<div class="panel racing-standings">
+<div class={`panel racing-standings ${wide ? 'racing-standings--wide' : ''}`}>
   <table>
     <thead>
       <tr>
@@ -39,7 +42,7 @@ for (const r of rows) for (const k of Object.keys(r.extra ?? {})) if (!extraKeys
         <tr>
           <td class={`col-pos ${r.pos && r.pos <= 3 ? `rank-${r.pos}` : ''}`}>{r.pos ?? '—'}</td>
           {showNumber && <td class="col-num meta">{r.number != null ? String(r.number).replace(/^#/, '') : ''}</td>}
-          <td class="col-name">{linkBase && r.name ? <a class="racing-driver-link" href={`${linkBase}${driverSlug(r.name)}/`}>{r.name}</a> : resultLabel(r)}</td>
+          <td class="col-name">{linkBase && r.name ? <a class="racing-driver-link" href={`${linkBase}${driverKey(r.name)}/`}>{r.name}</a> : resultLabel(r)}</td>
           {showTeam && <td class="meta">{r.team ?? ''}</td>}
           {showMake && <td class="meta">{r.make ?? ''}</td>}
           {showWins && <td class="num meta">{r.wins ?? ''}</td>}

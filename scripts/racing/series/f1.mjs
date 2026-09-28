@@ -140,7 +140,7 @@ export async function fetchSeason({ season, log }) {
       dateStart,
       dateEnd: raceDate,
       status,
-      officialUrl: race.url ?? null, // Jolpica links the Wikipedia article; F1's own results pages need a per-race slug we can't derive
+      officialUrl: `https://www.formula1.com/en/results/${season}/races`, // the season index: F1 per-race slugs are not derivable from Jolpica
       complete: status === 'finished' && !!rr?.length,
       sessions,
     });

@@ -35,14 +35,6 @@ function fmtGap(ms) {
   return `+${s.replace(/^0:/, '')}`;
 }
 
-// "+02:00" style offset from the feed's minutes -> ISO start at 00:00 local.
-function localMidnightIso(date, offsetMinutes) {
-  if (!date) return null;
-  const sign = offsetMinutes >= 0 ? '+' : '-';
-  const abs = Math.abs(offsetMinutes ?? 0);
-  return `${date}T00:00:00${sign}${String(Math.floor(abs / 60)).padStart(2, '0')}:${String(abs % 60).padStart(2, '0')}`;
-}
-
 function crewName(e) {
   const d = e.driver ? `${e.driver.firstName} ${titleLast(e.driver.lastName)}` : null;
   const c = e.codriver ? `${e.codriver.firstName} ${titleLast(e.codriver.lastName)}` : null;
@@ -76,17 +68,17 @@ export async function fetchSeason({ season, previous, full, log }) {
       continue;
     }
     const status = eventStatus(ev.startDate, ev.finishDate);
-    const startUtc = localMidnightIso(ev.startDate, ev.timeZoneOffset);
+    // No start time: a rally has no single session start, and a local
+    // midnight would render as a real clock time in the viewer's zone.
+    const startUtc = null;
     let results = null;
     if (status !== 'upcoming') {
       log?.(`  ${ev.name}`);
       const evDetail = await getJson(`${BASE}/events/${ev.eventId}.json`, { delayMs: DELAY });
       const rally = (evDetail.rallies ?? []).find((r) => r.isMain) ?? evDetail.rallies?.[0];
       if (rally) {
-        const [entries, rows] = await Promise.all([
-          getJson(`${BASE}/events/${ev.eventId}/rallies/${rally.rallyId}/entries.json`, { delayMs: DELAY }),
-          getJson(`${BASE}/events/${ev.eventId}/rallies/${rally.rallyId}/results.json`, { delayMs: DELAY }),
-        ]);
+        const entries = await getJson(`${BASE}/events/${ev.eventId}/rallies/${rally.rallyId}/entries.json`, { delayMs: DELAY });
+        const rows = await getJson(`${BASE}/events/${ev.eventId}/rallies/${rally.rallyId}/results.json`, { delayMs: DELAY });
         const byEntry = new Map(entries.map((e) => [e.entryId, e]));
         results = rows
           .sort((a, b) => (a.position ?? 999) - (b.position ?? 999))
@@ -129,7 +121,7 @@ export async function fetchSeason({ season, previous, full, log }) {
           name: 'Overall classification',
           startUtc,
           endUtc: null,
-          status: sessionStatus(startUtc, null, status === 'finished' ? 'FINISHED' : null, !!results),
+          status: sessionStatus(null, null, status === 'finished' ? 'FINISHED' : null, !!results),
           results,
         },
       ],
@@ -142,10 +134,8 @@ export async function fetchSeason({ season, previous, full, log }) {
   for (const want of STANDINGS) {
     const c = champs.find((x) => want.match.test(x.name));
     if (!c) continue;
-    const [cd, overall] = await Promise.all([
-      getJson(`${BASE}/championship-detail.json?championshipId=${c.championshipId}&seasonId=${s.seasonId}`, { delayMs: DELAY }),
-      getJson(`${BASE}/championship-overall-results.json?championshipId=${c.championshipId}&seasonId=${s.seasonId}`, { delayMs: DELAY }),
-    ]);
+    const cd = await getJson(`${BASE}/championship-detail.json?championshipId=${c.championshipId}&seasonId=${s.seasonId}`, { delayMs: DELAY });
+    const overall = await getJson(`${BASE}/championship-overall-results.json?championshipId=${c.championshipId}&seasonId=${s.seasonId}`, { delayMs: DELAY });
     const entries = new Map((cd.championshipEntries ?? []).map((e) => [e.championshipEntryId, e]));
     const rows = (overall.entryResults ?? [])
       .sort((a, b) => (a.overallPosition ?? 999) - (b.overallPosition ?? 999))

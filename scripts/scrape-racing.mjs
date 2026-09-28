@@ -103,6 +103,8 @@ if (ok === 0 && failed > 0) {
 // a reason to lose the results sync above.
 if (!only || process.env.RACING_TRACKS === '1') {
   try {
+    // Never let this run's --full cascade into refetching every track.
+    process.env.RACING_TRACKS_INCREMENTAL = '1';
     await import('./scrape-tracks.mjs');
   } catch (err) {
     console.warn(`WARN: track sync failed: ${err.message}`);

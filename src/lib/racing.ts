@@ -249,6 +249,19 @@ export function driverSlug(name: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
+/** The slug a name links and matches by. WRC results name the crew
+ * ("Elfyn Evans / Scott Martin") while the standings name the driver, so a
+ * crew string keys on its first member. */
+export function driverKey(name: string): string {
+  return driverSlug(name.split(' / ')[0]);
+}
+
+/** Whether any result in the file names a person: WEC classifies cars, so it
+ * gets no driver pages even though its standings list drivers. */
+export function hasDriverResults(file: SeasonFile): boolean {
+  return file.events.some((e) => e.sessions.some((s) => s.results?.some((r) => r.name)));
+}
+
 export type DriverEntry = {
   slug: string;
   name: string;
@@ -263,14 +276,15 @@ export type DriverEntry = {
  * the "official" spelling), then anyone else who only shows up in a result. */
 export function driversIn(file: SeasonFile): DriverEntry[] {
   const out = new Map<string, DriverEntry>();
+  if (!hasDriverResults(file)) return [];
   for (const st of file.standings) {
     if (st.type !== 'drivers' && st.type !== 'riders') continue;
     for (const r of st.rows) {
       if (!r.name) continue;
-      const key = `${st.classId}:${driverSlug(r.name)}`;
+      const key = `${st.classId}:${driverKey(r.name)}`;
       if (out.has(key)) continue;
       out.set(key, {
-        slug: driverSlug(r.name),
+        slug: driverKey(r.name),
         name: r.name,
         classId: st.classId,
         number: r.number ?? null,
@@ -284,9 +298,9 @@ export function driversIn(file: SeasonFile): DriverEntry[] {
     for (const s of e.sessions) {
       for (const r of s.results ?? []) {
         if (!r.name) continue;
-        const key = `${s.classId}:${driverSlug(r.name)}`;
+        const key = `${s.classId}:${driverKey(r.name)}`;
         if (out.has(key)) continue;
-        out.set(key, { slug: driverSlug(r.name), name: r.name, classId: s.classId, number: r.number ?? null, team: r.team ?? null, make: r.make ?? null, standing: null });
+        out.set(key, { slug: driverKey(r.name), name: r.name.split(' / ')[0], classId: s.classId, number: r.number ?? null, team: r.team ?? null, make: r.make ?? null, standing: null });
       }
     }
   }
@@ -301,7 +315,7 @@ export function driverRecord(file: SeasonFile, classId: string, slug: string): R
   for (const e of file.events) {
     for (const s of e.sessions) {
       if (s.classId !== classId || !s.results) continue;
-      const r = s.results.find((x) => x.name && driverSlug(x.name) === slug);
+      const r = s.results.find((x) => x.name && driverKey(x.name) === slug);
       if (r) rows.push({ event: e, session: s, result: r });
     }
   }
@@ -320,7 +334,7 @@ export function pointsSplit(file: SeasonFile, classId: string): { types: Session
       for (const r of s.results) {
         if (!r.name || r.points == null || r.points <= 0) continue;
         types.add(s.type);
-        const k = driverSlug(r.name);
+        const k = driverKey(r.name);
         const acc = byDriver.get(k) ?? {};
         acc[s.type] = (acc[s.type] ?? 0) + r.points;
         byDriver.set(k, acc);

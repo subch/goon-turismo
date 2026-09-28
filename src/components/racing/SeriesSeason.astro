@@ -3,7 +3,7 @@
 // one-line result for every finished round. Shared by /racing/<series>/ (the
 // latest season) and /racing/<series>/<season>/ (any season on file).
 import type { SeasonFile, Standing } from '../../lib/racing';
-import { rounds, raceWinners, eventDates, resultLabel, nextSession, timeAgo, className, pointsSplit, driverSlug, trackFor, circuitNameFor, SESSION_TYPE_LABEL } from '../../lib/racing';
+import { rounds, raceWinners, eventDates, resultLabel, nextSession, timeAgo, className, pointsSplit, driverKey, hasDriverResults, trackFor, circuitNameFor, SESSION_TYPE_LABEL } from '../../lib/racing';
 import StandingsTable from './StandingsTable.astro';
 import LocalTime from './LocalTime.astro';
 
@@ -29,7 +29,7 @@ function withSplit(st: Standing): Standing {
   return {
     ...st,
     rows: st.rows.map((r) => {
-      const mine = r.name ? split.byDriver.get(driverSlug(r.name)) ?? {} : {};
+      const mine = r.name ? split.byDriver.get(driverKey(r.name)) ?? {} : {};
       const extra: Record<string, number> = {};
       for (const t of types) extra[`${SESSION_TYPE_LABEL[t]} pts`] = mine[t] ?? 0;
       return { ...r, extra: { ...extra, ...(r.extra ?? {}) } };
@@ -37,9 +37,13 @@ function withSplit(st: Standing): Standing {
   };
 }
 const standings = file.standings.map(withSplit);
-// Three or more tables side by side is what forced the sideways scroll on
-// the MotoGP page (three classes); from three up they stack full width.
-const stacked = standings.length > 2;
+// Side-by-side standings were what forced the sideways scroll: three
+// classes on the MotoGP page, and NASCAR's two tables with seven extra
+// columns each. Stack from three tables up, or whenever a table is wide.
+const wide = (st: Standing) => st.rows.some((r) => Object.keys(r.extra ?? {}).length > 2);
+const stacked = standings.length > 2 || standings.some(wide);
+// Driver pages exist only where results name people (not WEC's cars).
+const driverPages = hasDriverResults(file);
 ---
 <div class="racing-season-head">
   <div>
@@ -76,7 +80,7 @@ const stacked = standings.length > 2;
       {standings.map((st) => (
         <section>
           <h3 class="racing-table-title">{st.name}</h3>
-          <StandingsTable standing={st} linkBase={st.type === 'drivers' || st.type === 'riders' ? `${base}driver/${st.classId}--` : undefined} />
+          <StandingsTable standing={st} linkBase={driverPages && (st.type === 'drivers' || st.type === 'riders') ? `${base}driver/${st.classId}--` : undefined} />
         </section>
       ))}
     </div>

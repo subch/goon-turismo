@@ -1084,3 +1084,55 @@ th.num {
   background: color-mix(in srgb, var(--panel) 88%, transparent);
   font-size: 0.8rem;
 }
+
+/* Outline twin of .btn, same size and type, for the secondary action next
+   to a filled one (the Wikipedia link beside Map on a track page). */
+.btn.ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+  box-shadow: none;
+}
+
+.btn.ghost:hover {
+  color: var(--b);
+  border-color: var(--b);
+  filter: none;
+  text-shadow: 0 0 8px color-mix(in srgb, var(--b) 45%, transparent);
+}
+
+/* The facts table lives in a narrow column: no 480px floor, fixed layout,
+   values wrap. (The site-wide `table { min-width }` is for the GT7 tables.) */
+.racing-facts {
+  min-width: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.racing-facts td:first-child {
+  width: 7em;
+  white-space: nowrap;
+}
+
+.racing-facts td {
+  overflow-wrap: anywhere;
+}
+
+/* Grid children default to min-width:auto, which lets a wide table push the
+   whole page wider instead of scrolling inside its own panel. */
+.racing-standings-grid > section,
+.racing-track-body > * {
+  min-width: 0;
+}
+
+/* Twelve-column standings (NASCAR) fit the page at a tighter cell. */
+.racing-standings--wide thead th,
+.racing-standings--wide tbody td {
+  padding: 7px 7px;
+  font-size: 0.82rem;
+}
+
+.racing-standings--wide thead th {
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}

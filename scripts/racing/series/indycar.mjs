@@ -128,7 +128,7 @@ export async function fetchSeason({ season, previous, full, log }) {
       dateStart,
       dateEnd,
       status,
-      officialUrl: `https://www.indycar.com/results/ntt-indycar-series/${season}/${slug(e.EventName)}/race`,
+      officialUrl: `https://www.indycar.com/results/ntt-indycar-series/${season}/${slug(e.EventName.replace(/'/g, ""))}/race`, // the site drops apostrophes (childrens-of-alabama), slug() would keep a dash
       complete: status === 'finished' && sessions.length > 0 && allDone,
       raceId: e.raceId,
       sessions,

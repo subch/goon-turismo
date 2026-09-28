@@ -4,13 +4,13 @@
 // empty Points column and a WEC table (cars, not drivers) doesn't carry an
 // empty Driver column -- the same component covers all four series.
 import type { RacingResult } from '../../lib/racing';
-import { driverSlug } from '../../lib/racing';
+import { driverKey } from '../../lib/racing';
 
 interface Props {
   results: RacingResult[];
   /** "Driver" / "Rider" / "Car" -- what the name column holds for this series. */
   nameLabel?: string;
-  /** When set, each named row links to `${linkBase}${driverSlug(name)}/` (the driver's season page). */
+  /** When set, each named row links to `${linkBase}${driverKey(name)}/` (the driver's season page). */
   linkBase?: string;
 }
 const { results, nameLabel = 'Driver', linkBase } = Astro.props;
@@ -55,7 +55,7 @@ const showStatus = has('status');
           {showNumber && <td class="col-num meta">{r.number != null ? String(r.number).replace(/^#/, '') : ''}</td>}
           {showName && (
             <td class="col-name">
-              {r.name && linkBase ? <a class="racing-driver-link" href={`${linkBase}${driverSlug(r.name)}/`}>{r.name}</a> : r.name ?? (r.number != null ? `#${String(r.number).replace(/^#/, '')}` : '')}
+              {r.name && linkBase ? <a class="racing-driver-link" href={`${linkBase}${driverKey(r.name)}/`}>{r.name}</a> : r.name ?? (r.number != null ? `#${String(r.number).replace(/^#/, '')}` : '')}
             </td>
           )}
           {showTeam && <td class="meta">{r.team ?? ''}</td>}
