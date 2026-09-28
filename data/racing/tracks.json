@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-28T17:07:28.912Z",
+  "syncedAt": "2026-09-28T17:08:56.864Z",
   "tracks": [
     {
       "slug": "albert-park-circuit",
@@ -677,6 +677,10 @@
         {
           "series": "motogp",
           "name": "Chang International Circuit"
+        },
+        {
+          "series": "wsbk",
+          "name": "Chang International Circuit"
         }
       ],
       "wikiTitle": "Buriram International Circuit",
@@ -746,6 +750,43 @@
         "artist": "Stl66dmk",
         "numbered": null,
         "path": "/tracks/charlotte-motor-speedway.svg"
+      }
+    },
+    {
+      "slug": "chicago-street-course",
+      "name": "Chicago Street Course",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Chicago Street Race"
+        }
+      ],
+      "wikiTitle": "Chicago Street Course",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Chicago_Street_Course",
+      "location": "Chicago, Illinois",
+      "country": null,
+      "coordinates": {
+        "lat": 41.87583333,
+        "lon": -87.62055556
+      },
+      "lengthKm": 3.444,
+      "lengthMi": 2.14,
+      "turns": 12,
+      "opened": "2023-07-01",
+      "capacity": "",
+      "surface": "Asphalt",
+      "elevation": null,
+      "layouts": "Street Circuit (2023–2025)",
+      "fetchedAt": "2026-09-28T17:08:50.924Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Chicago Street Course.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Chicago_Street_Course.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Mindfrieze",
+        "numbered": null,
+        "path": "/tracks/chicago-street-course.svg"
       }
     },
     {
@@ -867,7 +908,7 @@
       "surface": "Tarmac",
       "elevation": null,
       "layouts": "Circuit des 24 Heures du Mans (2018–present)",
-      "fetchedAt": "2026-09-28T17:07:27.611Z",
+      "fetchedAt": "2026-09-28T17:08:46.629Z",
       "layout": {
         "kind": "wikimedia",
         "file": "Bugatti Circuit.svg",
@@ -931,6 +972,10 @@
         {
           "series": "wsbk",
           "name": "Circuit de Magny-Cours"
+        },
+        {
+          "series": "wsbk",
+          "name": "Magny-Cours"
         }
       ],
       "wikiTitle": "Circuit de Nevers Magny-Cours",
@@ -1218,6 +1263,10 @@
         {
           "series": "wsbk",
           "name": "Circuito de Jerez - Angel Nieto"
+        },
+        {
+          "series": "wsbk",
+          "name": "Circuito de Jerez"
         }
       ],
       "wikiTitle": "Circuito de Jerez",
@@ -1366,6 +1415,10 @@
         {
           "series": "wsbk",
           "name": "Circuito San Juan Villicum"
+        },
+        {
+          "series": "wsbk",
+          "name": "Villicum Circuit"
         }
       ],
       "wikiTitle": "Circuito San Juan Villicum",
@@ -1543,6 +1596,10 @@
         {
           "series": "nascar",
           "name": "Daytona International Speedway"
+        },
+        {
+          "series": "nascar",
+          "name": "Daytona International Speedway Road Course"
         }
       ],
       "wikiTitle": "Daytona International Speedway",
@@ -1693,31 +1750,6 @@
       }
     },
     {
-      "slug": "eurocup-3",
-      "name": "Eurocup-3",
-      "aliases": [
-        {
-          "series": "wsbk",
-          "name": "MotorLand Aragón 2"
-        }
-      ],
-      "wikiTitle": "Eurocup-3",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Eurocup-3",
-      "location": null,
-      "country": null,
-      "coordinates": null,
-      "lengthKm": null,
-      "lengthMi": null,
-      "turns": null,
-      "opened": null,
-      "capacity": null,
-      "surface": null,
-      "elevation": null,
-      "layouts": null,
-      "fetchedAt": "2026-09-28T17:01:00.359Z",
-      "layout": null
-    },
-    {
       "slug": "excel-london",
       "name": "Excel London",
       "aliases": [
@@ -1742,7 +1774,7 @@
       "surface": null,
       "elevation": null,
       "layouts": null,
-      "fetchedAt": "2026-09-28T17:07:25.563Z",
+      "fetchedAt": "2026-09-28T17:08:44.696Z",
       "layout": {
         "kind": "wikimedia",
         "file": "London Docks and ExCel Layout 2022.svg",
@@ -1830,74 +1862,6 @@
         "artist": "Stl66dmk",
         "numbered": null,
         "path": "/tracks/gateway-motorsports-park.svg"
-      }
-    },
-    {
-      "slug": "grand-prix-of-indianapolis",
-      "name": "Grand Prix of Indianapolis",
-      "aliases": [
-        {
-          "series": "nascar",
-          "name": "Indianapolis Motor Speedway Road Course"
-        }
-      ],
-      "wikiTitle": "Grand Prix of Indianapolis",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Grand_Prix_of_Indianapolis",
-      "location": "Speedway, Indiana, U.S. }}",
-      "country": null,
-      "coordinates": null,
-      "lengthKm": null,
-      "lengthMi": null,
-      "turns": null,
-      "opened": null,
-      "capacity": null,
-      "surface": null,
-      "elevation": null,
-      "layouts": null,
-      "fetchedAt": "2026-09-28T16:22:54.124Z",
-      "layout": {
-        "kind": "wikimedia",
-        "file": "Indianapolis Motor Speedway Grand Prix Road Course 2024.svg",
-        "url": "https://commons.wikimedia.org/wiki/File:Indianapolis_Motor_Speedway_Grand_Prix_Road_Course_2024.svg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "artist": "Stl66dmk",
-        "numbered": null,
-        "path": "/tracks/grand-prix-of-indianapolis.svg"
-      }
-    },
-    {
-      "slug": "grant-park-165",
-      "name": "Grant Park 165",
-      "aliases": [
-        {
-          "series": "nascar",
-          "name": "Chicago Street Race"
-        }
-      ],
-      "wikiTitle": "Grant Park 165",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Grant_Park_165",
-      "location": "Chicago, Illinois",
-      "country": null,
-      "coordinates": null,
-      "lengthKm": null,
-      "lengthMi": null,
-      "turns": 12,
-      "opened": null,
-      "capacity": null,
-      "surface": "Asphalt",
-      "elevation": null,
-      "layouts": null,
-      "fetchedAt": "2026-09-28T15:52:16.956Z",
-      "layout": {
-        "kind": "wikimedia",
-        "file": "Chicago Street Course.svg",
-        "url": "https://commons.wikimedia.org/wiki/File:Chicago_Street_Course.svg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "artist": "Mindfrieze",
-        "numbered": null,
-        "path": "/tracks/grant-park-165.svg"
       }
     },
     {
@@ -2038,6 +2002,10 @@
         {
           "series": "nascar",
           "name": "Indianapolis Motor Speedway"
+        },
+        {
+          "series": "nascar",
+          "name": "Indianapolis Motor Speedway Road Course"
         }
       ],
       "wikiTitle": "Indianapolis Motor Speedway",
@@ -2309,6 +2277,10 @@
         {
           "series": "motoamerica",
           "name": "WeatherTech Raceway Laguna Seca"
+        },
+        {
+          "series": "wsbk",
+          "name": "WeatherTech Raceway Laguna Seca"
         }
       ],
       "wikiTitle": "Laguna Seca",
@@ -2414,40 +2386,6 @@
       }
     },
     {
-      "slug": "list-of-superbike-world-championship-circuits",
-      "name": "List of Superbike World Championship circuits",
-      "aliases": [
-        {
-          "series": "wsbk",
-          "name": "MotorLand Aragón 1"
-        }
-      ],
-      "wikiTitle": "List of Superbike World Championship circuits",
-      "wikiUrl": "https://en.wikipedia.org/wiki/List_of_Superbike_World_Championship_circuits",
-      "location": null,
-      "country": null,
-      "coordinates": null,
-      "lengthKm": null,
-      "lengthMi": null,
-      "turns": null,
-      "opened": null,
-      "capacity": null,
-      "surface": null,
-      "elevation": null,
-      "layouts": null,
-      "fetchedAt": "2026-09-28T17:00:57.663Z",
-      "layout": {
-        "kind": "wikimedia",
-        "file": "Phillip Island Grand Prix Circuit v2022.svg",
-        "url": "https://commons.wikimedia.org/wiki/File:Phillip_Island_Grand_Prix_Circuit_v2022.svg",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "artist": "Phillip Island Grand Prix Circuit.svg: Will Pittenger",
-        "numbered": null,
-        "path": "/tracks/list-of-superbike-world-championship-circuits.svg"
-      }
-    },
-    {
       "slug": "long-beach-street-circuit",
       "name": "Long Beach Street Circuit",
       "aliases": [
@@ -2485,6 +2423,43 @@
       }
     },
     {
+      "slug": "los-angeles-memorial-coliseum",
+      "name": "Los Angeles Memorial Coliseum",
+      "aliases": [
+        {
+          "series": "nascar",
+          "name": "Los Angeles Memorial Coliseum"
+        }
+      ],
+      "wikiTitle": "Los Angeles Memorial Coliseum",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Los_Angeles_Memorial_Coliseum",
+      "location": "Los Angeles, California, United States",
+      "country": null,
+      "coordinates": {
+        "lat": 34.01416667,
+        "lon": -118.28777778
+      },
+      "lengthKm": null,
+      "lengthMi": null,
+      "turns": null,
+      "opened": "1923-05-01",
+      "capacity": "77,500, 93,607 (pre-2018),",
+      "surface": "Bermuda grass",
+      "elevation": null,
+      "layouts": null,
+      "fetchedAt": "2026-09-28T17:08:48.945Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "Olympic Rings.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Olympic_Rings.svg",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "artist": "Original author: Pierre de Coubertin (1863-1937)",
+        "numbered": null,
+        "path": "/tracks/los-angeles-memorial-coliseum.svg"
+      }
+    },
+    {
       "slug": "lusail-international-circuit",
       "name": "Lusail International Circuit",
       "aliases": [
@@ -2499,6 +2474,10 @@
         {
           "series": "wec",
           "name": "Lusail International Circuit"
+        },
+        {
+          "series": "wsbk",
+          "name": "Losail International Circuit"
         }
       ],
       "wikiTitle": "Lusail International Circuit",
@@ -2997,6 +2976,14 @@
         {
           "series": "wsbk",
           "name": "MotorLand Aragon"
+        },
+        {
+          "series": "wsbk",
+          "name": "MotorLand Aragón 1"
+        },
+        {
+          "series": "wsbk",
+          "name": "MotorLand Aragón 2"
         }
       ],
       "wikiTitle": "MotorLand Aragón",
@@ -3069,31 +3056,6 @@
       }
     },
     {
-      "slug": "nascar-races-at-daytona-international-speedway-road-course",
-      "name": "NASCAR races at Daytona International Speedway",
-      "aliases": [
-        {
-          "series": "nascar",
-          "name": "Daytona International Speedway Road Course"
-        }
-      ],
-      "wikiTitle": "NASCAR races at Daytona International Speedway (Road Course)",
-      "wikiUrl": "https://en.wikipedia.org/wiki/NASCAR_races_at_Daytona_International_Speedway_(Road_Course)",
-      "location": null,
-      "country": null,
-      "coordinates": null,
-      "lengthKm": null,
-      "lengthMi": null,
-      "turns": null,
-      "opened": null,
-      "capacity": null,
-      "surface": null,
-      "elevation": null,
-      "layouts": null,
-      "fetchedAt": "2026-09-28T17:00:55.377Z",
-      "layout": null
-    },
-    {
       "slug": "nashville-superspeedway",
       "name": "Nashville Superspeedway",
       "aliases": [
@@ -3133,34 +3095,6 @@
         "numbered": null,
         "path": "/tracks/nashville-superspeedway.svg"
       }
-    },
-    {
-      "slug": "nassau-coliseum",
-      "name": "Nassau Coliseum",
-      "aliases": [
-        {
-          "series": "nascar",
-          "name": "Los Angeles Memorial Coliseum"
-        }
-      ],
-      "wikiTitle": "Nassau Coliseum",
-      "wikiUrl": "https://en.wikipedia.org/wiki/Nassau_Coliseum",
-      "location": "Uniondale, New York, U.S.",
-      "country": null,
-      "coordinates": {
-        "lat": 40.72277778,
-        "lon": -73.59055556
-      },
-      "lengthKm": null,
-      "lengthMi": null,
-      "turns": null,
-      "opened": "February 11, 1972",
-      "capacity": "Concerts: 16,000, Basketball: 14,500, Ice hockey: 13,900",
-      "surface": "Multi-surface",
-      "elevation": null,
-      "layouts": null,
-      "fetchedAt": "2026-09-28T16:08:00.685Z",
-      "layout": null
     },
     {
       "slug": "new-hampshire-motor-speedway",

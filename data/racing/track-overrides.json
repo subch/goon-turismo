@@ -9,5 +9,11 @@
   "motoamerica:Michelin Raceway Road Atlanta": "Road Atlanta",
   "motogp:Le Mans": "Bugatti Circuit",
   "wsbk:Circuito Estoril": "Circuito do Estoril",
-  "formulae:Jarama Circuit": "Circuito del Jarama"
+  "formulae:Jarama Circuit": "Circuito del Jarama",
+  "nascar:Indianapolis Motor Speedway Road Course": "Indianapolis Motor Speedway",
+  "nascar:Chicago Street Race": "Chicago Street Course",
+  "nascar:Daytona International Speedway Road Course": "Daytona International Speedway",
+  "nascar:Los Angeles Memorial Coliseum": "Los Angeles Memorial Coliseum",
+  "wsbk:MotorLand Aragón 1": "MotorLand Aragón",
+  "wsbk:MotorLand Aragón 2": "MotorLand Aragón"
 }

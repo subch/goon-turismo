@@ -89,12 +89,39 @@ export type SeasonFile = {
   standings: Standing[];
 };
 
-const modules = import.meta.glob<{ default: SeasonFile }>('../../data/racing/*/*.json', { eager: true });
+// The season files are read from disk at build time, not imported: with
+// six seasons on file that is ~75 MB of JSON, and import.meta.glob would
+// bundle every byte of it into the SSR build as JavaScript, which is what
+// ran the VPS build out of heap (3.8 GB box). fs reads keep it as data.
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 
-export const racingSeasons: SeasonFile[] = Object.values(modules)
-  .map((m) => m.default)
-  .filter(Boolean)
-  .sort((a, b) => a.series.localeCompare(b.series) || b.season - a.season);
+const DATA_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'data', 'racing');
+
+function readJson<T>(file: string): T | null {
+  try {
+    return JSON.parse(readFileSync(file, 'utf8')) as T;
+  } catch {
+    return null;
+  }
+}
+
+function loadSeasons(): SeasonFile[] {
+  const out: SeasonFile[] = [];
+  if (!existsSync(DATA_DIR)) return out;
+  for (const dir of readdirSync(DATA_DIR, { withFileTypes: true })) {
+    if (!dir.isDirectory()) continue;
+    for (const f of readdirSync(path.join(DATA_DIR, dir.name))) {
+      if (!/^\d{4}\.json$/.test(f)) continue;
+      const file = readJson<SeasonFile>(path.join(DATA_DIR, dir.name, f));
+      if (file?.series) out.push(file);
+    }
+  }
+  return out;
+}
+
+export const racingSeasons: SeasonFile[] = loadSeasons().sort((a, b) => a.series.localeCompare(b.series) || b.season - a.season);
 
 // Display order on /racing/: the three the crew follows closest first, then
 // the rest. Mirrors the registration order in scripts/racing/series/index.mjs.
@@ -379,11 +406,9 @@ export type Track = {
   fetchedAt: string;
 };
 
-const trackModules = import.meta.glob<{ default: { tracks: Track[] } }>('../../data/racing/tracks.json', { eager: true });
-export const tracks: Track[] = (Object.values(trackModules)[0]?.default?.tracks ?? []).slice().sort((a, b) => a.name.localeCompare(b.name));
+export const tracks: Track[] = (readJson<{ tracks: Track[] }>(path.join(DATA_DIR, 'tracks.json'))?.tracks ?? []).slice().sort((a, b) => a.name.localeCompare(b.name));
 
-const aliasModules = import.meta.glob<{ default: Record<string, Record<string, string>> }>('../../data/racing/track-aliases.json', { eager: true });
-const trackAliases: Record<string, Record<string, string>> = Object.values(aliasModules)[0]?.default ?? {};
+const trackAliases: Record<string, Record<string, string>> = readJson<Record<string, Record<string, string>>>(path.join(DATA_DIR, 'track-aliases.json')) ?? {};
 
 /** The circuit name an event is known by: the series' own name when it
  * carries one, else the hand-kept alias for that event id. */
