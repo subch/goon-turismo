@@ -1033,3 +1033,54 @@ th.num {
   padding: 8px 12px;
   font-size: 0.92rem;
 }
+
+/* ---- track layouts ------------------------------------------------------ */
+
+.racing-track-body {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .racing-track-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.racing-layout {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.racing-layout img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  padding: 18px;
+}
+
+/* Commons maps are drawn for a white page (dark lines, colour fills): give
+   them the paper they expect, inside the black frame. */
+.racing-layout--wikimedia img {
+  background: #f3f0f5;
+}
+
+/* Our own OSM outline is drawn in the site's neon and sits straight on the
+   ground. */
+.racing-layout--osm img {
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+}
+
+.racing-layout figcaption {
+  padding: 10px 14px;
+  border-top: 1px solid var(--line-soft);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  font-size: 0.8rem;
+}

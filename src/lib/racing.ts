@@ -332,13 +332,23 @@ export function pointsSplit(file: SeasonFile, classId: string): { types: Session
 
 // ---- tracks --------------------------------------------------------------
 
-export type TrackRecord = { cls: string | null; time: string | null; driver: string | null; team: string | null; year: string | null };
+/** Where a circuit's drawing came from: a Wikimedia Commons SVG map (the
+ * ones with numbered turns) or an outline we drew from OpenStreetMap. */
+export type TrackLayout = {
+  kind: 'wikimedia' | 'osm';
+  path: string;
+  file: string | null;
+  url: string;
+  license: string | null;
+  licenseUrl: string | null;
+  artist: string | null;
+  numbered: boolean | null;
+};
 export type Track = {
   slug: string;
   name: string;
   wikiTitle: string;
   wikiUrl: string;
-  summary: string | null;
   location: string | null;
   country: string | null;
   coordinates: { lat: number; lon: number } | null;
@@ -350,7 +360,7 @@ export type Track = {
   surface: string | null;
   elevation: string | null;
   layouts: string | null;
-  records: TrackRecord[];
+  layout: TrackLayout | null;
   aliases: { series: string; name: string }[];
   fetchedAt: string;
 };

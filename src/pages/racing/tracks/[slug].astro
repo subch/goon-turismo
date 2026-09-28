@@ -1,7 +1,7 @@
 ---
-// One circuit: the facts Wikipedia carries for it (length, turns, lap
-// records, location, elevation change where the article says), a map link,
-// and every event on file held there, newest first, with its winners.
+// One circuit: its drawn layout (Wikimedia's numbered map where the article
+// has one, else an outline from OpenStreetMap), the facts Wikipedia carries
+// for it, a map link, and every event on file held there, newest first.
 import Base from '../../../layouts/Base.astro';
 import { tracks, eventsAtTrack, raceWinners, eventDates, resultLabel } from '../../../lib/racing';
 
@@ -21,8 +21,9 @@ if (track.surface) facts.push({ label: 'Surface', value: track.surface });
 if (track.capacity) facts.push({ label: 'Capacity', value: track.capacity });
 if (track.layouts) facts.push({ label: 'Layouts', value: track.layouts });
 const mapUrl = track.coordinates ? `https://www.openstreetmap.org/?mlat=${track.coordinates.lat}&mlon=${track.coordinates.lon}#map=15/${track.coordinates.lat}/${track.coordinates.lon}` : null;
+const layout = track.layout;
 ---
-<Base title={track.name} description={`${track.name}: length, turns, lap records and every race we track there.`}>
+<Base title={track.name} description={`${track.name}: layout, length, turns and every race we track there.`}>
   <p class="meta racing-crumbs"><a href="/racing/">Racing</a> › <a href="/racing/tracks/">Tracks</a> › {track.name}</p>
   <div class="racing-season-head">
     <div>
@@ -35,11 +36,29 @@ const mapUrl = track.coordinates ? `https://www.openstreetmap.org/?mlat=${track.
     </div>
   </div>
 
-  {track.summary && <p class="racing-track-summary">{track.summary}</p>}
+  <div class="racing-track-body">
+    {layout ? (
+      <figure class={`racing-layout racing-layout--${layout.kind}`}>
+        <img src={layout.path} alt={`${track.name} circuit layout`} loading="lazy" />
+        <figcaption class="meta">
+          {layout.kind === 'wikimedia' ? (
+            <>
+              <span>Circuit map{layout.numbered === false ? '' : ' with numbered turns'} by {layout.artist ?? 'Wikimedia Commons contributors'}, </span><a href={layout.url} target="_blank" rel="noopener">Wikimedia Commons</a><span>{layout.license ? ', ' : '.'}</span>{layout.license && (layout.licenseUrl ? <a href={layout.licenseUrl} target="_blank" rel="noopener">{layout.license}</a> : <span>{layout.license}</span>)}{layout.license && <span>.</span>}
+            </>
+          ) : (
+            <>
+              Outline drawn from <a href={layout.url} target="_blank" rel="noopener">OpenStreetMap</a> data (© OpenStreetMap contributors,
+              {' '}<a href={layout.licenseUrl ?? 'https://www.openstreetmap.org/copyright'} target="_blank" rel="noopener">ODbL</a>). No numbered map of this circuit is available.
+            </>
+          )}
+        </figcaption>
+      </figure>
+    ) : (
+      <div class="panel"><div class="empty-state">No layout available for this circuit yet.</div></div>
+    )}
 
-  <div class="racing-standings-grid">
     {facts.length > 0 && (
-      <section>
+      <section class="racing-track-facts-panel">
         <h3 class="racing-table-title">Circuit</h3>
         <div class="panel">
           <table class="racing-facts">
@@ -49,26 +68,6 @@ const mapUrl = track.coordinates ? `https://www.openstreetmap.org/?mlat=${track.
               ))}
               {track.elevation && <tr><td class="meta">Elevation</td><td>{track.elevation}</td></tr>}
               {track.coordinates && <tr><td class="meta">Coordinates</td><td class="mono">{track.coordinates.lat.toFixed(4)}, {track.coordinates.lon.toFixed(4)}</td></tr>}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    )}
-    {track.records.length > 0 && (
-      <section>
-        <h3 class="racing-table-title">Lap records</h3>
-        <div class="panel">
-          <table class="racing-facts">
-            <thead><tr><th>Class</th><th class="num">Time</th><th>Driver</th><th>Year</th></tr></thead>
-            <tbody>
-              {track.records.map((r) => (
-                <tr>
-                  <td class="meta">{r.cls ?? ''}</td>
-                  <td class="num mono">{r.time ?? ''}</td>
-                  <td>{r.driver ?? ''}{r.team ? <span class="meta"> · {r.team}</span> : null}</td>
-                  <td class="meta">{r.year ?? ''}</td>
-                </tr>
-              ))}
             </tbody>
           </table>
         </div>
@@ -105,8 +104,7 @@ const mapUrl = track.coordinates ? `https://www.openstreetmap.org/?mlat=${track.
   )}
 
   <p class="meta racing-footnote">
-    Circuit facts and description from the <a href={track.wikiUrl} target="_blank" rel="noopener">Wikipedia article</a>
+    Circuit facts from the <a href={track.wikiUrl} target="_blank" rel="noopener">Wikipedia article</a>
     (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>), fetched {track.fetchedAt.slice(0, 10)}.
-    Lap records are as the article lists them and may lag the official ones.
   </p>
 </Base>

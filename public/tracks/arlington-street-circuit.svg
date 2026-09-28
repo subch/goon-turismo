@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Circuit outline from OpenStreetMap">
+  <g fill="none" stroke="#ff3b2e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".35">
+    <path d="M463.0 121.2 L581.1 74.2 L760.0 147.1" />
+    <path d="M40.0 485.8 L463.0 121.2" />
+  </g>
+  <g fill="none" stroke="#ffd23f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M463.0 121.2 L581.1 74.2 L760.0 147.1" />
+    <path d="M40.0 485.8 L463.0 121.2" />
+  </g>
+</svg>

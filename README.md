@@ -126,16 +126,20 @@ timezone in the browser; the overview shows what's next and who won last for eve
   standing, starts, wins, podiums, best finish, the sprint/race split, and every classified
   session in calendar order. Names in standings and results tables link to it. WEC results are cars,
   not people, so it has none.
-- **Every circuit has a page** (`/racing/tracks/`, `/racing/tracks/<slug>/`): the Wikipedia
-  intro, length, turns, location, opened, capacity, layouts, an "elevation change" sentence when the
-  article has one, coordinates with a map link, the article's lap records, and every event on file
-  held there across all series with its winners. `npm run scrape:tracks` builds
-  `data/racing/tracks.json` from the circuit names in the season files plus
-  `data/racing/track-aliases.json` (hand-kept names for WEC, IndyCar, Formula E and MotoAmerica,
-  whose feeds carry no circuit); a wrong Wikipedia match is fixed by an exact title in
-  `data/racing/track-overrides.json` and `--full`. It runs at the end of every full
-  `scrape:racing` and only fetches circuits it hasn't seen. Wikipedia text is CC BY-SA and credited
-  on every page.
+- **Every circuit has a page** (`/racing/tracks/`, `/racing/tracks/<slug>/`): a drawn layout,
+  the facts (length, turns, location, opened, capacity, layouts, an "elevation change" sentence when
+  the article has one, coordinates with a map link) and every event on file held there across all
+  series with its winners. The layout is the article's SVG track map from Wikimedia Commons (the
+  drawn ones with numbered turns) where there is one, downloaded once to `public/tracks/<slug>.svg`
+  with scripts stripped and its author/licence credited under it; otherwise an outline drawn here
+  from OpenStreetMap's raceway ways (no turn numbers, and the page says so). Raster maps are never
+  used. `npm run scrape:tracks` builds `data/racing/tracks.json` from the circuit names in the
+  season files plus `data/racing/track-aliases.json` (hand-kept names for WEC, IndyCar, Formula E
+  and MotoAmerica, whose feeds carry no circuit); a wrong Wikipedia match, or a wrong map, is fixed in
+  `data/racing/track-overrides.json` (`"<series>:<name>": "<title>"`, `"layout:<slug>":
+  "<File.svg>"` or `"osm"`) and `--full`; `--relayout` retries only the drawings that are missing.
+  It runs at the end of every full `scrape:racing` and only fetches circuits it hasn't seen.
+  Wikipedia facts are CC BY-SA and credited on every page.
 - **Scheduled on the VPS** (`goon` stack, `sync.sh racing`, every two hours);
   `.github/workflows/sync-racing.yml` is the manual fallback.
 
