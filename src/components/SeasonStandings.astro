@@ -28,9 +28,17 @@ const allEvents = eventsForSeason(season.id).sort(
 const activeEvents = allEvents.filter(isEventActive);
 const otherEvents = allEvents.filter((e) => !isEventActive(e));
 const cur = currentSeason();
+// The label shows when the season's racing actually ran: the first Time
+// Trial's start to the last one's close. seasons.json's own boundaries are
+// filing rules (a TT belongs to the quarter it closes in), so a season's
+// first TT starts a week or two before its official first day.
+const starts = allEvents.map((e) => toComparableIso(e.startDate)).filter(Boolean).sort();
+const ends = allEvents.map((e) => toComparableIso(e.endDate) ?? toComparableIso(e.startDate)).filter(Boolean).sort();
+const labelStart = starts[0] ?? season.startDate;
+const labelEnd = season.endDate ? (ends.at(-1) ?? season.endDate) : null;
 ---
 <p class="subtitle">
-  {formatDate(season.startDate)} {season.endDate ? `– ${formatDate(season.endDate)}` : '– present'}
+  {formatDate(labelStart)} {labelEnd ? `– ${formatDate(labelEnd)}` : '– present'}
   {season.current && <span class="badge live" style="margin-left:8px;">Current</span>}
 </p>
 
