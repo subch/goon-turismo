@@ -826,10 +826,10 @@
   {
     "eventId": "663",
     "psn": "rickiep00h",
-    "timeRaw": "1:13.279",
-    "timeMs": 73279,
+    "timeRaw": "1:12.941",
+    "timeMs": 72941,
     "groupRank": 5,
-    "points": 53
+    "points": 58
   },
   {
     "eventId": "autumn-2024-24-heures-du-mans-2024-11-20",
@@ -3073,11 +3073,19 @@
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
+    "psn": "bravemen84",
+    "timeRaw": "1:39.880",
+    "timeMs": 99880,
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
     "psn": "devmotron",
     "timeRaw": "1:40.137",
     "timeMs": 100137,
-    "groupRank": 1,
-    "points": 100
+    "groupRank": 2,
+    "points": 97
   },
   {
     "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
