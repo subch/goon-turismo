@@ -238,7 +238,9 @@ async function main() {
       eventFiles[`official-events/${eventId}.json`] = {
         id: eventId,
         source: 'historical',
-        seasonId,
+        // From 2026 on seasons.json decides the season (calendar quarters),
+        // not the tab the row sat on -- keep what the sync last filed.
+        seasonId: existing?.seasonId ?? seasonId,
         track: existing?.track ?? em.circuit,
         car: existing?.car ?? em.car ?? null,
         classCode: existing?.classCode ?? null,

@@ -13,9 +13,9 @@
  * that writes the data, so this can never drift from it):
  *   1. No two events are the same Time Trial (rule 2: matching track and
  *      start OR end date within tolerance), in any season.
- *   2. Every non-spreadsheet event's seasonId is the season its end date
- *      falls in (rule 1). Spreadsheet-imported events are exempt: the sheet
- *      decides their season.
+ *   2. Every event's seasonId is the season its end date falls in (rule 1),
+ *      except spreadsheet-imported events from before 2026, whose tab decides
+ *      (seasons.mjs, SEASONS_JSON_DECIDES_FROM).
  *   3. Every result references an existing event; every event references an
  *      existing season; no event has an unknown source or a non-ISO date;
  *      nothing left over from the retired dg-edge pipeline.
@@ -26,7 +26,7 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { sameTimeTrial, seasonForEvent, toIso } from './lib/seasons.mjs';
+import { sameTimeTrial, seasonForEvent, seasonIsDerived, toIso } from './lib/seasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -77,11 +77,11 @@ async function main() {
   } else console.log(`OK: no duplicate Time Trials (${events.length} events checked).`);
 
   // 2. season rule
-  const wrongSeason = events.filter((e) => e.source !== 'historical' && seasonForEvent(e, seasons)?.id !== e.seasonId);
+  const wrongSeason = events.filter((e) => seasonIsDerived(e) && seasonForEvent(e, seasons)?.id !== e.seasonId);
   if (wrongSeason.length) {
     fail(`${wrongSeason.length} event(s) are filed under a season other than the one they end in:`);
     for (const e of wrongSeason) fail(`  - ${e.id}: seasonId=${e.seasonId}, ends ${e.endDate} (${seasonForEvent(e, seasons)?.id ?? 'no season'})`);
-  } else console.log('OK: every synced event is filed in the season it ends in.');
+  } else console.log('OK: every event seasons.json governs is filed in the season it ends in.');
 
   // 3. references, shapes, leftovers
   const orphaned = results.filter((r) => !eventIds.has(r.eventId));

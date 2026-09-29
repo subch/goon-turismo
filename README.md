@@ -65,10 +65,12 @@ at `/racing/`. Static Astro site served from the VPS at **goon-turismo.com** (Gi
   (`=IF(...,100-((time/MIN(...)-1)*1000))` per event, `=SUM(...)-SMALL(...,1)-SMALL(...,2)` for the
   season total), confirmed against real formulas in the crew's exported workbook and validated
   against 1200+ historical results.
-- **Seasons.** `data/seasons.json`, hand-maintained, newest first, exactly one `current: true`. Autumn
-  2026 opened 2026-09-25 (Summer 2026 closed 2026-09-24, the day its last Time Trial ended). To roll a
-  season: give the current one an `endDate`, set `current: false`, add the new one on top with
-  `endDate: null` -- the next sync re-files any Time Trial that ends in the new season.
+- **Seasons.** `data/seasons.json`, hand-maintained, newest first, exactly one `current: true`. From
+  2026 the seasons are **calendar quarters** (Winter Jan-Mar, Spring Apr-Jun, Summer Jul-Sep, Autumn
+  Oct-Dec) and that file decides every event's season, spreadsheet rows included -- the 2026 sheet tabs
+  had not been rolled on time. Earlier seasons keep the sheet's own boundaries. To roll a season: give
+  the current one an `endDate`, set `current: false`, add the new one on top with `endDate: null` --
+  the next sync re-files any Time Trial that ends in the new season.
 - **Why the history is frozen.** 11 past seasons (2023 through Spring 2026) come from the crew's original
   scoring spreadsheet via `scripts/import-historical-seasons.mjs` (safe to re-run: it keeps each event's
   real window, GT7 track name and car, and any result for a player the sheet never had). The 2026-09-28

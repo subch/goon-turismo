@@ -49,7 +49,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import { loadPointsConfig, rankAndScoreResults, parseTimeToMs } from './lib/points.mjs';
-import { seasonForDate, humanDateToIso, toIso, findMatchingEvent, officialEventId, canonicalEvent } from './lib/seasons.mjs';
+import { seasonForDate, humanDateToIso, toIso, findMatchingEvent, officialEventId, canonicalEvent, seasonIsDerived } from './lib/seasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -325,13 +325,14 @@ async function main() {
   }
   for (const u of unseasoned) warn(`Time Trial falls outside every season in seasons.json: ${u}`);
 
-  // --- phase 3: keep rule 1 true for every non-spreadsheet event ------------
+  // --- phase 3: keep rule 1 true for every event seasons.json governs ------
   // The season an event scores in is a function of its end date and
   // seasons.json, so when a season is closed and the next one opened, a TT
-  // that ends in the new season moves over on the next run.
+  // that ends in the new season moves over on the next run. Spreadsheet
+  // events before 2026 keep their tab's season (see seasonIsDerived).
   const eventsWritten = [];
   for (const ev of events) {
-    if (ev.source !== 'historical') {
+    if (seasonIsDerived(ev)) {
       const season = seasonForDate(toIso(ev.endDate) ?? toIso(ev.startDate), seasons);
       if (season && season.id !== ev.seasonId) {
         console.log(`season of ${ev.id}: ${ev.seasonId} -> ${season.id} (ends ${ev.endDate})`);

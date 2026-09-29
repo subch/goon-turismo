@@ -33,6 +33,20 @@ export function seasonForEvent(ev, seasons) {
   return seasonForDate(toIso(ev.endDate) ?? toIso(ev.startDate), seasons);
 }
 
+/**
+ * From this date on, seasons.json decides every event's season, spreadsheet
+ * imports included -- the 2026 sheet tabs were not rolled on time (Winter ran
+ * into late April, Spring lasted three weeks), so from 2026 the seasons are
+ * calendar quarters and rule 1 applies to everything. Before it, a
+ * spreadsheet event keeps the season of the tab it was on.
+ */
+export const SEASONS_JSON_DECIDES_FROM = '2026-01-01';
+
+export function seasonIsDerived(ev) {
+  const end = toIso(ev.endDate) ?? toIso(ev.startDate);
+  return ev.source !== 'historical' || (end !== null && end >= SEASONS_JSON_DECIDES_FROM);
+}
+
 const MONTHS = {
   jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06',
   jul: '07', aug: '08', sep: '09', oct: '10', nov: '11', dec: '12',
