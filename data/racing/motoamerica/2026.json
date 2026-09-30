@@ -4,7 +4,7 @@
   "shortName": "MotoAmerica",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-29T22:33:05.148Z",
+  "syncedAt": "2026-09-30T00:33:04.254Z",
   "source": {
     "name": "results.motoamerica.com",
     "url": "https://results.motoamerica.com/"
@@ -11260,9 +11260,9 @@
       "country": "USA",
       "dateStart": "2026-04-17",
       "dateEnd": "2026-09-29",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://results.motoamerica.com/",
-      "complete": false,
+      "complete": true,
       "sessions": [
         {
           "id": "rdatl-sbk-p1",
