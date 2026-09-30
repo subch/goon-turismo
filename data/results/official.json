@@ -801,10 +801,18 @@
   },
   {
     "eventId": "663",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:11.065",
+    "timeMs": 71065,
+    "groupRank": 2,
+    "points": 85
+  },
+  {
+    "eventId": "663",
     "psn": "superpharts",
     "timeRaw": "1:11.172",
     "timeMs": 71172,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 83
   },
   {
@@ -812,7 +820,7 @@
     "psn": "dog_nougat",
     "timeRaw": "1:12.359",
     "timeMs": 72359,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 67
   },
   {
@@ -820,7 +828,7 @@
     "psn": "devmotron",
     "timeRaw": "1:12.857",
     "timeMs": 72857,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 59
   },
   {
@@ -828,7 +836,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:12.941",
     "timeMs": 72941,
-    "groupRank": 5,
+    "groupRank": 6,
     "points": 58
   },
   {
@@ -3073,19 +3081,35 @@
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
+    "psn": "superpharts",
+    "timeRaw": "1:39.346",
+    "timeMs": 99346,
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
     "psn": "bravemen84",
     "timeRaw": "1:39.880",
     "timeMs": 99880,
-    "groupRank": 1,
-    "points": 100
+    "groupRank": 2,
+    "points": 95
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
     "psn": "devmotron",
     "timeRaw": "1:40.137",
     "timeMs": 100137,
-    "groupRank": 2,
-    "points": 97
+    "groupRank": 3,
+    "points": 92
+  },
+  {
+    "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
+    "psn": "rickiep00h",
+    "timeRaw": "1:42.174",
+    "timeMs": 102174,
+    "groupRank": 4,
+    "points": 72
   },
   {
     "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
