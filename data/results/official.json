@@ -3082,8 +3082,8 @@
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
     "psn": "superpharts",
-    "timeRaw": "1:39.346",
-    "timeMs": 99346,
+    "timeRaw": "1:37.060",
+    "timeMs": 97060,
     "groupRank": 1,
     "points": 100
   },
@@ -3093,7 +3093,7 @@
     "timeRaw": "1:39.880",
     "timeMs": 99880,
     "groupRank": 2,
-    "points": 95
+    "points": 71
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
@@ -3101,7 +3101,7 @@
     "timeRaw": "1:40.137",
     "timeMs": 100137,
     "groupRank": 3,
-    "points": 92
+    "points": 68
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
@@ -3109,7 +3109,7 @@
     "timeRaw": "1:42.174",
     "timeMs": 102174,
     "groupRank": 4,
-    "points": 72
+    "points": 47
   },
   {
     "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
