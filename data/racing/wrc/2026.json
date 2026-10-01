@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-09-30T22:32:46.227Z",
+  "syncedAt": "2026-10-01T00:32:48.724Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8075,7 +8075,7 @@
       "country": "Italy",
       "dateStart": "2026-10-01",
       "dateEnd": "2026-10-04",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.wrc.com/en/results-and-standings",
       "complete": false,
       "sessions": [
