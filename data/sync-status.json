@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-01T18:47:02.248Z",
-  "finishedAt": "2026-10-01T18:49:15.368Z",
+  "startedAt": "2026-10-02T00:47:02.555Z",
+  "finishedAt": "2026-10-02T00:50:58.335Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,7 +15,7 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "92"
+      "remaining": "98"
     },
     "errors": []
   },
@@ -23,8 +23,10 @@
     "playersScraped": 18,
     "playersTotal": 24,
     "eventsTouched": 6,
-    "eventsCreated": [],
-    "cutoffIso": "2026-09-10",
+    "eventsCreated": [
+      "tt-2026-10-01-brands-hatch-grand-prix-circuit"
+    ],
+    "cutoffIso": "2026-09-11",
     "warnings": 7
   }
 }

@@ -817,10 +817,18 @@
   },
   {
     "eventId": "663",
+    "psn": "rickiep00h",
+    "timeRaw": "1:12.331",
+    "timeMs": 72331,
+    "groupRank": 4,
+    "points": 67
+  },
+  {
+    "eventId": "663",
     "psn": "dog_nougat",
     "timeRaw": "1:12.359",
     "timeMs": 72359,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 67
   },
   {
@@ -828,16 +836,8 @@
     "psn": "devmotron",
     "timeRaw": "1:12.857",
     "timeMs": 72857,
-    "groupRank": 5,
-    "points": 59
-  },
-  {
-    "eventId": "663",
-    "psn": "rickiep00h",
-    "timeRaw": "1:12.941",
-    "timeMs": 72941,
     "groupRank": 6,
-    "points": 58
+    "points": 59
   },
   {
     "eventId": "autumn-2024-24-heures-du-mans-2024-11-20",
@@ -7926,6 +7926,14 @@
     "timeMs": 125812,
     "groupRank": 9,
     "points": 62
+  },
+  {
+    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
+    "psn": "bravemen84",
+    "timeRaw": "1:40.950",
+    "timeMs": 100950,
+    "groupRank": 1,
+    "points": 100
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
