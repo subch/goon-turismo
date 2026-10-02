@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-02T20:32:41.385Z",
+  "syncedAt": "2026-10-02T22:32:40.161Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8081,32 +8081,6 @@
       "sessions": [
         {
           "id": "sardegna-overall",
-          "classId": "wrc",
-          "type": "race",
-          "name": "Overall classification",
-          "startUtc": null,
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        }
-      ]
-    },
-    {
-      "id": "saudi",
-      "round": 14,
-      "name": "Rally Saudi Arabia",
-      "shortName": "Saudi Arabia",
-      "circuit": null,
-      "location": "Jeddah, Mecca Province",
-      "country": "Saudi Arabia",
-      "dateStart": "2026-11-12",
-      "dateEnd": "2026-11-15",
-      "status": "upcoming",
-      "officialUrl": "https://www.wrc.com/en/results-and-standings",
-      "complete": false,
-      "sessions": [
-        {
-          "id": "saudi-overall",
           "classId": "wrc",
           "type": "race",
           "name": "Overall classification",
