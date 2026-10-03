@@ -7937,10 +7937,18 @@
   },
   {
     "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
+    "psn": "devmotron",
+    "timeRaw": "1:42.845",
+    "timeMs": 102845,
+    "groupRank": 2,
+    "points": 77
+  },
+  {
+    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
     "psn": "superpharts",
     "timeRaw": "1:42.862",
     "timeMs": 102862,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 76
   },
   {
