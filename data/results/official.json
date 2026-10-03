@@ -7930,10 +7930,18 @@
   {
     "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
     "psn": "bravemen84",
-    "timeRaw": "1:40.600",
-    "timeMs": 100600,
+    "timeRaw": "1:40.491",
+    "timeMs": 100491,
     "groupRank": 1,
     "points": 100
+  },
+  {
+    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
+    "psn": "superpharts",
+    "timeRaw": "1:42.862",
+    "timeMs": 102862,
+    "groupRank": 2,
+    "points": 76
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
