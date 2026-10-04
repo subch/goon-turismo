@@ -818,10 +818,10 @@
   {
     "eventId": "663",
     "psn": "rickiep00h",
-    "timeRaw": "1:12.331",
-    "timeMs": 72331,
+    "timeRaw": "1:12.002",
+    "timeMs": 72002,
     "groupRank": 4,
-    "points": 67
+    "points": 72
   },
   {
     "eventId": "663",
@@ -3097,19 +3097,19 @@
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
-    "psn": "devmotron",
-    "timeRaw": "1:40.137",
-    "timeMs": 100137,
+    "psn": "rickiep00h",
+    "timeRaw": "1:40.121",
+    "timeMs": 100121,
     "groupRank": 3,
-    "points": 62
+    "points": 63
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
-    "psn": "rickiep00h",
-    "timeRaw": "1:42.174",
-    "timeMs": 102174,
+    "psn": "devmotron",
+    "timeRaw": "1:40.137",
+    "timeMs": 100137,
     "groupRank": 4,
-    "points": 41
+    "points": 62
   },
   {
     "eventId": "gridstats-circuit-gilles-villeneuve-14-may-2026",
@@ -7950,6 +7950,14 @@
     "timeMs": 102862,
     "groupRank": 3,
     "points": 76
+  },
+  {
+    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
+    "psn": "rickiep00h",
+    "timeRaw": "1:46.544",
+    "timeMs": 106544,
+    "groupRank": 4,
+    "points": 40
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
