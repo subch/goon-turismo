@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-04T10:32:39.369Z",
+  "syncedAt": "2026-10-04T12:32:40.124Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8086,8 +8086,54 @@
           "name": "Overall classification",
           "startUtc": null,
           "endUtc": null,
-          "status": "upcoming",
-          "results": null
+          "status": "finished",
+          "results": [
+            {
+              "pos": 1,
+              "number": "11",
+              "name": "Thierry Neuville / Martijn Wydaeghe",
+              "team": "HYUNDAI SHELL MOBIS WORLD RALLY TEAM",
+              "make": "i20 N Rally1",
+              "cls": "Rally1",
+              "laps": null,
+              "time": "3:55:41.000",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": "22",
+              "name": "Mārtinš Sesks / Renārs Francis",
+              "team": "M-SPORT FORD WORLD RALLY TEAM",
+              "make": "Puma Rally1",
+              "cls": "Rally1",
+              "laps": null,
+              "time": "4:01:58.400",
+              "gap": "+6:17.400",
+              "interval": "+6:17.400",
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": "55",
+              "name": "Joshua Mcerlean / Eoin Treacy",
+              "team": "M-SPORT FORD WORLD RALLY TEAM",
+              "make": "Puma Rally1",
+              "cls": "Rally1",
+              "laps": null,
+              "time": "4:12:25.500",
+              "gap": "+16:44.500",
+              "interval": "+10:27.100",
+              "bestLap": null,
+              "points": null,
+              "status": "+7:20.000 penalty"
+            }
+          ]
         }
       ]
     }

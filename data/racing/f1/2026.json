@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-04T10:32:30.755Z",
+  "syncedAt": "2026-10-04T12:32:31.567Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -12908,7 +12908,7 @@
           "name": "Grand Prix",
           "startUtc": "2026-10-04T07:00:00Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         }
       ]
