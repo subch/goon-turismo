@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-04T14:32:39.456Z",
+  "syncedAt": "2026-10-04T16:32:42.159Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8540,6 +8540,36 @@
             },
             {
               "pos": 31,
+              "number": "60",
+              "name": "  Piano / Dominique Savignoni",
+              "team": "PIANO",
+              "make": "C3",
+              "cls": "Rally2",
+              "laps": null,
+              "time": "4:31:22.400",
+              "gap": "+1:06:25.400",
+              "interval": "+1:23.700",
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 32,
+              "number": "64",
+              "name": "Giuseppe Bitti / Giuseppe Pirisinu",
+              "team": "GIUSEPPE BITTI",
+              "make": "Clio Rally3",
+              "cls": "Rally3",
+              "laps": null,
+              "time": "4:36:26.700",
+              "gap": "+1:11:29.700",
+              "interval": "+5:04.300",
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 33,
               "number": "34",
               "name": "Pablo Sarrazin / Yannick Roche",
               "team": "PABLO SARRAZIN",
@@ -8548,13 +8578,13 @@
               "laps": null,
               "time": "4:36:50.600",
               "gap": "+1:11:53.600",
-              "interval": "+6:51.900",
+              "interval": "+23.900",
               "bestLap": null,
               "points": null,
               "status": null
             },
             {
-              "pos": 32,
+              "pos": 34,
               "number": "51",
               "name": "Sebastiano Serpelloni / Nicola Petrin",
               "team": "SEBASTIANO SERPELLONI",
@@ -8569,7 +8599,7 @@
               "status": "+30.000 penalty"
             },
             {
-              "pos": 33,
+              "pos": 35,
               "number": "37",
               "name": "Matteo Fontana / Alessandro Arnaboldi",
               "team": "MATTEO FONTANA",
@@ -8584,7 +8614,7 @@
               "status": null
             },
             {
-              "pos": 34,
+              "pos": 36,
               "number": "53",
               "name": "Francesco Tali / Gianina Libera",
               "team": "FRANCESCO TALI",
@@ -8599,7 +8629,22 @@
               "status": "+30.000 penalty"
             },
             {
-              "pos": 35,
+              "pos": 37,
+              "number": "57",
+              "name": "Georgios Vasilakis / Allan Harryman",
+              "team": "GEORGIOS VASILAKIS",
+              "make": "Fiesta Rally3",
+              "cls": "WRC3",
+              "laps": null,
+              "time": "4:43:34.800",
+              "gap": "+1:18:37.800",
+              "interval": "+1:29.600",
+              "bestLap": null,
+              "points": null,
+              "status": "+6:40.000 penalty"
+            },
+            {
+              "pos": 38,
               "number": "54",
               "name": "Carlo Covi / Denis Piceno",
               "team": "CARLO COVI",
@@ -8608,10 +8653,100 @@
               "laps": null,
               "time": "4:47:15.500",
               "gap": "+1:22:18.500",
-              "interval": "+5:10.300",
+              "interval": "+3:40.700",
               "bestLap": null,
               "points": null,
               "status": null
+            },
+            {
+              "pos": 39,
+              "number": "63",
+              "name": "Stefano Avandero / Lorenzo Granai",
+              "team": "STEFANO AVANDERO",
+              "make": "Ypsilon HF",
+              "cls": "Rally2",
+              "laps": null,
+              "time": "4:47:30.300",
+              "gap": "+1:22:33.300",
+              "interval": "+14.800",
+              "bestLap": null,
+              "points": null,
+              "status": "+20.000 penalty"
+            },
+            {
+              "pos": 40,
+              "number": "68",
+              "name": "Gianluca Mara / Veronica Cottu",
+              "team": "GIANLUCA MARA",
+              "make": "208 Rally4",
+              "cls": "Rally4",
+              "laps": null,
+              "time": "4:51:32.300",
+              "gap": "+1:26:35.300",
+              "interval": "+4:02.000",
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 41,
+              "number": "62",
+              "name": "Martin Grigg / Liam Dunn",
+              "team": "TEAM ARMIN SCHWARZ DRIVING EXPERIENCE",
+              "make": "GR Yaris",
+              "cls": "Rally2",
+              "laps": null,
+              "time": "5:15:45.500",
+              "gap": "+1:50:48.500",
+              "interval": "+24:13.200",
+              "bestLap": null,
+              "points": null,
+              "status": "+7:20.000 penalty"
+            },
+            {
+              "pos": 42,
+              "number": "69",
+              "name": "Valentino Ledda / Claudio Mele",
+              "team": "VALENTINO LEDDA",
+              "make": "Corsa",
+              "cls": "Rally4",
+              "laps": null,
+              "time": "5:25:04.200",
+              "gap": "+2:00:07.200",
+              "interval": "+9:18.700",
+              "bestLap": null,
+              "points": null,
+              "status": "+10:00.000 penalty"
+            },
+            {
+              "pos": 43,
+              "number": "70",
+              "name": "Giampaolo Fosci / Angelo Tendas",
+              "team": "GIAMPAOLO FOSCI",
+              "make": "Clio RS Line",
+              "cls": "Rally5",
+              "laps": null,
+              "time": "6:34:13.000",
+              "gap": "+3:09:16.000",
+              "interval": "+1:09:08.800",
+              "bestLap": null,
+              "points": null,
+              "status": "+1:30.000 penalty"
+            },
+            {
+              "pos": 44,
+              "number": "71",
+              "name": "Giovanni Di Luigi / Andrea Di Luigi",
+              "team": "GIOVANNI DI LUIGI",
+              "make": "Clio RS Line",
+              "cls": "Rally5",
+              "laps": null,
+              "time": "6:50:58.900",
+              "gap": "+3:26:01.900",
+              "interval": "+16:45.900",
+              "bestLap": null,
+              "points": null,
+              "status": "+14:00.000 penalty"
             }
           ]
         }
@@ -9004,7 +9139,7 @@
           "number": null,
           "team": "None",
           "make": "Skoda",
-          "points": 117,
+          "points": 134,
           "wins": 4
         },
         {
@@ -9013,7 +9148,7 @@
           "number": null,
           "team": "None",
           "make": "Toyota",
-          "points": 104,
+          "points": 94,
           "wins": 2
         },
         {
