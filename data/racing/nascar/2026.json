@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-04T20:33:06.792Z",
+  "syncedAt": "2026-10-04T22:33:06.039Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -54844,7 +54844,7 @@
           "name": "South Point 400",
           "startUtc": "2026-10-04T21:30:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         }
       ]
