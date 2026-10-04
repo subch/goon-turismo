@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-04T18:32:44.126Z",
+  "syncedAt": "2026-10-04T20:32:45.305Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8869,6 +8869,15 @@
         },
         {
           "pos": 13,
+          "name": "Robert Virves",
+          "number": null,
+          "team": "TOKSPORT WRT 2",
+          "make": "Skoda",
+          "points": 19,
+          "wins": 0
+        },
+        {
+          "pos": 14,
           "name": "Léo Rossel",
           "number": null,
           "team": "2C JUNIOR TEAM",
@@ -8877,21 +8886,12 @@
           "wins": 0
         },
         {
-          "pos": 14,
-          "name": "Robert Virves",
-          "number": null,
-          "team": "TOKSPORT WRT 2",
-          "make": "Skoda",
-          "points": 17,
-          "wins": 0
-        },
-        {
           "pos": 15,
           "name": "Gus Greensmith",
           "number": null,
           "team": "GUS GREENSMITH",
           "make": "Toyota",
-          "points": 15,
+          "points": 14,
           "wins": 0
         },
         {
@@ -9139,7 +9139,7 @@
           "number": null,
           "team": "None",
           "make": "Skoda",
-          "points": 117,
+          "points": 134,
           "wins": 4
         },
         {
@@ -9477,10 +9477,10 @@
         },
         {
           "pos": 39,
-          "name": "Miguel Zaldivar",
+          "name": "Pablo Sarrazin",
           "number": null,
           "team": "None",
-          "make": "Skoda",
+          "make": "Citroen",
           "points": 6,
           "wins": 0
         },
@@ -9495,16 +9495,16 @@
         },
         {
           "pos": 41,
-          "name": "Pablo Sarrazin",
+          "name": "Alejandro Mauro",
           "number": null,
           "team": "None",
-          "make": "Citroen",
+          "make": "Skoda",
           "points": 6,
           "wins": 0
         },
         {
           "pos": 42,
-          "name": "Alejandro Mauro",
+          "name": "Miguel Zaldivar",
           "number": null,
           "team": "None",
           "make": "Skoda",
@@ -9522,10 +9522,10 @@
         },
         {
           "pos": 44,
-          "name": "Kevin Raith",
+          "name": "Augusto Bestard",
           "number": null,
           "team": "None",
-          "make": "Ford",
+          "make": "Toyota",
           "points": 4,
           "wins": 0
         },
@@ -9540,10 +9540,10 @@
         },
         {
           "pos": 46,
-          "name": "Augusto Bestard",
+          "name": "Kevin Raith",
           "number": null,
           "team": "None",
-          "make": "Toyota",
+          "make": "Ford",
           "points": 4,
           "wins": 0
         },
@@ -9576,15 +9576,6 @@
         },
         {
           "pos": 50,
-          "name": "Simone Romagna",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 2,
-          "wins": 0
-        },
-        {
-          "pos": 51,
           "name": "Marko Viitanen",
           "number": null,
           "team": "None",
@@ -9593,7 +9584,7 @@
           "wins": 0
         },
         {
-          "pos": 52,
+          "pos": 51,
           "name": "Samman Singh Vohra",
           "number": null,
           "team": "None",
@@ -9602,7 +9593,7 @@
           "wins": 0
         },
         {
-          "pos": 53,
+          "pos": 52,
           "name": "Enrique Cruz",
           "number": null,
           "team": "None",
@@ -9611,7 +9602,7 @@
           "wins": 0
         },
         {
-          "pos": 54,
+          "pos": 53,
           "name": "Bernhard Ten Brinke",
           "number": null,
           "team": "None",
@@ -9620,7 +9611,7 @@
           "wins": 0
         },
         {
-          "pos": 55,
+          "pos": 54,
           "name": "Satoshi Imai",
           "number": null,
           "team": "None",
@@ -9629,11 +9620,20 @@
           "wins": 0
         },
         {
-          "pos": 56,
+          "pos": 55,
           "name": "Joosep Ralf Nõgene",
           "number": null,
           "team": "None",
           "make": "Toyota",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 56,
+          "name": "Simone Romagna",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
           "points": 2,
           "wins": 0
         },
@@ -9684,87 +9684,6 @@
         },
         {
           "pos": 62,
-          "name": "Fabio Frisiero",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 63,
-          "name": "Giovanni Galleni",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 64,
-          "name": "Giuseppe Pozzo",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 65,
-          "name": "Sebastiano Serpelloni",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 66,
-          "name": "Matteo Fontana",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 67,
-          "name": "Francesco Tali",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 68,
-          "name": "Giuseppe Dettori",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 69,
-          "name": "Benjamin Korhola",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 70,
-          "name": "Aron Domżała",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 71,
           "name": "Eliott Delecour",
           "number": null,
           "team": "None",
@@ -9773,7 +9692,7 @@
           "wins": 0
         },
         {
-          "pos": 72,
+          "pos": 63,
           "name": "Amaury Molle",
           "number": null,
           "team": "None",
@@ -9782,7 +9701,7 @@
           "wins": 0
         },
         {
-          "pos": 73,
+          "pos": 64,
           "name": "Filip Mareš",
           "number": null,
           "team": "None",
@@ -9791,7 +9710,7 @@
           "wins": 0
         },
         {
-          "pos": 74,
+          "pos": 65,
           "name": "Luciano Cobbe",
           "number": null,
           "team": "None",
@@ -9800,511 +9719,7 @@
           "wins": 0
         },
         {
-          "pos": 75,
-          "name": "Olivier Burri",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 76,
-          "name": "Filippo Marchino",
-          "number": null,
-          "team": "None",
-          "make": "Citroen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 77,
-          "name": "Eamonn Boland",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 78,
-          "name": "Stefano Mella",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 79,
-          "name": "Dimitrios Drivakos",
-          "number": null,
-          "team": "None",
-          "make": "Hyundai",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 80,
-          "name": "Julien Piguet",
-          "number": null,
-          "team": "None",
-          "make": "Citroen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 81,
-          "name": "Henk Vossen",
-          "number": null,
-          "team": "None",
-          "make": "Hyundai",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 82,
-          "name": "Cristian Baumgart",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 83,
-          "name": "Adam Grahn",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 84,
-          "name": "Alexander Villanueva",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 85,
-          "name": "Mikko Heikkilä",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 86,
-          "name": "Tuukka Kauppinen",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 87,
-          "name": "Jens Hvaal",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 88,
-          "name": "Robert Kolčák",
-          "number": null,
-          "team": "None",
-          "make": "Hyundai",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 89,
-          "name": "Hamza Anwar",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 90,
-          "name": "Carl Tundo",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 91,
-          "name": "Jeremiah Wahome",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 92,
-          "name": "Issa Amwari",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 93,
-          "name": "Viliam Prodan",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 94,
-          "name": "Armide Martín",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 95,
-          "name": "Carlos Moreno",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 96,
-          "name": "Alexey Lukyanuk",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 97,
-          "name": "Zósimo Hernández",
-          "number": null,
-          "team": "None",
-          "make": "Citroen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 98,
-          "name": "Julio Martínez",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 99,
-          "name": "Antonio Forné",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 100,
-          "name": "Maurizio Chiarani",
-          "number": null,
-          "team": "None",
-          "make": "Citroen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 101,
-          "name": "Philip Allen",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 102,
-          "name": "Armindo Araújo",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 103,
-          "name": "Rúben Rodrigues",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 104,
-          "name": "Pedro Meireles",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 105,
-          "name": "Diogo Salvi",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 106,
-          "name": "Diogo Marújo",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 107,
-          "name": "Ricardo Filipe",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 108,
-          "name": "Tristan Charpentier",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 109,
-          "name": "Ferran Jubany",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 110,
-          "name": "Paulo Neto",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 111,
-          "name": "Tiago Silva",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 112,
-          "name": "Harry Bates",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 113,
-          "name": "Lambros Athanassoulas",
-          "number": null,
-          "team": "None",
-          "make": "Hyundai",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 114,
-          "name": "Martin Prokop",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 115,
-          "name": "Ali Türkkan",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 116,
-          "name": "Panagiotis Roustemis",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 117,
-          "name": "Epameinondas Karanikolas",
-          "number": null,
-          "team": "None",
-          "make": "Ford",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 118,
-          "name": "Cristian Dolofan",
-          "number": null,
-          "team": "None",
-          "make": "Citroen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 119,
-          "name": "Egon Kaur",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 120,
-          "name": "Shotaro Goto",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 121,
-          "name": "Miguel Ortega",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 122,
-          "name": "Sebastián Barchini",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 123,
-          "name": "Eugen Gotze",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 124,
-          "name": "César Pedotti",
-          "number": null,
-          "team": "None",
-          "make": "Volkswagen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 125,
-          "name": "Matías Domínguez",
-          "number": null,
-          "team": "None",
-          "make": "Skoda",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 126,
-          "name": "Gustavo Saba",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 127,
-          "name": "Marco Bulacia",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 128,
-          "name": "Franco Pappalardo",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 129,
-          "name": "Miguel Ángel García",
-          "number": null,
-          "team": "None",
-          "make": "Toyota",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 130,
-          "name": "Tadeo Rosselot",
-          "number": null,
-          "team": "None",
-          "make": "Citroen",
-          "points": 0,
-          "wins": 0
-        },
-        {
-          "pos": 131,
+          "pos": 66,
           "name": "Carlo Covi",
           "number": null,
           "team": "None",
@@ -10313,7 +9728,79 @@
           "wins": 0
         },
         {
-          "pos": 132,
+          "pos": 67,
+          "name": "Olivier Burri",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 68,
+          "name": "Filippo Marchino",
+          "number": null,
+          "team": "None",
+          "make": "Citroen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 69,
+          "name": "Eamonn Boland",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 70,
+          "name": "Stefano Mella",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 71,
+          "name": "Dimitrios Drivakos",
+          "number": null,
+          "team": "None",
+          "make": "Hyundai",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 72,
+          "name": "Julien Piguet",
+          "number": null,
+          "team": "None",
+          "make": "Citroen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 73,
+          "name": "Henk Vossen",
+          "number": null,
+          "team": "None",
+          "make": "Hyundai",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 74,
+          "name": "Cristian Baumgart",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 75,
           "name": "Miguel Granados",
           "number": null,
           "team": "None",
@@ -10322,7 +9809,7 @@
           "wins": 0
         },
         {
-          "pos": 133,
+          "pos": 76,
           "name": "Ugur Soylu",
           "number": null,
           "team": "None",
@@ -10331,7 +9818,7 @@
           "wins": 0
         },
         {
-          "pos": 134,
+          "pos": 77,
           "name": "Fabio Schwarz",
           "number": null,
           "team": "None",
@@ -10340,7 +9827,106 @@
           "wins": 0
         },
         {
-          "pos": 135,
+          "pos": 78,
+          "name": "Adam Grahn",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 79,
+          "name": "Alexander Villanueva",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 80,
+          "name": "Mikko Heikkilä",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 81,
+          "name": "Tuukka Kauppinen",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 82,
+          "name": "Jens Hvaal",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 83,
+          "name": "Robert Kolčák",
+          "number": null,
+          "team": "None",
+          "make": "Hyundai",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 84,
+          "name": "Hamza Anwar",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 85,
+          "name": "Carl Tundo",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 86,
+          "name": "Jeremiah Wahome",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 87,
+          "name": "Issa Amwari",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 88,
+          "name": "Viliam Prodan",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 89,
           "name": "Johannes Keferböck",
           "number": null,
           "team": "None",
@@ -10349,7 +9935,88 @@
           "wins": 0
         },
         {
-          "pos": 136,
+          "pos": 90,
+          "name": "Armide Martín",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 91,
+          "name": "Carlos Moreno",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 92,
+          "name": "Alexey Lukyanuk",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 93,
+          "name": "Zósimo Hernández",
+          "number": null,
+          "team": "None",
+          "make": "Citroen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 94,
+          "name": "Julio Martínez",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 95,
+          "name": "Antonio Forné",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 96,
+          "name": "Maurizio Chiarani",
+          "number": null,
+          "team": "None",
+          "make": "Citroen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 97,
+          "name": "Philip Allen",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 98,
+          "name": "Armindo Araújo",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 99,
           "name": "Eugen Cărăgui",
           "number": null,
           "team": "None",
@@ -10358,11 +10025,344 @@
           "wins": 0
         },
         {
-          "pos": 137,
+          "pos": 100,
+          "name": "Rúben Rodrigues",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 101,
+          "name": "Pedro Meireles",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 102,
+          "name": "Diogo Salvi",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 103,
+          "name": "Diogo Marújo",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 104,
+          "name": "Ricardo Filipe",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 105,
+          "name": "Tristan Charpentier",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 106,
+          "name": "Ferran Jubany",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 107,
+          "name": "Paulo Neto",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 108,
+          "name": "Tiago Silva",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 109,
+          "name": "Harry Bates",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 110,
+          "name": "Lambros Athanassoulas",
+          "number": null,
+          "team": "None",
+          "make": "Hyundai",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 111,
+          "name": "Martin Prokop",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 112,
+          "name": "Ali Türkkan",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 113,
           "name": "Conner Martell",
           "number": null,
           "team": "None",
           "make": "Lancia",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 114,
+          "name": "Panagiotis Roustemis",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 115,
+          "name": "Epameinondas Karanikolas",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 116,
+          "name": "Cristian Dolofan",
+          "number": null,
+          "team": "None",
+          "make": "Citroen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 117,
+          "name": "Egon Kaur",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 118,
+          "name": "Shotaro Goto",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 119,
+          "name": "Miguel Ortega",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 120,
+          "name": "Sebastián Barchini",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 121,
+          "name": "Eugen Gotze",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 122,
+          "name": "César Pedotti",
+          "number": null,
+          "team": "None",
+          "make": "Volkswagen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 123,
+          "name": "Matías Domínguez",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 124,
+          "name": "Gustavo Saba",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 125,
+          "name": "Marco Bulacia",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 126,
+          "name": "Franco Pappalardo",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 127,
+          "name": "Miguel Ángel García",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 128,
+          "name": "Tadeo Rosselot",
+          "number": null,
+          "team": "None",
+          "make": "Citroen",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 129,
+          "name": "Fabio Frisiero",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 130,
+          "name": "Giovanni Galleni",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 131,
+          "name": "Giuseppe Pozzo",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 132,
+          "name": "Sebastiano Serpelloni",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 133,
+          "name": "Matteo Fontana",
+          "number": null,
+          "team": "None",
+          "make": "Toyota",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 134,
+          "name": "Francesco Tali",
+          "number": null,
+          "team": "None",
+          "make": "Ford",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 135,
+          "name": "Giuseppe Dettori",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 136,
+          "name": "Benjamin Korhola",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 137,
+          "name": "Aron Domżała",
+          "number": null,
+          "team": "None",
+          "make": "Skoda",
           "points": 0,
           "wins": 0
         }
