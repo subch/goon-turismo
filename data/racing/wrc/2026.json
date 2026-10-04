@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-04T16:32:42.159Z",
+  "syncedAt": "2026-10-04T18:32:44.126Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -9139,7 +9139,7 @@
           "number": null,
           "team": "None",
           "make": "Skoda",
-          "points": 134,
+          "points": 117,
           "wins": 4
         },
         {
