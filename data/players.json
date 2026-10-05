@@ -40,9 +40,9 @@
       "stats": {
         "dr_points": 31908,
         "dr_ratio": 0.0954,
-        "total_races": 84,
+        "total_races": 79,
         "victories": 28,
-        "poles": 22,
+        "poles": 26,
         "fastest_laps": 23,
         "clean_races": 23,
         "collector_level": 70,
@@ -105,9 +105,9 @@
         "license": "Master B",
         "garage_count": 696,
         "collection_progress": "98%",
-        "total_credits": 706775775,
-        "play_time_readable": "2,382h 47m",
-        "distance_km": "201,683.9"
+        "total_credits": 706991025,
+        "play_time_readable": "2,383h 31m",
+        "distance_km": "201,729.7"
       }
     }
   },
