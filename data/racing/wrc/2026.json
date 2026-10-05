@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-04T22:32:45.369Z",
+  "syncedAt": "2026-10-05T00:32:43.246Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8075,9 +8075,9 @@
       "country": "Italy",
       "dateStart": "2026-10-01",
       "dateEnd": "2026-10-04",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.wrc.com/en/results-and-standings",
-      "complete": false,
+      "complete": true,
       "sessions": [
         {
           "id": "sardegna-overall",

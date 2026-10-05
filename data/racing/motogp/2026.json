@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-04T22:32:17.839Z",
+  "syncedAt": "2026-10-05T00:32:15.230Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -95083,9 +95083,9 @@
       "country": "Japan",
       "dateStart": "2026-10-02",
       "dateEnd": "2026-10-04",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.motogp.com/en/gp-results/2026/jpn/motogp/rac/classification",
-      "complete": false,
+      "complete": true,
       "sessions": [
         {
           "id": "71020387-77b3-4adb-996a-a55c54dccf02",
