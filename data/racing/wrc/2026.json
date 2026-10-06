@@ -4,7 +4,7 @@
   "shortName": "WRC",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-06T06:32:41.848Z",
+  "syncedAt": "2026-10-06T08:32:44.276Z",
   "source": {
     "name": "wrc.com results",
     "url": "https://www.wrc.com/en/results-and-standings"
@@ -8986,15 +8986,6 @@
         },
         {
           "pos": 26,
-          "name": "Teemu Suninen",
-          "number": null,
-          "team": "TEEMU SUNINEN",
-          "make": "Toyota",
-          "points": 3,
-          "wins": 0
-        },
-        {
-          "pos": 27,
           "name": "Alejandro Galanti",
           "number": null,
           "team": "ALEJANDRO GALANTI",
@@ -9003,11 +8994,20 @@
           "wins": 0
         },
         {
-          "pos": 28,
+          "pos": 27,
           "name": "Arthur Pelamourgues",
           "number": null,
           "team": "ARTHUR PELAMOURGUES",
           "make": "Hyundai",
+          "points": 2,
+          "wins": 0
+        },
+        {
+          "pos": 28,
+          "name": "Teemu Suninen",
+          "number": null,
+          "team": "TEEMU SUNINEN",
+          "make": "Toyota",
           "points": 2,
           "wins": 0
         },
@@ -9139,7 +9139,7 @@
           "number": null,
           "team": "None",
           "make": "Skoda",
-          "points": 134,
+          "points": 117,
           "wins": 4
         },
         {
