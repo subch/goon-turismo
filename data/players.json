@@ -40,9 +40,9 @@
       "stats": {
         "dr_points": 31908,
         "dr_ratio": 0.0954,
-        "total_races": 79,
+        "total_races": 84,
         "victories": 28,
-        "poles": 26,
+        "poles": 22,
         "fastest_laps": 23,
         "clean_races": 23,
         "collector_level": 70,
@@ -280,7 +280,7 @@
         "garage_count": 730,
         "collection_progress": "100%",
         "total_credits": 1049023595,
-        "play_time_readable": "1,893h 48m",
+        "play_time_readable": "1,893h 50m",
         "distance_km": "264,483.6"
       }
     }

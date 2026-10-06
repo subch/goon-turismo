@@ -801,19 +801,19 @@
   },
   {
     "eventId": "663",
-    "psn": "empire_of_ravens",
-    "timeRaw": "1:11.065",
-    "timeMs": 71065,
+    "psn": "superpharts",
+    "timeRaw": "1:10.979",
+    "timeMs": 70979,
     "groupRank": 2,
-    "points": 85
+    "points": 86
   },
   {
     "eventId": "663",
-    "psn": "superpharts",
-    "timeRaw": "1:11.172",
-    "timeMs": 71172,
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:11.065",
+    "timeMs": 71065,
     "groupRank": 3,
-    "points": 83
+    "points": 85
   },
   {
     "eventId": "663",
