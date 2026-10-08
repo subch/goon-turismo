@@ -794,24 +794,24 @@
   {
     "eventId": "663",
     "psn": "bravemen84",
-    "timeRaw": "1:10.015",
-    "timeMs": 70015,
+    "timeRaw": "1:09.754",
+    "timeMs": 69754,
     "groupRank": 1,
     "points": 100
+  },
+  {
+    "eventId": "663",
+    "psn": "superpharts",
+    "timeRaw": "1:09.940",
+    "timeMs": 69940,
+    "groupRank": 2,
+    "points": 97
   },
   {
     "eventId": "663",
     "psn": "devmotron",
     "timeRaw": "1:10.707",
     "timeMs": 70707,
-    "groupRank": 2,
-    "points": 90
-  },
-  {
-    "eventId": "663",
-    "psn": "superpharts",
-    "timeRaw": "1:10.979",
-    "timeMs": 70979,
     "groupRank": 3,
     "points": 86
   },
@@ -821,7 +821,7 @@
     "timeRaw": "1:11.065",
     "timeMs": 71065,
     "groupRank": 4,
-    "points": 85
+    "points": 81
   },
   {
     "eventId": "663",
@@ -829,7 +829,7 @@
     "timeRaw": "1:12.002",
     "timeMs": 72002,
     "groupRank": 5,
-    "points": 72
+    "points": 68
   },
   {
     "eventId": "663",
@@ -837,7 +837,7 @@
     "timeRaw": "1:12.359",
     "timeMs": 72359,
     "groupRank": 6,
-    "points": 67
+    "points": 63
   },
   {
     "eventId": "autumn-2024-24-heures-du-mans-2024-11-20",
@@ -3090,10 +3090,10 @@
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
     "psn": "superpharts",
-    "timeRaw": "1:37.060",
-    "timeMs": 97060,
+    "timeRaw": "1:36.563",
+    "timeMs": 96563,
     "groupRank": 2,
-    "points": 94
+    "points": 99
   },
   {
     "eventId": "gridstats-circuit-de-sainte-croix-b-reverse-24-sep-2026",
