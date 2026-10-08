@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-08T14:32:21.888Z",
+  "syncedAt": "2026-10-08T16:32:24.416Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -21383,6 +21383,66 @@
       "complete": false,
       "sessions": [
         {
+          "id": "free-practice-1-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-11-06T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-1-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-11-06T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-11-06T13:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-11-06T13:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-hypercar",
+          "classId": "hypercar",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-11-07T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-lmgt3",
+          "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-11-07T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
           "id": "qualifying-lmgt3-lmgt3",
           "classId": "lmgt3",
           "type": "qualifying",
@@ -21438,66 +21498,6 @@
           "type": "race",
           "name": "Race",
           "startUtc": "2026-11-08T10:00:00.000Z",
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        },
-        {
-          "id": "free-practice-1-hypercar",
-          "classId": "hypercar",
-          "type": "practice",
-          "name": "Free Practice 1",
-          "startUtc": null,
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        },
-        {
-          "id": "free-practice-2-hypercar",
-          "classId": "hypercar",
-          "type": "practice",
-          "name": "Free Practice 2",
-          "startUtc": null,
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        },
-        {
-          "id": "free-practice-3-hypercar",
-          "classId": "hypercar",
-          "type": "practice",
-          "name": "Free Practice 3",
-          "startUtc": null,
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        },
-        {
-          "id": "free-practice-1-lmgt3",
-          "classId": "lmgt3",
-          "type": "practice",
-          "name": "Free Practice 1",
-          "startUtc": null,
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        },
-        {
-          "id": "free-practice-2-lmgt3",
-          "classId": "lmgt3",
-          "type": "practice",
-          "name": "Free Practice 2",
-          "startUtc": null,
-          "endUtc": null,
-          "status": "upcoming",
-          "results": null
-        },
-        {
-          "id": "free-practice-3-lmgt3",
-          "classId": "lmgt3",
-          "type": "practice",
-          "name": "Free Practice 3",
-          "startUtc": null,
           "endUtc": null,
           "status": "upcoming",
           "results": null
