@@ -801,10 +801,18 @@
   },
   {
     "eventId": "663",
+    "psn": "devmotron",
+    "timeRaw": "1:10.707",
+    "timeMs": 70707,
+    "groupRank": 2,
+    "points": 90
+  },
+  {
+    "eventId": "663",
     "psn": "superpharts",
     "timeRaw": "1:10.979",
     "timeMs": 70979,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 86
   },
   {
@@ -812,7 +820,7 @@
     "psn": "empire_of_ravens",
     "timeRaw": "1:11.065",
     "timeMs": 71065,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 85
   },
   {
@@ -820,7 +828,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:12.002",
     "timeMs": 72002,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 72
   },
   {
@@ -828,16 +836,8 @@
     "psn": "dog_nougat",
     "timeRaw": "1:12.359",
     "timeMs": 72359,
-    "groupRank": 5,
-    "points": 67
-  },
-  {
-    "eventId": "663",
-    "psn": "devmotron",
-    "timeRaw": "1:12.857",
-    "timeMs": 72857,
     "groupRank": 6,
-    "points": 59
+    "points": 67
   },
   {
     "eventId": "autumn-2024-24-heures-du-mans-2024-11-20",
