@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-08T08:32:36.699Z",
+  "syncedAt": "2026-10-08T10:32:34.722Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -58576,7 +58576,7 @@
           "id": "2026-EST-SBK-002",
           "classId": "sbk",
           "type": "sprint",
-          "name": "Tissot Superpoile Race",
+          "name": "Tissot Superpole Race",
           "startUtc": "2026-10-11T10:10:00+00:00",
           "endUtc": null,
           "status": "upcoming",
@@ -58596,7 +58596,7 @@
           "id": "2026-EST-SSP-L1A",
           "classId": "ssp",
           "type": "practice",
-          "name": "Free Practice 1st Session",
+          "name": "Free Practice",
           "startUtc": "2026-10-09T10:20:00+00:00",
           "endUtc": "2026-10-09T11:00:00+00:00",
           "status": "upcoming",
@@ -59069,7 +59069,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Ducati",
+          "name": "DUCAT",
           "number": null,
           "team": null,
           "make": null,
@@ -59078,7 +59078,7 @@
         },
         {
           "pos": 2,
-          "name": "bimota",
+          "name": "BIMOT",
           "number": null,
           "team": null,
           "make": null,
@@ -59087,7 +59087,7 @@
         },
         {
           "pos": 3,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -59105,7 +59105,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -59114,7 +59114,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -59398,7 +59398,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -59407,7 +59407,7 @@
         },
         {
           "pos": 2,
-          "name": "Ducati",
+          "name": "DUCAT",
           "number": null,
           "team": null,
           "make": null,
@@ -59416,7 +59416,7 @@
         },
         {
           "pos": 3,
-          "name": "ZXMOTO",
+          "name": "ZXMOT",
           "number": null,
           "team": null,
           "make": null,
@@ -59425,7 +59425,7 @@
         },
         {
           "pos": 4,
-          "name": "Triumph",
+          "name": "TRIUM",
           "number": null,
           "team": null,
           "make": null,
@@ -59434,7 +59434,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -59443,7 +59443,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -59452,7 +59452,7 @@
         },
         {
           "pos": 7,
-          "name": "MV Agusta",
+          "name": "MVAGU",
           "number": null,
           "team": null,
           "make": null,
@@ -59461,7 +59461,7 @@
         },
         {
           "pos": 8,
-          "name": "QJMOTOR",
+          "name": "QJMOT",
           "number": null,
           "team": null,
           "make": null,
