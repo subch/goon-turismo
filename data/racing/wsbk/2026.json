@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-09T12:32:33.921Z",
+  "syncedAt": "2026-10-09T14:32:37.569Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -58860,7 +58860,7 @@
           "name": "Free Practice 2nd Session",
           "startUtc": "2026-10-09T14:00:00+00:00",
           "endUtc": "2026-10-09T14:45:00+00:00",
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -59929,7 +59929,7 @@
         },
         {
           "pos": 3,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -60240,7 +60240,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
