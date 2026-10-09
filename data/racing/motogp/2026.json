@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-08T22:32:12.507Z",
+  "syncedAt": "2026-10-09T00:32:12.825Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -101769,7 +101769,7 @@
       "country": "Indonesia",
       "dateStart": "2026-10-09",
       "dateEnd": "2026-10-11",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.motogp.com/en/gp-results/2026/ina/motogp/rac/classification",
       "complete": false,
       "sessions": [
