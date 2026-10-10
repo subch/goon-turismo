@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-10T12:32:28.311Z",
+  "syncedAt": "2026-10-10T14:32:33.918Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -13285,7 +13285,7 @@
           "name": "Sprint",
           "startUtc": "2026-10-10T09:00:00Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
@@ -13295,7 +13295,7 @@
           "name": "Qualifying",
           "startUtc": "2026-10-10T13:00:00Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
