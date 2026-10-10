@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-09T18:47:02.302Z",
-  "finishedAt": "2026-10-09T18:49:04.107Z",
+  "startedAt": "2026-10-10T00:47:02.377Z",
+  "finishedAt": "2026-10-10T00:49:04.382Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,16 +15,18 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "92"
+      "remaining": "98"
     },
     "errors": []
   },
   "pages": {
     "playersScraped": 18,
     "playersTotal": 24,
-    "eventsTouched": 5,
-    "eventsCreated": [],
-    "cutoffIso": "2026-09-18",
+    "eventsTouched": 6,
+    "eventsCreated": [
+      "tt-2026-10-08-dragon-trail-gardens"
+    ],
+    "cutoffIso": "2026-09-19",
     "warnings": 7
   }
 }
