@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-10T14:32:37.054Z",
+  "syncedAt": "2026-10-10T16:32:34.141Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -59882,9 +59882,340 @@
           "type": "race",
           "name": "Race 1",
           "startUtc": "2026-10-10T14:30:40+00:00",
-          "endUtc": null,
-          "status": "live",
-          "results": null
+          "endUtc": "2026-10-10T15:07:00+00:00",
+          "status": "finished",
+          "results": [
+            {
+              "pos": 1,
+              "number": 11,
+              "name": "Nicolo Bulega",
+              "team": "Aruba.it Racing - Ducati",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:34.620",
+              "gap": null,
+              "interval": null,
+              "bestLap": "2:14.964",
+              "points": 25,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": 7,
+              "name": "Iker Lecuona",
+              "team": "Aruba.it Racing - Ducati",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:38.490",
+              "gap": "+3.870",
+              "interval": null,
+              "bestLap": "2:15.041",
+              "points": 20,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": 67,
+              "name": "Alberto Surra",
+              "team": "Motocorsa Racing",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:44.288",
+              "gap": "+9.668",
+              "interval": null,
+              "bestLap": "2:15.608",
+              "points": 16,
+              "status": null
+            },
+            {
+              "pos": 4,
+              "number": 88,
+              "name": "Miguel Oliveira",
+              "team": "ROKiT BMW Motorrad WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:46.064",
+              "gap": "+11.444",
+              "interval": null,
+              "bestLap": "2:15.605",
+              "points": 13,
+              "status": null
+            },
+            {
+              "pos": 5,
+              "number": 22,
+              "name": "Alex Lowes",
+              "team": "bimota by Kawasaki Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:47.369",
+              "gap": "+12.749",
+              "interval": null,
+              "bestLap": "2:15.756",
+              "points": 11,
+              "status": null
+            },
+            {
+              "pos": 6,
+              "number": 34,
+              "name": "Lorenzo Baldassarri",
+              "team": "Team Goeleven",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:52.470",
+              "gap": "+17.850",
+              "interval": null,
+              "bestLap": "2:16.108",
+              "points": 10,
+              "status": null
+            },
+            {
+              "pos": 7,
+              "number": 47,
+              "name": "Axel Bassani",
+              "team": "bimota by Kawasaki Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:53.955",
+              "gap": "+19.335",
+              "interval": null,
+              "bestLap": "2:15.992",
+              "points": 9,
+              "status": null
+            },
+            {
+              "pos": 8,
+              "number": 5,
+              "name": "Yari Montella",
+              "team": "Barni Spark Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:53.988",
+              "gap": "+19.368",
+              "interval": null,
+              "bestLap": "2:16.097",
+              "points": 8,
+              "status": null
+            },
+            {
+              "pos": 9,
+              "number": 19,
+              "name": "Alvaro Bautista",
+              "team": "Barni Spark Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:55.354",
+              "gap": "+20.734",
+              "interval": null,
+              "bestLap": "2:16.093",
+              "points": 7,
+              "status": null
+            },
+            {
+              "pos": 10,
+              "number": 31,
+              "name": "Garrett Gerloff",
+              "team": "Kawasaki WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:56.180",
+              "gap": "+21.560",
+              "interval": null,
+              "bestLap": "2:16.133",
+              "points": 6,
+              "status": null
+            },
+            {
+              "pos": 11,
+              "number": 14,
+              "name": "Sam Lowes",
+              "team": "ELF Marc VDS Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "55:58.077",
+              "gap": "+23.457",
+              "interval": null,
+              "bestLap": "2:16.237",
+              "points": 5,
+              "status": null
+            },
+            {
+              "pos": 12,
+              "number": 96,
+              "name": "Jake Dixon",
+              "team": "Honda HRC",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:42.840",
+              "gap": "+68.220",
+              "interval": null,
+              "bestLap": "2:16.497",
+              "points": 4,
+              "status": null
+            },
+            {
+              "pos": 13,
+              "number": 97,
+              "name": "Xavi Vierge",
+              "team": "Pata Maxus Yamaha",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:43.774",
+              "gap": "+69.154",
+              "interval": null,
+              "bestLap": "2:16.306",
+              "points": 3,
+              "status": null
+            },
+            {
+              "pos": 14,
+              "number": 35,
+              "name": "Somkiat Chantra",
+              "team": "Honda HRC",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:44.689",
+              "gap": "+70.069",
+              "interval": null,
+              "bestLap": "2:16.454",
+              "points": 2,
+              "status": null
+            },
+            {
+              "pos": 15,
+              "number": 87,
+              "name": "Remy Gardner",
+              "team": "GYTR GRT Yamaha WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:45.307",
+              "gap": "+70.687",
+              "interval": null,
+              "bestLap": "2:16.595",
+              "points": 1,
+              "status": null
+            },
+            {
+              "pos": 16,
+              "number": 55,
+              "name": "Andrea Locatelli",
+              "team": "Pata Maxus Yamaha",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:45.769",
+              "gap": "+71.149",
+              "interval": null,
+              "bestLap": "2:16.644",
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 17,
+              "number": 46,
+              "name": "Thomas Bridewell",
+              "team": "Superbike Advocates",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:47.608",
+              "gap": "+72.988",
+              "interval": null,
+              "bestLap": "2:16.492",
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 18,
+              "number": 9,
+              "name": "Danilo Petrucci",
+              "team": "ROKiT BMW Motorrad WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:51.852",
+              "gap": "+77.232",
+              "interval": null,
+              "bestLap": "2:16.741",
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 19,
+              "number": 76,
+              "name": "Loris Baz",
+              "team": "MGM Optical Express Racing",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "56:54.310",
+              "gap": "+79.690",
+              "interval": null,
+              "bestLap": "2:16.947",
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 20,
+              "number": 13,
+              "name": "Mattia Rato",
+              "team": "Motoxracing WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "57:08.011",
+              "gap": "+93.391",
+              "interval": null,
+              "bestLap": "2:17.404",
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 21,
+              "number": 85,
+              "name": "Twan Smits",
+              "team": "Motoxracing WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "57:11.986",
+              "gap": "+97.366",
+              "interval": null,
+              "bestLap": "2:17.593",
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 22,
+              "number": 62,
+              "name": "Stefano Manzi",
+              "team": "GYTR GRT Yamaha WorldSBK Team",
+              "make": null,
+              "cls": null,
+              "laps": 21,
+              "time": "57:38.908",
+              "gap": "+124.288",
+              "interval": null,
+              "bestLap": "2:16.342",
+              "points": 0,
+              "status": null
+            }
+          ]
         },
         {
           "id": "2026-EST-SBK-W1A",
@@ -62191,7 +62522,7 @@
           "number": 11,
           "team": "Aruba.it Racing - Ducati",
           "make": null,
-          "points": 602,
+          "points": 627,
           "wins": null
         },
         {
@@ -62200,7 +62531,7 @@
           "number": 7,
           "team": "Aruba.it Racing - Ducati",
           "make": null,
-          "points": 469,
+          "points": 489,
           "wins": null
         },
         {
@@ -62209,7 +62540,7 @@
           "number": 5,
           "team": "Barni Spark Racing Team",
           "make": null,
-          "points": 269,
+          "points": 277,
           "wins": null
         },
         {
@@ -62218,7 +62549,7 @@
           "number": 22,
           "team": "bimota by Kawasaki Racing Team",
           "make": null,
-          "points": 226,
+          "points": 237,
           "wins": null
         },
         {
@@ -62227,7 +62558,7 @@
           "number": 14,
           "team": "ELF Marc VDS Racing Team",
           "make": null,
-          "points": 219,
+          "points": 224,
           "wins": null
         },
         {
@@ -62236,7 +62567,7 @@
           "number": 34,
           "team": "Team Goeleven",
           "make": null,
-          "points": 193,
+          "points": 203,
           "wins": null
         },
         {
@@ -62245,25 +62576,25 @@
           "number": 47,
           "team": "bimota by Kawasaki Racing Team",
           "make": null,
-          "points": 184,
+          "points": 193,
           "wins": null
         },
         {
           "pos": 8,
-          "name": "Garrett Gerloff",
-          "number": 31,
-          "team": "Kawasaki WorldSBK Team",
-          "make": null,
-          "points": 145,
-          "wins": null
-        },
-        {
-          "pos": 9,
           "name": "Alberto Surra",
           "number": 67,
           "team": "Motocorsa Racing",
           "make": null,
-          "points": 140,
+          "points": 156,
+          "wins": null
+        },
+        {
+          "pos": 9,
+          "name": "Garrett Gerloff",
+          "number": 31,
+          "team": "Kawasaki WorldSBK Team",
+          "make": null,
+          "points": 151,
           "wins": null
         },
         {
@@ -62272,11 +62603,20 @@
           "number": 19,
           "team": "Barni Spark Racing Team",
           "make": null,
-          "points": 125,
+          "points": 132,
           "wins": null
         },
         {
           "pos": 11,
+          "name": "Miguel Oliveira",
+          "number": 88,
+          "team": "ROKiT BMW Motorrad WorldSBK Team",
+          "make": null,
+          "points": 122,
+          "wins": null
+        },
+        {
+          "pos": 12,
           "name": "Andrea Locatelli",
           "number": 55,
           "team": "Pata Maxus Yamaha",
@@ -62285,21 +62625,12 @@
           "wins": null
         },
         {
-          "pos": 12,
-          "name": "Miguel Oliveira",
-          "number": 88,
-          "team": "ROKiT BMW Motorrad WorldSBK Team",
-          "make": null,
-          "points": 109,
-          "wins": null
-        },
-        {
           "pos": 13,
           "name": "Xavi Vierge",
           "number": 97,
           "team": "Pata Maxus Yamaha",
           "make": null,
-          "points": 95,
+          "points": 98,
           "wins": null
         },
         {
@@ -62335,7 +62666,7 @@
           "number": 87,
           "team": "GYTR GRT Yamaha WorldSBK Team",
           "make": null,
-          "points": 57,
+          "points": 58,
           "wins": null
         },
         {
@@ -62353,7 +62684,7 @@
           "number": 96,
           "team": "Honda HRC",
           "make": null,
-          "points": 23,
+          "points": 27,
           "wins": null
         },
         {
@@ -62371,7 +62702,7 @@
           "number": 35,
           "team": "Honda HRC",
           "make": null,
-          "points": 16,
+          "points": 18,
           "wins": null
         },
         {
@@ -62437,11 +62768,11 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Ducati",
+          "name": "DUCAT",
           "number": null,
           "team": null,
           "make": null,
-          "points": 620,
+          "points": 645,
           "wins": null
         },
         {
@@ -62450,7 +62781,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 268,
+          "points": 279,
           "wins": null
         },
         {
@@ -62459,7 +62790,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 162,
+          "points": 165,
           "wins": null
         },
         {
@@ -62468,7 +62799,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 151,
+          "points": 164,
           "wins": null
         },
         {
@@ -62477,7 +62808,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 145,
+          "points": 151,
           "wins": null
         },
         {
@@ -62486,7 +62817,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 45,
+          "points": 49,
           "wins": null
         }
       ]
@@ -62775,7 +63106,7 @@
         },
         {
           "pos": 2,
-          "name": "Ducati",
+          "name": "DUCAT",
           "number": null,
           "team": null,
           "make": null,
