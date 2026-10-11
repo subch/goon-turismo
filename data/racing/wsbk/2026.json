@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-11T06:32:37.687Z",
+  "syncedAt": "2026-10-11T08:32:37.567Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -60223,8 +60223,8 @@
           "type": "warmup",
           "name": "Warm Up",
           "startUtc": "2026-10-11T08:15:00+00:00",
-          "endUtc": "2026-10-11T08:25:00+00:00",
-          "status": "upcoming",
+          "endUtc": "2026-10-11T08:27:43+00:00",
+          "status": "finished",
           "results": null
         },
         {
@@ -62777,7 +62777,7 @@
         },
         {
           "pos": 2,
-          "name": "bimota",
+          "name": "BIMOT",
           "number": null,
           "team": null,
           "make": null,
@@ -62786,7 +62786,7 @@
         },
         {
           "pos": 3,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -62804,7 +62804,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -62813,7 +62813,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -63097,7 +63097,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -63133,7 +63133,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -63142,7 +63142,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
