@@ -11,8 +11,12 @@
 // ~30 requests per run (the upcoming events' schedules plus standings).
 import { getJson } from '../lib/http.mjs';
 import { eventStatus, sessionStatus, result, standingRow, slug } from '../lib/schema.mjs';
+import { wallTimeToUtc } from '../lib/time.mjs';
 
 const BASE = 'https://api.motogp.pulselive.com/motogp/v1/results';
+// The site's calendar feed. Only used for each event's time zone, which the
+// results API doesn't carry; a results event's toad_api_uuid is its id here.
+const CALENDAR = 'https://api.motogp.pulselive.com/motogp/v1/events';
 const DELAY = 350;
 
 export const id = 'motogp';
@@ -36,6 +40,14 @@ const SESSION_LABELS = {
   RAC: () => 'Race',
 };
 const SESSION_TYPES = { FP: 'practice', PR: 'practice', Q: 'qualifying', SPR: 'sprint', WUP: 'warmup', RAC: 'race' };
+
+// A session's `date` is the circuit's wall-clock time with a +00:00 stuck on
+// it ("2026-10-11T15:00:00+00:00" for a 15:00 start in Lombok, 07:00 UTC), so
+// the offset is thrown away and the event's own zone applied. No zone, no
+// time: better a blank than one that is hours out.
+export function sessionStartUtc(date, timeZone) {
+  return wallTimeToUtc(date ? String(date).slice(0, 19) : null, timeZone);
+}
 
 function rowFrom(c, type) {
   const timed = type === 'race' || type === 'sprint';
@@ -67,6 +79,9 @@ export async function fetchSeason({ season, previous, full, log }) {
     .sort((a, b) => String(a.date_start).localeCompare(String(b.date_start)));
   log?.(`MotoGP ${season}: ${rawEvents.length} events`);
 
+  const calendar = await getJson(`${CALENDAR}?seasonYear=${season}`, { delayMs: DELAY });
+  const zones = new Map(calendar.map((c) => [c.id, c.time_zone]));
+
   const prevEvents = new Map((previous?.events ?? []).map((e) => [e.id, e]));
   const classes = [];
   const seenClass = new Set();
@@ -75,8 +90,15 @@ export async function fetchSeason({ season, previous, full, log }) {
   for (const [i, e] of rawEvents.entries()) {
     const eventId = e.short_name.toLowerCase();
     const prev = prevEvents.get(eventId);
+    const zone = zones.get(e.toad_api_uuid);
+    if (!zone) log?.(`  WARN: no time zone for ${e.short_name}, session times left blank`);
     if (prev?.complete && !full) {
-      events.push({ ...prev, round: i + 1 });
+      // Files written before session times were zone-corrected still hold the
+      // API's raw "+00:00" stamps; corrected ones end in Z.
+      const sessions = prev.sessions.map((sess) =>
+        sess.startUtc?.endsWith('+00:00') ? { ...sess, startUtc: sessionStartUtc(sess.startUtc, zone) } : sess,
+      );
+      events.push({ ...prev, round: i + 1, sessions });
       for (const sess of prev.sessions) if (!seenClass.has(sess.classId)) seenClass.add(sess.classId);
       continue;
     }
@@ -107,14 +129,15 @@ export async function fetchSeason({ season, previous, full, log }) {
           if (!results.length) results = null;
         }
         if (rs.status !== 'FINISHED' || !results) allFinishedAndFetched = false;
+        const startUtc = sessionStartUtc(rs.date, zone);
         sessions.push({
           id: rs.id,
           classId,
           type,
           name: label,
-          startUtc: rs.date ?? null,
+          startUtc,
           endUtc: null,
-          status: sessionStatus(rs.date, null, rs.status, !!results),
+          status: sessionStatus(startUtc, null, rs.status, !!results),
           results,
         });
       }

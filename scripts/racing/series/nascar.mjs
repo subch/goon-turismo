@@ -12,6 +12,7 @@
 // as "not published yet".
 import { getJson } from '../lib/http.mjs';
 import { eventStatus, sessionStatus, result, standingRow } from '../lib/schema.mjs';
+import { wallTimeToUtc } from '../lib/time.mjs';
 
 const BASE = 'https://cf.nascar.com/cacher';
 const DELAY = 350;
@@ -26,18 +27,7 @@ export const classes = [{ id: 'cup', name: 'Cup Series' }];
 
 // Eastern wall-clock "2026-09-19T19:30:00" -> UTC ISO, DST-aware.
 function easternToUtc(local) {
-  if (!local) return null;
-  const naive = new Date(`${local}Z`);
-  if (Number.isNaN(naive.getTime())) return null;
-  const parts = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/New_York',
-    hourCycle: 'h23',
-    year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit',
-  }).formatToParts(naive);
-  const get = (t) => Number(parts.find((p) => p.type === t)?.value);
-  const asIfUtc = Date.UTC(get('year'), get('month') - 1, get('day'), get('hour'), get('minute'), get('second'));
-  const offset = asIfUtc - naive.getTime(); // what New York shows minus UTC = zone offset
-  return new Date(naive.getTime() - offset).toISOString();
+  return wallTimeToUtc(local, 'America/New_York');
 }
 
 function raceRow(r, winnerLaps) {
