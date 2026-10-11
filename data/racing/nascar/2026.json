@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-11T18:33:06.787Z",
+  "syncedAt": "2026-10-11T20:33:06.059Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -56008,7 +56008,7 @@
           "name": "Bank of America 400",
           "startUtc": "2026-10-11T19:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         }
       ]
