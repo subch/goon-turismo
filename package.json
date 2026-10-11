@@ -13,6 +13,7 @@
     "sync:gridstats": "node scripts/sync-gridstats.mjs",
     "process:issue-result": "node scripts/process-issue-result.mjs",
     "import:historical-seasons": "node scripts/import-historical-seasons.mjs",
+    "test": "node --test scripts/racing/lib/time.test.mjs",
     "verify:data": "node scripts/verify-data-integrity.mjs",
     "scrape:racing": "node scripts/scrape-racing.mjs",
     "scrape:tracks": "node scripts/scrape-tracks.mjs"

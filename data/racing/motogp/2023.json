@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2023,
-  "syncedAt": "2026-09-28T16:11:34.510Z",
+  "syncedAt": "2026-10-11T12:53:04.997Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -43,7 +43,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-24T10:45:00+00:00",
+          "startUtc": "2023-03-24T10:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -384,7 +384,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-24T15:00:00+00:00",
+          "startUtc": "2023-03-24T15:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -725,7 +725,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-03-25T10:10:00+00:00",
+          "startUtc": "2023-03-25T10:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1051,7 +1051,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-03-25T10:50:00+00:00",
+          "startUtc": "2023-03-25T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1227,7 +1227,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-03-25T11:15:00+00:00",
+          "startUtc": "2023-03-25T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1418,7 +1418,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-03-25T15:00:00+00:00",
+          "startUtc": "2023-03-25T15:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1744,7 +1744,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-03-26T09:45:00+00:00",
+          "startUtc": "2023-03-26T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -2055,7 +2055,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-03-26T14:00:00+00:00",
+          "startUtc": "2023-03-26T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -2366,7 +2366,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-24T09:50:00+00:00",
+          "startUtc": "2023-03-24T09:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -2812,7 +2812,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-24T14:05:00+00:00",
+          "startUtc": "2023-03-24T14:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -3258,7 +3258,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-25T09:25:00+00:00",
+          "startUtc": "2023-03-25T09:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -3689,7 +3689,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-03-25T13:45:00+00:00",
+          "startUtc": "2023-03-25T13:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -3910,7 +3910,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-03-25T14:10:00+00:00",
+          "startUtc": "2023-03-25T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -4191,7 +4191,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-03-26T12:15:00+00:00",
+          "startUtc": "2023-03-26T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -4607,7 +4607,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-24T09:00:00+00:00",
+          "startUtc": "2023-03-24T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -5038,7 +5038,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-24T13:15:00+00:00",
+          "startUtc": "2023-03-24T13:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -5469,7 +5469,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-25T08:40:00+00:00",
+          "startUtc": "2023-03-25T08:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -5900,7 +5900,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-03-25T12:50:00+00:00",
+          "startUtc": "2023-03-25T12:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -6121,7 +6121,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-03-25T13:15:00+00:00",
+          "startUtc": "2023-03-25T13:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -6402,7 +6402,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-03-26T11:00:00+00:00",
+          "startUtc": "2023-03-26T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -6849,7 +6849,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-31T10:45:00+00:00",
+          "startUtc": "2023-03-31T13:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7130,7 +7130,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-31T15:00:00+00:00",
+          "startUtc": "2023-03-31T18:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7411,7 +7411,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-04-01T10:10:00+00:00",
+          "startUtc": "2023-04-01T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7692,7 +7692,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-01T10:50:00+00:00",
+          "startUtc": "2023-04-01T13:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7823,7 +7823,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-01T11:15:00+00:00",
+          "startUtc": "2023-04-01T14:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8014,7 +8014,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-04-01T15:00:00+00:00",
+          "startUtc": "2023-04-01T18:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8295,7 +8295,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-04-02T09:45:00+00:00",
+          "startUtc": "2023-04-02T12:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8561,7 +8561,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-02T14:00:00+00:00",
+          "startUtc": "2023-04-02T17:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8827,7 +8827,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-31T09:50:00+00:00",
+          "startUtc": "2023-03-31T12:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -9273,7 +9273,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-31T14:05:00+00:00",
+          "startUtc": "2023-03-31T17:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -9719,7 +9719,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-01T09:25:00+00:00",
+          "startUtc": "2023-04-01T12:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -10165,7 +10165,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-01T13:45:00+00:00",
+          "startUtc": "2023-04-01T16:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -10401,7 +10401,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-01T14:10:00+00:00",
+          "startUtc": "2023-04-01T17:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -10682,7 +10682,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-02T12:20:00+00:00",
+          "startUtc": "2023-04-02T15:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -11113,7 +11113,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-31T09:00:00+00:00",
+          "startUtc": "2023-03-31T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -11544,7 +11544,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-03-31T13:15:00+00:00",
+          "startUtc": "2023-03-31T16:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -11975,7 +11975,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-01T08:40:00+00:00",
+          "startUtc": "2023-04-01T11:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -12406,7 +12406,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-01T12:50:00+00:00",
+          "startUtc": "2023-04-01T15:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -12627,7 +12627,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-01T13:15:00+00:00",
+          "startUtc": "2023-04-01T16:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -12908,7 +12908,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-02T11:00:00+00:00",
+          "startUtc": "2023-04-02T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -13355,7 +13355,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-14T10:45:00+00:00",
+          "startUtc": "2023-04-14T15:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -13696,7 +13696,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-14T15:00:00+00:00",
+          "startUtc": "2023-04-14T20:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14037,7 +14037,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-04-15T10:10:00+00:00",
+          "startUtc": "2023-04-15T15:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14378,7 +14378,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-15T10:50:00+00:00",
+          "startUtc": "2023-04-15T15:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14569,7 +14569,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-15T11:15:00+00:00",
+          "startUtc": "2023-04-15T16:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14760,7 +14760,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-04-15T15:00:00+00:00",
+          "startUtc": "2023-04-15T20:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -15101,7 +15101,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-04-16T09:45:00+00:00",
+          "startUtc": "2023-04-16T14:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -15442,7 +15442,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-16T14:00:00+00:00",
+          "startUtc": "2023-04-16T19:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -15783,7 +15783,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-14T09:50:00+00:00",
+          "startUtc": "2023-04-14T14:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -16244,7 +16244,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-14T14:05:00+00:00",
+          "startUtc": "2023-04-14T19:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -16705,7 +16705,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-15T09:25:00+00:00",
+          "startUtc": "2023-04-15T14:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17166,7 +17166,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-15T13:45:00+00:00",
+          "startUtc": "2023-04-15T18:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17402,7 +17402,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-15T14:10:00+00:00",
+          "startUtc": "2023-04-15T19:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17683,7 +17683,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-16T12:15:00+00:00",
+          "startUtc": "2023-04-16T17:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -18129,7 +18129,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-14T09:00:00+00:00",
+          "startUtc": "2023-04-14T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -18560,7 +18560,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-14T13:15:00+00:00",
+          "startUtc": "2023-04-14T18:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -18991,7 +18991,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-15T08:40:00+00:00",
+          "startUtc": "2023-04-15T13:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -19422,7 +19422,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-15T12:50:00+00:00",
+          "startUtc": "2023-04-15T17:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -19643,7 +19643,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-15T13:15:00+00:00",
+          "startUtc": "2023-04-15T18:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -19924,7 +19924,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-16T11:00:00+00:00",
+          "startUtc": "2023-04-16T16:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -20371,7 +20371,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-28T10:45:00+00:00",
+          "startUtc": "2023-04-28T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -20742,7 +20742,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-28T15:00:00+00:00",
+          "startUtc": "2023-04-28T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21113,7 +21113,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-04-29T10:10:00+00:00",
+          "startUtc": "2023-04-29T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21484,7 +21484,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-29T10:50:00+00:00",
+          "startUtc": "2023-04-29T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21705,7 +21705,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-29T11:15:00+00:00",
+          "startUtc": "2023-04-29T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21896,7 +21896,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-04-29T15:15:00+00:00",
+          "startUtc": "2023-04-29T13:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -22252,7 +22252,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-04-30T10:45:00+00:00",
+          "startUtc": "2023-04-30T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -22608,7 +22608,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-30T15:20:00+00:00",
+          "startUtc": "2023-04-30T13:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -22964,7 +22964,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-28T09:50:00+00:00",
+          "startUtc": "2023-04-28T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -23425,7 +23425,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-28T14:05:00+00:00",
+          "startUtc": "2023-04-28T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -23886,7 +23886,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-29T09:25:00+00:00",
+          "startUtc": "2023-04-29T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -24347,7 +24347,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-29T13:45:00+00:00",
+          "startUtc": "2023-04-29T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -24598,7 +24598,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-29T14:10:00+00:00",
+          "startUtc": "2023-04-29T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -24879,7 +24879,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-30T13:15:00+00:00",
+          "startUtc": "2023-04-30T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -25325,7 +25325,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-28T09:00:00+00:00",
+          "startUtc": "2023-04-28T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -25771,7 +25771,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-28T13:15:00+00:00",
+          "startUtc": "2023-04-28T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -26217,7 +26217,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-04-29T08:40:00+00:00",
+          "startUtc": "2023-04-29T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -26663,7 +26663,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-04-29T12:50:00+00:00",
+          "startUtc": "2023-04-29T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -26899,7 +26899,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-04-29T13:15:00+00:00",
+          "startUtc": "2023-04-29T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -27180,7 +27180,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-04-30T12:00:00+00:00",
+          "startUtc": "2023-04-30T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -27627,7 +27627,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-12T10:45:00+00:00",
+          "startUtc": "2023-05-12T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -27968,7 +27968,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-12T15:00:00+00:00",
+          "startUtc": "2023-05-12T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -28294,7 +28294,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-05-13T10:10:00+00:00",
+          "startUtc": "2023-05-13T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -28620,7 +28620,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-05-13T10:50:00+00:00",
+          "startUtc": "2023-05-13T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -28796,7 +28796,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-05-13T11:15:00+00:00",
+          "startUtc": "2023-05-13T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -28987,7 +28987,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-05-13T15:00:00+00:00",
+          "startUtc": "2023-05-13T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -29313,7 +29313,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-05-14T09:45:00+00:00",
+          "startUtc": "2023-05-14T07:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -29639,7 +29639,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-05-14T14:00:00+00:00",
+          "startUtc": "2023-05-14T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -29965,7 +29965,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-12T09:50:00+00:00",
+          "startUtc": "2023-05-12T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -30411,7 +30411,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-12T14:05:00+00:00",
+          "startUtc": "2023-05-12T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -30857,7 +30857,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-13T09:25:00+00:00",
+          "startUtc": "2023-05-13T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -31303,7 +31303,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-05-13T13:45:00+00:00",
+          "startUtc": "2023-05-13T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -31539,7 +31539,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-05-13T14:10:00+00:00",
+          "startUtc": "2023-05-13T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -31820,7 +31820,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-05-14T12:37:00+00:00",
+          "startUtc": "2023-05-14T10:37:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -32266,7 +32266,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-12T09:00:00+00:00",
+          "startUtc": "2023-05-12T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -32682,7 +32682,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-12T13:15:00+00:00",
+          "startUtc": "2023-05-12T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -33098,7 +33098,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-05-13T08:40:00+00:00",
+          "startUtc": "2023-05-13T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -33514,7 +33514,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-05-13T12:50:00+00:00",
+          "startUtc": "2023-05-13T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -33720,7 +33720,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-05-13T13:15:00+00:00",
+          "startUtc": "2023-05-13T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -34001,7 +34001,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-05-14T11:00:00+00:00",
+          "startUtc": "2023-05-14T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -34433,7 +34433,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-09T10:45:00+00:00",
+          "startUtc": "2023-06-09T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -34804,7 +34804,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-09T15:00:00+00:00",
+          "startUtc": "2023-06-09T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35175,7 +35175,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-06-10T10:10:00+00:00",
+          "startUtc": "2023-06-10T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35531,7 +35531,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-10T11:00:00+00:00",
+          "startUtc": "2023-06-10T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35737,7 +35737,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-10T11:25:00+00:00",
+          "startUtc": "2023-06-10T09:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35928,7 +35928,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-06-10T15:00:00+00:00",
+          "startUtc": "2023-06-10T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -36284,7 +36284,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-06-11T09:45:00+00:00",
+          "startUtc": "2023-06-11T07:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -36625,7 +36625,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-11T14:00:00+00:00",
+          "startUtc": "2023-06-11T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -36966,7 +36966,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-09T09:50:00+00:00",
+          "startUtc": "2023-06-09T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -37442,7 +37442,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-09T14:05:00+00:00",
+          "startUtc": "2023-06-09T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -37918,7 +37918,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-10T09:25:00+00:00",
+          "startUtc": "2023-06-10T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -38394,7 +38394,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-10T13:45:00+00:00",
+          "startUtc": "2023-06-10T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -38645,7 +38645,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-10T14:10:00+00:00",
+          "startUtc": "2023-06-10T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -38926,7 +38926,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-11T12:15:00+00:00",
+          "startUtc": "2023-06-11T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -39387,7 +39387,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-09T09:00:00+00:00",
+          "startUtc": "2023-06-09T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -39833,7 +39833,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-09T13:15:00+00:00",
+          "startUtc": "2023-06-09T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -40279,7 +40279,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-10T08:40:00+00:00",
+          "startUtc": "2023-06-10T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -40710,7 +40710,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-10T12:50:00+00:00",
+          "startUtc": "2023-06-10T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -40931,7 +40931,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-10T13:15:00+00:00",
+          "startUtc": "2023-06-10T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41212,7 +41212,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-11T11:00:00+00:00",
+          "startUtc": "2023-06-11T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41659,7 +41659,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-16T10:45:00+00:00",
+          "startUtc": "2023-06-16T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41970,7 +41970,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-16T15:10:00+00:00",
+          "startUtc": "2023-06-16T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -42281,7 +42281,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-06-17T10:10:00+00:00",
+          "startUtc": "2023-06-17T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -42592,7 +42592,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-17T10:50:00+00:00",
+          "startUtc": "2023-06-17T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -42753,7 +42753,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-17T11:15:00+00:00",
+          "startUtc": "2023-06-17T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -42944,7 +42944,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-06-17T15:00:00+00:00",
+          "startUtc": "2023-06-17T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -43255,7 +43255,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-06-18T09:45:00+00:00",
+          "startUtc": "2023-06-18T07:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -43566,7 +43566,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-18T14:00:00+00:00",
+          "startUtc": "2023-06-18T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -43862,7 +43862,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-16T09:50:00+00:00",
+          "startUtc": "2023-06-16T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -44323,7 +44323,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-16T14:15:00+00:00",
+          "startUtc": "2023-06-16T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -44784,7 +44784,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-17T09:25:00+00:00",
+          "startUtc": "2023-06-17T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -45245,7 +45245,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-17T13:45:00+00:00",
+          "startUtc": "2023-06-17T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -45481,7 +45481,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-17T14:10:00+00:00",
+          "startUtc": "2023-06-17T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -45762,7 +45762,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-18T12:15:00+00:00",
+          "startUtc": "2023-06-18T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -46208,7 +46208,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-16T09:00:00+00:00",
+          "startUtc": "2023-06-16T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -46654,7 +46654,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-16T13:15:00+00:00",
+          "startUtc": "2023-06-16T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -47100,7 +47100,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-17T08:40:00+00:00",
+          "startUtc": "2023-06-17T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -47546,7 +47546,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-17T12:50:00+00:00",
+          "startUtc": "2023-06-17T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -47782,7 +47782,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-17T13:15:00+00:00",
+          "startUtc": "2023-06-17T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -48063,7 +48063,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-18T11:00:00+00:00",
+          "startUtc": "2023-06-18T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -48525,7 +48525,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-23T10:45:00+00:00",
+          "startUtc": "2023-06-23T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -48881,7 +48881,7 @@
           "classId": "motogp",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-23T15:00:00+00:00",
+          "startUtc": "2023-06-23T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49237,7 +49237,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-06-24T10:10:00+00:00",
+          "startUtc": "2023-06-24T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49593,7 +49593,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-24T10:50:00+00:00",
+          "startUtc": "2023-06-24T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49799,7 +49799,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-24T11:15:00+00:00",
+          "startUtc": "2023-06-24T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49990,7 +49990,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-06-24T15:00:00+00:00",
+          "startUtc": "2023-06-24T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -50346,7 +50346,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-06-25T09:45:00+00:00",
+          "startUtc": "2023-06-25T07:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -50687,7 +50687,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-25T14:00:00+00:00",
+          "startUtc": "2023-06-25T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -51028,7 +51028,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-23T09:50:00+00:00",
+          "startUtc": "2023-06-23T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -51474,7 +51474,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-23T14:05:00+00:00",
+          "startUtc": "2023-06-23T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -51905,7 +51905,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-24T09:25:00+00:00",
+          "startUtc": "2023-06-24T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -52336,7 +52336,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-24T13:45:00+00:00",
+          "startUtc": "2023-06-24T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -52557,7 +52557,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-24T14:10:00+00:00",
+          "startUtc": "2023-06-24T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -52838,7 +52838,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-25T12:15:00+00:00",
+          "startUtc": "2023-06-25T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -53269,7 +53269,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-23T09:00:00+00:00",
+          "startUtc": "2023-06-23T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -53700,7 +53700,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-23T13:15:00+00:00",
+          "startUtc": "2023-06-23T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -54131,7 +54131,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-06-24T08:40:00+00:00",
+          "startUtc": "2023-06-24T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -54547,7 +54547,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-06-24T12:50:00+00:00",
+          "startUtc": "2023-06-24T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -54753,7 +54753,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-06-24T13:15:00+00:00",
+          "startUtc": "2023-06-24T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -55034,7 +55034,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-06-25T11:00:00+00:00",
+          "startUtc": "2023-06-25T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -55466,7 +55466,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-08-04T10:45:00+00:00",
+          "startUtc": "2023-08-04T09:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -55807,7 +55807,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-08-04T15:00:00+00:00",
+          "startUtc": "2023-08-04T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56148,7 +56148,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-08-05T10:10:00+00:00",
+          "startUtc": "2023-08-05T09:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56489,7 +56489,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-08-05T10:50:00+00:00",
+          "startUtc": "2023-08-05T09:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56680,7 +56680,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-08-05T11:15:00+00:00",
+          "startUtc": "2023-08-05T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56871,7 +56871,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-08-05T15:00:00+00:00",
+          "startUtc": "2023-08-05T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -57212,7 +57212,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-08-06T09:45:00+00:00",
+          "startUtc": "2023-08-06T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -57553,7 +57553,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-08-06T13:00:00+00:00",
+          "startUtc": "2023-08-06T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -57894,7 +57894,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-04T09:50:00+00:00",
+          "startUtc": "2023-08-04T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -58340,7 +58340,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-04T14:05:00+00:00",
+          "startUtc": "2023-08-04T13:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -58786,7 +58786,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-05T09:25:00+00:00",
+          "startUtc": "2023-08-05T08:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -59232,7 +59232,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-08-05T13:45:00+00:00",
+          "startUtc": "2023-08-05T12:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -59468,7 +59468,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-08-05T14:10:00+00:00",
+          "startUtc": "2023-08-05T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -59749,7 +59749,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-08-06T14:30:00+00:00",
+          "startUtc": "2023-08-06T13:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -60195,7 +60195,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-04T09:00:00+00:00",
+          "startUtc": "2023-08-04T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -60626,7 +60626,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-04T13:15:00+00:00",
+          "startUtc": "2023-08-04T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61057,7 +61057,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-05T08:40:00+00:00",
+          "startUtc": "2023-08-05T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61488,7 +61488,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-08-05T12:50:00+00:00",
+          "startUtc": "2023-08-05T11:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61709,7 +61709,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-08-05T13:15:00+00:00",
+          "startUtc": "2023-08-05T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61990,7 +61990,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-08-06T11:15:00+00:00",
+          "startUtc": "2023-08-06T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -62437,7 +62437,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-08-18T10:45:00+00:00",
+          "startUtc": "2023-08-18T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -62793,7 +62793,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-08-18T15:10:00+00:00",
+          "startUtc": "2023-08-18T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63149,7 +63149,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-08-19T10:10:00+00:00",
+          "startUtc": "2023-08-19T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63505,7 +63505,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-08-19T10:50:00+00:00",
+          "startUtc": "2023-08-19T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63711,7 +63711,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-08-19T11:15:00+00:00",
+          "startUtc": "2023-08-19T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63902,7 +63902,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-08-19T15:00:00+00:00",
+          "startUtc": "2023-08-19T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -64258,7 +64258,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-08-20T09:45:00+00:00",
+          "startUtc": "2023-08-20T07:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -64614,7 +64614,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-08-20T14:00:00+00:00",
+          "startUtc": "2023-08-20T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -64970,7 +64970,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-18T09:50:00+00:00",
+          "startUtc": "2023-08-18T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -65431,7 +65431,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-18T14:05:00+00:00",
+          "startUtc": "2023-08-18T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -65892,7 +65892,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-19T09:25:00+00:00",
+          "startUtc": "2023-08-19T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -66338,7 +66338,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-08-19T13:45:00+00:00",
+          "startUtc": "2023-08-19T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -66559,7 +66559,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-08-19T14:10:00+00:00",
+          "startUtc": "2023-08-19T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -66840,7 +66840,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-08-20T12:15:00+00:00",
+          "startUtc": "2023-08-20T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -67271,7 +67271,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-18T09:00:00+00:00",
+          "startUtc": "2023-08-18T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -67732,7 +67732,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-18T13:15:00+00:00",
+          "startUtc": "2023-08-18T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -68193,7 +68193,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-08-19T08:40:00+00:00",
+          "startUtc": "2023-08-19T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -68654,7 +68654,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-08-19T12:50:00+00:00",
+          "startUtc": "2023-08-19T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -68905,7 +68905,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-08-19T13:15:00+00:00",
+          "startUtc": "2023-08-19T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -69186,7 +69186,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-08-20T11:00:00+00:00",
+          "startUtc": "2023-08-20T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -69663,7 +69663,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-09-01T10:45:00+00:00",
+          "startUtc": "2023-09-01T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -70004,7 +70004,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-09-01T15:00:00+00:00",
+          "startUtc": "2023-09-01T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -70345,7 +70345,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-09-02T10:10:00+00:00",
+          "startUtc": "2023-09-02T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -70686,7 +70686,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-02T10:50:00+00:00",
+          "startUtc": "2023-09-02T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -70877,7 +70877,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-02T11:15:00+00:00",
+          "startUtc": "2023-09-02T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -71068,7 +71068,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-09-02T15:00:00+00:00",
+          "startUtc": "2023-09-02T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -71409,7 +71409,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-09-03T09:45:00+00:00",
+          "startUtc": "2023-09-03T07:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -71750,7 +71750,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-03T14:28:00+00:00",
+          "startUtc": "2023-09-03T12:28:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -72091,7 +72091,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-01T09:50:00+00:00",
+          "startUtc": "2023-09-01T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -72552,7 +72552,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-01T14:05:00+00:00",
+          "startUtc": "2023-09-01T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -73013,7 +73013,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-02T09:25:00+00:00",
+          "startUtc": "2023-09-02T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -73474,7 +73474,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-02T13:45:00+00:00",
+          "startUtc": "2023-09-02T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -73725,7 +73725,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-02T14:10:00+00:00",
+          "startUtc": "2023-09-02T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -74006,7 +74006,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-03T12:15:00+00:00",
+          "startUtc": "2023-09-03T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -74467,7 +74467,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-01T09:00:00+00:00",
+          "startUtc": "2023-09-01T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -74928,7 +74928,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-01T13:15:00+00:00",
+          "startUtc": "2023-09-01T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -75389,7 +75389,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-02T08:40:00+00:00",
+          "startUtc": "2023-09-02T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -75850,7 +75850,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-02T12:50:00+00:00",
+          "startUtc": "2023-09-02T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -76101,7 +76101,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-02T13:15:00+00:00",
+          "startUtc": "2023-09-02T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -76382,7 +76382,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-03T11:00:00+00:00",
+          "startUtc": "2023-09-03T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -76844,7 +76844,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-09-08T10:45:00+00:00",
+          "startUtc": "2023-09-08T08:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -77215,7 +77215,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-09-08T15:00:00+00:00",
+          "startUtc": "2023-09-08T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -77586,7 +77586,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-09-09T10:10:00+00:00",
+          "startUtc": "2023-09-09T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -77957,7 +77957,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-09T10:50:00+00:00",
+          "startUtc": "2023-09-09T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -78163,7 +78163,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-09T11:15:00+00:00",
+          "startUtc": "2023-09-09T09:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -78354,7 +78354,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-09-09T15:00:00+00:00",
+          "startUtc": "2023-09-09T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -78710,7 +78710,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-09-10T09:40:00+00:00",
+          "startUtc": "2023-09-10T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -79066,7 +79066,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-10T14:00:00+00:00",
+          "startUtc": "2023-09-10T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -79422,7 +79422,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-08T09:50:00+00:00",
+          "startUtc": "2023-09-08T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -79898,7 +79898,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-08T14:05:00+00:00",
+          "startUtc": "2023-09-08T12:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -80374,7 +80374,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-09T09:25:00+00:00",
+          "startUtc": "2023-09-09T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -80835,7 +80835,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-09T13:45:00+00:00",
+          "startUtc": "2023-09-09T11:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -81086,7 +81086,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-09T14:10:00+00:00",
+          "startUtc": "2023-09-09T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -81367,7 +81367,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-10T12:15:00+00:00",
+          "startUtc": "2023-09-10T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -81828,7 +81828,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-08T09:00:00+00:00",
+          "startUtc": "2023-09-08T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -82259,7 +82259,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-08T13:15:00+00:00",
+          "startUtc": "2023-09-08T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -82690,7 +82690,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-09T08:40:00+00:00",
+          "startUtc": "2023-09-09T06:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83121,7 +83121,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-09T12:50:00+00:00",
+          "startUtc": "2023-09-09T10:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83342,7 +83342,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-09T13:15:00+00:00",
+          "startUtc": "2023-09-09T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83623,7 +83623,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-10T11:00:00+00:00",
+          "startUtc": "2023-09-10T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -84070,7 +84070,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-09-22T11:15:00+00:00",
+          "startUtc": "2023-09-22T05:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -84411,7 +84411,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-09-22T16:15:00+00:00",
+          "startUtc": "2023-09-22T10:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -84752,7 +84752,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-09-23T10:40:00+00:00",
+          "startUtc": "2023-09-23T05:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85093,7 +85093,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-23T11:23:00+00:00",
+          "startUtc": "2023-09-23T05:53:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85284,7 +85284,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-23T11:48:00+00:00",
+          "startUtc": "2023-09-23T06:18:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85475,7 +85475,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP",
-          "startUtc": "2023-09-23T16:00:00+00:00",
+          "startUtc": "2023-09-23T10:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85801,7 +85801,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-09-23T17:04:00+00:00",
+          "startUtc": "2023-09-23T11:34:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -86127,7 +86127,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-09-24T11:35:00+00:00",
+          "startUtc": "2023-09-24T06:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -86438,7 +86438,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-24T15:30:00+00:00",
+          "startUtc": "2023-09-24T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -86749,7 +86749,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-22T10:05:00+00:00",
+          "startUtc": "2023-09-22T04:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -87210,7 +87210,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-22T15:05:00+00:00",
+          "startUtc": "2023-09-22T09:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -87671,7 +87671,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-23T09:55:00+00:00",
+          "startUtc": "2023-09-23T04:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -88132,7 +88132,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-23T15:05:00+00:00",
+          "startUtc": "2023-09-23T09:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -88368,7 +88368,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-23T15:30:00+00:00",
+          "startUtc": "2023-09-23T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -88649,7 +88649,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-24T14:05:00+00:00",
+          "startUtc": "2023-09-24T08:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -89095,7 +89095,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-22T09:00:00+00:00",
+          "startUtc": "2023-09-22T03:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -89556,7 +89556,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-22T14:00:00+00:00",
+          "startUtc": "2023-09-22T08:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90017,7 +90017,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-23T09:10:00+00:00",
+          "startUtc": "2023-09-23T03:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90463,7 +90463,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-23T13:20:00+00:00",
+          "startUtc": "2023-09-23T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90684,7 +90684,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-23T14:35:00+00:00",
+          "startUtc": "2023-09-23T09:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90965,7 +90965,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-09-24T12:30:00+00:00",
+          "startUtc": "2023-09-24T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -91412,7 +91412,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-09-29T10:45:00+00:00",
+          "startUtc": "2023-09-29T01:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -91738,7 +91738,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-09-29T15:00:00+00:00",
+          "startUtc": "2023-09-29T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92064,7 +92064,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-09-30T10:10:00+00:00",
+          "startUtc": "2023-09-30T01:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92390,7 +92390,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-30T10:50:00+00:00",
+          "startUtc": "2023-09-30T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92566,7 +92566,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-30T11:15:00+00:00",
+          "startUtc": "2023-09-30T02:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92757,7 +92757,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-09-30T15:00:00+00:00",
+          "startUtc": "2023-09-30T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -93083,7 +93083,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-10-01T10:45:00+00:00",
+          "startUtc": "2023-10-01T01:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -93409,7 +93409,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-01T15:00:00+00:00",
+          "startUtc": "2023-10-01T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -93735,7 +93735,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-29T09:50:00+00:00",
+          "startUtc": "2023-09-29T00:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -94196,7 +94196,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-29T14:05:00+00:00",
+          "startUtc": "2023-09-29T05:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -94657,7 +94657,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-30T09:25:00+00:00",
+          "startUtc": "2023-09-30T00:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -95118,7 +95118,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-30T13:45:00+00:00",
+          "startUtc": "2023-09-30T04:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -95369,7 +95369,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-30T14:10:00+00:00",
+          "startUtc": "2023-09-30T05:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -95650,7 +95650,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-01T13:15:00+00:00",
+          "startUtc": "2023-10-01T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -96111,7 +96111,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-29T09:00:00+00:00",
+          "startUtc": "2023-09-29T00:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -96527,7 +96527,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-29T13:15:00+00:00",
+          "startUtc": "2023-09-29T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -96943,7 +96943,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-09-30T08:40:00+00:00",
+          "startUtc": "2023-09-29T23:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -97359,7 +97359,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-09-30T12:50:00+00:00",
+          "startUtc": "2023-09-30T03:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -97565,7 +97565,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-09-30T13:15:00+00:00",
+          "startUtc": "2023-09-30T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -97846,7 +97846,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-01T12:00:00+00:00",
+          "startUtc": "2023-10-01T03:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -98278,7 +98278,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-10-13T10:45:00+00:00",
+          "startUtc": "2023-10-13T02:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -98619,7 +98619,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-10-13T15:00:00+00:00",
+          "startUtc": "2023-10-13T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -98945,7 +98945,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-10-14T10:10:00+00:00",
+          "startUtc": "2023-10-14T02:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99271,7 +99271,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-14T10:50:00+00:00",
+          "startUtc": "2023-10-14T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99447,7 +99447,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-14T11:15:00+00:00",
+          "startUtc": "2023-10-14T03:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99638,7 +99638,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-10-14T15:00:00+00:00",
+          "startUtc": "2023-10-14T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99964,7 +99964,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-10-15T09:45:00+00:00",
+          "startUtc": "2023-10-15T01:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -100290,7 +100290,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-15T14:00:00+00:00",
+          "startUtc": "2023-10-15T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -100616,7 +100616,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-13T09:50:00+00:00",
+          "startUtc": "2023-10-13T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -101077,7 +101077,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-13T14:05:00+00:00",
+          "startUtc": "2023-10-13T06:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -101538,7 +101538,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-14T09:25:00+00:00",
+          "startUtc": "2023-10-14T01:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -101999,7 +101999,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-14T13:45:00+00:00",
+          "startUtc": "2023-10-14T05:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102250,7 +102250,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-14T14:10:00+00:00",
+          "startUtc": "2023-10-14T06:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102531,7 +102531,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-15T12:15:00+00:00",
+          "startUtc": "2023-10-15T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102992,7 +102992,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-13T09:00:00+00:00",
+          "startUtc": "2023-10-13T01:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -103438,7 +103438,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-13T13:15:00+00:00",
+          "startUtc": "2023-10-13T05:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -103884,7 +103884,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-14T08:40:00+00:00",
+          "startUtc": "2023-10-14T00:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -104330,7 +104330,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-14T12:50:00+00:00",
+          "startUtc": "2023-10-14T04:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -104566,7 +104566,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-14T13:15:00+00:00",
+          "startUtc": "2023-10-14T05:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -104847,7 +104847,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-15T11:00:00+00:00",
+          "startUtc": "2023-10-15T03:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105309,7 +105309,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-10-20T10:45:00+00:00",
+          "startUtc": "2023-10-19T23:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105650,7 +105650,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-10-20T15:00:00+00:00",
+          "startUtc": "2023-10-20T04:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105991,7 +105991,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-10-21T10:10:00+00:00",
+          "startUtc": "2023-10-20T23:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -106317,7 +106317,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-21T10:50:00+00:00",
+          "startUtc": "2023-10-20T23:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -106493,7 +106493,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-21T11:15:00+00:00",
+          "startUtc": "2023-10-21T00:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -106684,7 +106684,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-21T15:10:00+00:00",
+          "startUtc": "2023-10-21T04:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -107010,7 +107010,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-10-22T09:00:00+00:00",
+          "startUtc": "2023-10-21T22:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -107336,7 +107336,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-10-22T13:00:00+00:00",
+          "startUtc": "2023-10-22T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": null
@@ -107346,7 +107346,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-20T09:50:00+00:00",
+          "startUtc": "2023-10-19T22:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -107807,7 +107807,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-20T14:05:00+00:00",
+          "startUtc": "2023-10-20T03:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108268,7 +108268,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-21T09:25:00+00:00",
+          "startUtc": "2023-10-20T22:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108729,7 +108729,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-21T13:45:00+00:00",
+          "startUtc": "2023-10-21T02:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108980,7 +108980,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-21T14:10:00+00:00",
+          "startUtc": "2023-10-21T03:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -109261,7 +109261,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-10-22T08:40:00+00:00",
+          "startUtc": "2023-10-21T21:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -109722,7 +109722,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-22T11:15:00+00:00",
+          "startUtc": "2023-10-22T00:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -110183,7 +110183,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-20T09:00:00+00:00",
+          "startUtc": "2023-10-19T22:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -110614,7 +110614,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-20T13:15:00+00:00",
+          "startUtc": "2023-10-20T02:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111045,7 +111045,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-21T08:40:00+00:00",
+          "startUtc": "2023-10-20T21:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111476,7 +111476,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-21T12:50:00+00:00",
+          "startUtc": "2023-10-21T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111682,7 +111682,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-21T13:15:00+00:00",
+          "startUtc": "2023-10-21T02:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111963,7 +111963,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-10-22T08:20:00+00:00",
+          "startUtc": "2023-10-21T21:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -112379,7 +112379,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-22T10:00:00+00:00",
+          "startUtc": "2023-10-21T23:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -112811,7 +112811,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-10-27T10:45:00+00:00",
+          "startUtc": "2023-10-27T03:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -113137,7 +113137,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-10-27T15:00:00+00:00",
+          "startUtc": "2023-10-27T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -113463,7 +113463,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-10-28T10:10:00+00:00",
+          "startUtc": "2023-10-28T03:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -113789,7 +113789,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-28T10:50:00+00:00",
+          "startUtc": "2023-10-28T03:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -113965,7 +113965,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-28T11:15:00+00:00",
+          "startUtc": "2023-10-28T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -114156,7 +114156,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-10-28T15:00:00+00:00",
+          "startUtc": "2023-10-28T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -114482,7 +114482,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-10-29T09:45:00+00:00",
+          "startUtc": "2023-10-29T02:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -114808,7 +114808,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-29T14:00:00+00:00",
+          "startUtc": "2023-10-29T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -115134,7 +115134,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-27T09:50:00+00:00",
+          "startUtc": "2023-10-27T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -115595,7 +115595,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-27T14:05:00+00:00",
+          "startUtc": "2023-10-27T07:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -116056,7 +116056,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-28T09:25:00+00:00",
+          "startUtc": "2023-10-28T02:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -116517,7 +116517,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-28T13:45:00+00:00",
+          "startUtc": "2023-10-28T06:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -116768,7 +116768,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-28T14:10:00+00:00",
+          "startUtc": "2023-10-28T07:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117049,7 +117049,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-29T12:15:00+00:00",
+          "startUtc": "2023-10-29T05:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117510,7 +117510,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-27T09:00:00+00:00",
+          "startUtc": "2023-10-27T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117971,7 +117971,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-27T13:15:00+00:00",
+          "startUtc": "2023-10-27T06:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -118432,7 +118432,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-10-28T08:40:00+00:00",
+          "startUtc": "2023-10-28T01:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -118893,7 +118893,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-10-28T12:50:00+00:00",
+          "startUtc": "2023-10-28T05:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -119144,7 +119144,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-10-28T13:15:00+00:00",
+          "startUtc": "2023-10-28T06:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -119425,7 +119425,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-10-29T11:00:00+00:00",
+          "startUtc": "2023-10-29T04:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -119902,7 +119902,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-11-10T10:45:00+00:00",
+          "startUtc": "2023-11-10T02:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -120258,7 +120258,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-11-10T15:00:00+00:00",
+          "startUtc": "2023-11-10T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -120614,7 +120614,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-11-11T10:10:00+00:00",
+          "startUtc": "2023-11-11T02:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -120970,7 +120970,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-11T10:50:00+00:00",
+          "startUtc": "2023-11-11T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -121176,7 +121176,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-11T11:15:00+00:00",
+          "startUtc": "2023-11-11T03:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -121367,7 +121367,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-11-11T15:00:00+00:00",
+          "startUtc": "2023-11-11T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -121723,7 +121723,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-11-12T09:45:00+00:00",
+          "startUtc": "2023-11-12T01:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -122079,7 +122079,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-12T14:00:00+00:00",
+          "startUtc": "2023-11-12T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -122435,7 +122435,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-10T09:50:00+00:00",
+          "startUtc": "2023-11-10T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -122926,7 +122926,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-10T14:05:00+00:00",
+          "startUtc": "2023-11-10T06:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -123417,7 +123417,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-11T09:25:00+00:00",
+          "startUtc": "2023-11-11T01:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -123908,7 +123908,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-11T13:45:00+00:00",
+          "startUtc": "2023-11-11T05:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -124189,7 +124189,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-11T14:10:00+00:00",
+          "startUtc": "2023-11-11T06:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -124470,7 +124470,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-12T12:15:00+00:00",
+          "startUtc": "2023-11-12T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -124946,7 +124946,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-10T09:00:00+00:00",
+          "startUtc": "2023-11-10T01:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -125377,7 +125377,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-10T13:15:00+00:00",
+          "startUtc": "2023-11-10T05:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -125808,7 +125808,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-11T08:40:00+00:00",
+          "startUtc": "2023-11-11T00:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -126239,7 +126239,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-11T12:50:00+00:00",
+          "startUtc": "2023-11-11T04:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -126460,7 +126460,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-11T13:15:00+00:00",
+          "startUtc": "2023-11-11T05:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -126741,7 +126741,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-12T11:00:00+00:00",
+          "startUtc": "2023-11-12T03:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -127188,7 +127188,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-11-17T15:45:00+00:00",
+          "startUtc": "2023-11-17T12:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -127529,7 +127529,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-11-17T20:00:00+00:00",
+          "startUtc": "2023-11-17T17:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -127870,7 +127870,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-11-18T15:00:00+00:00",
+          "startUtc": "2023-11-18T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -128211,7 +128211,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-18T15:40:00+00:00",
+          "startUtc": "2023-11-18T12:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -128402,7 +128402,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-18T16:05:00+00:00",
+          "startUtc": "2023-11-18T13:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -128593,7 +128593,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-11-18T20:00:00+00:00",
+          "startUtc": "2023-11-18T17:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -128934,7 +128934,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-11-19T15:45:00+00:00",
+          "startUtc": "2023-11-19T12:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -129275,7 +129275,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-19T20:00:00+00:00",
+          "startUtc": "2023-11-19T17:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -129601,7 +129601,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-17T14:50:00+00:00",
+          "startUtc": "2023-11-17T11:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -130062,7 +130062,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-17T19:05:00+00:00",
+          "startUtc": "2023-11-17T16:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -130523,7 +130523,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-18T14:15:00+00:00",
+          "startUtc": "2023-11-18T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -130984,7 +130984,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-18T18:45:00+00:00",
+          "startUtc": "2023-11-18T15:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -131235,7 +131235,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-18T19:10:00+00:00",
+          "startUtc": "2023-11-18T16:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -131516,7 +131516,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-19T18:15:00+00:00",
+          "startUtc": "2023-11-19T15:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -131977,7 +131977,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-17T14:00:00+00:00",
+          "startUtc": "2023-11-17T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -132408,7 +132408,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-17T18:15:00+00:00",
+          "startUtc": "2023-11-17T15:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -132839,7 +132839,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-18T13:30:00+00:00",
+          "startUtc": "2023-11-18T10:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -133270,7 +133270,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-18T17:50:00+00:00",
+          "startUtc": "2023-11-18T14:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -133491,7 +133491,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-18T18:15:00+00:00",
+          "startUtc": "2023-11-18T15:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -133772,7 +133772,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-19T17:00:00+00:00",
+          "startUtc": "2023-11-19T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -134219,7 +134219,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2023-11-24T10:45:00+00:00",
+          "startUtc": "2023-11-24T09:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -134560,7 +134560,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2023-11-24T15:00:00+00:00",
+          "startUtc": "2023-11-24T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -134901,7 +134901,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2023-11-25T10:10:00+00:00",
+          "startUtc": "2023-11-25T09:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -135227,7 +135227,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-25T10:50:00+00:00",
+          "startUtc": "2023-11-25T09:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -135403,7 +135403,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-25T11:15:00+00:00",
+          "startUtc": "2023-11-25T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -135594,7 +135594,7 @@
           "classId": "motogp",
           "type": "sprint",
           "name": "Sprint",
-          "startUtc": "2023-11-25T15:00:00+00:00",
+          "startUtc": "2023-11-25T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -135920,7 +135920,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2023-11-26T10:45:00+00:00",
+          "startUtc": "2023-11-26T09:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -136246,7 +136246,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-26T15:00:00+00:00",
+          "startUtc": "2023-11-26T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -136572,7 +136572,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-24T09:50:00+00:00",
+          "startUtc": "2023-11-24T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -137063,7 +137063,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-24T14:05:00+00:00",
+          "startUtc": "2023-11-24T13:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -137554,7 +137554,7 @@
           "classId": "moto2",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-25T09:25:00+00:00",
+          "startUtc": "2023-11-25T08:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -138045,7 +138045,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-25T13:45:00+00:00",
+          "startUtc": "2023-11-25T12:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -138326,7 +138326,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-25T14:10:00+00:00",
+          "startUtc": "2023-11-25T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -138607,7 +138607,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-26T13:15:00+00:00",
+          "startUtc": "2023-11-26T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -139098,7 +139098,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-24T09:00:00+00:00",
+          "startUtc": "2023-11-24T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -139529,7 +139529,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-24T13:15:00+00:00",
+          "startUtc": "2023-11-24T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -139960,7 +139960,7 @@
           "classId": "moto3",
           "type": "other",
           "name": "P",
-          "startUtc": "2023-11-25T08:40:00+00:00",
+          "startUtc": "2023-11-25T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140391,7 +140391,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2023-11-25T12:50:00+00:00",
+          "startUtc": "2023-11-25T11:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140582,7 +140582,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2023-11-25T13:15:00+00:00",
+          "startUtc": "2023-11-25T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140863,7 +140863,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2023-11-26T12:00:00+00:00",
+          "startUtc": "2023-11-26T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [

@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2022,
-  "syncedAt": "2026-09-28T16:26:39.763Z",
+  "syncedAt": "2026-10-11T12:53:11.887Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -43,7 +43,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-03-04T13:40:00+00:00",
+          "startUtc": "2022-03-04T10:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -414,7 +414,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-03-04T18:00:00+00:00",
+          "startUtc": "2022-03-04T15:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -785,7 +785,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-03-05T13:15:00+00:00",
+          "startUtc": "2022-03-05T10:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1156,7 +1156,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-03-05T17:20:00+00:00",
+          "startUtc": "2022-03-05T14:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1527,7 +1527,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-03-05T18:00:00+00:00",
+          "startUtc": "2022-03-05T15:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1748,7 +1748,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-03-05T18:25:00+00:00",
+          "startUtc": "2022-03-05T15:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -1939,7 +1939,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-03-06T13:40:00+00:00",
+          "startUtc": "2022-03-06T10:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -2310,7 +2310,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-03-06T18:00:00+00:00",
+          "startUtc": "2022-03-06T15:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -2681,7 +2681,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-03-04T12:45:00+00:00",
+          "startUtc": "2022-03-04T09:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -3142,7 +3142,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-03-04T17:05:00+00:00",
+          "startUtc": "2022-03-04T14:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -3603,7 +3603,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-03-05T12:20:00+00:00",
+          "startUtc": "2022-03-05T09:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -4064,7 +4064,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-03-05T16:25:00+00:00",
+          "startUtc": "2022-03-05T13:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -4315,7 +4315,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-03-05T16:50:00+00:00",
+          "startUtc": "2022-03-05T13:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -4596,7 +4596,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-03-06T13:20:00+00:00",
+          "startUtc": "2022-03-06T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -5042,7 +5042,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-03-06T16:20:00+00:00",
+          "startUtc": "2022-03-06T13:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -5488,7 +5488,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-03-04T11:50:00+00:00",
+          "startUtc": "2022-03-04T08:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -5934,7 +5934,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-03-04T16:10:00+00:00",
+          "startUtc": "2022-03-04T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -6380,7 +6380,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-03-05T11:25:00+00:00",
+          "startUtc": "2022-03-05T08:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -6826,7 +6826,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-03-05T15:30:00+00:00",
+          "startUtc": "2022-03-05T12:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7062,7 +7062,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-03-05T15:55:00+00:00",
+          "startUtc": "2022-03-05T12:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7343,7 +7343,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-03-06T13:00:00+00:00",
+          "startUtc": "2022-03-06T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -7789,7 +7789,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-03-06T15:00:00+00:00",
+          "startUtc": "2022-03-06T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8251,7 +8251,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-03-18T10:50:00+00:00",
+          "startUtc": "2022-03-18T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8622,7 +8622,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-03-18T15:05:00+00:00",
+          "startUtc": "2022-03-18T07:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -8993,7 +8993,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-03-19T10:50:00+00:00",
+          "startUtc": "2022-03-19T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -9364,7 +9364,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-03-19T14:25:00+00:00",
+          "startUtc": "2022-03-19T06:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -9735,7 +9735,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-03-19T15:25:00+00:00",
+          "startUtc": "2022-03-19T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -9956,7 +9956,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-03-19T15:50:00+00:00",
+          "startUtc": "2022-03-19T07:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -10147,7 +10147,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-03-20T10:40:00+00:00",
+          "startUtc": "2022-03-20T02:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -10518,7 +10518,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-03-20T16:15:00+00:00",
+          "startUtc": "2022-03-20T08:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -10874,7 +10874,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-03-18T09:50:00+00:00",
+          "startUtc": "2022-03-18T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -11335,7 +11335,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-03-18T14:05:00+00:00",
+          "startUtc": "2022-03-18T06:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -11796,7 +11796,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-03-19T09:50:00+00:00",
+          "startUtc": "2022-03-19T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -12257,7 +12257,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-03-19T13:25:00+00:00",
+          "startUtc": "2022-03-19T05:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -12508,7 +12508,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-03-19T13:50:00+00:00",
+          "startUtc": "2022-03-19T05:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -12789,7 +12789,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-03-20T10:20:00+00:00",
+          "startUtc": "2022-03-20T02:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -13250,7 +13250,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-03-20T13:20:00+00:00",
+          "startUtc": "2022-03-20T05:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -13696,7 +13696,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-03-18T08:50:00+00:00",
+          "startUtc": "2022-03-18T00:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14127,7 +14127,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-03-18T13:06:00+00:00",
+          "startUtc": "2022-03-18T05:06:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14558,7 +14558,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-03-19T08:50:00+00:00",
+          "startUtc": "2022-03-19T00:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -14989,7 +14989,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-03-19T12:25:00+00:00",
+          "startUtc": "2022-03-19T04:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -15210,7 +15210,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-03-19T12:50:00+00:00",
+          "startUtc": "2022-03-19T04:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -15491,7 +15491,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-03-20T10:00:00+00:00",
+          "startUtc": "2022-03-20T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -15922,7 +15922,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-03-20T12:00:00+00:00",
+          "startUtc": "2022-03-20T04:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -16369,7 +16369,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-02T12:35:00+00:00",
+          "startUtc": "2022-04-02T15:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -16740,7 +16740,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-02T15:40:00+00:00",
+          "startUtc": "2022-04-02T18:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17111,7 +17111,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-02T17:05:00+00:00",
+          "startUtc": "2022-04-02T20:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17332,7 +17332,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-02T17:30:00+00:00",
+          "startUtc": "2022-04-02T20:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17523,7 +17523,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-03T10:20:00+00:00",
+          "startUtc": "2022-04-03T13:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -17894,7 +17894,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-03T15:00:00+00:00",
+          "startUtc": "2022-04-03T18:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -18265,7 +18265,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-02T09:20:00+00:00",
+          "startUtc": "2022-04-02T12:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -18711,7 +18711,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-02T11:30:00+00:00",
+          "startUtc": "2022-04-02T14:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -19157,7 +19157,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-02T14:45:00+00:00",
+          "startUtc": "2022-04-02T17:45:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -19393,7 +19393,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-02T15:10:00+00:00",
+          "startUtc": "2022-04-02T18:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -19674,7 +19674,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-03T09:50:00+00:00",
+          "startUtc": "2022-04-03T12:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -20120,7 +20120,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-03T13:20:00+00:00",
+          "startUtc": "2022-04-03T16:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -20566,7 +20566,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-02T08:15:00+00:00",
+          "startUtc": "2022-04-02T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21012,7 +21012,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-02T10:25:00+00:00",
+          "startUtc": "2022-04-02T13:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21458,7 +21458,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-02T13:50:00+00:00",
+          "startUtc": "2022-04-02T16:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21694,7 +21694,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-02T14:15:00+00:00",
+          "startUtc": "2022-04-02T17:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -21975,7 +21975,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-03T09:20:00+00:00",
+          "startUtc": "2022-04-03T12:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -22421,7 +22421,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-03T12:00:00+00:00",
+          "startUtc": "2022-04-03T15:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -22883,7 +22883,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-08T09:55:00+00:00",
+          "startUtc": "2022-04-08T14:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -23254,7 +23254,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-08T14:10:00+00:00",
+          "startUtc": "2022-04-08T19:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -23625,7 +23625,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-09T09:55:00+00:00",
+          "startUtc": "2022-04-09T14:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -23996,7 +23996,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-04-09T13:30:00+00:00",
+          "startUtc": "2022-04-09T18:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -24367,7 +24367,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-09T14:10:00+00:00",
+          "startUtc": "2022-04-09T19:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -24588,7 +24588,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-09T14:35:00+00:00",
+          "startUtc": "2022-04-09T19:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -24779,7 +24779,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-10T09:40:00+00:00",
+          "startUtc": "2022-04-10T14:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -25150,7 +25150,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-10T13:00:00+00:00",
+          "startUtc": "2022-04-10T18:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -25521,7 +25521,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-08T09:00:00+00:00",
+          "startUtc": "2022-04-08T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -25967,7 +25967,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-08T13:15:00+00:00",
+          "startUtc": "2022-04-08T18:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -26413,7 +26413,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-09T09:00:00+00:00",
+          "startUtc": "2022-04-09T14:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -26859,7 +26859,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-09T12:35:00+00:00",
+          "startUtc": "2022-04-09T17:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -27095,7 +27095,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-09T13:00:00+00:00",
+          "startUtc": "2022-04-09T18:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -27376,7 +27376,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-10T09:20:00+00:00",
+          "startUtc": "2022-04-10T14:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -27822,7 +27822,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-10T11:20:00+00:00",
+          "startUtc": "2022-04-10T16:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -28268,7 +28268,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-08T10:55:00+00:00",
+          "startUtc": "2022-04-08T15:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -28729,7 +28729,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-08T15:10:00+00:00",
+          "startUtc": "2022-04-08T20:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -29190,7 +29190,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-09T10:55:00+00:00",
+          "startUtc": "2022-04-09T15:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -29651,7 +29651,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-09T15:10:00+00:00",
+          "startUtc": "2022-04-09T20:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -29887,7 +29887,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-09T15:35:00+00:00",
+          "startUtc": "2022-04-09T20:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -30168,7 +30168,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-10T10:10:00+00:00",
+          "startUtc": "2022-04-10T15:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -30614,7 +30614,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-10T14:30:00+00:00",
+          "startUtc": "2022-04-10T19:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -31076,7 +31076,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-22T09:55:00+00:00",
+          "startUtc": "2022-04-22T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -31462,7 +31462,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-22T14:10:00+00:00",
+          "startUtc": "2022-04-22T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -31848,7 +31848,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-23T09:55:00+00:00",
+          "startUtc": "2022-04-23T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -32234,7 +32234,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-04-23T13:30:00+00:00",
+          "startUtc": "2022-04-23T12:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -32620,7 +32620,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-23T14:10:00+00:00",
+          "startUtc": "2022-04-23T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -32856,7 +32856,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-23T14:35:00+00:00",
+          "startUtc": "2022-04-23T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -33047,7 +33047,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-24T09:40:00+00:00",
+          "startUtc": "2022-04-24T08:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -33418,7 +33418,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-24T13:00:00+00:00",
+          "startUtc": "2022-04-24T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -33789,7 +33789,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-22T10:55:00+00:00",
+          "startUtc": "2022-04-22T09:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -34250,7 +34250,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-22T15:10:00+00:00",
+          "startUtc": "2022-04-22T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -34711,7 +34711,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-23T10:55:00+00:00",
+          "startUtc": "2022-04-23T09:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35172,7 +35172,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-23T15:10:00+00:00",
+          "startUtc": "2022-04-23T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35423,7 +35423,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-23T15:35:00+00:00",
+          "startUtc": "2022-04-23T14:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -35704,7 +35704,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-24T10:10:00+00:00",
+          "startUtc": "2022-04-24T09:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -36165,7 +36165,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-24T14:30:00+00:00",
+          "startUtc": "2022-04-24T13:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -36626,7 +36626,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-24T15:14:00+00:00",
+          "startUtc": "2022-04-24T14:14:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -37087,7 +37087,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-22T09:00:00+00:00",
+          "startUtc": "2022-04-22T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -37563,7 +37563,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-22T13:15:00+00:00",
+          "startUtc": "2022-04-22T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -38024,7 +38024,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-23T09:00:00+00:00",
+          "startUtc": "2022-04-23T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -38485,7 +38485,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-23T12:35:00+00:00",
+          "startUtc": "2022-04-23T11:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -38736,7 +38736,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-23T13:00:00+00:00",
+          "startUtc": "2022-04-23T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -39017,7 +39017,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-04-24T09:20:00+00:00",
+          "startUtc": "2022-04-24T08:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -39478,7 +39478,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-04-24T11:20:00+00:00",
+          "startUtc": "2022-04-24T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -39955,7 +39955,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-29T09:55:00+00:00",
+          "startUtc": "2022-04-29T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -40341,7 +40341,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-29T14:10:00+00:00",
+          "startUtc": "2022-04-29T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -40727,7 +40727,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-30T09:55:00+00:00",
+          "startUtc": "2022-04-30T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41113,7 +41113,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-04-30T13:30:00+00:00",
+          "startUtc": "2022-04-30T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41499,7 +41499,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-30T14:10:00+00:00",
+          "startUtc": "2022-04-30T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41735,7 +41735,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-30T14:35:00+00:00",
+          "startUtc": "2022-04-30T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -41926,7 +41926,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-01T09:40:00+00:00",
+          "startUtc": "2022-05-01T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -42312,7 +42312,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-01T14:00:00+00:00",
+          "startUtc": "2022-05-01T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -42698,7 +42698,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-29T10:55:00+00:00",
+          "startUtc": "2022-04-29T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -43159,7 +43159,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-29T15:10:00+00:00",
+          "startUtc": "2022-04-29T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -43620,7 +43620,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-30T10:55:00+00:00",
+          "startUtc": "2022-04-30T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -44081,7 +44081,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-30T15:10:00+00:00",
+          "startUtc": "2022-04-30T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -44332,7 +44332,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-30T15:35:00+00:00",
+          "startUtc": "2022-04-30T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -44613,7 +44613,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-01T09:20:00+00:00",
+          "startUtc": "2022-05-01T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -45074,7 +45074,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-01T12:20:00+00:00",
+          "startUtc": "2022-05-01T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -45535,7 +45535,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-04-29T09:00:00+00:00",
+          "startUtc": "2022-04-29T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -45996,7 +45996,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-04-29T13:15:00+00:00",
+          "startUtc": "2022-04-29T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -46457,7 +46457,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-04-30T09:00:00+00:00",
+          "startUtc": "2022-04-30T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -46888,7 +46888,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-04-30T12:35:00+00:00",
+          "startUtc": "2022-04-30T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -47109,7 +47109,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-04-30T13:00:00+00:00",
+          "startUtc": "2022-04-30T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -47390,7 +47390,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-01T09:00:00+00:00",
+          "startUtc": "2022-05-01T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -47821,7 +47821,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-01T11:00:00+00:00",
+          "startUtc": "2022-05-01T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -48268,7 +48268,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-05-13T09:55:00+00:00",
+          "startUtc": "2022-05-13T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -48639,7 +48639,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-05-13T14:10:00+00:00",
+          "startUtc": "2022-05-13T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49010,7 +49010,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-05-14T09:55:00+00:00",
+          "startUtc": "2022-05-14T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49381,7 +49381,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-05-14T13:30:00+00:00",
+          "startUtc": "2022-05-14T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49752,7 +49752,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-05-14T14:10:00+00:00",
+          "startUtc": "2022-05-14T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -49973,7 +49973,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-05-14T14:35:00+00:00",
+          "startUtc": "2022-05-14T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -50164,7 +50164,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-15T09:40:00+00:00",
+          "startUtc": "2022-05-15T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -50535,7 +50535,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-15T14:00:00+00:00",
+          "startUtc": "2022-05-15T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -50906,7 +50906,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-05-13T10:55:00+00:00",
+          "startUtc": "2022-05-13T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -51367,7 +51367,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-05-13T15:10:00+00:00",
+          "startUtc": "2022-05-13T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -51828,7 +51828,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-05-14T10:55:00+00:00",
+          "startUtc": "2022-05-14T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -52289,7 +52289,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-05-14T15:10:00+00:00",
+          "startUtc": "2022-05-14T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -52540,7 +52540,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-05-14T15:35:00+00:00",
+          "startUtc": "2022-05-14T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -52821,7 +52821,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-15T09:20:00+00:00",
+          "startUtc": "2022-05-15T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -53282,7 +53282,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-15T12:30:00+00:00",
+          "startUtc": "2022-05-15T10:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -53728,7 +53728,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-05-13T09:00:00+00:00",
+          "startUtc": "2022-05-13T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -54189,7 +54189,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-05-13T13:20:00+00:00",
+          "startUtc": "2022-05-13T11:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -54650,7 +54650,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-05-14T09:00:00+00:00",
+          "startUtc": "2022-05-14T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -55111,7 +55111,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-05-14T12:35:00+00:00",
+          "startUtc": "2022-05-14T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -55362,7 +55362,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-05-14T13:00:00+00:00",
+          "startUtc": "2022-05-14T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -55643,7 +55643,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-15T09:00:00+00:00",
+          "startUtc": "2022-05-15T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56089,7 +56089,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-15T11:27:00+00:00",
+          "startUtc": "2022-05-15T09:27:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56551,7 +56551,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-05-27T09:55:00+00:00",
+          "startUtc": "2022-05-27T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -56952,7 +56952,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-05-27T14:10:00+00:00",
+          "startUtc": "2022-05-27T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -57353,7 +57353,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-05-28T09:55:00+00:00",
+          "startUtc": "2022-05-28T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -57754,7 +57754,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-05-28T13:30:00+00:00",
+          "startUtc": "2022-05-28T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -58155,7 +58155,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-05-28T14:10:00+00:00",
+          "startUtc": "2022-05-28T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -58406,7 +58406,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-05-28T14:35:00+00:00",
+          "startUtc": "2022-05-28T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -58597,7 +58597,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-29T09:40:00+00:00",
+          "startUtc": "2022-05-29T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -58998,7 +58998,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-29T14:00:00+00:00",
+          "startUtc": "2022-05-29T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -59399,7 +59399,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-05-27T10:55:00+00:00",
+          "startUtc": "2022-05-27T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -59875,7 +59875,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-05-27T15:10:00+00:00",
+          "startUtc": "2022-05-27T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -60351,7 +60351,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-05-28T10:55:00+00:00",
+          "startUtc": "2022-05-28T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -60827,7 +60827,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-05-28T15:15:00+00:00",
+          "startUtc": "2022-05-28T13:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61093,7 +61093,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-05-28T15:40:00+00:00",
+          "startUtc": "2022-05-28T13:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61374,7 +61374,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-29T09:20:00+00:00",
+          "startUtc": "2022-05-29T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -61850,7 +61850,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-29T12:20:00+00:00",
+          "startUtc": "2022-05-29T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -62311,7 +62311,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-05-27T09:00:00+00:00",
+          "startUtc": "2022-05-27T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -62772,7 +62772,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-05-27T13:15:00+00:00",
+          "startUtc": "2022-05-27T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63233,7 +63233,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-05-28T09:00:00+00:00",
+          "startUtc": "2022-05-28T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63679,7 +63679,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-05-28T12:35:00+00:00",
+          "startUtc": "2022-05-28T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -63915,7 +63915,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-05-28T13:00:00+00:00",
+          "startUtc": "2022-05-28T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -64196,7 +64196,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-05-29T09:00:00+00:00",
+          "startUtc": "2022-05-29T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -64627,7 +64627,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-05-29T11:00:00+00:00",
+          "startUtc": "2022-05-29T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -65074,7 +65074,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-03T09:55:00+00:00",
+          "startUtc": "2022-06-03T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -65460,7 +65460,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-03T14:10:00+00:00",
+          "startUtc": "2022-06-03T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -65846,7 +65846,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-04T09:55:00+00:00",
+          "startUtc": "2022-06-04T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -66232,7 +66232,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-06-04T13:30:00+00:00",
+          "startUtc": "2022-06-04T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -66618,7 +66618,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-04T14:10:00+00:00",
+          "startUtc": "2022-06-04T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -66854,7 +66854,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-04T14:35:00+00:00",
+          "startUtc": "2022-06-04T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -67045,7 +67045,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-05T09:40:00+00:00",
+          "startUtc": "2022-06-05T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -67431,7 +67431,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-05T14:00:00+00:00",
+          "startUtc": "2022-06-05T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -67817,7 +67817,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-03T10:55:00+00:00",
+          "startUtc": "2022-06-03T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -68293,7 +68293,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-03T15:10:00+00:00",
+          "startUtc": "2022-06-03T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -68769,7 +68769,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-04T10:55:00+00:00",
+          "startUtc": "2022-06-04T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -69245,7 +69245,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-04T15:10:00+00:00",
+          "startUtc": "2022-06-04T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -69511,7 +69511,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-04T15:35:00+00:00",
+          "startUtc": "2022-06-04T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -69792,7 +69792,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-05T09:20:00+00:00",
+          "startUtc": "2022-06-05T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -70268,7 +70268,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-05T12:20:00+00:00",
+          "startUtc": "2022-06-05T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -70744,7 +70744,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-03T09:00:00+00:00",
+          "startUtc": "2022-06-03T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -71220,7 +71220,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-03T13:15:00+00:00",
+          "startUtc": "2022-06-03T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -71696,7 +71696,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-04T09:00:00+00:00",
+          "startUtc": "2022-06-04T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -72157,7 +72157,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-04T12:35:00+00:00",
+          "startUtc": "2022-06-04T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -72408,7 +72408,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-04T13:00:00+00:00",
+          "startUtc": "2022-06-04T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -72689,7 +72689,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-05T09:00:00+00:00",
+          "startUtc": "2022-06-05T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -73150,7 +73150,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-05T11:00:00+00:00",
+          "startUtc": "2022-06-05T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -73627,7 +73627,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-17T09:55:00+00:00",
+          "startUtc": "2022-06-17T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -73998,7 +73998,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-17T14:10:00+00:00",
+          "startUtc": "2022-06-17T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -74369,7 +74369,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-18T09:55:00+00:00",
+          "startUtc": "2022-06-18T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -74740,7 +74740,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-06-18T13:55:00+00:00",
+          "startUtc": "2022-06-18T11:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -75111,7 +75111,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-18T14:35:00+00:00",
+          "startUtc": "2022-06-18T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -75317,7 +75317,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-18T15:00:00+00:00",
+          "startUtc": "2022-06-18T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -75508,7 +75508,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-19T09:40:00+00:00",
+          "startUtc": "2022-06-19T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -75864,7 +75864,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-19T14:00:00+00:00",
+          "startUtc": "2022-06-19T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -76220,7 +76220,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-17T10:55:00+00:00",
+          "startUtc": "2022-06-17T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -76681,7 +76681,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-17T15:10:00+00:00",
+          "startUtc": "2022-06-17T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -77142,7 +77142,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-18T10:55:00+00:00",
+          "startUtc": "2022-06-18T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -77603,7 +77603,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-18T15:30:00+00:00",
+          "startUtc": "2022-06-18T13:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -77854,7 +77854,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-18T15:55:00+00:00",
+          "startUtc": "2022-06-18T13:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -78135,7 +78135,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-19T09:20:00+00:00",
+          "startUtc": "2022-06-19T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -78596,7 +78596,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-19T12:20:00+00:00",
+          "startUtc": "2022-06-19T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -79057,7 +79057,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-17T09:00:00+00:00",
+          "startUtc": "2022-06-17T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -79518,7 +79518,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-17T13:15:00+00:00",
+          "startUtc": "2022-06-17T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -79979,7 +79979,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-18T09:00:00+00:00",
+          "startUtc": "2022-06-18T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -80440,7 +80440,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-18T12:35:00+00:00",
+          "startUtc": "2022-06-18T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -80691,7 +80691,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-18T13:00:00+00:00",
+          "startUtc": "2022-06-18T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -80972,7 +80972,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-19T09:00:00+00:00",
+          "startUtc": "2022-06-19T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -81433,7 +81433,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-19T11:00:00+00:00",
+          "startUtc": "2022-06-19T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -81910,7 +81910,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-24T09:55:00+00:00",
+          "startUtc": "2022-06-24T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -82296,7 +82296,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-24T14:10:00+00:00",
+          "startUtc": "2022-06-24T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -82682,7 +82682,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-25T09:55:00+00:00",
+          "startUtc": "2022-06-25T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83053,7 +83053,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-06-25T13:30:00+00:00",
+          "startUtc": "2022-06-25T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83424,7 +83424,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-25T14:10:00+00:00",
+          "startUtc": "2022-06-25T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83645,7 +83645,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-25T14:35:00+00:00",
+          "startUtc": "2022-06-25T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -83836,7 +83836,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-26T09:40:00+00:00",
+          "startUtc": "2022-06-26T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -84207,7 +84207,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-26T14:00:00+00:00",
+          "startUtc": "2022-06-26T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -84578,7 +84578,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-24T10:55:00+00:00",
+          "startUtc": "2022-06-24T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85024,7 +85024,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-24T15:10:00+00:00",
+          "startUtc": "2022-06-24T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85470,7 +85470,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-25T10:55:00+00:00",
+          "startUtc": "2022-06-25T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -85916,7 +85916,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-25T15:10:00+00:00",
+          "startUtc": "2022-06-25T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -86152,7 +86152,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-25T15:35:00+00:00",
+          "startUtc": "2022-06-25T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -86433,7 +86433,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-26T09:20:00+00:00",
+          "startUtc": "2022-06-26T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -86879,7 +86879,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-26T12:20:00+00:00",
+          "startUtc": "2022-06-26T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -87310,7 +87310,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-06-24T09:00:00+00:00",
+          "startUtc": "2022-06-24T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -87771,7 +87771,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-06-24T13:15:00+00:00",
+          "startUtc": "2022-06-24T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -88232,7 +88232,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-06-25T09:00:00+00:00",
+          "startUtc": "2022-06-25T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -88693,7 +88693,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-06-25T12:35:00+00:00",
+          "startUtc": "2022-06-25T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -88944,7 +88944,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-06-25T13:00:00+00:00",
+          "startUtc": "2022-06-25T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -89225,7 +89225,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-06-26T09:00:00+00:00",
+          "startUtc": "2022-06-26T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -89686,7 +89686,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-06-26T11:00:00+00:00",
+          "startUtc": "2022-06-26T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90163,7 +90163,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-08-05T09:55:00+00:00",
+          "startUtc": "2022-08-05T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90534,7 +90534,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-08-05T14:10:00+00:00",
+          "startUtc": "2022-08-05T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -90905,7 +90905,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-08-06T09:55:00+00:00",
+          "startUtc": "2022-08-06T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -91276,7 +91276,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-08-06T13:30:00+00:00",
+          "startUtc": "2022-08-06T12:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -91647,7 +91647,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-08-06T14:10:00+00:00",
+          "startUtc": "2022-08-06T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -91868,7 +91868,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-08-06T14:35:00+00:00",
+          "startUtc": "2022-08-06T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92059,7 +92059,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-08-07T09:40:00+00:00",
+          "startUtc": "2022-08-07T08:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92430,7 +92430,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-08-07T13:00:00+00:00",
+          "startUtc": "2022-08-07T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -92801,7 +92801,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-08-05T10:55:00+00:00",
+          "startUtc": "2022-08-05T09:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -93262,7 +93262,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-08-05T15:10:00+00:00",
+          "startUtc": "2022-08-05T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -93708,7 +93708,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-08-06T10:55:00+00:00",
+          "startUtc": "2022-08-06T09:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -94154,7 +94154,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-08-06T15:10:00+00:00",
+          "startUtc": "2022-08-06T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -94390,7 +94390,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-08-06T15:35:00+00:00",
+          "startUtc": "2022-08-06T14:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -94671,7 +94671,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-08-07T10:10:00+00:00",
+          "startUtc": "2022-08-07T09:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -95117,7 +95117,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-08-07T14:30:00+00:00",
+          "startUtc": "2022-08-07T13:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -95563,7 +95563,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-08-05T09:00:00+00:00",
+          "startUtc": "2022-08-05T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -96024,7 +96024,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-08-05T13:15:00+00:00",
+          "startUtc": "2022-08-05T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -96485,7 +96485,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-08-06T09:00:00+00:00",
+          "startUtc": "2022-08-06T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -96946,7 +96946,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-08-06T12:35:00+00:00",
+          "startUtc": "2022-08-06T11:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -97197,7 +97197,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-08-06T13:00:00+00:00",
+          "startUtc": "2022-08-06T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -97478,7 +97478,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-08-07T09:20:00+00:00",
+          "startUtc": "2022-08-07T08:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -97939,7 +97939,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-08-07T11:20:00+00:00",
+          "startUtc": "2022-08-07T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -98416,7 +98416,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-08-19T09:55:00+00:00",
+          "startUtc": "2022-08-19T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -98802,7 +98802,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-08-19T14:10:00+00:00",
+          "startUtc": "2022-08-19T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99188,7 +99188,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-08-20T09:55:00+00:00",
+          "startUtc": "2022-08-20T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99574,7 +99574,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-08-20T13:30:00+00:00",
+          "startUtc": "2022-08-20T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -99960,7 +99960,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-08-20T14:10:00+00:00",
+          "startUtc": "2022-08-20T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -100196,7 +100196,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-08-20T14:35:00+00:00",
+          "startUtc": "2022-08-20T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -100387,7 +100387,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-08-21T09:40:00+00:00",
+          "startUtc": "2022-08-21T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -100773,7 +100773,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-08-21T14:00:00+00:00",
+          "startUtc": "2022-08-21T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -101159,7 +101159,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-08-19T10:55:00+00:00",
+          "startUtc": "2022-08-19T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -101635,7 +101635,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-08-19T15:10:00+00:00",
+          "startUtc": "2022-08-19T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102111,7 +102111,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-08-20T10:55:00+00:00",
+          "startUtc": "2022-08-20T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102587,7 +102587,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-08-20T15:10:00+00:00",
+          "startUtc": "2022-08-20T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102853,7 +102853,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-08-20T15:35:00+00:00",
+          "startUtc": "2022-08-20T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -103134,7 +103134,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-08-21T09:20:00+00:00",
+          "startUtc": "2022-08-21T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -103610,7 +103610,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-08-21T12:20:00+00:00",
+          "startUtc": "2022-08-21T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -104086,7 +104086,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-08-19T09:01:00+00:00",
+          "startUtc": "2022-08-19T07:01:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -104547,7 +104547,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-08-19T13:15:00+00:00",
+          "startUtc": "2022-08-19T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105008,7 +105008,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-08-20T09:00:00+00:00",
+          "startUtc": "2022-08-20T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105469,7 +105469,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-08-20T12:35:00+00:00",
+          "startUtc": "2022-08-20T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105720,7 +105720,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-08-20T13:00:00+00:00",
+          "startUtc": "2022-08-20T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -106001,7 +106001,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-08-21T09:00:00+00:00",
+          "startUtc": "2022-08-21T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -106462,7 +106462,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-08-21T11:00:00+00:00",
+          "startUtc": "2022-08-21T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -106939,7 +106939,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-02T09:55:00+00:00",
+          "startUtc": "2022-09-02T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -107325,7 +107325,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-02T14:10:00+00:00",
+          "startUtc": "2022-09-02T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -107711,7 +107711,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-03T09:55:00+00:00",
+          "startUtc": "2022-09-03T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108097,7 +108097,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-09-03T13:30:00+00:00",
+          "startUtc": "2022-09-03T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108483,7 +108483,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-03T14:10:00+00:00",
+          "startUtc": "2022-09-03T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108719,7 +108719,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-03T14:35:00+00:00",
+          "startUtc": "2022-09-03T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -108910,7 +108910,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-04T09:40:00+00:00",
+          "startUtc": "2022-09-04T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -109296,7 +109296,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-04T14:00:00+00:00",
+          "startUtc": "2022-09-04T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -109682,7 +109682,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-02T10:55:00+00:00",
+          "startUtc": "2022-09-02T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -110158,7 +110158,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-02T15:10:00+00:00",
+          "startUtc": "2022-09-02T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -110634,7 +110634,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-03T10:55:00+00:00",
+          "startUtc": "2022-09-03T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111110,7 +111110,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-03T15:10:00+00:00",
+          "startUtc": "2022-09-03T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111376,7 +111376,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-03T15:35:00+00:00",
+          "startUtc": "2022-09-03T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -111657,7 +111657,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-04T09:20:00+00:00",
+          "startUtc": "2022-09-04T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -112133,7 +112133,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-04T12:20:00+00:00",
+          "startUtc": "2022-09-04T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -112609,7 +112609,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-02T09:00:00+00:00",
+          "startUtc": "2022-09-02T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -113085,7 +113085,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-02T13:15:00+00:00",
+          "startUtc": "2022-09-02T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -113561,7 +113561,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-03T09:00:00+00:00",
+          "startUtc": "2022-09-03T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -114037,7 +114037,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-03T12:35:00+00:00",
+          "startUtc": "2022-09-03T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -114303,7 +114303,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-03T13:00:00+00:00",
+          "startUtc": "2022-09-03T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -114584,7 +114584,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-04T09:00:00+00:00",
+          "startUtc": "2022-09-04T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -115060,7 +115060,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-04T11:00:00+00:00",
+          "startUtc": "2022-09-04T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -115552,7 +115552,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-16T09:55:00+00:00",
+          "startUtc": "2022-09-16T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -115923,7 +115923,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-16T14:10:00+00:00",
+          "startUtc": "2022-09-16T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -116294,7 +116294,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-17T09:55:00+00:00",
+          "startUtc": "2022-09-17T07:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -116665,7 +116665,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-09-17T13:30:00+00:00",
+          "startUtc": "2022-09-17T11:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117021,7 +117021,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-17T14:10:00+00:00",
+          "startUtc": "2022-09-17T12:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117227,7 +117227,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-17T14:35:00+00:00",
+          "startUtc": "2022-09-17T12:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117418,7 +117418,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-18T09:40:00+00:00",
+          "startUtc": "2022-09-18T07:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -117774,7 +117774,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-18T14:00:00+00:00",
+          "startUtc": "2022-09-18T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -118130,7 +118130,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-16T10:55:00+00:00",
+          "startUtc": "2022-09-16T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -118591,7 +118591,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-16T15:10:00+00:00",
+          "startUtc": "2022-09-16T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -119052,7 +119052,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-17T10:55:00+00:00",
+          "startUtc": "2022-09-17T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -119513,7 +119513,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-17T15:10:00+00:00",
+          "startUtc": "2022-09-17T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -119764,7 +119764,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-17T15:35:00+00:00",
+          "startUtc": "2022-09-17T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -120045,7 +120045,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-18T09:20:00+00:00",
+          "startUtc": "2022-09-18T07:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -120506,7 +120506,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-18T12:20:00+00:00",
+          "startUtc": "2022-09-18T10:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -120967,7 +120967,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-16T09:00:00+00:00",
+          "startUtc": "2022-09-16T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -121458,7 +121458,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-16T13:15:00+00:00",
+          "startUtc": "2022-09-16T11:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -121949,7 +121949,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-17T09:00:00+00:00",
+          "startUtc": "2022-09-17T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -122440,7 +122440,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-17T12:35:00+00:00",
+          "startUtc": "2022-09-17T10:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -122706,7 +122706,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-17T13:00:00+00:00",
+          "startUtc": "2022-09-17T11:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -122987,7 +122987,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-18T09:00:00+00:00",
+          "startUtc": "2022-09-18T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -123463,7 +123463,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-18T11:00:00+00:00",
+          "startUtc": "2022-09-18T09:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -123955,7 +123955,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-23T15:05:00+00:00",
+          "startUtc": "2022-09-23T06:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -124341,7 +124341,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-24T10:50:00+00:00",
+          "startUtc": "2022-09-24T01:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -124727,7 +124727,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-09-24T14:25:00+00:00",
+          "startUtc": "2022-09-24T05:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": null
@@ -124737,7 +124737,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-24T16:10:00+00:00",
+          "startUtc": "2022-09-24T07:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -124973,7 +124973,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-24T16:35:00+00:00",
+          "startUtc": "2022-09-24T07:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -125164,7 +125164,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-25T10:40:00+00:00",
+          "startUtc": "2022-09-25T01:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -125550,7 +125550,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-25T15:00:00+00:00",
+          "startUtc": "2022-09-25T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -125936,7 +125936,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-23T14:10:00+00:00",
+          "startUtc": "2022-09-23T05:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -126397,7 +126397,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-24T09:55:00+00:00",
+          "startUtc": "2022-09-24T00:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -126858,7 +126858,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-24T13:30:00+00:00",
+          "startUtc": "2022-09-24T04:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -127109,7 +127109,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-24T13:55:00+00:00",
+          "startUtc": "2022-09-24T04:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -127390,7 +127390,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-25T10:20:00+00:00",
+          "startUtc": "2022-09-25T01:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -127836,7 +127836,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-25T13:20:00+00:00",
+          "startUtc": "2022-09-25T04:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -128282,7 +128282,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-23T13:15:00+00:00",
+          "startUtc": "2022-09-23T04:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -128743,7 +128743,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-24T09:00:00+00:00",
+          "startUtc": "2022-09-24T00:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -129204,7 +129204,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-09-24T12:35:00+00:00",
+          "startUtc": "2022-09-24T03:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -129455,7 +129455,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-09-24T13:00:00+00:00",
+          "startUtc": "2022-09-24T04:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -129736,7 +129736,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-09-25T10:00:00+00:00",
+          "startUtc": "2022-09-25T01:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -130197,7 +130197,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-09-25T12:00:00+00:00",
+          "startUtc": "2022-09-25T03:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -130674,7 +130674,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-30T10:50:00+00:00",
+          "startUtc": "2022-09-30T03:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -131045,7 +131045,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-30T15:05:00+00:00",
+          "startUtc": "2022-09-30T08:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -131416,7 +131416,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-01T10:50:00+00:00",
+          "startUtc": "2022-10-01T03:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -131787,7 +131787,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-10-01T14:25:00+00:00",
+          "startUtc": "2022-10-01T07:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -132158,7 +132158,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-01T15:05:00+00:00",
+          "startUtc": "2022-10-01T08:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -132379,7 +132379,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-01T15:30:00+00:00",
+          "startUtc": "2022-10-01T08:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -132570,7 +132570,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-02T10:40:00+00:00",
+          "startUtc": "2022-10-02T03:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -132941,7 +132941,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-02T15:55:00+00:00",
+          "startUtc": "2022-10-02T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -133312,7 +133312,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-30T09:55:00+00:00",
+          "startUtc": "2022-09-30T02:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -133773,7 +133773,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-30T14:10:00+00:00",
+          "startUtc": "2022-09-30T07:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -134234,7 +134234,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-01T09:55:00+00:00",
+          "startUtc": "2022-10-01T02:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -134695,7 +134695,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-01T13:30:00+00:00",
+          "startUtc": "2022-10-01T06:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -134946,7 +134946,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-01T13:55:00+00:00",
+          "startUtc": "2022-10-01T06:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -135227,7 +135227,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-02T10:20:00+00:00",
+          "startUtc": "2022-10-02T03:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -135688,7 +135688,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-02T13:32:00+00:00",
+          "startUtc": "2022-10-02T06:32:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -136149,7 +136149,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-09-30T09:00:00+00:00",
+          "startUtc": "2022-09-30T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -136610,7 +136610,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-09-30T13:15:00+00:00",
+          "startUtc": "2022-09-30T06:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -137071,7 +137071,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-01T09:00:00+00:00",
+          "startUtc": "2022-10-01T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -137532,7 +137532,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-01T12:35:00+00:00",
+          "startUtc": "2022-10-01T05:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -137783,7 +137783,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-01T13:00:00+00:00",
+          "startUtc": "2022-10-01T06:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -138064,7 +138064,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-02T10:00:00+00:00",
+          "startUtc": "2022-10-02T03:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -138525,7 +138525,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-02T12:00:00+00:00",
+          "startUtc": "2022-10-02T05:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -139002,7 +139002,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-10-14T09:55:00+00:00",
+          "startUtc": "2022-10-13T22:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -139373,7 +139373,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-10-14T14:10:00+00:00",
+          "startUtc": "2022-10-14T03:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -139744,7 +139744,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-15T09:55:00+00:00",
+          "startUtc": "2022-10-14T22:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140115,7 +140115,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-10-15T13:30:00+00:00",
+          "startUtc": "2022-10-15T02:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140486,7 +140486,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-15T14:10:00+00:00",
+          "startUtc": "2022-10-15T03:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140707,7 +140707,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-15T14:35:00+00:00",
+          "startUtc": "2022-10-15T03:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -140898,7 +140898,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-16T09:40:00+00:00",
+          "startUtc": "2022-10-15T22:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -141269,7 +141269,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-16T14:00:00+00:00",
+          "startUtc": "2022-10-16T03:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -141640,7 +141640,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-10-14T10:55:00+00:00",
+          "startUtc": "2022-10-13T23:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -142101,7 +142101,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-10-14T15:10:00+00:00",
+          "startUtc": "2022-10-14T04:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -142547,7 +142547,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-15T10:55:00+00:00",
+          "startUtc": "2022-10-14T23:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -142993,7 +142993,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-15T15:10:00+00:00",
+          "startUtc": "2022-10-15T04:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -143229,7 +143229,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-15T15:35:00+00:00",
+          "startUtc": "2022-10-15T04:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -143510,7 +143510,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-16T09:20:00+00:00",
+          "startUtc": "2022-10-15T22:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -143956,7 +143956,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-16T12:20:00+00:00",
+          "startUtc": "2022-10-16T01:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -144402,7 +144402,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-10-14T09:00:00+00:00",
+          "startUtc": "2022-10-13T22:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -144863,7 +144863,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-10-14T13:15:00+00:00",
+          "startUtc": "2022-10-14T02:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -145324,7 +145324,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-15T09:00:00+00:00",
+          "startUtc": "2022-10-14T22:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -145785,7 +145785,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-15T12:35:00+00:00",
+          "startUtc": "2022-10-15T01:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -146036,7 +146036,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-15T13:00:00+00:00",
+          "startUtc": "2022-10-15T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -146317,7 +146317,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-16T09:00:00+00:00",
+          "startUtc": "2022-10-15T22:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -146778,7 +146778,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-16T11:05:00+00:00",
+          "startUtc": "2022-10-16T00:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -147255,7 +147255,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-10-21T10:50:00+00:00",
+          "startUtc": "2022-10-21T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -147626,7 +147626,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-10-21T16:10:00+00:00",
+          "startUtc": "2022-10-21T08:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -147997,7 +147997,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-22T10:50:00+00:00",
+          "startUtc": "2022-10-22T02:50:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -148368,7 +148368,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-10-22T14:25:00+00:00",
+          "startUtc": "2022-10-22T06:25:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -148739,7 +148739,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-22T15:05:00+00:00",
+          "startUtc": "2022-10-22T07:05:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -148960,7 +148960,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-22T15:30:00+00:00",
+          "startUtc": "2022-10-22T07:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -149151,7 +149151,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-23T10:40:00+00:00",
+          "startUtc": "2022-10-23T02:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -149522,7 +149522,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-23T15:00:00+00:00",
+          "startUtc": "2022-10-23T07:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -149893,7 +149893,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-10-21T09:55:00+00:00",
+          "startUtc": "2022-10-21T01:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -150369,7 +150369,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-10-21T14:10:00+00:00",
+          "startUtc": "2022-10-21T06:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -150830,7 +150830,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-22T09:55:00+00:00",
+          "startUtc": "2022-10-22T01:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -151276,7 +151276,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-22T13:30:00+00:00",
+          "startUtc": "2022-10-22T05:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -151512,7 +151512,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-22T13:55:00+00:00",
+          "startUtc": "2022-10-22T05:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -151793,7 +151793,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-23T10:20:00+00:00",
+          "startUtc": "2022-10-23T02:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -152239,7 +152239,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-23T13:20:00+00:00",
+          "startUtc": "2022-10-23T05:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -152685,7 +152685,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-10-21T09:00:00+00:00",
+          "startUtc": "2022-10-21T01:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -153161,7 +153161,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-10-21T13:15:00+00:00",
+          "startUtc": "2022-10-21T05:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -153637,7 +153637,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-10-22T09:00:00+00:00",
+          "startUtc": "2022-10-22T01:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -154113,7 +154113,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-10-22T12:35:00+00:00",
+          "startUtc": "2022-10-22T04:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -154379,7 +154379,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-10-22T13:00:00+00:00",
+          "startUtc": "2022-10-22T05:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -154660,7 +154660,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-10-23T10:00:00+00:00",
+          "startUtc": "2022-10-23T02:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -155136,7 +155136,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-10-23T12:00:00+00:00",
+          "startUtc": "2022-10-23T04:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -155628,7 +155628,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-11-04T09:55:00+00:00",
+          "startUtc": "2022-11-04T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -155999,7 +155999,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-11-04T14:10:00+00:00",
+          "startUtc": "2022-11-04T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -156370,7 +156370,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-11-05T09:55:00+00:00",
+          "startUtc": "2022-11-05T08:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -156741,7 +156741,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "FP4",
-          "startUtc": "2022-11-05T13:30:00+00:00",
+          "startUtc": "2022-11-05T12:30:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -157112,7 +157112,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-11-05T14:10:00+00:00",
+          "startUtc": "2022-11-05T13:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -157333,7 +157333,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-11-05T14:35:00+00:00",
+          "startUtc": "2022-11-05T13:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -157524,7 +157524,7 @@
           "classId": "motogp",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-11-06T09:40:00+00:00",
+          "startUtc": "2022-11-06T08:40:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -157895,7 +157895,7 @@
           "classId": "motogp",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-11-06T14:00:00+00:00",
+          "startUtc": "2022-11-06T13:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -158266,7 +158266,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-11-04T10:55:00+00:00",
+          "startUtc": "2022-11-04T09:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -158742,7 +158742,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-11-04T15:10:00+00:00",
+          "startUtc": "2022-11-04T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -159218,7 +159218,7 @@
           "classId": "moto2",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-11-05T10:55:00+00:00",
+          "startUtc": "2022-11-05T09:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -159694,7 +159694,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-11-05T15:10:00+00:00",
+          "startUtc": "2022-11-05T14:10:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -159960,7 +159960,7 @@
           "classId": "moto2",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-11-05T15:35:00+00:00",
+          "startUtc": "2022-11-05T14:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -160241,7 +160241,7 @@
           "classId": "moto2",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-11-06T09:20:00+00:00",
+          "startUtc": "2022-11-06T08:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -160717,7 +160717,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-11-06T12:20:00+00:00",
+          "startUtc": "2022-11-06T11:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -161193,7 +161193,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP1",
-          "startUtc": "2022-11-04T09:00:00+00:00",
+          "startUtc": "2022-11-04T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -161684,7 +161684,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP2",
-          "startUtc": "2022-11-04T13:15:00+00:00",
+          "startUtc": "2022-11-04T12:15:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -162175,7 +162175,7 @@
           "classId": "moto3",
           "type": "practice",
           "name": "FP3",
-          "startUtc": "2022-11-05T09:00:00+00:00",
+          "startUtc": "2022-11-05T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -162666,7 +162666,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2022-11-05T12:35:00+00:00",
+          "startUtc": "2022-11-05T11:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -162947,7 +162947,7 @@
           "classId": "moto3",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2022-11-05T13:00:00+00:00",
+          "startUtc": "2022-11-05T12:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -163228,7 +163228,7 @@
           "classId": "moto3",
           "type": "warmup",
           "name": "Warm Up",
-          "startUtc": "2022-11-06T09:00:00+00:00",
+          "startUtc": "2022-11-06T08:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -163719,7 +163719,7 @@
           "classId": "moto3",
           "type": "race",
           "name": "Race",
-          "startUtc": "2022-11-06T11:00:00+00:00",
+          "startUtc": "2022-11-06T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
