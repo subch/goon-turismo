@@ -7969,10 +7969,18 @@
   },
   {
     "eventId": "tt-2026-10-08-dragon-trail-gardens",
+    "psn": "superpharts",
+    "timeRaw": "1:48.938",
+    "timeMs": 108938,
+    "groupRank": 2,
+    "points": 80
+  },
+  {
+    "eventId": "tt-2026-10-08-dragon-trail-gardens",
     "psn": "rickiep00h",
     "timeRaw": "1:50.816",
     "timeMs": 110816,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 63
   },
   {
@@ -7980,7 +7988,7 @@
     "psn": "dog_nougat",
     "timeRaw": "1:52.210",
     "timeMs": 112210,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 50
   },
   {
