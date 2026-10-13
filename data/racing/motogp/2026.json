@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-13T10:32:14.198Z",
+  "syncedAt": "2026-10-13T12:32:14.441Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -102119,7 +102119,7 @@
           "classId": "motogp",
           "type": "practice",
           "name": "Practice",
-          "startUtc": "2026-10-09T07:00:00.000Z",
+          "startUtc": "2026-10-09T07:35:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102801,7 +102801,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q1",
-          "startUtc": "2026-10-10T02:50:00.000Z",
+          "startUtc": "2026-10-10T02:55:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -102992,7 +102992,7 @@
           "classId": "motogp",
           "type": "qualifying",
           "name": "Q2",
-          "startUtc": "2026-10-10T03:15:00.000Z",
+          "startUtc": "2026-10-10T03:20:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
@@ -105655,7 +105655,7 @@
           "classId": "moto2",
           "type": "race",
           "name": "Race",
-          "startUtc": "2026-10-11T05:15:00.000Z",
+          "startUtc": "2026-10-11T05:34:00.000Z",
           "endUtc": null,
           "status": "finished",
           "results": [
