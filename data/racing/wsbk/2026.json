@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-13T14:32:37.894Z",
+  "syncedAt": "2026-10-13T16:32:38.783Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -65268,7 +65268,7 @@
         },
         {
           "pos": 2,
-          "name": "bimota",
+          "name": "BIMOT",
           "number": null,
           "team": null,
           "make": null,
@@ -65286,7 +65286,7 @@
         },
         {
           "pos": 4,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -65304,7 +65304,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -65588,7 +65588,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -65615,7 +65615,7 @@
         },
         {
           "pos": 4,
-          "name": "Triumph",
+          "name": "TRIUM",
           "number": null,
           "team": null,
           "make": null,
@@ -65633,7 +65633,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -65642,7 +65642,7 @@
         },
         {
           "pos": 7,
-          "name": "MV Agusta",
+          "name": "MVAGU",
           "number": null,
           "team": null,
           "make": null,
@@ -65651,7 +65651,7 @@
         },
         {
           "pos": 8,
-          "name": "QJMOTOR",
+          "name": "QJMOT",
           "number": null,
           "team": null,
           "make": null,
