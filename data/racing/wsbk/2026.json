@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-14T10:32:34.550Z",
+  "syncedAt": "2026-10-14T12:32:41.419Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -65615,7 +65615,7 @@
         },
         {
           "pos": 4,
-          "name": "TRIUM",
+          "name": "Triumph",
           "number": null,
           "team": null,
           "make": null,
@@ -65651,7 +65651,7 @@
         },
         {
           "pos": 8,
-          "name": "QJMOT",
+          "name": "QJMOTOR",
           "number": null,
           "team": null,
           "make": null,
