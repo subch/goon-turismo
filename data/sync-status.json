@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-13T18:47:02.173Z",
-  "finishedAt": "2026-10-13T18:49:03.816Z",
+  "startedAt": "2026-10-14T00:47:02.314Z",
+  "finishedAt": "2026-10-14T00:49:02.406Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,7 +15,7 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "92"
+      "remaining": "98"
     },
     "errors": []
   },
@@ -24,7 +24,7 @@
     "playersTotal": 24,
     "eventsTouched": 6,
     "eventsCreated": [],
-    "cutoffIso": "2026-09-22",
+    "cutoffIso": "2026-09-23",
     "warnings": 7
   }
 }
