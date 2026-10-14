@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-14T08:32:24.469Z",
+  "syncedAt": "2026-10-14T10:32:24.202Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -21235,8 +21235,8 @@
     {
       "id": "6-hours-of-barcelona",
       "round": 8,
-      "name": "6 Hours of Barcelona by Visit Qatar",
-      "shortName": "Barcelona by Visit Qatar",
+      "name": "6 Hours of Barcelona presented by Visit Qatar",
+      "shortName": "Barcelona presented by Visit Qatar",
       "circuit": null,
       "location": null,
       "country": null,
