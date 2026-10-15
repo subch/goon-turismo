@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-15T12:32:34.709Z",
+  "syncedAt": "2026-10-15T14:32:35.272Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -65259,7 +65259,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Ducati",
+          "name": "DUCAT",
           "number": null,
           "team": null,
           "make": null,
@@ -65268,7 +65268,7 @@
         },
         {
           "pos": 2,
-          "name": "bimota",
+          "name": "BIMOT",
           "number": null,
           "team": null,
           "make": null,
@@ -65295,7 +65295,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -65304,7 +65304,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -65597,7 +65597,7 @@
         },
         {
           "pos": 2,
-          "name": "Ducati",
+          "name": "DUCAT",
           "number": null,
           "team": null,
           "make": null,
@@ -65615,7 +65615,7 @@
         },
         {
           "pos": 4,
-          "name": "Triumph",
+          "name": "TRIUM",
           "number": null,
           "team": null,
           "make": null,
@@ -65624,7 +65624,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -65633,7 +65633,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -65642,7 +65642,7 @@
         },
         {
           "pos": 7,
-          "name": "MV Agusta",
+          "name": "MVAGU",
           "number": null,
           "team": null,
           "make": null,
