@@ -7977,10 +7977,18 @@
   },
   {
     "eventId": "tt-2026-10-08-dragon-trail-gardens",
+    "psn": "ashy_wenises",
+    "timeRaw": "1:48.108",
+    "timeMs": 108108,
+    "groupRank": 2,
+    "points": 88
+  },
+  {
+    "eventId": "tt-2026-10-08-dragon-trail-gardens",
     "psn": "superpharts",
     "timeRaw": "1:48.938",
     "timeMs": 108938,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 80
   },
   {
@@ -7988,7 +7996,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:50.816",
     "timeMs": 110816,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 63
   },
   {
@@ -7996,7 +8004,7 @@
     "psn": "devmotron",
     "timeRaw": "1:51.243",
     "timeMs": 111243,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 59
   },
   {
@@ -8004,7 +8012,7 @@
     "psn": "dog_nougat",
     "timeRaw": "1:52.210",
     "timeMs": 112210,
-    "groupRank": 5,
+    "groupRank": 6,
     "points": 50
   },
   {
