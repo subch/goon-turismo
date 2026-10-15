@@ -7937,10 +7937,18 @@
   },
   {
     "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:41.390",
+    "timeMs": 101390,
+    "groupRank": 2,
+    "points": 91
+  },
+  {
+    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
     "psn": "superpharts",
     "timeRaw": "1:41.736",
     "timeMs": 101736,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 88
   },
   {
@@ -7948,16 +7956,8 @@
     "psn": "devmotron",
     "timeRaw": "1:42.845",
     "timeMs": 102845,
-    "groupRank": 3,
-    "points": 77
-  },
-  {
-    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
-    "psn": "empire_of_ravens",
-    "timeRaw": "1:43.004",
-    "timeMs": 103004,
     "groupRank": 4,
-    "points": 75
+    "points": 77
   },
   {
     "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
