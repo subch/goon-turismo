@@ -7953,10 +7953,18 @@
   },
   {
     "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:43.004",
+    "timeMs": 103004,
+    "groupRank": 4,
+    "points": 75
+  },
+  {
+    "eventId": "tt-2026-10-01-brands-hatch-grand-prix-circuit",
     "psn": "rickiep00h",
     "timeRaw": "1:46.544",
     "timeMs": 106544,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 40
   },
   {
@@ -7985,10 +7993,18 @@
   },
   {
     "eventId": "tt-2026-10-08-dragon-trail-gardens",
+    "psn": "devmotron",
+    "timeRaw": "1:51.243",
+    "timeMs": 111243,
+    "groupRank": 4,
+    "points": 59
+  },
+  {
+    "eventId": "tt-2026-10-08-dragon-trail-gardens",
     "psn": "dog_nougat",
     "timeRaw": "1:52.210",
     "timeMs": 112210,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 50
   },
   {
