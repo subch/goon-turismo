@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-16T14:32:43.262Z",
+  "syncedAt": "2026-10-16T16:32:42.592Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -66111,10 +66111,491 @@
           "classId": "ssp",
           "type": "qualifying",
           "name": "Tissot Superpole",
-          "startUtc": "2026-10-16T14:00:00+00:00",
-          "endUtc": "2026-10-16T14:45:00+00:00",
-          "status": "live",
-          "results": null
+          "startUtc": "2026-10-16T14:05:00+00:00",
+          "endUtc": "2026-10-16T14:48:48+00:00",
+          "status": "finished",
+          "results": [
+            {
+              "pos": 1,
+              "number": 75,
+              "name": "Albert Arenas",
+              "team": "AS BLU CRU Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 13,
+              "time": "2:21.084",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": 9,
+              "name": "Jorge Navarro",
+              "team": "PTR Triumph Factory Racing",
+              "make": null,
+              "cls": null,
+              "laps": 12,
+              "time": "2:21.435",
+              "gap": "+0.351",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": 61,
+              "name": "Can Oncu",
+              "team": "Pata Yamaha Ten Kate Racing",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:21.462",
+              "gap": "+0.378",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 4,
+              "number": 77,
+              "name": "Dominique Aegerter",
+              "team": "Kawasaki WorldSSP Team",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:21.476",
+              "gap": "+0.392",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 5,
+              "number": 52,
+              "name": "Jeremy Alcoba",
+              "team": "Kawasaki WorldSSP Team",
+              "make": null,
+              "cls": null,
+              "laps": 15,
+              "time": "2:21.562",
+              "gap": "+0.478",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 6,
+              "number": 40,
+              "name": "Mattia Casadei",
+              "team": "D34G WorldSSP Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 16,
+              "time": "2:21.626",
+              "gap": "+0.542",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 7,
+              "number": 69,
+              "name": "Tom Booth-Amos",
+              "team": "PTR Triumph Factory Racing",
+              "make": null,
+              "cls": null,
+              "laps": 14,
+              "time": "2:21.649",
+              "gap": "+0.565",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 8,
+              "number": 11,
+              "name": "Matteo Ferrari",
+              "team": "WRP Racing",
+              "make": null,
+              "cls": null,
+              "laps": 18,
+              "time": "2:21.709",
+              "gap": "+0.625",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 9,
+              "number": 16,
+              "name": "Alessandro Zaccone",
+              "team": "Ecosantagata Althea Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 14,
+              "time": "2:21.974",
+              "gap": "+0.890",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 10,
+              "number": 43,
+              "name": "Simon Jespersen",
+              "team": "EAB Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 16,
+              "time": "2:22.034",
+              "gap": "+0.950",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 11,
+              "number": 94,
+              "name": "Lucas Mahias",
+              "team": "GMT94 Yamaha",
+              "make": null,
+              "cls": null,
+              "laps": 12,
+              "time": "2:22.054",
+              "gap": "+0.970",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 12,
+              "number": 53,
+              "name": "Valentin Debise",
+              "team": "EASTROC ZXMOTO Evan Bros Factory",
+              "make": null,
+              "cls": null,
+              "laps": 13,
+              "time": "2:22.072",
+              "gap": "+0.988",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 13,
+              "number": 7,
+              "name": "Filippo Farioli",
+              "team": "VFT Racing Yamaha",
+              "make": null,
+              "cls": null,
+              "laps": 14,
+              "time": "2:22.108",
+              "gap": "+1.024",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 14,
+              "number": 47,
+              "name": "Eric Fernandez",
+              "team": "Cerba Yamaha Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 13,
+              "time": "2:22.153",
+              "gap": "+1.069",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 15,
+              "number": 50,
+              "name": "Ondrej Vostatek",
+              "team": "Compos Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:22.165",
+              "gap": "+1.081",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 16,
+              "number": 6,
+              "name": "Corentin Perolari",
+              "team": "Honda Racing World Supersport",
+              "make": null,
+              "cls": null,
+              "laps": 15,
+              "time": "2:22.340",
+              "gap": "+1.256",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 17,
+              "number": 37,
+              "name": "Roberto Garcia",
+              "team": "GMT94 Yamaha",
+              "make": null,
+              "cls": null,
+              "laps": 15,
+              "time": "2:22.382",
+              "gap": "+1.298",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 18,
+              "number": 91,
+              "name": "Borja Jimenez",
+              "team": "WRP Racing",
+              "make": null,
+              "cls": null,
+              "laps": 19,
+              "time": "2:22.403",
+              "gap": "+1.319",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 19,
+              "number": 65,
+              "name": "Philipp Oettl",
+              "team": "Feel Racing WorldSSP Team",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:22.429",
+              "gap": "+1.345",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 20,
+              "number": 10,
+              "name": "Leonardo Taccini",
+              "team": "Ecosantagata Althea Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 14,
+              "time": "2:22.455",
+              "gap": "+1.371",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 21,
+              "number": 31,
+              "name": "Yuki Okamoto",
+              "team": "Pata Yamaha Ten Kate Racing",
+              "make": null,
+              "cls": null,
+              "laps": 19,
+              "time": "2:22.510",
+              "gap": "+1.426",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 22,
+              "number": 70,
+              "name": "Josh Whatley",
+              "team": "Orelac Racing Verdnatura",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:22.576",
+              "gap": "+1.492",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 23,
+              "number": 3,
+              "name": "Raffaele De Rosa",
+              "team": "QJMOTOR Factory Racing",
+              "make": null,
+              "cls": null,
+              "laps": 13,
+              "time": "2:22.603",
+              "gap": "+1.519",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 24,
+              "number": 57,
+              "name": "Aldi Mahendra",
+              "team": "AS BLU CRU Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 16,
+              "time": "2:22.801",
+              "gap": "+1.717",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 25,
+              "number": 64,
+              "name": "Federico Caricasulo",
+              "team": "EASTROC ZXMOTO Evan Bros Factory",
+              "make": null,
+              "cls": null,
+              "laps": 14,
+              "time": "2:22.885",
+              "gap": "+1.801",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 26,
+              "number": 25,
+              "name": "Oliver Konig",
+              "team": "Compos Racing Team",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:23.098",
+              "gap": "+2.014",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 27,
+              "number": 28,
+              "name": "Marco Tapia",
+              "team": "Renzi Corse",
+              "make": null,
+              "cls": null,
+              "laps": 16,
+              "time": "2:23.214",
+              "gap": "+2.130",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 28,
+              "number": 99,
+              "name": "Bahattin Sofuoglu",
+              "team": "QJMOTOR Factory Racing",
+              "make": null,
+              "cls": null,
+              "laps": 19,
+              "time": "2:23.456",
+              "gap": "+2.372",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 29,
+              "number": 23,
+              "name": "Samuel Di Sora",
+              "team": "Flembbo by Racing Development",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:23.644",
+              "gap": "+2.560",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 30,
+              "number": 19,
+              "name": "Andreas Kofler",
+              "team": "Motorsport Kofler",
+              "make": null,
+              "cls": null,
+              "laps": 17,
+              "time": "2:23.775",
+              "gap": "+2.691",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 31,
+              "number": 88,
+              "name": "Andrea Giombini",
+              "team": "Motozoo by Madforce Dubai",
+              "make": null,
+              "cls": null,
+              "laps": 16,
+              "time": "2:23.893",
+              "gap": "+2.809",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 32,
+              "number": 22,
+              "name": "Ana Carrasco",
+              "team": "Honda Racing World Supersport",
+              "make": null,
+              "cls": null,
+              "laps": 16,
+              "time": "2:24.031",
+              "gap": "+2.947",
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
+            }
+          ]
         },
         {
           "id": "2026-JER-SSP-W1A",
@@ -66417,7 +66898,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "DUCAT",
+          "name": "Ducati",
           "number": null,
           "team": null,
           "make": null,
@@ -66444,7 +66925,7 @@
         },
         {
           "pos": 4,
-          "name": "YAMAH",
+          "name": "Yamaha",
           "number": null,
           "team": null,
           "make": null,
@@ -66453,7 +66934,7 @@
         },
         {
           "pos": 5,
-          "name": "KAWAS",
+          "name": "Kawasaki",
           "number": null,
           "team": null,
           "make": null,
@@ -66462,7 +66943,7 @@
         },
         {
           "pos": 6,
-          "name": "HONDA",
+          "name": "Honda",
           "number": null,
           "team": null,
           "make": null,
@@ -66486,6 +66967,24 @@
           "wins": null
         },
         {
+          "pos": 1,
+          "name": "Albert Arenas",
+          "number": 75,
+          "team": "AS BLU CRU Racing Team",
+          "make": null,
+          "points": 364,
+          "wins": null
+        },
+        {
+          "pos": 2,
+          "name": "Valentin Debise",
+          "number": 53,
+          "team": "EASTROC ZXMOTO Evan Bros Factory",
+          "make": null,
+          "points": 291,
+          "wins": null
+        },
+        {
           "pos": 2,
           "name": "Valentin Debise",
           "number": 53,
@@ -66504,10 +67003,37 @@
           "wins": null
         },
         {
+          "pos": 3,
+          "name": "Can Oncu",
+          "number": 61,
+          "team": "Pata Yamaha Ten Kate Racing",
+          "make": null,
+          "points": 234,
+          "wins": null
+        },
+        {
           "pos": 4,
           "name": "Jaume Masia",
           "number": 5,
           "team": "Orelac Racing Verdnatura",
+          "make": null,
+          "points": 229,
+          "wins": null
+        },
+        {
+          "pos": 4,
+          "name": "Jaume Masia",
+          "number": 5,
+          "team": "Orelac Racing Verdnatura",
+          "make": null,
+          "points": 229,
+          "wins": null
+        },
+        {
+          "pos": 5,
+          "name": "Jeremy Alcoba",
+          "number": 52,
+          "team": "Kawasaki WorldSSP Team",
           "make": null,
           "points": 229,
           "wins": null
@@ -66531,12 +67057,39 @@
           "wins": null
         },
         {
+          "pos": 6,
+          "name": "Tom Booth-Amos",
+          "number": 69,
+          "team": "PTR Triumph Factory Racing",
+          "make": null,
+          "points": 217,
+          "wins": null
+        },
+        {
           "pos": 7,
           "name": "Roberto Garcia",
           "number": 37,
           "team": "GMT94 Yamaha",
           "make": null,
           "points": 174,
+          "wins": null
+        },
+        {
+          "pos": 7,
+          "name": "Roberto Garcia",
+          "number": 37,
+          "team": "GMT94 Yamaha",
+          "make": null,
+          "points": 174,
+          "wins": null
+        },
+        {
+          "pos": 8,
+          "name": "Philipp Oettl",
+          "number": 65,
+          "team": "Feel Racing WorldSSP Team",
+          "make": null,
+          "points": 169,
           "wins": null
         },
         {
@@ -66558,12 +67111,39 @@
           "wins": null
         },
         {
+          "pos": 9,
+          "name": "Matteo Ferrari",
+          "number": 11,
+          "team": "WRP Racing",
+          "make": null,
+          "points": 147,
+          "wins": null
+        },
+        {
           "pos": 10,
           "name": "Lucas Mahias",
           "number": 94,
           "team": "GMT94 Yamaha",
           "make": null,
           "points": 136,
+          "wins": null
+        },
+        {
+          "pos": 10,
+          "name": "Lucas Mahias",
+          "number": 94,
+          "team": "GMT94 Yamaha",
+          "make": null,
+          "points": 136,
+          "wins": null
+        },
+        {
+          "pos": 11,
+          "name": "Alessandro Zaccone",
+          "number": 16,
+          "team": "Ecosantagata Althea Racing Team",
+          "make": null,
+          "points": 135,
           "wins": null
         },
         {
@@ -66585,12 +67165,39 @@
           "wins": null
         },
         {
+          "pos": 12,
+          "name": "Aldi Mahendra",
+          "number": 57,
+          "team": "AS BLU CRU Racing Team",
+          "make": null,
+          "points": 132,
+          "wins": null
+        },
+        {
           "pos": 13,
           "name": "Filippo Farioli",
           "number": 7,
           "team": "VFT Racing Yamaha",
           "make": null,
           "points": 119,
+          "wins": null
+        },
+        {
+          "pos": 13,
+          "name": "Filippo Farioli",
+          "number": 7,
+          "team": "VFT Racing Yamaha",
+          "make": null,
+          "points": 119,
+          "wins": null
+        },
+        {
+          "pos": 14,
+          "name": "Oli Bayliss",
+          "number": 32,
+          "team": "PTR Triumph Factory Racing",
+          "make": null,
+          "points": 94,
           "wins": null
         },
         {
@@ -66612,12 +67219,39 @@
           "wins": null
         },
         {
+          "pos": 15,
+          "name": "Simon Jespersen",
+          "number": 43,
+          "team": "EAB Racing Team",
+          "make": null,
+          "points": 72,
+          "wins": null
+        },
+        {
           "pos": 16,
           "name": "Mattia Casadei",
           "number": 40,
           "team": "D34G WorldSSP Racing Team",
           "make": null,
           "points": 68,
+          "wins": null
+        },
+        {
+          "pos": 16,
+          "name": "Mattia Casadei",
+          "number": 40,
+          "team": "D34G WorldSSP Racing Team",
+          "make": null,
+          "points": 68,
+          "wins": null
+        },
+        {
+          "pos": 17,
+          "name": "Federico Caricasulo",
+          "number": 64,
+          "team": "EASTROC ZXMOTO Evan Bros Factory",
+          "make": null,
+          "points": 58,
           "wins": null
         },
         {
@@ -66639,12 +67273,39 @@
           "wins": null
         },
         {
+          "pos": 18,
+          "name": "Dominique Aegerter",
+          "number": 77,
+          "team": "Kawasaki WorldSSP Team",
+          "make": null,
+          "points": 57,
+          "wins": null
+        },
+        {
           "pos": 19,
           "name": "Josh Whatley",
           "number": 70,
           "team": "Orelac Racing Verdnatura",
           "make": null,
           "points": 38,
+          "wins": null
+        },
+        {
+          "pos": 19,
+          "name": "Josh Whatley",
+          "number": 70,
+          "team": "Orelac Racing Verdnatura",
+          "make": null,
+          "points": 38,
+          "wins": null
+        },
+        {
+          "pos": 20,
+          "name": "Corentin Perolari",
+          "number": 6,
+          "team": "Honda Racing World Supersport",
+          "make": null,
+          "points": 30,
           "wins": null
         },
         {
@@ -66666,12 +67327,39 @@
           "wins": null
         },
         {
+          "pos": 21,
+          "name": "Ondrej Vostatek",
+          "number": 50,
+          "team": "Compos Racing Team",
+          "make": null,
+          "points": 28,
+          "wins": null
+        },
+        {
           "pos": 22,
           "name": "Andrea Giombini",
           "number": 88,
           "team": "Motozoo by Madforce Dubai",
           "make": null,
           "points": 13,
+          "wins": null
+        },
+        {
+          "pos": 22,
+          "name": "Andrea Giombini",
+          "number": 88,
+          "team": "Motozoo by Madforce Dubai",
+          "make": null,
+          "points": 13,
+          "wins": null
+        },
+        {
+          "pos": 23,
+          "name": "Leonardo Taccini",
+          "number": 10,
+          "team": "Ecosantagata Althea Racing Team",
+          "make": null,
+          "points": 12,
           "wins": null
         },
         {
@@ -66693,12 +67381,39 @@
           "wins": null
         },
         {
+          "pos": 24,
+          "name": "Borja Jimenez",
+          "number": 91,
+          "team": "WRP Racing",
+          "make": null,
+          "points": 11,
+          "wins": null
+        },
+        {
           "pos": 25,
           "name": "Jorge Navarro",
           "number": 9,
           "team": "PTR Triumph Factory Racing",
           "make": null,
           "points": 9,
+          "wins": null
+        },
+        {
+          "pos": 25,
+          "name": "Jorge Navarro",
+          "number": 9,
+          "team": "PTR Triumph Factory Racing",
+          "make": null,
+          "points": 9,
+          "wins": null
+        },
+        {
+          "pos": 26,
+          "name": "Yuki Okamoto",
+          "number": 31,
+          "team": "Pata Yamaha Ten Kate Racing",
+          "make": null,
+          "points": 6,
           "wins": null
         },
         {
@@ -66720,12 +67435,39 @@
           "wins": null
         },
         {
+          "pos": 27,
+          "name": "Raffaele De Rosa",
+          "number": 3,
+          "team": "QJMOTOR Factory Racing",
+          "make": null,
+          "points": 5,
+          "wins": null
+        },
+        {
           "pos": 28,
           "name": "Xavi Cardelus",
           "number": 20,
           "team": "Cerba Yamaha Racing Team",
           "make": null,
           "points": 2,
+          "wins": null
+        },
+        {
+          "pos": 28,
+          "name": "Xavi Cardelus",
+          "number": 20,
+          "team": "Cerba Yamaha Racing Team",
+          "make": null,
+          "points": 2,
+          "wins": null
+        },
+        {
+          "pos": 29,
+          "name": "Kevin Zannoni",
+          "number": 21,
+          "team": "Broncos Racing Team",
+          "make": null,
+          "points": 1,
           "wins": null
         },
         {
@@ -66746,7 +67488,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "YAMAH",
+          "name": "Yamaha",
           "number": null,
           "team": null,
           "make": null,
@@ -66755,7 +67497,7 @@
         },
         {
           "pos": 2,
-          "name": "DUCAT",
+          "name": "Ducati",
           "number": null,
           "team": null,
           "make": null,
@@ -66764,7 +67506,7 @@
         },
         {
           "pos": 3,
-          "name": "ZXMOT",
+          "name": "ZXMOTO",
           "number": null,
           "team": null,
           "make": null,
@@ -66773,7 +67515,7 @@
         },
         {
           "pos": 4,
-          "name": "TRIUM",
+          "name": "Triumph",
           "number": null,
           "team": null,
           "make": null,
@@ -66782,7 +67524,7 @@
         },
         {
           "pos": 5,
-          "name": "KAWAS",
+          "name": "Kawasaki",
           "number": null,
           "team": null,
           "make": null,
@@ -66791,7 +67533,7 @@
         },
         {
           "pos": 6,
-          "name": "HONDA",
+          "name": "Honda",
           "number": null,
           "team": null,
           "make": null,
@@ -66800,7 +67542,7 @@
         },
         {
           "pos": 7,
-          "name": "MVAGU",
+          "name": "MV Agusta",
           "number": null,
           "team": null,
           "make": null,
@@ -66809,7 +67551,7 @@
         },
         {
           "pos": 8,
-          "name": "QJMOT",
+          "name": "QJMOTOR",
           "number": null,
           "team": null,
           "make": null,
