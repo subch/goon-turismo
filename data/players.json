@@ -17,13 +17,13 @@
         "poles": 10,
         "fastest_laps": 7,
         "clean_races": 17,
-        "collector_level": 70,
+        "collector_level": 90,
         "license": "Master S",
-        "garage_count": 617,
+        "garage_count": 625,
         "collection_progress": "100%",
-        "total_credits": 838521435,
-        "play_time_readable": "1,214h 29m",
-        "distance_km": "152,689.2"
+        "total_credits": 841812435,
+        "play_time_readable": "1,215h 54m",
+        "distance_km": "152,739.0"
       }
     }
   },
@@ -105,9 +105,9 @@
         "license": "Master B",
         "garage_count": 718,
         "collection_progress": "98%",
-        "total_credits": 711026130,
-        "play_time_readable": "2,406h 20m",
-        "distance_km": "203,166.5"
+        "total_credits": 711164330,
+        "play_time_readable": "2,407h 12m",
+        "distance_km": "203,224.9"
       }
     }
   },
