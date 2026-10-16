@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-15T22:32:33.949Z",
+  "syncedAt": "2026-10-16T00:32:36.579Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -64854,7 +64854,7 @@
       "country": "ESP",
       "dateStart": "2026-10-16",
       "dateEnd": "2026-10-18",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.worldsbk.com/en/results/2026/jer/sbk/001",
       "complete": false,
       "sessions": [
