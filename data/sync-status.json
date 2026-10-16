@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-15T18:47:01.922Z",
-  "finishedAt": "2026-10-15T18:49:04.327Z",
+  "startedAt": "2026-10-16T00:47:02.130Z",
+  "finishedAt": "2026-10-16T00:50:15.201Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,7 +15,7 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "92"
+      "remaining": "98"
     },
     "errors": []
   },
@@ -23,8 +23,10 @@
     "playersScraped": 18,
     "playersTotal": 24,
     "eventsTouched": 6,
-    "eventsCreated": [],
-    "cutoffIso": "2026-09-24",
+    "eventsCreated": [
+      "tt-2026-10-15-sportsland-sugo"
+    ],
+    "cutoffIso": "2026-09-25",
     "warnings": 7
   }
 }
