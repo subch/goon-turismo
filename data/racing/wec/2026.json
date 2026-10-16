@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-16T12:32:33.170Z",
+  "syncedAt": "2026-10-16T14:32:32.179Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -22331,7 +22331,7 @@
           "name": "Free Practice 1",
           "startUtc": "2026-10-16T09:30:00.000Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
@@ -22341,7 +22341,7 @@
           "name": "Free Practice 2",
           "startUtc": "2026-10-16T14:30:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -22351,7 +22351,7 @@
           "name": "Free Practice 2",
           "startUtc": "2026-10-16T14:30:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -22361,7 +22361,7 @@
           "name": "Free Practice 2",
           "startUtc": "2026-10-16T14:30:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
