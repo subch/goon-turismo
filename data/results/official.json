@@ -8017,19 +8017,27 @@
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
+    "psn": "dog_nougat",
+    "timeRaw": "1:19.841",
+    "timeMs": 79841,
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "tt-2026-10-15-sportsland-sugo",
     "psn": "devmotron",
     "timeRaw": "1:21.854",
     "timeMs": 81854,
-    "groupRank": 1,
-    "points": 100
+    "groupRank": 2,
+    "points": 75
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
     "psn": "rickiep00h",
     "timeRaw": "1:24.014",
     "timeMs": 84014,
-    "groupRank": 2,
-    "points": 74
+    "groupRank": 3,
+    "points": 48
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
