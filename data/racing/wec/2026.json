@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-16T08:32:28.875Z",
+  "syncedAt": "2026-10-16T10:32:27.011Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -17,6 +17,10 @@
     {
       "id": "lmgt3",
       "name": "LMGT3"
+    },
+    {
+      "id": "lmp2",
+      "name": "LMP2"
     }
   ],
   "events": [
@@ -21780,7 +21784,7 @@
           "name": "Free Practice 1",
           "startUtc": "2026-10-16T09:30:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -21790,7 +21794,17 @@
           "name": "Free Practice 1",
           "startUtc": "2026-10-16T09:30:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
+          "results": null
+        },
+        {
+          "id": "free-practice-1-lmp2",
+          "classId": "lmp2",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-10-16T09:30:00.000Z",
+          "endUtc": null,
+          "status": "live",
           "results": null
         },
         {
@@ -21806,6 +21820,16 @@
         {
           "id": "free-practice-2-lmgt3",
           "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-10-16T14:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-2-lmp2",
+          "classId": "lmp2",
           "type": "practice",
           "name": "Free Practice 2",
           "startUtc": "2026-10-16T14:30:00.000Z",
@@ -21892,6 +21916,16 @@
           "endUtc": null,
           "status": "upcoming",
           "results": null
+        },
+        {
+          "id": "race-lmp2",
+          "classId": "lmp2",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-10-18T10:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
         }
       ]
     },
@@ -21930,6 +21964,16 @@
           "results": null
         },
         {
+          "id": "free-practice-1-lmp2",
+          "classId": "lmp2",
+          "type": "practice",
+          "name": "Free Practice 1",
+          "startUtc": "2026-11-06T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
           "id": "free-practice-2-hypercar",
           "classId": "hypercar",
           "type": "practice",
@@ -21950,6 +21994,16 @@
           "results": null
         },
         {
+          "id": "free-practice-2-lmp2",
+          "classId": "lmp2",
+          "type": "practice",
+          "name": "Free Practice 2",
+          "startUtc": "2026-11-06T13:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
           "id": "free-practice-3-hypercar",
           "classId": "hypercar",
           "type": "practice",
@@ -21962,6 +22016,16 @@
         {
           "id": "free-practice-3-lmgt3",
           "classId": "lmgt3",
+          "type": "practice",
+          "name": "Free Practice 3",
+          "startUtc": "2026-11-07T09:30:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "free-practice-3-lmp2",
+          "classId": "lmp2",
           "type": "practice",
           "name": "Free Practice 3",
           "startUtc": "2026-11-07T09:30:00.000Z",
@@ -22022,6 +22086,16 @@
         {
           "id": "race-lmgt3",
           "classId": "lmgt3",
+          "type": "race",
+          "name": "Race",
+          "startUtc": "2026-11-08T10:00:00.000Z",
+          "endUtc": null,
+          "status": "upcoming",
+          "results": null
+        },
+        {
+          "id": "race-lmp2",
+          "classId": "lmp2",
           "type": "race",
           "name": "Race",
           "startUtc": "2026-11-08T10:00:00.000Z",
