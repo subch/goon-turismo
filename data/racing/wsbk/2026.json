@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-16T06:32:39.256Z",
+  "syncedAt": "2026-10-16T08:32:39.487Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -65259,7 +65259,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "DUCAT",
+          "name": "Ducati",
           "number": null,
           "team": null,
           "make": null,
@@ -65268,7 +65268,7 @@
         },
         {
           "pos": 2,
-          "name": "BIMOT",
+          "name": "bimota",
           "number": null,
           "team": null,
           "make": null,
@@ -65597,7 +65597,7 @@
         },
         {
           "pos": 2,
-          "name": "DUCAT",
+          "name": "Ducati",
           "number": null,
           "team": null,
           "make": null,
@@ -65642,7 +65642,7 @@
         },
         {
           "pos": 7,
-          "name": "MVAGU",
+          "name": "MV Agusta",
           "number": null,
           "team": null,
           "make": null,
