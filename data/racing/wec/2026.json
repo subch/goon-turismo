@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-17T12:32:32.828Z",
+  "syncedAt": "2026-10-17T14:32:30.660Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -22576,13 +22576,13 @@
           ]
         },
         {
-          "id": "qualifying-hypercar-hypercar",
+          "id": "8282-hypercar",
           "classId": "hypercar",
           "type": "qualifying",
           "name": "Qualifying",
           "startUtc": "2026-10-17T13:40:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -22592,7 +22592,7 @@
           "name": "Hyperpole",
           "startUtc": "2026-10-17T14:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
