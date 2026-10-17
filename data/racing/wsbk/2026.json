@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-17T10:32:40.017Z",
+  "syncedAt": "2026-10-17T12:32:43.141Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -67755,9 +67755,9 @@
           "classId": "ssp",
           "type": "race",
           "name": "Race 1",
-          "startUtc": "2026-10-17T12:00:00+00:00",
+          "startUtc": "2026-10-17T12:00:41+00:00",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -68068,7 +68068,7 @@
         },
         {
           "pos": 4,
-          "name": "YAMAH",
+          "name": "Yamaha",
           "number": null,
           "team": null,
           "make": null,
@@ -68086,7 +68086,7 @@
         },
         {
           "pos": 6,
-          "name": "HONDA",
+          "name": "Honda",
           "number": null,
           "team": null,
           "make": null,
@@ -68631,7 +68631,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "YAMAH",
+          "name": "Yamaha",
           "number": null,
           "team": null,
           "make": null,
@@ -68658,7 +68658,7 @@
         },
         {
           "pos": 4,
-          "name": "TRIUM",
+          "name": "Triumph",
           "number": null,
           "team": null,
           "make": null,
@@ -68676,7 +68676,7 @@
         },
         {
           "pos": 6,
-          "name": "HONDA",
+          "name": "Honda",
           "number": null,
           "team": null,
           "make": null,
