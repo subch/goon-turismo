@@ -8025,10 +8025,18 @@
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
+    "psn": "superpharts",
+    "timeRaw": "1:20.124",
+    "timeMs": 80124,
+    "groupRank": 2,
+    "points": 96
+  },
+  {
+    "eventId": "tt-2026-10-15-sportsland-sugo",
     "psn": "bravemen84",
     "timeRaw": "1:20.170",
     "timeMs": 80170,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 96
   },
   {
@@ -8036,7 +8044,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:21.719",
     "timeMs": 81719,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 76
   },
   {
@@ -8044,7 +8052,7 @@
     "psn": "devmotron",
     "timeRaw": "1:21.854",
     "timeMs": 81854,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 75
   },
   {
