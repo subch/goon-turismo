@@ -7993,27 +7993,27 @@
   },
   {
     "eventId": "tt-2026-10-08-dragon-trail-gardens",
-    "psn": "rickiep00h",
-    "timeRaw": "1:50.816",
-    "timeMs": 110816,
+    "psn": "dog_nougat",
+    "timeRaw": "1:50.376",
+    "timeMs": 110376,
     "groupRank": 4,
-    "points": 63
+    "points": 67
+  },
+  {
+    "eventId": "tt-2026-10-08-dragon-trail-gardens",
+    "psn": "rickiep00h",
+    "timeRaw": "1:50.574",
+    "timeMs": 110574,
+    "groupRank": 5,
+    "points": 65
   },
   {
     "eventId": "tt-2026-10-08-dragon-trail-gardens",
     "psn": "devmotron",
     "timeRaw": "1:51.243",
     "timeMs": 111243,
-    "groupRank": 5,
-    "points": 59
-  },
-  {
-    "eventId": "tt-2026-10-08-dragon-trail-gardens",
-    "psn": "dog_nougat",
-    "timeRaw": "1:52.210",
-    "timeMs": 112210,
     "groupRank": 6,
-    "points": 50
+    "points": 59
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
@@ -8025,19 +8025,27 @@
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
-    "psn": "devmotron",
-    "timeRaw": "1:21.854",
-    "timeMs": 81854,
+    "psn": "bravemen84",
+    "timeRaw": "1:20.170",
+    "timeMs": 80170,
     "groupRank": 2,
-    "points": 75
+    "points": 96
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
     "psn": "rickiep00h",
-    "timeRaw": "1:24.014",
-    "timeMs": 84014,
+    "timeRaw": "1:21.719",
+    "timeMs": 81719,
     "groupRank": 3,
-    "points": 48
+    "points": 76
+  },
+  {
+    "eventId": "tt-2026-10-15-sportsland-sugo",
+    "psn": "devmotron",
+    "timeRaw": "1:21.854",
+    "timeMs": 81854,
+    "groupRank": 4,
+    "points": 75
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
