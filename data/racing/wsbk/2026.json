@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-18T14:32:49.717Z",
+  "syncedAt": "2026-10-18T16:32:43.505Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -70784,7 +70784,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -70793,7 +70793,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,
@@ -71113,7 +71113,7 @@
         },
         {
           "pos": 5,
-          "name": "Kawasaki",
+          "name": "KAWAS",
           "number": null,
           "team": null,
           "make": null,
@@ -71122,7 +71122,7 @@
         },
         {
           "pos": 6,
-          "name": "Honda",
+          "name": "HONDA",
           "number": null,
           "team": null,
           "make": null,

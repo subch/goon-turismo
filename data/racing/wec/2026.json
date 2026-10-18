@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-18T14:32:38.641Z",
+  "syncedAt": "2026-10-18T16:32:32.633Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -24308,27 +24308,554 @@
           ]
         },
         {
-          "id": "race-hypercar",
+          "id": "8284-hypercar",
           "classId": "hypercar",
           "type": "race",
           "name": "Race",
           "startUtc": "2026-10-18T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
-          "results": null
+          "results": [
+            {
+              "pos": 1,
+              "number": "#8",
+              "name": null,
+              "team": "TOYOTA RACING",
+              "make": "TOYOTA",
+              "cls": null,
+              "laps": "198",
+              "time": "6:01:20.906",
+              "gap": null,
+              "interval": null,
+              "bestLap": "1:32.420",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": "#7",
+              "name": null,
+              "team": "TOYOTA RACING",
+              "make": "TOYOTA",
+              "cls": null,
+              "laps": "198",
+              "time": "6:01:21.489",
+              "gap": "0.583",
+              "interval": "0.583",
+              "bestLap": "1:32.379",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": "#50",
+              "name": null,
+              "team": "FERRARI AF CORSE",
+              "make": "FERRARI",
+              "cls": null,
+              "laps": "198",
+              "time": "6:02:00.631",
+              "gap": "39.725",
+              "interval": "39.142",
+              "bestLap": "1:33.740",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 4,
+              "number": "#38",
+              "name": null,
+              "team": "CADILLAC HERTZ TEAM JOTA",
+              "make": "CADILLAC",
+              "cls": null,
+              "laps": "198",
+              "time": "6:02:13.717",
+              "gap": "52.811",
+              "interval": "13.086",
+              "bestLap": "1:33.390",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 5,
+              "number": "#83",
+              "name": null,
+              "team": "AF CORSE",
+              "make": "FERRARI",
+              "cls": null,
+              "laps": "198",
+              "time": "6:02:14.259",
+              "gap": "53.353",
+              "interval": "0.542",
+              "bestLap": "1:33.708",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 6,
+              "number": "#12",
+              "name": null,
+              "team": "CADILLAC HERTZ TEAM JOTA",
+              "make": "CADILLAC",
+              "cls": null,
+              "laps": "198",
+              "time": "6:02:41.657",
+              "gap": "1:20.751",
+              "interval": "27.398",
+              "bestLap": "1:33.519",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 7,
+              "number": "#15",
+              "name": null,
+              "team": "BMW M TEAM WRT",
+              "make": "BMW",
+              "cls": null,
+              "laps": "198",
+              "time": "6:02:53.041",
+              "gap": "1:32.135",
+              "interval": "11.384",
+              "bestLap": "1:33.375",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 8,
+              "number": "#36",
+              "name": null,
+              "team": "ALPINE ENDURANCE TEAM",
+              "make": "ALPINE",
+              "cls": null,
+              "laps": "198",
+              "time": "6:02:53.862",
+              "gap": "1:32.956",
+              "interval": "0.821",
+              "bestLap": "1:33.582",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 9,
+              "number": "#009",
+              "name": null,
+              "team": "ASTON MARTIN THOR TEAM",
+              "make": "ASTON MARTIN",
+              "cls": null,
+              "laps": "197",
+              "time": "6:01:22.538",
+              "gap": "1 Lap",
+              "interval": "1 Lap",
+              "bestLap": "1:34.024",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 10,
+              "number": "#35",
+              "name": null,
+              "team": "ALPINE ENDURANCE TEAM",
+              "make": "ALPINE",
+              "cls": null,
+              "laps": "197",
+              "time": "6:01:53.648",
+              "gap": "1 Lap",
+              "interval": "31.110",
+              "bestLap": "1:32.809",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 11,
+              "number": "#19",
+              "name": null,
+              "team": "GENESIS MAGMA RACING",
+              "make": "GENESIS",
+              "cls": null,
+              "laps": "197",
+              "time": "6:01:54.062",
+              "gap": "1 Lap",
+              "interval": "0.414",
+              "bestLap": "1:34.171",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 12,
+              "number": "#93",
+              "name": null,
+              "team": "PEUGEOT TOTALENERGIES",
+              "make": "PEUGEOT",
+              "cls": null,
+              "laps": "197",
+              "time": "6:02:33.765",
+              "gap": "1 Lap",
+              "interval": "39.703",
+              "bestLap": "1:33.758",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 13,
+              "number": "#94",
+              "name": null,
+              "team": "PEUGEOT TOTALENERGIES",
+              "make": "PEUGEOT",
+              "cls": null,
+              "laps": "197",
+              "time": "6:03:04.328",
+              "gap": "1 Lap",
+              "interval": "30.563",
+              "bestLap": "1:34.076",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 14,
+              "number": "#20",
+              "name": null,
+              "team": "BMW M TEAM WRT",
+              "make": "BMW",
+              "cls": null,
+              "laps": "196",
+              "time": "6:01:35.060",
+              "gap": "2 Laps",
+              "interval": "1 Lap",
+              "bestLap": "1:34.113",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 15,
+              "number": "#51",
+              "name": null,
+              "team": "FERRARI AF CORSE",
+              "make": "FERRARI",
+              "cls": null,
+              "laps": "195",
+              "time": "6:01:23.145",
+              "gap": "3 Laps",
+              "interval": "1 Lap",
+              "bestLap": "1:34.692",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 16,
+              "number": "#17",
+              "name": null,
+              "team": "GENESIS MAGMA RACING",
+              "make": "GENESIS",
+              "cls": null,
+              "laps": "195",
+              "time": "6:02:34.495",
+              "gap": "3 Laps",
+              "interval": "1:11.350",
+              "bestLap": "1:34.252",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 17,
+              "number": "#007",
+              "name": null,
+              "team": "ASTON MARTIN THOR TEAM",
+              "make": "ASTON MARTIN",
+              "cls": null,
+              "laps": "115",
+              "time": "3:41:51.500",
+              "gap": "83 Laps",
+              "interval": "80 Laps",
+              "bestLap": "1:35.018",
+              "points": null,
+              "status": null
+            }
+          ]
         },
         {
-          "id": "race-lmgt3",
+          "id": "8284-lmgt3",
           "classId": "lmgt3",
           "type": "race",
           "name": "Race",
           "startUtc": "2026-10-18T10:00:00.000Z",
           "endUtc": null,
           "status": "finished",
-          "results": null
+          "results": [
+            {
+              "pos": 1,
+              "number": "#92",
+              "name": null,
+              "team": "THE BEND MANTHEY",
+              "make": "PORSCHE",
+              "cls": null,
+              "laps": "183",
+              "time": "6:02:28.418",
+              "gap": null,
+              "interval": null,
+              "bestLap": "1:43.414",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": "#10",
+              "name": null,
+              "team": "GARAGE 59",
+              "make": "McLAREN",
+              "cls": null,
+              "laps": "183",
+              "time": "6:02:33.168",
+              "gap": "4.750",
+              "interval": "4.750",
+              "bestLap": "1:42.875",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": "#69",
+              "name": null,
+              "team": "TEAM WRT",
+              "make": "BMW",
+              "cls": null,
+              "laps": "183",
+              "time": "6:02:44.038",
+              "gap": "15.620",
+              "interval": "10.870",
+              "bestLap": "1:43.704",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 4,
+              "number": "#34",
+              "name": null,
+              "team": "RACING TEAM TURKEY BY TF",
+              "make": "CORVETTE",
+              "cls": null,
+              "laps": "183",
+              "time": "6:02:44.294",
+              "gap": "15.876",
+              "interval": "0.256",
+              "bestLap": "1:43.065",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 5,
+              "number": "#21",
+              "name": null,
+              "team": "VISTA AF CORSE",
+              "make": "FERRARI",
+              "cls": null,
+              "laps": "183",
+              "time": "6:03:00.431",
+              "gap": "32.013",
+              "interval": "16.137",
+              "bestLap": "1:42.376",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 6,
+              "number": "#61",
+              "name": null,
+              "team": "IRON LYNX",
+              "make": "MERCEDES",
+              "cls": null,
+              "laps": "183",
+              "time": "6:03:04.172",
+              "gap": "35.754",
+              "interval": "3.741",
+              "bestLap": "1:42.619",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 7,
+              "number": "#33",
+              "name": null,
+              "team": "TF SPORT",
+              "make": "CORVETTE",
+              "cls": null,
+              "laps": "183",
+              "time": "6:03:05.745",
+              "gap": "37.327",
+              "interval": "1.573",
+              "bestLap": "1:43.288",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 8,
+              "number": "#88",
+              "name": null,
+              "team": "PROTON COMPETITION",
+              "make": "FORD",
+              "cls": null,
+              "laps": "182",
+              "time": "6:01:31.132",
+              "gap": "1 Lap",
+              "interval": "1 Lap",
+              "bestLap": "1:43.069",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 9,
+              "number": "#79",
+              "name": null,
+              "team": "IRON LYNX",
+              "make": "MERCEDES",
+              "cls": null,
+              "laps": "182",
+              "time": "6:01:36.740",
+              "gap": "1 Lap",
+              "interval": "5.608",
+              "bestLap": "1:43.684",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 10,
+              "number": "#23",
+              "name": null,
+              "team": "HEART OF RACING TEAM",
+              "make": "ASTON MARTIN",
+              "cls": null,
+              "laps": "182",
+              "time": "6:02:12.333",
+              "gap": "1 Lap",
+              "interval": "35.593",
+              "bestLap": "1:43.842",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 11,
+              "number": "#58",
+              "name": null,
+              "team": "GARAGE 59",
+              "make": "McLAREN",
+              "cls": null,
+              "laps": "182",
+              "time": "6:02:16.766",
+              "gap": "1 Lap",
+              "interval": "4.433",
+              "bestLap": "1:42.193",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 12,
+              "number": "#32",
+              "name": null,
+              "team": "TEAM WRT",
+              "make": "BMW",
+              "cls": null,
+              "laps": "182",
+              "time": "6:02:26.167",
+              "gap": "1 Lap",
+              "interval": "9.401",
+              "bestLap": "1:43.681",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 13,
+              "number": "#54",
+              "name": null,
+              "team": "VISTA AF CORSE",
+              "make": "FERRARI",
+              "cls": null,
+              "laps": "181",
+              "time": "6:01:39.128",
+              "gap": "2 Laps",
+              "interval": "1 Lap",
+              "bestLap": "1:42.969",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 14,
+              "number": "#87",
+              "name": null,
+              "team": "AKKODIS ASP TEAM",
+              "make": "LEXUS",
+              "cls": null,
+              "laps": "180",
+              "time": "6:02:07.468",
+              "gap": "3 Laps",
+              "interval": "1 Lap",
+              "bestLap": "1:43.422",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 15,
+              "number": "#78",
+              "name": null,
+              "team": "AKKODIS ASP TEAM",
+              "make": "LEXUS",
+              "cls": null,
+              "laps": "179",
+              "time": "6:01:30.251",
+              "gap": "4 Laps",
+              "interval": "1 Lap",
+              "bestLap": "1:44.097",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 16,
+              "number": "#27",
+              "name": null,
+              "team": "HEART OF RACING TEAM",
+              "make": "ASTON MARTIN",
+              "cls": null,
+              "laps": "178",
+              "time": "6:01:37.333",
+              "gap": "5 Laps",
+              "interval": "1 Lap",
+              "bestLap": "1:44.433",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 17,
+              "number": "#91",
+              "name": null,
+              "team": "MANTHEY DK ENGINEERING",
+              "make": "PORSCHE",
+              "cls": null,
+              "laps": "174",
+              "time": "6:01:32.137",
+              "gap": "9 Laps",
+              "interval": "4 Laps",
+              "bestLap": "1:43.084",
+              "points": null,
+              "status": null
+            },
+            {
+              "pos": 18,
+              "number": "#77",
+              "name": null,
+              "team": "PROTON COMPETITION",
+              "make": "FORD",
+              "cls": null,
+              "laps": "181",
+              "time": "6:00:12.970",
+              "gap": "2 Laps",
+              "interval": "-7 Laps",
+              "bestLap": "1:43.128",
+              "points": null,
+              "status": null
+            }
+          ]
         },
         {
-          "id": "race-lmp2",
+          "id": "8284-lmp2",
           "classId": "lmp2",
           "type": "race",
           "name": "Race",
@@ -24528,7 +25055,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 169,
+          "points": 212,
           "wins": null
         },
         {
@@ -24537,7 +25064,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 146,
+          "points": 154,
           "wins": null
         },
         {
@@ -24546,25 +25073,25 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 115,
+          "points": 130,
           "wins": null
         },
         {
           "pos": 4,
-          "name": "ALPINE",
-          "number": null,
-          "team": null,
-          "make": null,
-          "points": 96,
-          "wins": null
-        },
-        {
-          "pos": 5,
           "name": "CADILLAC",
           "number": null,
           "team": null,
           "make": null,
-          "points": 96,
+          "points": 118,
+          "wins": null
+        },
+        {
+          "pos": 5,
+          "name": "ALPINE",
+          "number": null,
+          "team": null,
+          "make": null,
+          "points": 104,
           "wins": null
         },
         {
@@ -24573,7 +25100,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 54,
+          "points": 58,
           "wins": null
         },
         {
@@ -24591,7 +25118,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 12,
+          "points": 14,
           "wins": null
         }
       ]
@@ -24607,7 +25134,7 @@
           "number": "#8",
           "team": null,
           "make": "TOYOTA",
-          "points": 89,
+          "points": 114,
           "wins": null
         },
         {
@@ -24616,11 +25143,20 @@
           "number": "#7",
           "team": null,
           "make": "TOYOTA",
-          "points": 79,
+          "points": 97,
           "wins": null
         },
         {
           "pos": 3,
+          "name": "Kevin Magnussen, Raffaele Marciello",
+          "number": "#15",
+          "team": null,
+          "make": "BMW",
+          "points": 75,
+          "wins": null
+        },
+        {
+          "pos": 4,
           "name": "René Rast, Robin Frijns",
           "number": "#20",
           "team": null,
@@ -24629,8 +25165,8 @@
           "wins": null
         },
         {
-          "pos": 4,
-          "name": "Kevin Magnussen, Raffaele Marciello",
+          "pos": 5,
+          "name": "Dries Vanthoor",
           "number": "#15",
           "team": null,
           "make": "BMW",
@@ -24638,7 +25174,16 @@
           "wins": null
         },
         {
-          "pos": 5,
+          "pos": 6,
+          "name": "Antonio Fuoco, Miguel Molina, Nicklas Nielsen",
+          "number": "#50",
+          "team": null,
+          "make": "FERRARI",
+          "points": 69,
+          "wins": null
+        },
+        {
+          "pos": 7,
           "name": "Sheldon van der Linde",
           "number": "#20",
           "team": null,
@@ -24647,16 +25192,7 @@
           "wins": null
         },
         {
-          "pos": 6,
-          "name": "Dries Vanthoor",
-          "number": "#15",
-          "team": null,
-          "make": "BMW",
-          "points": 63,
-          "wins": null
-        },
-        {
-          "pos": 7,
+          "pos": 8,
           "name": "Alessandro Pier Guidi, Antonio Giovinazzi, James Calado",
           "number": "#51",
           "team": null,
@@ -24665,30 +25201,21 @@
           "wins": null
         },
         {
-          "pos": 8,
-          "name": "Charles Milesi, Ferdinand Habsburg",
-          "number": "#35",
-          "team": null,
-          "make": "ALPINE",
-          "points": 56,
-          "wins": null
-        },
-        {
           "pos": 9,
-          "name": "Antonio Fuoco, Miguel Molina, Nicklas Nielsen",
-          "number": "#50",
-          "team": null,
-          "make": "FERRARI",
-          "points": 54,
-          "wins": null
-        },
-        {
-          "pos": 10,
           "name": "Norman Nato, Will Stevens",
           "number": "#12",
           "team": null,
           "make": "CADILLAC",
-          "points": 50,
+          "points": 58,
+          "wins": null
+        },
+        {
+          "pos": 10,
+          "name": "Charles Milesi, Ferdinand Habsburg",
+          "number": "#35",
+          "team": null,
+          "make": "ALPINE",
+          "points": 57,
           "wins": null
         },
         {
@@ -24697,11 +25224,20 @@
           "number": "#38",
           "team": null,
           "make": "CADILLAC",
-          "points": 44,
+          "points": 56,
           "wins": null
         },
         {
           "pos": 12,
+          "name": "Jack Aitken",
+          "number": "#38",
+          "team": null,
+          "make": "CADILLAC",
+          "points": 52,
+          "wins": null
+        },
+        {
+          "pos": 13,
           "name": "António Félix da Costa",
           "number": "#35",
           "team": null,
@@ -24710,7 +25246,7 @@
           "wins": null
         },
         {
-          "pos": 13,
+          "pos": 14,
           "name": "Harry Tincknell, Tom Gamble",
           "number": "#007",
           "team": null,
@@ -24719,30 +25255,21 @@
           "wins": null
         },
         {
-          "pos": 14,
-          "name": "Jack Aitken",
-          "number": "#38",
-          "team": null,
-          "make": "CADILLAC",
-          "points": 40,
-          "wins": null
-        },
-        {
           "pos": 15,
-          "name": "Jules Gounon, Victor Martins",
-          "number": "#36",
-          "team": null,
-          "make": "ALPINE",
-          "points": 32,
-          "wins": null
-        },
-        {
-          "pos": 16,
           "name": "Philip Hanson, Robert Kubica, Yifei Ye",
           "number": "#83",
           "team": null,
           "make": "FERRARI",
-          "points": 31,
+          "points": 41,
+          "wins": null
+        },
+        {
+          "pos": 16,
+          "name": "Jules Gounon, Victor Martins",
+          "number": "#36",
+          "team": null,
+          "make": "ALPINE",
+          "points": 36,
           "wins": null
         },
         {
@@ -24778,11 +25305,20 @@
           "number": "#17",
           "team": null,
           "make": "GENESIS",
-          "points": 10,
+          "points": 11,
           "wins": null
         },
         {
           "pos": 21,
+          "name": "Alex Lynn",
+          "number": "#12",
+          "team": null,
+          "make": "CADILLAC",
+          "points": 8,
+          "wins": null
+        },
+        {
+          "pos": 22,
           "name": "Ross Gunn",
           "number": "#007",
           "team": null,
@@ -24791,8 +25327,8 @@
           "wins": null
         },
         {
-          "pos": 22,
-          "name": "Nick Cassidy, Paul di Resta, Stoffel Vandoorne",
+          "pos": 23,
+          "name": "Nick Cassidy, Paul di Resta",
           "number": "#93",
           "team": null,
           "make": "PEUGEOT",
@@ -24800,16 +25336,25 @@
           "wins": null
         },
         {
-          "pos": 23,
+          "pos": 24,
+          "name": "Stoffel Vandoorne",
+          "number": "#93",
+          "team": null,
+          "make": "PEUGEOT",
+          "points": 6,
+          "wins": null
+        },
+        {
+          "pos": 25,
           "name": "Alex Riberas, Marco Sørensen",
           "number": "#009",
           "team": null,
           "make": "ASTON MARTIN",
-          "points": 4,
+          "points": 6,
           "wins": null
         },
         {
-          "pos": 24,
+          "pos": 26,
           "name": "Ricky Taylor",
           "number": "#101",
           "team": null,
@@ -24818,7 +25363,7 @@
           "wins": null
         },
         {
-          "pos": 25,
+          "pos": 27,
           "name": "Daniel Juncadella, Mathieu Jaminet, Paul-Loup Chatin",
           "number": "#19",
           "team": null,
@@ -24827,7 +25372,16 @@
           "wins": null
         },
         {
-          "pos": 26,
+          "pos": 28,
+          "name": "Alex Quinn",
+          "number": "#93",
+          "team": null,
+          "make": "PEUGEOT",
+          "points": 0,
+          "wins": null
+        },
+        {
+          "pos": 29,
           "name": "Roman de Angelis",
           "number": "#009",
           "team": null,
@@ -24848,16 +25402,16 @@
           "number": "#33",
           "team": null,
           "make": "CORVETTE",
-          "points": 86,
+          "points": 92,
           "wins": null
         },
         {
           "pos": 2,
-          "name": "HEART OF RACING TEAM",
-          "number": "#27",
+          "name": "THE BEND MANTHEY",
+          "number": "#92",
           "team": null,
-          "make": "ASTON MARTIN",
-          "points": 62,
+          "make": "PORSCHE",
+          "points": 74,
           "wins": null
         },
         {
@@ -24866,16 +25420,16 @@
           "number": "#34",
           "team": null,
           "make": "CORVETTE",
-          "points": 58,
+          "points": 70,
           "wins": null
         },
         {
           "pos": 4,
-          "name": "MANTHEY DK ENGINEERING",
-          "number": "#91",
+          "name": "TEAM WRT",
+          "number": "#69",
           "team": null,
-          "make": "PORSCHE",
-          "points": 54,
+          "make": "BMW",
+          "points": 66,
           "wins": null
         },
         {
@@ -24884,38 +25438,47 @@
           "number": "#21",
           "team": null,
           "make": "FERRARI",
-          "points": 54,
+          "points": 64,
           "wins": null
         },
         {
           "pos": 6,
-          "name": "TEAM WRT",
-          "number": "#69",
+          "name": "HEART OF RACING TEAM",
+          "number": "#27",
           "team": null,
-          "make": "BMW",
-          "points": 51,
+          "make": "ASTON MARTIN",
+          "points": 62,
           "wins": null
         },
         {
           "pos": 7,
-          "name": "THE BEND MANTHEY",
-          "number": "#92",
+          "name": "GARAGE 59",
+          "number": "#10",
           "team": null,
-          "make": "PORSCHE",
-          "points": 49,
+          "make": "McLAREN",
+          "points": 57,
           "wins": null
         },
         {
           "pos": 8,
-          "name": "HEART OF RACING TEAM",
-          "number": "#23",
+          "name": "MANTHEY DK ENGINEERING",
+          "number": "#91",
           "team": null,
-          "make": "ASTON MARTIN",
-          "points": 49,
+          "make": "PORSCHE",
+          "points": 54,
           "wins": null
         },
         {
           "pos": 9,
+          "name": "HEART OF RACING TEAM",
+          "number": "#23",
+          "team": null,
+          "make": "ASTON MARTIN",
+          "points": 50,
+          "wins": null
+        },
+        {
+          "pos": 10,
           "name": "TEAM WRT",
           "number": "#32",
           "team": null,
@@ -24924,21 +25487,12 @@
           "wins": null
         },
         {
-          "pos": 10,
+          "pos": 11,
           "name": "AKKODIS ASP TEAM",
           "number": "#78",
           "team": null,
           "make": "LEXUS",
           "points": 39,
-          "wins": null
-        },
-        {
-          "pos": 11,
-          "name": "GARAGE 59",
-          "number": "#10",
-          "team": null,
-          "make": "McLAREN",
-          "points": 38,
           "wins": null
         },
         {
@@ -24952,6 +25506,15 @@
         },
         {
           "pos": 13,
+          "name": "IRON LYNX",
+          "number": "#61",
+          "team": null,
+          "make": "MERCEDES",
+          "points": 25,
+          "wins": null
+        },
+        {
+          "pos": 14,
           "name": "GARAGE 59",
           "number": "#58",
           "team": null,
@@ -24960,21 +25523,12 @@
           "wins": null
         },
         {
-          "pos": 14,
-          "name": "IRON LYNX",
-          "number": "#61",
-          "team": null,
-          "make": "MERCEDES",
-          "points": 17,
-          "wins": null
-        },
-        {
           "pos": 15,
           "name": "PROTON COMPETITION",
           "number": "#88",
           "team": null,
           "make": "FORD",
-          "points": 16,
+          "points": 20,
           "wins": null
         },
         {
@@ -25001,7 +25555,7 @@
           "number": "#79",
           "team": null,
           "make": "MERCEDES",
-          "points": 6,
+          "points": 8,
           "wins": null
         }
       ]
@@ -25017,7 +25571,7 @@
           "number": "#33",
           "team": null,
           "make": "CORVETTE",
-          "points": 86,
+          "points": 92,
           "wins": null
         },
         {
@@ -25026,43 +25580,43 @@
           "number": "#33",
           "team": null,
           "make": "CORVETTE",
-          "points": 82,
+          "points": 88,
           "wins": null
         },
         {
           "pos": 3,
-          "name": "Ben Keating",
-          "number": "#33",
+          "name": "Riccardo Pera, Richard Lietz, Yasser Shahin",
+          "number": "#92",
           "team": null,
-          "make": "CORVETTE",
-          "points": 64,
+          "make": "PORSCHE",
+          "points": 74,
           "wins": null
         },
         {
           "pos": 4,
-          "name": "Ian James, Mattia Drudi, Zacharie Robichon",
-          "number": "#27",
-          "team": null,
-          "make": "ASTON MARTIN",
-          "points": 62,
-          "wins": null
-        },
-        {
-          "pos": 5,
           "name": "Charlie Eastwood, Peter Dempsey, Salih Yoluç",
           "number": "#34",
           "team": null,
           "make": "CORVETTE",
-          "points": 58,
+          "points": 70,
+          "wins": null
+        },
+        {
+          "pos": 5,
+          "name": "Ben Keating",
+          "number": "#33",
+          "team": null,
+          "make": "CORVETTE",
+          "points": 70,
           "wins": null
         },
         {
           "pos": 6,
-          "name": "Ayhancan Güven, James Cottingham, Timur Boguslavskiy",
-          "number": "#91",
+          "name": "Anthony Mcintosh, Daniel Harper, Parker Thompson",
+          "number": "#69",
           "team": null,
-          "make": "PORSCHE",
-          "points": 54,
+          "make": "BMW",
+          "points": 66,
           "wins": null
         },
         {
@@ -25071,38 +25625,47 @@
           "number": "#21",
           "team": null,
           "make": "FERRARI",
-          "points": 54,
+          "points": 64,
           "wins": null
         },
         {
           "pos": 8,
-          "name": "Anthony Mcintosh, Daniel Harper, Parker Thompson",
-          "number": "#69",
+          "name": "Ian James, Mattia Drudi, Zacharie Robichon",
+          "number": "#27",
           "team": null,
-          "make": "BMW",
-          "points": 51,
+          "make": "ASTON MARTIN",
+          "points": 62,
           "wins": null
         },
         {
           "pos": 9,
-          "name": "Riccardo Pera, Richard Lietz, Yasser Shahin",
-          "number": "#92",
+          "name": "Antares Au, Marvin Kirchhöfer, Thomas Fleming",
+          "number": "#10",
           "team": null,
-          "make": "PORSCHE",
-          "points": 49,
+          "make": "McLAREN",
+          "points": 57,
           "wins": null
         },
         {
           "pos": 10,
-          "name": "Gray Newell, Jonny Adam",
-          "number": "#23",
+          "name": "Ayhancan Güven, James Cottingham, Timur Boguslavskiy",
+          "number": "#91",
           "team": null,
-          "make": "ASTON MARTIN",
-          "points": 49,
+          "make": "PORSCHE",
+          "points": 54,
           "wins": null
         },
         {
           "pos": 11,
+          "name": "Gray Newell, Jonny Adam",
+          "number": "#23",
+          "team": null,
+          "make": "ASTON MARTIN",
+          "points": 50,
+          "wins": null
+        },
+        {
+          "pos": 12,
           "name": "Augusto Farfus, Darren Leung, Sean Gelael",
           "number": "#32",
           "team": null,
@@ -25111,30 +25674,21 @@
           "wins": null
         },
         {
-          "pos": 12,
+          "pos": 13,
           "name": "Eduardo Barrichello",
           "number": "#23",
           "team": null,
           "make": "ASTON MARTIN",
-          "points": 46,
+          "points": 47,
           "wins": null
         },
         {
-          "pos": 13,
+          "pos": 14,
           "name": "Hadrien David, Tom van Rompuy",
           "number": "#78",
           "team": null,
           "make": "LEXUS",
           "points": 39,
-          "wins": null
-        },
-        {
-          "pos": 14,
-          "name": "Antares Au, Marvin Kirchhöfer, Thomas Fleming",
-          "number": "#10",
-          "team": null,
-          "make": "McLAREN",
-          "points": 38,
           "wins": null
         },
         {
@@ -25157,6 +25711,15 @@
         },
         {
           "pos": 17,
+          "name": "Martin Berry, Maxime Martin, Rui Andrade",
+          "number": "#61",
+          "team": null,
+          "make": "MERCEDES",
+          "points": 25,
+          "wins": null
+        },
+        {
+          "pos": 18,
           "name": "Blake Mcdonald",
           "number": "#33",
           "team": null,
@@ -25165,7 +25728,7 @@
           "wins": null
         },
         {
-          "pos": 18,
+          "pos": 19,
           "name": "Alexander West, Benjamin Goethe, Finn Gehrsitz",
           "number": "#58",
           "team": null,
@@ -25174,21 +25737,12 @@
           "wins": null
         },
         {
-          "pos": 19,
-          "name": "Martin Berry, Maxime Martin, Rui Andrade",
-          "number": "#61",
-          "team": null,
-          "make": "MERCEDES",
-          "points": 17,
-          "wins": null
-        },
-        {
           "pos": 20,
           "name": "Giammarco Levorato, Logan Sargeant, Stefano Gattuso",
           "number": "#88",
           "team": null,
           "make": "FORD",
-          "points": 16,
+          "points": 20,
           "wins": null
         },
         {
@@ -25215,7 +25769,7 @@
           "number": "#79",
           "team": null,
           "make": "MERCEDES",
-          "points": 6,
+          "points": 8,
           "wins": null
         },
         {
