@@ -105,9 +105,9 @@
         "license": "Master B",
         "garage_count": 720,
         "collection_progress": "98%",
-        "total_credits": 716733530,
-        "play_time_readable": "2,416h 37m",
-        "distance_km": "204,185.8"
+        "total_credits": 716822230,
+        "play_time_readable": "2,417h 58m",
+        "distance_km": "204,280.1"
       }
     }
   },
@@ -280,7 +280,7 @@
         "garage_count": 737,
         "collection_progress": "100%",
         "total_credits": 1055183095,
-        "play_time_readable": "1,900h 8m",
+        "play_time_readable": "1,900h 9m",
         "distance_km": "265,268.5"
       }
     }
@@ -308,8 +308,8 @@
         "garage_count": 506,
         "collection_progress": "100%",
         "total_credits": 770318600,
-        "play_time_readable": "1,531h 35m",
-        "distance_km": "193,441.8"
+        "play_time_readable": "1,532h 31m",
+        "distance_km": "193,560.9"
       }
     }
   },
