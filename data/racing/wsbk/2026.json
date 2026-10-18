@@ -4,7 +4,7 @@
   "shortName": "WSBK",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-18T04:32:41.279Z",
+  "syncedAt": "2026-10-18T06:32:42.658Z",
   "source": {
     "name": "worldsbk.com results",
     "url": "https://www.worldsbk.com/en/results"
@@ -68880,7 +68880,7 @@
         },
         {
           "pos": 4,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
@@ -69182,7 +69182,7 @@
       "rows": [
         {
           "pos": 1,
-          "name": "Yamaha",
+          "name": "YAMAH",
           "number": null,
           "team": null,
           "make": null,
