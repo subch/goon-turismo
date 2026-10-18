@@ -103,11 +103,11 @@
         "clean_races": 48,
         "collector_level": 90,
         "license": "Master B",
-        "garage_count": 720,
+        "garage_count": 730,
         "collection_progress": "98%",
-        "total_credits": 717035530,
-        "play_time_readable": "2,418h 38m",
-        "distance_km": "204,333.8"
+        "total_credits": 717150230,
+        "play_time_readable": "2,420h 32m",
+        "distance_km": "204,416.8"
       }
     }
   },
@@ -280,8 +280,8 @@
         "garage_count": 737,
         "collection_progress": "100%",
         "total_credits": 1055183095,
-        "play_time_readable": "1,900h 9m",
-        "distance_km": "265,268.5"
+        "play_time_readable": "1,901h 14m",
+        "distance_km": "265,432.9"
       }
     }
   },
