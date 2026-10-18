@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-18T18:32:30.718Z",
+  "syncedAt": "2026-10-18T20:32:32.995Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -25474,7 +25474,7 @@
           "number": "#23",
           "team": null,
           "make": "ASTON MARTIN",
-          "points": 50,
+          "points": 51,
           "wins": null
         },
         {
@@ -25483,7 +25483,7 @@
           "number": "#32",
           "team": null,
           "make": "BMW",
-          "points": 47,
+          "points": 48,
           "wins": null
         },
         {
@@ -25528,7 +25528,7 @@
           "number": "#88",
           "team": null,
           "make": "FORD",
-          "points": 20,
+          "points": 16,
           "wins": null
         },
         {
@@ -25555,7 +25555,7 @@
           "number": "#79",
           "team": null,
           "make": "MERCEDES",
-          "points": 8,
+          "points": 10,
           "wins": null
         }
       ]
@@ -25661,7 +25661,7 @@
           "number": "#23",
           "team": null,
           "make": "ASTON MARTIN",
-          "points": 50,
+          "points": 51,
           "wins": null
         },
         {
@@ -25670,7 +25670,7 @@
           "number": "#32",
           "team": null,
           "make": "BMW",
-          "points": 47,
+          "points": 48,
           "wins": null
         },
         {
@@ -25679,7 +25679,7 @@
           "number": "#23",
           "team": null,
           "make": "ASTON MARTIN",
-          "points": 47,
+          "points": 48,
           "wins": null
         },
         {
@@ -25742,7 +25742,7 @@
           "number": "#88",
           "team": null,
           "make": "FORD",
-          "points": 20,
+          "points": 16,
           "wins": null
         },
         {
@@ -25769,7 +25769,7 @@
           "number": "#79",
           "team": null,
           "make": "MERCEDES",
-          "points": 8,
+          "points": 10,
           "wins": null
         },
         {
