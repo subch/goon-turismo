@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-19T14:32:32.284Z",
+  "syncedAt": "2026-10-19T16:32:33.099Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -25054,7 +25054,7 @@
           "name": "TOYOTA",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "TOYOTA",
           "points": 212,
           "wins": null
         },
@@ -25063,7 +25063,7 @@
           "name": "BMW",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "BMW",
           "points": 154,
           "wins": null
         },
@@ -25072,7 +25072,7 @@
           "name": "FERRARI",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "FERRARI",
           "points": 130,
           "wins": null
         },
@@ -25081,7 +25081,7 @@
           "name": "CADILLAC",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "CADILLAC",
           "points": 118,
           "wins": null
         },
@@ -25090,7 +25090,7 @@
           "name": "ALPINE",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "ALPINE",
           "points": 104,
           "wins": null
         },
@@ -25099,7 +25099,7 @@
           "name": "ASTON MARTIN",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "ASTON MARTIN",
           "points": 58,
           "wins": null
         },
@@ -25108,7 +25108,7 @@
           "name": "PEUGEOT",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "PEUGEOT",
           "points": 24,
           "wins": null
         },
@@ -25117,7 +25117,7 @@
           "name": "GENESIS",
           "number": null,
           "team": null,
-          "make": null,
+          "make": "GENESIS",
           "points": 14,
           "wins": null
         }
