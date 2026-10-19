@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-18T22:33:06.990Z",
+  "syncedAt": "2026-10-19T00:33:11.125Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -56609,9 +56609,9 @@
       "country": "USA",
       "dateStart": "2026-10-18",
       "dateEnd": "2026-10-18",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.nascar.com/results/",
-      "complete": false,
+      "complete": true,
       "playoff": true,
       "sessions": [
         {
@@ -58408,7 +58408,7 @@
           "number": "5",
           "team": null,
           "make": "Chevrolet",
-          "points": 2367,
+          "points": 2370,
           "wins": 2,
           "extra": {
             "To leader": "—",
@@ -58421,52 +58421,52 @@
         },
         {
           "pos": 2,
-          "name": "Denny Hamlin",
-          "number": "11",
-          "team": null,
-          "make": "Toyota",
-          "points": 2318,
-          "wins": 4,
-          "extra": {
-            "To leader": "-49",
-            "Playoff pts": 0,
-            "Stage pts": 252,
-            "Seed": 1,
-            "Playoff wins": 0,
-            "Clinched": ""
-          }
-        },
-        {
-          "pos": 3,
           "name": "Christopher Bell",
           "number": "20",
           "team": null,
           "make": "Toyota",
-          "points": 2316,
+          "points": 2365,
           "wins": 1,
           "extra": {
-            "To leader": "-51",
+            "To leader": "-5",
             "Playoff pts": 0,
-            "Stage pts": 235,
+            "Stage pts": 251,
             "Seed": 6,
             "Playoff wins": 0,
             "Clinched": ""
           }
         },
         {
-          "pos": 4,
+          "pos": 3,
           "name": "Chase Briscoe",
           "number": "19",
           "team": null,
           "make": "Toyota",
-          "points": 2302,
+          "points": 2346,
           "wins": 3,
           "extra": {
-            "To leader": "-65",
+            "To leader": "-24",
             "Playoff pts": 0,
-            "Stage pts": 214,
+            "Stage pts": 229,
             "Seed": 5,
-            "Playoff wins": 1,
+            "Playoff wins": 0,
+            "Clinched": ""
+          }
+        },
+        {
+          "pos": 4,
+          "name": "Denny Hamlin",
+          "number": "11",
+          "team": null,
+          "make": "Toyota",
+          "points": 2339,
+          "wins": 4,
+          "extra": {
+            "To leader": "-31",
+            "Playoff pts": 0,
+            "Stage pts": 264,
+            "Seed": 1,
+            "Playoff wins": 0,
             "Clinched": ""
           }
         },
@@ -58476,12 +58476,12 @@
           "number": "12",
           "team": null,
           "make": "Ford",
-          "points": 2282,
+          "points": 2330,
           "wins": 3,
           "extra": {
-            "To leader": "-85",
+            "To leader": "-40",
             "Playoff pts": 0,
-            "Stage pts": 275,
+            "Stage pts": 287,
             "Seed": 2,
             "Playoff wins": 0,
             "Clinched": ""
@@ -58493,12 +58493,12 @@
           "number": "22",
           "team": null,
           "make": "Ford",
-          "points": 2275,
+          "points": 2326,
           "wins": 3,
           "extra": {
-            "To leader": "-92",
+            "To leader": "-44",
             "Playoff pts": 0,
-            "Stage pts": 188,
+            "Stage pts": 208,
             "Seed": 9,
             "Playoff wins": 0,
             "Clinched": ""
@@ -58510,14 +58510,14 @@
           "number": "45",
           "team": null,
           "make": "Toyota",
-          "points": 2253,
-          "wins": 5,
+          "points": 2314,
+          "wins": 6,
           "extra": {
-            "To leader": "-114",
+            "To leader": "-56",
             "Playoff pts": 0,
-            "Stage pts": 188,
+            "Stage pts": 194,
             "Seed": 3,
-            "Playoff wins": 0,
+            "Playoff wins": 1,
             "Clinched": ""
           }
         },
@@ -58527,10 +58527,10 @@
           "number": "2",
           "team": null,
           "make": "Ford",
-          "points": 2222,
+          "points": 2240,
           "wins": 0,
           "extra": {
-            "To leader": "-145",
+            "To leader": "-130",
             "Playoff pts": 0,
             "Stage pts": 165,
             "Seed": 15,
@@ -58544,10 +58544,10 @@
           "number": "54",
           "team": null,
           "make": "Toyota",
-          "points": 2211,
+          "points": 2238,
           "wins": 2,
           "extra": {
-            "To leader": "-156",
+            "To leader": "-132",
             "Playoff pts": 0,
             "Stage pts": 231,
             "Seed": 4,
@@ -58557,14 +58557,31 @@
         },
         {
           "pos": 10,
+          "name": "Chase Elliott",
+          "number": "9",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 2221,
+          "wins": 2,
+          "extra": {
+            "To leader": "-149",
+            "Playoff pts": 0,
+            "Stage pts": 114,
+            "Seed": 8,
+            "Playoff wins": 0,
+            "Clinched": ""
+          }
+        },
+        {
+          "pos": 11,
           "name": "Carson Hocevar",
           "number": "77",
           "team": null,
           "make": "Chevrolet",
-          "points": 2187,
+          "points": 2212,
           "wins": 1,
           "extra": {
-            "To leader": "-180",
+            "To leader": "-158",
             "Playoff pts": 0,
             "Stage pts": 138,
             "Seed": 12,
@@ -58573,69 +58590,52 @@
           }
         },
         {
-          "pos": 11,
+          "pos": 12,
           "name": "Bubba Wallace",
           "number": "23",
           "team": null,
           "make": "Toyota",
-          "points": 2182,
+          "points": 2208,
           "wins": 0,
           "extra": {
-            "To leader": "-185",
+            "To leader": "-162",
             "Playoff pts": 0,
-            "Stage pts": 148,
+            "Stage pts": 154,
             "Seed": 14,
             "Playoff wins": 0,
             "Clinched": ""
           }
         },
         {
-          "pos": 12,
-          "name": "Chase Elliott",
-          "number": "9",
+          "pos": 13,
+          "name": "Daniel Suárez",
+          "number": "7",
           "team": null,
           "make": "Chevrolet",
           "points": 2182,
-          "wins": 2,
+          "wins": 1,
           "extra": {
-            "To leader": "-185",
+            "To leader": "-188",
             "Playoff pts": 0,
-            "Stage pts": 109,
-            "Seed": 8,
-            "Playoff wins": 0,
-            "Clinched": ""
-          }
-        },
-        {
-          "pos": 13,
-          "name": "William Byron",
-          "number": "24",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 2159,
-          "wins": 0,
-          "extra": {
-            "To leader": "-208",
-            "Playoff pts": 0,
-            "Stage pts": 143,
-            "Seed": 13,
+            "Stage pts": 83,
+            "Seed": 11,
             "Playoff wins": 0,
             "Clinched": ""
           }
         },
         {
           "pos": 14,
-          "name": "Daniel Suárez",
-          "number": "7",
+          "name": "William Byron",
+          "number": "24",
           "team": null,
           "make": "Chevrolet",
-          "points": 2152,
-          "wins": 1,
+          "points": 2180,
+          "wins": 0,
           "extra": {
-            "To leader": "-215",
+            "To leader": "-190",
             "Playoff pts": 0,
-            "Stage pts": 83,
-            "Seed": 11,
+            "Stage pts": 148,
+            "Seed": 13,
             "Playoff wins": 0,
             "Clinched": ""
           }
@@ -58646,10 +58646,10 @@
           "number": "17",
           "team": null,
           "make": "Ford",
-          "points": 2151,
+          "points": 2166,
           "wins": 0,
           "extra": {
-            "To leader": "-216",
+            "To leader": "-204",
             "Playoff pts": 0,
             "Stage pts": 103,
             "Seed": 10,
@@ -58663,10 +58663,10 @@
           "number": "60",
           "team": null,
           "make": "Ford",
-          "points": 2140,
+          "points": 2159,
           "wins": 1,
           "extra": {
-            "To leader": "-227",
+            "To leader": "-211",
             "Playoff pts": 0,
             "Stage pts": 103,
             "Seed": 16,
@@ -58687,7 +58687,7 @@
           "number": "5",
           "team": null,
           "make": "Chevrolet",
-          "points": 2367,
+          "points": 2370,
           "wins": 2,
           "extra": {
             "Stage pts": 271,
@@ -58696,61 +58696,61 @@
             "Top 5": 14,
             "Top 10": 19,
             "Laps led": 1215,
-            "DNF": 3
-          }
-        },
-        {
-          "pos": 2,
-          "name": "Denny Hamlin",
-          "number": "11",
-          "team": null,
-          "make": "Toyota",
-          "points": 2318,
-          "wins": 4,
-          "extra": {
-            "Stage pts": 252,
-            "Playoff pts": 0,
-            "Poles": 6,
-            "Top 5": 16,
-            "Top 10": 21,
-            "Laps led": 989,
-            "DNF": 0
-          }
-        },
-        {
-          "pos": 3,
-          "name": "Christopher Bell",
-          "number": "20",
-          "team": null,
-          "make": "Toyota",
-          "points": 2316,
-          "wins": 1,
-          "extra": {
-            "Stage pts": 235,
-            "Playoff pts": 0,
-            "Poles": 1,
-            "Top 5": 14,
-            "Top 10": 17,
-            "Laps led": 707,
             "DNF": 4
           }
         },
         {
-          "pos": 4,
+          "pos": 2,
+          "name": "Christopher Bell",
+          "number": "20",
+          "team": null,
+          "make": "Toyota",
+          "points": 2365,
+          "wins": 1,
+          "extra": {
+            "Stage pts": 251,
+            "Playoff pts": 0,
+            "Poles": 1,
+            "Top 5": 15,
+            "Top 10": 18,
+            "Laps led": 792,
+            "DNF": 4
+          }
+        },
+        {
+          "pos": 3,
           "name": "Chase Briscoe",
           "number": "19",
           "team": null,
           "make": "Toyota",
-          "points": 2302,
+          "points": 2346,
           "wins": 3,
           "extra": {
-            "Stage pts": 214,
+            "Stage pts": 229,
             "Playoff pts": 0,
             "Poles": 0,
             "Top 5": 13,
-            "Top 10": 17,
-            "Laps led": 649,
+            "Top 10": 18,
+            "Laps led": 662,
             "DNF": 6
+          }
+        },
+        {
+          "pos": 4,
+          "name": "Denny Hamlin",
+          "number": "11",
+          "team": null,
+          "make": "Toyota",
+          "points": 2339,
+          "wins": 4,
+          "extra": {
+            "Stage pts": 264,
+            "Playoff pts": 0,
+            "Poles": 6,
+            "Top 5": 16,
+            "Top 10": 21,
+            "Laps led": 993,
+            "DNF": 0
           }
         },
         {
@@ -58759,15 +58759,15 @@
           "number": "12",
           "team": null,
           "make": "Ford",
-          "points": 2282,
+          "points": 2330,
           "wins": 3,
           "extra": {
-            "Stage pts": 275,
+            "Stage pts": 287,
             "Playoff pts": 0,
-            "Poles": 5,
-            "Top 5": 10,
-            "Top 10": 21,
-            "Laps led": 1049,
+            "Poles": 6,
+            "Top 5": 11,
+            "Top 10": 22,
+            "Laps led": 1100,
             "DNF": 5
           }
         },
@@ -58777,15 +58777,15 @@
           "number": "22",
           "team": null,
           "make": "Ford",
-          "points": 2275,
+          "points": 2326,
           "wins": 3,
           "extra": {
-            "Stage pts": 188,
+            "Stage pts": 208,
             "Playoff pts": 0,
             "Poles": 3,
             "Top 5": 7,
-            "Top 10": 14,
-            "Laps led": 725,
+            "Top 10": 15,
+            "Laps led": 809,
             "DNF": 3
           }
         },
@@ -58795,15 +58795,15 @@
           "number": "45",
           "team": null,
           "make": "Toyota",
-          "points": 2253,
-          "wins": 5,
+          "points": 2314,
+          "wins": 6,
           "extra": {
-            "Stage pts": 188,
+            "Stage pts": 194,
             "Playoff pts": 0,
             "Poles": 8,
-            "Top 5": 13,
-            "Top 10": 19,
-            "Laps led": 524,
+            "Top 5": 14,
+            "Top 10": 20,
+            "Laps led": 542,
             "DNF": 2
           }
         },
@@ -58813,7 +58813,7 @@
           "number": "2",
           "team": null,
           "make": "Ford",
-          "points": 2222,
+          "points": 2240,
           "wins": 0,
           "extra": {
             "Stage pts": 165,
@@ -58831,25 +58831,43 @@
           "number": "54",
           "team": null,
           "make": "Toyota",
-          "points": 2211,
+          "points": 2238,
           "wins": 2,
           "extra": {
             "Stage pts": 231,
             "Playoff pts": 0,
             "Poles": 1,
             "Top 5": 12,
-            "Top 10": 18,
-            "Laps led": 400,
+            "Top 10": 19,
+            "Laps led": 402,
             "DNF": 5
           }
         },
         {
           "pos": 10,
+          "name": "Chase Elliott",
+          "number": "9",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 2221,
+          "wins": 2,
+          "extra": {
+            "Stage pts": 114,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 7,
+            "Top 10": 12,
+            "Laps led": 318,
+            "DNF": 3
+          }
+        },
+        {
+          "pos": 11,
           "name": "Carson Hocevar",
           "number": "77",
           "team": null,
           "make": "Chevrolet",
-          "points": 2187,
+          "points": 2212,
           "wins": 1,
           "extra": {
             "Stage pts": 138,
@@ -58862,75 +58880,57 @@
           }
         },
         {
-          "pos": 11,
+          "pos": 12,
           "name": "Bubba Wallace",
           "number": "23",
           "team": null,
           "make": "Toyota",
-          "points": 2182,
+          "points": 2208,
           "wins": 0,
           "extra": {
-            "Stage pts": 148,
+            "Stage pts": 154,
             "Playoff pts": 0,
             "Poles": 0,
             "Top 5": 4,
             "Top 10": 15,
-            "Laps led": 264,
+            "Laps led": 316,
             "DNF": 4
           }
         },
         {
-          "pos": 12,
-          "name": "Chase Elliott",
-          "number": "9",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 2182,
-          "wins": 2,
-          "extra": {
-            "Stage pts": 109,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 6,
-            "Top 10": 11,
-            "Laps led": 318,
-            "DNF": 3
-          }
-        },
-        {
           "pos": 13,
-          "name": "William Byron",
-          "number": "24",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 2159,
-          "wins": 0,
-          "extra": {
-            "Stage pts": 143,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 5,
-            "Top 10": 15,
-            "Laps led": 176,
-            "DNF": 5
-          }
-        },
-        {
-          "pos": 14,
           "name": "Daniel Suárez",
           "number": "7",
           "team": null,
           "make": "Chevrolet",
-          "points": 2152,
+          "points": 2182,
           "wins": 1,
           "extra": {
             "Stage pts": 83,
             "Playoff pts": 0,
             "Poles": 0,
             "Top 5": 3,
-            "Top 10": 7,
+            "Top 10": 8,
             "Laps led": 42,
             "DNF": 2
+          }
+        },
+        {
+          "pos": 14,
+          "name": "William Byron",
+          "number": "24",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 2180,
+          "wins": 0,
+          "extra": {
+            "Stage pts": 148,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 5,
+            "Top 10": 15,
+            "Laps led": 178,
+            "DNF": 5
           }
         },
         {
@@ -58939,7 +58939,7 @@
           "number": "17",
           "team": null,
           "make": "Ford",
-          "points": 2151,
+          "points": 2166,
           "wins": 0,
           "extra": {
             "Stage pts": 103,
@@ -58957,7 +58957,7 @@
           "number": "60",
           "team": null,
           "make": "Ford",
-          "points": 2140,
+          "points": 2159,
           "wins": 1,
           "extra": {
             "Stage pts": 103,
@@ -58975,7 +58975,7 @@
           "number": "97",
           "team": null,
           "make": "Chevrolet",
-          "points": 718,
+          "points": 729,
           "wins": 2,
           "extra": {
             "Stage pts": 75,
@@ -58993,7 +58993,7 @@
           "number": "6",
           "team": null,
           "make": "Ford",
-          "points": 662,
+          "points": 683,
           "wins": 0,
           "extra": {
             "Stage pts": 68,
@@ -59011,14 +59011,14 @@
           "number": "1",
           "team": null,
           "make": "Chevrolet",
-          "points": 642,
+          "points": 673,
           "wins": 0,
           "extra": {
-            "Stage pts": 76,
+            "Stage pts": 79,
             "Playoff pts": 0,
             "Poles": 1,
             "Top 5": 2,
-            "Top 10": 6,
+            "Top 10": 7,
             "Laps led": 134,
             "DNF": 3
           }
@@ -59029,7 +59029,7 @@
           "number": "71",
           "team": null,
           "make": "Chevrolet",
-          "points": 615,
+          "points": 616,
           "wins": 0,
           "extra": {
             "Stage pts": 38,
@@ -59047,7 +59047,7 @@
           "number": "43",
           "team": null,
           "make": "Toyota",
-          "points": 595,
+          "points": 607,
           "wins": 0,
           "extra": {
             "Stage pts": 50,
@@ -59061,11 +59061,47 @@
         },
         {
           "pos": 22,
+          "name": "Josh Berry",
+          "number": "21",
+          "team": null,
+          "make": "Ford",
+          "points": 584,
+          "wins": 0,
+          "extra": {
+            "Stage pts": 79,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 3,
+            "Top 10": 10,
+            "Laps led": 94,
+            "DNF": 5
+          }
+        },
+        {
+          "pos": 23,
+          "name": "Todd Gilliland",
+          "number": "34",
+          "team": null,
+          "make": "Ford",
+          "points": 582,
+          "wins": 0,
+          "extra": {
+            "Stage pts": 52,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 0,
+            "Top 10": 2,
+            "Laps led": 21,
+            "DNF": 2
+          }
+        },
+        {
+          "pos": 24,
           "name": "AJ Allmendinger",
           "number": "16",
           "team": null,
           "make": "Chevrolet",
-          "points": 560,
+          "points": 574,
           "wins": 0,
           "extra": {
             "Stage pts": 56,
@@ -59078,48 +59114,12 @@
           }
         },
         {
-          "pos": 23,
-          "name": "Todd Gilliland",
-          "number": "34",
-          "team": null,
-          "make": "Ford",
-          "points": 557,
-          "wins": 0,
-          "extra": {
-            "Stage pts": 50,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 0,
-            "Top 10": 2,
-            "Laps led": 21,
-            "DNF": 2
-          }
-        },
-        {
-          "pos": 24,
-          "name": "Josh Berry",
-          "number": "21",
-          "team": null,
-          "make": "Ford",
-          "points": 550,
-          "wins": 0,
-          "extra": {
-            "Stage pts": 71,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 3,
-            "Top 10": 10,
-            "Laps led": 93,
-            "DNF": 5
-          }
-        },
-        {
           "pos": 25,
           "name": "Austin Dillon",
           "number": "3",
           "team": null,
           "make": "Chevrolet",
-          "points": 539,
+          "points": 540,
           "wins": 0,
           "extra": {
             "Stage pts": 17,
@@ -59128,34 +59128,16 @@
             "Top 5": 0,
             "Top 10": 5,
             "Laps led": 5,
-            "DNF": 4
+            "DNF": 5
           }
         },
         {
           "pos": 26,
-          "name": "Alex Bowman",
-          "number": "48",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 504,
-          "wins": 0,
-          "extra": {
-            "Stage pts": 32,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 4,
-            "Top 10": 7,
-            "Laps led": 0,
-            "DNF": 6
-          }
-        },
-        {
-          "pos": 27,
           "name": "Zane Smith",
           "number": "38",
           "team": null,
           "make": "Ford",
-          "points": 501,
+          "points": 523,
           "wins": 0,
           "extra": {
             "Stage pts": 33,
@@ -59168,12 +59150,30 @@
           }
         },
         {
+          "pos": 27,
+          "name": "Alex Bowman",
+          "number": "48",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 512,
+          "wins": 0,
+          "extra": {
+            "Stage pts": 32,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 4,
+            "Top 10": 7,
+            "Laps led": 0,
+            "DNF": 6
+          }
+        },
+        {
           "pos": 28,
           "name": "John H. Nemechek",
           "number": "42",
           "team": null,
           "make": "Toyota",
-          "points": 499,
+          "points": 503,
           "wins": 0,
           "extra": {
             "Stage pts": 24,
@@ -59191,7 +59191,7 @@
           "number": "47",
           "team": null,
           "make": "Chevrolet",
-          "points": 474,
+          "points": 481,
           "wins": 0,
           "extra": {
             "Stage pts": 33,
@@ -59209,7 +59209,7 @@
           "number": "35",
           "team": null,
           "make": "Toyota",
-          "points": 465,
+          "points": 470,
           "wins": 0,
           "extra": {
             "Stage pts": 32,
@@ -59227,7 +59227,7 @@
           "number": "4",
           "team": null,
           "make": "Ford",
-          "points": 406,
+          "points": 430,
           "wins": 0,
           "extra": {
             "Stage pts": 4,
@@ -59245,7 +59245,7 @@
           "number": "41",
           "team": null,
           "make": "Chevrolet",
-          "points": 397,
+          "points": 407,
           "wins": 0,
           "extra": {
             "Stage pts": 3,
@@ -59259,29 +59259,11 @@
         },
         {
           "pos": 33,
-          "name": "Ty Dillon",
-          "number": "10",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 346,
-          "wins": 0,
-          "extra": {
-            "Stage pts": 0,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 0,
-            "Top 10": 0,
-            "Laps led": 3,
-            "DNF": 2
-          }
-        },
-        {
-          "pos": 34,
           "name": "Connor Zilisch",
           "number": "88",
           "team": null,
           "make": "Chevrolet",
-          "points": 343,
+          "points": 360,
           "wins": 0,
           "extra": {
             "Stage pts": 13,
@@ -59294,12 +59276,30 @@
           }
         },
         {
+          "pos": 34,
+          "name": "Ty Dillon",
+          "number": "10",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 352,
+          "wins": 0,
+          "extra": {
+            "Stage pts": 0,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 0,
+            "Top 10": 0,
+            "Laps led": 3,
+            "DNF": 2
+          }
+        },
+        {
           "pos": 35,
           "name": "Cody Ware",
           "number": "51",
           "team": null,
           "make": "Chevrolet",
-          "points": 235,
+          "points": 237,
           "wins": 0,
           "extra": {
             "Stage pts": 4,
@@ -59308,7 +59308,7 @@
             "Top 5": 0,
             "Top 10": 0,
             "Laps led": 10,
-            "DNF": 3
+            "DNF": 4
           }
         },
         {
@@ -59413,8 +59413,8 @@
             "Stage pts": 0,
             "Playoff pts": 0,
             "Poles": 0,
-            "Top 5": 2,
-            "Top 10": 3,
+            "Top 5": 3,
+            "Top 10": 4,
             "Laps led": 139,
             "DNF": 1
           }
