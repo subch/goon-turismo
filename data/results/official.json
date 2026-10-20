@@ -7993,10 +7993,26 @@
   },
   {
     "eventId": "tt-2026-10-08-dragon-trail-gardens",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:49.182",
+    "timeMs": 109182,
+    "groupRank": 4,
+    "points": 78
+  },
+  {
+    "eventId": "tt-2026-10-08-dragon-trail-gardens",
+    "psn": "devmotron",
+    "timeRaw": "1:50.223",
+    "timeMs": 110223,
+    "groupRank": 5,
+    "points": 68
+  },
+  {
+    "eventId": "tt-2026-10-08-dragon-trail-gardens",
     "psn": "dog_nougat",
     "timeRaw": "1:50.376",
     "timeMs": 110376,
-    "groupRank": 4,
+    "groupRank": 6,
     "points": 67
   },
   {
@@ -8004,16 +8020,8 @@
     "psn": "rickiep00h",
     "timeRaw": "1:50.574",
     "timeMs": 110574,
-    "groupRank": 5,
+    "groupRank": 7,
     "points": 65
-  },
-  {
-    "eventId": "tt-2026-10-08-dragon-trail-gardens",
-    "psn": "devmotron",
-    "timeRaw": "1:51.243",
-    "timeMs": 111243,
-    "groupRank": 6,
-    "points": 59
   },
   {
     "eventId": "tt-2026-10-15-sportsland-sugo",
