@@ -106,8 +106,8 @@
         "garage_count": 730,
         "collection_progress": "98%",
         "total_credits": 717213430,
-        "play_time_readable": "2,421h 21m",
-        "distance_km": "204,478.6"
+        "play_time_readable": "2,422h 12m",
+        "distance_km": "204,585.2"
       }
     }
   },
@@ -296,9 +296,9 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "dr_points": 6222,
-        "dr_ratio": 0.37033,
-        "total_races": 834,
+        "dr_points": 5518,
+        "dr_ratio": 0.253,
+        "total_races": 838,
         "victories": 24,
         "poles": 21,
         "fastest_laps": 20,
@@ -307,9 +307,9 @@
         "license": "Master S",
         "garage_count": 506,
         "collection_progress": "100%",
-        "total_credits": 770591600,
-        "play_time_readable": "1,533h 13m",
-        "distance_km": "193,632.5"
+        "total_credits": 771075760,
+        "play_time_readable": "1,535h 26m",
+        "distance_km": "193,853.7"
       }
     }
   },
