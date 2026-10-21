@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-21T04:32:13.277Z",
+  "syncedAt": "2026-10-21T06:32:13.749Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -109869,7 +109869,7 @@
           "number": 22,
           "team": "Liqui Moly Dynavolt Intact GP",
           "make": "KTM",
-          "points": 219,
+          "points": 217,
           "wins": 3
         },
         {
@@ -109878,7 +109878,7 @@
           "number": 51,
           "team": "Red Bull KTM Ajo",
           "make": "KTM",
-          "points": 203,
+          "points": 198,
           "wins": 2
         },
         {
@@ -109887,43 +109887,43 @@
           "number": 83,
           "team": "Red Bull KTM Ajo",
           "make": "KTM",
-          "points": 191,
+          "points": 189,
           "wins": 0
         },
         {
           "pos": 5,
-          "name": "Marco Morelli",
-          "number": 97,
-          "team": "CFMOTO Gaviota Aspar Team",
-          "make": "KTM",
-          "points": 146,
+          "name": "Adrian Fernandez",
+          "number": 31,
+          "team": "Leopard Racing",
+          "make": "Honda",
+          "points": 148,
           "wins": 0
         },
         {
           "pos": 6,
-          "name": "Valentin Perrone",
-          "number": 73,
-          "team": "Red Bull KTM Tech3",
+          "name": "Marco Morelli",
+          "number": 97,
+          "team": "CFMOTO Gaviota Aspar Team",
           "make": "KTM",
-          "points": 123,
+          "points": 140,
           "wins": 0
         },
         {
           "pos": 7,
-          "name": "Veda Pratama",
-          "number": 9,
-          "team": "Honda Team Asia",
-          "make": "Honda",
-          "points": 115,
+          "name": "Valentin Perrone",
+          "number": 73,
+          "team": "Red Bull KTM Tech3",
+          "make": "KTM",
+          "points": 120,
           "wins": 0
         },
         {
           "pos": 8,
-          "name": "Matteo Bertelle",
-          "number": 18,
-          "team": "LEVEL UP - MTA",
-          "make": "KTM",
-          "points": 109,
+          "name": "Veda Pratama",
+          "number": 9,
+          "team": "Honda Team Asia",
+          "make": "Honda",
+          "points": 111,
           "wins": 0
         },
         {
@@ -109932,52 +109932,52 @@
           "number": 13,
           "team": "AEON Credit - MT Helmets - MSI",
           "make": "KTM",
-          "points": 107,
+          "points": 103,
           "wins": 1
         },
         {
           "pos": 10,
-          "name": "Rico Salmela",
-          "number": 27,
-          "team": "Red Bull KTM Tech3",
+          "name": "Matteo Bertelle",
+          "number": 18,
+          "team": "LEVEL UP - MTA",
           "make": "KTM",
-          "points": 92,
+          "points": 103,
           "wins": 0
         },
         {
           "pos": 11,
-          "name": "Adrian Cruces",
-          "number": 11,
-          "team": "CIP Green Power",
+          "name": "Rico Salmela",
+          "number": 27,
+          "team": "Red Bull KTM Tech3",
           "make": "KTM",
-          "points": 83,
+          "points": 89,
           "wins": 0
         },
         {
           "pos": 12,
+          "name": "Adrian Cruces",
+          "number": 11,
+          "team": "CIP Green Power",
+          "make": "KTM",
+          "points": 78,
+          "wins": 0
+        },
+        {
+          "pos": 13,
           "name": "Guido Pini",
           "number": 94,
           "team": "Leopard Racing",
           "make": "Honda",
-          "points": 78,
+          "points": 77,
           "wins": 1
         },
         {
-          "pos": 13,
+          "pos": 14,
           "name": "Joel Esteban",
           "number": 78,
           "team": "LEVEL UP - MTA",
           "make": "KTM",
-          "points": 73,
-          "wins": 0
-        },
-        {
-          "pos": 14,
-          "name": "Adrian Fernandez",
-          "number": 31,
-          "team": "Leopard Racing",
-          "make": "Honda",
-          "points": 71,
+          "points": 68,
           "wins": 0
         },
         {
@@ -109986,7 +109986,7 @@
           "number": 67,
           "team": "SIC58 Squadra Corse",
           "make": "Honda",
-          "points": 70,
+          "points": 66,
           "wins": 0
         },
         {
@@ -109995,7 +109995,7 @@
           "number": 66,
           "team": "GRYD Racing",
           "make": "Honda",
-          "points": 67,
+          "points": 64,
           "wins": 0
         },
         {
@@ -110004,7 +110004,7 @@
           "number": 8,
           "team": "GRYD Racing",
           "make": "Honda",
-          "points": 65,
+          "points": 60,
           "wins": 0
         },
         {
@@ -110013,7 +110013,7 @@
           "number": 64,
           "team": "Liqui Moly Dynavolt Intact GP",
           "make": "KTM",
-          "points": 61,
+          "points": 56,
           "wins": 0
         },
         {
@@ -110022,7 +110022,7 @@
           "number": 54,
           "team": "Rivacold Snipers Team",
           "make": "Honda",
-          "points": 50,
+          "points": 48,
           "wins": 0
         },
         {
@@ -110031,7 +110031,7 @@
           "number": 6,
           "team": "AEON Credit - MT Helmets - MSI",
           "make": "KTM",
-          "points": 44,
+          "points": 41,
           "wins": 0
         },
         {
@@ -110040,7 +110040,7 @@
           "number": 19,
           "team": "CIP Green Power",
           "make": "KTM",
-          "points": 36,
+          "points": 33,
           "wins": 0
         },
         {
@@ -110058,7 +110058,7 @@
           "number": 88,
           "team": "CODE Motorsports",
           "make": "KTM",
-          "points": 6,
+          "points": 5,
           "wins": 0
         },
         {
@@ -110076,29 +110076,11 @@
           "number": 5,
           "team": "SIC58 Squadra Corse",
           "make": "Honda",
-          "points": 4,
-          "wins": 0
-        },
-        {
-          "pos": 26,
-          "name": "Zen Mitani",
-          "number": 32,
-          "team": "Honda Team Asia",
-          "make": "Honda",
           "points": 2,
           "wins": 0
         },
         {
-          "pos": 27,
-          "name": "Ruche Moodley",
-          "number": 21,
-          "team": "CODE Motorsports",
-          "make": "KTM",
-          "points": 1,
-          "wins": 0
-        },
-        {
-          "pos": 28,
+          "pos": 26,
           "name": "Kiattisak Singhapong",
           "number": 85,
           "team": "Rivacold Snipers Team",
@@ -110107,20 +110089,38 @@
           "wins": 0
         },
         {
-          "pos": 29,
-          "name": "Nicola Carraro",
-          "number": 10,
-          "team": "Rivacold Snipers Team",
+          "pos": 27,
+          "name": "Zen Mitani",
+          "number": 32,
+          "team": "Honda Team Asia",
           "make": "Honda",
           "points": 0,
           "wins": 0
         },
         {
-          "pos": 30,
+          "pos": 28,
+          "name": "Ruche Moodley",
+          "number": 21,
+          "team": "CODE Motorsports",
+          "make": "KTM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 29,
           "name": "Ryota Ogiwara",
           "number": 79,
           "team": "CODE Motorsports",
           "make": "KTM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 30,
+          "name": "Nicola Carraro",
+          "number": 10,
+          "team": "Rivacold Snipers Team",
+          "make": "Honda",
           "points": 0,
           "wins": 0
         },
