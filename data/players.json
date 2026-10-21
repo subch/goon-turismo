@@ -21,9 +21,9 @@
         "license": "Master S",
         "garage_count": 626,
         "collection_progress": "100%",
-        "total_credits": 841812435,
-        "play_time_readable": "1,216h 44m",
-        "distance_km": "152,794.6"
+        "total_credits": 841907135,
+        "play_time_readable": "1,218h 7m",
+        "distance_km": "153,066.4"
       }
     }
   },
@@ -49,9 +49,9 @@
         "license": "Master S",
         "garage_count": 462,
         "collection_progress": "88%",
-        "total_credits": 474159339,
-        "play_time_readable": "1,277h 0m",
-        "distance_km": "116,664.8"
+        "total_credits": 474222739,
+        "play_time_readable": "1,278h 45m",
+        "distance_km": "116,910.4"
       }
     }
   },
@@ -77,9 +77,9 @@
         "license": "Master S",
         "garage_count": 376,
         "collection_progress": "88%",
-        "total_credits": 450438802,
-        "play_time_readable": "921h 29m",
-        "distance_km": "94,259.6"
+        "total_credits": 450505852,
+        "play_time_readable": "923h 11m",
+        "distance_km": "94,527.3"
       }
     }
   },
@@ -94,9 +94,9 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "dr_points": 16514,
-        "dr_ratio": 0.3257,
-        "total_races": 242,
+        "dr_points": 16790,
+        "dr_ratio": 0.3395,
+        "total_races": 243,
         "victories": 10,
         "poles": 6,
         "fastest_laps": 6,
@@ -105,9 +105,9 @@
         "license": "Master B",
         "garage_count": 731,
         "collection_progress": "98%",
-        "total_credits": 718074760,
-        "play_time_readable": "2,424h 1m",
-        "distance_km": "204,734.4"
+        "total_credits": 718161360,
+        "play_time_readable": "2,427h 29m",
+        "distance_km": "205,111.7"
       }
     }
   },
@@ -129,13 +129,13 @@
         "poles": 5,
         "fastest_laps": 5,
         "clean_races": 2,
-        "collector_level": 70,
+        "collector_level": 90,
         "license": "IA",
-        "garage_count": 304,
+        "garage_count": 306,
         "collection_progress": "62%",
-        "total_credits": 299960494,
-        "play_time_readable": "1,160h 44m",
-        "distance_km": "64,060.7"
+        "total_credits": 299992894,
+        "play_time_readable": "1,162h 25m",
+        "distance_km": "64,267.7"
       }
     }
   },
@@ -161,9 +161,9 @@
         "license": "S",
         "garage_count": 188,
         "collection_progress": "47%",
-        "total_credits": 155931884,
-        "play_time_readable": "575h 12m",
-        "distance_km": "60,626.9"
+        "total_credits": 156032484,
+        "play_time_readable": "576h 57m",
+        "distance_km": "60,908.3"
       }
     }
   },
@@ -195,9 +195,9 @@
         "license": "Master B",
         "garage_count": 211,
         "collection_progress": "54%",
-        "total_credits": 251278836,
-        "play_time_readable": "592h 48m",
-        "distance_km": "58,958.8"
+        "total_credits": 251349236,
+        "play_time_readable": "594h 17m",
+        "distance_km": "59,257.1"
       }
     }
   },
@@ -277,11 +277,11 @@
         "clean_races": 52,
         "collector_level": 90,
         "license": "Master S",
-        "garage_count": 737,
+        "garage_count": 738,
         "collection_progress": "100%",
-        "total_credits": 1055183095,
-        "play_time_readable": "1,901h 14m",
-        "distance_km": "265,432.9"
+        "total_credits": 1055204595,
+        "play_time_readable": "1,902h 40m",
+        "distance_km": "265,541.0"
       }
     }
   },
@@ -307,9 +307,9 @@
         "license": "Master S",
         "garage_count": 506,
         "collection_progress": "100%",
-        "total_credits": 771586560,
-        "play_time_readable": "1,536h 2m",
-        "distance_km": "193,909.1"
+        "total_credits": 771649310,
+        "play_time_readable": "1,537h 41m",
+        "distance_km": "194,196.9"
       }
     }
   },
@@ -391,9 +391,9 @@
         "license": "Master B",
         "garage_count": 365,
         "collection_progress": "83%",
-        "total_credits": 460085058,
-        "play_time_readable": "1,514h 8m",
-        "distance_km": "142,193.0"
+        "total_credits": 460136258,
+        "play_time_readable": "1,515h 49m",
+        "distance_km": "142,476.2"
       }
     }
   },
