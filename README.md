@@ -96,6 +96,62 @@ at `/racing/`. Static Astro site served from the VPS at **goon-turismo.com** (Gi
 All data lives in `data/` as version-controlled JSON; `scripts/` holds the sync/processing jobs
 and `.github/workflows/` the issue-driven processors and manual fallbacks.
 
+## Discord posts
+
+The **Goon Turismo** bot (Discord application `1562652320683266178`) posts to the crew's Discord.
+`npm run post:discord` (`scripts/post-discord.mjs`) sends through Discord's API as the bot -- no
+always-on process. On the VPS it runs once a day at **noon Central**, straight after that hour's
+GT-GridStats sync (`goon` stack, `sync.sh discord noon`), and sends, each exactly once:
+
+- **Results**, the day a Time Trial closes: the crew's laps, gaps and points, plus the GT7 medal
+  each lap finished with. GT7 awards gold within 3% of the world #1, silver 5%, bronze 10%, judged
+  against the *final* world #1. A results post waits for a sync that ran after the close (GT7
+  closes Time Trials at 06:59:59 UTC; the noon sync clears it), so the last night's laps are in.
+- **New Time Trial**, the day one goes live: track, car, tyres and race settings, open and close
+  times (in each reader's own timezone, with a countdown), the track photo, the world #1 so
+  far, the medal targets it sets and how many drivers already hold gold.
+- **World #1 moved**, any day a running Time Trial's world #1 time differs from the day before:
+  the new gold/silver/bronze cut-offs, and where every crew lap now stands (who is in gold, how far
+  off it the rest are, and whose lap the moving cut-off just pushed down a tier).
+
+The crew's laps come from `data/` as the sync left it. Everything about the Time Trials themselves
+comes from [dg-edge](https://www.dg-edge.com/events/time-trials) (`scripts/lib/dg-edge-events.mjs`),
+which refreshes its top 5,000 several times a day; it is read from the pages' embedded Nuxt payload,
+three or four requests a day. dg-edge stays retired as a source for the site's data -- it shows no
+per-player times -- and its track names differ from GT-GridStats' ("SUGO International Racing
+Course" is "Sportsland SUGO"), so the two are matched on dates plus a shared track word. Medal
+cut-offs round up to the thousandth, as dg-edge and the game show them; dg-edge's "Platinum +0.5%"
+is its own and is left out.
+
+What has been sent is kept per channel in `GOON_DISCORD_STATE_DIR` (`/state/<channel id>.json` on
+the box, `.discord-state/` locally), so a re-run sends nothing twice. It only looks back 3 days, so
+a missed day catches up and a new channel gets the last few days rather than all of history. The
+rules are in `scripts/discord/plan.mjs`, the messages in `scripts/discord/format.mjs`. Without
+`GOON_DISCORD_BOT_TOKEN` and `GOON_DISCORD_CHANNEL_ID` it previews instead of posting.
+
+### Setting the bot up, test server first
+
+1. Developer Portal > the app > **Bot** > **Reset Token**, and put it in `.env` in the repo root
+   (gitignored) as `GOON_DISCORD_BOT_TOKEN=...`. The application id and public key are not it, and
+   the token never goes in chat or git. No privileged intents are needed.
+2. `npm run discord:check` (Node 22+, on the workstation). It logs the bot in once -- Discord won't
+   let a bot post through the API before its first gateway login -- prints the invite link, and lists
+   every server the bot is in with each text channel's id.
+3. Invite it to the test server with that link (View Channel, Send Messages, Embed Links), run
+   `discord:check` again, and put the test channel's id in `.env` as `GOON_DISCORD_CHANNEL_ID`.
+4. Post for real into the test channel:
+
+```bash
+npm run post:discord -- --results tt-2026-10-01-brands-hatch-grand-prix-circuit   # one results post
+npm run post:discord                                          # whatever is due today
+npm run post:discord -- --dry-run --now 2026-10-22T17:00:00Z  # preview as of a given time; sends nothing
+```
+
+5. Happy with it: set the same two values in `/opt/stacks/goon/.env` on the box -- the test channel
+   first, if it should run there on schedule for a few days -- then invite the bot to the
+   goon-turismo server and switch `GOON_DISCORD_CHANNEL_ID` to the crew's channel. A new channel
+   starts its own record of what has been sent.
+
 ## Look
 
 Since 2026-09-26 the site wears the family chrome from music.subch.us and subch.us (Audiowide
@@ -189,5 +245,6 @@ Run the data jobs locally (they write into `data/`):
 ```bash
 GT_GRIDSTATS_TOKEN=xxx npm run sync:gridstats   # GT7: players (API, 2 of 100 requests/day) + Time Trial results (public pages); token optional
 npm run verify:data                             # data integrity check (both rules + references)
+npm run post:discord -- --dry-run               # preview today's Discord posts (see "Discord posts")
 npm run scrape:racing                           # /racing/ results (add -- --full to refetch everything)
 ```

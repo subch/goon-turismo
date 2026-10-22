@@ -13,5 +13,8 @@ npm-debug.log*
 .env.*
 !.env.example
 
+# what the Discord poster has already sent, per channel (local runs; on the box it lives in /state)
+.discord-state/
+
 # OS
 .DS_Store
