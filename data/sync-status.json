@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-22T18:47:01.959Z",
-  "finishedAt": "2026-10-22T18:49:02.605Z",
+  "startedAt": "2026-10-23T00:47:02.156Z",
+  "finishedAt": "2026-10-23T00:49:05.113Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,15 +15,17 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "86"
+      "remaining": "98"
     },
     "errors": []
   },
   "pages": {
     "playersScraped": 18,
     "playersTotal": 24,
-    "eventsTouched": 6,
-    "eventsCreated": [],
+    "eventsTouched": 7,
+    "eventsCreated": [
+      "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane"
+    ],
     "cutoffIso": "2026-10-01",
     "warnings": 7
   }
