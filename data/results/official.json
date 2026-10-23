@@ -8066,8 +8066,8 @@
   {
     "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
     "psn": "bravemen84",
-    "timeRaw": "1:51.415",
-    "timeMs": 111415,
+    "timeRaw": "1:50.999",
+    "timeMs": 110999,
     "groupRank": 1,
     "points": 100
   },
@@ -8077,7 +8077,7 @@
     "timeRaw": "1:54.095",
     "timeMs": 114095,
     "groupRank": 2,
-    "points": 76
+    "points": 72
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
