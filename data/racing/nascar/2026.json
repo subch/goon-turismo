@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-25T16:33:15.031Z",
+  "syncedAt": "2026-10-25T18:33:15.537Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -58947,7 +58947,7 @@
           "name": "YellaWood 500",
           "startUtc": "2026-10-25T18:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         }
       ]
