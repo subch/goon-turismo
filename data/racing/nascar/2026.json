@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-10-24T22:33:19.921Z",
+  "syncedAt": "2026-10-25T00:33:19.935Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -58324,7 +58324,7 @@
       "country": "USA",
       "dateStart": "2026-10-25",
       "dateEnd": "2026-10-25",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.nascar.com/results/",
       "complete": false,
       "playoff": true,
