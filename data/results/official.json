@@ -8073,10 +8073,18 @@
   },
   {
     "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:52.527",
+    "timeMs": 112527,
+    "groupRank": 2,
+    "points": 86
+  },
+  {
+    "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
     "psn": "rickiep00h",
     "timeRaw": "1:54.095",
     "timeMs": 114095,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 72
   },
   {
