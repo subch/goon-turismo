@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-28T04:37:30.264Z",
+  "syncedAt": "2026-10-28T06:33:21.673Z",
   "tracks": [
     {
       "slug": "albert-park-circuit",
@@ -908,15 +908,15 @@
       "surface": "Tarmac",
       "elevation": null,
       "layouts": "Circuit des 24 Heures du Mans (2018–present)",
-      "fetchedAt": "2026-10-28T04:35:31.245Z",
+      "fetchedAt": "2026-10-28T06:33:20.335Z",
       "layout": {
-        "kind": "osm",
-        "file": null,
-        "url": "https://www.openstreetmap.org/#map=15/47.93333333/0.23333333",
-        "license": "ODbL",
-        "licenseUrl": "https://www.openstreetmap.org/copyright",
-        "artist": "OpenStreetMap contributors",
-        "numbered": false,
+        "kind": "wikimedia",
+        "file": "Bugatti Circuit.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:Bugatti_Circuit.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Will Pittenger",
+        "numbered": null,
         "path": "/tracks/circuit-de-la-sarthe.svg"
       }
     },
@@ -1774,8 +1774,17 @@
       "surface": null,
       "elevation": null,
       "layouts": null,
-      "fetchedAt": "2026-10-28T04:33:22.588Z",
-      "layout": null
+      "fetchedAt": "2026-10-28T06:33:18.255Z",
+      "layout": {
+        "kind": "wikimedia",
+        "file": "London Docks and ExCel Layout 2022.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:London_Docks_and_ExCel_Layout_2022.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Mannivu",
+        "numbered": null,
+        "path": "/tracks/excel-london.svg"
+      }
     },
     {
       "slug": "fuji-speedway",
