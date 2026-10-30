@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-29T18:47:01.546Z",
-  "finishedAt": "2026-10-29T18:49:08.546Z",
+  "startedAt": "2026-10-30T00:47:01.658Z",
+  "finishedAt": "2026-10-30T00:49:03.443Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,15 +15,17 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "88"
+      "remaining": "98"
     },
     "errors": []
   },
   "pages": {
     "playersScraped": 18,
     "playersTotal": 24,
-    "eventsTouched": 7,
-    "eventsCreated": [],
+    "eventsTouched": 8,
+    "eventsCreated": [
+      "tt-2026-10-29-blue-moon-bay-speedway-infield-a"
+    ],
     "cutoffIso": "2026-10-01",
     "warnings": 7
   }
