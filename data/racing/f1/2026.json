@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-29T22:32:39.427Z",
+  "syncedAt": "2026-10-30T00:32:37.760Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15041,7 +15041,7 @@
       "country": "Mexico",
       "dateStart": "2026-10-30",
       "dateEnd": "2026-11-01",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [
