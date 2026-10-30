@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-10-30T20:32:42.509Z",
+  "syncedAt": "2026-10-30T22:32:40.209Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15052,7 +15052,7 @@
           "name": "FP1",
           "startUtc": "2026-10-30T18:30:00Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
@@ -15062,7 +15062,7 @@
           "name": "FP2",
           "startUtc": "2026-10-30T22:00:00Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
