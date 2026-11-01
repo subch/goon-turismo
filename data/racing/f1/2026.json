@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-01T14:32:38.735Z",
+  "syncedAt": "2026-11-01T16:32:48.177Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15909,7 +15909,7 @@
         {
           "pos": 24,
           "name": "Ryo Hirakawa",
-          "number": null,
+          "number": "50",
           "team": "Haas F1 Team",
           "make": null,
           "points": 0,
