@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-11-01T18:33:15.719Z",
+  "syncedAt": "2026-11-01T20:33:16.501Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -60707,7 +60707,7 @@
           "name": "Xfinity 500",
           "startUtc": "2026-11-01T19:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         }
       ]
