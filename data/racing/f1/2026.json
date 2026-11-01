@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-01T02:32:35.506Z",
+  "syncedAt": "2026-11-01T04:32:44.598Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15190,7 +15190,7 @@
               "status": "Q3"
             },
             {
-              "pos": 13,
+              "pos": 12,
               "number": "81",
               "name": "Oscar Piastri",
               "team": "McLaren",
@@ -15205,7 +15205,7 @@
               "status": "Q2"
             },
             {
-              "pos": 14,
+              "pos": 13,
               "number": "5",
               "name": "Gabriel Bortoleto",
               "team": "Audi",
@@ -15221,21 +15221,6 @@
             },
             {
               "pos": 8,
-              "number": "30",
-              "name": "Liam Lawson",
-              "team": "RB F1 Team",
-              "make": null,
-              "cls": null,
-              "laps": null,
-              "time": "1:17.029",
-              "gap": null,
-              "interval": null,
-              "bestLap": "1:18.097 / 1:17.207 / 1:17.029",
-              "points": null,
-              "status": "Q3"
-            },
-            {
-              "pos": 9,
               "number": "41",
               "name": "Arvid Lindblad",
               "team": "RB F1 Team",
@@ -15250,7 +15235,22 @@
               "status": "Q3"
             },
             {
-              "pos": 10,
+              "pos": 8,
+              "number": "30",
+              "name": "Liam Lawson",
+              "team": "RB F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": null,
+              "time": "1:17.029",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": "Q3"
+            },
+            {
+              "pos": 9,
               "number": "10",
               "name": "Pierre Gasly",
               "team": "Alpine F1 Team",
@@ -15265,7 +15265,7 @@
               "status": "Q3"
             },
             {
-              "pos": 11,
+              "pos": 10,
               "number": "27",
               "name": "Nico Hülkenberg",
               "team": "Audi",
@@ -15280,7 +15280,7 @@
               "status": "Q2"
             },
             {
-              "pos": 12,
+              "pos": 11,
               "number": "43",
               "name": "Franco Colapinto",
               "team": "Alpine F1 Team",
@@ -15295,7 +15295,7 @@
               "status": "Q2"
             },
             {
-              "pos": 15,
+              "pos": 14,
               "number": "87",
               "name": "Oliver Bearman",
               "team": "Haas F1 Team",
@@ -15310,7 +15310,7 @@
               "status": "Q2"
             },
             {
-              "pos": 16,
+              "pos": 15,
               "number": "55",
               "name": "Carlos Sainz",
               "team": "Williams",
@@ -15325,7 +15325,7 @@
               "status": "Q2"
             },
             {
-              "pos": 17,
+              "pos": 16,
               "number": "23",
               "name": "Alexander Albon",
               "team": "Williams",
@@ -15340,7 +15340,7 @@
               "status": "Q1"
             },
             {
-              "pos": 18,
+              "pos": 17,
               "number": "14",
               "name": "Fernando Alonso",
               "team": "Aston Martin",
@@ -15355,7 +15355,7 @@
               "status": "Q1"
             },
             {
-              "pos": 19,
+              "pos": 18,
               "number": "50",
               "name": "Ryo Hirakawa",
               "team": "Haas F1 Team",
@@ -15370,7 +15370,7 @@
               "status": "Q1"
             },
             {
-              "pos": 20,
+              "pos": 19,
               "number": "18",
               "name": "Lance Stroll",
               "team": "Aston Martin",
@@ -15385,7 +15385,7 @@
               "status": "Q1"
             },
             {
-              "pos": 21,
+              "pos": 20,
               "number": "11",
               "name": "Sergio Pérez",
               "team": "Cadillac F1 Team",
@@ -15400,7 +15400,7 @@
               "status": "Q1"
             },
             {
-              "pos": 22,
+              "pos": 21,
               "number": "77",
               "name": "Valtteri Bottas",
               "team": "Cadillac F1 Team",
