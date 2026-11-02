@@ -8129,10 +8129,18 @@
   },
   {
     "eventId": "tt-2026-10-29-blue-moon-bay-speedway-infield-a",
+    "psn": "superpharts",
+    "timeRaw": "1:24.140",
+    "timeMs": 84140,
+    "groupRank": 4,
+    "points": 73
+  },
+  {
+    "eventId": "tt-2026-10-29-blue-moon-bay-speedway-infield-a",
     "psn": "rickiep00h",
     "timeRaw": "1:24.676",
     "timeMs": 84676,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 67
   },
   {
