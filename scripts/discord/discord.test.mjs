@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { formatMs, formatDelta, cutoffMs, tierFor, TIERS, md, resultsMessage, leaderChangeMessage, newTrialMessage } from './format.mjs';
+import { formatMs, formatDelta, cutoffMs, tierFor, TIERS, md, resultsMessage, leaderChangeMessage, newTrialMessage, standingsMessage } from './format.mjs';
 import { dueResults, dueAnnouncements, leaderChanges, nextState, emptyState, trialKey } from './plan.mjs';
 import { isBotToken, isSnowflake, postMessage, statePath, loadState, saveState } from './io.mjs';
 
@@ -273,4 +273,22 @@ test('state is per channel: a missing file is a first run, a corrupt one is an e
   } finally {
     await rm(dir, { recursive: true, force: true });
   }
+});
+
+test('standings list the whole crew, and say so when nobody has a lap', () => {
+  const crew = Array.from({ length: 24 }, (_, i) => ({ psn: `driver_${i}`, timeMs: 80000 + i * 100 }));
+  const { embeds } = standingsMessage({
+    name: (psn) => psn,
+    standings: [
+      { trial: { track: 'Blue Moon', url: 'https://x/1', leadMs: 79000, leader: { name: 'fast' }, car: 'Car' }, eventId: 'e1', crew },
+      { trial: { track: 'Sugo', url: 'https://x/2', leadMs: 60000 }, eventId: null, crew: [] },
+    ],
+  });
+  assert.equal(embeds.length, 2);
+  assert.ok(embeds[0].description.includes('driver\\_23'));
+  assert.ok(!embeds[0].description.includes('more on the site'));
+  assert.ok(embeds[0].description.length < 4096);
+  assert.equal(embeds[0].url, 'https://goon-turismo.com/events/e1/');
+  assert.ok(embeds[1].description.includes('No crew laps yet'));
+  assert.equal(embeds[1].url, 'https://x/2');
 });

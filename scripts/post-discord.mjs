@@ -23,20 +23,24 @@
  *   npm run post:discord -- --dry-run             print it instead; send and save nothing
  *   npm run post:discord -- --results <event id>  (re)post one Time Trial's results
  *   npm run post:discord -- --dry-run --now 2026-10-22T17:00:00Z   as if it were then
+ *   npm run post:discord -- --standings <file>    write the crew's times on the
+ *                                                 running Time Trials to <file>,
+ *                                                 for the bot's /refresh reply;
+ *                                                 sends nothing, saves no state
  *
  * Env (a .env in the repo root is read when there is one, for local runs):
  *   GOON_DISCORD_BOT_TOKEN   the bot's token; unset means --dry-run
  *   GOON_DISCORD_CHANNEL_ID  the channel to post in; unset means --dry-run
  *   GOON_DISCORD_STATE_DIR   where the per-channel state lives (default .discord-state/)
  */
-import { readFile, readdir } from 'node:fs/promises';
+import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { fetchTimeTrials, fetchTimeTrialDetail, sameTimeTrial } from './lib/dg-edge-events.mjs';
 import { dueResults, dueAnnouncements, leaderChanges, nextState, trialKey, hasClosed } from './discord/plan.mjs';
-import { resultsMessage, newTrialMessage, leaderChangeMessage } from './discord/format.mjs';
+import { resultsMessage, newTrialMessage, leaderChangeMessage, standingsMessage } from './discord/format.mjs';
 import { isBotToken, isSnowflake, postMessage, statePath, loadState, saveState } from './discord/io.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -78,6 +82,7 @@ async function main() {
     options: {
       'dry-run': { type: 'boolean', default: false },
       results: { type: 'string' },
+      standings: { type: 'string' },
       now: { type: 'string' },
     },
   });
@@ -138,6 +143,20 @@ async function main() {
       );
     }
     return detailed.get(trial.dgId);
+  }
+
+  // Before anything due is worked out: this must not use up a world #1 change
+  // or a new Time Trial the noon post is still to report.
+  if (args.standings) {
+    if (!trials) throw new Error('no Time Trials to report without dg-edge');
+    const live = await Promise.all(trials.filter((t) => t.status === 'live' && !hasClosed(t, now)).map(detail));
+    const standings = live.map((trial) => {
+      const eventId = siteEventFor(trial)?.id ?? null;
+      return { trial, eventId, crew: crewRows(eventId) };
+    });
+    await writeFile(args.standings, JSON.stringify(standingsMessage({ standings, name })));
+    log(`standings for ${live.length} live Time Trial(s) written to ${args.standings}`);
+    return;
   }
 
   const messages = []; // { kind, payload, onSent(state) }

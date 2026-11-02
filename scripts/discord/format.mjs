@@ -280,3 +280,34 @@ export function leaderChangeMessage({ changes, name }) {
   });
   return payload('⏱️ **The world #1 moved, so the GT7 medal targets did too**', embeds);
 }
+
+/**
+ * The crew's times on every running Time Trial, for /refresh. One embed each,
+ * the whole crew listed: asked for, not scheduled, so nothing is capped. The
+ * list goes in the description, since a field's 1024 characters will not hold
+ * 24 drivers.
+ *   standings  [{ trial, eventId, crew }]
+ */
+export function standingsMessage({ standings, name }) {
+  const embeds = standings.map(({ trial, eventId, crew }) => {
+    const topMs = trial.leadMs;
+    const description = [];
+    if (topMs != null) {
+      description.push(`World #1 **${formatMs(topMs)}**${byWhom(trial.leader?.name)}`);
+      description.push(TIERS.map((t) => `${t.icon} ${formatMs(cutoffMs(topMs, t))}`).join(' · '));
+    }
+    if (trial.endsAt) description.push(`Closes ${discordTime(trial.endsAt, 'R')}`);
+    description.push('');
+    if (!crew.length) description.push('_No crew laps yet._');
+    else if (topMs == null) description.push(crew.map((r) => `**${md(name(r.psn))}** ${formatMs(r.timeMs)}`).join('\n'));
+    else description.push(crewField('', crew, name, topMs, null, crew.length).value);
+    return {
+      title: trial.track,
+      url: eventId ? eventUrl(eventId) : trial.url,
+      color: COLOR.leader,
+      description: description.join('\n'),
+      ...(trial.car ? { footer: { text: trial.car } } : {}),
+    };
+  });
+  return payload('⏱️ **Time Trial standings**', embeds);
+}
