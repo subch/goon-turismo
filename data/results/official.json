@@ -8073,10 +8073,18 @@
   },
   {
     "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
+    "psn": "superpharts",
+    "timeRaw": "1:52.107",
+    "timeMs": 112107,
+    "groupRank": 2,
+    "points": 90
+  },
+  {
+    "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
     "psn": "empire_of_ravens",
     "timeRaw": "1:52.527",
     "timeMs": 112527,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 86
   },
   {
@@ -8084,7 +8092,7 @@
     "psn": "devmotron",
     "timeRaw": "1:53.989",
     "timeMs": 113989,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 73
   },
   {
@@ -8092,7 +8100,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:54.095",
     "timeMs": 114095,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 72
   },
   {
@@ -8113,10 +8121,18 @@
   },
   {
     "eventId": "tt-2026-10-29-blue-moon-bay-speedway-infield-a",
+    "psn": "devmotron",
+    "timeRaw": "1:23.142",
+    "timeMs": 83142,
+    "groupRank": 3,
+    "points": 86
+  },
+  {
+    "eventId": "tt-2026-10-29-blue-moon-bay-speedway-infield-a",
     "psn": "rickiep00h",
     "timeRaw": "1:24.676",
     "timeMs": 84676,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 67
   },
   {
