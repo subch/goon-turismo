@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-11-03T20:33:08.883Z",
+  "syncedAt": "2026-11-03T22:33:20.106Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -61491,23 +61491,6 @@
         },
         {
           "pos": 12,
-          "name": "Carson Hocevar",
-          "number": "77",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 2259,
-          "wins": 1,
-          "extra": {
-            "To leader": "-210",
-            "Playoff pts": 0,
-            "Stage pts": 138,
-            "Seed": 12,
-            "Playoff wins": 0,
-            "Clinched": ""
-          }
-        },
-        {
-          "pos": 13,
           "name": "Bubba Wallace",
           "number": "23",
           "team": null,
@@ -61519,6 +61502,23 @@
             "Playoff pts": 0,
             "Stage pts": 159,
             "Seed": 14,
+            "Playoff wins": 0,
+            "Clinched": ""
+          }
+        },
+        {
+          "pos": 13,
+          "name": "Carson Hocevar",
+          "number": "77",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 2234,
+          "wins": 1,
+          "extra": {
+            "To leader": "-235",
+            "Playoff pts": 0,
+            "Stage pts": 138,
+            "Seed": 12,
             "Playoff wins": 0,
             "Clinched": ""
           }
@@ -61781,24 +61781,6 @@
         },
         {
           "pos": 12,
-          "name": "Carson Hocevar",
-          "number": "77",
-          "team": null,
-          "make": "Chevrolet",
-          "points": 2259,
-          "wins": 1,
-          "extra": {
-            "Stage pts": 138,
-            "Playoff pts": 0,
-            "Poles": 2,
-            "Top 5": 6,
-            "Top 10": 12,
-            "Laps led": 198,
-            "DNF": 2
-          }
-        },
-        {
-          "pos": 13,
           "name": "Bubba Wallace",
           "number": "23",
           "team": null,
@@ -61813,6 +61795,24 @@
             "Top 10": 16,
             "Laps led": 316,
             "DNF": 4
+          }
+        },
+        {
+          "pos": 13,
+          "name": "Carson Hocevar",
+          "number": "77",
+          "team": null,
+          "make": "Chevrolet",
+          "points": 2234,
+          "wins": 1,
+          "extra": {
+            "Stage pts": 138,
+            "Playoff pts": 0,
+            "Poles": 2,
+            "Top 5": 6,
+            "Top 10": 12,
+            "Laps led": 198,
+            "DNF": 2
           }
         },
         {
@@ -61943,24 +61943,6 @@
         },
         {
           "pos": 21,
-          "name": "Josh Berry",
-          "number": "21",
-          "team": null,
-          "make": "Ford",
-          "points": 652,
-          "wins": 0,
-          "extra": {
-            "Stage pts": 89,
-            "Playoff pts": 0,
-            "Poles": 0,
-            "Top 5": 4,
-            "Top 10": 11,
-            "Laps led": 102,
-            "DNF": 5
-          }
-        },
-        {
-          "pos": 22,
           "name": "Todd Gilliland",
           "number": "34",
           "team": null,
@@ -61975,6 +61957,24 @@
             "Top 10": 3,
             "Laps led": 27,
             "DNF": 2
+          }
+        },
+        {
+          "pos": 22,
+          "name": "Josh Berry",
+          "number": "21",
+          "team": null,
+          "make": "Ford",
+          "points": 627,
+          "wins": 0,
+          "extra": {
+            "Stage pts": 89,
+            "Playoff pts": 0,
+            "Poles": 0,
+            "Top 5": 4,
+            "Top 10": 11,
+            "Laps led": 102,
+            "DNF": 5
           }
         },
         {
