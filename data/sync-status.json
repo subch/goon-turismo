@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-11-03T00:47:02.453Z",
-  "finishedAt": "2026-11-03T00:49:04.320Z",
+  "startedAt": "2026-11-03T06:00:01.693Z",
+  "finishedAt": "2026-11-03T06:02:05.300Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,15 +15,17 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "98"
+      "remaining": "96"
     },
     "errors": []
   },
   "pages": {
     "playersScraped": 18,
     "playersTotal": 24,
-    "eventsTouched": 8,
-    "eventsCreated": [],
+    "eventsTouched": 9,
+    "eventsCreated": [
+      "tt-2026-11-02-nurburgring-gp"
+    ],
     "cutoffIso": "2026-10-01",
     "warnings": 7
   }

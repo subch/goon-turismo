@@ -1,0 +1,10 @@
+{
+  "id": "tt-2026-11-02-nurburgring-gp",
+  "source": "gridstats",
+  "seasonId": "autumn-2026",
+  "track": "Nürburgring GP",
+  "car": "Porsche 911 GT3 R (992)",
+  "classCode": "OnlineTA_FANATEC26_Title",
+  "startDate": "2026-11-02",
+  "endDate": "2026-11-16"
+}
