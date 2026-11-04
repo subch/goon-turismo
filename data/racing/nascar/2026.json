@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-11-04T16:33:18.466Z",
+  "syncedAt": "2026-11-04T18:33:18.518Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -61271,7 +61271,7 @@
     {
       "id": "5601",
       "round": 36,
-      "name": "NASCAR Championship Race",
+      "name": "NASCAR Cup Series Championship Race",
       "shortName": "Homestead-Miami Speedway",
       "circuit": "Homestead-Miami Speedway",
       "location": null,
@@ -61287,7 +61287,7 @@
           "id": "5601-race",
           "classId": "cup",
           "type": "race",
-          "name": "NASCAR Championship Race",
+          "name": "NASCAR Cup Series Championship Race",
           "startUtc": "2026-11-08T20:00:00.000Z",
           "endUtc": null,
           "status": "upcoming",
