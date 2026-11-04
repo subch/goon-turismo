@@ -103,11 +103,11 @@
         "clean_races": 48,
         "collector_level": 90,
         "license": "Master B",
-        "garage_count": 735,
+        "garage_count": 736,
         "collection_progress": "98%",
-        "total_credits": 723070680,
-        "play_time_readable": "2,440h 19m",
-        "distance_km": "206,174.4"
+        "total_credits": 723377780,
+        "play_time_readable": "2,442h 20m",
+        "distance_km": "206,302.2"
       }
     }
   },
@@ -277,10 +277,10 @@
         "clean_races": 52,
         "collector_level": 90,
         "license": "Master S",
-        "garage_count": 744,
+        "garage_count": 745,
         "collection_progress": "100%",
         "total_credits": 1059449545,
-        "play_time_readable": "1,910h 42m",
+        "play_time_readable": "1,910h 55m",
         "distance_km": "266,602.8"
       }
     }
@@ -391,9 +391,9 @@
         "license": "Master B",
         "garage_count": 365,
         "collection_progress": "83%",
-        "total_credits": 461189758,
-        "play_time_readable": "1,519h 43m",
-        "distance_km": "142,758.1"
+        "total_credits": 461192758,
+        "play_time_readable": "1,521h 10m",
+        "distance_km": "142,836.0"
       }
     }
   },
