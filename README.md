@@ -181,6 +181,13 @@ rules, the board (each driver's best lap, gap, points, when it was set, the proo
 laps. The board comes from `scripts/goon-tt/standings.mjs`, which the bot's `/goontt` reply uses
 too, and `verify:data` checks every lap's driver, proof and date.
 
+On Discord (the bot, in subch-vps `goon/scraper/bot.mjs`): `/goontt` posts the board, built by
+`scripts/goon-tt/board.mjs`; `/goonttsubmit time screenshot [driver]` and the right-click **Apps >
+Submit Goon TT lap** on a posted screenshot hand the image to `sync.sh goontt`, which runs
+`scripts/goon-tt/submit.mjs` (read, check, keep the proof, add the lap), then commits, pushes and
+publishes like any sync. submit.mjs writes its verdict, with the reply, the moment it is known, so the
+bot answers in seconds while the site catches up a few minutes later. A refused lap changes nothing.
+
 ## Look
 
 Since 2026-09-26 the site wears the family chrome from music.subch.us and subch.us (Audiowide

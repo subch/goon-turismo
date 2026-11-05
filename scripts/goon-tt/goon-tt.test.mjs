@@ -192,3 +192,60 @@ test('a Goon TT is upcoming, running, then closed', () => {
   assert.equal(runningTt([tt], new Date('2026-11-10T12:00:00Z')), tt);
   assert.equal(runningTt([tt], new Date('2026-12-01T00:00:00Z')), null);
 });
+
+// submit.mjs end to end, into a scratch copy of the data: the OCR, the rules,
+// the proof copy and the lap written, and the replies the bot will post.
+test('a submitted screenshot is checked, kept as proof and put on the board', { timeout: 120_000 }, async () => {
+  const { mkdtemp, mkdir, writeFile, readFile, access, rm } = await import('node:fs/promises');
+  const { tmpdir } = await import('node:os');
+  const { submit } = await import('./submit.mjs');
+  const root = await mkdtemp(path.join(tmpdir(), 'goon-tt-'));
+  try {
+    await mkdir(path.join(root, 'data', 'goon-tt'), { recursive: true });
+    await writeFile(path.join(root, 'data', 'players.json'), JSON.stringify([{ psn: 'superpharts', displayName: 'superpharts' }, { psn: 'dog_nougat', displayName: 'dog_nougat' }]));
+    await writeFile(path.join(root, 'data', 'points-config.json'), JSON.stringify({ basePoints: 100, pointsLostPerPercentOff: 10 }));
+    const tt = {
+      id: 'tt-test',
+      name: 'Goon TT 1',
+      track: 'Sportsland SUGO',
+      ...TT,
+      opensAt: '2026-11-04T06:00:00Z',
+      closesAt: '2026-11-19T05:59:00Z',
+      laps: [{ psn: 'dog_nougat', timeMs: 87864, setOn: '2026-11-04', setAt: '12:23', proof: '/goon-tt/tt-test/x.jpg', submittedAt: '2026-11-04T18:30:00Z', via: 'hand' }],
+    };
+    await writeFile(path.join(root, 'data', 'goon-tt', 'tt-test.json'), JSON.stringify(tt));
+    const ocr = await createOcr();
+    const now = new Date('2026-11-05T05:00:00Z');
+    const image = path.join(FIXTURES, 'records-travis-1080p.jpg');
+    try {
+      const wrong = await submit({ root, image, psn: 'superpharts', time: '1:28.956', via: 'command', now, ocr });
+      assert.equal(wrong.ok, false);
+      assert.match(wrong.message.content, /the lap reads 1:28\.965, not the 1:28\.956 you typed/);
+
+      const ok = await submit({ root, image, psn: 'superpharts', time: '1:28.965', via: 'command', now, ocr });
+      assert.equal(ok.ok, true, ok.reasons?.join('; '));
+      assert.match(ok.message.content, /superpharts\*\* 1:28\.965: P2 of 2, \+1\.101 off the lead, 87 pts/);
+      await access(path.join(root, 'public', 'goon-tt', 'tt-test', 'superpharts-88965.jpg'));
+      const saved = JSON.parse(await readFile(path.join(root, 'data', 'goon-tt', 'tt-test.json'), 'utf-8'));
+      assert.deepEqual(saved.laps.at(-1), {
+        psn: 'superpharts',
+        timeMs: 88965,
+        setOn: '2026-11-04',
+        setAt: '22:34',
+        proof: '/goon-tt/tt-test/superpharts-88965.jpg',
+        submittedAt: '2026-11-05T05:00:00Z',
+        via: 'command',
+      });
+
+      const again = await submit({ root, image, psn: 'superpharts', via: 'message', now, ocr });
+      assert.deepEqual(again.reasons, ['1:28.965 is already on the board for superpharts']);
+
+      const late = await submit({ root, image, psn: 'superpharts', via: 'message', now: new Date('2026-11-20T00:00:00Z'), ocr });
+      assert.deepEqual(late.reasons, ['no Goon TT is running right now']);
+    } finally {
+      await ocr.terminate();
+    }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
