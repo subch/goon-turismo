@@ -1,0 +1,154 @@
+{
+  "id": "nissan-fairlady-240zg-hs30-71-dog-nougat",
+  "car": "Nissan Fairlady 240ZG (HS30) '71",
+  "owner": "dog_nougat",
+  "class": "PP 615.23 (Racing Hard)",
+  "drivetrain": "FR",
+  "description": "Rammy's wide-body 240ZG, the crew's shared tune for the Sportsland SUGO time trial (November 2026). 274 HP and 1825 lbs on Racing Hards.",
+  "parts": [
+    {
+      "category": "GT Auto",
+      "name": "Wide-Body"
+    },
+    {
+      "category": "GT Auto",
+      "name": "Custom Parts: Front A or B"
+    },
+    {
+      "category": "GT Auto",
+      "name": "Custom Parts: Wing A or Custom"
+    },
+    {
+      "category": "GT Auto",
+      "name": "Wheels: 15-inch, wide rim width, wide offset"
+    },
+    {
+      "category": "Sports",
+      "name": "Weight Reduction: Stage 1"
+    },
+    {
+      "category": "Club Sports",
+      "name": "Bore Up"
+    },
+    {
+      "category": "Club Sports",
+      "name": "High Compression Pistons"
+    },
+    {
+      "category": "Club Sports",
+      "name": "Weight Reduction: Stage 2"
+    },
+    {
+      "category": "Semi-Racing",
+      "name": "Racing Crank Shaft"
+    },
+    {
+      "category": "Semi-Racing",
+      "name": "Fully Customizable Computer"
+    },
+    {
+      "category": "Semi-Racing",
+      "name": "Fully Customizable LSD"
+    },
+    {
+      "category": "Semi-Racing",
+      "name": "Fully Customizable Manual Transmission"
+    },
+    {
+      "category": "Semi-Racing",
+      "name": "Weight Reduction: Stage 3"
+    },
+    {
+      "category": "Semi-Racing",
+      "name": "Increase Body Rigidity"
+    },
+    {
+      "category": "Racing",
+      "name": "Stroke Up"
+    },
+    {
+      "category": "Racing",
+      "name": "Engine Balance Tuning"
+    },
+    {
+      "category": "Racing",
+      "name": "Polish Ports"
+    },
+    {
+      "category": "Racing",
+      "name": "Racing Air Filter"
+    },
+    {
+      "category": "Racing",
+      "name": "Racing Muffler"
+    },
+    {
+      "category": "Racing",
+      "name": "Racing Exhaust Manifold"
+    },
+    {
+      "category": "Racing",
+      "name": "Racing Brake Pads"
+    },
+    {
+      "category": "Racing",
+      "name": "Racing Brake Kit (either; the sheet shows Drilled Discs)"
+    },
+    {
+      "category": "Racing",
+      "name": "Brake Balance Controller"
+    },
+    {
+      "category": "Racing",
+      "name": "Fully Customizable Suspension"
+    },
+    {
+      "category": "Racing",
+      "name": "Racing Clutch and Flywheel"
+    },
+    {
+      "category": "Racing",
+      "name": "Tyres: Racing Hard"
+    },
+    {
+      "category": "Ultimate",
+      "name": "Titanium Connecting Rods & Pistons"
+    },
+    {
+      "category": "Ultimate",
+      "name": "High Lift Camshaft S"
+    },
+    {
+      "category": "Ultimate",
+      "name": "Carbon Propellor Shaft"
+    }
+  ],
+  "settings": {
+    "Performance Points": "615.23",
+    "Power / Weight": "274 HP / 1825 lbs (828 kg)",
+    "Torque": "212.5 ft-lb",
+    "Weight Balance (F:R)": "50 : 50",
+    "Tyres (F/R)": "Racing: Hard / Racing: Hard",
+    "Ride Height (F/R)": "108 / 115 mm",
+    "Anti-Roll Bar (F/R)": "8 / 10",
+    "Damping, Compression (F/R)": "30 / 31 %",
+    "Damping, Expansion (F/R)": "45 / 45 %",
+    "Natural Frequency (F/R)": "2.47 / 2.50 Hz",
+    "Negative Camber (F/R)": "2.2 / 1.2°",
+    "Toe (F/R)": "0.08 out / 0.17 in",
+    "LSD Initial / Accel / Braking (rear)": "7 / 10 / 9",
+    "Downforce (F/R)": "60 / 127",
+    "ECU": "Full Control Computer, output 100%",
+    "Ballast": "0 kg",
+    "Power Restrictor": "100%",
+    "Transmission": "Fully Customizable: Manual, top speed 250 km/h (default)",
+    "Brake Balance": "Your choice (rammy runs +3 rear)",
+    "Nitrous": "None"
+  },
+  "notes": "PP should read 615.23. If it shows 615.21, raise the downforce, check the PP, set it back and check again: it returns to 615.23. On Sports Soft tyres the same car reads PP 605.25, which is how both crew laps at Sugo on 4 Nov 2026 were run.",
+  "images": [
+    "/tunes/nissan-fairlady-240zg-hs30-71-dog-nougat/settings-sheet-1.jpg",
+    "/tunes/nissan-fairlady-240zg-hs30-71-dog-nougat/settings-sheet-2.jpg"
+  ],
+  "createdFromIssue": null
+}

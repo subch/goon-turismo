@@ -521,6 +521,20 @@ a.card:hover .event-card-photo img {
   display: block;
 }
 
+/* A tune's in-game settings sheets, full width so the numbers stay legible */
+.tune-sheets {
+  display: grid;
+  gap: 16px;
+}
+
+.tune-sheets img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
 /* ---- buttons & controls ---------------------------------------------- */
 
 .btn {

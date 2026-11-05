@@ -112,6 +112,8 @@ export type Tune = {
   parts: { category: string; name: string }[];
   settings: Record<string, string>;
   notes?: string;
+  // In-game settings-sheet screenshots, as paths under public/
+  images?: string[];
   createdFromIssue?: number | null;
 };
 

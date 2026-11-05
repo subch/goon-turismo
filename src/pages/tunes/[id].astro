@@ -51,4 +51,17 @@ const settingsEntries = Object.entries(tune.settings || {});
   )}
 
   {tune.notes && <p class="subtitle" style="margin-top:20px;">{tune.notes}</p>}
+
+  {tune.images && tune.images.length > 0 && (
+    <>
+      <h2>Settings sheets</h2>
+      <div class="tune-sheets">
+        {tune.images.map((src, i) => (
+          <a href={src} target="_blank" rel="noopener">
+            <img src={src} alt={`${tune.car} settings sheet ${i + 1}`} loading="lazy" />
+          </a>
+        ))}
+      </div>
+    </>
+  )}
 </Base>
