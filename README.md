@@ -175,6 +175,12 @@ no network and no per-use cost.
 
 The tests run both on two real 1080p captures in `scripts/goon-tt/fixtures/`.
 
+Each Goon TT is one file in `data/goon-tt/` (shape in its README) with every accepted lap, and the
+proof screenshots sit in `public/goon-tt/<id>/`. `/goon-tt/` lists them and `/goon-tt/<id>/` shows the
+rules, the board (each driver's best lap, gap, points, when it was set, the proof) and any earlier
+laps. The board comes from `scripts/goon-tt/standings.mjs`, which the bot's `/goontt` reply uses
+too, and `verify:data` checks every lap's driver, proof and date.
+
 ## Look
 
 Since 2026-09-26 the site wears the family chrome from music.subch.us and subch.us (Audiowide

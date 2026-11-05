@@ -1,0 +1,26 @@
+{
+  "id": "2026-11-04-sportsland-sugo",
+  "name": "Goon TT 1",
+  "track": "Sportsland SUGO",
+  "timeOfDay": "Daytime",
+  "penalties": "Weak",
+  "car": "Nissan Fairlady 240ZG (HS30) '71",
+  "tuneId": "nissan-fairlady-240zg-hs30-71-dog-nougat",
+  "pp": 605.25,
+  "tyres": "SS",
+  "startDate": "2026-11-04",
+  "endDate": "2026-11-18",
+  "opensAt": "2026-11-04T06:00:00Z",
+  "closesAt": "2026-11-19T05:59:00Z",
+  "laps": [
+    {
+      "psn": "dog_nougat",
+      "timeMs": 87864,
+      "setOn": "2026-11-04",
+      "setAt": "12:23",
+      "proof": "/goon-tt/2026-11-04-sportsland-sugo/dog_nougat-87864.jpg",
+      "submittedAt": "2026-11-05T05:33:28Z",
+      "via": "hand"
+    }
+  ]
+}

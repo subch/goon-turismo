@@ -4,6 +4,9 @@ import playersData from '../../data/players.json';
 import seasonsData from '../../data/seasons.json';
 import officialResultsData from '../../data/results/official.json';
 import customResultsData from '../../data/results/custom.json';
+import pointsConfig from '../../data/points-config.json';
+import { board, status as goonTtStatus } from '../../scripts/goon-tt/standings.mjs';
+export { gapText, msToLap, TYRE_NAMES } from '../../scripts/goon-tt/standings.mjs';
 
 // Written by scripts/sync-gridstats.mjs at the end of every run. Loaded via
 // glob so a checkout that has never synced still builds.
@@ -101,6 +104,46 @@ const tuneModules = import.meta.glob<{ default: Tune }>('../../data/tunes/*.json
 const championshipModules = import.meta.glob<{ default: Championship }>('../../data/championships/*.json', {
   eager: true,
 });
+const goonTtModules = import.meta.glob<{ default: GoonTt }>('../../data/goon-tt/*.json', { eager: true });
+
+// The crew's own time trials, apart from the season standings. Shape in
+// data/goon-tt/README.md; the board and status come from
+// scripts/goon-tt/standings.mjs, which the bot's /goontt uses too.
+export type GoonTtLap = {
+  psn: string;
+  timeMs: number;
+  setOn: string;
+  setAt: string;
+  proof: string;
+  submittedAt: string;
+  via: 'hand' | 'command' | 'message';
+};
+export type GoonTt = {
+  id: string;
+  name: string;
+  track: string;
+  timeOfDay?: string;
+  penalties?: string;
+  car: string;
+  tuneId?: string;
+  pp: number;
+  tyres: string;
+  startDate: string;
+  endDate: string;
+  opensAt: string;
+  closesAt: string;
+  laps: GoonTtLap[];
+};
+export type GoonTtRow = {
+  place: number;
+  psn: string;
+  timeMs: number;
+  time: string;
+  gapMs: number;
+  points: number;
+  laps: number;
+  lap: GoonTtLap;
+};
 
 export type Tune = {
   id: string;
@@ -166,6 +209,25 @@ export const championships: Championship[] = Object.entries(championshipModules)
 
 export function championshipById(id: string): Championship | undefined {
   return championships.find((c) => c.id === id);
+}
+
+/** Newest first. */
+export const goonTts: GoonTt[] = Object.values(goonTtModules)
+  .map((mod) => mod.default)
+  .filter(Boolean)
+  .sort((a, b) => b.startDate.localeCompare(a.startDate));
+
+export function goonTtBoard(tt: GoonTt): GoonTtRow[] {
+  return board(tt, pointsConfig);
+}
+
+/** As of the build: the site is rebuilt on every sync, so at most a few hours stale. */
+export function goonTtState(tt: GoonTt): 'upcoming' | 'running' | 'closed' {
+  return goonTtStatus(tt, new Date());
+}
+
+export function goonTtsForTune(tuneId: string): GoonTt[] {
+  return goonTts.filter((tt) => tt.tuneId === tuneId);
 }
 
 export function tuneById(id: string): Tune | undefined {

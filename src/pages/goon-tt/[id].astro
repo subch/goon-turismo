@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import { goonTts, goonTtBoard, goonTtState, playerByPsn, tuneById, formatDate, trackImageUrl, gapText, msToLap, TYRE_NAMES } from '../../lib/data';
+import type { GoonTtLap } from '../../lib/data';
+
+export function getStaticPaths() {
+  return goonTts.map((tt) => ({ params: { id: tt.id }, props: { tt } }));
+}
+
+const { tt } = Astro.props;
+const rows = goonTtBoard(tt);
+const state = goonTtState(tt);
+const tune = tt.tuneId ? tuneById(tt.tuneId) : undefined;
+const tyre = TYRE_NAMES[tt.tyres as keyof typeof TYRE_NAMES] ?? tt.tyres;
+const imgUrl = trackImageUrl(tt.track);
+const driver = (psn: string) => playerByPsn(psn)?.displayName ?? psn;
+const setLabel = (lap: GoonTtLap) => `${formatDate(lap.setOn)} ${lap.setAt}`;
+// Every lap that isn't someone's best, newest first: the rest of the proof.
+const bests = new Set(rows.map((r) => r.lap));
+const earlier = tt.laps.filter((lap) => !bests.has(lap)).sort((a, b) => b.submittedAt.localeCompare(a.submittedAt));
+---
+<Base title={`${tt.name}: ${tt.track}`}>
+  {imgUrl && (
+    <div class="event-hero">
+      <img src={imgUrl} alt="" loading="lazy" onerror="this.closest('.event-hero').remove()" />
+    </div>
+  )}
+  {state === 'running' && <span class="badge live">Running</span>}
+  {state === 'upcoming' && <span class="badge upcoming">Upcoming</span>}
+  <h1>{tt.name}: {tt.track}</h1>
+  <p class="subtitle">
+    {tt.car} · {formatDate(tt.startDate)} to {formatDate(tt.endDate)}, closing 23:59 Central
+  </p>
+
+  <h2>Rules</h2>
+  <div class="panel">
+    <table>
+      <tbody>
+        <tr><th>Track</th><td>{tt.track}{tt.timeOfDay ? `, ${tt.timeOfDay.toLowerCase()}` : ''}</td></tr>
+        <tr><th>Car</th><td>{tt.car}</td></tr>
+        <tr><th>Tune</th><td>{tune ? <a href={`/tunes/${tune.id}/`}>{driver(tune.owner)}'s tune</a> : '—'}</td></tr>
+        <tr><th>Tyres</th><td>{tyre} front and rear</td></tr>
+        <tr><th>PP</th><td>{tt.pp.toFixed(2)}, exactly</td></tr>
+        {tt.penalties && <tr><th>Penalties</th><td>{tt.penalties}</td></tr>}
+      </tbody>
+    </table>
+  </div>
+  <p class="subtitle">
+    Every lap comes with a screenshot of GT7's records screen, checked for the car, PP, tyres and the date it was set.
+    The screenshot is kept here as proof. Points count in this Goon TT only, not the season standings.
+  </p>
+
+  <h2>Board</h2>
+  <div class="panel">
+    {rows.length === 0 ? (
+      <div class="empty-state">No laps yet.</div>
+    ) : (
+      <table>
+        <thead>
+          <tr><th>Place</th><th>Driver</th><th>Lap</th><th>Gap</th><th>Points</th><th>Set</th><th>Proof</th></tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr>
+              <td class={r.place <= 3 ? `rank-${r.place}` : ''}>{r.place}</td>
+              <td><a href={`/players/${r.psn}/`}>{driver(r.psn)}</a></td>
+              <td>{r.time}</td>
+              <td>{gapText(r.gapMs)}</td>
+              <td>{r.points}</td>
+              <td class="meta">{setLabel(r.lap)}</td>
+              <td>
+                <a class="proof-thumb" href={r.lap.proof} target="_blank" rel="noopener">
+                  <img src={r.lap.proof} alt={`${driver(r.psn)}'s ${r.time} on the records screen`} loading="lazy" />
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  {earlier.length > 0 && (
+    <>
+      <h2>Earlier laps</h2>
+      <div class="panel">
+        <table>
+          <thead><tr><th>Driver</th><th>Lap</th><th>Set</th><th>Proof</th></tr></thead>
+          <tbody>
+            {earlier.map((lap) => (
+              <tr>
+                <td><a href={`/players/${lap.psn}/`}>{driver(lap.psn)}</a></td>
+                <td>{msToLap(lap.timeMs)}</td>
+                <td class="meta">{setLabel(lap)}</td>
+                <td><a href={lap.proof} target="_blank" rel="noopener">Screenshot</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+</Base>

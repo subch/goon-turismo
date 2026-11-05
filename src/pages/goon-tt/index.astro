@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import { goonTts, goonTtBoard, goonTtState, playerByPsn, formatDate, TYRE_NAMES } from '../../lib/data';
+
+const driver = (psn: string) => playerByPsn(psn)?.displayName ?? psn;
+// Running first, then upcoming, then closed; newest first within each.
+const order = { running: 0, upcoming: 1, closed: 2 };
+const tts = goonTts
+  .map((tt) => ({ tt, state: goonTtState(tt), rows: goonTtBoard(tt) }))
+  .sort((a, b) => order[a.state] - order[b.state]);
+---
+<Base title="Goon TT">
+  <h1>Goon TT</h1>
+  <p class="subtitle">
+    The crew's own two-week time trials: one car, one shared tune, a screenshot as proof for every lap.
+    Kept apart from the season standings.
+  </p>
+
+  {tts.length === 0 ? (
+    <div class="panel"><div class="empty-state">No Goon TTs yet.</div></div>
+  ) : (
+    <div class="grid">
+      {tts.map(({ tt, state, rows }) => (
+        <a class="card" href={`/goon-tt/${tt.id}/`}>
+          {state === 'running' && <span class="badge live">Running</span>}
+          {state === 'upcoming' && <span class="badge upcoming">Upcoming</span>}
+          <h3>{tt.name}: {tt.track}</h3>
+          <div class="meta">{tt.car} · PP {tt.pp.toFixed(2)} · {TYRE_NAMES[tt.tyres as keyof typeof TYRE_NAMES] ?? tt.tyres}</div>
+          <div class="meta">{formatDate(tt.startDate)} to {formatDate(tt.endDate)}</div>
+          <div class="meta">
+            {rows.length
+              ? `${state === 'closed' ? 'Won by' : 'Led by'} ${driver(rows[0].psn)}, ${rows[0].time} · ${rows.length} driver${rows.length === 1 ? '' : 's'}`
+              : 'No laps yet'}
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+</Base>

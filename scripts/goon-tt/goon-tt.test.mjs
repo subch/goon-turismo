@@ -3,7 +3,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { createOcr, readRecordsScreen, lapToMs, msToLap, parsePp, parseRecordDate, parseNameLine, badgeColour } from './records-screen.mjs';
+import { createOcr, readRecordsScreen, parsePp, parseRecordDate, parseNameLine, badgeColour } from './records-screen.mjs';
+import { lapToMs, msToLap, gapText, board, status, runningTt } from './standings.mjs';
 import { checkLap, sameCar, carKey } from './check-lap.mjs';
 
 const FIXTURES = path.join(path.dirname(fileURLToPath(import.meta.url)), 'fixtures');
@@ -167,4 +168,27 @@ test('OCR reads the feature car off real records screens', { timeout: 120_000 },
   } finally {
     await ocr.terminate();
   }
+});
+
+const lap = (psn, timeMs, submittedAt = '2026-11-05T00:00:00Z') => ({ psn, timeMs, submittedAt });
+
+test("the board keeps each driver's best lap and scores it off the leader", () => {
+  const rows = board({ laps: [lap('travis', 88965), lap('dog_nougat', 87864), lap('travis', 89500)] });
+  assert.deepEqual(
+    rows.map(({ place, psn, time, gapMs, points, laps }) => ({ place, psn, time, gap: gapText(gapMs), points, laps })),
+    [
+      { place: 1, psn: 'dog_nougat', time: '1:27.864', gap: '', points: 100, laps: 1 },
+      { place: 2, psn: 'travis', time: '1:28.965', gap: '+1.101', points: 87, laps: 2 },
+    ]
+  );
+  assert.deepEqual(board({ laps: [] }), []);
+});
+
+test('a Goon TT is upcoming, running, then closed', () => {
+  const tt = { opensAt: '2026-11-04T06:00:00Z', closesAt: '2026-11-19T05:59:00Z' };
+  assert.equal(status(tt, new Date('2026-11-04T05:59:00Z')), 'upcoming');
+  assert.equal(status(tt, new Date('2026-11-10T12:00:00Z')), 'running');
+  assert.equal(status(tt, new Date('2026-11-19T05:59:00Z')), 'closed');
+  assert.equal(runningTt([tt], new Date('2026-11-10T12:00:00Z')), tt);
+  assert.equal(runningTt([tt], new Date('2026-12-01T00:00:00Z')), null);
 });

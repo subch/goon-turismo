@@ -8,7 +8,7 @@
  * proves a lap when one of its rows is that car and passes every rule; when
  * several do (the same car run more than once), the fastest counts.
  */
-import { msToLap } from './records-screen.mjs';
+import { msToLap } from './standings.mjs';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const showDate = (iso) => `${Number(iso.slice(8, 10))} ${MONTHS[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`;

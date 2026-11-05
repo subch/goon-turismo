@@ -21,13 +21,15 @@ const links = [
   { href: '/events/', label: 'Events' },
   { href: '/players/', label: 'Players' },
   { href: '/championships/', label: 'Championships' },
+  { href: '/goon-tt/', label: 'Goon TT' },
   { href: '/tunes/', label: 'Tunes' },
   { href: '/racing/', label: 'Racing' },
   { href: '/custom-events/submit/', label: 'Submit' },
 ];
-// Exact match for the GT7 sections; prefix match for /racing/, whose
-// season and event pages are all one section.
-const isActive = (href: string) => pathname === href || (href === '/racing/' && pathname.startsWith('/racing/'));
+// Exact match for the GT7 sections; prefix match for /racing/ and /goon-tt/,
+// whose deeper pages are all one section.
+const isActive = (href: string) =>
+  pathname === href || ((href === '/racing/' || href === '/goon-tt/') && pathname.startsWith(href));
 ---
 <!doctype html>
 <html lang="en">

@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { tunes } from '../../lib/data';
+import { tunes, goonTtsForTune } from '../../lib/data';
 
 export function getStaticPaths() {
   return tunes.map((t) => ({
@@ -11,12 +11,21 @@ export function getStaticPaths() {
 
 const { tune } = Astro.props;
 const settingsEntries = Object.entries(tune.settings || {});
+const usedIn = goonTtsForTune(tune.id);
 ---
 <Base title={tune.car}>
   <h1>{tune.car}</h1>
   <p class="subtitle">by <a href={`/players/${tune.owner}/`}>{tune.owner}</a>{tune.class ? ` · ${tune.class}` : ''}{tune.drivetrain ? ` · ${tune.drivetrain}` : ''}</p>
 
   {tune.description && <p>{tune.description}</p>}
+
+  {usedIn.length > 0 && (
+    <p>
+      Used in {usedIn.map((tt, i) => (
+        <>{i > 0 && ', '}<a href={`/goon-tt/${tt.id}/`}>{tt.name}: {tt.track}</a></>
+      ))}.
+    </p>
+  )}
 
   <h2>Parts</h2>
   <div class="panel">

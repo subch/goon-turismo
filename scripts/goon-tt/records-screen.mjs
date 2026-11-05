@@ -18,6 +18,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { createWorker, PSM } from 'tesseract.js';
 import { Jimp } from 'jimp';
+import { lapToMs } from './standings.mjs';
 
 const require = createRequire(import.meta.url);
 const LANG_PATH = path.join(path.dirname(require.resolve('@tesseract.js-data/eng/package.json')), '4.0.0_best_int');
@@ -144,19 +145,6 @@ async function read(ocr, page, { psm = PSM.SINGLE_LINE, chars = '' } = {}, debug
   if (debug) await writeFile(path.join(debug, `${name}.png`), png);
   const { data } = await ocr.recognize(png);
   return data.text.replace(/\s+/g, ' ').trim();
-}
-
-/** "1:27.864" -> 87864. Laps under a minute read "58.123". */
-export function lapToMs(text) {
-  const m = String(text ?? '').match(/(?:(\d{1,2}):)?(\d{2})\.(\d{3})/);
-  if (!m) return null;
-  return (Number(m[1] ?? 0) * 60 + Number(m[2])) * 1000 + Number(m[3]);
-}
-
-export function msToLap(ms) {
-  const min = Math.floor(ms / 60000);
-  const sec = ((ms % 60000) / 1000).toFixed(3).padStart(6, '0');
-  return min ? `${min}:${sec}` : sec;
 }
 
 /** The PP figure out of a badge or name line: "PP 605.25", "Gr.3 / PP 687.44". */

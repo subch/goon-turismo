@@ -20,10 +20,14 @@
  *      existing season; no event has an unknown source or a non-ISO date;
  *      nothing left over from the retired dg-edge pipeline.
  *   4. No player appears twice in one event's results.
+ *   5. Goon TTs (data/goon-tt/): every lap is a roster PSN with its proof
+ *      screenshot on file, set inside the window; the tune, if named,
+ *      exists; opensAt/closesAt are midnight and 23:59 Central on
+ *      startDate/endDate.
  *
  * Run locally with: npm run verify:data
  */
-import { readFile, readdir } from 'node:fs/promises';
+import { readFile, readdir, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { sameTimeTrial, seasonForEvent, seasonIsDerived, toIso } from './lib/seasons.mjs';
@@ -131,12 +135,67 @@ async function main() {
     for (const k of doubled.slice(0, 20)) fail(`  - ${k}`);
   } else console.log('OK: one result per player per event.');
 
+  // 5. Goon TTs
+  const goonTtProblems = await checkGoonTts();
+  if (goonTtProblems.length) {
+    fail(`${goonTtProblems.length} problem(s) in data/goon-tt/:`);
+    for (const p of goonTtProblems) fail(`  - ${p}`);
+  } else console.log('OK: every Goon TT lap has a roster driver, its proof and a date in the window.');
+
   if (failures.length) {
     console.error('\nData integrity check FAILED:');
     for (const f of failures) console.error(`FAIL: ${f}`);
     process.exit(1);
   }
   console.log('\nAll data integrity checks passed.');
+}
+
+/** The Central-time date and HH:MM of an instant. */
+function central(iso) {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/Chicago',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hourCycle: 'h23',
+    })
+      .formatToParts(new Date(iso))
+      .map((p) => [p.type, p.value])
+  );
+  return { date: `${parts.year}-${parts.month}-${parts.day}`, time: `${parts.hour}:${parts.minute}` };
+}
+
+async function checkGoonTts() {
+  const dir = path.join(DATA, 'goon-tt');
+  const files = (await readdir(dir).catch(() => [])).filter((f) => f.endsWith('.json'));
+  const roster = new Set((await loadJson('players.json', [])).map((p) => p.psn));
+  const tunes = new Set((await readdir(path.join(DATA, 'tunes')).catch(() => [])).map((f) => f.replace(/\.json$/, '')));
+  const problems = [];
+  for (const file of files) {
+    const tt = JSON.parse(await readFile(path.join(dir, file), 'utf-8'));
+    const at = tt.id ?? file;
+    if (`${tt.id}.json` !== file) problems.push(`${file}: id is "${tt.id}"`);
+    if (!ISO_RE.test(tt.startDate) || !ISO_RE.test(tt.endDate) || tt.startDate > tt.endDate) problems.push(`${at}: bad startDate/endDate`);
+    if (typeof tt.pp !== 'number' || !tt.car || !tt.tyres) problems.push(`${at}: needs car, pp and tyres`);
+    if (tt.tuneId && !tunes.has(tt.tuneId)) problems.push(`${at}: no tune "${tt.tuneId}"`);
+    const opens = central(tt.opensAt);
+    const closes = central(tt.closesAt);
+    if (opens.date !== tt.startDate || opens.time !== '00:00') problems.push(`${at}: opensAt is ${opens.date} ${opens.time} Central, not midnight on ${tt.startDate}`);
+    if (closes.date !== tt.endDate || closes.time !== '23:59') problems.push(`${at}: closesAt is ${closes.date} ${closes.time} Central, not 23:59 on ${tt.endDate}`);
+    for (const lap of tt.laps ?? []) {
+      const which = `${at}: ${lap.psn}'s ${lap.timeMs} ms lap`;
+      if (!roster.has(lap.psn)) problems.push(`${which} is not by a roster PSN`);
+      if (!Number.isInteger(lap.timeMs) || lap.timeMs <= 0) problems.push(`${which} has no lap time`);
+      if (!ISO_RE.test(lap.setOn) || lap.setOn < tt.startDate || lap.setOn > tt.endDate) problems.push(`${which} was set ${lap.setOn}, outside the window`);
+      if (!['hand', 'command', 'message'].includes(lap.via)) problems.push(`${which} has an unknown via "${lap.via}"`);
+      if (!lap.proof?.startsWith(`/goon-tt/${tt.id}/`)) problems.push(`${which} has no proof under /goon-tt/${tt.id}/`);
+      else await access(path.join(ROOT, 'public', lap.proof)).catch(() => problems.push(`${which}: proof ${lap.proof} is missing`));
+    }
+  }
+  return problems;
 }
 
 main().catch((err) => {
