@@ -8074,8 +8074,8 @@
   {
     "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
     "psn": "superpharts",
-    "timeRaw": "1:52.107",
-    "timeMs": 112107,
+    "timeRaw": "1:52.067",
+    "timeMs": 112067,
     "groupRank": 2,
     "points": 90
   },
@@ -8166,6 +8166,14 @@
     "timeMs": 121124,
     "groupRank": 2,
     "points": 99
+  },
+  {
+    "eventId": "tt-2026-11-02-nurburgring-gp",
+    "psn": "rickiep00h",
+    "timeRaw": "2:04.722",
+    "timeMs": 124722,
+    "groupRank": 3,
+    "points": 69
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
