@@ -13,7 +13,7 @@
     "sync:gridstats": "node scripts/sync-gridstats.mjs",
     "process:issue-result": "node scripts/process-issue-result.mjs",
     "import:historical-seasons": "node scripts/import-historical-seasons.mjs",
-    "test": "node --test scripts/racing/lib/time.test.mjs scripts/lib/dg-edge-events.test.mjs scripts/discord/discord.test.mjs",
+    "test": "node --test scripts/racing/lib/time.test.mjs scripts/lib/dg-edge-events.test.mjs scripts/discord/discord.test.mjs scripts/goon-tt/goon-tt.test.mjs",
     "post:discord": "node scripts/post-discord.mjs",
     "verify:data": "node scripts/verify-data-integrity.mjs",
     "scrape:racing": "node scripts/scrape-racing.mjs",
@@ -21,8 +21,11 @@
     "discord:check": "node scripts/discord-check.mjs"
   },
   "dependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
     "astro": "^4.16.0",
-    "pdf-parse": "^1.1.1"
+    "jimp": "^1.6.1",
+    "pdf-parse": "^1.1.1",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "cheerio": "^1.0.0"

@@ -152,6 +152,29 @@ npm run post:discord -- --dry-run --now 2026-10-22T17:00:00Z  # preview as of a 
    goon-turismo server and switch `GOON_DISCORD_CHANNEL_ID` to the crew's channel. A new channel
    starts its own record of what has been sent.
 
+## Goon TT screenshots
+
+Goon TTs are the crew's own two-week time trials in one shared tune, kept apart from the official
+Time Trials and the season standings. A lap counts with a screenshot of GT7's records screen (the
+World Circuits Time Trial lap list), read by OCR -- Tesseract, as tesseract.js with its English data
+bundled from npm, so it runs the same on the workstation and in goon-scraper with no system packages,
+no network and no per-use cost.
+
+- `scripts/goon-tt/records-screen.mjs` only reads. The screen is a fixed layout, so each field (car
+  name, PP badge, lap, date, the two tyre badges) is cut out by position in a 2000 x 1125 frame,
+  contrast-stretched, scaled up and read alone with only the characters it can hold. A tyre badge is
+  its letters plus its ring colour (white hard, yellow medium, red soft), and a row without a PP badge
+  ends the list. Any 16:9 console capture from 720p to 4K reads; anything else is refused.
+- `scripts/goon-tt/check-lap.mjs` holds the rules: the Goon TT's car (allowing an OCR slip, never a
+  different model year), PP to the hundredth, tyre compound front and rear, the date inside the window,
+  and the lap equal to the one typed. Several runs of the car on one screen: the fastest passing one.
+  Every refusal names what failed ("PP reads 615.23, this TT is 605.25").
+- `node scripts/goon-tt/read-screenshot.mjs <image> [--car <name>] [--debug <dir>]` prints what a
+  screenshot reads as; `--debug` writes each field as the image Tesseract was given, which is the
+  first thing to look at when a screenshot reads wrong.
+
+The tests run both on two real 1080p captures in `scripts/goon-tt/fixtures/`.
+
 ## Look
 
 Since 2026-09-26 the site wears the family chrome from music.subch.us and subch.us (Audiowide
