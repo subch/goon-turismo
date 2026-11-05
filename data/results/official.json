@@ -8081,10 +8081,18 @@
   },
   {
     "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
+    "psn": "dog_nougat",
+    "timeRaw": "1:52.346",
+    "timeMs": 112346,
+    "groupRank": 3,
+    "points": 88
+  },
+  {
+    "eventId": "tt-2026-10-22-circuit-de-barcelona-catalunya-gp-layout-no-chicane",
     "psn": "empire_of_ravens",
     "timeRaw": "1:52.527",
     "timeMs": 112527,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 86
   },
   {
@@ -8092,7 +8100,7 @@
     "psn": "devmotron",
     "timeRaw": "1:53.989",
     "timeMs": 113989,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 73
   },
   {
@@ -8100,7 +8108,7 @@
     "psn": "rickiep00h",
     "timeRaw": "1:54.095",
     "timeMs": 114095,
-    "groupRank": 5,
+    "groupRank": 6,
     "points": 72
   },
   {
