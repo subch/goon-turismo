@@ -238,7 +238,8 @@ test('a submitted screenshot is checked, kept as proof and put on the board', { 
       });
 
       const again = await submit({ root, image, psn: 'superpharts', via: 'message', now, ocr });
-      assert.deepEqual(again.reasons, ['1:28.965 is already on the board for superpharts']);
+      assert.deepEqual(again.reasons, ['1:28.965 is already on the board']);
+      assert.equal(again.message.content, "❌ Couldn't take **superpharts**' lap: 1:28.965 is already on the board.");
 
       const late = await submit({ root, image, psn: 'superpharts', via: 'message', now: new Date('2026-11-20T00:00:00Z'), ocr });
       assert.deepEqual(late.reasons, ['no Goon TT is running right now']);

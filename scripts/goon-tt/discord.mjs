@@ -63,6 +63,7 @@ export function acceptedMessage(tt, psn, lap, { name, now = new Date(), points }
 
 /** A lap that didn't: every reason, so the driver knows what to fix. */
 export function refusedMessage(psn, reasons, { name } = {}) {
-  const who = psn ? `**${md(name ? name(psn) : psn)}**'s lap` : 'that lap';
+  const shown = psn ? (name ? name(psn) : psn) : null;
+  const who = shown ? `**${md(shown)}**${/s$/i.test(shown) ? "'" : "'s"} lap` : 'that lap';
   return payload(`❌ Couldn't take ${who}: ${reasons.join('; ')}.`);
 }

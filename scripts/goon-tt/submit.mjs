@@ -52,7 +52,7 @@ export async function submit({ root = REPO, image, psn, time = null, via, now = 
 
   const { timeMs, setOn, setAt } = check.lap;
   if (tt.laps.some((l) => l.psn === psn && l.timeMs === timeMs)) {
-    return refuse([`${msToLap(timeMs)} is already on the board for ${psn}`], tt.id);
+    return refuse([`${msToLap(timeMs)} is already on the board`], tt.id);
   }
 
   const proof = `/goon-tt/${tt.id}/${psn}-${timeMs}${ext === '.jpeg' ? '.jpg' : ext}`;
