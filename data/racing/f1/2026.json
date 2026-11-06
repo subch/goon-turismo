@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-05T22:32:43.694Z",
+  "syncedAt": "2026-11-06T00:32:41.629Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15769,7 +15769,7 @@
       "country": "Brazil",
       "dateStart": "2026-11-06",
       "dateEnd": "2026-11-08",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.formula1.com/en/results/2026/races",
       "complete": false,
       "sessions": [

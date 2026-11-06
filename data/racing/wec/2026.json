@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-05T22:32:33.915Z",
+  "syncedAt": "2026-11-06T00:32:32.309Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -24876,7 +24876,7 @@
       "country": null,
       "dateStart": "2026-11-06",
       "dateEnd": "2026-11-08",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.fiawec.com/en/race/6-hours-of-monza-2026",
       "complete": false,
       "sessions": [
