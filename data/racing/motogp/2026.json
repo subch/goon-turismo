@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-08T12:32:12.059Z",
+  "syncedAt": "2026-11-08T14:32:12.223Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -123265,7 +123265,7 @@
           "name": "Race",
           "startUtc": "2026-11-08T14:15:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
@@ -124905,8 +124905,384 @@
           "name": "Race",
           "startUtc": "2026-11-08T13:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
-          "results": null
+          "status": "finished",
+          "results": [
+            {
+              "pos": 1,
+              "number": 22,
+              "name": "David Almansa",
+              "team": "Liqui Moly Dynavolt Intact GP",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:09.479",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 25,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": 31,
+              "name": "Adrian Fernandez",
+              "team": "Leopard Racing",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:11.995",
+              "gap": "2.516",
+              "interval": null,
+              "bestLap": null,
+              "points": 20,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": 28,
+              "name": "Maximo Quiles",
+              "team": "CFMOTO Gaviota Aspar Team",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:12.064",
+              "gap": "2.585",
+              "interval": null,
+              "bestLap": null,
+              "points": 16,
+              "status": null
+            },
+            {
+              "pos": 4,
+              "number": 9,
+              "name": "Veda Pratama",
+              "team": "Honda Team Asia",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:15.132",
+              "gap": "5.653",
+              "interval": null,
+              "bestLap": null,
+              "points": 13,
+              "status": null
+            },
+            {
+              "pos": 5,
+              "number": 83,
+              "name": "Alvaro Carpe",
+              "team": "Red Bull KTM Ajo",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:15.179",
+              "gap": "5.700",
+              "interval": null,
+              "bestLap": null,
+              "points": 11,
+              "status": null
+            },
+            {
+              "pos": 6,
+              "number": 66,
+              "name": "Joel Kelso",
+              "team": "GRYD Racing",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:15.433",
+              "gap": "5.954",
+              "interval": null,
+              "bestLap": null,
+              "points": 10,
+              "status": null
+            },
+            {
+              "pos": 7,
+              "number": 13,
+              "name": "Hakim Danish",
+              "team": "AEON Credit - MT Helmets - MSI",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:16.794",
+              "gap": "7.315",
+              "interval": null,
+              "bestLap": null,
+              "points": 9,
+              "status": null
+            },
+            {
+              "pos": 8,
+              "number": 64,
+              "name": "David Muñoz",
+              "team": "Liqui Moly Dynavolt Intact GP",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:20.860",
+              "gap": "11.381",
+              "interval": null,
+              "bestLap": null,
+              "points": 8,
+              "status": null
+            },
+            {
+              "pos": 9,
+              "number": 6,
+              "name": "Ryusei Yamanaka",
+              "team": "AEON Credit - MT Helmets - MSI",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:20.907",
+              "gap": "11.428",
+              "interval": null,
+              "bestLap": null,
+              "points": 7,
+              "status": null
+            },
+            {
+              "pos": 10,
+              "number": 19,
+              "name": "Scott Ogden",
+              "team": "CIP Green Power",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:20.944",
+              "gap": "11.465",
+              "interval": null,
+              "bestLap": null,
+              "points": 6,
+              "status": null
+            },
+            {
+              "pos": 11,
+              "number": 94,
+              "name": "Guido Pini",
+              "team": "Leopard Racing",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:21.054",
+              "gap": "11.575",
+              "interval": null,
+              "bestLap": null,
+              "points": 5,
+              "status": null
+            },
+            {
+              "pos": 12,
+              "number": 27,
+              "name": "Rico Salmela",
+              "team": "Red Bull KTM Tech3",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:21.461",
+              "gap": "11.982",
+              "interval": null,
+              "bestLap": null,
+              "points": 4,
+              "status": null
+            },
+            {
+              "pos": 13,
+              "number": 32,
+              "name": "Zen Mitani",
+              "team": "Honda Team Asia",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:21.870",
+              "gap": "12.391",
+              "interval": null,
+              "bestLap": null,
+              "points": 3,
+              "status": null
+            },
+            {
+              "pos": 14,
+              "number": 51,
+              "name": "Brian Uriarte",
+              "team": "Red Bull KTM Ajo",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:23.797",
+              "gap": "14.318",
+              "interval": null,
+              "bestLap": null,
+              "points": 2,
+              "status": null
+            },
+            {
+              "pos": 15,
+              "number": 97,
+              "name": "Marco Morelli",
+              "team": "CFMOTO Gaviota Aspar Team",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:24.630",
+              "gap": "15.151",
+              "interval": null,
+              "bestLap": null,
+              "points": 1,
+              "status": null
+            },
+            {
+              "pos": 16,
+              "number": 73,
+              "name": "Valentin Perrone",
+              "team": "Red Bull KTM Tech3",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:29.655",
+              "gap": "20.176",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 17,
+              "number": 54,
+              "name": "Jesus Rios",
+              "team": "Rivacold Snipers Team",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:29.776",
+              "gap": "20.297",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 18,
+              "number": 67,
+              "name": "Casey O'gorman",
+              "team": "SIC58 Squadra Corse",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:30.952",
+              "gap": "21.473",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 19,
+              "number": 85,
+              "name": "Kiattisak Singhapong",
+              "team": "Rivacold Snipers Team",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:43.272",
+              "gap": "33.793",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 20,
+              "number": 5,
+              "name": "Leo Rammerstorfer",
+              "team": "SIC58 Squadra Corse",
+              "make": "Honda",
+              "cls": null,
+              "laps": 16,
+              "time": "33:43.610",
+              "gap": "34.131",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 21,
+              "number": 21,
+              "name": "Ruche Moodley",
+              "team": "CODE Motorsports",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "33:46.074",
+              "gap": "36.595",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": 22,
+              "number": 45,
+              "name": "Kgopotso Mononyane",
+              "team": "CODE Motorsports",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "34:10.852",
+              "gap": "61.373",
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": null
+            },
+            {
+              "pos": null,
+              "number": 8,
+              "name": "Eddie O'shea",
+              "team": "GRYD Racing",
+              "make": "Honda",
+              "cls": null,
+              "laps": 5,
+              "time": "10:23.672",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Not classified"
+            },
+            {
+              "pos": null,
+              "number": 78,
+              "name": "Joel Esteban",
+              "team": "LEVEL UP - MTA",
+              "make": "KTM",
+              "cls": null,
+              "laps": 4,
+              "time": "08:20.142",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Not classified"
+            },
+            {
+              "pos": null,
+              "number": 11,
+              "name": "Adrian Cruces",
+              "team": "CIP Green Power",
+              "make": "KTM",
+              "cls": null,
+              "laps": 2,
+              "time": "04:14.024",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Not classified"
+            }
+          ]
         }
       ]
     },
@@ -125981,7 +126357,7 @@
           "number": 28,
           "team": "CFMOTO Gaviota Aspar Team",
           "make": "KTM",
-          "points": 376,
+          "points": 392,
           "wins": 11
         },
         {
@@ -125990,26 +126366,26 @@
           "number": 22,
           "team": "Liqui Moly Dynavolt Intact GP",
           "make": "KTM",
-          "points": 228,
-          "wins": 3
+          "points": 253,
+          "wins": 4
         },
         {
           "pos": 3,
-          "name": "Brian Uriarte",
-          "number": 51,
-          "team": "Red Bull KTM Ajo",
-          "make": "KTM",
-          "points": 205,
-          "wins": 2
-        },
-        {
-          "pos": 4,
           "name": "Alvaro Carpe",
           "number": 83,
           "team": "Red Bull KTM Ajo",
           "make": "KTM",
-          "points": 205,
+          "points": 216,
           "wins": 0
+        },
+        {
+          "pos": 4,
+          "name": "Brian Uriarte",
+          "number": 51,
+          "team": "Red Bull KTM Ajo",
+          "make": "KTM",
+          "points": 207,
+          "wins": 2
         },
         {
           "pos": 5,
@@ -126017,44 +126393,44 @@
           "number": 31,
           "team": "Leopard Racing",
           "make": "Honda",
-          "points": 157,
+          "points": 177,
           "wins": 0
         },
         {
           "pos": 6,
-          "name": "Marco Morelli",
-          "number": 97,
-          "team": "CFMOTO Gaviota Aspar Team",
-          "make": "KTM",
-          "points": 140,
-          "wins": 0
-        },
-        {
-          "pos": 7,
           "name": "Veda Pratama",
           "number": 9,
           "team": "Honda Team Asia",
           "make": "Honda",
-          "points": 131,
+          "points": 144,
+          "wins": 0
+        },
+        {
+          "pos": 7,
+          "name": "Marco Morelli",
+          "number": 97,
+          "team": "CFMOTO Gaviota Aspar Team",
+          "make": "KTM",
+          "points": 141,
           "wins": 0
         },
         {
           "pos": 8,
+          "name": "Hakim Danish",
+          "number": 13,
+          "team": "AEON Credit - MT Helmets - MSI",
+          "make": "KTM",
+          "points": 125,
+          "wins": 1
+        },
+        {
+          "pos": 9,
           "name": "Valentin Perrone",
           "number": 73,
           "team": "Red Bull KTM Tech3",
           "make": "KTM",
           "points": 121,
           "wins": 0
-        },
-        {
-          "pos": 9,
-          "name": "Hakim Danish",
-          "number": 13,
-          "team": "AEON Credit - MT Helmets - MSI",
-          "make": "KTM",
-          "points": 116,
-          "wins": 1
         },
         {
           "pos": 10,
@@ -126071,7 +126447,7 @@
           "number": 27,
           "team": "Red Bull KTM Tech3",
           "make": "KTM",
-          "points": 89,
+          "points": 93,
           "wins": 0
         },
         {
@@ -126080,7 +126456,7 @@
           "number": 94,
           "team": "Leopard Racing",
           "make": "Honda",
-          "points": 81,
+          "points": 86,
           "wins": 1
         },
         {
@@ -126103,6 +126479,24 @@
         },
         {
           "pos": 15,
+          "name": "Joel Kelso",
+          "number": 66,
+          "team": "GRYD Racing",
+          "make": "Honda",
+          "points": 74,
+          "wins": 0
+        },
+        {
+          "pos": 16,
+          "name": "David Muñoz",
+          "number": 64,
+          "team": "Liqui Moly Dynavolt Intact GP",
+          "make": "KTM",
+          "points": 72,
+          "wins": 0
+        },
+        {
+          "pos": 17,
           "name": "Eddie O'shea",
           "number": 8,
           "team": "GRYD Racing",
@@ -126111,7 +126505,7 @@
           "wins": 0
         },
         {
-          "pos": 16,
+          "pos": 18,
           "name": "Casey O'gorman",
           "number": 67,
           "team": "SIC58 Squadra Corse",
@@ -126120,25 +126514,16 @@
           "wins": 0
         },
         {
-          "pos": 17,
-          "name": "David Muñoz",
-          "number": 64,
-          "team": "Liqui Moly Dynavolt Intact GP",
-          "make": "KTM",
-          "points": 64,
-          "wins": 0
-        },
-        {
-          "pos": 18,
-          "name": "Joel Kelso",
-          "number": 66,
-          "team": "GRYD Racing",
-          "make": "Honda",
-          "points": 64,
-          "wins": 0
-        },
-        {
           "pos": 19,
+          "name": "Ryusei Yamanaka",
+          "number": 6,
+          "team": "AEON Credit - MT Helmets - MSI",
+          "make": "KTM",
+          "points": 53,
+          "wins": 0
+        },
+        {
+          "pos": 20,
           "name": "Jesus Rios",
           "number": 54,
           "team": "Rivacold Snipers Team",
@@ -126147,21 +126532,12 @@
           "wins": 0
         },
         {
-          "pos": 20,
-          "name": "Ryusei Yamanaka",
-          "number": 6,
-          "team": "AEON Credit - MT Helmets - MSI",
-          "make": "KTM",
-          "points": 46,
-          "wins": 0
-        },
-        {
           "pos": 21,
           "name": "Scott Ogden",
           "number": 19,
           "team": "CIP Green Power",
           "make": "KTM",
-          "points": 33,
+          "points": 39,
           "wins": 0
         },
         {
@@ -126175,6 +126551,15 @@
         },
         {
           "pos": 23,
+          "name": "Zen Mitani",
+          "number": 32,
+          "team": "Honda Team Asia",
+          "make": "Honda",
+          "points": 6,
+          "wins": 0
+        },
+        {
+          "pos": 24,
           "name": "Marcos Uriarte",
           "number": 88,
           "team": "CODE Motorsports",
@@ -126183,21 +126568,12 @@
           "wins": 0
         },
         {
-          "pos": 24,
+          "pos": 25,
           "name": "Cormac Buchanan",
           "number": 14,
           "team": "CODE Motorsports",
           "make": "KTM",
           "points": 5,
-          "wins": 0
-        },
-        {
-          "pos": 25,
-          "name": "Zen Mitani",
-          "number": 32,
-          "team": "Honda Team Asia",
-          "make": "Honda",
-          "points": 3,
           "wins": 0
         },
         {
@@ -126258,6 +126634,15 @@
           "pos": 32,
           "name": "Eduardo Gutierrez",
           "number": 41,
+          "team": "CODE Motorsports",
+          "make": "KTM",
+          "points": 0,
+          "wins": 0
+        },
+        {
+          "pos": 33,
+          "name": "Kgopotso Mononyane",
+          "number": 45,
           "team": "CODE Motorsports",
           "make": "KTM",
           "points": 0,

@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-08T12:32:44.925Z",
+  "syncedAt": "2026-11-08T14:32:34.502Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -27427,7 +27427,7 @@
           "name": "Race",
           "startUtc": "2026-11-08T10:00:00.000Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
@@ -27437,7 +27437,7 @@
           "name": "Race",
           "startUtc": "2026-11-08T10:00:00.000Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
@@ -27447,7 +27447,7 @@
           "name": "Race",
           "startUtc": "2026-11-08T10:00:00.000Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         }
       ]
