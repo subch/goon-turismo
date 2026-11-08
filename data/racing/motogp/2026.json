@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-08T16:32:12.227Z",
+  "syncedAt": "2026-11-08T18:32:12.336Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -121520,8 +121520,249 @@
           "name": "Race",
           "startUtc": "2026-11-08T16:00:00.000Z",
           "endUtc": null,
-          "status": "live",
-          "results": null
+          "status": "finished",
+          "results": [
+            {
+              "pos": 1,
+              "number": 72,
+              "name": "Marco Bezzecchi",
+              "team": "Aprilia Racing",
+              "make": "Aprilia",
+              "cls": null,
+              "laps": 22,
+              "time": "41:29.173",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 25,
+              "status": null
+            },
+            {
+              "pos": 2,
+              "number": 93,
+              "name": "Marc Marquez",
+              "team": "Ducati Lenovo Team",
+              "make": "Ducati",
+              "cls": null,
+              "laps": 22,
+              "time": "41:32.256",
+              "gap": "3.083",
+              "interval": null,
+              "bestLap": null,
+              "points": 20,
+              "status": null
+            },
+            {
+              "pos": 3,
+              "number": 25,
+              "name": "Raul Fernandez",
+              "team": "SuperFile Trackhouse MotoGP Team",
+              "make": "Aprilia",
+              "cls": null,
+              "laps": 22,
+              "time": "41:32.787",
+              "gap": "3.614",
+              "interval": null,
+              "bestLap": null,
+              "points": 16,
+              "status": null
+            },
+            {
+              "pos": 4,
+              "number": 79,
+              "name": "Ai Ogura",
+              "team": "SuperFile Trackhouse MotoGP Team",
+              "make": "Aprilia",
+              "cls": null,
+              "laps": 22,
+              "time": "41:34.058",
+              "gap": "4.885",
+              "interval": null,
+              "bestLap": null,
+              "points": 13,
+              "status": null
+            },
+            {
+              "pos": 5,
+              "number": 23,
+              "name": "Enea Bastianini",
+              "team": "Red Bull KTM Tech3",
+              "make": "KTM",
+              "cls": null,
+              "laps": 22,
+              "time": "41:36.121",
+              "gap": "6.948",
+              "interval": null,
+              "bestLap": null,
+              "points": 11,
+              "status": null
+            },
+            {
+              "pos": 6,
+              "number": 37,
+              "name": "Pedro Acosta",
+              "team": "Red Bull KTM Factory Racing",
+              "make": "KTM",
+              "cls": null,
+              "laps": 22,
+              "time": "41:36.586",
+              "gap": "7.413",
+              "interval": null,
+              "bestLap": null,
+              "points": 10,
+              "status": null
+            },
+            {
+              "pos": 7,
+              "number": 89,
+              "name": "Jorge Martin",
+              "team": "Aprilia Racing",
+              "make": "Aprilia",
+              "cls": null,
+              "laps": 22,
+              "time": "41:43.196",
+              "gap": "14.023",
+              "interval": null,
+              "bestLap": null,
+              "points": 9,
+              "status": null
+            },
+            {
+              "pos": 8,
+              "number": 49,
+              "name": "Fabio Di Giannantonio",
+              "team": "Pertamina Enduro VR46 Racing Team",
+              "make": "Ducati",
+              "cls": null,
+              "laps": 22,
+              "time": "41:44.690",
+              "gap": "15.517",
+              "interval": null,
+              "bestLap": null,
+              "points": 8,
+              "status": null
+            },
+            {
+              "pos": 9,
+              "number": 5,
+              "name": "Johann Zarco",
+              "team": "Castrol Honda LCR",
+              "make": "Honda",
+              "cls": null,
+              "laps": 22,
+              "time": "41:45.430",
+              "gap": "16.257",
+              "interval": null,
+              "bestLap": null,
+              "points": 7,
+              "status": null
+            },
+            {
+              "pos": 10,
+              "number": 27,
+              "name": "Iker Lecuona",
+              "team": "BK8 Gresini Racing MotoGP",
+              "make": "Ducati",
+              "cls": null,
+              "laps": 22,
+              "time": "41:47.131",
+              "gap": "17.958",
+              "interval": null,
+              "bestLap": null,
+              "points": 6,
+              "status": null
+            },
+            {
+              "pos": 11,
+              "number": 21,
+              "name": "Franco Morbidelli",
+              "team": "Pertamina Enduro VR46 Racing Team",
+              "make": "Ducati",
+              "cls": null,
+              "laps": 22,
+              "time": "41:49.448",
+              "gap": "20.275",
+              "interval": null,
+              "bestLap": null,
+              "points": 5,
+              "status": null
+            },
+            {
+              "pos": 12,
+              "number": 54,
+              "name": "Fermin Aldeguer",
+              "team": "BK8 Gresini Racing MotoGP",
+              "make": "Ducati",
+              "cls": null,
+              "laps": 22,
+              "time": "41:49.749",
+              "gap": "20.576",
+              "interval": null,
+              "bestLap": null,
+              "points": 4,
+              "status": null
+            },
+            {
+              "pos": 13,
+              "number": 12,
+              "name": "Maverick Viñales",
+              "team": "Red Bull KTM Tech3",
+              "make": "KTM",
+              "cls": null,
+              "laps": 22,
+              "time": "41:50.268",
+              "gap": "21.095",
+              "interval": null,
+              "bestLap": null,
+              "points": 3,
+              "status": null
+            },
+            {
+              "pos": 14,
+              "number": 96,
+              "name": "Jake Dixon",
+              "team": "Honda HRC Castrol",
+              "make": "Honda",
+              "cls": null,
+              "laps": 22,
+              "time": "41:57.907",
+              "gap": "28.734",
+              "interval": null,
+              "bestLap": null,
+              "points": 2,
+              "status": null
+            },
+            {
+              "pos": null,
+              "number": 33,
+              "name": "Brad Binder",
+              "team": "Red Bull KTM Factory Racing",
+              "make": "KTM",
+              "cls": null,
+              "laps": 16,
+              "time": "31:01.657",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Not classified"
+            },
+            {
+              "pos": null,
+              "number": 11,
+              "name": "Diogo Moreira",
+              "team": "Pro Honda LCR",
+              "make": "Honda",
+              "cls": null,
+              "laps": 15,
+              "time": "28:56.916",
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": 0,
+              "status": "Not classified"
+            }
+          ]
         },
         {
           "id": "44a8e175-fed6-42d5-b553-53dbe99905f5",
@@ -126137,7 +126378,7 @@
           "number": 93,
           "team": "Ducati Lenovo Team",
           "make": "Ducati",
-          "points": 411,
+          "points": 431,
           "wins": 7
         },
         {
@@ -126146,7 +126387,7 @@
           "number": 89,
           "team": "Aprilia Racing",
           "make": "Aprilia",
-          "points": 362,
+          "points": 371,
           "wins": 1
         },
         {
@@ -126155,8 +126396,8 @@
           "number": 72,
           "team": "Aprilia Racing",
           "make": "Aprilia",
-          "points": 332,
-          "wins": 5
+          "points": 357,
+          "wins": 6
         },
         {
           "pos": 4,
@@ -126164,7 +126405,7 @@
           "number": 37,
           "team": "Red Bull KTM Factory Racing",
           "make": "KTM",
-          "points": 299,
+          "points": 309,
           "wins": 1
         },
         {
@@ -126173,7 +126414,7 @@
           "number": 79,
           "team": "SuperFile Trackhouse MotoGP Team",
           "make": "Aprilia",
-          "points": 281,
+          "points": 294,
           "wins": 1
         },
         {
@@ -126182,7 +126423,7 @@
           "number": 49,
           "team": "Pertamina Enduro VR46 Racing Team",
           "make": "Ducati",
-          "points": 274,
+          "points": 282,
           "wins": 1
         },
         {
@@ -126191,7 +126432,7 @@
           "number": 25,
           "team": "SuperFile Trackhouse MotoGP Team",
           "make": "Aprilia",
-          "points": 242,
+          "points": 258,
           "wins": 1
         },
         {
@@ -126218,7 +126459,7 @@
           "number": 23,
           "team": "Red Bull KTM Tech3",
           "make": "KTM",
-          "points": 136,
+          "points": 147,
           "wins": 0
         },
         {
@@ -126227,7 +126468,7 @@
           "number": 54,
           "team": "BK8 Gresini Racing MotoGP",
           "make": "Ducati",
-          "points": 125,
+          "points": 129,
           "wins": 0
         },
         {
@@ -126272,7 +126513,7 @@
           "number": 21,
           "team": "Pertamina Enduro VR46 Racing Team",
           "make": "Ducati",
-          "points": 65,
+          "points": 70,
           "wins": 0
         },
         {
@@ -126281,7 +126522,7 @@
           "number": 5,
           "team": "Castrol Honda LCR",
           "make": "Honda",
-          "points": 56,
+          "points": 63,
           "wins": 0
         },
         {
@@ -126313,6 +126554,15 @@
         },
         {
           "pos": 21,
+          "name": "Iker Lecuona",
+          "number": 27,
+          "team": "BK8 Gresini Racing MotoGP",
+          "make": "Ducati",
+          "points": 18,
+          "wins": 0
+        },
+        {
+          "pos": 22,
           "name": "Toprak Razgatlioglu",
           "number": 7,
           "team": "Prima Pramac Yamaha MotoGP",
@@ -126321,21 +126571,12 @@
           "wins": 0
         },
         {
-          "pos": 22,
+          "pos": 23,
           "name": "Maverick Viñales",
           "number": 12,
           "team": "Red Bull KTM Tech3",
           "make": "KTM",
-          "points": 14,
-          "wins": 0
-        },
-        {
-          "pos": 23,
-          "name": "Iker Lecuona",
-          "number": 27,
-          "team": "BK8 Gresini Racing MotoGP",
-          "make": "Ducati",
-          "points": 12,
+          "points": 17,
           "wins": 0
         },
         {
@@ -126376,18 +126617,18 @@
         },
         {
           "pos": 28,
-          "name": "Cal Crutchlow",
-          "number": 35,
-          "team": "Castrol Honda LCR",
+          "name": "Jake Dixon",
+          "number": 96,
+          "team": "Honda HRC Castrol",
           "make": "Honda",
-          "points": 0,
+          "points": 2,
           "wins": 0
         },
         {
           "pos": 29,
-          "name": "Jake Dixon",
-          "number": 96,
-          "team": "Honda HRC Castrol",
+          "name": "Cal Crutchlow",
+          "number": 35,
+          "team": "Castrol Honda LCR",
           "make": "Honda",
           "points": 0,
           "wins": 0
