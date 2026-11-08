@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-11-08T00:47:02.285Z",
-  "finishedAt": "2026-11-08T00:49:04.406Z",
+  "startedAt": "2026-11-08T06:00:02.865Z",
+  "finishedAt": "2026-11-08T06:02:05.758Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,7 +15,7 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "98"
+      "remaining": "96"
     },
     "errors": []
   },
@@ -23,9 +23,7 @@
     "playersScraped": 18,
     "playersTotal": 24,
     "eventsTouched": 10,
-    "eventsCreated": [
-      "tt-2026-11-05-fuji-international-speedway"
-    ],
+    "eventsCreated": [],
     "cutoffIso": "2026-10-01",
     "warnings": 7
   }
