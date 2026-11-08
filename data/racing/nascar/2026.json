@@ -4,7 +4,7 @@
   "shortName": "NASCAR",
   "tier": "other",
   "season": 2026,
-  "syncedAt": "2026-11-08T18:33:04.096Z",
+  "syncedAt": "2026-11-08T20:33:11.638Z",
   "source": {
     "name": "nascar.com results",
     "url": "https://www.nascar.com/results/"
@@ -62512,7 +62512,7 @@
           "name": "NASCAR Cup Series Championship Race",
           "startUtc": "2026-11-08T20:00:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         }
       ]
