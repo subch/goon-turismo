@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-08T22:32:41.986Z",
+  "syncedAt": "2026-11-09T00:32:39.911Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15769,9 +15769,9 @@
       "country": "Brazil",
       "dateStart": "2026-11-06",
       "dateEnd": "2026-11-08",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.formula1.com/en/results/2026/races",
-      "complete": false,
+      "complete": true,
       "sessions": [
         {
           "id": "20-firstpractice",
@@ -16164,7 +16164,7 @@
               "time": "1:35:23.504",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:12.983",
               "points": 25,
               "status": "Finished"
             },
@@ -16179,7 +16179,7 @@
               "time": null,
               "gap": "+14.602",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:13.131",
               "points": 18,
               "status": "Finished"
             },
@@ -16194,7 +16194,7 @@
               "time": null,
               "gap": "+24.485",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:12.877",
               "points": 15,
               "status": "Finished"
             },
@@ -16209,7 +16209,7 @@
               "time": null,
               "gap": "+33.991",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.040",
               "points": 12,
               "status": "Finished"
             },
@@ -16222,9 +16222,9 @@
               "cls": null,
               "laps": "71",
               "time": null,
-              "gap": "+36.017",
+              "gap": "+41.017",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:12.689",
               "points": 10,
               "status": "Finished"
             },
@@ -16239,27 +16239,12 @@
               "time": null,
               "gap": "+56.475",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:13.018",
               "points": 8,
               "status": "Finished"
             },
             {
               "pos": 7,
-              "number": "16",
-              "name": "Charles Leclerc",
-              "team": "Ferrari",
-              "make": null,
-              "cls": null,
-              "laps": "71",
-              "time": null,
-              "gap": "+1:13.586",
-              "interval": null,
-              "bestLap": null,
-              "points": 6,
-              "status": "Finished"
-            },
-            {
-              "pos": 8,
               "number": "30",
               "name": "Liam Lawson",
               "team": "RB F1 Team",
@@ -16269,7 +16254,22 @@
               "time": null,
               "gap": "+1:15.402",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:13.495",
+              "points": 6,
+              "status": "Finished"
+            },
+            {
+              "pos": 8,
+              "number": "16",
+              "name": "Charles Leclerc",
+              "team": "Ferrari",
+              "make": null,
+              "cls": null,
+              "laps": "71",
+              "time": null,
+              "gap": "+1:18.586",
+              "interval": null,
+              "bestLap": "1:14.170",
               "points": 4,
               "status": "Finished"
             },
@@ -16284,7 +16284,7 @@
               "time": null,
               "gap": "+4.427",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:13.724",
               "points": 2,
               "status": "Lapped"
             },
@@ -16299,7 +16299,7 @@
               "time": null,
               "gap": "+17.105",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.000",
               "points": 1,
               "status": "Lapped"
             },
@@ -16314,7 +16314,7 @@
               "time": null,
               "gap": "+19.130",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.004",
               "points": 0,
               "status": "Lapped"
             },
@@ -16329,7 +16329,7 @@
               "time": null,
               "gap": "+36.856",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.706",
               "points": 0,
               "status": "Lapped"
             },
@@ -16344,7 +16344,7 @@
               "time": null,
               "gap": "+50.488",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:13.710",
               "points": 0,
               "status": "Lapped"
             },
@@ -16359,7 +16359,7 @@
               "time": null,
               "gap": "+58.677",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.462",
               "points": 0,
               "status": "Lapped"
             },
@@ -16374,7 +16374,7 @@
               "time": null,
               "gap": "+1:04.101",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.464",
               "points": 0,
               "status": "Lapped"
             },
@@ -16389,7 +16389,7 @@
               "time": null,
               "gap": "+1:16.420",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.940",
               "points": 0,
               "status": "Lapped"
             },
@@ -16402,9 +16402,9 @@
               "cls": null,
               "laps": "70",
               "time": null,
-              "gap": "+1:26.711",
+              "gap": "+1:31.711",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.036",
               "points": 0,
               "status": "Lapped"
             },
@@ -16419,7 +16419,7 @@
               "time": null,
               "gap": "+27.120",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:16.123",
               "points": 0,
               "status": "Lapped"
             },
@@ -16434,7 +16434,7 @@
               "time": null,
               "gap": "+32.463",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.613",
               "points": 0,
               "status": "Lapped"
             },
@@ -16449,7 +16449,7 @@
               "time": null,
               "gap": "+51.715",
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:14.369",
               "points": 0,
               "status": "Lapped"
             },
@@ -16464,7 +16464,7 @@
               "time": null,
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:17.430",
               "points": 0,
               "status": "Retired"
             },
@@ -16734,7 +16734,7 @@
           "number": "16",
           "team": "Ferrari",
           "make": null,
-          "points": 251,
+          "points": 249,
           "wins": 1
         },
         {
@@ -16770,7 +16770,7 @@
           "number": "30",
           "team": "RB F1 Team / Red Bull",
           "make": null,
-          "points": 87,
+          "points": 89,
           "wins": 0
         },
         {
@@ -16939,7 +16939,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 512,
+          "points": 510,
           "wins": 2
         },
         {
@@ -16966,7 +16966,7 @@
           "number": null,
           "team": null,
           "make": null,
-          "points": 112,
+          "points": 114,
           "wins": 0
         },
         {

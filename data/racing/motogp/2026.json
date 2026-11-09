@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-08T22:32:12.020Z",
+  "syncedAt": "2026-11-09T00:32:12.363Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -119797,9 +119797,9 @@
       "country": "Qatar",
       "dateStart": "2026-11-06",
       "dateEnd": "2026-11-08",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.motogp.com/en/gp-results/2026/qat/motogp/rac/classification",
-      "complete": false,
+      "complete": true,
       "sessions": [
         {
           "id": "d1022c09-0af2-4e5d-b4ac-fba02562fb0c",
