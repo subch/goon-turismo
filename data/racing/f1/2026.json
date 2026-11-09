@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-09T18:32:40.399Z",
+  "syncedAt": "2026-11-09T20:32:38.716Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15820,12 +15820,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:27.470",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:30.939 / 1:29.207 / 1:27.470",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 2,
@@ -15835,12 +15835,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:27.674",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:31.206 / 1:26.745 / 1:27.674",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 3,
@@ -15850,12 +15850,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:28.095",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.229 / 1:29.302 / 1:28.095",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 4,
@@ -15865,12 +15865,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:28.289",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.121 / 1:28.082 / 1:28.289",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 5,
@@ -15880,12 +15880,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:28.321",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.085 / 1:27.049 / 1:28.321",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 6,
@@ -15895,12 +15895,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:28.668",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:31.693 / 1:28.361 / 1:28.668",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 7,
@@ -15910,12 +15910,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:28.763",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.059 / 1:27.218 / 1:28.763",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 8,
@@ -15925,12 +15925,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:29.831",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:33.030 / 1:29.130 / 1:29.831",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 9,
@@ -15940,12 +15940,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:30.311",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.092 / 1:29.072 / 1:30.311",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 10,
@@ -15955,12 +15955,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:30.456",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:33.150 / 1:28.918 / 1:30.456",
               "points": null,
-              "status": null
+              "status": "Q3"
             },
             {
               "pos": 11,
@@ -15970,12 +15970,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:30.001",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:31.666 / 1:30.001",
               "points": null,
-              "status": null
+              "status": "Q2"
             },
             {
               "pos": 12,
@@ -15985,12 +15985,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:30.369",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.251 / 1:30.369",
               "points": null,
-              "status": null
+              "status": "Q2"
             },
             {
               "pos": 13,
@@ -16000,12 +16000,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:31.515",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.809 / 1:31.515",
               "points": null,
-              "status": null
+              "status": "Q2"
             },
             {
               "pos": 14,
@@ -16015,12 +16015,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:31.687",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.306 / 1:31.687",
               "points": null,
-              "status": null
+              "status": "Q2"
             },
             {
               "pos": 15,
@@ -16030,12 +16030,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:31.785",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:32.959 / 1:31.785",
               "points": null,
-              "status": null
+              "status": "Q2"
             },
             {
               "pos": 16,
@@ -16045,12 +16045,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:31.238",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:31.238",
               "points": null,
-              "status": null
+              "status": "Q1"
             },
             {
               "pos": 17,
@@ -16060,12 +16060,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:33.327",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:33.327",
               "points": null,
-              "status": null
+              "status": "Q1"
             },
             {
               "pos": 18,
@@ -16075,12 +16075,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:33.449",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:33.449",
               "points": null,
-              "status": null
+              "status": "Q1"
             },
             {
               "pos": 19,
@@ -16090,12 +16090,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:33.653",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:33.653",
               "points": null,
-              "status": null
+              "status": "Q1"
             },
             {
               "pos": 20,
@@ -16105,12 +16105,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:33.774",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:33.774",
               "points": null,
-              "status": null
+              "status": "Q1"
             },
             {
               "pos": 21,
@@ -16120,12 +16120,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:34.509",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:34.509",
               "points": null,
-              "status": null
+              "status": "Q1"
             },
             {
               "pos": 22,
@@ -16135,12 +16135,12 @@
               "make": null,
               "cls": null,
               "laps": null,
-              "time": null,
+              "time": "1:41.564",
               "gap": null,
               "interval": null,
-              "bestLap": null,
+              "bestLap": "1:41.564",
               "points": null,
-              "status": null
+              "status": "Q1"
             }
           ]
         },
