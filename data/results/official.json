@@ -8154,8 +8154,8 @@
   {
     "eventId": "tt-2026-11-02-nurburgring-gp",
     "psn": "bravemen84",
-    "timeRaw": "2:00.982",
-    "timeMs": 120982,
+    "timeRaw": "1:59.830",
+    "timeMs": 119830,
     "groupRank": 1,
     "points": 100
   },
@@ -8165,7 +8165,7 @@
     "timeRaw": "2:01.124",
     "timeMs": 121124,
     "groupRank": 2,
-    "points": 99
+    "points": 89
   },
   {
     "eventId": "tt-2026-11-02-nurburgring-gp",
@@ -8173,7 +8173,7 @@
     "timeRaw": "2:04.722",
     "timeMs": 124722,
     "groupRank": 3,
-    "points": 69
+    "points": 59
   },
   {
     "eventId": "tt-2026-11-05-fuji-international-speedway",
