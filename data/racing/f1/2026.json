@@ -4,7 +4,7 @@
   "shortName": "F1",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-12T16:32:39.917Z",
+  "syncedAt": "2026-11-12T18:32:38.821Z",
   "source": {
     "name": "Jolpica F1 API (Ergast successor)",
     "url": "https://api.jolpi.ca/"
@@ -15235,21 +15235,6 @@
               "status": "Q3"
             },
             {
-              "pos": 8,
-              "number": "30",
-              "name": "Liam Lawson",
-              "team": "RB F1 Team",
-              "make": null,
-              "cls": null,
-              "laps": null,
-              "time": "1:17.029",
-              "gap": null,
-              "interval": null,
-              "bestLap": null,
-              "points": null,
-              "status": "Q3"
-            },
-            {
               "pos": 9,
               "number": "10",
               "name": "Pierre Gasly",
@@ -15413,6 +15398,21 @@
               "bestLap": "1:19.852",
               "points": null,
               "status": "Q1"
+            },
+            {
+              "pos": 22,
+              "number": "30",
+              "name": "Liam Lawson",
+              "team": "RB F1 Team",
+              "make": null,
+              "cls": null,
+              "laps": null,
+              "time": null,
+              "gap": null,
+              "interval": null,
+              "bestLap": null,
+              "points": null,
+              "status": null
             }
           ]
         },
