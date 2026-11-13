@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-11-13T06:47:02.290Z",
-  "finishedAt": "2026-11-13T06:48:08.645Z",
+  "startedAt": "2026-11-13T12:47:02.391Z",
+  "finishedAt": "2026-11-13T12:49:11.458Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,7 +15,7 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "94"
+      "remaining": "92"
     },
     "errors": []
   },
@@ -23,9 +23,7 @@
     "playersScraped": 18,
     "playersTotal": 24,
     "eventsTouched": 11,
-    "eventsCreated": [
-      "tt-2026-11-12-watkins-glen-long-course"
-    ],
+    "eventsCreated": [],
     "cutoffIso": "2026-10-01",
     "warnings": 7
   }
