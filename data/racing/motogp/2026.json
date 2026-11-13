@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-13T10:32:11.355Z",
+  "syncedAt": "2026-11-13T12:32:11.746Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -125954,7 +125954,7 @@
           "name": "FP1",
           "startUtc": "2026-11-13T10:45:00.000Z",
           "endUtc": null,
-          "status": "upcoming",
+          "status": "live",
           "results": null
         },
         {
