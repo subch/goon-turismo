@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-13T16:32:10.008Z",
+  "syncedAt": "2026-11-13T18:32:10.658Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -126044,7 +126044,7 @@
           "name": "Practice",
           "startUtc": "2026-11-13T14:05:00.000Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
@@ -126104,7 +126104,7 @@
           "name": "Practice",
           "startUtc": "2026-11-13T13:15:00.000Z",
           "endUtc": null,
-          "status": "live",
+          "status": "finished",
           "results": null
         },
         {
