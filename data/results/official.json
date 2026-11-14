@@ -8169,10 +8169,18 @@
   },
   {
     "eventId": "tt-2026-11-02-nurburgring-gp",
+    "psn": "superpharts",
+    "timeRaw": "2:02.065",
+    "timeMs": 122065,
+    "groupRank": 3,
+    "points": 81
+  },
+  {
+    "eventId": "tt-2026-11-02-nurburgring-gp",
     "psn": "rickiep00h",
     "timeRaw": "2:02.662",
     "timeMs": 122662,
-    "groupRank": 3,
+    "groupRank": 4,
     "points": 76
   },
   {
@@ -8182,6 +8190,14 @@
     "timeMs": 101946,
     "groupRank": 1,
     "points": 100
+  },
+  {
+    "eventId": "tt-2026-11-05-fuji-international-speedway",
+    "psn": "superpharts",
+    "timeRaw": "1:42.650",
+    "timeMs": 102650,
+    "groupRank": 2,
+    "points": 93
   },
   {
     "eventId": "tt-2026-11-12-watkins-glen-long-course",
