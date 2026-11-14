@@ -8185,11 +8185,19 @@
   },
   {
     "eventId": "tt-2026-11-12-watkins-glen-long-course",
+    "psn": "bravemen84",
+    "timeRaw": "2:12.473",
+    "timeMs": 132473,
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "tt-2026-11-12-watkins-glen-long-course",
     "psn": "superpharts",
     "timeRaw": "2:13.616",
     "timeMs": 133616,
-    "groupRank": 1,
-    "points": 100
+    "groupRank": 2,
+    "points": 91
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
