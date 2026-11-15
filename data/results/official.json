@@ -8178,10 +8178,10 @@
   {
     "eventId": "tt-2026-11-02-nurburgring-gp",
     "psn": "rickiep00h",
-    "timeRaw": "2:02.662",
-    "timeMs": 122662,
+    "timeRaw": "2:02.465",
+    "timeMs": 122465,
     "groupRank": 4,
-    "points": 76
+    "points": 78
   },
   {
     "eventId": "tt-2026-11-05-fuji-international-speedway",
@@ -8200,6 +8200,14 @@
     "points": 93
   },
   {
+    "eventId": "tt-2026-11-05-fuji-international-speedway",
+    "psn": "dog_nougat",
+    "timeRaw": "1:43.413",
+    "timeMs": 103413,
+    "groupRank": 3,
+    "points": 86
+  },
+  {
     "eventId": "tt-2026-11-12-watkins-glen-long-course",
     "psn": "bravemen84",
     "timeRaw": "2:12.473",
@@ -8214,6 +8222,22 @@
     "timeMs": 133616,
     "groupRank": 2,
     "points": 91
+  },
+  {
+    "eventId": "tt-2026-11-12-watkins-glen-long-course",
+    "psn": "dog_nougat",
+    "timeRaw": "2:14.905",
+    "timeMs": 134905,
+    "groupRank": 3,
+    "points": 82
+  },
+  {
+    "eventId": "tt-2026-11-12-watkins-glen-long-course",
+    "psn": "rickiep00h",
+    "timeRaw": "2:17.152",
+    "timeMs": 137152,
+    "groupRank": 4,
+    "points": 65
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
