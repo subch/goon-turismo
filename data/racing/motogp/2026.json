@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-19T16:32:10.773Z",
+  "syncedAt": "2026-11-19T18:32:10.900Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -126822,7 +126822,7 @@
         },
         {
           "pos": 17,
-          "name": "Deniz Öncü",
+          "name": "Deniz öncü",
           "number": 53,
           "team": "ELF Marc VDS Racing Team",
           "make": "Boscoscuro",
