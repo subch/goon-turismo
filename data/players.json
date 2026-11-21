@@ -296,9 +296,9 @@
       "sr": "S",
       "countryCode": "US",
       "stats": {
-        "dr_points": 5504,
-        "dr_ratio": 0.25067,
-        "total_races": 841,
+        "dr_points": 5931,
+        "dr_ratio": 0.32183,
+        "total_races": 842,
         "victories": 24,
         "poles": 21,
         "fastest_laps": 20,
@@ -307,9 +307,9 @@
         "license": "Master S",
         "garage_count": 506,
         "collection_progress": "100%",
-        "total_credits": 779374450,
-        "play_time_readable": "1,559h 7m",
-        "distance_km": "196,400.1"
+        "total_credits": 779459250,
+        "play_time_readable": "1,560h 12m",
+        "distance_km": "196,553.7"
       }
     }
   },
