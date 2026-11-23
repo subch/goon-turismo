@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-22T22:32:10.601Z",
+  "syncedAt": "2026-11-23T00:32:11.243Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -125943,9 +125943,9 @@
       "country": "Portugal",
       "dateStart": "2026-11-20",
       "dateEnd": "2026-11-22",
-      "status": "live",
+      "status": "finished",
       "officialUrl": "https://www.motogp.com/en/gp-results/2026/por/motogp/rac/classification",
-      "complete": false,
+      "complete": true,
       "sessions": [
         {
           "id": "82b84060-798d-46ff-94e7-24980722afcf",
