@@ -8257,10 +8257,18 @@
   },
   {
     "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
+    "psn": "dog_nougat",
+    "timeRaw": "1:24.115",
+    "timeMs": 84115,
+    "groupRank": 2,
+    "points": 95
+  },
+  {
+    "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
     "psn": "rickiep00h",
     "timeRaw": "1:32.070",
     "timeMs": 92070,
-    "groupRank": 2,
+    "groupRank": 3,
     "points": 0
   },
   {
