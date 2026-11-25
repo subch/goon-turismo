@@ -8249,19 +8249,19 @@
   },
   {
     "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
-    "psn": "empire_of_ravens",
-    "timeRaw": "1:23.487",
-    "timeMs": 83487,
+    "psn": "bravemen84",
+    "timeRaw": "1:22.934",
+    "timeMs": 82934,
     "groupRank": 1,
     "points": 100
   },
   {
     "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
-    "psn": "bravemen84",
-    "timeRaw": "1:23.737",
-    "timeMs": 83737,
+    "psn": "empire_of_ravens",
+    "timeRaw": "1:23.487",
+    "timeMs": 83487,
     "groupRank": 2,
-    "points": 97
+    "points": 93
   },
   {
     "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
@@ -8269,7 +8269,7 @@
     "timeRaw": "1:24.115",
     "timeMs": 84115,
     "groupRank": 3,
-    "points": 92
+    "points": 86
   },
   {
     "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
@@ -8277,7 +8277,7 @@
     "timeRaw": "1:32.070",
     "timeMs": 92070,
     "groupRank": 4,
-    "points": -3
+    "points": -10
   },
   {
     "eventId": "winter-2024-autopolis-2024-02-14",
