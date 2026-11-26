@@ -8233,10 +8233,18 @@
   },
   {
     "eventId": "tt-2026-11-12-watkins-glen-long-course",
+    "psn": "devmotron",
+    "timeRaw": "2:14.785",
+    "timeMs": 134785,
+    "groupRank": 4,
+    "points": 73
+  },
+  {
+    "eventId": "tt-2026-11-12-watkins-glen-long-course",
     "psn": "dog_nougat",
     "timeRaw": "2:14.905",
     "timeMs": 134905,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": 72
   },
   {
@@ -8244,7 +8252,7 @@
     "psn": "rickiep00h",
     "timeRaw": "2:17.152",
     "timeMs": 137152,
-    "groupRank": 5,
+    "groupRank": 6,
     "points": 55
   },
   {
@@ -8273,10 +8281,18 @@
   },
   {
     "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
+    "psn": "devmotron",
+    "timeRaw": "1:28.030",
+    "timeMs": 88030,
+    "groupRank": 4,
+    "points": 39
+  },
+  {
+    "eventId": "tt-2026-11-19-tokyo-expressway-central-counterclockwise",
     "psn": "rickiep00h",
     "timeRaw": "1:32.070",
     "timeMs": 92070,
-    "groupRank": 4,
+    "groupRank": 5,
     "points": -10
   },
   {
