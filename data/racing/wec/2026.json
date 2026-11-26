@@ -4,7 +4,7 @@
   "shortName": "WEC",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-26T14:32:25.495Z",
+  "syncedAt": "2026-11-26T16:32:27.696Z",
   "source": {
     "name": "fiawec.com results",
     "url": "https://www.fiawec.com/en/page/resultats-1"
@@ -29175,7 +29175,16 @@
         },
         {
           "pos": 17,
-          "name": "Christian Ried, Maxime Martin, Rui Andrade",
+          "name": null,
+          "number": null,
+          "team": null,
+          "make": null,
+          "points": 31,
+          "wins": null
+        },
+        {
+          "pos": 17,
+          "name": "Maxime Martin, Rui Andrade",
           "number": "#61",
           "team": null,
           "make": "MERCEDES",
