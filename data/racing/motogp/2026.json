@@ -4,7 +4,7 @@
   "shortName": "MotoGP",
   "tier": "main",
   "season": 2026,
-  "syncedAt": "2026-11-26T22:32:09.073Z",
+  "syncedAt": "2026-11-27T00:32:09.249Z",
   "source": {
     "name": "motogp.com results",
     "url": "https://www.motogp.com/en/gp-results"
@@ -133120,7 +133120,7 @@
       "country": "Spain",
       "dateStart": "2026-11-27",
       "dateEnd": "2026-11-29",
-      "status": "upcoming",
+      "status": "live",
       "officialUrl": "https://www.motogp.com/en/gp-results/2026/val/motogp/rac/classification",
       "complete": false,
       "sessions": [
