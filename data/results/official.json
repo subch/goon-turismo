@@ -8296,6 +8296,22 @@
     "points": -10
   },
   {
+    "eventId": "tt-2026-11-26-fuji-international-speedway",
+    "psn": "bravemen84",
+    "timeRaw": "1:38.993",
+    "timeMs": 98993,
+    "groupRank": 1,
+    "points": 100
+  },
+  {
+    "eventId": "tt-2026-11-26-yas-marina-circuit",
+    "psn": "bravemen84",
+    "timeRaw": "1:39.286",
+    "timeMs": 99286,
+    "groupRank": 1,
+    "points": 100
+  },
+  {
     "eventId": "winter-2024-autopolis-2024-02-14",
     "psn": "craigrackhaed",
     "timeRaw": "114.100",

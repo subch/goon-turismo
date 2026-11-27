@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-11-26T18:47:01.855Z",
-  "finishedAt": "2026-11-26T18:48:13.987Z",
+  "startedAt": "2026-11-27T00:47:01.950Z",
+  "finishedAt": "2026-11-27T00:49:09.807Z",
   "api": {
     "ran": true,
     "requests": 2,
@@ -15,15 +15,18 @@
     ],
     "quota": {
       "limit": "100",
-      "remaining": "88"
+      "remaining": "98"
     },
     "errors": []
   },
   "pages": {
     "playersScraped": 18,
     "playersTotal": 24,
-    "eventsTouched": 12,
-    "eventsCreated": [],
+    "eventsTouched": 14,
+    "eventsCreated": [
+      "tt-2026-11-26-fuji-international-speedway",
+      "tt-2026-11-26-yas-marina-circuit"
+    ],
     "cutoffIso": "2026-10-01",
     "warnings": 7
   }
